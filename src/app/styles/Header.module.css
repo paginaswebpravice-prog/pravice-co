@@ -125,6 +125,27 @@
   background: #004a80;
 }
 
+.info span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+.socials a {
+  font-size: 14px;
+  color: #ffffff;
+  transition: 0.25s;
+}
+
+.socials a:hover {
+  color: #f7c600;
+}
+
 /* ======================
    MOBILE
 ====================== */

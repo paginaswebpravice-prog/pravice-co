@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="hero">
       {/* Overlay oscuro */}
       <div className={styles.overlay}></div>
 
