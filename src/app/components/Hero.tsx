@@ -22,11 +22,21 @@ export default function Hero() {
         </p>
 
         <div className={styles.buttons}>
-          <Link href="/contacto" className={styles.primaryBtn}>
+          <Link
+            href="https://legalapp.pravice.co/login.php"
+            className={styles.primaryBtn}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Consultar mi caso
           </Link>
 
-          <Link href="/legal-app" className={styles.secondaryBtn}>
+          <Link
+            href="https://drive.google.com/file/d/1IIEGEpqNm_FiPhvKKWBSnr_iLbDXcBWV/view"
+            className={styles.secondaryBtn}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Conoce Legal App
           </Link>
         </div>
