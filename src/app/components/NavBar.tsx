@@ -1,65 +1,33 @@
 "use client";
 
 import { useState } from "react";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 import styles from "../styles/NavBar.module.css";
-import Image from "next/image";
 
-const handleClick = () => {
-  window.open("", "_blank");
-};
-
-export default function NavBar() {
-  const pathname = usePathname();
+export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header
-      className={`${styles.navbar} ${styles.scrolled}`}
-      style={{
-        position: "fixed",
-        top: "30px",
-        left: 0,
-        right: 0,
-        zIndex: 999,
-      }}
-    >
-      <nav className={styles.container}>
+    <header className={styles.navbar}>
+      <div className={styles.container}>
         {/* LOGO */}
-        <Link href="/" className={`${styles.logo} ${styles.dark}`}>
-          <Image src="/" alt="ima" width={75} height={70} priority />
+        <Link href="/" className={styles.logo}>
+          Pravice <span>Abogados</span>
         </Link>
 
-        {/* MENÚ DESKTOP / MOBILE */}
-        <ul className={`${styles.links} ${menuOpen ? styles.active : ""}`}>
-          <li>
-            <Link href="/" onClick={() => setMenuOpen(false)}>
-              INICIO
-            </Link>
-          </li>
-          <li>
-            <Link href="/" onClick={() => setMenuOpen(false)}>
-              ÁREAS DE PRÁCTICA
-            </Link>
-          </li>
-          <li>
-            <Link href="/" onClick={() => setMenuOpen(false)}>
-              NUESTRO EQUIPO
-            </Link>
-          </li>
-          <li>
-            <Link href="/" onClick={() => setMenuOpen(false)}>
-              BLOG
-            </Link>
-          </li>
-        </ul>
+        {/* MENU */}
+        <nav className={`${styles.nav} ${menuOpen ? styles.active : ""}`}>
+          <Link href="/">Inicio</Link>
+          <Link href="/areas">Áreas de práctica</Link>
+          <Link href="/equipo">Nuestro equipo</Link>
+          <Link href="/especialidades">Especialidades</Link>
+          <Link href="/blog">Blog</Link>
+          <Link href="/contacto" className={styles.cta}>
+            Contacto
+          </Link>
+        </nav>
 
-        <button className={styles.ctaButton} onClick={handleClick}>
-          PROGRAME UNA CONSULTA
-        </button>
-
-        {/* BOTÓN HAMBURGUESA */}
+        {/* HAMBURGER */}
         <div
           className={styles.hamburger}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -68,7 +36,7 @@ export default function NavBar() {
           <span></span>
           <span></span>
         </div>
-      </nav>
+      </div>
     </header>
   );
 }
