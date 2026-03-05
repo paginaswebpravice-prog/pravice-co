@@ -8,6 +8,7 @@ import {
   faBell,
   faLock,
 } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function LegalApp() {
   return (
@@ -90,7 +91,7 @@ export default function LegalApp() {
         {/* BOTTOM CARDS */}
         <div className={styles.bottom}>
           <div className={styles.smallCard}>
-            <h4>✅ Disponible 24/7</h4>
+            <h3>✅ Disponible 24/7</h3>
             <p>
               Accede a tu expediente en cualquier momento, desde cualquier lugar
               de Colombia.
@@ -98,7 +99,7 @@ export default function LegalApp() {
           </div>
 
           <div className={styles.smallCard}>
-            <h4>🔒 100% seguro y privado</h4>
+            <h3>🔒 100% seguro y privado</h3>
             <p>
               Tu información legal está protegida con los más altos estándares
               de seguridad digital.
@@ -111,7 +112,16 @@ export default function LegalApp() {
               Ingresa con tus credenciales y gestiona tu caso de forma ágil y
               transparente.
             </p>
-            <button>Ingresar a Legal App</button>
+
+            <Link
+              href="https://legalapp.pravice.co/login.php"
+              className={styles.ctaButton}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ingresar a Legal App
+            </Link>
+
             <span>¿Primera vez? Solicita tu acceso escribiéndonos.</span>
           </div>
         </div>

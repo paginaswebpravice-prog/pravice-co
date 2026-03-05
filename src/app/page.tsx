@@ -5,6 +5,8 @@ import LegalApp from "./components/LegalApp";
 import Experience from "./components/Experience";
 import Process from "./components/Process";
 import AboutUs from "./components/AboutUs";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <Experience />
       <Process />
       <AboutUs />
+      <FAQ />
+      <Footer />
     </>
   );
 }

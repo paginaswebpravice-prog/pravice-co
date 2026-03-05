@@ -141,19 +141,19 @@
   margin-bottom: 20px;
 }
 
-.ctaCard button {
+.ctaButton {
+  display: inline-block;
   background: #f7c600;
   color: #000;
   padding: 12px 24px;
-  border: none;
   border-radius: 6px;
   font-weight: 600;
-  cursor: pointer;
+  text-decoration: none;
   margin-bottom: 10px;
   transition: 0.25s;
 }
 
-.ctaCard button:hover {
+.ctaButton:hover {
   background: #c4911a;
 }
 
