@@ -1,0 +1,71 @@
+.section {
+  background: #ffffff;
+  padding: 100px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* TITULO */
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #004a80;
+  max-width: 900px;
+  line-height: 1.2;
+}
+
+.title span {
+  color: #5eb3e4;
+}
+
+/* DESCRIPCION */
+
+.description {
+  margin-top: 20px;
+  max-width: 900px;
+  font-size: 18px;
+  color: #808080;
+  line-height: 1.7;
+}
+
+/* CARDS */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #f7c600;
+  box-shadow: 0 10px 30px rgba(0, 74, 128, 0.15);
+}
+
+/* TITULO CARD */
+
+.card h3 {
+  color: #004a80;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+/* TEXTO CARD */
+
+.card p {
+  color: #808080;
+  line-height: 1.6;
+}

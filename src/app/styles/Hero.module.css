@@ -1,0 +1,94 @@
+.hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+
+  background-image: url("/hero-lawyers.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Overlay oscuro corporativo */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 74, 128, 0.75) 40%,
+    rgba(0, 0, 0, 0.45) 100%
+  );
+}
+
+/* Contenido */
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  color: #ffffff;
+}
+
+/* Titulo */
+
+.title {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Subtitulo */
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  color: #808080;
+}
+
+/* Botones */
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+/* Boton principal */
+
+.primaryBtn {
+  background: #004a80;
+  color: #ffffff;
+  padding: 14px 26px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.primaryBtn:hover {
+  background: #5eb3e4;
+  color: #000;
+}
+
+/* Boton secundario */
+
+.secondaryBtn {
+  border: 2px solid #f7c600;
+  color: #f7c600;
+  padding: 14px 26px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.secondaryBtn:hover {
+  background: #c4911a;
+  border-color: #c4911a;
+  color: #ffffff;
+}
