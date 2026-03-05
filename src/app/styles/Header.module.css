@@ -1,24 +1,68 @@
-/* NAVBAR */
+/* HEADER STICKY */
 
-.navbar {
-  width: 100%;
-  background: #ffffff;
-  border-bottom: 1px solid #eaeaea;
+.header {
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-/* CONTAINER */
+/* ======================
+   TOPBAR
+====================== */
 
-.container {
+.topbar {
+  background: #004a80;
+  color: white;
+  font-size: 14px;
+}
+
+.topContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 8px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  gap: 25px;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.socials a {
+  color: white;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.socials a:hover {
+  color: #f7c600;
+}
+
+/* ======================
+   NAVBAR
+====================== */
+
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.navContainer {
   max-width: 1200px;
   margin: auto;
   padding: 18px 20px;
 
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* LOGO */
@@ -26,20 +70,20 @@
 .logo {
   font-size: 22px;
   font-weight: 700;
-  color: #004a80;
   text-decoration: none;
+  color: #004a80;
 }
 
 .logo span {
   color: #5eb3e4;
 }
 
-/* NAV LINKS */
+/* NAV */
 
 .nav {
   display: flex;
-  align-items: center;
   gap: 30px;
+  align-items: center;
 }
 
 .nav a {
@@ -53,11 +97,10 @@
   color: #5eb3e4;
 }
 
-/* CTA BUTTON */
+/* CTA */
 
 .cta {
   background: #f7c600;
-  color: #000 !important;
   padding: 8px 18px;
   border-radius: 20px;
   font-weight: 600;
@@ -82,22 +125,28 @@
   background: #004a80;
 }
 
-/* MOBILE */
+/* ======================
+   MOBILE
+====================== */
 
 @media (max-width: 900px) {
+  .info {
+    display: none;
+  }
+
   .nav {
     position: absolute;
-    top: 70px;
+    top: 110px;
     left: 0;
     width: 100%;
+    background: white;
 
-    background: #ffffff;
     flex-direction: column;
-    gap: 20px;
     padding: 30px;
+    gap: 20px;
 
     transform: translateY(-200%);
-    transition: 0.3s ease;
+    transition: 0.3s;
   }
 
   .active {
