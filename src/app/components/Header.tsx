@@ -36,6 +36,7 @@ export default function Header() {
             <Link href="/">Inicio</Link>
             <Link href="/areas">Áreas de práctica</Link>
             <Link href="/equipo">Equipo</Link>
+            <Link href="/especialidades">Especialidades</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/contacto" className={styles.cta}>
               Contacto
