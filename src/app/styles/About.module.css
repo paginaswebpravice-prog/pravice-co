@@ -69,3 +69,8 @@
   color: #808080;
   line-height: 1.6;
 }
+
+.seoText {
+  position: absolute;
+  left: -9999px;
+}
