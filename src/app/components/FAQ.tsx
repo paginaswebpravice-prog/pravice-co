@@ -4,55 +4,79 @@ import styles from "../styles/FAQ.module.css";
 
 const faqs = [
   {
-    question: "¿Cuánto tiempo dura un proceso legal?",
+    question: "¿Cuánto tiempo dura un proceso legal en Colombia?",
     answer:
-      "Los tiempos varían según la complejidad del caso. Te informamos desde el inicio sobre los plazos estimados para que puedas planificar con tranquilidad.",
+      "La duración de un proceso legal depende del tipo de caso, la complejidad del conflicto y la carga de trabajo de los juzgados. En Pravice Abogados analizamos cada situación y te informamos desde el inicio los tiempos estimados del proceso.",
   },
   {
-    question: "¿Puedo migrar mi caso desde otro abogado?",
+    question: "¿Puedo cambiar de abogado y trasladar mi caso?",
     answer:
-      "Por supuesto. Analizamos tu situación actual y te orientamos sobre cómo continuar el proceso de la mejor manera posible.",
+      "Sí. Es posible trasladar tu proceso legal a otro abogado. Nuestro equipo revisa tu expediente, analiza el estado del caso y te orienta sobre cómo continuar el proceso de la forma más conveniente.",
   },
   {
-    question: "¿Cuál es el costo de la asesoría?",
+    question: "¿Cuánto cuesta una asesoría con un abogado?",
     answer:
-      "Cada caso es único. Ofrecemos presupuestos personalizados según el alcance y la complejidad. Contáctanos para recibir una propuesta sin compromiso.",
+      "El costo de una asesoría legal depende del tipo de consulta y la complejidad del caso. En Pravice Abogados ofrecemos evaluaciones personalizadas para brindarte una propuesta clara y transparente.",
   },
   {
-    question: "¿Trabajan con clientes fuera de Bogotá?",
+    question: "¿Pravice Abogados trabaja con clientes fuera de Bogotá?",
     answer:
-      "Sí, trabajamos con clientes en toda Colombia. Nos coordinamos de forma remota con herramientas eficientes en español.",
+      "Sí. Atendemos clientes en todo Colombia. Gracias a herramientas digitales y atención remota podemos asesorar empresas y personas sin importar su ubicación.",
   },
   {
-    question: "¿Ofrecen soporte continuo durante el proceso?",
+    question: "¿Ofrecen acompañamiento durante todo el proceso legal?",
     answer:
-      "Sí. Te acompañamos en cada etapa del proceso legal, desde la consulta inicial hasta la resolución final del caso.",
+      "Sí. Nuestro equipo brinda acompañamiento completo desde la asesoría inicial, el análisis del caso, la estrategia jurídica y la gestión del proceso hasta su resolución.",
   },
   {
-    question: "¿Qué necesito para empezar?",
+    question: "¿Qué necesito para iniciar un proceso legal?",
     answer:
-      "Básicamente contarnos tu caso. Te guiamos desde la consulta inicial hasta la estrategia y el proceso legal completo.",
+      "Para empezar solo necesitas contarnos tu situación. Analizaremos tu caso, revisaremos los documentos disponibles y definiremos la estrategia legal más adecuada.",
   },
 ];
 
 export default function FAQ() {
-  return (
-    <section className={styles.section}>
-      <div className={styles.container}>
-        <h2 className={styles.title}>Preguntas frecuentes</h2>
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
 
-        <p className={styles.subtitle}>
-          Resolvemos las dudas más comunes antes de empezar. Si no encuentras tu
-          respuesta aquí, escríbenos directamente y te respondemos sin
-          compromiso.
-        </p>
+  return (
+    <section className={styles.section} aria-labelledby="faq-title">
+      {/* SCHEMA SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+
+      <div className={styles.container}>
+        <header>
+          <h2 id="faq-title" className={styles.title}>
+            Preguntas frecuentes sobre <span>servicios legales</span>
+          </h2>
+
+          <p className={styles.subtitle}>
+            Respondemos algunas de las preguntas más comunes sobre asesoría
+            jurídica, procesos legales y servicios de abogados en Colombia. Si
+            no encuentras aquí la información que buscas, puedes contactar a
+            nuestro equipo para recibir orientación personalizada.
+          </p>
+        </header>
 
         <div className={styles.grid}>
           {faqs.map((faq, index) => (
-            <div key={index} className={styles.card}>
+            <article key={index} className={styles.card}>
               <h3>{faq.question}</h3>
               <p>{faq.answer}</p>
-            </div>
+            </article>
           ))}
         </div>
       </div>
