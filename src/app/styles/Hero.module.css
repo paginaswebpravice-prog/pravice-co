@@ -5,9 +5,9 @@
   align-items: center;
   padding: 0 80px;
 
-  background-image: url("/hero-lawyers.jpg");
+  background-image: url("/foto-grupal.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center 35%;
 }
 
 /* Overlay oscuro corporativo */
@@ -17,9 +17,9 @@
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.85) 0%,
-    rgba(0, 74, 128, 0.75) 40%,
-    rgba(0, 0, 0, 0.45) 100%
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 74, 128, 0.85) 45%,
+    rgba(0, 0, 0, 0.55) 100%
   );
 }
 
