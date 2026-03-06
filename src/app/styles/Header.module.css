@@ -1,13 +1,16 @@
-/* HEADER STICKY */
+/* ======================
+HEADER STICKY
+====================== */
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 1000;
+  width: 100%;
+  z-index: 9999;
 }
 
 /* ======================
-   TOPBAR
+TOPBAR
 ====================== */
 
 .topbar {
@@ -31,14 +34,20 @@
   gap: 25px;
 }
 
+.info span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .socials {
   display: flex;
-  gap: 15px;
+  gap: 16px;
 }
 
 .socials a {
-  color: white;
-  text-decoration: none;
+  font-size: 14px;
+  color: #ffffff;
   transition: 0.25s;
 }
 
@@ -47,7 +56,7 @@
 }
 
 /* ======================
-   NAVBAR
+NAVBAR
 ====================== */
 
 .navbar {
@@ -110,7 +119,9 @@
   background: #c4911a;
 }
 
-/* HAMBURGER */
+/* ======================
+HAMBURGER
+====================== */
 
 .hamburger {
   display: none;
@@ -125,29 +136,8 @@
   background: #004a80;
 }
 
-.info span {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.socials {
-  display: flex;
-  gap: 16px;
-}
-
-.socials a {
-  font-size: 14px;
-  color: #ffffff;
-  transition: 0.25s;
-}
-
-.socials a:hover {
-  color: #f7c600;
-}
-
 /* ======================
-   MOBILE
+MOBILE
 ====================== */
 
 @media (max-width: 900px) {
@@ -157,16 +147,16 @@
 
   .nav {
     position: absolute;
-    top: 110px;
+    top: 100%;
     left: 0;
     width: 100%;
-    background: white;
 
+    background: white;
     flex-direction: column;
     padding: 30px;
     gap: 20px;
 
-    transform: translateY(-200%);
+    transform: translateY(-150%);
     transition: 0.3s;
   }
 

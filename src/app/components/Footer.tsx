@@ -13,6 +13,7 @@ import {
   faEnvelope,
   faPhone,
   faLocationDot,
+  faClock,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
@@ -25,35 +26,57 @@ export default function Footer() {
             Pravice <span>Abogados</span>
           </h3>
 
-          <p>
+          <p className={styles.description}>
             Firma de abogados especializada en asesoría legal integral en
-            Bogotá, Colombia. Desde 1998 protegiendo los intereses de nuestros
-            clientes con estrategia y experiencia.
+            Bogotá, Colombia. Desde 1998 brindamos soluciones jurídicas
+            estratégicas para empresas y personas.
           </p>
 
           <div className={styles.tag}>DERECHO · ESTRATEGIA · RESULTADOS</div>
 
-          {/* REDES */}
           <div className={styles.socials}>
-            <Link href="#">
+            <Link href="#" target="_blank">
               <FontAwesomeIcon icon={faFacebook} />
             </Link>
 
-            <Link href="#">
+            <Link href="#" target="_blank">
               <FontAwesomeIcon icon={faInstagram} />
             </Link>
 
-            <Link href="#">
+            <Link href="#" target="_blank">
               <FontAwesomeIcon icon={faLinkedin} />
             </Link>
 
-            <Link href="#">
+            <Link href="https://wa.me/573114659315" target="_blank">
               <FontAwesomeIcon icon={faWhatsapp} />
             </Link>
           </div>
         </div>
 
         {/* COLUMNA 2 */}
+        <div className={styles.col}>
+          <h4>Navegación</h4>
+
+          <ul>
+            <li>
+              <Link href="/">Inicio</Link>
+            </li>
+            <li>
+              <Link href="/areas">Áreas de práctica</Link>
+            </li>
+            <li>
+              <Link href="/equipo">Nuestro equipo</Link>
+            </li>
+            <li>
+              <Link href="/blog">Blog</Link>
+            </li>
+            <li>
+              <Link href="/contacto">Contacto</Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* COLUMNA 3 */}
         <div className={styles.col}>
           <h4>Áreas del Derecho</h4>
 
@@ -79,7 +102,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* COLUMNA 3 */}
+        {/* COLUMNA 4 */}
         <div className={styles.col}>
           <h4>Contacto</h4>
 
@@ -90,12 +113,19 @@ export default function Footer() {
 
           <div className={styles.contactItem}>
             <FontAwesomeIcon icon={faPhone} />
-            <span>(601) 3099331 · (311) 465-9315</span>
+            <a href="tel:+576013099331">(601) 3099331</a>
           </div>
 
           <div className={styles.contactItem}>
             <FontAwesomeIcon icon={faEnvelope} />
-            <span>info.pravice@abogadosespecialistas.com.co</span>
+            <a href="mailto:info.pravice@abogadosespecialistas.com.co">
+              info.pravice@abogadosespecialistas.com.co
+            </a>
+          </div>
+
+          <div className={styles.contactItem}>
+            <FontAwesomeIcon icon={faClock} />
+            <span>Lunes a Viernes — 8:00am a 6:00pm</span>
           </div>
 
           <Link
@@ -103,15 +133,20 @@ export default function Footer() {
             target="_blank"
             className={styles.cta}
           >
-            Consultar por WhatsApp
+            Consulta por WhatsApp
           </Link>
         </div>
       </div>
 
       {/* BOTTOM */}
       <div className={styles.bottom}>
-        © 2025 Pravice Abogados — Todos los derechos reservados · Política de
-        privacidad · Aviso legal
+        <p>© 2025 Pravice Abogados — Todos los derechos reservados</p>
+
+        <div className={styles.legalLinks}>
+          <Link href="/privacidad">Política de privacidad</Link>
+          <Link href="/terminos">Términos y condiciones</Link>
+          <Link href="/cookies">Política de cookies</Link>
+        </div>
       </div>
     </footer>
   );

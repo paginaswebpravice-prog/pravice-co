@@ -27,17 +27,18 @@ export default function Header() {
         <div className={styles.topContainer}>
           <div className={styles.info}>
             <span>
-              <FontAwesomeIcon icon={faLocationDot} /> Calle 98 # 22-64 OF 716
-              Bogotá D.C.
+              <FontAwesomeIcon icon={faLocationDot} />
+              Calle 98 # 22-64 OF 716 Bogotá D.C.
             </span>
 
             <span>
-              <FontAwesomeIcon icon={faEnvelope} />{" "}
+              <FontAwesomeIcon icon={faEnvelope} />
               info.pravice@abogadosespecialistas.com.co
             </span>
 
             <span>
-              <FontAwesomeIcon icon={faPhone} /> (601) 3099331
+              <FontAwesomeIcon icon={faPhone} />
+              (601) 3099331
             </span>
           </div>
 
