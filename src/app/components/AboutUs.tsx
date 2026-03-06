@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function AboutUs() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="aboutUs">
       <div className={styles.container}>
         {/* LEFT */}
         <div className={styles.left}>

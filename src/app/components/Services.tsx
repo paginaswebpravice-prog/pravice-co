@@ -36,7 +36,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="services">
       <div className={styles.container}>
         {/* HEADER */}
         <motion.h2

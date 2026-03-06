@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function LegalApp() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="legalapp">
       <div className={styles.container}>
         {/* HEADER */}
         <h2 className={styles.title}>

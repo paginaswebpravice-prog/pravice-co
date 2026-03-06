@@ -66,8 +66,9 @@ export default function Header() {
 
           <nav className={`${styles.nav} ${menuOpen ? styles.active : ""}`}>
             <Link href="#hero">Inicio</Link>
-            <Link href="/areas">Áreas de práctica</Link>
-            <Link href="/equipo">Equipo</Link>
+            <Link href="#services">Servicios</Link>
+            <Link href="#legalapp">Legal App</Link>
+            <Link href="#aboutUs">Nosotros</Link>
             <Link href="/especialidades">Especialidades</Link>
             <Link href="/blog">Blog</Link>
 
