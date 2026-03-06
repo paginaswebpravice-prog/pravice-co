@@ -2,25 +2,32 @@
 
 import styles from "../styles/BlogPreview.module.css";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import {
+  faScaleBalanced,
+  faBuilding,
+  faShieldHalved,
+} from "@fortawesome/free-solid-svg-icons";
 
 const posts = [
   {
     title: "Pravice Abogados: Expertos en Derecho en Bogotá",
     description:
       "Conoce la historia, filosofía y compromiso de Pravice Abogados, una firma especializada en asesoría jurídica para empresas y personas en Colombia.",
-    image: "/blog1.jpg",
+    icon: faScaleBalanced,
   },
   {
     title: "Tu Firma de Abogados de Confianza en Bogotá",
     description:
       "Descubre cómo elegir una firma de abogados confiable en Bogotá y qué factores considerar al buscar asesoría legal profesional.",
-    image: "/blog2.jpg",
+    icon: faBuilding,
   },
   {
     title: "¿Cómo proteger tu empresa legalmente en 2025?",
     description:
       "Guía práctica sobre derecho empresarial: contratos comerciales, registro de marca, derecho laboral e insolvencia empresarial en Colombia.",
-    image: "/blog3.jpg",
+    icon: faShieldHalved,
   },
 ];
 
@@ -55,9 +62,7 @@ export default function BlogPreview() {
           <p className={styles.subtitle}>
             En el <strong>blog de Pravice Abogados</strong> compartimos
             conocimiento jurídico, análisis de tendencias legales y guías
-            prácticas para empresas y personas en Colombia. Nuestro objetivo es
-            ayudarte a entender mejor el sistema legal y tomar decisiones
-            informadas para proteger tus intereses.
+            prácticas para empresas y personas en Colombia.
           </p>
         </header>
 
@@ -70,11 +75,9 @@ export default function BlogPreview() {
               itemScope
               itemType="https://schema.org/BlogPosting"
             >
-              <img
-                src={post.image}
-                alt={`Artículo legal: ${post.title}`}
-                loading="lazy"
-              />
+              <div className={styles.icon}>
+                <FontAwesomeIcon icon={post.icon} />
+              </div>
 
               <div>
                 <h3 itemProp="headline">{post.title}</h3>

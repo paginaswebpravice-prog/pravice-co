@@ -80,7 +80,7 @@ export default function AboutUs() {
         <div className={styles.right}>
           <div className={styles.imageWrapper}>
             <Image
-              src="/team.jpg"
+              src="/foto-grupal.jpg"
               alt="Equipo de abogados de Pravice Abogados en Colombia"
               fill
               className={styles.image}
