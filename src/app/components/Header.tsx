@@ -48,6 +48,7 @@ export default function Header() {
               href="https://www.facebook.com/praviceabogadosespecializados"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Facebook Pravice Abogados"
             >
               <FontAwesomeIcon icon={faFacebookF} />
             </Link>
@@ -56,6 +57,7 @@ export default function Header() {
               href="https://www.instagram.com/pravice_abogados/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram Pravice Abogados"
             >
               <FontAwesomeIcon icon={faInstagram} />
             </Link>
@@ -64,6 +66,7 @@ export default function Header() {
               href="https://co.linkedin.com/company/praviceabogadosespecializados"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn Pravice Abogados"
             >
               <FontAwesomeIcon icon={faLinkedinIn} />
             </Link>

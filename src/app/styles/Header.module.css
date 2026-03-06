@@ -46,9 +46,12 @@ TOPBAR
 }
 
 .socials a {
-  font-size: 14px;
+  font-size: 18px;
   color: #ffffff;
   transition: 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .socials a:hover {
