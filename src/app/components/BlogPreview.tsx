@@ -7,47 +7,79 @@ const posts = [
   {
     title: "Pravice Abogados: Expertos en Derecho en Bogotá",
     description:
-      "Conoce la historia, filosofía y compromiso de nuestra firma con la excelencia jurídica y la defensa de los derechos de nuestros clientes.",
+      "Conoce la historia, filosofía y compromiso de Pravice Abogados, una firma especializada en asesoría jurídica para empresas y personas en Colombia.",
     image: "/blog1.jpg",
   },
   {
     title: "Tu Firma de Abogados de Confianza en Bogotá",
     description:
-      "Más de una década ofreciendo servicios de asesoría y representación legal de alta calidad, con crecimiento constante y resultados comprobados.",
+      "Descubre cómo elegir una firma de abogados confiable en Bogotá y qué factores considerar al buscar asesoría legal profesional.",
     image: "/blog2.jpg",
   },
   {
     title: "¿Cómo proteger tu empresa legalmente en 2025?",
     description:
-      "Guía práctica sobre las principales áreas del derecho empresarial: contratos, insolvencia, derecho laboral y registro de marcas.",
+      "Guía práctica sobre derecho empresarial: contratos comerciales, registro de marca, derecho laboral e insolvencia empresarial en Colombia.",
     image: "/blog3.jpg",
   },
 ];
 
 export default function BlogPreview() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: "Blog Jurídico de Pravice Abogados",
+    description:
+      "Artículos y guías legales sobre derecho empresarial, derecho laboral, registro de marcas y asesoría jurídica en Colombia.",
+    publisher: {
+      "@type": "Organization",
+      name: "Pravice Abogados",
+    },
+  };
+
   return (
-    <section className={styles.section}>
+    <section className={styles.section} aria-labelledby="blog-title">
+      {/* SCHEMA SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+
       <div className={styles.container}>
         {/* HEADER */}
-        <h2 className={styles.title}>
-          Blog & Noticias: <span>ideas que informan</span>
-        </h2>
+        <header>
+          <h2 id="blog-title" className={styles.title}>
+            Blog jurídico: <span>información legal que te ayuda a decidir</span>
+          </h2>
 
-        <p className={styles.subtitle}>
-          Compartimos conocimiento jurídico, tendencias legales y casos de
-          éxito. Contenido relevante y bien escrito para ayudarte a tomar
-          mejores decisiones y proteger tus intereses.
-        </p>
+          <p className={styles.subtitle}>
+            En el <strong>blog de Pravice Abogados</strong> compartimos
+            conocimiento jurídico, análisis de tendencias legales y guías
+            prácticas para empresas y personas en Colombia. Nuestro objetivo es
+            ayudarte a entender mejor el sistema legal y tomar decisiones
+            informadas para proteger tus intereses.
+          </p>
+        </header>
 
         {/* POSTS */}
         <div className={styles.grid}>
           {posts.map((post, index) => (
-            <article key={index} className={styles.post}>
-              <img src={post.image} alt={post.title} />
+            <article
+              key={index}
+              className={styles.post}
+              itemScope
+              itemType="https://schema.org/BlogPosting"
+            >
+              <img
+                src={post.image}
+                alt={`Artículo legal: ${post.title}`}
+                loading="lazy"
+              />
 
               <div>
-                <h3>{post.title}</h3>
-                <p>{post.description}</p>
+                <h3 itemProp="headline">{post.title}</h3>
+
+                <p itemProp="description">{post.description}</p>
               </div>
             </article>
           ))}
@@ -55,7 +87,7 @@ export default function BlogPreview() {
 
         {/* BUTTON */}
         <Link href="/blog" className={styles.button}>
-          Ver todos los artículos
+          Ver todos los artículos del blog jurídico
         </Link>
       </div>
     </section>
