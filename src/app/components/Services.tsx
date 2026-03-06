@@ -35,8 +35,37 @@ const services = [
 ];
 
 export default function Services() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Servicios legales de Pravice Abogados",
+    description:
+      "Portafolio de servicios legales ofrecidos por Pravice Abogados en áreas como derecho laboral, comercial, insolvencia y registro de marca.",
+    itemListElement: services.map((service, index) => ({
+      "@type": "Service",
+      position: index + 1,
+      name: service.title,
+      description: service.text,
+      provider: {
+        "@type": "Organization",
+        name: "Pravice Abogados",
+        url: "https://praviceabogados.com",
+      },
+      areaServed: {
+        "@type": "Country",
+        name: "Colombia",
+      },
+    })),
+  };
+
   return (
     <section className={styles.section} id="services">
+      {/* SEO SCHEMA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+
       <div className={styles.container}>
         {/* HEADER */}
         <motion.h2
