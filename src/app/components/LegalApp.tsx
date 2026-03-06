@@ -11,23 +11,60 @@ import {
 import Link from "next/link";
 
 export default function LegalApp() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Legal App Pravice",
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    description:
+      "Plataforma digital de Pravice Abogados que permite a los clientes consultar el estado de sus procesos legales, recibir notificaciones y acceder a documentos jurídicos de forma segura.",
+    url: "https://legalapp.pravice.co",
+    provider: {
+      "@type": "Organization",
+      name: "Pravice Abogados",
+      url: "https://praviceabogados.com",
+    },
+    areaServed: {
+      "@type": "Country",
+      name: "Colombia",
+    },
+    featureList: [
+      "Seguimiento de procesos legales en tiempo real",
+      "Consulta directa con abogados",
+      "Notificaciones automáticas de actualizaciones",
+      "Acceso seguro a documentos legales",
+    ],
+  };
+
   return (
-    <section className={styles.section} id="legalapp">
+    <section
+      className={styles.section}
+      id="legalapp"
+      aria-labelledby="legalapp-title"
+    >
+      {/* SEO SCHEMA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+
       <div className={styles.container}>
         {/* HEADER */}
-        <h2 className={styles.title}>
-          Legal App: tu caso, siempre <span>en tus manos</span>
+        <h2 id="legalapp-title" className={styles.title}>
+          Plataforma Legal para Clientes: <span>Legal App Pravice</span>
         </h2>
 
         <p className={styles.subtitle}>
-          Accede a nuestra plataforma web exclusiva y mantente al tanto de cada
-          avance en tu proceso legal. Transparencia total, comunicación directa
-          y notificaciones en tiempo real, desde cualquier dispositivo.
+          Con <strong>Legal App Pravice</strong>, nuestros clientes pueden
+          realizar el <strong>seguimiento de su proceso legal online</strong>,
+          consultar documentos, comunicarse con su abogado y recibir
+          notificaciones automáticas sobre cualquier avance en su caso.
+          Transparencia, control y acceso seguro desde cualquier dispositivo.
         </p>
 
         {/* FEATURES GRID */}
         <div className={styles.grid}>
-          {/* Item 1 */}
           <div className={styles.item}>
             <div className={styles.iconLine}>
               <div className={styles.icon}>
@@ -35,14 +72,13 @@ export default function LegalApp() {
               </div>
               <div className={styles.line}></div>
             </div>
-            <h3>Seguimiento en tiempo real</h3>
+            <h3>Seguimiento de procesos legales en tiempo real</h3>
             <p>
-              Consulta el estado actualizado de tu caso en cualquier momento.
-              Sin llamadas de espera, sin incertidumbre.
+              Consulta el estado actualizado de tu caso jurídico en cualquier
+              momento sin necesidad de llamadas o visitas presenciales.
             </p>
           </div>
 
-          {/* Item 2 */}
           <div className={styles.item}>
             <div className={styles.iconLine}>
               <div className={styles.icon}>
@@ -50,14 +86,13 @@ export default function LegalApp() {
               </div>
               <div className={styles.line}></div>
             </div>
-            <h3>Consultas y preguntas</h3>
+            <h3>Comunicación directa con tu abogado</h3>
             <p>
-              Envía preguntas directamente a tu abogado a través de la
-              plataforma ante cualquier novedad o duda que surja.
+              Realiza preguntas o solicita información adicional directamente a
+              tu abogado desde la plataforma.
             </p>
           </div>
 
-          {/* Item 3 */}
           <div className={styles.item}>
             <div className={styles.iconLine}>
               <div className={styles.icon}>
@@ -65,14 +100,13 @@ export default function LegalApp() {
               </div>
               <div className={styles.line}></div>
             </div>
-            <h3>Notificaciones automáticas</h3>
+            <h3>Notificaciones automáticas del proceso</h3>
             <p>
-              Recibe alertas inmediatas sobre actualizaciones, documentos nuevos
-              o cambios importantes en tu proceso.
+              Recibe alertas cuando haya avances, nuevos documentos o cambios
+              importantes en tu proceso legal.
             </p>
           </div>
 
-          {/* Item 4 */}
           <div className={styles.item}>
             <div className={styles.iconLine}>
               <div className={styles.icon}>
@@ -80,10 +114,10 @@ export default function LegalApp() {
               </div>
               <div className={styles.line}></div>
             </div>
-            <h3>Documentos seguros</h3>
+            <h3>Acceso seguro a documentos legales</h3>
             <p>
-              Accede y descarga tus documentos legales de forma segura,
-              organizada y disponible las 24 horas.
+              Descarga y revisa tus documentos jurídicos de forma organizada y
+              segura las 24 horas del día.
             </p>
           </div>
         </div>
@@ -91,26 +125,26 @@ export default function LegalApp() {
         {/* BOTTOM CARDS */}
         <div className={styles.bottom}>
           <div className={styles.smallCard}>
-            <h3>✅ Disponible 24/7</h3>
+            <h3>Disponible 24/7</h3>
             <p>
-              Accede a tu expediente en cualquier momento, desde cualquier lugar
-              de Colombia.
+              Accede a tu expediente jurídico en cualquier momento desde
+              cualquier lugar de Colombia.
             </p>
           </div>
 
           <div className={styles.smallCard}>
-            <h3>🔒 100% seguro y privado</h3>
+            <h3>Seguridad y privacidad</h3>
             <p>
-              Tu información legal está protegida con los más altos estándares
-              de seguridad digital.
+              La plataforma utiliza protocolos de seguridad para proteger la
+              información legal de nuestros clientes.
             </p>
           </div>
 
           <div className={styles.ctaCard}>
-            <h3>Accede a Legal App</h3>
+            <h3>Acceder a Legal App Pravice</h3>
             <p>
-              Ingresa con tus credenciales y gestiona tu caso de forma ágil y
-              transparente.
+              Ingresa al portal de clientes para consultar el estado de tu caso
+              y gestionar tu información legal.
             </p>
 
             <Link
@@ -118,11 +152,15 @@ export default function LegalApp() {
               className={styles.ctaButton}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Ingresar al portal de clientes Legal App Pravice"
             >
               Ingresar a Legal App
             </Link>
 
-            <span>¿Primera vez? Solicita tu acceso escribiéndonos.</span>
+            <span>
+              ¿Primera vez en la plataforma? Solicita tu acceso contactando con
+              nuestro equipo.
+            </span>
           </div>
         </div>
       </div>
