@@ -44,15 +44,27 @@ export default function Header() {
           </div>
 
           <div className={styles.socials}>
-            <Link href="#">
+            <Link
+              href="https://www.facebook.com/praviceabogadosespecializados"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faFacebookF} />
             </Link>
 
-            <Link href="#">
+            <Link
+              href="https://www.instagram.com/pravice_abogados/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faInstagram} />
             </Link>
 
-            <Link href="#">
+            <Link
+              href="https://co.linkedin.com/company/praviceabogadosespecializados"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faLinkedinIn} />
             </Link>
           </div>
