@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import styles from "../styles/Header.module.css";
+import Image from "next/image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -62,7 +63,13 @@ export default function Header() {
       <div className={styles.navbar}>
         <div className={styles.navContainer}>
           <Link href="/" className={styles.logo}>
-            Pravice <span>Abogados</span>
+            <Image
+              src="/logo_pravice.png"
+              alt="Pravice Abogados - Firma de abogados en Bogotá"
+              width={50}
+              height={50}
+              priority
+            />
           </Link>
 
           <nav className={`${styles.nav} ${menuOpen ? styles.active : ""}`}>
