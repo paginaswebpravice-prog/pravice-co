@@ -68,7 +68,7 @@ export default function BlogPage() {
   return (
     <section className={styles.section}>
       <div className={styles.header}>
-        <h1 className={styles.title}>Blog</h1>
+        <h1 className={styles.title}>Blog Juridico</h1>
 
         <p className={styles.description}>
           Encuentra guías, estrategias legales y tendencias sobre conciliación,
