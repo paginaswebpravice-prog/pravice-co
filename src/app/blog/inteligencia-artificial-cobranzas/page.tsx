@@ -1,4 +1,4 @@
-import styles from "./ArticuloIA.module.css";
+import styles from "./Article.module.css";
 
 export default function ArticuloIA() {
   return (

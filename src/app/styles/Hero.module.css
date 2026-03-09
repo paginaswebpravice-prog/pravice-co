@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   padding: 0 80px;
@@ -10,7 +10,7 @@
   background-position: center 35%;
 }
 
-/* Overlay oscuro corporativo */
+/* Overlay */
 
 .overlay {
   position: absolute;
@@ -48,7 +48,7 @@
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 35px;
-  color: #808080;
+  color: #e0e0e0;
 }
 
 /* Botones */
@@ -56,6 +56,7 @@
 .buttons {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 /* Boton principal */
@@ -96,4 +97,84 @@
 .seoText {
   position: absolute;
   left: -9999px;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 0 50px;
+    min-height: 85vh;
+  }
+
+  .title {
+    font-size: 42px;
+  }
+
+  .subtitle {
+    font-size: 17px;
+  }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 25px;
+    min-height: 80vh;
+    background-position: center;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 0 20px;
+    min-height: 75vh;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .buttons {
+    gap: 40px;
+  }
 }

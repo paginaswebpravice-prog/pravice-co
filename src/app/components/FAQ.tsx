@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "../styles/FAQ.module.css";
+import { motion } from "framer-motion";
 
 const faqs = [
   {
@@ -51,7 +52,6 @@ export default function FAQ() {
 
   return (
     <section className={styles.section} aria-labelledby="faq-title">
-      {/* SCHEMA SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -59,24 +59,43 @@ export default function FAQ() {
 
       <div className={styles.container}>
         <header>
-          <h2 id="faq-title" className={styles.title}>
+          <motion.h2
+            id="faq-title"
+            className={styles.title}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             Preguntas frecuentes sobre <span>servicios legales</span>
-          </h2>
+          </motion.h2>
 
-          <p className={styles.subtitle}>
+          <motion.p
+            className={styles.subtitle}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             Respondemos algunas de las preguntas más comunes sobre asesoría
-            jurídica, procesos legales y servicios de abogados en Colombia. Si
-            no encuentras aquí la información que buscas, puedes contactar a
-            nuestro equipo para recibir orientación personalizada.
-          </p>
+            jurídica, procesos legales y servicios de abogados en Colombia.
+          </motion.p>
         </header>
 
         <div className={styles.grid}>
           {faqs.map((faq, index) => (
-            <article key={index} className={styles.card}>
+            <motion.article
+              key={index}
+              className={styles.card}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1, duration: 0.5 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -6, scale: 1.02 }}
+            >
               <h3>{faq.question}</h3>
               <p>{faq.answer}</p>
-            </article>
+            </motion.article>
           ))}
         </div>
       </div>

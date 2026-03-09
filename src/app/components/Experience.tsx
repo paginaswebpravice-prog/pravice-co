@@ -1,141 +1,94 @@
 "use client";
 
 import styles from "../styles/Experience.module.css";
-import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Experience() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "LegalService",
-    name: "Pravice Abogados",
-    url: "https://praviceabogados.com",
-    foundingDate: "1998",
-    description:
-      "Firma de abogados en Colombia con más de 25 años de experiencia asesorando empresas y personas en derecho laboral, civil, penal, comercial, marcas e insolvencia.",
-    areaServed: {
-      "@type": "Country",
-      name: "Colombia",
-    },
-    serviceType: [
-      "Derecho laboral",
-      "Derecho civil",
-      "Derecho penal",
-      "Derecho comercial",
-      "Registro de marcas",
-      "Procesos de insolvencia",
-    ],
-    provider: {
-      "@type": "Organization",
-      name: "Pravice Abogados",
-    },
-  };
+  const stats = [
+    { number: "25+", label: "Años de experiencia" },
+    { number: "1500+", label: "Casos asesorados" },
+    { number: "300+", label: "Empresas asesoradas" },
+    { number: "Colombia", label: "Cobertura nacional" },
+  ];
 
   return (
     <section className={styles.section} aria-labelledby="experience-title">
-      {/* SCHEMA SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
-
       <div className={styles.container}>
-        {/* HEADER */}
-        <h2 id="experience-title" className={styles.title}>
+        {/* TITLE */}
+
+        <motion.h2
+          id="experience-title"
+          className={styles.title}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           Más de 25 años de experiencia{" "}
           <span>en servicios legales en Colombia</span>
-        </h2>
+        </motion.h2>
 
-        <p className={styles.subtitle}>
+        <motion.p
+          className={styles.subtitle}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           En <strong>Pravice Abogados</strong> contamos con más de
           <strong> 25 años de experiencia en asesoría jurídica</strong>,
           representando a empresas y personas en múltiples áreas del derecho.
-          Nuestro equipo de abogados especialistas trabaja con un enfoque
-          estratégico para ofrecer soluciones legales efectivas, transparentes y
-          adaptadas a cada caso.
-        </p>
+        </motion.p>
 
-        {/* IMAGE GRID */}
-        <div className={styles.grid}>
-          <div className={styles.imageWrapper}>
-            <Image
-              src="/img1.jpg"
-              alt="Equipo de abogados Pravice asesorando clientes en Colombia"
-              fill
-              className={styles.image}
-            />
-          </div>
+        {/* STATS */}
 
-          <div className={styles.imageWrapper}>
-            <Image
-              src="/img2.jpg"
-              alt="Firma de abogados especializada en derecho laboral y comercial"
-              fill
-              className={styles.image}
-            />
-          </div>
-
-          <div className={styles.imageWrapper}>
-            <Image
-              src="/img3.jpg"
-              alt="Asesoría jurídica profesional para empresas y personas"
-              fill
-              className={styles.image}
-            />
-          </div>
-
-          <div className={styles.imageWrapper}>
-            <Image
-              src="/img4.jpg"
-              alt="Abogados expertos en procesos legales en Colombia"
-              fill
-              className={styles.image}
-            />
-          </div>
-
-          <div className={styles.imageWrapper}>
-            <Image
-              src="/img5.jpg"
-              alt="Consultoría legal especializada en derecho civil y penal"
-              fill
-              className={styles.image}
-            />
-          </div>
-
-          <div className={styles.imageWrapper}>
-            <Image
-              src="/img6.jpg"
-              alt="Equipo jurídico con trayectoria en litigios y asesoría empresarial"
-              fill
-              className={styles.image}
-            />
-          </div>
+        <div className={styles.stats}>
+          {stats.map((stat, index) => (
+            <motion.div
+              key={index}
+              className={styles.stat}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.15 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <span className={styles.number}>{stat.number}</span>
+              <p>{stat.label}</p>
+            </motion.div>
+          ))}
         </div>
 
-        {/* INFO CARDS */}
+        {/* CARDS */}
+
         <div className={styles.cards}>
-          <div className={styles.card}>
-            <h4>Áreas del derecho</h4>
-            <p>
-              Derecho laboral, derecho civil, derecho penal, derecho comercial,
-              registro de marcas y procesos de insolvencia empresarial.
-            </p>
-          </div>
-
-          <div className={styles.card}>
-            <h4>Atención legal en toda Colombia</h4>
-            <p>
-              Ofrecemos asesoría jurídica presencial y remota para clientes en
-              todo el país utilizando herramientas digitales seguras.
-            </p>
-          </div>
-
-          <div className={styles.card}>
-            <h4>Experiencia en casos complejos</h4>
-            <p>
-              Nuestro equipo legal brinda acompañamiento integral desde la
-              consulta inicial hasta la resolución del proceso.
-            </p>
-          </div>
+          {[
+            {
+              title: "Áreas del derecho",
+              text: "Derecho laboral, civil, penal, comercial, registro de marcas y procesos de insolvencia.",
+            },
+            {
+              title: "Atención en toda Colombia",
+              text: "Asesoría jurídica presencial y remota con herramientas digitales seguras.",
+            },
+            {
+              title: "Casos complejos",
+              text: "Acompañamiento legal integral desde la consulta inicial hasta la resolución.",
+            },
+          ].map((card, index) => (
+            <motion.div
+              key={index}
+              className={styles.card}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.2 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -6, scale: 1.02 }}
+            >
+              <h4>{card.title}</h4>
+              <p>{card.text}</p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

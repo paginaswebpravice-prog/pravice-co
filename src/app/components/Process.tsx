@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "../styles/Process.module.css";
+import { motion } from "framer-motion";
 
 export default function Process() {
   const schema = {
@@ -9,33 +10,51 @@ export default function Process() {
     name: "Proceso de asesoría legal en Pravice Abogados",
     description:
       "Metodología de trabajo de Pravice Abogados para analizar, planificar y resolver casos legales en Colombia.",
-    step: [
-      {
-        "@type": "HowToStep",
-        name: "Asesoría legal inicial",
-        text: "Un abogado analiza el caso, identifica riesgos legales y propone una estrategia jurídica adecuada.",
-      },
-      {
-        "@type": "HowToStep",
-        name: "Análisis jurídico y planificación",
-        text: "Se estudian documentos, antecedentes y normativa aplicable para diseñar una estrategia legal personalizada.",
-      },
-      {
-        "@type": "HowToStep",
-        name: "Gestión del proceso y resolución",
-        text: "Se ejecuta la estrategia legal mediante negociación, conciliación o representación jurídica hasta resolver el caso.",
-      },
-    ],
-    provider: {
-      "@type": "LegalService",
-      name: "Pravice Abogados",
-      areaServed: "Colombia",
-    },
   };
+
+  const steps = [
+    {
+      icon: "👥",
+      title: "Asesoría legal inicial",
+      text: "Analizamos tu situación legal en detalle para comprender el contexto del caso, identificar riesgos jurídicos y determinar las posibles soluciones legales disponibles.",
+    },
+    {
+      icon: "📊",
+      title: "Análisis jurídico y planificación estratégica",
+      text: "Nuestro equipo estudia la normativa aplicable, los antecedentes del caso y la documentación relevante para diseñar una estrategia legal personalizada.",
+    },
+    {
+      icon: "⚖️",
+      title: "Gestión del proceso y resolución",
+      text: "Representamos tus intereses mediante negociación, conciliación o acciones judiciales según sea necesario.",
+    },
+  ];
+
+  const stats = [
+    {
+      number: "25+",
+      title: "Años de experiencia legal",
+      text: "Trayectoria asesorando empresas y personas en diversas áreas del derecho.",
+    },
+    {
+      number: "98",
+      title: "Aliados estratégicos",
+      text: "Red de profesionales y especialistas jurídicos.",
+    },
+    {
+      number: "40%",
+      title: "Casos resueltos favorablemente",
+      text: "Resultados obtenidos mediante estrategias jurídicas efectivas.",
+    },
+    {
+      number: "100%",
+      title: "Compromiso con cada cliente",
+      text: "Acompañamiento integral durante todo el proceso.",
+    },
+  ];
 
   return (
     <section className={styles.section} aria-labelledby="process-title">
-      {/* SCHEMA SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -43,88 +62,78 @@ export default function Process() {
 
       <div className={styles.container}>
         {/* HEADER */}
-        <h2 id="process-title" className={styles.title}>
-          Nuestro proceso legal <span>paso a paso</span>
-        </h2>
 
-        <p className={styles.subtitle}>
+        <motion.h2
+          id="process-title"
+          className={styles.title}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          Nuestro proceso legal <span>paso a paso</span>
+        </motion.h2>
+
+        <motion.p
+          className={styles.subtitle}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           En <strong>Pravice Abogados</strong> seguimos una metodología clara y
           estratégica para brindar <strong>asesoría jurídica efectiva</strong>.
-          Desde la primera consulta hasta la resolución del caso, nuestros
-          abogados acompañan a cada cliente con experiencia, análisis legal
-          profundo y compromiso profesional.
-        </p>
+        </motion.p>
 
         {/* TIMELINE */}
+
         <div className={styles.timeline}>
-          <div className={styles.step}>
-            <div className={styles.arrow}>👥</div>
-            <h4>Asesoría legal inicial</h4>
-            <p>
-              Analizamos tu situación legal en detalle para comprender el
-              contexto del caso, identificar riesgos jurídicos y determinar las
-              posibles soluciones legales disponibles.
-            </p>
-          </div>
+          {steps.map((step, index) => (
+            <motion.div
+              key={index}
+              className={styles.step}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.2, duration: 0.5 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -6 }}
+            >
+              <motion.div
+                className={styles.arrow}
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                transition={{ delay: index * 0.2 + 0.2 }}
+                viewport={{ once: true }}
+              >
+                {step.icon}
+              </motion.div>
 
-          <div className={styles.step}>
-            <div className={styles.arrow}>📊</div>
-            <h4>Análisis jurídico y planificación estratégica</h4>
-            <p>
-              Nuestro equipo estudia la normativa aplicable, los antecedentes
-              del caso y la documentación relevante para diseñar una estrategia
-              legal personalizada orientada a obtener resultados favorables.
-            </p>
-          </div>
-
-          <div className={styles.step}>
-            <div className={styles.arrow}>⚖️</div>
-            <h4>Gestión del proceso y resolución</h4>
-            <p>
-              Representamos tus intereses mediante negociación, conciliación o
-              acciones judiciales según sea necesario, acompañándote hasta la
-              resolución del caso.
-            </p>
-          </div>
+              <h4>{step.title}</h4>
+              <p>{step.text}</p>
+            </motion.div>
+          ))}
         </div>
 
         {/* STATS */}
+
         <div className={styles.stats}>
-          <div className={styles.stat}>
-            <h3>25+</h3>
-            <p className={styles.statTitle}>Años de experiencia legal</p>
-            <span>
-              Trayectoria asesorando empresas y personas en diversas áreas del
-              derecho en Colombia.
-            </span>
-          </div>
+          {stats.map((stat, index) => (
+            <motion.div
+              key={index}
+              className={styles.stat}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.15 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -6, scale: 1.03 }}
+            >
+              <h3>{stat.number}</h3>
 
-          <div className={styles.stat}>
-            <h3>98</h3>
-            <p className={styles.statTitle}>Aliados estratégicos</p>
-            <span>
-              Red de profesionales y especialistas jurídicos en distintas áreas
-              del derecho.
-            </span>
-          </div>
+              <p className={styles.statTitle}>{stat.title}</p>
 
-          <div className={styles.stat}>
-            <h3>40%</h3>
-            <p className={styles.statTitle}>Casos resueltos favorablemente</p>
-            <span>
-              Experiencia en la resolución de conflictos legales mediante
-              estrategias jurídicas efectivas.
-            </span>
-          </div>
-
-          <div className={styles.stat}>
-            <h3>100%</h3>
-            <p className={styles.statTitle}>Compromiso con cada cliente</p>
-            <span>
-              Acompañamiento integral durante todas las etapas del proceso
-              legal.
-            </span>
-          </div>
+              <span>{stat.text}</span>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

@@ -3,6 +3,7 @@
 import styles from "../styles/Hero.module.css";
 import Link from "next/link";
 import Head from "next/head";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   const schema = {
@@ -25,7 +26,6 @@ export default function Hero() {
 
   return (
     <>
-      {/* Datos estructurados SEO */}
       <Head>
         <script
           type="application/ld+json"
@@ -38,44 +38,65 @@ export default function Hero() {
         id="hero"
         aria-label="Firma de abogados expertos en Colombia"
       >
-        {/* Overlay oscuro */}
         <div className={styles.overlay}></div>
 
-        {/* Contenido */}
-        <div className={styles.content}>
-          <h1 className={styles.title}>
+        <motion.div
+          className={styles.content}
+          initial={{ opacity: 0, scale: 0.97 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+        >
+          <motion.h1
+            className={styles.title}
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+          >
             Abogados especialistas en asesoría legal en Colombia
-          </h1>
+          </motion.h1>
 
-          <p className={styles.subtitle}>
+          <motion.p
+            className={styles.subtitle}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+          >
             Más de 25 años brindando <strong>soluciones jurídicas</strong> para
             empresas y personas. Nuestro equipo de{" "}
             <strong>abogados expertos</strong> te acompaña en cada proceso legal
             con profesionalismo, estrategia y resultados.
-          </p>
+          </motion.p>
 
-          <div className={styles.buttons}>
-            <Link
-              href="https://legalapp.pravice.co/login.php"
-              className={styles.primaryBtn}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Consultar mi caso legal"
-            >
-              Consultar mi caso
-            </Link>
+          <motion.div
+            className={styles.buttons}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.6 }}
+          >
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
+              <Link
+                href="https://legalapp.pravice.co/login.php"
+                className={styles.primaryBtn}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Consultar mi caso
+              </Link>
+            </motion.div>
 
-            <Link
-              href="https://drive.google.com/file/d/1IIEGEpqNm_FiPhvKKWBSnr_iLbDXcBWV/view"
-              className={styles.secondaryBtn}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Conocer la aplicación Legal App"
-            >
-              Conoce Legal App
-            </Link>
-          </div>
-        </div>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
+              <Link
+                href="https://drive.google.com/file/d/1IIEGEpqNm_FiPhvKKWBSnr_iLbDXcBWV/view"
+                className={styles.secondaryBtn}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Conoce Legal App
+              </Link>
+            </motion.div>
+          </motion.div>
+        </motion.div>
+
         <p className={styles.seoText}>
           Firma de abogados en Colombia especializada en derecho corporativo,
           civil, comercial y asesoría legal empresarial. Ofrecemos consultas

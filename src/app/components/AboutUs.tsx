@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/AboutUs.module.css";
 import Image from "next/image";
 import { faScaleBalanced } from "@fortawesome/free-solid-svg-icons/faScaleBalanced";
+import { motion } from "framer-motion";
 
 export default function AboutUs() {
   const schema = {
@@ -11,19 +12,7 @@ export default function AboutUs() {
     "@type": "LegalService",
     name: "Pravice Abogados",
     description:
-      "Firma de abogados en Colombia especializada en asesoría jurídica empresarial y personal. Más de 25 años brindando soluciones legales estratégicas.",
-    foundingDate: "1998",
-    areaServed: {
-      "@type": "Country",
-      name: "Colombia",
-    },
-    serviceType: [
-      "Derecho laboral",
-      "Derecho civil",
-      "Derecho comercial",
-      "Registro de marcas",
-      "Insolvencia empresarial",
-    ],
+      "Firma de abogados en Colombia especializada en asesoría jurídica empresarial y personal.",
   };
 
   return (
@@ -32,7 +21,6 @@ export default function AboutUs() {
       id="aboutUs"
       aria-labelledby="aboutus-title"
     >
-      {/* SCHEMA SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -41,64 +29,109 @@ export default function AboutUs() {
       <div className={styles.container}>
         {/* LEFT */}
         <div className={styles.left}>
-          <h2 id="aboutus-title">Quiénes somos</h2>
+          <motion.h2
+            id="aboutus-title"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Quiénes somos
+          </motion.h2>
 
-          <p className={styles.description}>
+          <motion.p
+            className={styles.description}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             <strong>Pravice Abogados</strong> es una firma de abogados en
-            Colombia con más de <strong>25 años de experiencia</strong> en la
-            prestación de servicios legales. Desde 1998 hemos evolucionado para
-            ofrecer asesoría jurídica integral a empresas y personas, combinando
-            experiencia legal, innovación tecnológica y estrategias jurídicas
-            efectivas.
-          </p>
+            Colombia con más de <strong>25 años de experiencia</strong>.
+          </motion.p>
 
-          <p className={styles.description}>
+          <motion.p
+            className={styles.description}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.35, duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             Lo que comenzó como un proyecto enfocado en recuperación de cartera
             se ha transformado en una firma legal con especialistas en
-            diferentes áreas del derecho, incluyendo derecho laboral, derecho
-            comercial, registro de marcas, insolvencia empresarial y asesoría
-            jurídica corporativa.
-          </p>
+            diferentes áreas del derecho.
+          </motion.p>
 
-          <a className={styles.button} href="/#services">
-            <FontAwesomeIcon icon={faScaleBalanced} /> Conoce nuestros servicio
-          </a>
+          <motion.a
+            className={styles.button}
+            href="/#services"
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ type: "spring", stiffness: 200 }}
+          >
+            <FontAwesomeIcon icon={faScaleBalanced} /> Conoce nuestros servicios
+          </motion.a>
 
           <ul className={styles.list}>
-            <li>
-              Innovar en la prestación de <strong>servicios legales</strong> en
-              Colombia.
-            </li>
-            <li>
-              Brindar <strong>soluciones jurídicas estratégicas</strong> con
-              resultados efectivos.
-            </li>
-            <li>
-              Acompañar a nuestros clientes durante todo el proceso legal con
-              transparencia y compromiso.
-            </li>
+            <motion.li
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              Innovar en la prestación de <strong>servicios legales</strong>.
+            </motion.li>
+
+            <motion.li
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.5 }}
+              viewport={{ once: true }}
+            >
+              Brindar <strong>soluciones jurídicas estratégicas</strong>.
+            </motion.li>
+
+            <motion.li
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.6 }}
+              viewport={{ once: true }}
+            >
+              Acompañar a nuestros clientes durante todo el proceso legal.
+            </motion.li>
           </ul>
         </div>
 
         {/* RIGHT */}
         <div className={styles.right}>
-          <div className={styles.imageWrapper}>
+          <motion.div
+            className={styles.imageWrapper}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             <Image
               src="/foto-grupal.jpg"
               alt="Equipo de abogados de Pravice Abogados en Colombia"
               fill
               className={styles.image}
             />
-          </div>
+          </motion.div>
 
-          <div className={styles.testimonial}>
+          <motion.div
+            className={styles.testimonial}
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             <p>
               "Pravice Abogados nos brindó un acompañamiento excepcional en
-              nuestro proceso legal. Su equipo demostró experiencia,
-              profesionalismo y un compromiso real con los resultados."
+              nuestro proceso legal."
             </p>
             <span>— Juan Camilo Restrepo, Gerente General</span>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
