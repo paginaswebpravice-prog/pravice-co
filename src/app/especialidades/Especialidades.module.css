@@ -1,0 +1,177 @@
+.especialidades {
+  padding: 140px 20px 100px 20px;
+  background: linear-gradient(to bottom, #ffffff, #f5f9fc);
+}
+
+/* CONTENEDOR */
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* TITULOS */
+
+.titulo {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+  color: #004a80;
+  font-weight: 700;
+}
+
+.descripcion {
+  text-align: center;
+  color: #808080;
+  margin-bottom: 70px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.05rem;
+}
+
+/* GRID ESPECIALIDADES */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+/* CARD */
+
+.card {
+  background: #ffffff;
+  padding: 35px 28px;
+  border-radius: 14px;
+  text-align: center;
+  border-top: 4px solid #f7c600;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 74, 128, 0.15);
+  border-top: 4px solid #c4911a;
+}
+
+/* ICONO */
+
+.icono {
+  font-size: 32px;
+  margin-bottom: 18px;
+  color: #004a80;
+  transition: 0.3s;
+}
+
+.card:hover .icono {
+  color: #f7c600;
+  transform: scale(1.1);
+}
+
+/* TEXTO CARD */
+
+.card h3 {
+  margin-bottom: 12px;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #808080;
+  line-height: 1.5;
+}
+
+/* SECCION PORTALES */
+
+.portalesWrapper {
+  border-top: 2px solid #e9eef3;
+  padding-top: 60px;
+}
+
+/* TITULO PORTALES */
+
+.tituloPortales {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  color: #004a80;
+}
+
+/* GRID PORTALES */
+
+.portalesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* CARD PORTAL */
+
+.portalCard {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 14px;
+
+  text-decoration: none;
+  color: inherit;
+
+  border-left: 4px solid #004a80;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+
+  transition: all 0.35s ease;
+}
+
+.portalCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 74, 128, 0.15);
+  border-left: 4px solid #f7c600;
+}
+
+/* TITULO PORTAL */
+
+.portalCard h4 {
+  margin-bottom: 10px;
+  color: #004a80;
+  font-size: 1.1rem;
+}
+
+/* TEXTO PORTAL */
+
+.portalCard p {
+  font-size: 0.95rem;
+  color: #808080;
+  line-height: 1.5;
+}
+
+/* LINK PORTAL */
+
+.portalLink {
+  margin-top: 18px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  font-weight: 600;
+
+  color: #004a80;
+  transition: 0.25s;
+}
+
+.portalCard:hover .portalLink {
+  color: #c4911a;
+}

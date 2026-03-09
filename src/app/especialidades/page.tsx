@@ -1,3 +1,226 @@
+import styles from "./Especialidades.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGlobeAmericas,
+  faArrowUpRightFromSquare,
+  faScaleBalanced,
+  faFileContract,
+  faHandshake,
+  faGavel,
+  faBuilding,
+  faBriefcase,
+  faFileSignature,
+  faUsers,
+  faLandmark,
+  faBalanceScale,
+  faClipboardCheck,
+  faShieldHalved,
+} from "@fortawesome/free-solid-svg-icons";
+
+interface Especialidad {
+  titulo: string;
+  descripcion: string;
+  icono: any;
+}
+
+interface Portal {
+  nombre: string;
+  descripcion: string;
+  link: string;
+}
+
 export default function Especialidades() {
-  return <>Especialidades section</>;
+  const especialidades: Especialidad[] = [
+    {
+      titulo: "Derecho Comercial",
+      descripcion:
+        "Asesoría jurídica integral para empresas, contratos mercantiles y operaciones comerciales.",
+      icono: faScaleBalanced,
+    },
+    {
+      titulo: "Recuperación de Cartera",
+      descripcion:
+        "Estrategias legales y administrativas para optimizar el recaudo de cartera.",
+      icono: faFileContract,
+    },
+    {
+      titulo: "Conciliación",
+      descripcion:
+        "Solución de conflictos mediante mecanismos alternativos y conciliación extrajudicial.",
+      icono: faHandshake,
+    },
+    {
+      titulo: "Litigios",
+      descripcion:
+        "Representación jurídica en procesos judiciales ante distintas jurisdicciones.",
+      icono: faGavel,
+    },
+    {
+      titulo: "Derecho Empresarial",
+      descripcion:
+        "Acompañamiento legal en la estructuración y desarrollo de empresas.",
+      icono: faBuilding,
+    },
+    {
+      titulo: "Asesoría Corporativa",
+      descripcion:
+        "Servicios jurídicos estratégicos para la toma de decisiones empresariales.",
+      icono: faBriefcase,
+    },
+    {
+      titulo: "Derecho Contractual",
+      descripcion:
+        "Elaboración, revisión y negociación de contratos civiles y comerciales.",
+      icono: faFileSignature,
+    },
+    {
+      titulo: "Derecho Societario",
+      descripcion:
+        "Constitución, transformación y reorganización de sociedades comerciales.",
+      icono: faUsers,
+    },
+    {
+      titulo: "Derecho Administrativo",
+      descripcion:
+        "Asesoría y representación en procesos ante entidades públicas y administrativas.",
+      icono: faLandmark,
+    },
+    {
+      titulo: "Resolución de Conflictos",
+      descripcion:
+        "Mecanismos jurídicos para la solución eficiente de disputas empresariales y comerciales.",
+      icono: faBalanceScale,
+    },
+    {
+      titulo: "Cumplimiento Normativo",
+      descripcion:
+        "Asesoría en cumplimiento legal, regulación empresarial y gestión de riesgos jurídicos.",
+      icono: faClipboardCheck,
+    },
+    {
+      titulo: "Protección Jurídica Empresarial",
+      descripcion:
+        "Estrategias legales para proteger los intereses jurídicos y patrimoniales de las empresas.",
+      icono: faShieldHalved,
+    },
+  ];
+
+  const portales: Portal[] = [
+    {
+      nombre: "Cobrando Online",
+      descripcion:
+        "Plataforma especializada en procesos de cobro y recuperación de cartera.",
+      link: "https://www.cobrandoonline.com/",
+    },
+    {
+      nombre: "Recaudo Cartera IPS y EPS",
+      descripcion:
+        "Soluciones jurídicas y administrativas para el recaudo de cartera en el sector salud.",
+      link: "https://www.recaudocarteraipsyeps.com/",
+    },
+    {
+      nombre: "SOL Centro de Conciliación",
+      descripcion:
+        "Centro especializado en conciliación y resolución alternativa de conflictos.",
+      link: "https://www.solcentrodeconciliacion.com/",
+    },
+  ];
+
+  return (
+    <>
+      <section
+        id="especialidades"
+        className={styles.especialidades}
+        itemScope
+        itemType="https://schema.org/LegalService"
+      >
+        <div className={styles.container}>
+          <h2 className={styles.titulo} itemProp="name">
+            Nuestras Especialidades
+          </h2>
+
+          <p className={styles.descripcion} itemProp="description">
+            Nuestro equipo jurídico cuenta con amplia experiencia en diferentes
+            áreas del derecho, brindando soluciones estratégicas a empresas y
+            particulares.
+          </p>
+
+          {/* Especialidades */}
+
+          <div className={styles.cards}>
+            {especialidades.map((esp, index) => (
+              <div
+                key={index}
+                className={styles.card}
+                itemScope
+                itemType="https://schema.org/Service"
+              >
+                <FontAwesomeIcon icon={esp.icono} className={styles.icono} />
+                <h3 itemProp="name">{esp.titulo}</h3>
+                <p itemProp="description">{esp.descripcion}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Portales */}
+
+          <div className={styles.portalesWrapper}>
+            <h3 className={styles.tituloPortales}>
+              <FontAwesomeIcon icon={faGlobeAmericas} />
+              Visita nuestros portales especializados
+            </h3>
+
+            <div className={styles.portalesGrid}>
+              {portales.map((portal, index) => (
+                <a
+                  key={index}
+                  href={portal.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.portalCard}
+                  title={portal.nombre}
+                  aria-label={`Visitar portal ${portal.nombre}`}
+                >
+                  <h4>{portal.nombre}</h4>
+                  <p>{portal.descripcion}</p>
+
+                  <span className={styles.portalLink}>
+                    Visitar portal
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Schema SEO */}
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LegalService",
+            name: "Nuestras Especialidades",
+            areaServed: "Colombia",
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "Especialidades Jurídicas",
+              itemListElement: especialidades.map((esp) => ({
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: esp.titulo,
+                  description: esp.descripcion,
+                },
+              })),
+            },
+            sameAs: portales.map((portal) => portal.link),
+          }),
+        }}
+      />
+    </>
+  );
 }
