@@ -36,15 +36,24 @@ export default function Footer() {
             <div className={styles.tag}>DERECHO · ESTRATEGIA · RESULTADOS</div>
 
             <div className={styles.socials}>
-              <Link href="#" target="_blank">
+              <Link
+                href="https://www.facebook.com/praviceabogadosespecializados"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faFacebook} />
               </Link>
 
-              <Link href="#" target="_blank">
+              <Link
+                href="https://www.instagram.com/pravice_abogados/"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faInstagram} />
               </Link>
 
-              <Link href="#" target="_blank">
+              <Link
+                href="https://co.linkedin.com/company/praviceabogadosespecializados"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faLinkedin} />
               </Link>
 
