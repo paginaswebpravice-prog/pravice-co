@@ -60,7 +60,7 @@ export default function AboutUs() {
             jurídica corporativa.
           </p>
 
-          <a className={styles.button}>
+          <a className={styles.button} href="/#services">
             <FontAwesomeIcon icon={faScaleBalanced} /> Conoce nuestros servicio
           </a>
 
