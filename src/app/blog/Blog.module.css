@@ -1,0 +1,116 @@
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 28px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #d0d0d0;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+/* HEADER DEL BLOG */
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #004a80;
+  margin-bottom: 16px;
+}
+
+.description {
+  font-size: 18px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* GRID ARTICULOS */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+  border: 1px solid #eee;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #5eb3e4;
+}
+
+.card h3 {
+  font-size: 20px;
+  color: #004a80;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #666;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #c4911a;
+  font-weight: 500;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #124e78; /* azul corporativo */
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3f8ec3;
+}

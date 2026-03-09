@@ -1,0 +1,171 @@
+.article {
+  max-width: 900px;
+  margin: auto;
+  padding: 70px 20px;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  line-height: 1.7;
+  color: #000;
+}
+
+/* HEADER */
+
+.header {
+  margin-bottom: 45px;
+}
+
+.title {
+  font-size: 42px;
+  color: #004a80;
+  margin-bottom: 20px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.intro {
+  font-size: 18px;
+  color: #808080;
+  margin-bottom: 14px;
+}
+
+/* SECTIONS */
+
+.section {
+  margin-top: 45px;
+}
+
+.section h2 {
+  font-size: 28px;
+  color: #004a80;
+  margin-bottom: 15px;
+  border-left: 4px solid #5eb3e4;
+  padding-left: 12px;
+  font-weight: 600;
+}
+
+.section p {
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 14px;
+}
+
+/* LISTAS */
+
+.section ul {
+  margin-top: 12px;
+  margin-bottom: 16px;
+  padding-left: 22px;
+}
+
+.section li {
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 16px;
+}
+
+/* CARDS PARA ESTRATEGIAS */
+
+.strategy {
+  margin-top: 22px;
+  padding: 22px;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  background: #ffffff;
+  transition: all 0.25s ease;
+}
+
+.strategy:hover {
+  border-color: #5eb3e4;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.strategy h3 {
+  color: #004a80;
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.strategy p {
+  color: #555;
+}
+
+/* CONCLUSION DESTACADA */
+
+.conclusion {
+  margin-top: 50px;
+  padding: 28px;
+  background: #f8fafc;
+  border-left: 5px solid #f7c600;
+  border-radius: 6px;
+}
+
+.conclusion h2 {
+  color: #004a80;
+  margin-bottom: 10px;
+}
+
+.conclusion p {
+  color: #444;
+}
+
+/* LINKS */
+
+.article a {
+  color: #004a80;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.article a:hover {
+  text-decoration: underline;
+}
+
+/* TABLAS (por si luego agregas estadísticas) */
+
+.article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.article th {
+  background: #004a80;
+  color: #ffffff;
+  padding: 10px;
+  text-align: left;
+}
+
+.article td {
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .article {
+    padding: 60px 18px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .section h2 {
+    font-size: 22px;
+  }
+
+  .strategy {
+    padding: 18px;
+  }
+}

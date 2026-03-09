@@ -1,0 +1,104 @@
+.articulo {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 30px;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  line-height: 1.8;
+  color: #000;
+  background: #ffffff;
+}
+
+/* TITULO PRINCIPAL */
+
+.titulo {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #004a80;
+  line-height: 1.2;
+}
+
+/* SUBTITULOS */
+
+.articulo h2 {
+  font-size: 28px;
+  margin-top: 45px;
+  margin-bottom: 15px;
+  color: #004a80;
+  font-weight: 600;
+}
+
+.articulo h3 {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #c4911a;
+  font-weight: 600;
+}
+
+/* PARRAFOS */
+
+.articulo p {
+  font-size: 17px;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+/* LISTAS */
+
+.articulo ul {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+}
+
+.articulo li {
+  font-size: 17px;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+/* DESTACADOS */
+
+.articulo strong {
+  color: #004a80;
+}
+
+/* LINKS */
+
+.articulo a {
+  color: #5eb3e4;
+  text-decoration: none;
+}
+
+.articulo a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .articulo {
+    padding: 20px;
+  }
+
+  .titulo {
+    font-size: 30px;
+  }
+
+  .articulo h2 {
+    font-size: 24px;
+  }
+
+  .articulo h3 {
+    font-size: 20px;
+  }
+
+  .articulo p,
+  .articulo li {
+    font-size: 16px;
+  }
+}

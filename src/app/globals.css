@@ -43,6 +43,10 @@ section {
   scroll-margin-top: 100px;
 }
 
+main {
+  padding-top: 120px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
