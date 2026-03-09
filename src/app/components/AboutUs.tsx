@@ -1,7 +1,9 @@
 "use client";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/AboutUs.module.css";
 import Image from "next/image";
+import { faScaleBalanced } from "@fortawesome/free-solid-svg-icons/faScaleBalanced";
 
 export default function AboutUs() {
   const schema = {
@@ -58,7 +60,9 @@ export default function AboutUs() {
             jurídica corporativa.
           </p>
 
-          <button className={styles.button}>🚀 Nuestra misión</button>
+          <a className={styles.button}>
+            <FontAwesomeIcon icon={faScaleBalanced} /> Conoce nuestros servicio
+          </a>
 
           <ul className={styles.list}>
             <li>
