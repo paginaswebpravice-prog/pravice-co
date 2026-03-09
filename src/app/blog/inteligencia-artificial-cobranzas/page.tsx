@@ -1,6 +1,6 @@
 import styles from "./Article.module.css";
 
-export default function ArticuloIA() {
+export default function InteligenciaArtificialCobranzas() {
   return (
     <article className={styles.articulo}>
       <h1 className={styles.titulo}>
