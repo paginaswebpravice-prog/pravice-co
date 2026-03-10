@@ -1,0 +1,55 @@
+.section {
+  padding: 90px 20px;
+  background: #f5f7fa;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #1c4f7a;
+  margin-bottom: 15px;
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  color: #5f6c7b;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.mapWrapper {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.mapWrapper iframe {
+  border: none;
+}
+
+.addressCard {
+  background: white;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.addressCard h3 {
+  color: #1c4f7a;
+  margin-bottom: 10px;
+}
+
+.addressCard p {
+  margin: 4px 0;
+  color: #5f6c7b;
+}

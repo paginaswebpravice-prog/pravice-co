@@ -8,6 +8,7 @@ import AboutUs from "./components/AboutUs";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import BlogPreview from "./components/BlogPreview";
+import OfficeLocation from "./components/OfficeLocation";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <AboutUs />
       <BlogPreview />
       <FAQ />
+      <OfficeLocation />
       <Footer />
     </>
   );
