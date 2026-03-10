@@ -23,6 +23,46 @@
   font-size: 18px;
   color: #808080;
   line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* TABLE OF CONTENTS */
+
+.toc {
+  margin-top: 35px;
+  padding: 22px 25px;
+  background: #f7f9fb;
+  border-radius: 10px;
+  border: 1px solid #e6edf3;
+}
+
+.toc h2 {
+  font-size: 20px;
+  color: #004a80;
+  margin-bottom: 15px;
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc li {
+  margin-bottom: 10px;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #004a80;
+  font-size: 16px;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+.toc a:hover {
+  color: #5eb3e4;
+  transform: translateX(3px);
 }
 
 /* SECTIONS */
@@ -88,4 +128,20 @@
 
 .conclusion p {
   color: #444;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .section h2 {
+    font-size: 24px;
+  }
+
+  .toc {
+    padding: 18px;
+  }
 }
