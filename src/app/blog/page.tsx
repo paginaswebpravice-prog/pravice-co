@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
 import styles from "./Blog.module.css";
 
 const articles = [
@@ -67,28 +70,47 @@ const articles = [
 export default function BlogPage() {
   return (
     <section className={styles.section}>
-      <div className={styles.header}>
-        <h1 className={styles.title}>Blog Juridico</h1>
+      <motion.div
+        className={styles.header}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+      >
+        <h1 className={styles.title}>Blog Jurídico</h1>
 
         <p className={styles.description}>
           Encuentra guías, estrategias legales y tendencias sobre conciliación,
           gestión de cartera y recuperación de pagos para empresas en Colombia y
           Latinoamérica.
         </p>
-      </div>
+      </motion.div>
 
       <div className={styles.grid}>
-        {articles.map((article) => (
-          <Link
+        {articles.map((article, index) => (
+          <motion.div
             key={article.slug}
-            href={`/blog/${article.slug}`}
-            className={styles.card}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.5,
+              delay: index * 0.08,
+            }}
+            viewport={{ once: true }}
           >
-            <h3>{article.title}</h3>
-            <p>{article.description}</p>
+            <Link href={`/blog/${article.slug}`} className={styles.card}>
+              <motion.div
+                whileHover={{ scale: 1.04, y: -6 }}
+                whileTap={{ scale: 0.97 }}
+                transition={{ duration: 0.25 }}
+              >
+                <h3>{article.title}</h3>
+                <p>{article.description}</p>
 
-            <span className={styles.link}>Leer artículo →</span>
-          </Link>
+                <span className={styles.link}>Leer artículo →</span>
+              </motion.div>
+            </Link>
+          </motion.div>
         ))}
       </div>
     </section>
