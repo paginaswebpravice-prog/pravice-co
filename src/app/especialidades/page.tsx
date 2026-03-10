@@ -1,4 +1,7 @@
+"use client";
+
 import styles from "./Especialidades.module.css";
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGlobeAmericas,
@@ -135,44 +138,81 @@ export default function Especialidades() {
         itemType="https://schema.org/LegalService"
       >
         <div className={styles.container}>
-          <h2 className={styles.titulo} itemProp="name">
-            Nuestras Especialidades
-          </h2>
+          {/* TITULO */}
 
-          <p className={styles.descripcion} itemProp="description">
+          <motion.h2
+            className={styles.titulo}
+            itemProp="name"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Nuestras Especialidades
+          </motion.h2>
+
+          {/* DESCRIPCION */}
+
+          <motion.p
+            className={styles.descripcion}
+            itemProp="description"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             Nuestro equipo jurídico cuenta con amplia experiencia en diferentes
             áreas del derecho, brindando soluciones estratégicas a empresas y
             particulares.
-          </p>
+          </motion.p>
 
-          {/* Especialidades */}
+          {/* ESPECIALIDADES */}
 
           <div className={styles.cards}>
             {especialidades.map((esp, index) => (
-              <div
+              <motion.div
                 key={index}
                 className={styles.card}
                 itemScope
                 itemType="https://schema.org/Service"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.05, duration: 0.5 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -6 }}
               >
-                <FontAwesomeIcon icon={esp.icono} className={styles.icono} />
+                <motion.div
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  transition={{ delay: index * 0.05 }}
+                  viewport={{ once: true }}
+                >
+                  <FontAwesomeIcon icon={esp.icono} className={styles.icono} />
+                </motion.div>
+
                 <h3 itemProp="name">{esp.titulo}</h3>
                 <p itemProp="description">{esp.descripcion}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
 
-          {/* Portales */}
+          {/* PORTALES */}
 
           <div className={styles.portalesWrapper}>
-            <h3 className={styles.tituloPortales}>
+            <motion.h3
+              className={styles.tituloPortales}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
               <FontAwesomeIcon icon={faGlobeAmericas} />
               Visita nuestros portales especializados
-            </h3>
+            </motion.h3>
 
             <div className={styles.portalesGrid}>
               {portales.map((portal, index) => (
-                <a
+                <motion.a
                   key={index}
                   href={portal.link}
                   target="_blank"
@@ -180,6 +220,11 @@ export default function Especialidades() {
                   className={styles.portalCard}
                   title={portal.nombre}
                   aria-label={`Visitar portal ${portal.nombre}`}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1, duration: 0.5 }}
+                  viewport={{ once: true }}
+                  whileHover={{ y: -5, scale: 1.02 }}
                 >
                   <h4>{portal.nombre}</h4>
                   <p>{portal.descripcion}</p>
@@ -188,14 +233,14 @@ export default function Especialidades() {
                     Visitar portal
                     <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                   </span>
-                </a>
+                </motion.a>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Schema SEO */}
+      {/* SCHEMA SEO */}
 
       <script
         type="application/ld+json"
