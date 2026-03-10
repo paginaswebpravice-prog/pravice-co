@@ -13,8 +13,32 @@ const fadeUp = {
 };
 
 export default function ArticleGestionCarteraSalud() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: "Gestión de cartera en IPS y EPS: estrategias efectivas",
+    description:
+      "Guía completa sobre gestión de cartera en IPS y EPS en Colombia, estrategias para recuperar pagos, manejar glosas médicas y mejorar el flujo financiero en instituciones de salud.",
+    author: {
+      "@type": "Organization",
+      name: "Centro de Conciliación",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Centro de Conciliación",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://pravice.co/blog/gestion-cartera-ips-eps",
+    },
+  };
+
   return (
     <article className={styles.article}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <motion.header
         className={styles.header}
         variants={fadeUp}

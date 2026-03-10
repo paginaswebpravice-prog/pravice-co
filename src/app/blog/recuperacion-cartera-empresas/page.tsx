@@ -3,6 +3,26 @@
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
 
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: "Métodos efectivos de recuperación de cartera empresarial",
+  description:
+    "Descubre los métodos más efectivos que utilizan las empresas para recuperar cartera, mantener la liquidez y reducir el riesgo financiero.",
+  author: {
+    "@type": "Organization",
+    name: "Centro de Finanzas Empresariales",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Centro de Finanzas Empresariales",
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://tusitio.com/blog/recuperacion-cartera-empresas",
+  },
+};
+
 export default function RecuperacionCarteraEmpresas() {
   return (
     <motion.article
@@ -11,6 +31,10 @@ export default function RecuperacionCarteraEmpresas() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <motion.header
         className={styles.header}
         initial={{ opacity: 0, y: 40 }}

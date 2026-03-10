@@ -3,6 +3,26 @@
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
 
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: "Mediación empresarial: solución rápida para conflictos",
+  description:
+    "Descubre qué es la mediación empresarial, cómo funciona y cuáles son sus beneficios para resolver conflictos comerciales de forma rápida, económica y colaborativa.",
+  author: {
+    "@type": "Organization",
+    name: "Centro de Conciliación",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Centro de Conciliación",
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://pravice.co/blog/mediacion-empresarial",
+  },
+};
+
 export default function ArticuloMediacion() {
   return (
     <motion.article
@@ -12,6 +32,10 @@ export default function ArticuloMediacion() {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <motion.h1
         className={styles.titulo}
         initial={{ opacity: 0, y: 20 }}
