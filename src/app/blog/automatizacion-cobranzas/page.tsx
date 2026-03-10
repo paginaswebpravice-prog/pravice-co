@@ -1,9 +1,31 @@
+"use client";
+
+import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+
+const fadeUp = {
+  initial: { opacity: 0, y: 35 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 0.5 },
+  viewport: { once: true },
+};
+
+const fadeUpSmall = {
+  initial: { opacity: 0, y: 20 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 0.4 },
+  viewport: { once: true },
+};
 
 export default function ArticleAutomatizacionCobranzas() {
   return (
     <article className={styles.article}>
-      <header className={styles.header}>
+      <motion.header
+        className={styles.header}
+        initial={{ opacity: 0, y: 35 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         <h1 className={styles.title}>
           Automatización de cobranzas: cómo mejorar tu recaudo
         </h1>
@@ -32,9 +54,9 @@ export default function ArticleAutomatizacionCobranzas() {
           funciona y cuáles son las mejores estrategias para implementarla en tu
           empresa.
         </p>
-      </header>
+      </motion.header>
 
-      <section className={styles.section}>
+      <motion.section className={styles.section} {...fadeUp}>
         <h2>¿Qué es la automatización de cobranzas?</h2>
 
         <p>
@@ -58,93 +80,93 @@ export default function ArticleAutomatizacionCobranzas() {
           estrategias de recuperación más efectivas y mejorar la eficiencia de
           sus equipos financieros.
         </p>
-      </section>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section className={styles.section} {...fadeUp}>
         <h2>Problemas de la cobranza tradicional</h2>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeUpSmall}>
           <h3>Falta de seguimiento oportuno</h3>
           <p>
             Sin herramientas automatizadas, es difícil mantener un seguimiento
             constante de todas las cuentas por cobrar.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeUpSmall}>
           <h3>Errores administrativos</h3>
           <p>
             Los procesos manuales pueden generar errores en registros, fechas de
             pago o cálculo de valores.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeUpSmall}>
           <h3>Procesos lentos</h3>
           <p>
             El envío manual de recordatorios y la gestión de pagos puede
             retrasar la recuperación de cartera.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeUpSmall}>
           <h3>Baja eficiencia del equipo de cobranzas</h3>
           <p>
             Los equipos de cobranza suelen dedicar demasiado tiempo a tareas
             repetitivas que podrían automatizarse.
           </p>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section className={styles.section} {...fadeUp}>
         <h2>Beneficios de la automatización de cobranzas</h2>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeUpSmall}>
           <h3>1. Mejora en la recuperación de cartera</h3>
           <p>
             Los recordatorios automáticos aumentan significativamente la
             probabilidad de pago por parte de los clientes.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeUpSmall}>
           <h3>2. Reducción de costos operativos</h3>
           <p>
             Al automatizar procesos administrativos, las empresas pueden reducir
             el tiempo y los recursos dedicados a la gestión manual de cobranzas.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeUpSmall}>
           <h3>3. Seguimiento constante de pagos</h3>
           <p>
             Los sistemas automatizados permiten monitorear las cuentas por
             cobrar en tiempo real.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeUpSmall}>
           <h3>4. Mejora en la experiencia del cliente</h3>
           <p>
             Los recordatorios de pago enviados de manera oportuna ayudan a
             evitar conflictos y mantienen una relación más profesional con los
             clientes.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeUpSmall}>
           <h3>5. Mayor control financiero</h3>
           <p>
             Las herramientas tecnológicas generan reportes y análisis que
             facilitan la toma de decisiones estratégicas.
           </p>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section className={styles.section} {...fadeUp}>
         <h2>Estrategias para automatizar el proceso de cobranzas</h2>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeUpSmall}>
           <h3>1. Digitalizar la información de clientes</h3>
 
           <p>
@@ -158,9 +180,9 @@ export default function ArticleAutomatizacionCobranzas() {
             <li>facturas emitidas</li>
             <li>acuerdos de pago</li>
           </ul>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeUpSmall}>
           <h3>2. Implementar recordatorios automáticos</h3>
 
           <p>
@@ -174,9 +196,9 @@ export default function ArticleAutomatizacionCobranzas() {
           </ul>
 
           <p>Esto reduce la probabilidad de retrasos en los pagos.</p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeUpSmall}>
           <h3>3. Segmentar a los clientes según riesgo</h3>
 
           <p>
@@ -185,9 +207,9 @@ export default function ArticleAutomatizacionCobranzas() {
           </p>
 
           <p>De esta forma es posible priorizar los casos de mayor riesgo.</p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeUpSmall}>
           <h3>4. Automatizar acuerdos de pago</h3>
 
           <p>
@@ -199,9 +221,9 @@ export default function ArticleAutomatizacionCobranzas() {
             Los sistemas automatizados permiten programar cuotas y hacer
             seguimiento automático de los compromisos adquiridos.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeUpSmall}>
           <h3>5. Integrar sistemas financieros</h3>
 
           <p>
@@ -210,10 +232,10 @@ export default function ArticleAutomatizacionCobranzas() {
           </p>
 
           <p>Esto permite tener datos actualizados en tiempo real.</p>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section className={styles.section} {...fadeUp}>
         <h2>Tecnologías utilizadas en la automatización de cobranzas</h2>
 
         <p>
@@ -230,9 +252,9 @@ export default function ArticleAutomatizacionCobranzas() {
           <li>herramientas de análisis financiero</li>
           <li>inteligencia artificial para predicción de pagos</li>
         </ul>
-      </section>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section className={styles.section} {...fadeUp}>
         <h2>Automatización de cobranzas para empresas</h2>
 
         <p>
@@ -249,9 +271,9 @@ export default function ArticleAutomatizacionCobranzas() {
           <li>comercio electrónico</li>
           <li>empresas de telecomunicaciones</li>
         </ul>
-      </section>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section className={styles.section} {...fadeUp}>
         <h2>Futuro de la automatización en la gestión de cartera</h2>
 
         <p>
@@ -267,9 +289,9 @@ export default function ArticleAutomatizacionCobranzas() {
           <li>automatización avanzada de procesos financieros</li>
           <li>integración con plataformas digitales de pago</li>
         </ul>
-      </section>
+      </motion.section>
 
-      <section className={styles.conclusion}>
+      <motion.section className={styles.conclusion} {...fadeUp}>
         <h2>Conclusión</h2>
 
         <p>
@@ -289,7 +311,7 @@ export default function ArticleAutomatizacionCobranzas() {
           gestión financiera y se preparan para un entorno empresarial cada vez
           más digital.
         </p>
-      </section>
+      </motion.section>
     </article>
   );
 }

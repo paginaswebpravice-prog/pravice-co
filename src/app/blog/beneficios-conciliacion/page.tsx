@@ -1,9 +1,31 @@
+"use client";
+
+import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+
+const fadeSection = {
+  initial: { opacity: 0, y: 35 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 0.5 },
+  viewport: { once: true },
+};
+
+const fadeItem = {
+  initial: { opacity: 0, y: 20 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 0.4 },
+  viewport: { once: true },
+};
 
 export default function BeneficiosConciliacion() {
   return (
     <article className={styles.article}>
-      <header className={styles.header}>
+      <motion.header
+        className={styles.header}
+        initial={{ opacity: 0, y: 35 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         <h1 className={styles.title}>
           Beneficios de la conciliación para empresas
         </h1>
@@ -31,9 +53,9 @@ export default function BeneficiosConciliacion() {
           conciliación para empresas y por qué se ha convertido en una
           estrategia clave para la gestión de conflictos.
         </p>
-      </header>
+      </motion.header>
 
-      <section className={styles.section}>
+      <motion.section className={styles.section} {...fadeSection}>
         <h2>¿Qué es la conciliación empresarial?</h2>
 
         <p>
@@ -65,9 +87,9 @@ export default function BeneficiosConciliacion() {
         <p>
           Este mecanismo permite resolver disputas de forma rápida y eficiente.
         </p>
-      </section>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section className={styles.section} {...fadeSection}>
         <h2>¿Por qué las empresas utilizan la conciliación?</h2>
 
         <p>
@@ -86,12 +108,12 @@ export default function BeneficiosConciliacion() {
           Además, la conciliación promueve el diálogo y la cooperación entre las
           partes involucradas.
         </p>
-      </section>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section className={styles.section} {...fadeSection}>
         <h2>Principales beneficios de la conciliación para empresas</h2>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeItem}>
           <h3>1. Ahorro de tiempo</h3>
           <p>
             Uno de los mayores beneficios de la conciliación es la rapidez con
@@ -101,9 +123,9 @@ export default function BeneficiosConciliacion() {
             Mientras que un proceso judicial puede tardar meses o incluso años,
             una conciliación puede resolverse en pocas sesiones.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeItem}>
           <h3>2. Reducción de costos legales</h3>
           <p>
             Los procesos judiciales implican gastos relacionados con abogados,
@@ -113,9 +135,9 @@ export default function BeneficiosConciliacion() {
             La conciliación suele ser mucho más económica, lo que la convierte
             en una alternativa atractiva para muchas empresas.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeItem}>
           <h3>3. Soluciones flexibles</h3>
           <p>
             En un proceso judicial, la decisión final la toma un juez. En
@@ -126,9 +148,9 @@ export default function BeneficiosConciliacion() {
             Esto permite construir acuerdos personalizados que se adapten mejor
             a las necesidades de ambas partes.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeItem}>
           <h3>4. Preservación de relaciones comerciales</h3>
           <p>
             En muchos conflictos empresariales, las partes desean continuar
@@ -138,9 +160,9 @@ export default function BeneficiosConciliacion() {
             La conciliación fomenta el diálogo y la cooperación, ayudando a
             preservar las relaciones comerciales.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeItem}>
           <h3>5. Confidencialidad del proceso</h3>
           <p>
             Los procesos judiciales pueden ser públicos, lo que en algunos casos
@@ -150,9 +172,9 @@ export default function BeneficiosConciliacion() {
             La conciliación permite manejar los conflictos de forma más discreta
             y confidencial.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeItem}>
           <h3>6. Mayor probabilidad de cumplimiento</h3>
           <p>
             Los acuerdos logrados mediante conciliación suelen tener una mayor
@@ -162,9 +184,9 @@ export default function BeneficiosConciliacion() {
             Esto se debe a que las soluciones son construidas por las propias
             partes y no impuestas por un juez.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} {...fadeItem}>
           <h3>7. Validez legal del acuerdo</h3>
           <p>
             El acta de conciliación tiene efectos legales y puede ser exigida en
@@ -174,10 +196,10 @@ export default function BeneficiosConciliacion() {
             En muchos casos, el acuerdo conciliatorio tiene la misma fuerza que
             una sentencia judicial.
           </p>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section className={styles.section} {...fadeSection}>
         <h2>Casos en los que las empresas pueden usar conciliación</h2>
 
         <p>
@@ -192,9 +214,9 @@ export default function BeneficiosConciliacion() {
           <li>desacuerdos con proveedores</li>
           <li>reclamaciones comerciales</li>
         </ul>
-      </section>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section className={styles.section} {...fadeSection}>
         <h2>Conciliación como herramienta para recuperar cartera</h2>
 
         <p>
@@ -214,9 +236,9 @@ export default function BeneficiosConciliacion() {
           <li>renegociar condiciones de deuda</li>
           <li>formalizar acuerdos legales</li>
         </ul>
-      </section>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section className={styles.section} {...fadeSection}>
         <h2>Importancia de los centros de conciliación</h2>
 
         <p>
@@ -233,9 +255,9 @@ export default function BeneficiosConciliacion() {
           Acudir a un centro de conciliación garantiza que el proceso se realice
           de manera legal, transparente y organizada.
         </p>
-      </section>
+      </motion.section>
 
-      <section className={styles.conclusion}>
+      <motion.section className={styles.conclusion} {...fadeSection}>
         <h2>Conclusión</h2>
 
         <p>
@@ -255,7 +277,7 @@ export default function BeneficiosConciliacion() {
           manera más estratégica, evitando procesos judiciales prolongados y
           protegiendo sus intereses comerciales.
         </p>
-      </section>
+      </motion.section>
     </article>
   );
 }

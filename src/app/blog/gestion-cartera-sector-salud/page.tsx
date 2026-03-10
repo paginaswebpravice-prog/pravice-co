@@ -1,9 +1,26 @@
+"use client";
+
 import styles from "./Article.module.css";
+import { motion } from "framer-motion";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 35 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6 },
+  },
+};
 
 export default function ArticleGestionCarteraSalud() {
   return (
     <article className={styles.article}>
-      <header className={styles.header}>
+      <motion.header
+        className={styles.header}
+        variants={fadeUp}
+        initial="hidden"
+        animate="visible"
+      >
         <h1 className={styles.title}>
           Gestión de cartera en IPS y EPS: estrategias efectivas
         </h1>
@@ -29,9 +46,15 @@ export default function ArticleGestionCarteraSalud() {
           la recuperación de cartera en IPS y EPS, optimizando procesos
           administrativos y reduciendo riesgos financieros.
         </p>
-      </header>
+      </motion.header>
 
-      <section className={styles.section}>
+      <motion.section
+        className={styles.section}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <h2>¿Qué es la gestión de cartera en el sector salud?</h2>
 
         <p>
@@ -58,20 +81,26 @@ export default function ArticleGestionCarteraSalud() {
           servicios prestados sean pagados dentro de los tiempos establecidos,
           evitando acumulación de deuda y problemas de liquidez.
         </p>
-      </section>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section
+        className={styles.section}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <h2>Principales problemas de cartera en IPS y EPS</h2>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} variants={fadeUp}>
           <h3>Retrasos en los pagos</h3>
           <p>
             Muchas instituciones de salud enfrentan retrasos prolongados en los
             pagos por parte de aseguradoras o entidades responsables.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} variants={fadeUp}>
           <h3>Glosas médicas</h3>
           <p>
             Las glosas son objeciones realizadas por las entidades pagadoras
@@ -81,26 +110,32 @@ export default function ArticleGestionCarteraSalud() {
             Estas pueden generar retrasos en los pagos si no se gestionan
             correctamente.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} variants={fadeUp}>
           <h3>Procesos administrativos complejos</h3>
           <p>
             La documentación, auditorías y procesos de validación pueden
             extender el tiempo de pago de las facturas.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} variants={fadeUp}>
           <h3>Falta de seguimiento a cuentas por cobrar</h3>
           <p>
             Sin una gestión adecuada, muchas cuentas por cobrar pueden quedar
             sin seguimiento oportuno.
           </p>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section
+        className={styles.section}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <h2>Importancia de una buena gestión de cartera en salud</h2>
 
         <p>
@@ -122,12 +157,18 @@ export default function ArticleGestionCarteraSalud() {
           Las instituciones que implementan procesos estructurados de gestión de
           cartera logran recuperar recursos de manera más rápida y eficiente.
         </p>
-      </section>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section
+        className={styles.section}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <h2>Estrategias efectivas para mejorar la recuperación de cartera</h2>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} variants={fadeUp}>
           <h3>1. Organización y control de la facturación</h3>
           <p>
             El primer paso para una buena gestión de cartera es asegurar que
@@ -144,9 +185,9 @@ export default function ArticleGestionCarteraSalud() {
             Una facturación correcta reduce significativamente la probabilidad
             de glosas.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} variants={fadeUp}>
           <h3>2. Gestión efectiva de glosas</h3>
           <p>
             Las glosas deben analizarse y responderse dentro de los tiempos
@@ -158,9 +199,9 @@ export default function ArticleGestionCarteraSalud() {
             <li>respuesta oportuna</li>
             <li>seguimiento constante</li>
           </ul>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} variants={fadeUp}>
           <h3>3. Implementación de sistemas de seguimiento</h3>
           <p>
             El uso de herramientas tecnológicas facilita el seguimiento de
@@ -172,17 +213,17 @@ export default function ArticleGestionCarteraSalud() {
             <li>identificar pagos atrasados</li>
             <li>generar reportes financieros</li>
           </ul>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} variants={fadeUp}>
           <h3>4. Comunicación constante entre entidades</h3>
           <p>
             La comunicación entre IPS, EPS y otras entidades del sistema es
             clave para resolver inconsistencias y acelerar pagos.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} variants={fadeUp}>
           <h3>5. Uso de mecanismos legales cuando es necesario</h3>
           <p>
             En algunos casos, cuando los pagos se retrasan demasiado, es
@@ -194,37 +235,49 @@ export default function ArticleGestionCarteraSalud() {
             <li>acuerdos de pago</li>
             <li>procesos jurídicos</li>
           </ul>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section
+        className={styles.section}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <h2>Indicadores clave en la gestión de cartera</h2>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} variants={fadeUp}>
           <h3>Días de cartera</h3>
           <p>
             Indica el tiempo promedio que tarda una institución en recuperar sus
             cuentas por cobrar.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} variants={fadeUp}>
           <h3>Índice de recuperación</h3>
           <p>
             Mide el porcentaje de cartera recuperada frente al total facturado.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div className={styles.strategy} variants={fadeUp}>
           <h3>Cartera vencida</h3>
           <p>
             Permite identificar el valor total de las deudas que superan los
             plazos de pago.
           </p>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section
+        className={styles.section}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <h2>Tecnología en la gestión de cartera en salud</h2>
 
         <p>
@@ -240,9 +293,15 @@ export default function ArticleGestionCarteraSalud() {
           <li>centralizar información financiera</li>
           <li>optimizar procesos de conciliación</li>
         </ul>
-      </section>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section
+        className={styles.section}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <h2>Importancia de la conciliación en la recuperación de cartera</h2>
 
         <p>
@@ -258,9 +317,15 @@ export default function ArticleGestionCarteraSalud() {
           <li>resolver disputas sobre facturación</li>
           <li>evitar procesos judiciales largos</li>
         </ul>
-      </section>
+      </motion.section>
 
-      <section className={styles.conclusion}>
+      <motion.section
+        className={styles.conclusion}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <h2>Conclusión</h2>
 
         <p>
@@ -280,7 +345,7 @@ export default function ArticleGestionCarteraSalud() {
           financieros y garantizar la continuidad en la prestación de servicios
           de salud.
         </p>
-      </section>
+      </motion.section>
     </article>
   );
 }

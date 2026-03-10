@@ -1,9 +1,35 @@
+"use client";
+
 import styles from "./Article.module.css";
+import { motion } from "framer-motion";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6 },
+  },
+};
+
+const container = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
 
 export default function ConciliacionExtrajudicialColombia() {
   return (
     <article className={styles.article}>
-      <header className={styles.header}>
+      <motion.header
+        className={styles.header}
+        variants={fadeUp}
+        initial="hidden"
+        animate="visible"
+      >
         <h1 className={styles.title}>
           Conciliación extrajudicial en Colombia: guía completa
         </h1>
@@ -22,9 +48,15 @@ export default function ConciliacionExtrajudicialColombia() {
           herramienta clave para empresas, instituciones y ciudadanos que buscan
           resolver disputas de manera rápida, efectiva y legal.
         </p>
-      </header>
+      </motion.header>
 
-      <section className={styles.section}>
+      <motion.section
+        className={styles.section}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <h2>¿Qué es la conciliación extrajudicial?</h2>
 
         <p>
@@ -56,9 +88,15 @@ export default function ConciliacionExtrajudicialColombia() {
           acuerdo tiene fuerza legal y puede ser exigido como si fuera una
           sentencia judicial.
         </p>
-      </section>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section
+        className={styles.section}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <h2>¿Para qué sirve la conciliación extrajudicial?</h2>
 
         <p>
@@ -82,129 +120,111 @@ export default function ConciliacionExtrajudicialColombia() {
           para recuperar pagos o resolver disputas sin afectar relaciones
           comerciales.
         </p>
-      </section>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section
+        className={styles.section}
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <h2>Casos en los que se puede aplicar la conciliación</h2>
 
-        <div className={styles.strategy}>
+        <motion.div variants={fadeUp} className={styles.strategy}>
           <h3>Conflictos por deudas</h3>
           <p>
             Cuando una persona o empresa no paga una obligación, la conciliación
             permite negociar acuerdos de pago sin iniciar un proceso judicial.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div variants={fadeUp} className={styles.strategy}>
           <h3>Conflictos contractuales</h3>
           <p>
             Si existen desacuerdos en la ejecución de un contrato, las partes
             pueden acudir a conciliación para resolver el problema de forma
             rápida.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div variants={fadeUp} className={styles.strategy}>
           <h3>Conflictos comerciales</h3>
           <p>
             Empresas que mantienen relaciones comerciales pueden resolver
             disputas de facturación, pagos o incumplimientos mediante
             conciliación.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div variants={fadeUp} className={styles.strategy}>
           <h3>Conflictos civiles</h3>
           <p>
             Problemas entre particulares, como disputas económicas o acuerdos
             incumplidos, también pueden resolverse mediante conciliación.
           </p>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section
+        className={styles.section}
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <h2>Ventajas de la conciliación extrajudicial</h2>
 
-        <div className={styles.strategy}>
+        <motion.div variants={fadeUp} className={styles.strategy}>
           <h3>1. Ahorro de tiempo</h3>
           <p>
             Los procesos judiciales pueden tardar meses o incluso años. La
             conciliación permite resolver conflictos en mucho menos tiempo.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div variants={fadeUp} className={styles.strategy}>
           <h3>2. Reducción de costos</h3>
           <p>
             Los gastos legales asociados a un juicio suelen ser elevados. La
             conciliación es una alternativa mucho más económica.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div variants={fadeUp} className={styles.strategy}>
           <h3>3. Acuerdos voluntarios</h3>
           <p>
             A diferencia de una sentencia judicial, los acuerdos de conciliación
             son construidos por las propias partes, lo que aumenta la
             probabilidad de cumplimiento.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div variants={fadeUp} className={styles.strategy}>
           <h3>4. Confidencialidad</h3>
           <p>
             Muchos procesos judiciales son públicos, mientras que la
             conciliación permite manejar los conflictos de forma más privada.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.strategy}>
+        <motion.div variants={fadeUp} className={styles.strategy}>
           <h3>5. Preservación de relaciones comerciales</h3>
           <p>
             En el ámbito empresarial, mantener relaciones comerciales es
             fundamental. La conciliación permite resolver conflictos sin romper
             relaciones.
           </p>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
-      <section className={styles.section}>
-        <h2>¿Cómo es el proceso de conciliación en Colombia?</h2>
-
-        <div className={styles.strategy}>
-          <h3>1. Solicitud de conciliación</h3>
-          <p>
-            Una de las partes presenta una solicitud ante un centro de
-            conciliación autorizado.
-          </p>
-        </div>
-
-        <div className={styles.strategy}>
-          <h3>2. Citación a la audiencia</h3>
-          <p>
-            El centro de conciliación cita a las partes involucradas para
-            asistir a una audiencia.
-          </p>
-        </div>
-
-        <div className={styles.strategy}>
-          <h3>3. Audiencia de conciliación</h3>
-          <p>
-            Durante la audiencia, el conciliador facilita el diálogo entre las
-            partes para buscar una solución.
-          </p>
-        </div>
-
-        <div className={styles.strategy}>
-          <h3>4. Acuerdo conciliatorio</h3>
-          <p>
-            Si las partes llegan a un acuerdo, se firma un acta de conciliación
-            que tiene validez legal.
-          </p>
-        </div>
-      </section>
-
-      <section className={styles.section}>
+      <motion.section
+        className={styles.section}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <h2>¿Qué pasa si no hay acuerdo?</h2>
 
         <p>
@@ -217,9 +237,15 @@ export default function ConciliacionExtrajudicialColombia() {
           Sin embargo, en muchos casos la conciliación permite aclarar
           posiciones y facilitar acuerdos posteriores.
         </p>
-      </section>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section
+        className={styles.section}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <h2>Importancia de los centros de conciliación</h2>
 
         <p>
@@ -232,9 +258,15 @@ export default function ConciliacionExtrajudicialColombia() {
           Estos centros cuentan con conciliadores capacitados que ayudan a las
           partes a encontrar soluciones equilibradas y legales.
         </p>
-      </section>
+      </motion.section>
 
-      <section className={styles.section}>
+      <motion.section
+        className={styles.section}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <h2>Conciliación extrajudicial para empresas</h2>
 
         <p>
@@ -255,9 +287,15 @@ export default function ConciliacionExtrajudicialColombia() {
           Utilizar conciliación permite reducir riesgos legales y mantener
           relaciones comerciales estables.
         </p>
-      </section>
+      </motion.section>
 
-      <section className={styles.conclusion}>
+      <motion.section
+        className={styles.conclusion}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <h2>Conclusión</h2>
 
         <p>
@@ -276,7 +314,7 @@ export default function ConciliacionExtrajudicialColombia() {
           diferencia entre un proceso judicial largo y costoso, o una solución
           rápida y beneficiosa para todas las partes.
         </p>
-      </section>
+      </motion.section>
     </article>
   );
 }
