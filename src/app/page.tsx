@@ -6,7 +6,6 @@ import Experience from "./components/Experience";
 import Process from "./components/Process";
 import AboutUs from "./components/AboutUs";
 import FAQ from "./components/FAQ";
-import Footer from "./components/Footer";
 import BlogPreview from "./components/BlogPreview";
 import OfficeLocation from "./components/OfficeLocation";
 
@@ -23,7 +22,6 @@ export default function Home() {
       <BlogPreview />
       <FAQ />
       <OfficeLocation />
-      <Footer />
     </>
   );
 }
