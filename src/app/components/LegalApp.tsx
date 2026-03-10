@@ -24,7 +24,7 @@ export default function LegalApp() {
     provider: {
       "@type": "Organization",
       name: "Pravice Abogados",
-      url: "https://praviceabogados.com",
+      url: "https://www.pravice.co/",
     },
     areaServed: {
       "@type": "Country",
