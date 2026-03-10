@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
     title: "Pravice Abogados | Firma de abogados en Bogotá",
     description:
       "Firma de abogados en Colombia especializada en asesoría jurídica empresarial y personal. Más de 25 años de experiencia.",
-    url: "https://pravice.co",
+    url: "https://www.pravice.co/",
     siteName: "Pravice Abogados",
     locale: "es_CO",
     type: "website",
@@ -109,6 +110,19 @@ export default function RootLayout({
   return (
     <html lang="es-CO">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-MNESPQQ54T"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-MNESPQQ54T');
+          `}
+        </Script>
         <Header />
         <main>{children}</main>
         <Footer />
