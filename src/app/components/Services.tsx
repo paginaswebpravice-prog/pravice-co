@@ -54,7 +54,11 @@ export default function Process() {
   ];
 
   return (
-    <section className={styles.section} aria-labelledby="process-title">
+    <section
+      className={styles.section}
+      aria-labelledby="process-title"
+      id="services"
+    >
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
