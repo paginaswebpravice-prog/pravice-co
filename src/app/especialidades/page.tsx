@@ -122,10 +122,9 @@ export default function Especialidades() {
       link: "https://www.recaudocarteraipsyeps.com/",
     },
     {
-      nombre: "SOL Centro de Conciliación",
-      descripcion:
-        "Centro especializado en conciliación y resolución alternativa de conflictos.",
-      link: "https://www.solcentrodeconciliacion.com/",
+      nombre: "",
+      descripcion: "",
+      link: "",
     },
   ];
 
