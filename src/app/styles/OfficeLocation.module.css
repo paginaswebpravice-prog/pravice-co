@@ -1,6 +1,6 @@
 .section {
   padding: 90px 20px;
-  background: #f5f7fa;
+  background: #ffffff;
 }
 
 .container {
@@ -12,14 +12,15 @@
 .title {
   font-size: 34px;
   font-weight: 700;
-  color: #1c4f7a;
+  color: #004a80;
   margin-bottom: 15px;
 }
 
 .description {
   max-width: 700px;
   margin: 0 auto 50px auto;
-  color: #5f6c7b;
+  color: #000;
+  opacity: 0.7;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -29,11 +30,13 @@
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   margin-bottom: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.05);
 }
 
 .mapWrapper:hover {
   transform: scale(1.01);
   transition: transform 0.3s ease;
+  border-color: #f7c600;
 }
 
 .mapWrapper iframe {
@@ -41,20 +44,22 @@
 }
 
 .addressCard {
-  background: white;
+  background: #ffffff;
   max-width: 420px;
   margin: 0 auto;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .addressCard h3 {
-  color: #1c4f7a;
+  color: #004a80;
   margin-bottom: 10px;
 }
 
 .addressCard p {
   margin: 4px 0;
-  color: #5f6c7b;
+  color: #000;
+  opacity: 0.7;
 }

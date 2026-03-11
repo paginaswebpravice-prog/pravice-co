@@ -1,6 +1,6 @@
 .footer {
-  background: linear-gradient(135deg, #004a80, #5eb3e4);
-  color: white;
+  background: #004a80;
+  color: #ffffff;
   padding-top: 70px;
 }
 
@@ -33,7 +33,7 @@
 /* TAG */
 
 .tag {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.15);
   padding: 8px 14px;
   display: inline-block;
   border-radius: 6px;
@@ -50,7 +50,7 @@
 
 .socials a {
   font-size: 18px;
-  color: white;
+  color: #ffffff;
   transition: 0.3s;
 }
 

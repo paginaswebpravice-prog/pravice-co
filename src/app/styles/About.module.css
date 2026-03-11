@@ -19,7 +19,7 @@
 }
 
 .title span {
-  color: #5eb3e4;
+  color: #f7c600;
 }
 
 /* DESCRIPCION */
@@ -46,13 +46,14 @@
   padding: 30px;
   border-radius: 12px;
   border: 1px solid #e5e5e5;
+  border-top: 2px solid #f7c600;
   transition: all 0.25s ease;
 }
 
 .card:hover {
   transform: translateY(-6px);
   border-color: #f7c600;
-  box-shadow: 0 10px 30px rgba(0, 74, 128, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* TITULO CARD */
@@ -66,9 +67,23 @@
 /* TEXTO CARD */
 
 .card p {
-  color: #808080;
+  color: #000000;
   line-height: 1.6;
 }
+
+/* LINK CARD (si agregas uno) */
+
+.card a {
+  color: #c4911a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: #f7c600;
+}
+
+/* SEO TEXT */
 
 .seoText {
   position: absolute;

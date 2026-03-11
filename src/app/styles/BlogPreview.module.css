@@ -18,12 +18,13 @@
 }
 
 .title span {
-  color: #5eb3e4;
+  color: #f7c600;
 }
 
 .subtitle {
   max-width: 850px;
-  color: #808080;
+  color: #000;
+  opacity: 0.7;
   line-height: 1.7;
   margin-bottom: 60px;
 }
@@ -45,10 +46,11 @@
   padding: 15px;
   border-radius: 10px;
   transition: 0.25s;
+  border-top: 2px solid #f7c600;
 }
 
 .post:hover {
-  background: #f5f9fc;
+  background: rgba(0, 74, 128, 0.05);
   transform: translateY(-3px);
 }
 
@@ -67,7 +69,8 @@
 
 .post p {
   font-size: 14px;
-  color: #808080;
+  color: #000;
+  opacity: 0.7;
   line-height: 1.6;
 }
 
@@ -76,7 +79,7 @@
 .button {
   display: inline-block;
   padding: 12px 24px;
-  border: 1px solid #5eb3e4;
+  border: 1px solid #004a80;
   border-radius: 6px;
   color: #004a80;
   text-decoration: none;

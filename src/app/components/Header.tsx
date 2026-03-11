@@ -98,6 +98,8 @@ export default function Header() {
             <Link
               href="https://legalapp.pravice.co/login.php"
               className={styles.cta}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Consultar mi caso
             </Link>

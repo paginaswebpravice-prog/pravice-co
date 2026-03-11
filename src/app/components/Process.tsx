@@ -1,7 +1,13 @@
 "use client";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/Process.module.css";
 import { motion } from "framer-motion";
+import {
+  faBalanceScale,
+  faChartBar,
+  faPeopleCarry,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Process() {
   const schema = {
@@ -14,17 +20,17 @@ export default function Process() {
 
   const steps = [
     {
-      icon: "👥",
+      icon: <FontAwesomeIcon icon={faPeopleCarry} />,
       title: "Asesoría legal inicial",
       text: "Analizamos tu situación legal en detalle para comprender el contexto del caso, identificar riesgos jurídicos y determinar las posibles soluciones legales disponibles.",
     },
     {
-      icon: "📊",
+      icon: <FontAwesomeIcon icon={faChartBar} />,
       title: "Análisis jurídico y planificación estratégica",
       text: "Nuestro equipo estudia la normativa aplicable, los antecedentes del caso y la documentación relevante para diseñar una estrategia legal personalizada.",
     },
     {
-      icon: "⚖️",
+      icon: <FontAwesomeIcon icon={faBalanceScale} />,
       title: "Gestión del proceso y resolución",
       text: "Representamos tus intereses mediante negociación, conciliación o acciones judiciales según sea necesario.",
     },

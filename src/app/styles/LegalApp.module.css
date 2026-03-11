@@ -5,7 +5,7 @@
 .section {
   background: #ffffff;
   padding: 100px 6%;
-  color: #000;
+  color: #000000;
 }
 
 .container {
@@ -25,11 +25,11 @@
 }
 
 .title span {
-  color: #5eb3e4;
+  color: #f7c600;
 }
 
 .subtitle {
-  color: #808080;
+  color: #000;
   max-width: 900px;
   margin-bottom: 70px;
   line-height: 1.7;
@@ -53,7 +53,7 @@
 }
 
 .item p {
-  color: #808080;
+  color: #000;
   line-height: 1.6;
 }
 
@@ -70,7 +70,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #5eb3e4;
+  background: #004a80;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,13 +80,14 @@
 }
 
 .icon:hover {
-  background: #004a80;
+  background: #f7c600;
+  color: #000000;
 }
 
 .line {
   height: 8px;
   flex: 1;
-  background: linear-gradient(to right, #5eb3e4, #004a80);
+  background: #004a80;
   border-radius: 20px;
 }
 
@@ -101,7 +102,7 @@
 }
 
 .smallCard {
-  border: 1px solid #e6eef5;
+  border: 1px solid #808080;
   padding: 30px;
   border-radius: 12px;
   background: #ffffff;
@@ -109,7 +110,7 @@
 }
 
 .smallCard:hover {
-  border-color: #5eb3e4;
+  border-color: #004a80;
   transform: translateY(-4px);
 }
 
@@ -119,7 +120,7 @@
 
 .smallCard p {
   margin-top: 10px;
-  color: #808080;
+  color: #000;
 }
 
 /* ================================
@@ -127,10 +128,11 @@
 ================================ */
 
 .ctaCard {
-  background: linear-gradient(135deg, #004a80, #5eb3e4);
+  background: #004a80;
   padding: 40px;
   border-radius: 14px;
   color: #ffffff;
+  border: 1px solid #c4911a;
 }
 
 .ctaCard h3 {
@@ -144,7 +146,7 @@
 .ctaButton {
   display: inline-block;
   background: #f7c600;
-  color: #000;
+  color: #000000;
   padding: 12px 24px;
   border-radius: 6px;
   font-weight: 600;

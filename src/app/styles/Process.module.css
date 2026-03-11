@@ -18,12 +18,12 @@
 }
 
 .title span {
-  color: #5eb3e4;
+  color: #f7c600;
 }
 
 .subtitle {
   max-width: 850px;
-  color: #808080;
+  color: #000;
   line-height: 1.7;
   margin-bottom: 60px;
 }
@@ -41,20 +41,22 @@
   position: relative;
   padding: 25px;
   border-radius: 10px;
-  border: 1px solid #e6eef5;
+  border: 1px solid #e6e6e6;
+  border-top: 2px solid #f7c600;
   background: #ffffff;
   transition: 0.25s ease;
 }
 
 .step:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0, 74, 128, 0.08);
+  border-color: #f7c600;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 /* ICON */
 
 .arrow {
-  background: #5eb3e4;
+  background: #004a80;
   padding: 14px;
   border-radius: 8px;
   width: fit-content;
@@ -69,7 +71,7 @@
 }
 
 .step p {
-  color: #808080;
+  color: #000;
   line-height: 1.6;
 }
 
@@ -84,15 +86,16 @@
 .stat {
   padding: 25px;
   border-radius: 10px;
-  border: 1px solid #e6eef5;
+  border: 1px solid #e6e6e6;
+  border-top: 2px solid #f7c600;
   background: #ffffff;
   text-align: center;
   transition: 0.25s;
 }
 
 .stat:hover {
-  border-color: #5eb3e4;
-  box-shadow: 0 10px 25px rgba(0, 74, 128, 0.08);
+  border-color: #c4911a;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .stat h3 {
@@ -104,10 +107,11 @@
 .statTitle {
   font-weight: 600;
   margin-bottom: 8px;
+  color: #000;
 }
 
 .stat span {
-  color: #808080;
+  color: #000;
   line-height: 1.6;
 }
 

@@ -20,12 +20,13 @@
 }
 
 .title span {
-  color: #5eb3e4;
+  color: #f7c600;
 }
 
 .subtitle {
   max-width: 900px;
-  color: #808080;
+  color: #000;
+  opacity: 0.7;
   line-height: 1.7;
   margin-bottom: 70px;
   font-size: 17px;
@@ -41,8 +42,9 @@
 }
 
 .stat {
-  background: #f8fbff;
-  border: 1px solid #e6eef5;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: 2px solid #f7c600;
   border-radius: 14px;
   padding: 30px 20px;
   text-align: center;
@@ -51,8 +53,8 @@
 
 .stat:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 74, 128, 0.08);
-  border-color: #5eb3e4;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  border-color: #f7c600;
 }
 
 .number {
@@ -64,7 +66,7 @@
 }
 
 .stat p {
-  color: #808080;
+  color: #000;
   font-size: 15px;
 }
 
@@ -77,7 +79,8 @@
 }
 
 .card {
-  border: 1px solid #e6eef5;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: 2px solid #f7c600;
   padding: 30px 25px;
   border-radius: 14px;
   background: #ffffff;
@@ -86,8 +89,8 @@
 
 .card:hover {
   transform: translateY(-6px);
-  border-color: #5eb3e4;
-  box-shadow: 0 10px 25px rgba(0, 74, 128, 0.1);
+  border-color: #f7c600;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .card h4 {
@@ -97,7 +100,8 @@
 }
 
 .card p {
-  color: #808080;
+  color: #000;
+  opacity: 0.7;
   line-height: 1.6;
   font-size: 15px;
 }
