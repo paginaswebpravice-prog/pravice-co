@@ -30,7 +30,7 @@
 
 .intro {
   font-size: 18px;
-  color: #808080;
+  color: #000;
   margin-bottom: 14px;
 }
 
@@ -44,14 +44,14 @@
   font-size: 28px;
   color: #004a80;
   margin-bottom: 16px;
-  border-left: 4px solid #5eb3e4;
+  border-left: 4px solid #f7c600;
   padding-left: 12px;
   font-weight: 600;
 }
 
 .section p {
   font-size: 17px;
-  color: #333;
+  color: #000;
   margin-bottom: 14px;
 }
 
@@ -65,7 +65,7 @@
 .section li {
   font-size: 16px;
   margin-bottom: 8px;
-  color: #444;
+  color: #000;
 }
 
 /* TARJETAS DE CONTENIDO */
@@ -93,7 +93,7 @@
 }
 
 .strategy p {
-  color: #555;
+  color: #000;
 }
 
 /* CONCLUSIÓN DESTACADA */
@@ -112,7 +112,7 @@
 }
 
 .conclusion p {
-  color: #444;
+  color: #000;
 }
 
 /* LINKS */
