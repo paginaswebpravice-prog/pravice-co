@@ -30,6 +30,12 @@
   line-height: 1.6;
 }
 
+.categoryTitle {
+  font-size: 26px;
+  margin: 50px 0 20px;
+  color: #004a80;
+}
+
 /* ================= GRID ================= */
 
 .grid {

@@ -1,0 +1,145 @@
+/* ================= WRAPPER ================= */
+
+.wrapper {
+  max-width: 900px;
+  margin: auto;
+  padding: 70px 20px;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  line-height: 1.7;
+  color: #000;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  margin-bottom: 45px;
+}
+
+.title {
+  font-size: 42px;
+  color: #004a80;
+  margin-bottom: 20px;
+  line-height: 1.25;
+}
+
+.description {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 14px;
+}
+
+/* ================= CONTENIDO ================= */
+
+.contentBox {
+  margin-top: 30px;
+  padding: 22px;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px solid #e5e5e5;
+}
+
+.contentBox h3 {
+  color: #004a80;
+  margin-bottom: 10px;
+}
+
+.contentBox ul {
+  padding-left: 20px;
+}
+
+.contentBox li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* ================= SECTIONS ================= */
+
+.section {
+  margin-top: 45px;
+}
+
+.section h2 {
+  font-size: 28px;
+  color: #004a80;
+  margin-bottom: 15px;
+  border-left: 4px solid #f7c600;
+  padding-left: 12px;
+}
+
+.section p {
+  font-size: 17px;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+/* ================= CARDS ================= */
+
+.card {
+  margin-top: 22px;
+  padding: 22px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  background: #ffffff;
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  border-color: #5eb3e4;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  color: #004a80;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #000;
+}
+
+/* ================= CONCLUSION ================= */
+
+.conclusion {
+  margin-top: 50px;
+  padding: 28px;
+  background: #f8fafc;
+  border-left: 5px solid #f7c600;
+  border-radius: 6px;
+}
+
+/* ================= LINKS ================= */
+
+.wrapper a {
+  color: #004a80;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.wrapper a:hover {
+  text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 50px 18px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .section h2 {
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
