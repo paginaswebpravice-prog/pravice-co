@@ -1,5 +1,6 @@
-// app/blog/derecho-empresarial-colombia/page.tsx
+"use client";
 
+import { motion } from "framer-motion";
 import styles from "./Article.module.css";
 
 export const metadata = {
@@ -12,42 +13,86 @@ export default function DerechoEmpresarialColombia() {
   return (
     <main className={styles.wrapper}>
       {/* HERO */}
-      <section className={styles.hero}>
-        <h1 className={styles.title}>
+      <motion.section
+        className={styles.hero}
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <motion.h1
+          className={styles.title}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+        >
           Derecho empresarial en Colombia: claves para proteger tu negocio
-        </h1>
-        <p className={styles.description}>
+        </motion.h1>
+
+        <motion.p
+          className={styles.description}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+        >
           El derecho empresarial en Colombia es fundamental para la creación,
           operación y crecimiento de cualquier negocio. Conocer sus principios
           permite estructurar correctamente tu empresa y protegerla frente a
           riesgos legales.
-        </p>
-      </section>
+        </motion.p>
+      </motion.section>
 
       {/* CONTENIDO */}
-      <section className={styles.contentBox}>
+      <motion.section
+        className={styles.contentBox}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
         <h3>Contenido</h3>
         <ul>
-          <li>¿Qué es el derecho empresarial?</li>
-          <li>Importancia para las empresas</li>
-          <li>Aspectos legales clave</li>
-          <li>Cómo proteger tu negocio</li>
-          <li>Conclusión</li>
+          {[
+            "¿Qué es el derecho empresarial?",
+            "Importancia para las empresas",
+            "Aspectos legales clave",
+            "Cómo proteger tu negocio",
+            "Conclusión",
+          ].map((item, i) => (
+            <motion.li
+              key={i}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: i * 0.1 }}
+              viewport={{ once: true }}
+            >
+              {item}
+            </motion.li>
+          ))}
         </ul>
-      </section>
+      </motion.section>
 
       {/* SECCIÓN 1 */}
-      <section className={styles.section}>
+      <motion.section
+        className={styles.section}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
         <h2>¿Qué es el derecho empresarial?</h2>
         <p>
           El derecho empresarial es el conjunto de normas que regulan la
           actividad de las empresas, incluyendo su constitución, funcionamiento,
           relaciones comerciales y cumplimiento de obligaciones legales.
         </p>
-      </section>
+      </motion.section>
 
       {/* SECCIÓN 2 */}
-      <section className={styles.section}>
+      <motion.section
+        className={styles.section}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
         <h2>Importancia del derecho empresarial</h2>
         <p>
           Aplicar correctamente el derecho empresarial permite evitar sanciones,
@@ -58,39 +103,54 @@ export default function DerechoEmpresarialColombia() {
           Además, fortalece la confianza con clientes, inversionistas y aliados
           comerciales.
         </p>
-      </section>
+      </motion.section>
 
       {/* SECCIÓN 3 */}
       <section className={styles.section}>
-        <h2>Aspectos legales clave en Colombia</h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          Aspectos legales clave en Colombia
+        </motion.h2>
 
-        <div className={styles.card}>
-          <h3>Constitución de la empresa</h3>
-          <p>
-            Elegir el tipo de sociedad adecuado es fundamental para definir la
-            responsabilidad legal y la estructura del negocio.
-          </p>
-        </div>
-
-        <div className={styles.card}>
-          <h3>Contratos comerciales</h3>
-          <p>
-            Los contratos bien redactados permiten prevenir conflictos y
-            proteger los intereses de la empresa.
-          </p>
-        </div>
-
-        <div className={styles.card}>
-          <h3>Cumplimiento normativo</h3>
-          <p>
-            Las empresas deben cumplir con obligaciones legales, tributarias y
-            regulatorias para evitar sanciones.
-          </p>
-        </div>
+        {[
+          {
+            title: "Constitución de la empresa",
+            text: "Elegir el tipo de sociedad adecuado es fundamental para definir la responsabilidad legal y la estructura del negocio.",
+          },
+          {
+            title: "Contratos comerciales",
+            text: "Los contratos bien redactados permiten prevenir conflictos y proteger los intereses de la empresa.",
+          },
+          {
+            title: "Cumplimiento normativo",
+            text: "Las empresas deben cumplir con obligaciones legales, tributarias y regulatorias para evitar sanciones.",
+          },
+        ].map((card, i) => (
+          <motion.div
+            key={i}
+            className={styles.card}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: i * 0.15 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.03 }}
+          >
+            <h3>{card.title}</h3>
+            <p>{card.text}</p>
+          </motion.div>
+        ))}
       </section>
 
       {/* SECCIÓN 4 */}
-      <section className={styles.section}>
+      <motion.section
+        className={styles.section}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
         <h2>Cómo proteger tu negocio legalmente</h2>
         <p>
           Contar con asesoría legal constante, implementar buenas prácticas
@@ -101,10 +161,15 @@ export default function DerechoEmpresarialColombia() {
           También es importante actualizar contratos y políticas internas de
           acuerdo con los cambios en la legislación colombiana.
         </p>
-      </section>
+      </motion.section>
 
       {/* CONCLUSIÓN */}
-      <section className={styles.conclusion}>
+      <motion.section
+        className={styles.conclusion}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
         <h2>Conclusión</h2>
         <p>
           El derecho empresarial en Colombia es una herramienta esencial para
@@ -112,7 +177,7 @@ export default function DerechoEmpresarialColombia() {
           correcta gestión legal permite prevenir conflictos y asegurar el éxito
           a largo plazo.
         </p>
-      </section>
+      </motion.section>
     </main>
   );
 }
