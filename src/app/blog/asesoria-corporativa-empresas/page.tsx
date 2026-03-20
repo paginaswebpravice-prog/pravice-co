@@ -3,14 +3,7 @@
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
 
-export const metadata = {
-  title:
-    "Asesoría corporativa en Colombia: toma decisiones legales estratégicas",
-  description:
-    "Conoce cómo la asesoría corporativa ayuda a empresas en Colombia a reducir riesgos y mejorar su crecimiento.",
-};
-
-export default function ArticlePage() {
+export default function AsesoriaCorporativaEmpresas() {
   return (
     <main className={styles.wrapper}>
       {/* HERO */}

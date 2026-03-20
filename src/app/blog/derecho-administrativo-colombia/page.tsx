@@ -3,13 +3,6 @@
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
 
-export const metadata = {
-  title:
-    "Derecho administrativo en Colombia: cómo actuar ante entidades públicas",
-  description:
-    "Guía para empresas sobre procesos administrativos en Colombia y con entidades públicas.",
-};
-
 export default function DerechoAdministrativoColombia() {
   return (
     <main className={styles.wrapper}>

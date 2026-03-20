@@ -3,12 +3,6 @@
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
 
-export const metadata = {
-  title: "Derecho comercial en Colombia: guía para empresas y contratos",
-  description:
-    "Aprende cómo funciona el derecho comercial en Colombia y cómo proteger tu empresa en contratos y operaciones comerciales.",
-};
-
 export default function DerechoComercialEmpresasColombia() {
   return (
     <main className={styles.wrapper}>

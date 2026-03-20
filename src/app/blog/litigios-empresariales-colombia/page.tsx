@@ -3,12 +3,6 @@
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
 
-export const metadata = {
-  title: "Litigios empresariales en Colombia: cómo proteger tu empresa",
-  description:
-    "Descubre cómo enfrentar procesos judiciales en Colombia y proteger los intereses de tu empresa en litigios comerciales.",
-};
-
 export default function LitigiosEmpresarialesColombia() {
   return (
     <main className={styles.wrapper}>
