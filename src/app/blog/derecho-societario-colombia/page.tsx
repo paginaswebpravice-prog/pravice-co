@@ -3,12 +3,6 @@
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
 
-export const metadata = {
-  title: "Derecho societario en Colombia: creación y gestión de empresas",
-  description:
-    "Todo sobre constitución, transformación y regulación de sociedades en Colombia para empresas y emprendedores.",
-};
-
 export default function DerechoSocietarioColombia() {
   return (
     <main className={styles.wrapper}>

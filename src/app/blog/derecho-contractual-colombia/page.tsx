@@ -3,12 +3,6 @@
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
 
-export const metadata = {
-  title: "Derecho contractual en Colombia: cómo hacer contratos seguros",
-  description:
-    "Aprende a redactar y negociar contratos en Colombia para evitar conflictos legales y proteger tu negocio.",
-};
-
 export default function DerechoContractualColombia() {
   return (
     <main className={styles.wrapper}>

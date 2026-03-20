@@ -3,12 +3,6 @@
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
 
-export const metadata = {
-  title: "Cumplimiento normativo en Colombia: evita sanciones legales",
-  description:
-    "Aprende cómo implementar compliance en tu empresa y evitar riesgos legales en Colombia.",
-};
-
 export default function CumpliminetoNromativoColombia() {
   return (
     <main className={styles.wrapper}>

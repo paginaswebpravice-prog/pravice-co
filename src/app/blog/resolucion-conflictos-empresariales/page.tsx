@@ -3,12 +3,6 @@
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
 
-export const metadata = {
-  title: "Resolución de conflictos empresariales en Colombia",
-  description:
-    "Conoce los mecanismos legales para resolver conflictos empresariales de forma rápida y efectiva en Colombia.",
-};
-
 export default function ResolucionConflictosEmpresariales() {
   return (
     <main className={styles.wrapper}>

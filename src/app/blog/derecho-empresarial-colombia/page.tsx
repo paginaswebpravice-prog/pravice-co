@@ -3,12 +3,6 @@
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
 
-export const metadata = {
-  title: "Derecho empresarial en Colombia: claves para proteger tu negocio",
-  description:
-    "Guía completa de derecho empresarial en Colombia para estructurar y proteger tu empresa legalmente.",
-};
-
 export default function DerechoEmpresarialColombia() {
   return (
     <main className={styles.wrapper}>
