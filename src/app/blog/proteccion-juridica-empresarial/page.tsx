@@ -3,12 +3,6 @@
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
 
-export const metadata = {
-  title: "Protección jurídica empresarial en Colombia: estrategias clave",
-  description:
-    "Descubre cómo proteger legalmente tu empresa en Colombia y evitar riesgos financieros y legales.",
-};
-
 export default function ProteccionJuridicaEmpresarial() {
   return (
     <main className={styles.wrapper}>
