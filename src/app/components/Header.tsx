@@ -21,6 +21,10 @@ import {
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const emailUser = "info.pravice";
+  const emailDomain = "abogadosespecialistas.com.co";
+  const emailAddress = `${emailUser}@${emailDomain}`;
+
   return (
     <header className={styles.header}>
       {/* TOPBAR */}
@@ -34,7 +38,7 @@ export default function Header() {
 
             <span>
               <FontAwesomeIcon icon={faEnvelope} />
-              info.pravice@abogadosespecialistas.com.co
+              {emailAddress}
             </span>
 
             <span>

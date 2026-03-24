@@ -59,11 +59,11 @@ export default function RecuperacionCarteraEmpresas() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          La recuperación de cartera empresarial es un proceso fundamental para
-          garantizar la estabilidad financiera de cualquier organización. Cuando
-          los clientes retrasan o incumplen sus pagos, el flujo de caja se ve
-          afectado y puede generar dificultades para cubrir gastos operativos,
-          invertir en crecimiento o cumplir con obligaciones financieras.
+          La recuperación de cartera empresarial es uno de los procesos
+          financieros más importantes para la estabilidad económica de cualquier
+          empresa. Cuando los clientes no pagan a tiempo, la organización puede
+          enfrentar problemas de liquidez, dificultades para pagar proveedores,
+          nómina, impuestos o incluso limitar su crecimiento.
         </motion.p>
 
         <motion.p
@@ -73,9 +73,12 @@ export default function RecuperacionCarteraEmpresas() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          Por esta razón, las empresas deben implementar estrategias eficientes
-          para recuperar sus cuentas por cobrar de manera oportuna y mantener
-          una gestión financiera saludable.
+          Una cartera vencida mal gestionada puede convertirse en pérdidas
+          financieras significativas, afectar el flujo de caja y aumentar el
+          riesgo operativo de la empresa. Por esta razón, las organizaciones
+          deben contar con estrategias de cobranza estructuradas, procesos de
+          seguimiento y mecanismos legales que permitan recuperar las deudas de
+          manera eficiente y profesional.
         </motion.p>
 
         <motion.p
@@ -86,8 +89,9 @@ export default function RecuperacionCarteraEmpresas() {
           viewport={{ once: true }}
         >
           En este artículo conocerás los métodos más efectivos de recuperación
-          de cartera utilizados por empresas exitosas para mejorar su recaudo y
-          reducir el riesgo de cartera vencida.
+          de cartera empresarial, las mejores prácticas de gestión de cobranzas
+          y las estrategias que utilizan las empresas para reducir la morosidad,
+          mejorar su recaudo y mantener una cartera sana.
         </motion.p>
       </motion.header>
 
