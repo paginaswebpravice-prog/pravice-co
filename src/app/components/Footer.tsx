@@ -17,8 +17,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
-  const emailUser = "info.pravice";
-  const emailDomain = "abogadosespecialistas.com.co";
+  const emailUser = "servicioalcliente";
+  const emailDomain = "pravice.co";
   const email = `${emailUser}@${emailDomain}`;
 
   return (

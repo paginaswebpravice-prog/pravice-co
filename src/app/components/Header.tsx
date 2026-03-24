@@ -21,8 +21,8 @@ import {
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const emailUser = "info.pravice";
-  const emailDomain = "abogadosespecialistas.com.co";
+  const emailUser = "servicioalcliente";
+  const emailDomain = "pravice.co";
   const emailAddress = `${emailUser}@${emailDomain}`;
 
   return (
