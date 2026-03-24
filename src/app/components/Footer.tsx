@@ -17,6 +17,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
+  const emailUser = "info.pravice";
+  const emailDomain = "abogadosespecialistas.com.co";
+  const email = `${emailUser}@${emailDomain}`;
+
   return (
     <>
       <footer className={styles.footer}>
@@ -119,8 +123,10 @@ export default function Footer() {
 
             <div className={styles.contactItem}>
               <FontAwesomeIcon icon={faEnvelope} />
-              <a href="mailto:info.pravice@abogadosespecialistas.com.co">
-                info.pravice@abogadosespecialistas.com.co
+              <a href={`mailto:${email}`}>
+                {emailUser}
+                {"@"}
+                {emailDomain}
               </a>
             </div>
 
