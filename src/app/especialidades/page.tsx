@@ -37,73 +37,73 @@ export default function Especialidades() {
     {
       titulo: "Derecho Comercial",
       descripcion:
-        "Asesoría jurídica integral para empresas, contratos mercantiles y operaciones comerciales.",
+        "Asesoría en derecho comercial en Colombia para empresas, contratos mercantiles y operaciones comerciales, con abogados especializados en Bogotá.",
       icono: faScaleBalanced,
     },
     {
       titulo: "Recuperación de Cartera",
       descripcion:
-        "Estrategias legales y administrativas para optimizar el recaudo de cartera.",
+        "Recuperación de cartera en Colombia mediante estrategias de cobro prejurídico y jurídico, optimizando el recaudo de deudas empresariales.",
       icono: faFileContract,
     },
     {
       titulo: "Conciliación",
       descripcion:
-        "Solución de conflictos mediante mecanismos alternativos y conciliación extrajudicial.",
+        "Conciliación extrajudicial en Colombia como mecanismo eficaz para resolver conflictos empresariales sin necesidad de procesos judiciales.",
       icono: faHandshake,
     },
     {
       titulo: "Litigios",
       descripcion:
-        "Representación jurídica en procesos judiciales ante distintas jurisdicciones.",
+        "Representación en litigios empresariales en Colombia ante juzgados, con abogados expertos en procesos judiciales y demandas ejecutivas.",
       icono: faGavel,
     },
     {
       titulo: "Derecho Empresarial",
       descripcion:
-        "Acompañamiento legal en la estructuración y desarrollo de empresas.",
+        "Servicios de derecho empresarial en Bogotá para la estructuración, protección y crecimiento legal de empresas en Colombia.",
       icono: faBuilding,
     },
     {
       titulo: "Asesoría Corporativa",
       descripcion:
-        "Servicios jurídicos estratégicos para la toma de decisiones empresariales.",
+        "Asesoría corporativa estratégica para empresas en Colombia, enfocada en toma de decisiones legales, cumplimiento y gestión de riesgos.",
       icono: faBriefcase,
     },
     {
       titulo: "Derecho Contractual",
       descripcion:
-        "Elaboración, revisión y negociación de contratos civiles y comerciales.",
+        "Elaboración y revisión de contratos comerciales en Colombia, garantizando seguridad jurídica en acuerdos empresariales.",
       icono: faFileSignature,
     },
     {
       titulo: "Derecho Societario",
       descripcion:
-        "Constitución, transformación y reorganización de sociedades comerciales.",
+        "Constitución y reorganización de sociedades en Colombia, con abogados especializados en derecho societario en Bogotá.",
       icono: faUsers,
     },
     {
       titulo: "Derecho Administrativo",
       descripcion:
-        "Asesoría y representación en procesos ante entidades públicas y administrativas.",
+        "Asesoría en procesos administrativos en Colombia y representación ante entidades públicas para empresas y particulares.",
       icono: faLandmark,
     },
     {
       titulo: "Resolución de Conflictos",
       descripcion:
-        "Mecanismos jurídicos para la solución eficiente de disputas empresariales y comerciales.",
+        "Solución de conflictos empresariales mediante negociación, conciliación y mecanismos legales eficientes en Colombia.",
       icono: faBalanceScale,
     },
     {
       titulo: "Cumplimiento Normativo",
       descripcion:
-        "Asesoría en cumplimiento legal, regulación empresarial y gestión de riesgos jurídicos.",
+        "Cumplimiento normativo en Colombia para empresas, prevención de riesgos legales y adaptación a regulaciones vigentes.",
       icono: faClipboardCheck,
     },
     {
       titulo: "Protección Jurídica Empresarial",
       descripcion:
-        "Estrategias legales para proteger los intereses jurídicos y patrimoniales de las empresas.",
+        "Estrategias de protección jurídica empresarial en Colombia para salvaguardar activos, contratos y operaciones comerciales.",
       icono: faShieldHalved,
     },
   ];
@@ -112,19 +112,14 @@ export default function Especialidades() {
     {
       nombre: "Cobrando Online",
       descripcion:
-        "Plataforma especializada en procesos de cobro y recuperación de cartera.",
+        "Plataforma especializada en recuperación de cartera en Colombia, cobro prejurídico y gestión de deudas empresariales.",
       link: "https://www.cobrandoonline.com/",
     },
     {
       nombre: "Recaudo Cartera IPS y EPS",
       descripcion:
-        "Soluciones jurídicas y administrativas para el recaudo de cartera en el sector salud.",
+        "Soluciones jurídicas para recuperación de cartera en el sector salud en Colombia, IPS y EPS.",
       link: "https://www.recaudocarteraipsyeps.com/",
-    },
-    {
-      nombre: "",
-      descripcion: "",
-      link: "",
     },
   ];
 
@@ -147,11 +142,10 @@ export default function Especialidades() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Nuestras Especialidades
+            Especialidades legales en Bogotá y Colombia
           </motion.h2>
 
           {/* DESCRIPCION */}
-
           <motion.p
             className={styles.descripcion}
             itemProp="description"
@@ -160,9 +154,14 @@ export default function Especialidades() {
             transition={{ delay: 0.2, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Nuestro equipo jurídico cuenta con amplia experiencia en diferentes
-            áreas del derecho, brindando soluciones estratégicas a empresas y
-            particulares.
+            Somos una firma de abogados especializados en Bogotá y Colombia, con
+            amplia experiencia en derecho empresarial, derecho comercial,
+            recuperación de cartera y litigios. Brindamos servicios legales
+            estratégicos a empresas y particulares, ofreciendo soluciones en
+            cobro prejurídico, cobro jurídico, conciliación extrajudicial y
+            asesoría corporativa. Nuestro enfoque combina experiencia jurídica,
+            análisis estratégico y gestión eficiente para proteger los intereses
+            legales y financieros de nuestros clientes en Colombia.
           </motion.p>
 
           {/* ESPECIALIDADES */}
