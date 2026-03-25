@@ -1,50 +1,62 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://pravice.co";
+  const baseUrl = "https://www.pravice.co";
+
+  const blogArticles = [
+    "como-recuperar-cartera-morosa",
+    "gestion-cartera-sector-salud",
+    "automatizacion-cobranzas",
+    "errores-gestion-cartera",
+    "recuperacion-cartera-empresas",
+    "inteligencia-artificial-cobranzas",
+    "futuro-cobranzas",
+    "conciliacion-extrajudicial-colombia",
+    "beneficios-conciliacion",
+    "mediacion-empresarial",
+    "resolucion-conflictos-empresariales",
+    "derecho-empresarial-colombia",
+    "derecho-comercial-empresas-colombia",
+    "derecho-contractual-colombia",
+    "derecho-societario-colombia",
+    "derecho-administrativo-colombia",
+    "litigios-empresariales-colombia",
+    "cumplimiento-normativo-colombia",
+    "proteccion-juridica-empresarial",
+    "asesoria-corporativa-empresas",
+  ];
+
+  const blogUrls = blogArticles.map((slug) => ({
+    url: `${baseUrl}/blog/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
 
   return [
+    // HOME
     {
-      url: `${baseUrl}`,
+      url: baseUrl,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
+
+    // PÁGINAS
     {
-      url: `${baseUrl}/#services`,
+      url: `${baseUrl}/especialidades`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/#aboutUs`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/contacto`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/privacidad`,
+      url: `${baseUrl}/blog`,
       lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3,
+      changeFrequency: "weekly",
+      priority: 0.9,
     },
-    {
-      url: `${baseUrl}/terminos`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/cookies`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
+
+    // ARTÍCULOS BLOG
+    ...blogUrls,
   ];
 }
