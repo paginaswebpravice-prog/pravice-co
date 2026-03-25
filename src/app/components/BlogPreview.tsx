@@ -13,20 +13,21 @@ import {
 
 const posts = [
   {
-    title: "Pravice Abogados: Expertos en Derecho en Bogotá",
+    title: "Pravice Abogados: Firma de abogados en Bogotá y Colombia",
     description:
-      "Conoce la historia, filosofía y compromiso de Pravice Abogados.",
+      "Conoce nuestra firma de abogados, experiencia en derecho empresarial, recuperación de cartera y asesoría legal en Colombia.",
     icon: faScaleBalanced,
   },
   {
-    title: "Tu Firma de Abogados de Confianza en Bogotá",
+    title: "¿Cómo elegir una firma de abogados en Bogotá?",
     description:
-      "Descubre cómo elegir una firma de abogados confiable en Bogotá.",
+      "Guía para elegir abogados especializados en derecho empresarial, litigios y asesoría legal en Colombia.",
     icon: faBuilding,
   },
   {
-    title: "¿Cómo proteger tu empresa legalmente en 2025?",
-    description: "Guía práctica sobre derecho empresarial y registro de marca.",
+    title: "Cómo proteger tu empresa legalmente en Colombia",
+    description:
+      "Aprende sobre derecho empresarial, contratos comerciales, cumplimiento legal y protección jurídica empresarial.",
     icon: faShieldHalved,
   },
 ];
@@ -57,7 +58,10 @@ export default function BlogPreview() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Blog jurídico: <span>información legal que te ayuda a decidir</span>
+            Blog jurídico en Bogotá y Colombia:
+            <span>
+              guías legales, derecho empresarial y recuperación de cartera
+            </span>
           </motion.h2>
 
           <motion.p
@@ -67,9 +71,12 @@ export default function BlogPreview() {
             transition={{ delay: 0.2, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            En el <strong>blog de Pravice Abogados</strong> compartimos
-            conocimiento jurídico, análisis de tendencias legales y guías
-            prácticas para empresas y personas en Colombia.
+            En el <strong>blog jurídico de Pravice Abogados</strong> compartimos
+            artículos sobre derecho empresarial, derecho comercial, recuperación
+            de cartera, cobro prejurídico, litigios, contratos comerciales y
+            asesoría legal en Bogotá y Colombia. Nuestro blog está diseñado para
+            ayudar a empresas y personas a entender sus derechos, prevenir
+            problemas legales y tomar mejores decisiones jurídicas.
           </motion.p>
         </header>
 

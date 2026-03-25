@@ -38,8 +38,10 @@ export default function About() {
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              Firma de abogados en Colombia que{" "}
-              <span>transforma desafíos legales en soluciones sólidas</span>
+              Firma de abogados especializados en Bogotá y Colombia que
+              <span>
+                transforma desafíos legales en soluciones jurídicas sólidas
+              </span>
             </motion.h2>
           </header>
 
@@ -51,8 +53,16 @@ export default function About() {
             viewport={{ once: true }}
           >
             Desde <strong>1998</strong>, en <strong>Pravice Abogados</strong>{" "}
-            brindamos <strong>servicios legales especializados</strong> para
-            empresas y personas en Colombia.
+            somos una
+            <strong>
+              firma de abogados especializados en Bogotá y Colombia
+            </strong>
+            , enfocada en derecho empresarial, derecho comercial, recuperación
+            de cartera, cobro prejurídico, cobro jurídico y asesoría legal para
+            empresas y personas. Brindamos soluciones jurídicas integrales
+            orientadas a la prevención de riesgos legales, la protección del
+            patrimonio y la solución eficiente de conflictos legales y
+            comerciales en Colombia.
           </motion.p>
 
           <motion.p
@@ -62,9 +72,14 @@ export default function About() {
             transition={{ delay: 0.4, duration: 0.7 }}
             viewport={{ once: true }}
           >
-            Nuestro enfoque combina <strong>especialización jurídica</strong>,
-            <strong> transparencia</strong> y una estrategia orientada a{" "}
-            <strong>resultados reales</strong>.
+            Nuestro equipo de{" "}
+            <strong>abogados especializados en Colombia</strong> combina
+            experiencia jurídica, estrategia legal, transparencia y un enfoque
+            orientado a<strong>resultados legales reales</strong>. Trabajamos
+            con empresas y particulares en procesos de litigios, conciliación
+            extrajudicial, contratos comerciales, derecho societario y
+            recuperación de cartera vencida, ofreciendo acompañamiento legal
+            permanente y soluciones jurídicas eficientes.
           </motion.p>
 
           <div className={styles.cards}>
@@ -76,10 +91,11 @@ export default function About() {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h3>Especialización jurídica</h3>
+              <h3>Abogados especializados</h3>
               <p>
-                Cada caso requiere conocimiento profundo. Contamos con abogados
-                especialistas en diferentes áreas del derecho.
+                Contamos con abogados especializados en derecho empresarial,
+                derecho comercial, litigios, recuperación de cartera y asesoría
+                corporativa en Bogotá y Colombia.
               </p>
             </motion.article>
 
@@ -91,10 +107,11 @@ export default function About() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h3>Transparencia en cada proceso</h3>
+              <h3>Transparencia y acompañamiento legal</h3>
               <p>
-                Mantenemos comunicación clara con nuestros clientes durante todo
-                el proceso legal.
+                Brindamos asesoría legal con comunicación clara, seguimiento
+                permanente y estrategias jurídicas adaptadas a cada empresa o
+                persona en Colombia.
               </p>
             </motion.article>
 
@@ -106,10 +123,11 @@ export default function About() {
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              <h3>Resultados legales comprobados</h3>
+              <h3>Soluciones legales efectivas</h3>
               <p>
-                Transformamos desafíos legales complejos en soluciones jurídicas
-                efectivas para empresas y personas.
+                Transformamos problemas legales en soluciones jurídicas
+                eficientes mediante estrategias legales, conciliación, litigios
+                y gestión de recuperación de cartera.
               </p>
             </motion.article>
           </div>
@@ -121,8 +139,14 @@ export default function About() {
             transition={{ delay: 0.6, duration: 0.7 }}
             viewport={{ once: true }}
           >
-            Pravice Abogados es una firma de abogados en Colombia con más de 25
-            años de experiencia en asesoría legal y recuperación de cartera.
+            Pravice Abogados es una firma de abogados en Bogotá, Colombia, con
+            más de 25 años de experiencia en asesoría legal empresarial, derecho
+            comercial, litigios, recuperación de cartera, cobro prejurídico y
+            cobro jurídico. Nuestros abogados corporativos brindan servicios
+            legales a empresas y personas en Colombia, ofreciendo soluciones
+            jurídicas en contratos comerciales, conciliación extrajudicial,
+            derecho societario, cumplimiento normativo y resolución de
+            conflictos empresariales.
           </motion.p>
         </div>
       </section>

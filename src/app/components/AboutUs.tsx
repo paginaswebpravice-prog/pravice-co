@@ -46,8 +46,13 @@ export default function AboutUs() {
             transition={{ delay: 0.2, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <strong>Pravice Abogados</strong> es una firma de abogados en
-            Colombia con más de <strong>25 años de experiencia</strong>.
+            <strong>Pravice Abogados</strong> es una{" "}
+            <strong>firma de abogados en Bogotá, Colombia</strong> con más de{" "}
+            <strong>25 años de experiencia</strong> brindando asesoría legal a
+            empresas y personas. Contamos con abogados especializados en derecho
+            empresarial, derecho comercial, recuperación de cartera, litigios,
+            conciliación extrajudicial y asesoría jurídica corporativa en
+            Colombia.
           </motion.p>
 
           <motion.p
@@ -57,9 +62,13 @@ export default function AboutUs() {
             transition={{ delay: 0.35, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Lo que comenzó como un proyecto enfocado en recuperación de cartera
-            se ha transformado en una firma legal con especialistas en
-            diferentes áreas del derecho.
+            Lo que comenzó como un proyecto enfocado en{" "}
+            <strong>recuperación de cartera en Colombia</strong> se ha
+            transformado en una firma legal con abogados especializados en
+            diferentes áreas del derecho, ofreciendo soluciones en cobro
+            prejurídico, cobro jurídico, contratos comerciales, derecho
+            societario, litigios empresariales y cumplimiento normativo para
+            empresas en Bogotá y en toda Colombia.
           </motion.p>
 
           <motion.a
@@ -79,7 +88,8 @@ export default function AboutUs() {
               transition={{ delay: 0.4 }}
               viewport={{ once: true }}
             >
-              Innovar en la prestación de <strong>servicios legales</strong>.
+              Innovar en la prestación de{" "}
+              <strong>servicios legales en Bogotá y Colombia</strong>.
             </motion.li>
 
             <motion.li
@@ -88,7 +98,11 @@ export default function AboutUs() {
               transition={{ delay: 0.5 }}
               viewport={{ once: true }}
             >
-              Brindar <strong>soluciones jurídicas estratégicas</strong>.
+              Brindar{" "}
+              <strong>
+                soluciones jurídicas estratégicas para empresas y personas
+              </strong>
+              .
             </motion.li>
 
             <motion.li
@@ -97,7 +111,11 @@ export default function AboutUs() {
               transition={{ delay: 0.6 }}
               viewport={{ once: true }}
             >
-              Acompañar a nuestros clientes durante todo el proceso legal.
+              Acompañar a nuestros clientes en procesos de{" "}
+              <strong>
+                recuperación de cartera, litigios y asesoría legal empresarial
+              </strong>
+              .
             </motion.li>
           </ul>
         </div>
@@ -128,7 +146,8 @@ export default function AboutUs() {
           >
             <p>
               "Pravice Abogados nos brindó un acompañamiento excepcional en
-              nuestro proceso legal."
+              nuestro proceso de recuperación de cartera y asesoría legal
+              empresarial en Colombia."
             </p>
             <span>— Juan Camilo Restrepo, Gerente General</span>
           </motion.div>
