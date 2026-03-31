@@ -4,6 +4,69 @@ import styles from "../styles/VideosPreview.module.css";
 import { motion } from "framer-motion";
 
 export default function VideosPreview() {
+  const videoSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "VideoObject",
+        name: "Divorcio por mutuo acuerdo Bogotá",
+        description:
+          "Proceso de divorcio por mutuo acuerdo en Bogotá Colombia, requisitos legales, costos y asesoría jurídica.",
+        thumbnailUrl: "https://i.ytimg.com/vi/eQFEueWd5tw/maxresdefault.jpg",
+        uploadDate: "2024-10-01",
+        duration: "PT4M30S",
+        embedUrl: "https://www.youtube.com/embed/eQFEueWd5tw",
+        contentUrl: "https://www.youtube.com/watch?v=eQFEueWd5tw",
+        publisher: {
+          "@type": "Organization",
+          name: "Pravice Abogados",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://pravice.co/logo.png",
+          },
+        },
+      },
+      {
+        "@type": "VideoObject",
+        name: "Abogados derecho comercial Bogotá Colombia",
+        description:
+          "Servicios de derecho comercial en Bogotá Colombia para empresas, contratos, sociedades y asesoría jurídica empresarial.",
+        thumbnailUrl: "https://i.ytimg.com/vi/bVky48kidxg/maxresdefault.jpg",
+        uploadDate: "2024-10-05",
+        duration: "PT5M10S",
+        embedUrl: "https://www.youtube.com/embed/bVky48kidxg",
+        contentUrl: "https://www.youtube.com/watch?v=bVky48kidxg",
+        publisher: {
+          "@type": "Organization",
+          name: "Pravice Abogados",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://pravice.co/logo.png",
+          },
+        },
+      },
+      {
+        "@type": "VideoObject",
+        name: "Importancia del derecho laboral Colombia",
+        description:
+          "Explicación sobre la importancia del derecho laboral en Colombia para empresas y trabajadores.",
+        thumbnailUrl: "https://i.ytimg.com/vi/sMcNzoPSo6Y/maxresdefault.jpg",
+        uploadDate: "2024-10-10",
+        duration: "PT4M50S",
+        embedUrl: "https://www.youtube.com/embed/sMcNzoPSo6Y",
+        contentUrl: "https://www.youtube.com/watch?v=sMcNzoPSo6Y",
+        publisher: {
+          "@type": "Organization",
+          name: "Pravice Abogados",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://pravice.co/logo.png",
+          },
+        },
+      },
+    ],
+  };
+
   return (
     <section className={styles.section} id="videos-pravice">
       <div className={styles.container}>
@@ -30,109 +93,45 @@ export default function VideosPreview() {
           y personas en Colombia.
         </motion.p>
 
-        {/* VIDEOS */}
         <div className={styles.videoGrid}>
-          <motion.div
-            className={styles.videoCard}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            viewport={{ once: true }}
-          >
+          <motion.div className={styles.videoCard}>
             <iframe
               src="https://www.youtube.com/embed/eQFEueWd5tw"
               title="Divorcio por mutuo acuerdo Bogotá"
               loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe>
+            />
           </motion.div>
 
-          <motion.div
-            className={styles.videoCard}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            viewport={{ once: true }}
-          >
+          <motion.div className={styles.videoCard}>
             <iframe
               src="https://www.youtube.com/embed/bVky48kidxg"
               title="Abogados derecho comercial Bogotá Colombia"
               loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe>
+            />
           </motion.div>
 
-          <motion.div
-            className={styles.videoCard}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            viewport={{ once: true }}
-          >
+          <motion.div className={styles.videoCard}>
             <iframe
               src="https://www.youtube.com/embed/sMcNzoPSo6Y"
               title="Importancia del derecho laboral Colombia"
               loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe>
+            />
           </motion.div>
         </div>
 
-        {/* BOTON */}
-        <motion.div
-          className={styles.buttonContainer}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          viewport={{ once: true }}
-        >
+        <div className={styles.buttonContainer}>
           <a href="/videos" className={styles.primaryBtn}>
             Ver todos los videos
           </a>
-        </motion.div>
+        </div>
 
-        {/* SEO TEXTO OCULTO */}
-        <p className={styles.seoText}>
-          Videos abogados Bogotá Colombia, abogados derecho tributario Bogotá,
-          abogados derecho comercial Colombia, asesoría legal empresas Bogotá,
-          conciliaciones Bogotá Colombia, abogados empresariales Bogotá,
-          servicios jurídicos Colombia, firma de abogados Bogotá Pravice.
-        </p>
-
-        {/* SCHEMA VIDEO SEO */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "ItemList",
-              itemListElement: [
-                {
-                  "@type": "VideoObject",
-                  name: "Divorcio por mutuo acuerdo Bogotá",
-                  embedUrl: "https://www.youtube.com/embed/eQFEueWd5tw",
-                  thumbnailUrl:
-                    "https://i.ytimg.com/vi/eQFEueWd5tw/maxresdefault.jpg",
-                },
-                {
-                  "@type": "VideoObject",
-                  name: "Derecho comercial abogados Bogotá",
-                  embedUrl: "https://www.youtube.com/embed/bVky48kidxg",
-                  thumbnailUrl:
-                    "https://i.ytimg.com/vi/bVky48kidxg/maxresdefault.jpg",
-                },
-                {
-                  "@type": "VideoObject",
-                  name: "Derecho laboral Colombia abogados",
-                  embedUrl: "https://www.youtube.com/embed/sMcNzoPSo6Y",
-                  thumbnailUrl:
-                    "https://i.ytimg.com/vi/sMcNzoPSo6Y/maxresdefault.jpg",
-                },
-              ],
-            }),
+            __html: JSON.stringify(videoSchema),
           }}
         />
       </div>
