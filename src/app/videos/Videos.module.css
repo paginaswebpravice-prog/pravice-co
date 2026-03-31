@@ -1,0 +1,114 @@
+/* ================= PAGE ================= */
+.page {
+  padding: 100px 20px;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================= TITLES ================= */
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #004a80;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 60px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* ================= VIDEO GRID ================= */
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 35px;
+}
+
+/* ================= VIDEO CARD ================= */
+.videoCard {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  padding-bottom: 15px;
+  transition: 0.3s;
+  border-bottom: 4px solid #f7c600;
+}
+
+.videoCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.videoCard iframe {
+  width: 100%;
+  height: 210px;
+  border: none;
+}
+
+.videoCard h3 {
+  font-size: 17px;
+  padding: 15px;
+  color: #004a80;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* ================= SEO BLOCK ================= */
+.seoBlock {
+  margin-top: 80px;
+  background: #004a80;
+  padding: 40px;
+  border-radius: 12px;
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+.seoBlock h2 {
+  color: #f7c600;
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+
+.seoBlock p {
+  margin-bottom: 15px;
+}
+
+/* ================= SEO TEXT OCULTO ================= */
+.seoText {
+  margin-top: 40px;
+  color: #ffffff;
+  font-size: 1px;
+  opacity: 0;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .videoCard iframe {
+    height: 190px;
+  }
+
+  .seoBlock {
+    padding: 25px;
+  }
+}
