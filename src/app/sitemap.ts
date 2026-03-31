@@ -1,7 +1,8 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.pravice.co";
+  const baseUrl = "https://pravice.co";
+  const today = new Date();
 
   const blogArticles = [
     "como-recuperar-cartera-morosa",
@@ -28,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogUrls = blogArticles.map((slug) => ({
     url: `${baseUrl}/blog/${slug}`,
-    lastModified: new Date(),
+    lastModified: today,
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -37,32 +38,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // HOME
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: today,
       changeFrequency: "weekly",
       priority: 1,
     },
 
-    // PÁGINAS
+    // PÁGINAS PRINCIPALES
     {
       url: `${baseUrl}/videos`,
-      lastModified: new Date(),
+      lastModified: today,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/especialidades`,
-      lastModified: new Date(),
+      lastModified: today,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date(),
+      lastModified: today,
       changeFrequency: "weekly",
       priority: 0.9,
     },
 
-    // ARTÍCULOS BLOG
+    // BLOG
     ...blogUrls,
   ];
 }
