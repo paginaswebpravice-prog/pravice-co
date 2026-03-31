@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://pravice.co/sitemap.xml",
+    sitemap: "https://www.pravice.co/sitemap.xml",
   };
 }
