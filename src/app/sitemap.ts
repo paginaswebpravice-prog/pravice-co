@@ -44,6 +44,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // PÁGINAS
     {
+      url: `${baseUrl}/videos`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/especialidades`,
       lastModified: new Date(),
       changeFrequency: "monthly",
