@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactCompiler: true,
 
+  /* ================= HEADERS (SEGURIDAD + IFRAME YOUTUBE) ================= */
   async headers() {
     return [
       {
@@ -32,7 +33,7 @@ const nextConfig: NextConfig = {
             key: "Content-Security-Policy",
             value: `
               default-src 'self';
-              script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://maps.gstatic.com https://www.youtube.com;
+              script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://maps.gstatic.com https://www.youtube.com https://www.youtube-nocookie.com;
               style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
               img-src 'self' data: https://maps.googleapis.com https://maps.gstatic.com https: https://i.ytimg.com;
               font-src 'self' https://fonts.gstatic.com;
@@ -41,6 +42,56 @@ const nextConfig: NextConfig = {
             `.replace(/\n/g, ""),
           },
         ],
+      },
+    ];
+  },
+
+  /* ================= REDIRECCIONES 301 (SEO) ================= */
+  async redirects() {
+    return [
+      // WordPress → Next.js
+
+      {
+        source: "/practice-area/:slug*",
+        destination: "/areas-de-practica/:slug*",
+        permanent: true,
+      },
+
+      {
+        source: "/category/noticias-juridicas/",
+        destination: "/blog",
+        permanent: true,
+      },
+
+      {
+        source: "/category/:slug*",
+        destination: "/blog",
+        permanent: true,
+      },
+
+      {
+        source: "/landing/",
+        destination: "/",
+        permanent: true,
+      },
+
+      {
+        source: "/landing-2/",
+        destination: "/",
+        permanent: true,
+      },
+
+      {
+        source: "/politica-de-tratamiento-y-proteccion-de-datos-personales/",
+        destination: "/politica-privacidad",
+        permanent: true,
+      },
+
+      // opcional: URLs antiguas mal formadas
+      {
+        source: "/index.php/:path*",
+        destination: "/:path*",
+        permanent: true,
       },
     ];
   },
