@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactCompiler: true,
 
-  /* ================= HEADERS (SEGURIDAD + IFRAME YOUTUBE) ================= */
+  /* ================= HEADERS (SEGURIDAD + YOUTUBE + MAPS) ================= */
   async headers() {
     return [
       {
@@ -46,48 +46,69 @@ const nextConfig: NextConfig = {
     ];
   },
 
-  /* ================= REDIRECCIONES 301 (SEO) ================= */
+  /* ================= REDIRECTS SEO WORDPRESS → NEXT ================= */
   async redirects() {
     return [
-      // WordPress → Next.js
+      // Blog WordPress → Blog Next
+      {
+        source: "/noticias-juridicas/:slug*",
+        destination: "/blog/:slug*",
+        permanent: true,
+      },
 
+      // Practice Area → Áreas de práctica
       {
         source: "/practice-area/:slug*",
         destination: "/areas-de-practica/:slug*",
         permanent: true,
       },
 
+      // Categorías WordPress
       {
         source: "/category/noticias-juridicas/",
         destination: "/blog",
         permanent: true,
       },
-
       {
         source: "/category/:slug*",
         destination: "/blog",
         permanent: true,
       },
 
+      // Tags
+      {
+        source: "/tag/:slug*",
+        destination: "/blog",
+        permanent: true,
+      },
+
+      // Autor
+      {
+        source: "/author/:slug*",
+        destination: "/blog",
+        permanent: true,
+      },
+
+      // Landings antiguas
       {
         source: "/landing/",
         destination: "/",
         permanent: true,
       },
-
       {
         source: "/landing-2/",
         destination: "/",
         permanent: true,
       },
 
+      // Política de datos
       {
         source: "/politica-de-tratamiento-y-proteccion-de-datos-personales/",
         destination: "/politica-privacidad",
         permanent: true,
       },
 
-      // opcional: URLs antiguas mal formadas
+      // Quitar index.php
       {
         source: "/index.php/:path*",
         destination: "/:path*",
