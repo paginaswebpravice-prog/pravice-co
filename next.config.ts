@@ -46,9 +46,24 @@ const nextConfig: NextConfig = {
     ];
   },
 
-  /* ================= REDIRECTS SEO WORDPRESS → NEXT ================= */
+  /* ================= REDIRECTS SEO WORDPRESS → NEXT + CANONICAL ================= */
   async redirects() {
     return [
+      /* ===== CANONICAL DOMAIN (MUY IMPORTANTE SEO) ===== */
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "www.pravice.co",
+          },
+        ],
+        destination: "https://pravice.co/:path*",
+        permanent: true,
+      },
+
+      /* ===== WORDPRESS → NEXT ===== */
+
       // Blog WordPress → Blog Next
       {
         source: "/noticias-juridicas/:slug*",
