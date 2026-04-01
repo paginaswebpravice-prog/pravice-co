@@ -3,28 +3,15 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactCompiler: true,
 
-  /* ================= HEADERS (SEGURIDAD + YOUTUBE + MAPS) ================= */
   async headers() {
     return [
       {
         source: "/(.*)",
         headers: [
-          {
-            key: "X-Frame-Options",
-            value: "SAMEORIGIN",
-          },
-          {
-            key: "X-Content-Type-Options",
-            value: "nosniff",
-          },
-          {
-            key: "X-XSS-Protection",
-            value: "1; mode=block",
-          },
-          {
-            key: "Referrer-Policy",
-            value: "strict-origin-when-cross-origin",
-          },
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "X-XSS-Protection", value: "1; mode=block" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           {
             key: "Permissions-Policy",
             value: "camera=(), microphone=(), geolocation=()",
@@ -46,11 +33,8 @@ const nextConfig: NextConfig = {
     ];
   },
 
-  /* ================= REDIRECTS SEO WORDPRESS → NEXT + CANONICAL ================= */
   async redirects() {
     return [
-      /* ===== WORDPRESS → NEXT ===== */
-
       {
         source: "/noticias-juridicas/:slug*",
         destination: "/blog/:slug*",
@@ -99,19 +83,6 @@ const nextConfig: NextConfig = {
       {
         source: "/index.php/:path*",
         destination: "/:path*",
-        permanent: true,
-      },
-
-      /* ===== WWW → SIN WWW ===== */
-      {
-        source: "/:path*",
-        has: [
-          {
-            type: "host",
-            value: "www.pravice.co",
-          },
-        ],
-        destination: "https://pravice.co/:path*",
         permanent: true,
       },
     ];
