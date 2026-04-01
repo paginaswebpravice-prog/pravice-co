@@ -49,36 +49,18 @@ const nextConfig: NextConfig = {
   /* ================= REDIRECTS SEO WORDPRESS → NEXT + CANONICAL ================= */
   async redirects() {
     return [
-      /* ===== CANONICAL DOMAIN (MUY IMPORTANTE SEO) ===== */
-      {
-        source: "/:path*",
-        has: [
-          {
-            type: "host",
-            value: "www.pravice.co",
-          },
-        ],
-        destination: "https://pravice.co/:path*",
-        permanent: true,
-      },
-
       /* ===== WORDPRESS → NEXT ===== */
 
-      // Blog WordPress → Blog Next
       {
         source: "/noticias-juridicas/:slug*",
         destination: "/blog/:slug*",
         permanent: true,
       },
-
-      // Practice Area → Áreas de práctica
       {
         source: "/practice-area/:slug*",
         destination: "/areas-de-practica/:slug*",
         permanent: true,
       },
-
-      // Categorías WordPress
       {
         source: "/category/noticias-juridicas/",
         destination: "/blog",
@@ -89,22 +71,16 @@ const nextConfig: NextConfig = {
         destination: "/blog",
         permanent: true,
       },
-
-      // Tags
       {
         source: "/tag/:slug*",
         destination: "/blog",
         permanent: true,
       },
-
-      // Autor
       {
         source: "/author/:slug*",
         destination: "/blog",
         permanent: true,
       },
-
-      // Landings antiguas
       {
         source: "/landing/",
         destination: "/",
@@ -115,18 +91,27 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
-
-      // Política de datos
       {
         source: "/politica-de-tratamiento-y-proteccion-de-datos-personales/",
         destination: "/politica-privacidad",
         permanent: true,
       },
-
-      // Quitar index.php
       {
         source: "/index.php/:path*",
         destination: "/:path*",
+        permanent: true,
+      },
+
+      /* ===== WWW → SIN WWW ===== */
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "www.pravice.co",
+          },
+        ],
+        destination: "https://pravice.co/:path*",
         permanent: true,
       },
     ];
