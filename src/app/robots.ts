@@ -8,13 +8,20 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/", "/_next/", "/admin/"],
       },
-
-      // Bots importantes (IA + SEO)
       {
-        userAgent: ["Googlebot", "Bingbot", "Google-Extended"],
+        userAgent: "Googlebot",
+        allow: "/",
+      },
+      {
+        userAgent: "Bingbot",
+        allow: "/",
+      },
+      {
+        userAgent: "Google-Extended",
         allow: "/",
       },
     ],
     sitemap: "https://pravice.co/sitemap.xml",
+    host: "https://pravice.co",
   };
 }
