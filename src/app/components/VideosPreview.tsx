@@ -13,10 +13,17 @@ export default function VideosPreview() {
         description:
           "Proceso de divorcio por mutuo acuerdo en Bogotá Colombia, requisitos legales, costos y asesoría jurídica.",
         thumbnailUrl: "https://i.ytimg.com/vi/eQFEueWd5tw/maxresdefault.jpg",
-        uploadDate: "2024-10-01",
+        uploadDate: "2021-11-09T12:00:00-05:00",
         duration: "PT4M30S",
         embedUrl: "https://www.youtube.com/embed/eQFEueWd5tw",
         contentUrl: "https://www.youtube.com/watch?v=eQFEueWd5tw",
+        inLanguage: "es",
+        regionsAllowed: "CO",
+        interactionStatistic: {
+          "@type": "InteractionCounter",
+          interactionType: { "@type": "WatchAction" },
+          userInteractionCount: 100,
+        },
         publisher: {
           "@type": "Organization",
           name: "Pravice Abogados",
@@ -32,10 +39,17 @@ export default function VideosPreview() {
         description:
           "Servicios de derecho comercial en Bogotá Colombia para empresas, contratos, sociedades y asesoría jurídica empresarial.",
         thumbnailUrl: "https://i.ytimg.com/vi/bVky48kidxg/maxresdefault.jpg",
-        uploadDate: "2024-10-05",
+        uploadDate: "2020-02-14T12:00:00-05:00",
         duration: "PT5M10S",
         embedUrl: "https://www.youtube.com/embed/bVky48kidxg",
         contentUrl: "https://www.youtube.com/watch?v=bVky48kidxg",
+        inLanguage: "es",
+        regionsAllowed: "CO",
+        interactionStatistic: {
+          "@type": "InteractionCounter",
+          interactionType: { "@type": "WatchAction" },
+          userInteractionCount: 150,
+        },
         publisher: {
           "@type": "Organization",
           name: "Pravice Abogados",
@@ -51,10 +65,17 @@ export default function VideosPreview() {
         description:
           "Explicación sobre la importancia del derecho laboral en Colombia para empresas y trabajadores.",
         thumbnailUrl: "https://i.ytimg.com/vi/sMcNzoPSo6Y/maxresdefault.jpg",
-        uploadDate: "2024-10-10",
+        uploadDate: "2021-10-13T12:00:00-05:00",
         duration: "PT4M50S",
         embedUrl: "https://www.youtube.com/embed/sMcNzoPSo6Y",
         contentUrl: "https://www.youtube.com/watch?v=sMcNzoPSo6Y",
+        inLanguage: "es",
+        regionsAllowed: "CO",
+        interactionStatistic: {
+          "@type": "InteractionCounter",
+          interactionType: { "@type": "WatchAction" },
+          userInteractionCount: 200,
+        },
         publisher: {
           "@type": "Organization",
           name: "Pravice Abogados",
