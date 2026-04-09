@@ -42,24 +42,38 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 28px;
+
+  /* 🔥 CLAVE: hace que todas las cards tengan misma altura */
+  align-items: stretch;
 }
 
 /* ================= CARD ================= */
 
 .card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra vertical */
+  align-items: center; /* centra horizontal */
+
+  text-align: center;
+
   background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 12px;
-  padding: 26px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  padding: 28px;
+
   text-decoration: none;
   transition: all 0.25s ease;
+
+  /* 🔥 altura consistente */
+  height: 100%;
+  min-height: 230px;
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-6px) scale(1.01);
   border-color: #f7c600;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
 }
 
 /* ================= CARD CONTENT ================= */
@@ -73,11 +87,24 @@
 }
 
 .card p {
+  position: relative;
   font-size: 15px;
   line-height: 1.6;
   color: #000;
   opacity: 0.75;
   margin-bottom: 16px;
+
+  max-height: 72px;
+  overflow: hidden;
+}
+
+.card p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 28px;
 }
 
 /* ================= LINK ================= */
@@ -86,9 +113,10 @@
   font-size: 14px;
   font-weight: 600;
   color: #c4911a;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .card:hover .link {
   color: #f7c600;
+  transform: translateX(4px);
 }
