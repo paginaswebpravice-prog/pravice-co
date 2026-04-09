@@ -281,12 +281,15 @@ export default function ConciliacionPage() {
             </p>
 
             <div className={styles.actions}>
-              <a href="/" className={styles.primary}>
+              <a
+                href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+                className={styles.primary}
+              >
                 Solicitar conciliación
               </a>
 
               <a
-                href="https://api.whatsapp.com"
+                href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
                 target="_blank"
                 className={styles.secondary}
               >
