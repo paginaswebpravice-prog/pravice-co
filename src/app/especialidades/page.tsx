@@ -24,6 +24,7 @@ interface Especialidad {
   titulo: string;
   descripcion: string;
   icono: any;
+  link: string;
 }
 
 interface Portal {
@@ -39,72 +40,84 @@ export default function Especialidades() {
       descripcion:
         "Asesoría en derecho comercial en Colombia para empresas, contratos mercantiles y operaciones comerciales, con abogados especializados en Bogotá.",
       icono: faScaleBalanced,
+      link: "/especialidades/derecho-comercial",
     },
     {
       titulo: "Recuperación de Cartera",
       descripcion:
         "Recuperación de cartera en Colombia mediante estrategias de cobro prejurídico y jurídico, optimizando el recaudo de deudas empresariales.",
       icono: faFileContract,
+      link: "/especialidades/recuperacion-de-cartera",
     },
     {
       titulo: "Conciliación",
       descripcion:
         "Conciliación extrajudicial en Colombia como mecanismo eficaz para resolver conflictos empresariales sin necesidad de procesos judiciales.",
       icono: faHandshake,
+      link: "/especialidades/conciliacion",
     },
     {
       titulo: "Litigios",
       descripcion:
         "Representación en litigios empresariales en Colombia ante juzgados, con abogados expertos en procesos judiciales y demandas ejecutivas.",
       icono: faGavel,
+      link: "/especialidades/litigios",
     },
     {
       titulo: "Derecho Empresarial",
       descripcion:
         "Servicios de derecho empresarial en Bogotá para la estructuración, protección y crecimiento legal de empresas en Colombia.",
       icono: faBuilding,
+      link: "/especialidades/derecho-empresarial",
     },
     {
       titulo: "Asesoría Corporativa",
       descripcion:
         "Asesoría corporativa estratégica para empresas en Colombia, enfocada en toma de decisiones legales, cumplimiento y gestión de riesgos.",
       icono: faBriefcase,
+      link: "/especialidades/asesoria-corporativa",
     },
     {
       titulo: "Derecho Contractual",
       descripcion:
         "Elaboración y revisión de contratos comerciales en Colombia, garantizando seguridad jurídica en acuerdos empresariales.",
       icono: faFileSignature,
+      link: "/especialidades/derecho-contractual",
     },
     {
       titulo: "Derecho Societario",
       descripcion:
         "Constitución y reorganización de sociedades en Colombia, con abogados especializados en derecho societario en Bogotá.",
       icono: faUsers,
+      link: "/especialidades/derecho-societario",
     },
     {
       titulo: "Derecho Administrativo",
       descripcion:
         "Asesoría en procesos administrativos en Colombia y representación ante entidades públicas para empresas y particulares.",
       icono: faLandmark,
+      link: "/especialidades/derecho-administrativo",
     },
     {
       titulo: "Resolución de Conflictos",
       descripcion:
         "Solución de conflictos empresariales mediante negociación, conciliación y mecanismos legales eficientes en Colombia.",
       icono: faBalanceScale,
+      link: "/especialidades/resolucion-de-conflictos",
     },
     {
       titulo: "Cumplimiento Normativo",
       descripcion:
         "Cumplimiento normativo en Colombia para empresas, prevención de riesgos legales y adaptación a regulaciones vigentes.",
       icono: faClipboardCheck,
+      link: "/especialidades/cumplimiento-normativo",
     },
     {
       titulo: "Protección Jurídica Empresarial",
       descripcion:
         "Estrategias de protección jurídica empresarial en Colombia para salvaguardar activos, contratos y operaciones comerciales.",
       icono: faShieldHalved,
+      link: "/especialidades/proteccion-juridica-empresarial",
     },
   ];
 
@@ -168,9 +181,10 @@ export default function Especialidades() {
 
           <div className={styles.cards}>
             {especialidades.map((esp, index) => (
-              <motion.div
+              <motion.a
                 key={index}
                 className={styles.card}
+                href={esp.link}
                 itemScope
                 itemType="https://schema.org/Service"
                 initial={{ opacity: 0, y: 30 }}
@@ -190,7 +204,7 @@ export default function Especialidades() {
 
                 <h3 itemProp="name">{esp.titulo}</h3>
                 <p itemProp="description">{esp.descripcion}</p>
-              </motion.div>
+              </motion.a>
             ))}
           </div>
 

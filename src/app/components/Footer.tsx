@@ -95,15 +95,65 @@ export default function Footer() {
 
           {/* COLUMNA 3 */}
           <div className={styles.col}>
-            <h4>Áreas del Derecho</h4>
+            <h4>Especialidades</h4>
 
             <ul>
-              <li>Registro de Marca</li>
-              <li>Derecho Laboral</li>
-              <li>Insolvencia</li>
-              <li>Derecho Civil</li>
-              <li>Derecho Penal</li>
-              <li>Derecho Comercial</li>
+              <li>
+                <Link href="/especialidades/derecho-comercial">
+                  Derecho Comercial
+                </Link>
+              </li>
+              <li>
+                <Link href="/especialidades/recuperacion-de-cartera">
+                  Recuperación de Cartera
+                </Link>
+              </li>
+              <li>
+                <Link href="/especialidades/conciliacion">Conciliación</Link>
+              </li>
+              <li>
+                <Link href="/especialidades/litigios">Litigios</Link>
+              </li>
+              <li>
+                <Link href="/especialidades/derecho-empresarial">
+                  Derecho Empresarial
+                </Link>
+              </li>
+              <li>
+                <Link href="/especialidades/asesoria-corporativa">
+                  Asesoría Corporativa
+                </Link>
+              </li>
+              <li>
+                <Link href="/especialidades/derecho-contractual">
+                  Derecho Contractual
+                </Link>
+              </li>
+              <li>
+                <Link href="/especialidades/derecho-societario">
+                  Derecho Societario
+                </Link>
+              </li>
+              <li>
+                <Link href="/especialidades/derecho-administrativo">
+                  Derecho Administrativo
+                </Link>
+              </li>
+              <li>
+                <Link href="/especialidades/resolucion-de-conflictos">
+                  Resolución de Conflictos
+                </Link>
+              </li>
+              <li>
+                <Link href="/especialidades/cumplimiento-normativo">
+                  Cumplimiento Normativo
+                </Link>
+              </li>
+              <li>
+                <Link href="/especialidades/proteccion-juridica-empresarial">
+                  Proteccion Juridica Empresarial
+                </Link>
+              </li>
             </ul>
           </div>
 
