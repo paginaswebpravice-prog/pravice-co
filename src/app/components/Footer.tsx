@@ -85,10 +85,13 @@ export default function Footer() {
                 <Link href="#about">Nosotros</Link>
               </li>
               <li>
-                <Link href="/contacto">Especialidades</Link>
+                <Link href="/especialidades">Especialidades</Link>
               </li>
               <li>
-                <Link href="/contacto">Contacto</Link>
+                <Link href="/videos">Videos</Link>
+              </li>
+              <li>
+                <Link href="/blog">Blog</Link>
               </li>
             </ul>
           </div>
