@@ -97,6 +97,7 @@ export default function Header() {
             <Link href="/#legalapp">Legal App</Link>
             <Link href="/#aboutUs">Nosotros</Link>
             <Link href="/especialidades">Especialidades</Link>
+            <Link href="/abogados">Nuestros abogados</Link>
             <Link href="/#videos-pravice">Videos</Link>
             <Link href="/blog">Blog</Link>
 
