@@ -40,6 +40,7 @@ export default function About() {
             >
               Firma de abogados especializados en Bogotá y Colombia que
               <span>
+                {" "}
                 transforma desafíos legales en soluciones jurídicas sólidas
               </span>
             </motion.h2>
