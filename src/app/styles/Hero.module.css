@@ -55,7 +55,7 @@
 
 .buttons {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -92,6 +92,21 @@
   background: #c4911a;
   border-color: #c4911a;
   color: #ffffff;
+}
+
+.whatsappBtn {
+  background: #25d366; /* verde WhatsApp */
+  color: #ffffff;
+  padding: 14px 26px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.whatsappBtn:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
 }
 
 .seoText {

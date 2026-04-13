@@ -94,6 +94,17 @@ export default function Hero() {
                 Conoce Legal App
               </Link>
             </motion.div>
+
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
+              <Link
+                href="https://wa.me/573114659315"
+                className={styles.whatsappBtn}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Consulta por WhatsApp
+              </Link>
+            </motion.div>
           </motion.div>
         </motion.div>
 
