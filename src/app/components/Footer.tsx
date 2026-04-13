@@ -241,7 +241,7 @@ export default function Footer() {
         >
           <p>¿Necesitas asesoría legal?</p>
           <span>Te respondemos por WhatsApp ahora</span>
-          <button onClick={() => setShowBubble(false)}>×</button>
+          <button onClick={() => setShowBubble(false)}>x</button>
         </motion.div>
       )}
 
