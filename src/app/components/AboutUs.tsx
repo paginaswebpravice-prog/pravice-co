@@ -73,12 +73,12 @@ export default function AboutUs() {
 
           <motion.a
             className={styles.button}
-            href="/#services"
+            href="/abogados"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 200 }}
           >
-            <FontAwesomeIcon icon={faScaleBalanced} /> Conoce nuestros servicios
+            <FontAwesomeIcon icon={faScaleBalanced} /> Conoce nuestros abogados
           </motion.a>
 
           <ul className={styles.list}>

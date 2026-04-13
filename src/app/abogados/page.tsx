@@ -2,6 +2,7 @@
 
 import styles from "./AbogadosGrid.module.css";
 import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
 
 const abogados = [
   {
@@ -17,7 +18,7 @@ const abogados = [
     alt: "Leidy Tirado abogada en derecho comercial en Bogotá Colombia",
   },
   {
-    nombre: "Angie Rivera ",
+    nombre: "Angie Rivera",
     slug: "angie-rivera",
     imagen: "/PERFIL ANGIE RIVERA (1).jpg",
     alt: "Angie Rivera abogada en derecho comercial en Bogotá Colombia",
@@ -53,29 +54,67 @@ export default function AbogadosGrid() {
 
   return (
     <section className={styles.section}>
-      <h2 className={styles.title}>Nuestros abogados en Bogotá Colombia</h2>
+      {/* TÍTULO */}
+      <motion.h2
+        className={styles.title}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        Nuestros abogados en Bogotá Colombia
+      </motion.h2>
 
+      {/* GRID */}
       <div className={styles.grid}>
         {abogados.map((abogado, index) => (
-          <div
+          <motion.div
             key={index}
             className={styles.card}
             onClick={() => router.push(`/abogados/${abogado.slug}`)}
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.6,
+              delay: index * 0.1,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
           >
-            {/* IMAGEN COMPLETA */}
-            <img src={abogado.imagen} alt={abogado.alt} loading="lazy" />
+            {/* IMAGEN */}
+            <motion.img
+              src={abogado.imagen}
+              alt={abogado.alt}
+              loading="lazy"
+              initial={{ scale: 1.1 }}
+              whileInView={{ scale: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            />
 
-            {/* OVERLAY PARA MEJOR UX */}
-            <div className={styles.overlay}>
-              <span>Ver perfil</span>
-            </div>
+            {/* OVERLAY */}
+            <motion.div
+              className={styles.overlay}
+              initial={{ opacity: 0 }}
+              whileHover={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
+            >
+              <motion.span
+                initial={{ y: 10, opacity: 0 }}
+                whileHover={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.3 }}
+              >
+                Ver perfil
+              </motion.span>
+            </motion.div>
 
-            {/* SEO OCULTO (IMPORTANTE) */}
+            {/* SEO OCULTO */}
             <p className={styles.seoText}>
               {abogado.nombre} abogado en Bogotá Colombia especializado en
               derecho comercial, asesoría jurídica empresarial y contratos.
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
