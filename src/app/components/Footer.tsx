@@ -15,11 +15,28 @@ import {
   faLocationDot,
   faClock,
 } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function Footer() {
   const emailUser = "servicioalcliente";
   const emailDomain = "pravice.co";
   const email = `${emailUser}@${emailDomain}`;
+
+  const [showBubble, setShowBubble] = useState(false);
+
+  useEffect(() => {
+    const alreadyShown = localStorage.getItem("waBubbleShown");
+
+    if (!alreadyShown) {
+      const timer = setTimeout(() => {
+        setShowBubble(true);
+        localStorage.setItem("waBubbleShown", "true");
+      }, 6000);
+
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
   return (
     <>
@@ -157,7 +174,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/especialidades/proteccion-juridica-empresarial">
-                  Proteccion Juridica Empresarial
+                  Protección Jurídica Empresarial
                 </Link>
               </li>
             </ul>
@@ -180,9 +197,7 @@ export default function Footer() {
             <div className={styles.contactItem}>
               <FontAwesomeIcon icon={faEnvelope} />
               <a href={`mailto:${email}`}>
-                {emailUser}
-                {"@"}
-                {emailDomain}
+                {emailUser}@{emailDomain}
               </a>
             </div>
 
@@ -215,6 +230,22 @@ export default function Footer() {
           </div>
         </div>
       </footer>
+
+      {/* BURBUJA WHATSAPP */}
+      {showBubble && (
+        <motion.div
+          initial={{ opacity: 0, y: 20, scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className={styles.whatsappBubble}
+        >
+          <p>¿Necesitas asesoría legal?</p>
+          <span>Te respondemos por WhatsApp ahora</span>
+          <button onClick={() => setShowBubble(false)}>×</button>
+        </motion.div>
+      )}
+
+      {/* BOTÓN WHATSAPP */}
       <Link
         href="https://wa.me/573114659315"
         target="_blank"
