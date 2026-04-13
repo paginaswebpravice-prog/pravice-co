@@ -5,12 +5,47 @@ import { useRouter } from "next/navigation";
 
 const abogados = [
   {
+    nombre: "Alberto Castro",
+    slug: "alberto-castro",
+    imagen: "/PERFIL ALBERTO CASTRO.jpg",
+    alt: "Alberto Castro abogado en derecho comercial en Bogotá Colombia",
+  },
+  {
+    nombre: "Leidy Tirado",
+    slug: "leidy-tirado",
+    imagen: "/PERFIL LEIDY TIRADO (1).jpg",
+    alt: "Leidy Tirado abogada en derecho comercial en Bogotá Colombia",
+  },
+  {
+    nombre: "Angie Rivera ",
+    slug: "angie-rivera",
+    imagen: "/PERFIL ANGIE RIVERA (1).jpg",
+    alt: "Angie Rivera abogada en derecho comercial en Bogotá Colombia",
+  },
+  {
+    nombre: "Guillermo Rodríguez",
+    slug: "guillermo-rodriguez",
+    imagen: "/PERFIL GUILLERMO RODRIGUEZ FAMILIA.jpg",
+    alt: "Guillermo Rodríguez abogado en derecho comercial en Bogotá Colombia",
+  },
+  {
     nombre: "Harrison Pérez",
     slug: "harrison-perez",
     imagen: "/PERFIL HARRISON PEREZ COMERCIAL (1).jpg",
     alt: "Harrison Pérez abogado en derecho comercial en Bogotá Colombia",
   },
-  // agrega los otros 6 igual
+  {
+    nombre: "Marcial Ortiz",
+    slug: "marcial-ortiz",
+    imagen: "/PERFIL MARCIAL ORTIZ.jpg",
+    alt: "Marcial Ortiz abogado en derecho comercial en Bogotá Colombia",
+  },
+  {
+    nombre: "Santiago Franco",
+    slug: "santiago-franco",
+    imagen: "/PERFIL SANTIAGO FRANCO.jpg",
+    alt: "Santiago Franco abogado en derecho comercial en Bogotá Colombia",
+  },
 ];
 
 export default function AbogadosGrid() {
