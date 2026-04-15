@@ -36,6 +36,17 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "www.pravice.co",
+          },
+        ],
+        destination: "https://pravice.co/:path*",
+        permanent: true,
+      },
+      {
         source: "/noticias-juridicas/:slug*",
         destination: "/blog/:slug*",
         permanent: true,

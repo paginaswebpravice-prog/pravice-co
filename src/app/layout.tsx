@@ -16,12 +16,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pravice.co/"),
+  // ✅ CANONICAL BASE (CLAVE)
+  metadataBase: new URL("https://pravice.co"),
 
   title: {
     default: "Pravice Abogados | Firma de Abogados en Bogotá",
     template: "%s | Pravice Abogados",
   },
+
   description:
     "Pravice Abogados es una firma legal en Bogotá con más de 25 años de experiencia ofreciendo asesoría jurídica en derecho laboral, civil, comercial, penal y registro de marcas.",
 
@@ -51,17 +53,26 @@ export const metadata: Metadata = {
     },
   },
 
+  // ✅ CANONICAL GLOBAL
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
     title: "Pravice Abogados | Firma de abogados en Bogotá",
     description:
       "Firma de abogados en Colombia especializada en asesoría jurídica empresarial y personal. Más de 25 años de experiencia.",
-    url: "https://www.pravice.co/",
+
+    // ❌ ANTES: www
+    // ✅ AHORA: SIN www
+    url: "https://pravice.co",
+
     siteName: "Pravice Abogados",
     locale: "es_CO",
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://pravice.co/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Pravice Abogados - Firma de abogados en Bogotá",
@@ -72,9 +83,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LegalService",
@@ -110,6 +121,7 @@ export default function RootLayout({
   return (
     <html lang="es-CO">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-MNESPQQ54T"
           strategy="afterInteractive"
@@ -123,6 +135,16 @@ export default function RootLayout({
             gtag('config', 'G-MNESPQQ54T');
           `}
         </Script>
+
+        {/* Schema */}
+        <Script
+          id="schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+        >
+          {JSON.stringify(schema)}
+        </Script>
+
         <Header />
         <main>{children}</main>
         <Footer />
