@@ -41,137 +41,194 @@ export default function RecuperacionCarteraEmpresas() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
 
-      <article
+      <motion.article
         className={styles.article}
         itemScope
         itemType="https://schema.org/BlogPosting"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6 }}
       >
         {/* HERO */}
-        <header className={styles.header}>
-          <h1 className={styles.title} itemProp="headline">
+        <motion.header
+          className={styles.header}
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <motion.h1
+            className={styles.title}
+            itemProp="headline"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+          >
             Métodos efectivos de recuperación de cartera empresarial en Colombia
-          </h1>
+          </motion.h1>
 
-          <p className={styles.intro} itemProp="description">
+          <motion.p
+            className={styles.intro}
+            itemProp="description"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+          >
             En Colombia, especialmente en ciudades como Bogotá, la recuperación
             de cartera empresarial es clave para mantener la liquidez,
             garantizar la estabilidad financiera y evitar riesgos operativos en
             las empresas.
-          </p>
+          </motion.p>
 
-          <p className={styles.intro}>
+          <motion.p
+            className={styles.intro}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
+          >
             Una cartera vencida mal gestionada puede afectar el flujo de caja,
             limitar el crecimiento y generar pérdidas económicas significativas.
-          </p>
-        </header>
+          </motion.p>
+        </motion.header>
 
         {/* DEFINICIÓN */}
-        <section className={styles.section}>
-          <h2>¿Qué es la recuperación de cartera empresarial?</h2>
+        <motion.section
+          className={styles.section}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <motion.h2
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+          >
+            ¿Qué es la recuperación de cartera empresarial?
+          </motion.h2>
 
-          <p>
+          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
             Es el conjunto de estrategias y procesos que utilizan las empresas
             para recuperar pagos pendientes de clientes.
-          </p>
+          </motion.p>
 
-          <ul>
+          <motion.ul initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
             <li>seguimiento de facturas vencidas</li>
             <li>comunicación con clientes</li>
             <li>negociación de acuerdos de pago</li>
             <li>uso de mecanismos legales</li>
-          </ul>
-        </section>
+          </motion.ul>
+        </motion.section>
 
         {/* IMPORTANCIA */}
-        <section className={styles.section}>
-          <h2>Importancia de una buena gestión de cobranzas</h2>
+        <motion.section
+          className={styles.section}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <motion.h2
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+          >
+            Importancia de una buena gestión de cobranzas
+          </motion.h2>
 
-          <ul>
+          <motion.ul initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
             <li>mejorar flujo de caja</li>
             <li>reducir morosidad</li>
             <li>mantener relaciones comerciales</li>
             <li>optimizar procesos financieros</li>
-          </ul>
+          </motion.ul>
 
-          <p>
+          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
             Las empresas en Colombia que gestionan correctamente su cartera
             logran mayor estabilidad y crecimiento sostenible.
-          </p>
-        </section>
+          </motion.p>
+        </motion.section>
 
         {/* MÉTODOS */}
-        <section className={styles.section}>
-          <h2>Métodos efectivos de recuperación de cartera</h2>
+        <motion.section
+          className={styles.section}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <motion.h2
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+          >
+            Métodos efectivos de recuperación de cartera
+          </motion.h2>
 
-          <div className={styles.strategy}>
-            <h3>1. Seguimiento constante</h3>
-            <p>
-              Contactar oportunamente a los clientes permite evitar el
-              vencimiento prolongado de las facturas.
-            </p>
-          </div>
-
-          <div className={styles.strategy}>
-            <h3>2. Comunicación directa</h3>
-            <p>
-              Hablar con el cliente ayuda a identificar causas del retraso y
-              encontrar soluciones.
-            </p>
-          </div>
-
-          <div className={styles.strategy}>
-            <h3>3. Acuerdos de pago</h3>
-            <p>
-              Ofrecer planes flexibles facilita la recuperación del dinero sin
-              afectar la relación comercial.
-            </p>
-          </div>
-
-          <div className={styles.strategy}>
-            <h3>4. Automatización de cobranzas</h3>
-            <p>
-              Herramientas tecnológicas permiten mejorar la eficiencia y reducir
-              errores.
-            </p>
-          </div>
-
-          <div className={styles.strategy}>
-            <h3>5. Políticas de crédito claras</h3>
-            <p>Definir condiciones desde el inicio reduce el riesgo de mora.</p>
-          </div>
-
-          <div className={styles.strategy}>
-            <h3>6. Conciliación</h3>
-            <p>
-              Permite resolver conflictos de pago sin acudir a procesos
-              judiciales largos.
-            </p>
-          </div>
-
-          <div className={styles.strategy}>
-            <h3>7. Mecanismos legales</h3>
-            <p>
-              En casos extremos, acudir a procesos jurídicos protege los
-              intereses financieros de la empresa.
-            </p>
-          </div>
-        </section>
+          {[
+            {
+              title: "1. Seguimiento constante",
+              text: "Contactar oportunamente a los clientes permite evitar el vencimiento prolongado de las facturas.",
+            },
+            {
+              title: "2. Comunicación directa",
+              text: "Hablar con el cliente ayuda a identificar causas del retraso y encontrar soluciones.",
+            },
+            {
+              title: "3. Acuerdos de pago",
+              text: "Ofrecer planes flexibles facilita la recuperación del dinero sin afectar la relación comercial.",
+            },
+            {
+              title: "4. Automatización de cobranzas",
+              text: "Herramientas tecnológicas permiten mejorar la eficiencia y reducir errores.",
+            },
+            {
+              title: "5. Políticas de crédito claras",
+              text: "Definir condiciones desde el inicio reduce el riesgo de mora.",
+            },
+            {
+              title: "6. Conciliación",
+              text: "Permite resolver conflictos de pago sin acudir a procesos judiciales largos.",
+            },
+            {
+              title: "7. Mecanismos legales",
+              text: "En casos extremos, acudir a procesos jurídicos protege los intereses financieros de la empresa.",
+            },
+          ].map((item, i) => (
+            <motion.div
+              key={i}
+              className={styles.strategy}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.03 }}
+            >
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </motion.div>
+          ))}
+        </motion.section>
 
         {/* CONCLUSIÓN */}
-        <section className={styles.conclusion}>
-          <h2>Conclusión</h2>
+        <motion.section
+          className={styles.conclusion}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+            Conclusión
+          </motion.h2>
 
-          <p>
+          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
             La recuperación de cartera empresarial en Colombia es un proceso
             fundamental para la salud financiera de cualquier empresa.
-          </p>
+          </motion.p>
 
-          <p>
+          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
             Implementar estrategias de seguimiento, negociación y tecnología
             permite mejorar el recaudo y reducir riesgos financieros.
-          </p>
-        </section>
-      </article>
+          </motion.p>
+        </motion.section>
+      </motion.article>
     </>
   );
 }
