@@ -34,6 +34,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const especialidades = [
+    "derecho-comercial",
+    "recuperacion-de-cartera",
+    "conciliacion",
+    "litigios",
+    "derecho-empresarial",
+    "asesoria-corporativa",
+    "derecho-contractual",
+    "derecho-societario",
+    "derecho-administrativo",
+    "resolucion-de-conflictos",
+    "cumplimiento-normativo",
+    "proteccion-juridica-empresarial",
+  ];
+
+  const especialidadesUrls = especialidades.map((slug) => ({
+    url: `${baseUrl}/especialidades/${slug}`,
+    lastModified: today,
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+  }));
+
   return [
     // HOME
     {
@@ -68,6 +90,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+
+    // ESPECIALIDADES
+    ...especialidadesUrls,
 
     // BLOG
     ...blogUrls,
