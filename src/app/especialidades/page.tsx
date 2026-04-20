@@ -18,6 +18,9 @@ import {
   faBalanceScale,
   faClipboardCheck,
   faShieldHalved,
+  faUserTie,
+  faTrademark,
+  faWallet,
 } from "@fortawesome/free-solid-svg-icons";
 
 interface Especialidad {
@@ -133,6 +136,30 @@ export default function Especialidades() {
       descripcion:
         "Soluciones jurídicas para recuperación de cartera en el sector salud en Colombia, IPS y EPS.",
       link: "https://recaudocarteraipsyeps.com/",
+    },
+    {
+      nombre: "Derecho Laboral",
+      descripcion:
+        "Asesoría en derecho laboral en Colombia para empresas y trabajadores, con abogados especializados en relaciones laborales y conflictos laborales.",
+      link: "https://pravice-abogadoslaboralistas.vercel.app/",
+    },
+    {
+      nombre: " Marcas y Patentes",
+      descripcion:
+        "Protección de propiedad intelectual en Colombia, registro de marcas y patentes para empresas y emprendedores.",
+      link: "https://marcas-y-patentes.vercel.app",
+    },
+    {
+      nombre: "Gestion de Cartera en Cali",
+      descripcion:
+        "Servicios de gestión de cartera en Cali, Colombia, para optimizar el recaudo de deudas empresariales y mejorar la liquidez.",
+      link: "https://gestion-cartera-cali-pravice.vercel.app/",
+    },
+    {
+      nombre: "Gestion de Cartera en Bucaramanga",
+      descripcion:
+        "Soluciones de gestión de cartera en Bucaramanga, Colombia, para empresas que buscan mejorar su recuperación de deudas y flujo de caja.",
+      link: "https://gestion-cartera-bucaramanga-iota.vercel.app/",
     },
   ];
 
