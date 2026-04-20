@@ -3,38 +3,38 @@
 /* ================= METADATA ================= */
 export const metadata = {
   title:
-    "Recaudo de cartera IPS y EPS en Colombia | Cobranza para sector salud",
+    "Especialidades legales en Colombia | Derecho comercial, conciliación y litigios en Bogotá",
 
   description:
-    "Servicio especializado en recaudo de cartera para IPS y EPS en Colombia. Recuperación de cartera en salud, conciliación y gestión de cobros en Bogotá.",
+    "Servicios legales en Colombia: derecho comercial, recuperación de cartera, conciliación, litigios y asesoría empresarial en Bogotá.",
 
   keywords: [
-    "recaudo de cartera IPS",
-    "recaudo de cartera EPS",
-    "cobranza sector salud Colombia",
-    "recuperación de cartera salud Bogotá",
-    "gestión de cartera IPS Colombia",
-    "cobro de cartera EPS",
+    "abogados en Colombia",
+    "derecho comercial Colombia",
+    "recuperación de cartera Bogotá",
+    "conciliación Colombia",
+    "litigios empresariales Bogotá",
+    "asesoría jurídica empresas Colombia",
   ],
 
   robots: "index, follow",
 
   alternates: {
-    canonical: "https://recaudodecarteraipsyeps.com/",
+    canonical: "https://pravice.co/especialidades",
   },
 
   openGraph: {
-    title: "Recaudo de cartera IPS y EPS en Colombia",
+    title: "Especialidades legales en Colombia | Abogados en Bogotá",
     description:
-      "Recuperación de cartera para IPS y EPS con estrategias jurídicas y administrativas en Colombia.",
-    url: "https://recaudodecarteraipsyeps.com/",
+      "Conoce nuestras especialidades legales en Colombia: conciliación, litigios, derecho comercial y asesoría empresarial.",
+    url: "https://pravice.co/especialidades",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Cobranza para IPS y EPS en Colombia",
-    description: "Optimiza el recaudo de cartera en el sector salud.",
+    title: "Servicios legales en Colombia",
+    description: "Especialidades jurídicas en Bogotá y Colombia para empresas.",
   },
 };
 
