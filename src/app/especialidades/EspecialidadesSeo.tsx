@@ -114,6 +114,10 @@ export default function EspecialidadesSeo() {
   const portales = [
     "https://cobrandoonline.com/",
     "https://recaudocarteraipsyeps.com/",
+    "https://pravice-abogadoslaboralistas.vercel.app/",
+    "https://marcas-y-patentes.vercel.app",
+    "http://gestion-cartera-cali-pravice.vercel.app/",
+    "https://gestion-cartera-bucaramanga-iota.vercel.app/",
   ];
 
   const schema = {
