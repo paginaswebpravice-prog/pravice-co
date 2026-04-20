@@ -126,13 +126,13 @@ export default function Especialidades() {
       nombre: "Cobrando Online",
       descripcion:
         "Plataforma especializada en recuperación de cartera en Colombia, cobro prejurídico y gestión de deudas empresariales.",
-      link: "https://www.cobrandoonline.com/",
+      link: "https://cobrandoonline.com/",
     },
     {
       nombre: "Recaudo Cartera IPS y EPS",
       descripcion:
         "Soluciones jurídicas para recuperación de cartera en el sector salud en Colombia, IPS y EPS.",
-      link: "https://www.recaudocarteraipsyeps.com/",
+      link: "https://recaudocarteraipsyeps.com/",
     },
   ];
 

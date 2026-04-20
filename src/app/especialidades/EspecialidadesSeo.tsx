@@ -1,3 +1,43 @@
+"use client";
+
+/* ================= METADATA ================= */
+export const metadata = {
+  title:
+    "Recaudo de cartera IPS y EPS en Colombia | Cobranza para sector salud",
+
+  description:
+    "Servicio especializado en recaudo de cartera para IPS y EPS en Colombia. Recuperación de cartera en salud, conciliación y gestión de cobros en Bogotá.",
+
+  keywords: [
+    "recaudo de cartera IPS",
+    "recaudo de cartera EPS",
+    "cobranza sector salud Colombia",
+    "recuperación de cartera salud Bogotá",
+    "gestión de cartera IPS Colombia",
+    "cobro de cartera EPS",
+  ],
+
+  robots: "index, follow",
+
+  alternates: {
+    canonical: "https://recaudodecarteraipsyeps.com/",
+  },
+
+  openGraph: {
+    title: "Recaudo de cartera IPS y EPS en Colombia",
+    description:
+      "Recuperación de cartera para IPS y EPS con estrategias jurídicas y administrativas en Colombia.",
+    url: "https://recaudodecarteraipsyeps.com/",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Cobranza para IPS y EPS en Colombia",
+    description: "Optimiza el recaudo de cartera en el sector salud.",
+  },
+};
+
 export default function EspecialidadesSeo() {
   const especialidades = [
     {
@@ -72,8 +112,8 @@ export default function EspecialidadesSeo() {
   ];
 
   const portales = [
-    "https://www.cobrandoonline.com/",
-    "https://www.recaudocarteraipsyeps.com/",
+    "https://cobrandoonline.com/",
+    "https://recaudocarteraipsyeps.com/",
   ];
 
   const schema = {
@@ -94,7 +134,7 @@ export default function EspecialidadesSeo() {
           "@type": "Service",
           name: esp.titulo,
           description: esp.descripcion,
-          image: esp.icono, // 👈 AQUÍ van los iconos correctamente
+          image: esp.icono,
         },
       })),
     },
@@ -102,9 +142,12 @@ export default function EspecialidadesSeo() {
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+    <>
+      {/* ================= SCHEMA ================= */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+    </>
   );
 }
