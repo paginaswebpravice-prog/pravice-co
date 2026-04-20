@@ -1,3 +1,5 @@
+/* ================= ESPECIALIDADES ================= */
+
 .especialidades {
   padding: 100px 20px;
   background: linear-gradient(to bottom, #ffffff, #f5f9fc);
@@ -30,7 +32,7 @@
   font-size: 1.05rem;
 }
 
-/* GRID ESPECIALIDADES */
+/* ================= GRID ESPECIALIDADES ================= */
 
 .cards {
   display: grid;
@@ -88,7 +90,7 @@
   line-height: 1.5;
 }
 
-/* SECCION PORTALES */
+/* ================= PORTALES ================= */
 
 .portalesWrapper {
   border-top: 2px solid #e9eef3;
@@ -110,15 +112,18 @@
   color: #004a80;
 }
 
-/* GRID PORTALES */
+/* ================= GRID PORTALES (FIX PRINCIPAL) ================= */
 
 .portalesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+  /* 🔥 3 columnas fijas en desktop */
+  grid-template-columns: repeat(3, 1fr);
+
   gap: 25px;
 }
 
-/* CARD PORTAL */
+/* ================= CARD PORTAL ================= */
 
 .portalCard {
   background: #ffffff;
@@ -174,4 +179,18 @@
 
 .portalCard:hover .portalLink {
   color: #c4911a;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .portalesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .portalesGrid {
+    grid-template-columns: 1fr;
+  }
 }
