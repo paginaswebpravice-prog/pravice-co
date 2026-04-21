@@ -47,41 +47,35 @@ export default function AsesoriaCorporativaContent() {
         }}
       />
 
-      <motion.div
-        variants={container}
-        initial="hidden"
-        animate="visible"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
-        {/* ================= HERO ================= */}
-        <motion.section variants={fadeUp} className={styles.hero}>
-          <div className={styles.heroContent}>
-            <span className={styles.badge}>Abogados en Bogotá y Colombia</span>
+      {/* ================= HERO ================= */}
+      <motion.section variants={fadeUp} className={styles.hero}>
+        <div className={styles.heroContent}>
+          <span className={styles.badge}>Abogados en Bogotá y Colombia</span>
 
-            <h1 className={styles.title}>
-              Asesoría Corporativa en Bogotá: Abogados para Empresas que Quieren
-              Crecer sin Riesgos
-            </h1>
+          <h1 className={styles.title}>
+            Asesoría Corporativa en Bogotá: Abogados para Empresas que Quieren
+            Crecer sin Riesgos
+          </h1>
 
-            <p className={styles.description}>
-              Toma decisiones empresariales con respaldo legal. Asesoría
-              corporativa en Bogotá y Colombia para empresas que buscan crecer
-              con seguridad jurídica y visión estratégica.
-            </p>
+          <p className={styles.description}>
+            Toma decisiones empresariales con respaldo legal. Asesoría
+            corporativa en Bogotá y Colombia para empresas que buscan crecer con
+            seguridad jurídica y visión estratégica.
+          </p>
 
-            <div className={styles.actions}>
-              <a href="#contacto" className={styles.primary}>
-                Solicitar asesoría
-              </a>
-              <a href="/blog" className={styles.secondary}>
-                Ver blog legal
-              </a>
-            </div>
+          <div className={styles.actions}>
+            <a href="#contacto" className={styles.primary}>
+              Solicitar asesoría
+            </a>
+            <a href="/blog" className={styles.secondary}>
+              Ver blog legal
+            </a>
           </div>
-        </motion.section>
+        </div>
+      </motion.section>
 
-        {/* ================= INTRO ================= */}
+      {/* ================= INTRO ================= */}
+      <main className={styles.container}>
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
             ¿Qué es la asesoría corporativa y por qué es clave para tu empresa
@@ -301,7 +295,7 @@ export default function AsesoriaCorporativaContent() {
             </div>
           </div>
         </motion.section>
-      </motion.div>
+      </main>
     </>
   );
 }

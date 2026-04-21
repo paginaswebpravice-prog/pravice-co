@@ -47,248 +47,233 @@ export default function CumplimientoNormativoContent() {
         }}
       />
 
-      <article className={styles.articulo}>
-        <motion.div
-          variants={container}
-          initial="hidden"
-          animate="visible"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          {/* ================= HERO ================= */}
-          <motion.section variants={fadeUp} className={styles.hero}>
-            <div className={styles.heroContent}>
-              <span className={styles.badge}>
-                Abogados en Bogotá y Colombia
-              </span>
+      {/* ================= HERO ================= */}
+      <motion.section variants={fadeUp} className={styles.hero}>
+        <div className={styles.heroContent}>
+          <span className={styles.badge}>Abogados en Bogotá y Colombia</span>
 
-              <h1 className={styles.title}>
-                Cumplimiento Normativo en Bogotá: Evita Multas y Protege tu
-                Empresa en Colombia
-              </h1>
+          <h1 className={styles.title}>
+            Cumplimiento Normativo en Bogotá: Evita Multas y Protege tu Empresa
+            en Colombia
+          </h1>
 
-              <p className={styles.description}>
-                Implementa estrategias de cumplimiento normativo en Bogotá y
-                Colombia para prevenir riesgos legales, evitar sanciones y
-                garantizar el correcto funcionamiento de tu empresa frente a la
-                ley.
-              </p>
+          <p className={styles.description}>
+            Implementa estrategias de cumplimiento normativo en Bogotá y
+            Colombia para prevenir riesgos legales, evitar sanciones y
+            garantizar el correcto funcionamiento de tu empresa frente a la ley.
+          </p>
 
-              <div className={styles.actions}>
-                <a href="#contacto" className={styles.primary}>
-                  Solicitar asesoría
-                </a>
-                <a href="/blog" className={styles.secondary}>
-                  Ver blog legal
-                </a>
-              </div>
-            </div>
-          </motion.section>
+          <div className={styles.actions}>
+            <a href="#contacto" className={styles.primary}>
+              Solicitar asesoría
+            </a>
+            <a href="/blog" className={styles.secondary}>
+              Ver blog legal
+            </a>
+          </div>
+        </div>
+      </motion.section>
 
-          {/* ================= INTRO ================= */}
-          <motion.section variants={fadeUp}>
-            <h2 className={styles.subtitle}>
-              ¿Qué es el cumplimiento normativo y por qué tu empresa lo necesita
-              en Colombia?
+      {/* ================= INTRO ================= */}
+      <main className={styles.container}>
+        <motion.section variants={fadeUp}>
+          <h2 className={styles.subtitle}>
+            ¿Qué es el cumplimiento normativo y por qué tu empresa lo necesita
+            en Colombia?
+          </h2>
+
+          <p className={styles.text}>
+            El cumplimiento normativo, también conocido como compliance, es el
+            conjunto de políticas, procedimientos y acciones que implementa una
+            empresa para asegurar que todas sus actividades se desarrollen
+            conforme a la legislación vigente en Colombia.
+          </p>
+
+          <div className={styles.highlightBox}>
+            <strong>Clave:</strong> No cumplir con la normativa puede generar
+            sanciones económicas, demandas legales e incluso el cierre de una
+            empresa.
+          </div>
+
+          <p className={styles.text}>
+            En ciudades como Bogotá, donde existe una alta regulación en
+            sectores empresariales, financieros y comerciales, el cumplimiento
+            normativo se ha convertido en una necesidad estratégica para
+            cualquier organización.
+          </p>
+        </motion.section>
+
+        {/* ================= COMPONENTES ================= */}
+        <motion.section variants={fadeUp}>
+          <h2 className={styles.subtitle}>
+            Elementos clave del compliance empresarial en Colombia que debes
+            implementar
+          </h2>
+
+          <div className={styles.grid}>
+            {[
+              {
+                title: "Políticas internas",
+                text: "Normas y lineamientos que regulan el comportamiento dentro de la empresa.",
+              },
+              {
+                title: "Gestión de riesgos",
+                text: "Identificación y control de riesgos legales y operativos.",
+              },
+              {
+                title: "Auditorías",
+                text: "Revisión periódica del cumplimiento de normas internas y externas.",
+              },
+              {
+                title: "Capacitación",
+                text: "Formación del equipo en normativas legales aplicables.",
+              },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                className={styles.card}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -5, scale: 1.02 }}
+              >
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.section>
+
+        {/* ================= IMPORTANCIA ================= */}
+        <motion.section variants={fadeUp}>
+          <h2 className={styles.subtitle}>
+            ¿Por qué el cumplimiento normativo es clave para empresas en Bogotá
+            y Colombia?
+          </h2>
+
+          <p className={styles.text}>
+            Las empresas en Colombia están sujetas a múltiples regulaciones
+            dependiendo de su actividad económica. Desde normas laborales hasta
+            regulaciones financieras y comerciales, el cumplimiento normativo
+            garantiza la legalidad de las operaciones.
+          </p>
+
+          <div className={styles.infoGrid}>
+            {[
+              {
+                title: "✔ Prevención de sanciones",
+                text: "Evita multas y problemas legales.",
+              },
+              {
+                title: "✔ Confianza empresarial",
+                text: "Mejora la reputación frente a clientes y socios.",
+              },
+              {
+                title: "✔ Estabilidad operativa",
+                text: "Permite operar con seguridad jurídica.",
+              },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <h4>{item.title}</h4>
+                <p>{item.text}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.section>
+
+        {/* ================= RIESGOS ================= */}
+        <motion.section variants={fadeUp}>
+          <h2 className={styles.subtitle}>
+            Consecuencias legales de no cumplir la normativa en Colombia (multas
+            y sanciones)
+          </h2>
+
+          <p className={styles.text}>
+            No implementar un sistema de cumplimiento normativo puede traer
+            consecuencias graves para cualquier empresa en Colombia.
+          </p>
+
+          <div className={styles.warningBox}>
+            ⚠ Multas, sanciones administrativas, demandas legales e incluso
+            cierre de operaciones son algunas de las consecuencias del
+            incumplimiento.
+          </div>
+
+          <p className={styles.text}>
+            Además, la falta de cumplimiento puede afectar la reputación de la
+            empresa, generar desconfianza en el mercado y limitar su
+            crecimiento.
+          </p>
+        </motion.section>
+
+        {/* ================= BENEFICIOS ================= */}
+        <motion.section variants={fadeUp}>
+          <h2 className={styles.subtitle}>
+            Beneficios del compliance: protege tu empresa y evita riesgos
+            legales en Colombia
+          </h2>
+
+          <div className={styles.benefits}>
+            {[
+              "✔ Reducción de riesgos legales",
+              "✔ Mejora de la reputación empresarial",
+              "✔ Cumplimiento de normativas en Colombia",
+              "✔ Mayor control interno",
+              "✔ Crecimiento sostenible",
+            ].map((b, i) => (
+              <motion.span
+                key={i}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: i * 0.05 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05 }}
+              >
+                {b}
+              </motion.span>
+            ))}
+          </div>
+        </motion.section>
+
+        {/* ================= CTA ================= */}
+        <motion.section id="contacto" variants={fadeUp} className={styles.cta}>
+          <div className={styles.ctaContent}>
+            <h2 className={styles.ctaTitle}>
+              Habla con un abogado y evita sanciones en tu empresa hoy
             </h2>
 
-            <p className={styles.text}>
-              El cumplimiento normativo, también conocido como compliance, es el
-              conjunto de políticas, procedimientos y acciones que implementa
-              una empresa para asegurar que todas sus actividades se desarrollen
-              conforme a la legislación vigente en Colombia.
+            <p className={styles.ctaText}>
+              Nuestro equipo de abogados te ayuda a implementar estrategias de
+              compliance para proteger tu empresa, evitar sanciones y garantizar
+              el cumplimiento legal en Colombia.
             </p>
 
-            <div className={styles.highlightBox}>
-              <strong>Clave:</strong> No cumplir con la normativa puede generar
-              sanciones económicas, demandas legales e incluso el cierre de una
-              empresa.
+            <div className={styles.actions}>
+              <a
+                href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+                className={styles.primary}
+              >
+                Hablar con un abogado ahora
+              </a>
+
+              <a
+                href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+                target="_blank"
+                className={styles.secondary}
+              >
+                Asesoría por WhatsApp inmediata
+              </a>
             </div>
-
-            <p className={styles.text}>
-              En ciudades como Bogotá, donde existe una alta regulación en
-              sectores empresariales, financieros y comerciales, el cumplimiento
-              normativo se ha convertido en una necesidad estratégica para
-              cualquier organización.
-            </p>
-          </motion.section>
-
-          {/* ================= COMPONENTES ================= */}
-          <motion.section variants={fadeUp}>
-            <h2 className={styles.subtitle}>
-              Elementos clave del compliance empresarial en Colombia que debes
-              implementar
-            </h2>
-
-            <div className={styles.grid}>
-              {[
-                {
-                  title: "Políticas internas",
-                  text: "Normas y lineamientos que regulan el comportamiento dentro de la empresa.",
-                },
-                {
-                  title: "Gestión de riesgos",
-                  text: "Identificación y control de riesgos legales y operativos.",
-                },
-                {
-                  title: "Auditorías",
-                  text: "Revisión periódica del cumplimiento de normas internas y externas.",
-                },
-                {
-                  title: "Capacitación",
-                  text: "Formación del equipo en normativas legales aplicables.",
-                },
-              ].map((item, i) => (
-                <motion.div
-                  key={i}
-                  className={styles.card}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.1 }}
-                  viewport={{ once: true }}
-                  whileHover={{ y: -5, scale: 1.02 }}
-                >
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.section>
-
-          {/* ================= IMPORTANCIA ================= */}
-          <motion.section variants={fadeUp}>
-            <h2 className={styles.subtitle}>
-              ¿Por qué el cumplimiento normativo es clave para empresas en
-              Bogotá y Colombia?
-            </h2>
-
-            <p className={styles.text}>
-              Las empresas en Colombia están sujetas a múltiples regulaciones
-              dependiendo de su actividad económica. Desde normas laborales
-              hasta regulaciones financieras y comerciales, el cumplimiento
-              normativo garantiza la legalidad de las operaciones.
-            </p>
-
-            <div className={styles.infoGrid}>
-              {[
-                {
-                  title: "✔ Prevención de sanciones",
-                  text: "Evita multas y problemas legales.",
-                },
-                {
-                  title: "✔ Confianza empresarial",
-                  text: "Mejora la reputación frente a clientes y socios.",
-                },
-                {
-                  title: "✔ Estabilidad operativa",
-                  text: "Permite operar con seguridad jurídica.",
-                },
-              ].map((item, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.1 }}
-                  viewport={{ once: true }}
-                >
-                  <h4>{item.title}</h4>
-                  <p>{item.text}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.section>
-
-          {/* ================= RIESGOS ================= */}
-          <motion.section variants={fadeUp}>
-            <h2 className={styles.subtitle}>
-              Consecuencias legales de no cumplir la normativa en Colombia
-              (multas y sanciones)
-            </h2>
-
-            <p className={styles.text}>
-              No implementar un sistema de cumplimiento normativo puede traer
-              consecuencias graves para cualquier empresa en Colombia.
-            </p>
-
-            <div className={styles.warningBox}>
-              ⚠ Multas, sanciones administrativas, demandas legales e incluso
-              cierre de operaciones son algunas de las consecuencias del
-              incumplimiento.
-            </div>
-
-            <p className={styles.text}>
-              Además, la falta de cumplimiento puede afectar la reputación de la
-              empresa, generar desconfianza en el mercado y limitar su
-              crecimiento.
-            </p>
-          </motion.section>
-
-          {/* ================= BENEFICIOS ================= */}
-          <motion.section variants={fadeUp}>
-            <h2 className={styles.subtitle}>
-              Beneficios del compliance: protege tu empresa y evita riesgos
-              legales en Colombia
-            </h2>
-
-            <div className={styles.benefits}>
-              {[
-                "✔ Reducción de riesgos legales",
-                "✔ Mejora de la reputación empresarial",
-                "✔ Cumplimiento de normativas en Colombia",
-                "✔ Mayor control interno",
-                "✔ Crecimiento sostenible",
-              ].map((b, i) => (
-                <motion.span
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: i * 0.05 }}
-                  viewport={{ once: true }}
-                  whileHover={{ scale: 1.05 }}
-                >
-                  {b}
-                </motion.span>
-              ))}
-            </div>
-          </motion.section>
-
-          {/* ================= CTA ================= */}
-          <motion.section
-            id="contacto"
-            variants={fadeUp}
-            className={styles.cta}
-          >
-            <div className={styles.ctaContent}>
-              <h2 className={styles.ctaTitle}>
-                Habla con un abogado y evita sanciones en tu empresa hoy
-              </h2>
-
-              <p className={styles.ctaText}>
-                Nuestro equipo de abogados te ayuda a implementar estrategias de
-                compliance para proteger tu empresa, evitar sanciones y
-                garantizar el cumplimiento legal en Colombia.
-              </p>
-
-              <div className={styles.actions}>
-                <a
-                  href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
-                  className={styles.primary}
-                >
-                  Hablar con un abogado ahora
-                </a>
-
-                <a
-                  href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
-                  target="_blank"
-                  className={styles.secondary}
-                >
-                  Asesoría por WhatsApp inmediata
-                </a>
-              </div>
-            </div>
-          </motion.section>
-        </motion.div>
-      </article>
+          </div>
+        </motion.section>
+      </main>
     </>
   );
 }
