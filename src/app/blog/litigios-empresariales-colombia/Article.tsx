@@ -7,7 +7,8 @@ export default function LitigiosEmpresarialesColombia() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Litigios empresariales en Colombia: cómo proteger tu empresa",
+    headline:
+      "Litigios empresariales en Colombia: cómo evitar demandas y proteger tu empresa",
     description:
       "Guía completa sobre litigios empresariales en Colombia, causas comunes, prevención y estrategias legales para proteger tu negocio.",
     image: "https://pravice.co/og-image.jpg",
@@ -33,7 +34,6 @@ export default function LitigiosEmpresarialesColombia() {
 
   return (
     <>
-      {/* ✅ SCHEMA */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -51,7 +51,8 @@ export default function LitigiosEmpresarialesColombia() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Litigios empresariales en Colombia: cómo proteger tu empresa
+            Litigios empresariales en Colombia: cómo evitar demandas y proteger
+            tu empresa
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
@@ -66,17 +67,17 @@ export default function LitigiosEmpresarialesColombia() {
         <section className={styles.contentBox}>
           <h3>Contenido</h3>
           <ul>
-            <li>¿Qué son los litigios empresariales?</li>
-            <li>Principales causas</li>
-            <li>Cómo prevenir conflictos</li>
-            <li>Estrategias legales</li>
-            <li>Conclusión</li>
+            <li>Qué son los litigios empresariales en Colombia</li>
+            <li>Causas más comunes de demandas empresariales</li>
+            <li>Cómo prevenir conflictos legales en empresas</li>
+            <li>Estrategias para enfrentar litigios empresariales</li>
+            <li>Conclusión y recomendaciones legales</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>¿Qué son los litigios empresariales?</h2>
+          <h2>Qué son los litigios empresariales en Colombia</h2>
 
           <p>
             Los litigios empresariales son conflictos legales entre empresas o
@@ -93,10 +94,10 @@ export default function LitigiosEmpresarialesColombia() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Principales causas de litigios en Colombia</h2>
+          <h2>Causas más comunes de litigios empresariales en Colombia</h2>
 
           <div className={styles.card}>
-            <h3>Incumplimiento de contratos</h3>
+            <h3>Incumplimiento de contratos comerciales</h3>
             <p>
               Una de las causas más frecuentes en Bogotá y Colombia. Ocurre
               cuando una de las partes no cumple con las obligaciones pactadas.
@@ -104,7 +105,7 @@ export default function LitigiosEmpresarialesColombia() {
           </div>
 
           <div className={styles.card}>
-            <h3>Conflictos entre socios</h3>
+            <h3>Conflictos entre socios empresariales</h3>
             <p>
               Problemas en la toma de decisiones, manejo de la empresa o reparto
               de utilidades pueden generar disputas legales.
@@ -112,7 +113,7 @@ export default function LitigiosEmpresarialesColombia() {
           </div>
 
           <div className={styles.card}>
-            <h3>Problemas con clientes o proveedores</h3>
+            <h3>Disputas con clientes y proveedores</h3>
             <p>
               Retrasos en pagos, incumplimientos o desacuerdos comerciales son
               causas comunes de demandas empresariales.
@@ -122,7 +123,7 @@ export default function LitigiosEmpresarialesColombia() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Cómo prevenir litigios empresariales</h2>
+          <h2>Cómo prevenir litigios empresariales en Colombia</h2>
 
           <p>
             La prevención es la mejor estrategia para evitar conflictos legales
@@ -132,8 +133,8 @@ export default function LitigiosEmpresarialesColombia() {
           <ul>
             <li>redactar contratos claros y detallados</li>
             <li>contar con asesoría legal constante</li>
-            <li>establecer políticas internas</li>
-            <li>documentar acuerdos comerciales</li>
+            <li>establecer políticas internas empresariales</li>
+            <li>documentar acuerdos comerciales correctamente</li>
           </ul>
 
           <p>
@@ -144,10 +145,10 @@ export default function LitigiosEmpresarialesColombia() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Estrategias para enfrentar un litigio</h2>
+          <h2>Estrategias legales para enfrentar un litigio empresarial</h2>
 
           <div className={styles.card}>
-            <h3>Asesoría legal especializada</h3>
+            <h3>Asesoría legal especializada en Colombia</h3>
             <p>
               Contar con abogados expertos en derecho empresarial permite
               diseñar estrategias efectivas para cada caso.
@@ -155,7 +156,7 @@ export default function LitigiosEmpresarialesColombia() {
           </div>
 
           <div className={styles.card}>
-            <h3>Conciliación y arbitraje</h3>
+            <h3>Conciliación y arbitraje empresarial</h3>
             <p>
               Son alternativas más rápidas y económicas que un proceso judicial
               tradicional en Colombia.
@@ -163,7 +164,7 @@ export default function LitigiosEmpresarialesColombia() {
           </div>
 
           <div className={styles.card}>
-            <h3>Gestión del riesgo legal</h3>
+            <h3>Gestión del riesgo legal empresarial</h3>
             <p>
               Evaluar el impacto del litigio y tomar decisiones estratégicas es
               clave para proteger la empresa.

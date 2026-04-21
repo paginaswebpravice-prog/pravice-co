@@ -19,7 +19,8 @@ export default function RecuperacionCartera() {
           </span>
 
           <h1 className={styles.title}>
-            Recuperación de cartera en Colombia: soluciones legales efectivas
+            Recuperación de cartera en Colombia: recupera tus deudas
+            empresariales rápido y legal
           </h1>
 
           <p className={styles.description}>
@@ -51,7 +52,7 @@ export default function RecuperacionCartera() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            ¿Qué es la recuperación de cartera?
+            ¿Qué es la recuperación de cartera y cómo funciona en Colombia?
           </h2>
 
           <p className={styles.text}>
@@ -90,7 +91,8 @@ export default function RecuperacionCartera() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            Etapas de la recuperación de cartera
+            Etapas del cobro de cartera: prejurídico, jurídico y procesos
+            ejecutivos
           </h2>
 
           <div className={styles.grid}>
@@ -142,7 +144,7 @@ export default function RecuperacionCartera() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            Importancia de recuperar cartera en Colombia
+            ¿Por qué es clave recuperar cartera para tu empresa en Colombia?
           </h2>
 
           <p className={styles.text}>
@@ -189,7 +191,7 @@ export default function RecuperacionCartera() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            Riesgos de no gestionar la cartera a tiempo
+            Riesgos de no cobrar a tiempo las deudas empresariales
           </h2>
 
           <div className={styles.warningBox}>
@@ -214,7 +216,7 @@ export default function RecuperacionCartera() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            Beneficios de una gestión profesional de cartera
+            Beneficios de una gestión profesional de recuperación de cartera
           </h2>
 
           <div className={styles.benefits}>
@@ -250,7 +252,7 @@ export default function RecuperacionCartera() {
         >
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Recupera tu cartera en Bogotá y Colombia
+              Recupera tu cartera en Bogotá con abogados expertos en cobro
             </h2>
 
             <p className={styles.ctaText}>

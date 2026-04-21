@@ -1,8 +1,13 @@
 import { Metadata } from "next";
 import Article from "./Article";
 
+/* =========================
+   SEO METADATA
+========================= */
+
 export const metadata: Metadata = {
-  title: "Derecho societario en Colombia: crear empresas legalmente | Bogotá",
+  title:
+    "Derecho societario en Colombia: cómo crear empresas (SAS, LTDA y SA) paso a paso",
   description:
     "Guía completa sobre derecho societario en Colombia. Aprende cómo crear una empresa, tipos de sociedades (SAS, LTDA, SA) y obligaciones legales en Bogotá y todo el país.",
 
@@ -11,9 +16,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Derecho societario en Colombia: cómo crear y gestionar empresas",
+    title:
+      "Derecho societario en Colombia: guía para crear empresas legalmente",
     description:
-      "Descubre cómo crear una empresa en Colombia, tipos de sociedades y obligaciones legales para operar en Bogotá y todo el país.",
+      "Descubre cómo crear una empresa en Colombia, tipos de sociedades y requisitos legales paso a paso.",
     url: "https://pravice.co/blog/derecho-societario-colombia",
     type: "article",
     locale: "es_CO",

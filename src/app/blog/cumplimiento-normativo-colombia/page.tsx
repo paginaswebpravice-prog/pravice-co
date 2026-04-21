@@ -3,19 +3,20 @@ import CumplimientoNormativoArticle from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "Cumplimiento normativo en Colombia: evita sanciones legales | Pravice",
+    "Cumplimiento normativo en Colombia: evita multas y sanciones legales en tu empresa | Guía completa",
 
   description:
-    "Aprende qué es el cumplimiento normativo en Colombia, cómo implementar un programa de compliance y cómo evitar sanciones legales en tu empresa.",
+    "Aprende qué es el cumplimiento normativo en Colombia, cómo implementar un programa de compliance empresarial y evita sanciones, multas y riesgos legales en tu empresa.",
 
   alternates: {
     canonical: "https://pravice.co/blog/cumplimiento-normativo-colombia",
   },
 
   openGraph: {
-    title: "Cumplimiento normativo en Colombia: evita sanciones legales",
+    title:
+      "Cumplimiento normativo en Colombia: evita sanciones y protege tu empresa",
     description:
-      "Descubre cómo implementar compliance en Colombia, evitar sanciones y proteger tu empresa legalmente.",
+      "Guía práctica sobre compliance en Colombia: cómo evitar sanciones legales, reducir riesgos y fortalecer tu empresa.",
     url: "https://pravice.co/blog/cumplimiento-normativo-colombia",
     type: "article",
     locale: "es_CO",

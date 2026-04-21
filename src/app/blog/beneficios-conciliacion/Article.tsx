@@ -77,7 +77,8 @@ export default function ConciliacionExtrajudicialArticle() {
           transition={{ duration: 0.6 }}
         >
           <h1 className={styles.title} itemProp="headline">
-            Conciliación extrajudicial en Colombia: guía completa
+            Conciliación extrajudicial en Colombia: cómo evitar demandas y
+            resolver conflictos rápido
           </h1>
 
           <p className={styles.intro} itemProp="description">
@@ -102,10 +103,15 @@ export default function ConciliacionExtrajudicialArticle() {
             <h2>Contenido</h2>
             <ul>
               <li>
-                <a href="#que-es">¿Qué es la conciliación extrajudicial?</a>
+                <a href="#que-es">
+                  ¿Qué es la conciliación extrajudicial y por qué evita demandas
+                  en Colombia?
+                </a>
               </li>
               <li>
-                <a href="#para-que">¿Para qué sirve?</a>
+                <a href="#para-que">
+                  ¿Para qué sirve la conciliación extrajudicial en Colombia?
+                </a>
               </li>
               <li>
                 <a href="#casos">Casos de uso</a>
@@ -114,13 +120,19 @@ export default function ConciliacionExtrajudicialArticle() {
                 <a href="#ventajas">Ventajas</a>
               </li>
               <li>
-                <a href="#acuerdo">¿Qué pasa si no hay acuerdo?</a>
+                <a href="#acuerdo">
+                  ¿Qué pasa si no se llega a un acuerdo en conciliación?
+                </a>
               </li>
               <li>
-                <a href="#empresas">Uso en empresas</a>
+                <a href="#empresas">
+                  Conciliación extrajudicial para empresas en Colombia
+                </a>
               </li>
               <li>
-                <a href="#conclusion">Conclusión</a>
+                <a href="#conclusion">
+                  Conclusión: la forma más rápida de resolver conflictos legales
+                </a>
               </li>
             </ul>
           </nav>
@@ -129,7 +141,10 @@ export default function ConciliacionExtrajudicialArticle() {
         {/* SECCIONES */}
 
         <motion.section id="que-es" className={styles.section} {...fadeSection}>
-          <h2>¿Qué es la conciliación extrajudicial?</h2>
+          <h2>
+            ¿Qué es la conciliación extrajudicial y por qué evita demandas en
+            Colombia?
+          </h2>
           <p>
             Es un mecanismo legal en Colombia mediante el cual las partes
             resuelven conflictos con ayuda de un conciliador sin acudir a un
@@ -142,7 +157,7 @@ export default function ConciliacionExtrajudicialArticle() {
           className={styles.section}
           {...fadeSection}
         >
-          <h2>¿Para qué sirve?</h2>
+          <h2>¿Para qué sirve la conciliación extrajudicial en Colombia?</h2>
           <ul>
             <li>Evitar procesos judiciales</li>
             <li>Reducir costos legales</li>
@@ -151,7 +166,7 @@ export default function ConciliacionExtrajudicialArticle() {
         </motion.section>
 
         <motion.section id="casos" className={styles.section} {...fadeSection}>
-          <h2>Casos en los que se puede aplicar</h2>
+          <h2>Casos reales donde la conciliación evita procesos judiciales</h2>
 
           <motion.div className={styles.strategy} {...fadeItem}>
             <h3>Deudas y cartera vencida</h3>
@@ -169,7 +184,7 @@ export default function ConciliacionExtrajudicialArticle() {
           className={styles.section}
           {...fadeSection}
         >
-          <h2>Ventajas</h2>
+          <h2>Ventajas de la conciliación extrajudicial frente a un juicio</h2>
 
           <motion.div className={styles.strategy} {...fadeItem}>
             <h3>Rapidez</h3>
@@ -187,7 +202,7 @@ export default function ConciliacionExtrajudicialArticle() {
           className={styles.section}
           {...fadeSection}
         >
-          <h2>¿Qué pasa si no hay acuerdo?</h2>
+          <h2>¿Qué pasa si no se llega a un acuerdo en conciliación?</h2>
           <p>
             Las partes pueden acudir a la vía judicial sin perder sus derechos.
           </p>
@@ -198,7 +213,7 @@ export default function ConciliacionExtrajudicialArticle() {
           className={styles.section}
           {...fadeSection}
         >
-          <h2>Conciliación para empresas</h2>
+          <h2>Conciliación extrajudicial para empresas en Colombia</h2>
           <p>
             Es clave para la recuperación de cartera y la resolución de
             conflictos comerciales en Colombia.
@@ -210,7 +225,9 @@ export default function ConciliacionExtrajudicialArticle() {
           className={styles.conclusion}
           {...fadeSection}
         >
-          <h2>Conclusión</h2>
+          <h2>
+            Conclusión: la forma más rápida de resolver conflictos legales
+          </h2>
           <p>
             La conciliación extrajudicial en Colombia es una solución rápida,
             económica y legal para resolver conflictos sin juicio.

@@ -33,7 +33,6 @@ export default function ProteccionJuridicaEmpresarial() {
 
   return (
     <>
-      {/* ✅ Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -51,7 +50,8 @@ export default function ProteccionJuridicaEmpresarial() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Protección jurídica empresarial en Colombia: estrategias clave
+            Protección jurídica empresarial en Colombia 2026: guía completa para
+            empresas
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
@@ -73,19 +73,19 @@ export default function ProteccionJuridicaEmpresarial() {
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Contenido</h3>
+          <h3>Guía completa de protección jurídica empresarial en Colombia</h3>
           <ul>
-            <li>¿Qué es la protección jurídica empresarial?</li>
-            <li>Importancia para las empresas en Colombia</li>
-            <li>Principales riesgos legales</li>
-            <li>Estrategias de protección jurídica</li>
-            <li>Conclusión</li>
+            <li>Qué es la protección jurídica empresarial en Colombia</li>
+            <li>Importancia para empresas en Bogotá y Colombia</li>
+            <li>Principales riesgos legales empresariales</li>
+            <li>Estrategias jurídicas para proteger tu empresa</li>
+            <li>Conclusión y recomendaciones legales</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>¿Qué es la protección jurídica empresarial?</h2>
+          <h2>¿Qué es la protección jurídica empresarial en Colombia?</h2>
 
           <p>
             La protección jurídica empresarial consiste en el conjunto de
@@ -103,7 +103,7 @@ export default function ProteccionJuridicaEmpresarial() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Importancia de la protección jurídica en Colombia</h2>
+          <h2>Importancia de la protección jurídica empresarial en Colombia</h2>
 
           <p>
             Contar con una estrategia jurídica sólida permite a las empresas:
@@ -124,10 +124,10 @@ export default function ProteccionJuridicaEmpresarial() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Principales riesgos legales para las empresas</h2>
+          <h2>Principales riesgos legales para empresas en Colombia</h2>
 
           <div className={styles.card}>
-            <h3>Incumplimientos contractuales</h3>
+            <h3>Incumplimientos contractuales empresariales</h3>
             <p>
               El incumplimiento de acuerdos puede generar demandas y pérdidas
               económicas importantes.
@@ -135,7 +135,7 @@ export default function ProteccionJuridicaEmpresarial() {
           </div>
 
           <div className={styles.card}>
-            <h3>Sanciones administrativas</h3>
+            <h3>Sanciones administrativas y regulatorias</h3>
             <p>
               No cumplir con la normativa puede resultar en multas o cierres
               temporales.
@@ -143,7 +143,7 @@ export default function ProteccionJuridicaEmpresarial() {
           </div>
 
           <div className={styles.card}>
-            <h3>Conflictos laborales</h3>
+            <h3>Conflictos laborales en empresas</h3>
             <p>
               Problemas con empleados pueden derivar en procesos legales y
               costos adicionales.
@@ -153,10 +153,10 @@ export default function ProteccionJuridicaEmpresarial() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Estrategias clave de protección jurídica empresarial</h2>
+          <h2>Estrategias legales para protección jurídica empresarial</h2>
 
           <div className={styles.card}>
-            <h3>Contratos bien estructurados</h3>
+            <h3>Contratos empresariales bien estructurados</h3>
             <p>
               Definir claramente derechos y obligaciones evita conflictos
               legales futuros.
@@ -164,7 +164,7 @@ export default function ProteccionJuridicaEmpresarial() {
           </div>
 
           <div className={styles.card}>
-            <h3>Cumplimiento normativo</h3>
+            <h3>Cumplimiento normativo empresarial en Colombia</h3>
             <p>
               Asegurar el cumplimiento de la legislación colombiana evita
               sanciones y riesgos legales.
@@ -172,7 +172,7 @@ export default function ProteccionJuridicaEmpresarial() {
           </div>
 
           <div className={styles.card}>
-            <h3>Asesoría legal constante</h3>
+            <h3>Asesoría legal empresarial constante</h3>
             <p>
               Contar con abogados especializados permite anticiparse a
               problemas.
@@ -180,7 +180,7 @@ export default function ProteccionJuridicaEmpresarial() {
           </div>
 
           <div className={styles.card}>
-            <h3>Gestión de riesgos legales</h3>
+            <h3>Gestión estratégica de riesgos legales</h3>
             <p>
               Identificar riesgos permite tomar decisiones estratégicas para
               proteger la empresa.
@@ -190,7 +190,7 @@ export default function ProteccionJuridicaEmpresarial() {
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión</h2>
+          <h2>Conclusión: cómo proteger tu empresa en Colombia</h2>
 
           <p>
             La protección jurídica empresarial en Colombia es clave para

@@ -3,27 +3,31 @@ import RecuperacionCarteraContent from "./RecuperacionCarteraContent";
 
 export const metadata: Metadata = {
   title:
-    "Recuperación de cartera en Colombia | Abogados en Bogotá expertos en cobro",
+    "Recuperación de cartera en Colombia | Abogados en Bogotá para cobrar deudas empresariales",
   description:
-    "Recuperación de cartera en Bogotá y Colombia con estrategias prejurídicas y jurídicas. Optimiza tu flujo de caja y reduce la morosidad con abogados especializados.",
+    "Recupera tu cartera vencida en Bogotá y Colombia con abogados expertos en cobro prejurídico y jurídico. Mejora tu flujo de caja y reduce la morosidad empresarial.",
+
   keywords: [
     "recuperación de cartera Colombia",
     "cobro jurídico Bogotá",
     "cobro prejurídico Colombia",
-    "abogados recuperación de cartera Bogotá",
+    "abogados cartera vencida Bogotá",
     "recuperar deudas empresas Colombia",
     "procesos ejecutivos Colombia",
     "cobranza empresarial Bogotá",
   ],
+
   openGraph: {
-    title: "Recuperación de cartera en Colombia: soluciones legales efectivas",
+    title:
+      "Recupera tu cartera en Colombia | Abogados expertos en cobro en Bogotá",
     description:
-      "Optimiza el recaudo de tu empresa con estrategias legales en Bogotá y Colombia. Reduce la morosidad y mejora tu flujo de caja.",
+      "Reduce la morosidad y recupera deudas empresariales con abogados especializados en Bogotá y Colombia.",
     url: "https://pravice.co/especialidades/recuperacion-de-cartera",
-    siteName: "Abogados en Bogotá",
+    siteName: "Pravice",
     locale: "es_CO",
     type: "website",
   },
+
   alternates: {
     canonical: "https://pravice.co/especialidades/recuperacion-de-cartera",
   },

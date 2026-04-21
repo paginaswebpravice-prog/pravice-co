@@ -3,16 +3,17 @@ import Article from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "Derecho comercial en Colombia: contratos, empresas y normativa | Pravice",
+    "Derecho comercial en Colombia: guía práctica para empresas y contratos seguros | Pravice",
   description:
-    "Aprende qué es el derecho comercial en Colombia, los tipos de contratos empresariales, la normativa vigente y cómo proteger legalmente tu empresa.",
+    "Aprende qué es el derecho comercial en Colombia, tipos de contratos empresariales, normativa vigente y cómo proteger legalmente tu empresa.",
 
   alternates: {
     canonical: "https://pravice.co/blog/derecho-comercial-empresas-colombia",
   },
 
   openGraph: {
-    title: "Derecho comercial en Colombia: guía para empresas y contratos",
+    title:
+      "Derecho comercial en Colombia: contratos, empresas y protección legal",
     description:
       "Guía completa sobre derecho comercial en Colombia, contratos empresariales y cómo proteger tu empresa legalmente.",
     url: "https://pravice.co/blog/derecho-comercial-empresas-colombia",

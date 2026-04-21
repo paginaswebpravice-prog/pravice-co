@@ -26,9 +26,10 @@ export default function Article() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "El futuro de las cobranzas en Latinoamérica",
+    headline:
+      "El futuro de las cobranzas en Latinoamérica: IA, automatización y pagos digitales",
     description:
-      "Tendencias en cobranzas en Colombia y Latinoamérica: automatización, inteligencia artificial y recuperación de cartera.",
+      "Tendencias en cobranzas en Colombia y Latinoamérica: inteligencia artificial, automatización y recuperación de cartera.",
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://pravice.co/blog/futuro-cobranzas-latinoamerica",
@@ -67,7 +68,8 @@ export default function Article() {
         >
           {/* HERO */}
           <motion.h1 variants={fadeUp} className={styles.titulo}>
-            El futuro de las cobranzas en Latinoamérica y Colombia
+            El futuro de las cobranzas en Latinoamérica y Colombia: cómo la IA y
+            los pagos digitales están cambiando todo
           </motion.h1>
 
           <motion.p variants={fadeUp}>
@@ -84,7 +86,7 @@ export default function Article() {
 
           {/* EVOLUCIÓN */}
           <motion.h2 variants={fadeUp}>
-            Evolución de las cobranzas en Latinoamérica
+            Cómo han evolucionado las cobranzas en Colombia y Latinoamérica
           </motion.h2>
 
           <motion.p variants={fadeUp}>
@@ -100,32 +102,34 @@ export default function Article() {
 
           {/* TENDENCIAS */}
           <motion.h2 variants={fadeUp}>
-            Tendencias en cobranzas para 2026
+            Tendencias clave en cobranzas para 2026 en Colombia y LATAM
           </motion.h2>
 
           {[
             {
-              title: "Automatización de cobranzas",
+              title: "Automatización de cobranzas y gestión de cartera",
               text: "Permite enviar recordatorios automáticos, gestionar pagos y reducir errores operativos.",
             },
             {
-              title: "Inteligencia artificial",
+              title:
+                "Inteligencia artificial aplicada a la recuperación de cartera",
               text: "Analiza datos para predecir comportamiento de pago y segmentar clientes.",
             },
             {
-              title: "Pagos digitales",
+              title: "Pagos digitales y soluciones fintech en cobranzas",
               text: "Facilitan la recuperación de cartera mediante links de pago, billeteras y transferencias.",
             },
             {
-              title: "Comunicación digital",
+              title: "Comunicación digital omnicanal con clientes morosos",
               text: "Uso de WhatsApp, email y SMS para mejorar contacto con clientes.",
             },
             {
-              title: "Experiencia del cliente",
+              title: "Experiencia del cliente en procesos de cobranza modernos",
               text: "Estrategias menos agresivas y más colaborativas aumentan la recuperación.",
             },
             {
-              title: "Análisis de datos",
+              title:
+                "Análisis de datos para optimizar la recuperación de cartera",
               text: "Permite optimizar decisiones financieras y reducir riesgos.",
             },
           ].map((item, i) => (
@@ -137,7 +141,7 @@ export default function Article() {
 
           {/* DESAFÍOS */}
           <motion.h2 variants={fadeUp}>
-            Desafíos de la gestión de cartera en Colombia
+            Principales desafíos de las cobranzas en Colombia hoy
           </motion.h2>
 
           <motion.ul variants={fadeUp}>
@@ -149,7 +153,7 @@ export default function Article() {
 
           {/* PREPARACIÓN */}
           <motion.h2 variants={fadeUp}>
-            Cómo prepararse para el futuro de las cobranzas
+            Cómo prepararse para el futuro de las cobranzas en Colombia
           </motion.h2>
 
           <motion.ul variants={fadeUp}>
@@ -161,7 +165,9 @@ export default function Article() {
           </motion.ul>
 
           {/* CONCLUSIÓN */}
-          <motion.h2 variants={fadeUp}>Conclusión</motion.h2>
+          <motion.h2 variants={fadeUp}>
+            Conclusión: el futuro de las cobranzas en Colombia y Latinoamérica
+          </motion.h2>
 
           <motion.p variants={fadeUp}>
             El futuro de las cobranzas en Latinoamérica y Colombia estará

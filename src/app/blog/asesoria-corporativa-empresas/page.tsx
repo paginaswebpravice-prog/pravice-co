@@ -3,18 +3,19 @@ import Article from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "Asesoría corporativa en Colombia: decisiones legales estratégicas para empresas",
+    "Asesoría corporativa en Colombia | Cómo tomar decisiones legales estratégicas en tu empresa",
   description:
-    "Descubre cómo la asesoría corporativa en Colombia ayuda a empresas a tomar decisiones legales estratégicas, reducir riesgos y crecer de forma segura en Bogotá y todo el país.",
+    "La asesoría corporativa en Colombia ayuda a empresas en Bogotá y el país a tomar mejores decisiones legales, reducir riesgos y mejorar su crecimiento empresarial con respaldo jurídico experto.",
 
   alternates: {
     canonical: "https://pravice.co/blog/asesoria-corporativa-empresas-colombia",
   },
 
   openGraph: {
-    title: "Asesoría corporativa en Colombia: decisiones legales estratégicas",
+    title:
+      "Asesoría corporativa en Colombia: decisiones legales para empresas que quieren crecer",
     description:
-      "Asesoría corporativa para empresas en Colombia: reduce riesgos legales, mejora decisiones y fortalece tu crecimiento empresarial.",
+      "Aprende cómo la asesoría corporativa en Colombia ayuda a reducir riesgos legales y tomar decisiones estratégicas en tu empresa.",
     url: "https://pravice.co/blog/asesoria-corporativa-empresas-colombia",
     type: "article",
     locale: "es_CO",

@@ -2,7 +2,8 @@ import { Metadata } from "next";
 import ResolucionConflictosEmpresariales from "./Article";
 
 export const metadata: Metadata = {
-  title: "Resolución de conflictos empresariales en Colombia | Guía completa",
+  title:
+    "Cómo resolver conflictos empresariales en Colombia: guía legal completa 2026 | Pravice",
   description:
     "Aprende cómo resolver conflictos empresariales en Colombia con métodos como conciliación, arbitraje y negociación. Protege tu empresa y evita pérdidas legales.",
   keywords: [
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     "problemas legales empresas Colombia",
   ],
   openGraph: {
-    title: "Resolución de conflictos empresariales en Colombia | Guía completa",
+    title: "Cómo resolver conflictos empresariales en Colombia (guía completa)",
     description:
       "Descubre cómo resolver conflictos empresariales en Colombia de forma efectiva con conciliación, negociación y arbitraje.",
     url: "https://pravice.co/blog/resolucion-conflictos-empresariales",

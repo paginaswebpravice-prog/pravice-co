@@ -8,7 +8,7 @@ export default function ArticuloMediacion() {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline:
-      "Mediación empresarial en Colombia: solución rápida para conflictos",
+      "Mediación empresarial en Colombia: cómo resolver conflictos sin ir a juicio",
     description:
       "Guía completa sobre mediación empresarial en Colombia, cómo funciona, beneficios y casos en los que se puede aplicar.",
     image: "https://pravice.co/og-image.jpg",
@@ -34,7 +34,6 @@ export default function ArticuloMediacion() {
 
   return (
     <>
-      {/* ✅ Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -52,7 +51,8 @@ export default function ArticuloMediacion() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          Mediación empresarial en Colombia: solución rápida para conflictos
+          Mediación empresarial en Colombia: cómo resolver conflictos sin ir a
+          juicio
         </motion.h1>
 
         <motion.p className={styles.intro} itemProp="description">
@@ -62,7 +62,6 @@ export default function ArticuloMediacion() {
           necesidad de acudir a procesos judiciales largos y costosos.
         </motion.p>
 
-        {/* INTRO */}
         <p>
           Este mecanismo permite a empresas, socios, proveedores y clientes
           encontrar soluciones rápidas, económicas y colaborativas, protegiendo
@@ -71,7 +70,7 @@ export default function ArticuloMediacion() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>¿Qué es la mediación empresarial?</h2>
+          <h2>Qué es la mediación empresarial en Colombia y cómo funciona</h2>
 
           <p>
             La mediación empresarial es un mecanismo alternativo de resolución
@@ -94,7 +93,7 @@ export default function ArticuloMediacion() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>¿Cuándo utilizar la mediación en Colombia?</h2>
+          <h2>Cuándo usar la mediación empresarial en Colombia</h2>
 
           <p>
             La mediación empresarial puede aplicarse en múltiples situaciones
@@ -117,7 +116,7 @@ export default function ArticuloMediacion() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Cómo funciona la mediación empresarial</h2>
+          <h2>Cómo funciona la mediación empresarial paso a paso</h2>
 
           <ol>
             <li>Solicitud de mediación</li>
@@ -135,22 +134,22 @@ export default function ArticuloMediacion() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Beneficios de la mediación empresarial</h2>
+          <h2>Beneficios de la mediación empresarial en Colombia</h2>
 
           <div className={styles.card}>
-            <h3>Ahorro de tiempo</h3>
+            <h3>Resolución rápida de conflictos empresariales</h3>
             <p>
               Permite resolver conflictos en semanas en lugar de meses o años.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Reducción de costos</h3>
+            <h3>Reducción de costos legales</h3>
             <p>Evita gastos elevados asociados a procesos judiciales.</p>
           </div>
 
           <div className={styles.card}>
-            <h3>Relaciones comerciales</h3>
+            <h3>Protección de relaciones comerciales</h3>
             <p>Mantiene relaciones entre empresas al fomentar el diálogo.</p>
           </div>
         </section>

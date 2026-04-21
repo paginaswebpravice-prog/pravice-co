@@ -63,8 +63,8 @@ export default function DerechoAdministrativoContent() {
               </span>
 
               <h1 className={styles.title}>
-                Derecho administrativo en Colombia: asesoría legal frente al
-                Estado
+                Abogados en Derecho Administrativo en Bogotá: Defensa contra el
+                Estado y Procesos Administrativos en Colombia
               </h1>
 
               <p className={styles.description}>
@@ -88,7 +88,8 @@ export default function DerechoAdministrativoContent() {
           {/* ================= INTRO ================= */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              ¿Qué es el derecho administrativo en Colombia?
+              ¿Qué hace un abogado en derecho administrativo y cuándo lo
+              necesitas en Colombia?
             </h2>
 
             <p className={styles.text}>
@@ -116,7 +117,8 @@ export default function DerechoAdministrativoContent() {
           {/* ================= SERVICIOS ================= */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              Servicios en derecho administrativo
+              Servicios de derecho administrativo en Bogotá: defensa,
+              contratación estatal y recursos legales
             </h2>
 
             <div className={styles.grid}>
@@ -157,7 +159,7 @@ export default function DerechoAdministrativoContent() {
           {/* ================= IMPORTANCIA ================= */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              Importancia del derecho administrativo en Bogotá
+              ¿Por qué necesitas defensa en derecho administrativo en Bogotá?
             </h2>
 
             <p className={styles.text}>
@@ -199,7 +201,8 @@ export default function DerechoAdministrativoContent() {
           {/* ================= CONTRATACIÓN ================= */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              Contratación estatal en Colombia
+              Contratación estatal en Colombia: cómo evitar errores, sanciones y
+              pérdida de contratos
             </h2>
 
             <p className={styles.text}>
@@ -222,7 +225,8 @@ export default function DerechoAdministrativoContent() {
           {/* ================= BENEFICIOS ================= */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              Beneficios de la asesoría en derecho administrativo
+              Beneficios de contratar abogados en derecho administrativo en
+              Colombia
             </h2>
 
             <div className={styles.benefits}>
@@ -255,7 +259,8 @@ export default function DerechoAdministrativoContent() {
           >
             <div className={styles.ctaContent}>
               <h2 className={styles.ctaTitle}>
-                Abogados en derecho administrativo en Bogotá
+                Abogados en derecho administrativo en Bogotá - Defiende tus
+                derechos frente al Estado hoy
               </h2>
 
               <p className={styles.ctaText}>

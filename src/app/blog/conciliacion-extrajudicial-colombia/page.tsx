@@ -2,18 +2,20 @@ import { Metadata } from "next";
 import ConciliacionExtrajudicialArticle from "./Article";
 
 export const metadata: Metadata = {
-  title: "Conciliación extrajudicial en Colombia: guía completa | Pravice",
+  title:
+    "Conciliación extrajudicial en Colombia: cómo resolver conflictos sin juicio | Guía completa",
   description:
-    "Aprende qué es la conciliación extrajudicial en Colombia, cómo funciona, sus ventajas y cómo resolver conflictos legales y empresariales sin ir a juicio.",
+    "Aprende qué es la conciliación extrajudicial en Colombia, cómo funciona y cómo resolver conflictos legales y empresariales sin ir a juicio de forma rápida y efectiva.",
 
   alternates: {
     canonical: "https://pravice.co/blog/conciliacion-extrajudicial-colombia",
   },
 
   openGraph: {
-    title: "Conciliación extrajudicial en Colombia: guía completa",
+    title:
+      "Conciliación extrajudicial en Colombia: evita juicios y resuelve conflictos legalmente",
     description:
-      "Descubre cómo funciona la conciliación extrajudicial en Colombia y cómo resolver conflictos sin procesos judiciales.",
+      "Descubre cómo funciona la conciliación extrajudicial en Colombia y cómo resolver conflictos sin procesos judiciales costosos y largos.",
     url: "https://pravice.co/blog/conciliacion-extrajudicial-colombia",
     type: "article",
     locale: "es_CO",

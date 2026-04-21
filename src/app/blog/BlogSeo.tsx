@@ -11,49 +11,54 @@ const articles = [
 
   {
     slug: "como-recuperar-cartera-morosa",
-    title: "Cómo recuperar cartera morosa de manera efectiva en 2026",
+    title:
+      "Cómo recuperar cartera morosa en Colombia de forma efectiva en 2026",
     description:
       "Aprende estrategias legales y financieras para recuperar cartera en Colombia.",
     category: "cartera",
   },
   {
     slug: "recuperacion-cartera-empresas",
-    title: "Métodos efectivos de recuperación de cartera empresarial",
+    title:
+      "Métodos efectivos para recuperación de cartera empresarial en Colombia",
     description:
       "Estrategias utilizadas por empresas en Colombia para mejorar su recaudo.",
     category: "cartera",
   },
   {
     slug: "errores-gestion-cartera",
-    title: "Errores comunes en la gestión de cartera y cómo evitarlos",
+    title:
+      "Errores en la gestión de cartera en Colombia y cómo evitarlos fácilmente",
     description:
       "Evita fallos frecuentes que afectan el recaudo y la liquidez empresarial.",
     category: "cartera",
   },
   {
     slug: "gestion-cartera-sector-salud",
-    title: "Gestión de cartera en el sector salud en Colombia",
+    title: "Gestión de cartera en el sector salud en Colombia: guía completa",
     description:
       "Estrategias especializadas para mejorar el recaudo en entidades de salud.",
     category: "cartera",
   },
   {
     slug: "automatizacion-cobranzas",
-    title: "Automatización de cobranzas en empresas modernas",
+    title:
+      "Automatización de cobranzas en empresas: cómo mejorar el recaudo en Colombia",
     description:
       "Cómo la tecnología está optimizando los procesos de recaudo y cobranza.",
     category: "cartera",
   },
   {
     slug: "futuro-cobranzas",
-    title: "El futuro de las cobranzas en Colombia",
+    title: "El futuro de las cobranzas en Colombia: tendencias y tecnología",
     description:
       "Tendencias tecnológicas y legales que transformarán la gestión de cartera.",
     category: "cartera",
   },
   {
     slug: "inteligencia-artificial-cobranzas",
-    title: "Cómo la inteligencia artificial está revolucionando las cobranzas",
+    title:
+      "Inteligencia artificial en cobranzas: cómo está cambiando la recuperación de cartera",
     description: "La IA está transformando la gestión de cartera en Colombia.",
     category: "cartera",
   },
@@ -62,27 +67,27 @@ const articles = [
 
   {
     slug: "mediacion-empresarial",
-    title: "Mediación empresarial: solución rápida para conflictos",
+    title: "Mediación empresarial en Colombia: solución rápida para conflictos",
     description:
       "Alternativa eficaz para resolver conflictos empresariales en Colombia.",
     category: "conflictos",
   },
   {
     slug: "resolucion-conflictos-empresariales",
-    title: "Resolución de conflictos empresariales en Colombia",
+    title: "Cómo resolver conflictos empresariales en Colombia: guía completa",
     description: "Mecanismos legales para resolver disputas empresariales.",
     category: "conflictos",
   },
   {
     slug: "beneficios-conciliacion",
-    title: "Beneficios de la conciliación extrajudicial en Colombia",
+    title: "Beneficios de la conciliación extrajudicial en Colombia explicados",
     description:
       "Ventajas legales y económicas de resolver conflictos sin juicio.",
     category: "conciliacion",
   },
   {
     slug: "conciliacion-extrajudicial-colombia",
-    title: "Conciliación extrajudicial en Colombia: guía completa",
+    title: "Conciliación extrajudicial en Colombia: cómo funciona paso a paso",
     description:
       "Cómo funciona la conciliación como mecanismo alternativo de solución de conflictos.",
     category: "conciliacion",
@@ -92,53 +97,56 @@ const articles = [
 
   {
     slug: "litigios-empresariales-colombia",
-    title: "Litigios empresariales en Colombia",
+    title:
+      "Litigios empresariales en Colombia: cómo proteger tu empresa legalmente",
     description: "Cómo enfrentar procesos judiciales empresariales.",
     category: "derecho",
   },
   {
     slug: "proteccion-juridica-empresarial",
-    title: "Protección jurídica empresarial en Colombia",
+    title:
+      "Protección jurídica empresarial en Colombia: guía para empresas 2026",
     description: "Estrategias legales para proteger tu empresa.",
     category: "derecho",
   },
   {
     slug: "derecho-empresarial-colombia",
-    title: "Derecho empresarial en Colombia: guía completa",
+    title:
+      "Derecho empresarial en Colombia: guía completa para empresas y negocios",
     description:
       "Todo lo que debes saber sobre el marco jurídico de las empresas en Colombia.",
     category: "derecho",
   },
   {
     slug: "derecho-comercial-empresas-colombia",
-    title: "Derecho comercial en Colombia para empresas",
+    title: "Derecho comercial en Colombia para empresas: contratos y negocios",
     description:
       "Aspectos clave del derecho comercial aplicados a negocios y contratos.",
     category: "derecho",
   },
   {
     slug: "derecho-contractual-colombia",
-    title: "Derecho contractual en Colombia",
+    title: "Derecho contractual en Colombia: cómo hacer contratos seguros",
     description: "Cómo estructurar contratos sólidos y evitar riesgos legales.",
     category: "derecho",
   },
   {
     slug: "derecho-societario-colombia",
-    title: "Derecho societario en Colombia",
+    title: "Derecho societario en Colombia: estructura legal de empresas",
     description:
       "Normas y estructura legal de sociedades comerciales en Colombia.",
     category: "derecho",
   },
   {
     slug: "derecho-administrativo-colombia",
-    title: "Derecho administrativo en Colombia",
+    title: "Derecho administrativo en Colombia: relación empresa y Estado",
     description:
       "Relación entre empresas y el Estado en el marco del derecho administrativo.",
     category: "derecho",
   },
   {
     slug: "cumplimiento-normativo-colombia",
-    title: "Cumplimiento normativo en Colombia (Compliance)",
+    title: "Cumplimiento normativo en Colombia (Compliance): guía empresarial",
     description:
       "Cómo asegurar que tu empresa cumpla con la regulación vigente.",
     category: "normativo",
@@ -148,7 +156,7 @@ const articles = [
 
   {
     slug: "asesoria-corporativa-empresas",
-    title: "Asesoría corporativa para empresas en Colombia",
+    title: "Asesoría corporativa para empresas en Colombia: estrategia legal",
     description:
       "Servicios legales estratégicos para el crecimiento empresarial.",
     category: "empresarial",
@@ -211,6 +219,7 @@ export default function BlogSEO() {
     acc[article.category].push(article);
     return acc;
   }, {});
+
   return (
     <section className={styles.section}>
       {/* SCHEMA */}
@@ -225,7 +234,9 @@ export default function BlogSEO() {
 
       {/* HEADER */}
       <div className={styles.header}>
-        <h1 className={styles.title}>Blog jurídico en Colombia</h1>
+        <h1 className={styles.title}>
+          Blog jurídico en Colombia: guías legales actualizadas 2026
+        </h1>
         <p className={styles.description}>
           Aprende sobre recuperación de cartera, conciliación extrajudicial y
           derecho empresarial en Colombia.
@@ -236,7 +247,9 @@ export default function BlogSEO() {
       <div>
         {Object.entries(groupedArticles).map(([category, items]: any) => (
           <div key={category}>
-            <h2 className={styles.categoryTitle}>{category.toUpperCase()}</h2>
+            <h2 className={styles.categoryTitle}>
+              Guías de {category.toUpperCase()} en Colombia
+            </h2>
 
             <div className={styles.grid}>
               {items.map((article: any, i: number) => (

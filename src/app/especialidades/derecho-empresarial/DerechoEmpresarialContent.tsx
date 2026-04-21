@@ -63,8 +63,8 @@ export default function DerechoEmpresarialContent() {
               </span>
 
               <h1 className={styles.title}>
-                Derecho empresarial en Colombia: asesoría legal estratégica para
-                empresas
+                Derecho empresarial en Bogotá y Colombia: abogados para proteger
+                y hacer crecer tu empresa
               </h1>
 
               <p className={styles.description}>
@@ -88,7 +88,8 @@ export default function DerechoEmpresarialContent() {
           {/* INTRO */}
           <motion.section variants={fadeUp} className={styles.section}>
             <h2 className={styles.subtitle}>
-              ¿Qué es el derecho empresarial en Colombia?
+              ¿Qué es el derecho empresarial en Colombia y por qué es clave para
+              tu empresa?
             </h2>
 
             <p className={styles.text}>
@@ -115,7 +116,8 @@ export default function DerechoEmpresarialContent() {
           {/* SERVICIOS */}
           <motion.section variants={fadeUp} className={styles.section}>
             <h2 className={styles.subtitle}>
-              Servicios de derecho empresarial en Colombia
+              Servicios de derecho empresarial en Bogotá: estructura, gestión y
+              protección legal de empresas
             </h2>
 
             <div className={styles.grid}>
@@ -156,7 +158,8 @@ export default function DerechoEmpresarialContent() {
           {/* IMPORTANCIA */}
           <motion.section variants={fadeUp} className={styles.section}>
             <h2 className={styles.subtitle}>
-              Importancia del derecho empresarial en Bogotá
+              Importancia del derecho empresarial en Bogotá para la seguridad y
+              crecimiento de tu empresa
             </h2>
 
             <p className={styles.text}>
@@ -191,7 +194,8 @@ export default function DerechoEmpresarialContent() {
           {/* RIESGOS */}
           <motion.section variants={fadeUp} className={styles.section}>
             <h2 className={styles.subtitle}>
-              Riesgos de no contar con asesoría empresarial
+              Riesgos de no tener asesoría empresarial en Colombia: sanciones,
+              pérdidas y conflictos legales
             </h2>
 
             <div className={styles.warningBox}>
@@ -203,7 +207,8 @@ export default function DerechoEmpresarialContent() {
           {/* BENEFICIOS */}
           <motion.section variants={fadeUp} className={styles.section}>
             <h2 className={styles.subtitle}>
-              Beneficios del derecho empresarial
+              Beneficios del derecho empresarial en Colombia para proteger y
+              fortalecer tu empresa
             </h2>
 
             <div className={styles.benefits}>
@@ -236,7 +241,8 @@ export default function DerechoEmpresarialContent() {
           >
             <div className={styles.ctaContent}>
               <h2 className={styles.ctaTitle}>
-                Asesoría en derecho empresarial en Bogotá
+                Habla con un abogado de derecho empresarial en Bogotá y protege
+                tu empresa hoy
               </h2>
 
               <p className={styles.ctaText}>

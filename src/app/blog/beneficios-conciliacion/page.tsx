@@ -3,19 +3,19 @@ import Article from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "Beneficios de la conciliación en Colombia para empresas | Evita procesos judiciales",
+    "Conciliación extrajudicial en Colombia | Evita demandas y resuelve conflictos rápido en Bogotá",
   description:
-    "Conoce los beneficios de la conciliación en Colombia para empresas: ahorro de tiempo, reducción de costos y recuperación de cartera sin procesos judiciales.",
-
+    "Guía completa sobre conciliación extrajudicial en Colombia. Resuelve conflictos legales sin juicio, ahorra costos y agiliza acuerdos en Bogotá y todo el país.",
   alternates: {
-    canonical: "https://pravice.co/blog/beneficios-conciliacion",
+    canonical: "https://pravice.co/blog/conciliacion-extrajudicial-colombia",
   },
 
   openGraph: {
-    title: "Beneficios de la conciliación para empresas en Colombia",
+    title:
+      "Conciliación extrajudicial en Colombia: evita demandas y ahorra tiempo",
     description:
-      "Descubre cómo la conciliación permite resolver conflictos empresariales y recuperar cartera de forma rápida y legal.",
-    url: "https://pravice.co/blog/beneficios-conciliacion",
+      "Resuelve conflictos legales sin procesos judiciales en Bogotá y Colombia mediante conciliación extrajudicial.",
+    url: "https://pravice.co/blog/conciliacion-extrajudicial-colombia",
     type: "article",
     locale: "es_CO",
     images: [

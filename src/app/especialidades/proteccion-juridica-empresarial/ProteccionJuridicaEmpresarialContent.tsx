@@ -17,7 +17,8 @@ export default function ProteccionJuridicaEmpresarialContent() {
           <span className={styles.badge}>Abogados en Bogotá y Colombia</span>
 
           <h1 className={styles.title}>
-            Protección jurídica empresarial en Colombia: asegura tu negocio
+            Protección jurídica empresarial en Colombia: evita riesgos legales y
+            protege tu empresa
           </h1>
 
           <p className={styles.description}>
@@ -49,7 +50,8 @@ export default function ProteccionJuridicaEmpresarialContent() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            ¿Qué es la protección jurídica empresarial?
+            ¿Qué es la protección jurídica empresarial y por qué tu empresa la
+            necesita en Colombia?
           </h2>
 
           <p className={styles.text}>
@@ -74,7 +76,9 @@ export default function ProteccionJuridicaEmpresarialContent() {
 
         {/* CHECKLIST RIESGO */}
         <section className={styles.section}>
-          <h2 className={styles.subtitle}>¿Tu empresa está en riesgo legal?</h2>
+          <h2 className={styles.subtitle}>
+            ¿Tu empresa en Colombia está en riesgo legal sin saberlo?
+          </h2>
 
           <p className={styles.text}>
             Muchas empresas en Colombia operan sin darse cuenta de los riesgos
@@ -109,7 +113,7 @@ export default function ProteccionJuridicaEmpresarialContent() {
         {/* SERVICIOS */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Estrategias de protección jurídica empresarial
+            Estrategias legales para proteger empresas en Colombia
           </h2>
 
           <div className={styles.grid}>
@@ -149,7 +153,10 @@ export default function ProteccionJuridicaEmpresarialContent() {
 
         {/* IMPORTANCIA */}
         <section className={styles.section}>
-          <h2 className={styles.subtitle}>Importancia en Bogotá y Colombia</h2>
+          <h2 className={styles.subtitle}>
+            ¿Por qué la protección jurídica empresarial es clave en Bogotá y
+            Colombia?
+          </h2>
 
           <p className={styles.text}>
             En Colombia, las empresas enfrentan un entorno legal dinámico con
@@ -189,7 +196,8 @@ export default function ProteccionJuridicaEmpresarialContent() {
         {/* CONTRATOS */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Contratos y protección empresarial
+            Contratos empresariales: la base de la protección jurídica en
+            Colombia
           </h2>
 
           <p className={styles.text}>
@@ -213,7 +221,8 @@ export default function ProteccionJuridicaEmpresarialContent() {
         {/* BENEFICIOS */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Beneficios de la protección jurídica empresarial
+            Beneficios de implementar protección jurídica empresarial en tu
+            negocio
           </h2>
 
           <div className={styles.benefits}>
@@ -249,7 +258,7 @@ export default function ProteccionJuridicaEmpresarialContent() {
         >
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Protege tu empresa en Bogotá hoy
+              Protege tu empresa en Bogotá antes de enfrentar un riesgo legal
             </h2>
 
             <p className={styles.ctaText}>

@@ -18,14 +18,14 @@ const fadeSection = {
    COMPONENTE
 ========================= */
 
-export default function Article() {
+export default function DerechoAdministrativoColombia() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Derecho comercial en Colombia: guía para empresas y contratos",
+    headline:
+      "Derecho comercial en Colombia: guía práctica para empresas y contratos seguros",
     description:
       "Guía completa sobre derecho comercial en Colombia, contratos empresariales, normativa vigente y cómo proteger tu empresa legalmente.",
-    image: "https://pravice.co/og-image.jpg",
     author: {
       "@type": "Organization",
       name: "Pravice Abogados",
@@ -73,7 +73,8 @@ export default function Article() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Derecho comercial en Colombia: guía para empresas y contratos
+            Derecho comercial en Colombia: guía práctica para empresas y
+            contratos seguros
           </motion.h1>
 
           <motion.p
@@ -105,7 +106,7 @@ export default function Article() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>¿Qué es el derecho comercial?</h2>
+          <h2>Derecho comercial en Colombia: qué es y cómo funciona</h2>
 
           <p>
             El derecho comercial es la rama del derecho que regula las
@@ -123,7 +124,10 @@ export default function Article() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Normativa del derecho comercial en Colombia</h2>
+          <h2>
+            Normativa del derecho comercial en Colombia: Código de Comercio y
+            reglas clave
+          </h2>
 
           <p>
             El principal marco normativo es el Código de Comercio, que regula la
@@ -145,7 +149,9 @@ export default function Article() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Tipos de contratos comerciales en Colombia</h2>
+          <h2>
+            Tipos de contratos comerciales en Colombia más usados por empresas
+          </h2>
 
           <div className={styles.card}>
             <h3>Contrato de compraventa</h3>
@@ -179,7 +185,10 @@ export default function Article() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Importancia del derecho comercial para las empresas</h2>
+          <h2>
+            Importancia del derecho comercial en Colombia para empresas y
+            negocios
+          </h2>
 
           <p>
             Aplicar correctamente el derecho comercial permite operar con
@@ -200,7 +209,7 @@ export default function Article() {
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión</h2>
+          <h2>Conclusión: por qué el derecho comercial es clave en Colombia</h2>
 
           <p>
             El derecho comercial en Colombia es una herramienta esencial para

@@ -17,9 +17,9 @@ export default function Article() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "7 errores comunes en la gestión de cartera y cómo evitarlos",
+    headline: "7 errores en la gestión de cartera en Colombia y cómo evitarlos",
     description:
-      "Errores frecuentes en la gestión de cartera en Colombia y estrategias para mejorar la recuperación de pagos.",
+      "Errores frecuentes en la gestión de cartera en Colombia y estrategias para mejorar la recuperación de pagos y el flujo de caja empresarial.",
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://pravice.co/blog/errores-gestion-cartera",
@@ -57,8 +57,8 @@ export default function Article() {
           animate="visible"
         >
           <h1 className={styles.title}>
-            7 errores comunes en la gestión de cartera y cómo evitarlos en
-            Colombia
+            7 errores en la gestión de cartera en Colombia que están afectando
+            tu flujo de caja (y cómo evitarlos)
           </h1>
 
           <p className={styles.intro}>
@@ -82,7 +82,7 @@ export default function Article() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2>¿Qué es la gestión de cartera?</h2>
+          <h2>Gestión de cartera en Colombia: qué es y por qué es clave</h2>
 
           <p>
             La gestión de cartera consiste en administrar y recuperar las
@@ -101,31 +101,35 @@ export default function Article() {
         {/* ERRORES */}
         {[
           {
-            title: "1. No evaluar la capacidad de pago",
+            title:
+              "1. No evaluar la capacidad de pago del cliente antes de otorgar crédito",
             text: "Otorgar crédito sin analizar al cliente aumenta el riesgo de incumplimiento.",
           },
           {
-            title: "2. Falta de políticas de cobranza",
+            title: "2. No tener políticas claras de cobranza en la empresa",
             text: "No tener procesos definidos genera desorden y baja recuperación.",
           },
           {
-            title: "3. No hacer seguimiento oportuno",
+            title: "3. No hacer seguimiento oportuno a las cuentas por cobrar",
             text: "Esperar demasiado reduce la probabilidad de pago.",
           },
           {
-            title: "4. Procesos manuales",
+            title:
+              "4. Uso excesivo de procesos manuales en la gestión de cartera",
             text: "La falta de automatización genera errores y pérdida de control.",
           },
           {
-            title: "5. No ofrecer opciones de pago",
+            title:
+              "5. No ofrecer alternativas de pago flexibles a clientes en Colombia",
             text: "La flexibilidad mejora la recuperación de cartera.",
           },
           {
-            title: "6. Ignorar conflictos",
+            title: "6. Ignorar conflictos comerciales con clientes morosos",
             text: "Los problemas comerciales afectan directamente el pago.",
           },
           {
-            title: "7. No usar mecanismos legales",
+            title:
+              "7. No utilizar mecanismos legales para recuperación de cartera",
             text: "No acudir a conciliación o cobro jurídico limita la recuperación.",
           },
         ].map((item, i) => (
@@ -150,7 +154,10 @@ export default function Article() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2>Cómo mejorar la gestión de cartera en Colombia</h2>
+          <h2>
+            Cómo mejorar la gestión de cartera en Colombia y aumentar la
+            recuperación de pagos
+          </h2>
 
           <ul>
             <li>definir políticas de crédito</li>
@@ -169,7 +176,7 @@ export default function Article() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2>Conclusión</h2>
+          <h2>Conclusión: cómo evitar errores en cartera en Colombia</h2>
 
           <p>
             Evitar errores en la gestión de cartera en Colombia permite mejorar

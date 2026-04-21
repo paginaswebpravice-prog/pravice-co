@@ -7,7 +7,8 @@ import Article from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "Derecho contractual en Colombia: contratos seguros y legales | Pravice",
+    "Derecho contractual en Colombia: guía para contratos seguros y sin errores legales | Pravice",
+
   description:
     "Aprende cómo hacer contratos seguros en Colombia, los elementos esenciales del derecho contractual y cómo evitar errores legales en tu empresa.",
 
@@ -16,7 +17,8 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Derecho contractual en Colombia: cómo hacer contratos seguros",
+    title:
+      "Derecho contractual en Colombia: cómo hacer contratos seguros y evitar errores",
     description:
       "Guía completa sobre derecho contractual en Colombia, contratos empresariales y cómo evitar errores jurídicos.",
     url: "https://pravice.co/blog/derecho-contractual-colombia",
@@ -37,10 +39,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-/* =========================
-   PAGE
-========================= */
 
 export default function Page() {
   return <Article />;

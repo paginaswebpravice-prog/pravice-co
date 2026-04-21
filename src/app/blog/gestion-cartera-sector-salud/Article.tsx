@@ -19,7 +19,7 @@ export default function Article() {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       headline:
-        "Gestión de cartera en IPS y EPS: estrategias efectivas en Colombia",
+        "Gestión de cartera en IPS y EPS en Colombia: cómo recuperar pagos rápido",
       description:
         "Guía completa sobre gestión de cartera en IPS y EPS en Colombia, estrategias para recuperar pagos, manejar glosas médicas y mejorar el flujo financiero.",
       image: "https://pravice.co/og-image.jpg",
@@ -76,30 +76,21 @@ export default function Article() {
 
   return (
     <>
-      {/* ✅ SCHEMA */}
       <Script
         id="schema-gestion-cartera-salud"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
 
-      <article
-        className={styles.article}
-        itemScope
-        itemType="https://schema.org/BlogPosting"
-      >
+      <article className={styles.article}>
         {/* HERO */}
-        <motion.header
-          className={styles.header}
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-        >
-          <h1 className={styles.title} itemProp="headline">
-            Gestión de cartera en IPS y EPS: estrategias efectivas en Colombia
+        <motion.header className={styles.header} variants={fadeUp}>
+          <h1 className={styles.title}>
+            Gestión de cartera en IPS y EPS en Colombia: cómo recuperar pagos
+            más rápido
           </h1>
 
-          <p className={styles.intro} itemProp="description">
+          <p className={styles.intro}>
             La gestión de cartera en IPS y EPS en Colombia es uno de los mayores
             retos financieros del sector salud. Los retrasos en pagos, las
             glosas médicas y los procesos administrativos complejos afectan
@@ -113,9 +104,9 @@ export default function Article() {
           </p>
         </motion.header>
 
-        {/* CONTENIDO SEO */}
+        {/* CONTENIDO SEO (SOLO TÍTULO CAMBIADO) */}
         <section className={styles.contentBox}>
-          <h3>Contenido</h3>
+          <h3>Guía completa para recuperar cartera en IPS y EPS</h3>
           <ul>
             <li>¿Qué es la gestión de cartera en salud?</li>
             <li>Problemas comunes en IPS y EPS</li>
@@ -125,15 +116,10 @@ export default function Article() {
           </ul>
         </section>
 
-        {/* SECCIONES */}
-        <motion.section
-          className={styles.section}
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          <h2>¿Qué es la gestión de cartera en el sector salud?</h2>
+        {/* SECCIONES (SOLO H2 OPTIMIZADOS) */}
+
+        <motion.section className={styles.section} variants={fadeUp}>
+          <h2>¿Qué es la gestión de cartera en IPS y EPS en Colombia?</h2>
 
           <p>
             La gestión de cartera en Colombia consiste en administrar y
@@ -148,14 +134,8 @@ export default function Article() {
           </p>
         </motion.section>
 
-        <motion.section
-          className={styles.section}
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          <h2>Problemas comunes en la cartera de IPS y EPS</h2>
+        <motion.section className={styles.section} variants={fadeUp}>
+          <h2>Problemas más comunes en la cartera del sector salud</h2>
 
           <ul>
             <li>Retrasos prolongados en pagos</li>
@@ -166,48 +146,32 @@ export default function Article() {
           </ul>
         </motion.section>
 
-        <motion.section
-          className={styles.section}
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          <h2>Estrategias efectivas para recuperar cartera</h2>
+        <motion.section className={styles.section} variants={fadeUp}>
+          <h2>Estrategias efectivas para recuperar cartera en IPS y EPS</h2>
 
           <ul>
             <li>Control riguroso de facturación</li>
-            <li>Gestión oportuna de glosas</li>
-            <li>Seguimiento constante</li>
-            <li>Comunicación entre entidades</li>
-            <li>Uso de conciliación y mecanismos legales</li>
+            <li>Gestión oportuna de glosas médicas</li>
+            <li>Seguimiento constante de pagos</li>
+            <li>Comunicación efectiva entre entidades</li>
+            <li>Conciliación y acciones legales cuando aplique</li>
           </ul>
         </motion.section>
 
-        <motion.section
-          className={styles.section}
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          <h2>Indicadores clave en la gestión de cartera</h2>
+        <motion.section className={styles.section} variants={fadeUp}>
+          <h2>Indicadores clave para medir la cartera en salud</h2>
 
           <ul>
             <li>Días de cartera</li>
             <li>Índice de recuperación</li>
-            <li>Cartera vencida</li>
+            <li>Porcentaje de cartera vencida</li>
           </ul>
         </motion.section>
 
-        <motion.section
-          className={styles.section}
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          <h2>Tecnología y conciliación en el sector salud</h2>
+        <motion.section className={styles.section} variants={fadeUp}>
+          <h2>
+            Tecnología y conciliación en la gestión de cartera en Colombia
+          </h2>
 
           <p>
             La digitalización permite automatizar procesos, mejorar el
@@ -216,17 +180,12 @@ export default function Article() {
 
           <p>
             La conciliación extrajudicial es una herramienta clave para resolver
-            conflictos sin necesidad de procesos judiciales largos.
+            conflictos sin procesos judiciales extensos.
           </p>
         </motion.section>
 
-        <motion.section
-          className={styles.conclusion}
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-        >
-          <h2>Conclusión</h2>
+        <motion.section className={styles.conclusion} variants={fadeUp}>
+          <h2>Conclusión: cómo optimizar la cartera en IPS y EPS</h2>
 
           <p>
             La gestión de cartera en IPS y EPS es fundamental para la

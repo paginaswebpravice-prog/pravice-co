@@ -22,7 +22,8 @@ export default function Article() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Derecho contractual en Colombia: cómo hacer contratos seguros",
+    headline:
+      "Derecho contractual en Colombia: guía para contratos seguros y sin errores legales",
     description:
       "Guía completa sobre derecho contractual en Colombia, contratos empresariales, elementos legales y cómo evitar errores jurídicos.",
     image: "https://pravice.co/og-image.jpg",
@@ -73,7 +74,8 @@ export default function Article() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Derecho contractual en Colombia: cómo hacer contratos seguros
+            Derecho contractual en Colombia: guía para contratos seguros y sin
+            errores legales
           </motion.h1>
 
           <motion.p
@@ -104,7 +106,10 @@ export default function Article() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>¿Qué es el derecho contractual?</h2>
+          <h2>
+            Derecho contractual en Colombia: qué es y por qué es clave en
+            empresas
+          </h2>
 
           <p>
             El derecho contractual es la rama del derecho que regula los
@@ -121,7 +126,9 @@ export default function Article() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Elementos esenciales de un contrato en Colombia</h2>
+          <h2>
+            Elementos esenciales de un contrato en Colombia que debes conocer
+          </h2>
 
           <div className={styles.card}>
             <h3>Consentimiento</h3>
@@ -155,7 +162,7 @@ export default function Article() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Errores comunes al redactar contratos</h2>
+          <h2>Errores comunes en contratos en Colombia que debes evitar</h2>
 
           <p>
             Uno de los errores más frecuentes en Colombia es utilizar contratos
@@ -177,7 +184,7 @@ export default function Article() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Cómo hacer contratos seguros en Colombia</h2>
+          <h2>Cómo hacer contratos seguros en Colombia paso a paso</h2>
 
           <div className={styles.card}>
             <h3>Redacción clara</h3>
@@ -211,7 +218,9 @@ export default function Article() {
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión</h2>
+          <h2>
+            Conclusión: por qué un buen contrato protege tu empresa en Colombia
+          </h2>
 
           <p>
             El derecho contractual en Colombia es fundamental para la seguridad

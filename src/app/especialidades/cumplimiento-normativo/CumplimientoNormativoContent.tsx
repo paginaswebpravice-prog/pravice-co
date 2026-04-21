@@ -63,8 +63,8 @@ export default function CumplimientoNormativoContent() {
               </span>
 
               <h1 className={styles.title}>
-                Cumplimiento normativo en Colombia: protege tu empresa
-                legalmente
+                Cumplimiento Normativo en Bogotá: Evita Multas y Protege tu
+                Empresa en Colombia
               </h1>
 
               <p className={styles.description}>
@@ -88,7 +88,8 @@ export default function CumplimientoNormativoContent() {
           {/* ================= INTRO ================= */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              ¿Qué es el cumplimiento normativo en Colombia?
+              ¿Qué es el cumplimiento normativo y por qué tu empresa lo necesita
+              en Colombia?
             </h2>
 
             <p className={styles.text}>
@@ -115,7 +116,8 @@ export default function CumplimientoNormativoContent() {
           {/* ================= COMPONENTES ================= */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              Componentes del cumplimiento normativo empresarial
+              Elementos clave del compliance empresarial en Colombia que debes
+              implementar
             </h2>
 
             <div className={styles.grid}>
@@ -156,7 +158,8 @@ export default function CumplimientoNormativoContent() {
           {/* ================= IMPORTANCIA ================= */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              Importancia del cumplimiento normativo en Bogotá y Colombia
+              ¿Por qué el cumplimiento normativo es clave para empresas en
+              Bogotá y Colombia?
             </h2>
 
             <p className={styles.text}>
@@ -198,7 +201,8 @@ export default function CumplimientoNormativoContent() {
           {/* ================= RIESGOS ================= */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              Riesgos de no cumplir con la normativa
+              Consecuencias legales de no cumplir la normativa en Colombia
+              (multas y sanciones)
             </h2>
 
             <p className={styles.text}>
@@ -222,7 +226,8 @@ export default function CumplimientoNormativoContent() {
           {/* ================= BENEFICIOS ================= */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              Beneficios de implementar compliance
+              Beneficios del compliance: protege tu empresa y evita riesgos
+              legales en Colombia
             </h2>
 
             <div className={styles.benefits}>
@@ -255,7 +260,7 @@ export default function CumplimientoNormativoContent() {
           >
             <div className={styles.ctaContent}>
               <h2 className={styles.ctaTitle}>
-                Cumplimiento normativo en Bogotá
+                Habla con un abogado y evita sanciones en tu empresa hoy
               </h2>
 
               <p className={styles.ctaText}>
@@ -269,7 +274,7 @@ export default function CumplimientoNormativoContent() {
                   href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
                   className={styles.primary}
                 >
-                  Contactar ahora
+                  Hablar con un abogado ahora
                 </a>
 
                 <a
@@ -277,7 +282,7 @@ export default function CumplimientoNormativoContent() {
                   target="_blank"
                   className={styles.secondary}
                 >
-                  Hablar por WhatsApp
+                  Asesoría por WhatsApp inmediata
                 </a>
               </div>
             </div>

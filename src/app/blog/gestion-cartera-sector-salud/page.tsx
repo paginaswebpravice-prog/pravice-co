@@ -3,7 +3,7 @@ import ArticleGestionCarteraSalud from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "Gestión de cartera en IPS y EPS en Colombia: estrategias efectivas | Pravice",
+    "Gestión de cartera en IPS y EPS en Colombia: cómo recuperar pagos rápido | Pravice",
   description:
     "Aprende cómo mejorar la gestión de cartera en IPS y EPS en Colombia. Estrategias para recuperar pagos, manejar glosas médicas y optimizar el flujo financiero en el sector salud.",
   keywords: [
@@ -18,9 +18,10 @@ export const metadata: Metadata = {
     canonical: "https://pravice.co/blog/gestion-cartera-ips-eps",
   },
   openGraph: {
-    title: "Gestión de cartera en IPS y EPS en Colombia: estrategias efectivas",
+    title:
+      "Gestión de cartera en IPS y EPS en Colombia: cómo recuperar pagos rápido",
     description:
-      "Descubre estrategias para mejorar la recuperación de cartera en el sector salud en Colombia.",
+      "Descubre estrategias para mejorar la recuperación de cartera en IPS y EPS en Colombia.",
     url: "https://pravice.co/blog/gestion-cartera-ips-eps",
     siteName: "Pravice",
     images: [

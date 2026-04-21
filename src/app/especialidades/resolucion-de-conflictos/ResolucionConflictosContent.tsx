@@ -17,7 +17,8 @@ export default function ResolucionConflictos() {
           <span className={styles.badge}>Abogados en Bogotá y Colombia</span>
 
           <h1 className={styles.title}>
-            Resolución de conflictos en Colombia: soluciones legales efectivas
+            Resolución de conflictos en Colombia: abogados en Bogotá para evitar
+            juicios y llegar a acuerdos
           </h1>
 
           <p className={styles.description}>
@@ -49,7 +50,8 @@ export default function ResolucionConflictos() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            ¿Qué es la resolución de conflictos?
+            Resolución de conflictos en Colombia: cómo evitar juicios y
+            solucionar disputas legalmente
           </h2>
 
           <p className={styles.text}>
@@ -76,7 +78,7 @@ export default function ResolucionConflictos() {
         {/* METODOS */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Métodos de resolución de conflictos en Colombia
+            Métodos legales para resolver conflictos en Colombia sin ir a juicio
           </h2>
 
           <div className={styles.grid}>
@@ -117,7 +119,8 @@ export default function ResolucionConflictos() {
         {/* IMPORTANCIA */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Importancia de resolver conflictos a tiempo
+            Por qué es clave resolver conflictos empresariales antes de llegar a
+            juicio
           </h2>
 
           <p className={styles.text}>
@@ -158,7 +161,8 @@ export default function ResolucionConflictos() {
         {/* EMPRESAS */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Resolución de conflictos empresariales en Bogotá
+            Resolución de conflictos empresariales en Bogotá: soluciones rápidas
+            para empresas
           </h2>
 
           <p className={styles.text}>
@@ -182,7 +186,7 @@ export default function ResolucionConflictos() {
         {/* BENEFICIOS */}
         <section className={styles.section}>
           <h2 className={styles.subtitle}>
-            Beneficios de la resolución estratégica de conflictos
+            Beneficios de resolver conflictos con abogados expertos en Colombia
           </h2>
 
           <div className={styles.benefits}>
@@ -218,7 +222,8 @@ export default function ResolucionConflictos() {
         >
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Resolución de conflictos en Bogotá y Colombia
+              Abogados en Bogotá expertos en resolución de conflictos
+              empresariales
             </h2>
 
             <p className={styles.ctaText}>

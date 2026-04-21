@@ -23,7 +23,7 @@ export default function DerechoAdministrativoColombia() {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline:
-      "Derecho administrativo en Colombia: cómo actuar ante entidades públicas",
+      "Derecho administrativo en Colombia: cómo actuar ante entidades públicas y evitar sanciones legales",
     description:
       "Guía completa sobre derecho administrativo en Colombia, procesos con entidades públicas y cómo evitar sanciones legales.",
     author: {
@@ -48,7 +48,6 @@ export default function DerechoAdministrativoColombia() {
 
   return (
     <>
-      {/* SCHEMA */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -76,7 +75,7 @@ export default function DerechoAdministrativoColombia() {
             transition={{ delay: 0.2 }}
           >
             Derecho administrativo en Colombia: cómo actuar ante entidades
-            públicas
+            públicas y evitar sanciones legales
           </motion.h1>
 
           <motion.p
@@ -88,26 +87,28 @@ export default function DerechoAdministrativoColombia() {
           >
             El derecho administrativo en Colombia regula la relación entre
             empresas y entidades públicas. Conocer estos procesos permite evitar
-            sanciones, responder correctamente a requerimientos oficiales y
-            proteger tu negocio.
+            sanciones y responder correctamente ante el Estado.
           </motion.p>
         </motion.section>
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Contenido</h3>
+          <h3>Guía práctica de derecho administrativo en Colombia</h3>
           <ul>
-            <li>¿Qué es el derecho administrativo?</li>
-            <li>Relación con entidades públicas en Colombia</li>
+            <li>Qué es el derecho administrativo</li>
+            <li>Relación entre empresas y entidades públicas</li>
             <li>Procesos administrativos más comunes</li>
-            <li>Cómo actuar correctamente ante el Estado</li>
-            <li>Conclusión</li>
+            <li>Cómo actuar ante el Estado en Colombia</li>
+            <li>Conclusión y recomendaciones legales</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>¿Qué es el derecho administrativo?</h2>
+          <h2>
+            ¿Qué es el derecho administrativo en Colombia y cómo funciona el
+            Estado?
+          </h2>
 
           <p>
             El derecho administrativo regula la organización del Estado y la
@@ -115,14 +116,17 @@ export default function DerechoAdministrativoColombia() {
           </p>
 
           <p>
-            Define cómo deben actuar las autoridades, los procedimientos
-            administrativos y los derechos y obligaciones de las empresas.
+            Define los procedimientos administrativos y las obligaciones legales
+            de las empresas frente a la administración pública.
           </p>
         </motion.section>
 
         {/* SECCIÓN 2 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Relación entre empresas y entidades públicas en Colombia</h2>
+          <h2>
+            Relación entre empresas y entidades públicas en Colombia: lo que
+            debes saber
+          </h2>
 
           <p>
             Las empresas interactúan con entidades públicas mediante trámites,
@@ -137,50 +141,50 @@ export default function DerechoAdministrativoColombia() {
 
         {/* SECCIÓN 3 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Principales procesos administrativos</h2>
+          <h2>
+            Principales procesos administrativos en Colombia que debes conocer
+          </h2>
 
           <div className={styles.card}>
-            <h3>Licencias y permisos</h3>
+            <h3>Licencias y permisos obligatorios</h3>
             <p>
-              Son obligatorios para operar en ciertos sectores y su ausencia
-              puede generar sanciones.
+              Son necesarios para operar legalmente en ciertos sectores en
+              Colombia.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Procesos sancionatorios</h3>
-            <p>
-              Se presentan cuando hay incumplimientos legales y pueden implicar
-              multas o cierres.
-            </p>
+            <h3>Procesos sancionatorios del Estado</h3>
+            <p>Pueden generar multas, sanciones o cierres de actividades.</p>
           </div>
 
           <div className={styles.card}>
-            <h3>Contratación estatal</h3>
+            <h3>Contratación estatal en Colombia</h3>
             <p>
-              Permite a empresas trabajar con el Estado bajo normas específicas.
+              Permite a las empresas trabajar con entidades públicas bajo normas
+              específicas.
             </p>
           </div>
         </motion.section>
 
         {/* SECCIÓN 4 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Cómo actuar ante una entidad pública</h2>
+          <h2>Cómo actuar correctamente ante entidades públicas en Colombia</h2>
 
           <div className={styles.card}>
-            <h3>Cumplimiento normativo</h3>
+            <h3>Cumplimiento normativo obligatorio</h3>
             <p>Cumplir con la ley reduce riesgos legales y evita sanciones.</p>
           </div>
 
           <div className={styles.card}>
-            <h3>Respuesta oportuna</h3>
-            <p>Atender requerimientos dentro de los plazos es fundamental.</p>
+            <h3>Respuesta oportuna a requerimientos</h3>
+            <p>Responder dentro de los plazos legales es clave.</p>
           </div>
 
           <div className={styles.card}>
-            <h3>Asesoría legal</h3>
+            <h3>Asesoría legal especializada</h3>
             <p>
-              Contar con expertos permite enfrentar procesos de forma
+              Contar con abogados expertos permite enfrentar procesos de forma
               estratégica.
             </p>
           </div>
@@ -188,7 +192,7 @@ export default function DerechoAdministrativoColombia() {
 
         {/* CONCLUSIÓN */}
         <motion.section className={styles.conclusion} {...fadeSection}>
-          <h2>Conclusión</h2>
+          <h2>Conclusión: cómo evitar problemas con el Estado en Colombia</h2>
 
           <p>
             El derecho administrativo en Colombia es clave para la relación

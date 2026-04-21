@@ -8,7 +8,7 @@ export default function RecuperacionCarteraEmpresas() {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline:
-      "Métodos efectivos de recuperación de cartera empresarial en Colombia",
+      "Recuperación de cartera empresarial en Colombia: estrategias efectivas para mejorar flujo de caja",
     description:
       "Guía completa sobre recuperación de cartera empresarial en Colombia y Bogotá. Estrategias para mejorar el flujo de caja y reducir la morosidad.",
     image: "https://pravice.co/og-image.jpg",
@@ -63,7 +63,8 @@ export default function RecuperacionCarteraEmpresas() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Métodos efectivos de recuperación de cartera empresarial en Colombia
+            Recuperación de cartera empresarial en Colombia: estrategias
+            efectivas para mejorar flujo de caja
           </motion.h1>
 
           <motion.p
@@ -102,7 +103,7 @@ export default function RecuperacionCarteraEmpresas() {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
           >
-            ¿Qué es la recuperación de cartera empresarial?
+            ¿Qué es la recuperación de cartera empresarial en Colombia?
           </motion.h2>
 
           <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
@@ -126,11 +127,8 @@ export default function RecuperacionCarteraEmpresas() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <motion.h2
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-          >
-            Importancia de una buena gestión de cobranzas
+          <motion.h2>
+            Importancia de la recuperación de cartera en empresas de Colombia
           </motion.h2>
 
           <motion.ul initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
@@ -154,40 +152,37 @@ export default function RecuperacionCarteraEmpresas() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <motion.h2
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-          >
-            Métodos efectivos de recuperación de cartera
+          <motion.h2>
+            Métodos efectivos de recuperación de cartera empresarial en Colombia
           </motion.h2>
 
           {[
             {
-              title: "1. Seguimiento constante",
+              title: "1. Seguimiento constante de cartera",
               text: "Contactar oportunamente a los clientes permite evitar el vencimiento prolongado de las facturas.",
             },
             {
-              title: "2. Comunicación directa",
+              title: "2. Comunicación directa con clientes morosos",
               text: "Hablar con el cliente ayuda a identificar causas del retraso y encontrar soluciones.",
             },
             {
-              title: "3. Acuerdos de pago",
+              title: "3. Acuerdos de pago flexibles en Colombia",
               text: "Ofrecer planes flexibles facilita la recuperación del dinero sin afectar la relación comercial.",
             },
             {
-              title: "4. Automatización de cobranzas",
+              title: "4. Automatización de cobranzas empresariales",
               text: "Herramientas tecnológicas permiten mejorar la eficiencia y reducir errores.",
             },
             {
-              title: "5. Políticas de crédito claras",
+              title: "5. Políticas de crédito claras para empresas",
               text: "Definir condiciones desde el inicio reduce el riesgo de mora.",
             },
             {
-              title: "6. Conciliación",
+              title: "6. Conciliación de cartera empresarial",
               text: "Permite resolver conflictos de pago sin acudir a procesos judiciales largos.",
             },
             {
-              title: "7. Mecanismos legales",
+              title: "7. Mecanismos legales de recuperación de cartera",
               text: "En casos extremos, acudir a procesos jurídicos protege los intereses financieros de la empresa.",
             },
           ].map((item, i) => (
@@ -214,16 +209,16 @@ export default function RecuperacionCarteraEmpresas() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
-            Conclusión
+          <motion.h2>
+            Conclusión sobre recuperación de cartera empresarial en Colombia
           </motion.h2>
 
-          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+          <motion.p>
             La recuperación de cartera empresarial en Colombia es un proceso
             fundamental para la salud financiera de cualquier empresa.
           </motion.p>
 
-          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+          <motion.p>
             Implementar estrategias de seguimiento, negociación y tecnología
             permite mejorar el recaudo y reducir riesgos financieros.
           </motion.p>

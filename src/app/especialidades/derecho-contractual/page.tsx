@@ -3,16 +3,22 @@ import DerechoContractualContent from "./DerechoContractualContent";
 
 export const metadata: Metadata = {
   title:
-    "Derecho contractual en Colombia | Abogados en Bogotá para contratos empresariales",
+    "Derecho contractual en Bogotá y Colombia | Abogados expertos en contratos empresariales",
+
   description:
     "Abogados expertos en derecho contractual en Bogotá y Colombia. Elaboración, revisión y negociación de contratos comerciales con seguridad jurídica.",
+
   alternates: {
     canonical: "https://pravice.co/especialidades/derecho-contractual",
   },
+
   openGraph: {
-    title: "Derecho contractual en Colombia | Abogados en Bogotá",
+    title:
+      "Abogados de contratos en Bogotá y Colombia | Derecho contractual para empresas",
+
     description:
-      "Protege tu empresa con contratos bien estructurados. Asesoría legal en derecho contractual en Colombia.",
+      "Protege tu empresa con contratos sólidos. Asesoría en derecho contractual en Bogotá y Colombia.",
+
     url: "https://pravice.co/especialidades/derecho-contractual",
     siteName: "Pravice",
     locale: "es_CO",
@@ -26,6 +32,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   robots: {
     index: true,
     follow: true,

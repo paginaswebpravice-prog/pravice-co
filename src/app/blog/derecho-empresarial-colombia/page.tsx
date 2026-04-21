@@ -6,18 +6,20 @@ import Article from "./Article";
 ========================= */
 
 export const metadata: Metadata = {
-  title: "Derecho empresarial en Colombia: protege tu negocio | Pravice",
+  title:
+    "Derecho empresarial en Colombia: guía legal para proteger tu empresa en 2026",
   description:
-    "Conoce qué es el derecho empresarial en Colombia, sus aspectos clave y cómo proteger legalmente tu empresa.",
+    "Descubre cómo funciona el derecho empresarial en Colombia y aprende a proteger tu empresa, cumplir la ley y evitar riesgos legales.",
 
   alternates: {
     canonical: "https://pravice.co/blog/derecho-empresarial-colombia",
   },
 
   openGraph: {
-    title: "Derecho empresarial en Colombia: claves para proteger tu negocio",
+    title:
+      "Derecho empresarial en Colombia: cómo proteger tu empresa legalmente",
     description:
-      "Guía completa sobre derecho empresarial en Colombia, aspectos legales clave y cómo proteger tu empresa.",
+      "Guía completa sobre derecho empresarial en Colombia, aspectos legales clave y estrategias para proteger tu negocio.",
     url: "https://pravice.co/blog/derecho-empresarial-colombia",
     type: "article",
     locale: "es_CO",

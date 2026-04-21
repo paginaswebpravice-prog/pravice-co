@@ -54,7 +54,7 @@ export default function AbogadosGrid() {
 
   return (
     <section className={styles.section}>
-      {/* TÍTULO */}
+      {/* TÍTULO (OPTIMIZADO CTR) */}
       <motion.h2
         className={styles.title}
         initial={{ opacity: 0, y: 40 }}
@@ -62,7 +62,7 @@ export default function AbogadosGrid() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        Nuestros abogados en Bogotá Colombia
+        Abogados en Bogotá Colombia | Especialistas en derecho empresarial
       </motion.h2>
 
       {/* GRID */}
@@ -83,7 +83,6 @@ export default function AbogadosGrid() {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
           >
-            {/* IMAGEN */}
             <motion.img
               src={abogado.imagen}
               alt={abogado.alt}
@@ -93,7 +92,6 @@ export default function AbogadosGrid() {
               transition={{ duration: 0.6, ease: "easeOut" }}
             />
 
-            {/* OVERLAY */}
             <motion.div
               className={styles.overlay}
               initial={{ opacity: 0 }}
@@ -109,7 +107,6 @@ export default function AbogadosGrid() {
               </motion.span>
             </motion.div>
 
-            {/* SEO OCULTO */}
             <p className={styles.seoText}>
               {abogado.nombre} abogado en Bogotá Colombia especializado en
               derecho comercial, asesoría jurídica empresarial y contratos.
@@ -118,7 +115,6 @@ export default function AbogadosGrid() {
         ))}
       </div>
 
-      {/* ================= SCHEMA (OPCIONAL PERO RECOMENDADO) ================= */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

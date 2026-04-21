@@ -63,8 +63,8 @@ export default function DerechoSocietarioContent() {
               </span>
 
               <h1 className={styles.title}>
-                Derecho societario en Colombia: constitución y gestión de
-                empresas
+                Derecho societario en Bogotá y Colombia: abogados para crear,
+                estructurar y proteger tu empresa
               </h1>
 
               <p className={styles.description}>
@@ -87,7 +87,8 @@ export default function DerechoSocietarioContent() {
           {/* INTRO */}
           <motion.section variants={fadeUp} className={styles.section}>
             <h2 className={styles.subtitle}>
-              ¿Qué es el derecho societario en Colombia?
+              ¿Qué es el derecho societario en Colombia y por qué es clave para
+              tu empresa?
             </h2>
 
             <p className={styles.text}>
@@ -108,7 +109,10 @@ export default function DerechoSocietarioContent() {
 
           {/* SERVICIOS */}
           <motion.section variants={fadeUp} className={styles.section}>
-            <h2 className={styles.subtitle}>Servicios de derecho societario</h2>
+            <h2 className={styles.subtitle}>
+              Servicios de derecho societario en Bogotá: creación, reformas y
+              gestión de empresas
+            </h2>
 
             <div className={styles.grid}>
               {[
@@ -146,7 +150,10 @@ export default function DerechoSocietarioContent() {
 
           {/* IMPORTANCIA */}
           <motion.section variants={fadeUp} className={styles.section}>
-            <h2 className={styles.subtitle}>Importancia en Bogotá</h2>
+            <h2 className={styles.subtitle}>
+              Importancia del derecho societario en Bogotá para proteger socios
+              y estructurar empresas
+            </h2>
 
             <div className={styles.infoGrid}>
               <div>
@@ -173,7 +180,10 @@ export default function DerechoSocietarioContent() {
 
           {/* TIPOS */}
           <motion.section variants={fadeUp} className={styles.section}>
-            <h2 className={styles.subtitle}>Tipos de sociedades</h2>
+            <h2 className={styles.subtitle}>
+              Tipos de sociedades en Colombia que debes conocer antes de crear
+              tu empresa
+            </h2>
 
             <div className={styles.grid}>
               <div className={styles.card}>
@@ -200,7 +210,10 @@ export default function DerechoSocietarioContent() {
 
           {/* CONFLICTOS */}
           <motion.section variants={fadeUp} className={styles.section}>
-            <h2 className={styles.subtitle}>Conflictos societarios</h2>
+            <h2 className={styles.subtitle}>
+              Conflictos entre socios en Colombia: riesgos y cómo evitarlos
+              legalmente
+            </h2>
 
             <div className={styles.warningBox}>
               ⚠ Problemas entre socios afectan la estabilidad empresarial.
@@ -209,7 +222,10 @@ export default function DerechoSocietarioContent() {
 
           {/* BENEFICIOS */}
           <motion.section variants={fadeUp} className={styles.section}>
-            <h2 className={styles.subtitle}>Beneficios</h2>
+            <h2 className={styles.subtitle}>
+              Beneficios del derecho societario en Colombia para empresas y
+              socios
+            </h2>
 
             <div className={styles.benefits}>
               <span>✔ Creación legal</span>
@@ -228,7 +244,8 @@ export default function DerechoSocietarioContent() {
           >
             <div className={styles.ctaContent}>
               <h2 className={styles.ctaTitle}>
-                Abogados en derecho societario en Bogotá
+                Habla con un abogado societario en Bogotá y protege tu empresa
+                hoy
               </h2>
 
               <p className={styles.ctaText}>

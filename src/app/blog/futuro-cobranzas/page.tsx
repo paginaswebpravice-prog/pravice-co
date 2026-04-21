@@ -3,16 +3,19 @@ import Article from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "El futuro de las cobranzas en Latinoamérica y Colombia | Tendencias 2026",
+    "El futuro de las cobranzas en Latinoamérica y Colombia (IA, automatización y pagos digitales) | 2026",
   description:
-    "Descubre el futuro de las cobranzas en Latinoamérica y Colombia: automatización, inteligencia artificial, pagos digitales y nuevas estrategias de recuperación de cartera.",
+    "Descubre cómo será el futuro de las cobranzas en Latinoamérica y Colombia en 2026: inteligencia artificial, automatización, pagos digitales y nuevas estrategias de recuperación de cartera.",
+
   alternates: {
     canonical: "https://pravice.co/blog/futuro-cobranzas-latinoamerica",
   },
+
   openGraph: {
-    title: "Futuro de las cobranzas en Latinoamérica",
+    title:
+      "Futuro de las cobranzas en Latinoamérica: IA, automatización y pagos digitales",
     description:
-      "Conoce las tendencias en cobranzas: IA, automatización y recuperación de cartera en Colombia y LATAM.",
+      "Conoce las tendencias que están transformando la gestión de cartera en Colombia y Latinoamérica en 2026.",
     url: "https://pravice.co/blog/futuro-cobranzas-latinoamerica",
     siteName: "Pravice",
     locale: "es_CO",
@@ -26,6 +29,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   robots: {
     index: true,
     follow: true,

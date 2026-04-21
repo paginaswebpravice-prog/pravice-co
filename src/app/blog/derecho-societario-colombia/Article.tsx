@@ -26,7 +26,7 @@ export default function Article() {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       headline:
-        "Derecho societario en Colombia: cómo crear y gestionar empresas",
+        "Derecho societario en Colombia: guía para crear empresas legalmente (SAS, LTDA y SA)",
       description:
         "Guía completa sobre derecho societario en Colombia, tipos de sociedades, creación de empresas y obligaciones legales en Bogotá y todo el país.",
       image: "https://pravice.co/og-image.jpg",
@@ -90,9 +90,10 @@ export default function Article() {
       >
         {/* HERO */}
         <motion.section className={styles.hero} {...fadeSection}>
+          {/* H1 OPTIMIZADO CTR */}
           <h1 className={styles.title} itemProp="headline">
-            Derecho societario en Colombia: cómo crear y gestionar empresas
-            legalmente
+            Derecho societario en Colombia: guía completa para crear empresas
+            legalmente (SAS, LTDA y SA paso a paso)
           </h1>
 
           <p className={styles.description} itemProp="description">
@@ -105,19 +106,22 @@ export default function Article() {
 
         {/* TOC */}
         <motion.section className={styles.contentBox} {...fadeSection}>
-          <h2>Contenido</h2>
+          <h2>Guía rápida del contenido</h2>
           <ul>
-            <li>¿Qué es el derecho societario?</li>
-            <li>Tipos de sociedades en Colombia</li>
-            <li>Cómo crear una empresa</li>
-            <li>Obligaciones legales</li>
-            <li>Conclusión</li>
+            <li>¿Qué es el derecho societario en Colombia?</li>
+            <li>Tipos de sociedades más usadas</li>
+            <li>Cómo crear una empresa paso a paso</li>
+            <li>Obligaciones legales empresariales</li>
+            <li>Conclusión práctica</li>
           </ul>
         </motion.section>
 
         {/* SECCIÓN 1 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>¿Qué es el derecho societario en Colombia?</h2>
+          <h2>
+            ¿Qué es el derecho societario en Colombia y para qué sirve en las
+            empresas?
+          </h2>
 
           <p>
             El derecho societario regula la creación, estructura y
@@ -132,19 +136,21 @@ export default function Article() {
 
         {/* SECCIÓN 2 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Tipos de sociedades en Colombia</h2>
+          <h2>
+            Tipos de sociedades en Colombia: cuál elegir para crear tu empresa
+          </h2>
 
           {[
             {
-              title: "Sociedad por Acciones Simplificada (SAS)",
+              title: "Sociedad por Acciones Simplificada (SAS) en Colombia",
               text: "La más utilizada en Colombia por su flexibilidad y facilidad de creación.",
             },
             {
-              title: "Sociedad Limitada (LTDA)",
+              title: "Sociedad Limitada (LTDA) en Colombia",
               text: "Limita la responsabilidad de los socios al capital aportado.",
             },
             {
-              title: "Sociedad Anónima (S.A.)",
+              title: "Sociedad Anónima (S.A.) en Colombia",
               text: "Ideal para grandes empresas con múltiples accionistas.",
             },
           ].map((item, i) => (
@@ -157,7 +163,7 @@ export default function Article() {
 
         {/* SECCIÓN 3 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Cómo crear una empresa en Colombia</h2>
+          <h2>Cómo crear una empresa en Colombia paso a paso (guía legal)</h2>
 
           <ul>
             <li>Definir el tipo de sociedad</li>
@@ -170,19 +176,21 @@ export default function Article() {
 
         {/* SECCIÓN 4 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Obligaciones legales de las empresas</h2>
+          <h2>
+            Obligaciones legales de las empresas en Colombia que debes cumplir
+          </h2>
 
           {[
             {
-              title: "Cumplimiento normativo",
+              title: "Cumplimiento normativo empresarial",
               text: "Cumplir con normas tributarias, laborales y comerciales en Colombia.",
             },
             {
-              title: "Gobierno corporativo",
+              title: "Gobierno corporativo en empresas",
               text: "Definir roles y responsabilidades dentro de la empresa.",
             },
             {
-              title: "Relación entre socios",
+              title: "Relación entre socios y acuerdos legales",
               text: "Establecer acuerdos claros para evitar conflictos.",
             },
           ].map((item, i) => (
@@ -195,7 +203,9 @@ export default function Article() {
 
         {/* CONCLUSIÓN */}
         <motion.section className={styles.conclusion} {...fadeSection}>
-          <h2>Conclusión</h2>
+          <h2>
+            Conclusión: por qué el derecho societario es clave para tu empresa
+          </h2>
 
           <p>
             El derecho societario en Colombia es esencial para crear y gestionar

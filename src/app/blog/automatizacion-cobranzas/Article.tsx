@@ -74,13 +74,15 @@ export default function Article() {
           transition={{ duration: 0.6 }}
         >
           <h1 className={styles.title} itemProp="headline">
-            Automatización de cobranzas: cómo mejorar tu recaudo en Colombia
+            Automatización de cobranzas en Colombia: recupera cartera más rápido
+            y mejora tu flujo de caja
           </h1>
 
           <p className={styles.intro} itemProp="description">
-            La automatización de cobranzas en Colombia es clave para mejorar la
-            recuperación de cartera, reducir costos operativos y optimizar el
-            flujo de caja empresarial.
+            La automatización de cobranzas en Colombia permite a las empresas
+            recuperar cartera más rápido, reducir errores operativos y mejorar
+            significativamente el flujo de caja mediante procesos digitales
+            eficientes.
           </p>
 
           <p className={styles.intro}>
@@ -98,17 +100,31 @@ export default function Article() {
           <nav className={styles.toc} aria-label="Tabla de contenido">
             <h2>Contenido</h2>
             <ul>
-              <li>¿Qué es la automatización de cobranzas?</li>
-              <li>Problemas de la cobranza tradicional</li>
-              <li>Beneficios de la automatización</li>
-              <li>Conclusión</li>
+              <li>
+                Qué es la automatización de cobranzas en Colombia y cómo mejora
+                la recuperación de cartera
+              </li>
+              <li>
+                Problemas de la cobranza manual en empresas y por qué genera
+                pérdidas de dinero
+              </li>
+              <li>
+                Beneficios de automatizar la cobranza en Colombia para empresas
+              </li>
+              <li>
+                Por qué automatizar la cobranza es clave para empresas en
+                Colombia
+              </li>
             </ul>
           </nav>
         </motion.header>
 
         {/* SECCIÓN */}
         <motion.section className={styles.section} {...fadeUp}>
-          <h2>¿Qué es la automatización de cobranzas?</h2>
+          <h2>
+            Qué es la automatización de cobranzas en Colombia y cómo mejora la
+            recuperación de cartera
+          </h2>
 
           <p>
             La automatización de cobranzas es el uso de herramientas
@@ -127,7 +143,10 @@ export default function Article() {
 
         {/* SECCIÓN */}
         <motion.section className={styles.section} {...fadeUp}>
-          <h2>Problemas de la cobranza tradicional</h2>
+          <h2>
+            Problemas de la cobranza manual en empresas y por qué genera
+            pérdidas de dinero
+          </h2>
 
           <motion.div className={styles.card} {...fadeUpSmall}>
             <h3>Falta de seguimiento</h3>
@@ -153,10 +172,12 @@ export default function Article() {
 
         {/* SECCIÓN */}
         <motion.section className={styles.section} {...fadeUp}>
-          <h2>Beneficios de la automatización de cobranzas</h2>
+          <h2>
+            Beneficios de automatizar la cobranza en Colombia para empresas
+          </h2>
 
           <motion.div className={styles.card} {...fadeUpSmall}>
-            <h3>Mejora en recaudo</h3>
+            <h3>Recuperación de cartera más rápida</h3>
             <p>
               Incrementa la probabilidad de pago mediante recordatorios
               oportunos.
@@ -164,24 +185,26 @@ export default function Article() {
           </motion.div>
 
           <motion.div className={styles.card} {...fadeUpSmall}>
-            <h3>Reducción de costos</h3>
+            <h3>Reducción de costos operativos en cobranza</h3>
             <p>Disminuye el trabajo manual y optimiza recursos.</p>
           </motion.div>
 
           <motion.div className={styles.card} {...fadeUpSmall}>
-            <h3>Control financiero</h3>
+            <h3>Control total del flujo de caja empresarial</h3>
             <p>Permite monitoreo en tiempo real de la cartera.</p>
           </motion.div>
 
           <motion.div className={styles.card} {...fadeUpSmall}>
-            <h3>Mejor experiencia del cliente</h3>
+            <h3>Mejora en la relación con clientes</h3>
             <p>Comunicación clara y oportuna mejora la relación comercial.</p>
           </motion.div>
         </motion.section>
 
         {/* CONCLUSIÓN */}
         <motion.section className={styles.conclusion} {...fadeUp}>
-          <h2>Conclusión</h2>
+          <h2>
+            Por qué automatizar la cobranza es clave para empresas en Colombia
+          </h2>
 
           <p>
             La automatización de cobranzas en Colombia es una estrategia clave

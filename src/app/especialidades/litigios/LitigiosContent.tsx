@@ -17,7 +17,8 @@ export default function LitigiosContent() {
           <span className={styles.badge}>Litigios en Bogotá y Colombia</span>
 
           <h1 className={styles.title}>
-            Litigios en Colombia: representación legal estratégica para empresas
+            Litigios en Bogotá y Colombia: abogados expertos en defensa judicial
+            para empresas
           </h1>
 
           <p className={styles.description}>
@@ -48,7 +49,7 @@ export default function LitigiosContent() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            ¿Qué son los litigios en Colombia?
+            ¿Qué son los litigios en Colombia y cuándo necesitas un abogado?
           </h2>
 
           <p className={styles.text}>
@@ -87,7 +88,8 @@ export default function LitigiosContent() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            Tipos de litigios más comunes en Colombia
+            Tipos de litigios en Colombia que pueden afectar a tu empresa o
+            negocio
           </h2>
 
           <div className={styles.grid}>
@@ -139,7 +141,8 @@ export default function LitigiosContent() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            Importancia de una buena estrategia de litigio
+            Importancia de una estrategia legal en litigios en Colombia para
+            ganar tu caso
           </h2>
 
           <p className={styles.text}>
@@ -186,7 +189,8 @@ export default function LitigiosContent() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            Riesgos de no contar con asesoría en litigios
+            Riesgos de enfrentar un litigio sin abogado en Colombia: pérdidas y
+            sanciones
           </h2>
 
           <div className={styles.warningBox}>
@@ -211,7 +215,8 @@ export default function LitigiosContent() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            Beneficios de contar con abogados litigantes
+            Beneficios de contar con abogados de litigios en Colombia para tu
+            defensa legal
           </h2>
 
           <div className={styles.benefits}>
@@ -247,7 +252,8 @@ export default function LitigiosContent() {
         >
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Abogados expertos en litigios en Bogotá
+              Habla con un abogado de litigios en Bogotá y defiende tu empresa
+              hoy
             </h2>
 
             <p className={styles.ctaText}>

@@ -5,16 +5,16 @@ const canonicalUrl = "https://pravice.co/blog/mediacion-empresarial-colombia";
 
 export const metadata: Metadata = {
   title:
-    "Mediación empresarial en Colombia: solución rápida para conflictos | Pravice",
+    "Mediación empresarial en Colombia: cómo resolver conflictos sin ir a juicio | Bogotá | Pravice",
   description:
     "Descubre cómo funciona la mediación empresarial en Colombia y Bogotá. Resuelve conflictos comerciales de forma rápida, económica y sin procesos judiciales.",
   alternates: {
     canonical: canonicalUrl,
   },
   openGraph: {
-    title: "Mediación empresarial en Colombia: alternativa a litigios",
+    title: "Mediación empresarial en Colombia: solución rápida sin litigios",
     description:
-      "Aprende cómo resolver conflictos empresariales sin ir a juicio mediante mediación.",
+      "Aprende cómo resolver conflictos empresariales sin ir a juicio mediante mediación en Colombia.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -30,8 +30,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mediación empresarial en Colombia",
-    description: "Solución rápida y efectiva para conflictos empresariales.",
+    title:
+      "Mediación empresarial en Colombia: evita juicios y resuelve conflictos",
+    description:
+      "Solución rápida y efectiva para conflictos empresariales en Colombia.",
     images: ["https://pravice.co/og-image.jpg"],
   },
 };

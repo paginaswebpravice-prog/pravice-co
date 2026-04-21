@@ -23,7 +23,7 @@ export default function Article() {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline:
-      "Derecho empresarial en Colombia: claves para proteger tu negocio",
+      "Derecho empresarial en Colombia: guía completa para proteger tu empresa en 2026",
     description:
       "Guía completa sobre derecho empresarial en Colombia, aspectos legales clave y cómo proteger tu empresa.",
     image: "https://pravice.co/og-image.jpg",
@@ -66,8 +66,10 @@ export default function Article() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
         >
+          {/* H1 OPTIMIZADO CTR */}
           <motion.h1 className={styles.title} itemProp="headline">
-            Derecho empresarial en Colombia: claves para proteger tu negocio
+            Derecho empresarial en Colombia: guía completa para proteger tu
+            empresa y evitar riesgos legales en 2026
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
@@ -80,19 +82,19 @@ export default function Article() {
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Contenido</h3>
+          <h3>Guía rápida del contenido</h3>
           <ul>
-            <li>¿Qué es el derecho empresarial?</li>
-            <li>Importancia para las empresas</li>
-            <li>Aspectos legales clave</li>
-            <li>Cómo proteger tu negocio</li>
-            <li>Conclusión</li>
+            <li>¿Qué es el derecho empresarial en Colombia?</li>
+            <li>Por qué es clave para proteger tu empresa</li>
+            <li>Aspectos legales que debes conocer</li>
+            <li>Cómo evitar riesgos legales en tu negocio</li>
+            <li>Conclusión práctica</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>¿Qué es el derecho empresarial?</h2>
+          <h2>¿Qué es el derecho empresarial en Colombia y cómo funciona?</h2>
 
           <p>
             El derecho empresarial es el conjunto de normas que regulan la
@@ -110,7 +112,10 @@ export default function Article() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Importancia del derecho empresarial</h2>
+          <h2>
+            Importancia del derecho empresarial para proteger tu negocio en
+            Colombia
+          </h2>
 
           <p>
             Aplicar correctamente el derecho empresarial permite evitar
@@ -132,10 +137,13 @@ export default function Article() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Aspectos legales clave en Colombia</h2>
+          <h2>
+            Aspectos legales clave del derecho empresarial en Colombia que debes
+            conocer
+          </h2>
 
           <div className={styles.card}>
-            <h3>Constitución de la empresa</h3>
+            <h3>Constitución legal de la empresa</h3>
             <p>
               Elegir el tipo de sociedad adecuado define la responsabilidad
               legal, la estructura organizacional y el alcance del negocio.
@@ -143,7 +151,7 @@ export default function Article() {
           </div>
 
           <div className={styles.card}>
-            <h3>Contratos comerciales</h3>
+            <h3>Contratos comerciales estratégicos</h3>
             <p>
               Los contratos bien redactados permiten prevenir conflictos y
               proteger los intereses de la empresa en sus relaciones
@@ -152,7 +160,7 @@ export default function Article() {
           </div>
 
           <div className={styles.card}>
-            <h3>Cumplimiento normativo</h3>
+            <h3>Cumplimiento normativo empresarial</h3>
             <p>
               Cumplir con obligaciones legales, tributarias y regulatorias es
               clave para evitar sanciones y garantizar la operación del negocio.
@@ -167,7 +175,9 @@ export default function Article() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Cómo proteger tu negocio legalmente</h2>
+          <h2>
+            Cómo proteger tu empresa en Colombia desde el punto de vista legal
+          </h2>
 
           <p>
             Contar con asesoría legal constante permite anticiparse a problemas
@@ -188,7 +198,9 @@ export default function Article() {
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión</h2>
+          <h2>
+            Conclusión: por qué el derecho empresarial es clave para tu empresa
+          </h2>
 
           <p>
             El derecho empresarial en Colombia es una herramienta esencial para

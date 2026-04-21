@@ -76,6 +76,7 @@ export default function CumplimientoNormativoArticle() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
+          {/* H1 MEJORADO CTR */}
           <motion.h1
             className={styles.title}
             itemProp="headline"
@@ -83,7 +84,8 @@ export default function CumplimientoNormativoArticle() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Cumplimiento normativo en Colombia: evita sanciones legales
+            Cumplimiento normativo en Colombia: evita sanciones y protege tu
+            empresa legalmente
           </motion.h1>
 
           <motion.p
@@ -103,10 +105,10 @@ export default function CumplimientoNormativoArticle() {
         <motion.section className={styles.contentBox} {...fadeSection}>
           <h3>Contenido</h3>
           <ul>
-            <li>¿Qué es el cumplimiento normativo?</li>
-            <li>Importancia del compliance</li>
-            <li>Riesgos legales en Colombia</li>
-            <li>Cómo implementar compliance</li>
+            <li>¿Qué es el cumplimiento normativo en Colombia?</li>
+            <li>Importancia del compliance empresarial</li>
+            <li>Principales riesgos legales en Colombia</li>
+            <li>Cómo implementar un programa de compliance</li>
             <li>Conclusión</li>
           </ul>
         </motion.section>
@@ -129,7 +131,7 @@ export default function CumplimientoNormativoArticle() {
 
         {/* SECCIÓN 2 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Importancia del compliance en las empresas</h2>
+          <h2>Importancia del compliance empresarial en Colombia</h2>
 
           <p>
             Un programa de cumplimiento normativo permite prevenir sanciones,
@@ -144,52 +146,52 @@ export default function CumplimientoNormativoArticle() {
 
         {/* SECCIÓN 3 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Principales riesgos legales en Colombia</h2>
+          <h2>Principales riesgos legales en empresas colombianas</h2>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Incumplimiento tributario</h3>
+            <h3>Incumplimiento tributario en Colombia</h3>
             <p>Puede generar sanciones económicas importantes.</p>
           </motion.div>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Riesgos laborales</h3>
+            <h3>Riesgos laborales y demandas</h3>
             <p>Demandas y conflictos por incumplimiento de normas laborales.</p>
           </motion.div>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Falta de controles internos</h3>
+            <h3>Falta de controles internos empresariales</h3>
             <p>Aumenta el riesgo de fraudes y errores administrativos.</p>
           </motion.div>
         </motion.section>
 
         {/* SECCIÓN 4 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Cómo implementar un programa de cumplimiento</h2>
+          <h2>Cómo implementar un programa de compliance en tu empresa</h2>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Diagnóstico legal</h3>
+            <h3>Diagnóstico legal empresarial</h3>
             <p>Identificar riesgos y obligaciones legales.</p>
           </motion.div>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Políticas internas</h3>
+            <h3>Políticas internas de cumplimiento</h3>
             <p>Establecer reglas claras dentro de la empresa.</p>
           </motion.div>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Capacitación</h3>
+            <h3>Capacitación en compliance</h3>
             <p>Formar a los empleados en cumplimiento normativo.</p>
           </motion.div>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Monitoreo</h3>
+            <h3>Monitoreo y mejora continua</h3>
             <p>Evaluar y ajustar constantemente el programa.</p>
           </motion.div>
         </motion.section>
 
         {/* CONCLUSIÓN */}
         <motion.section className={styles.conclusion} {...fadeSection}>
-          <h2>Conclusión</h2>
+          <h2>Conclusión: por qué el compliance es clave en Colombia</h2>
 
           <p>
             El cumplimiento normativo en Colombia es clave para evitar sanciones

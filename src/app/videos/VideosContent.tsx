@@ -6,52 +6,62 @@ import { motion } from "framer-motion";
 export default function Videos() {
   const videos = [
     {
-      title: "Cómo demandar por estafa en Colombia - Abogados Bogotá",
+      title:
+        "Cómo demandar por estafa en Colombia: pasos legales y asesoría en Bogotá",
       url: "https://www.youtube.com/embed/DPQ9xUDyJEc",
       id: "DPQ9xUDyJEc",
     },
     {
-      title: "Divorcio por mutuo acuerdo en Bogotá Colombia",
+      title:
+        "Divorcio por mutuo acuerdo en Bogotá: proceso, requisitos y costos en Colombia",
       url: "https://www.youtube.com/embed/eQFEueWd5tw",
       id: "eQFEueWd5tw",
     },
     {
-      title: "Divorcio sin mutuo acuerdo en Colombia - Abogados expertos",
+      title:
+        "Divorcio sin mutuo acuerdo en Colombia: qué hacer y cómo iniciar el proceso legal",
       url: "https://www.youtube.com/embed/q_b7N9qqWWM",
       id: "q_b7N9qqWWM",
     },
     {
-      title: "Abogados de familia en Bogotá Colombia",
+      title:
+        "Abogados de familia en Bogotá: divorcios, custodia y asesoría legal en Colombia",
       url: "https://www.youtube.com/embed/365WDDynZlc",
       id: "365WDDynZlc",
     },
     {
-      title: "Derecho laboral para trabajadores en Colombia",
+      title:
+        "Derecho laboral en Colombia para trabajadores: derechos, despidos y reclamaciones",
       url: "https://www.youtube.com/embed/0mx-AE4GzIc",
       id: "0mx-AE4GzIc",
     },
     {
-      title: "Derecho laboral para empleadores en Bogotá",
+      title:
+        "Derecho laboral para empleadores en Bogotá: contratos, despidos y obligaciones legales",
       url: "https://www.youtube.com/embed/8NqdWyNrRQI",
       id: "8NqdWyNrRQI",
     },
     {
-      title: "Importancia del derecho laboral en Colombia",
+      title:
+        "Importancia del derecho laboral en Colombia: evita demandas y protege tu empresa",
       url: "https://www.youtube.com/embed/sMcNzoPSo6Y",
       id: "sMcNzoPSo6Y",
     },
     {
-      title: "Recaudo de cartera en salud Colombia (IPS - EPS)",
+      title:
+        "Recaudo de cartera en salud en Colombia: cómo recuperar cartera en IPS y EPS",
       url: "https://www.youtube.com/embed/4UzdDo8n22Y",
       id: "4UzdDo8n22Y",
     },
     {
-      title: "Cobro de cartera en Colombia - Abogados expertos",
+      title:
+        "Cobro de cartera en Colombia: proceso legal para recuperar dinero paso a paso",
       url: "https://www.youtube.com/embed/jXeBEImbDl8",
       id: "jXeBEImbDl8",
     },
     {
-      title: "Derecho comercial en Colombia - Abogados Bogotá",
+      title:
+        "Derecho comercial en Colombia: asesoría legal para empresas en Bogotá",
       url: "https://www.youtube.com/embed/bVky48kidxg",
       id: "bVky48kidxg",
     },
@@ -67,8 +77,8 @@ export default function Videos() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Videos de Abogados en Bogotá Colombia | Derecho Comercial, Laboral y
-          Familiar
+          Videos de abogados en Bogotá: asesoría legal, demandas, divorcios y
+          derecho laboral en Colombia
         </motion.h1>
 
         <motion.p
@@ -108,7 +118,10 @@ export default function Videos() {
 
         {/* ================= CONTENIDO SEO FUERTE ================= */}
         <section className={styles.seoBlock}>
-          <h2>Abogados en Bogotá Colombia - Contenido Jurídico en Video</h2>
+          <h2>
+            Videos legales en Bogotá: asesoría de abogados en derecho comercial,
+            laboral y familiar en Colombia
+          </h2>
 
           <p>
             En Pravice Abogados, firma ubicada en Bogotá Colombia, ofrecemos

@@ -3,7 +3,7 @@ import BlogSEO from "./BlogSeo";
 
 export const metadata: Metadata = {
   title:
-    "Blog jurídico en Colombia | Cobranzas, conciliación y derecho empresarial",
+    "Blog jurídico en Colombia 2026 | Cobranzas, conciliación y derecho empresarial | Pravice",
   description:
     "Blog jurídico en Colombia con guías sobre recuperación de cartera, conciliación extrajudicial, derecho empresarial y resolución de conflictos.",
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Blog jurídico en Colombia | Cobranzas, conciliación y derecho empresarial",
+      "Blog jurídico en Colombia | Guías legales sobre empresas, cobranzas y conflictos",
     description:
       "Aprende sobre recuperación de cartera, conciliación y derecho empresarial en Colombia.",
     url: "https://pravice.co/blog",

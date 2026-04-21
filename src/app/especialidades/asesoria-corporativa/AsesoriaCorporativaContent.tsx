@@ -60,7 +60,8 @@ export default function AsesoriaCorporativaContent() {
             <span className={styles.badge}>Abogados en Bogotá y Colombia</span>
 
             <h1 className={styles.title}>
-              Asesoría corporativa en Colombia: estrategia legal para empresas
+              Asesoría Corporativa en Bogotá: Abogados para Empresas que Quieren
+              Crecer sin Riesgos
             </h1>
 
             <p className={styles.description}>
@@ -83,7 +84,8 @@ export default function AsesoriaCorporativaContent() {
         {/* ================= INTRO ================= */}
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Qué es la asesoría corporativa en Colombia?
+            ¿Qué es la asesoría corporativa y por qué es clave para tu empresa
+            en Colombia?
           </h2>
 
           <p className={styles.text}>
@@ -116,7 +118,8 @@ export default function AsesoriaCorporativaContent() {
         {/* ================= SERVICIOS ================= */}
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Servicios de asesoría corporativa para empresas
+            Servicios de asesoría corporativa en Bogotá que protegen y hacen
+            crecer tu empresa
           </h2>
 
           <p className={styles.text}>
@@ -162,7 +165,8 @@ export default function AsesoriaCorporativaContent() {
         {/* ================= IMPORTANCIA ================= */}
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Importancia de la asesoría corporativa en Bogotá
+            ¿Por qué la asesoría corporativa es esencial para empresas en
+            Bogotá?
           </h2>
 
           <p className={styles.text}>
@@ -198,7 +202,8 @@ export default function AsesoriaCorporativaContent() {
         {/* ================= ERRORES ================= */}
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Errores comunes sin asesoría corporativa
+            Errores legales que pueden afectar tu empresa si no tienes asesoría
+            corporativa
           </h2>
 
           <p className={styles.text}>
@@ -221,7 +226,7 @@ export default function AsesoriaCorporativaContent() {
         {/* ================= BENEFICIOS ================= */}
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Beneficios de la asesoría corporativa
+            Beneficios reales de contratar asesoría corporativa en Colombia
           </h2>
 
           <div className={styles.benefits}>
@@ -241,7 +246,8 @@ export default function AsesoriaCorporativaContent() {
         {/* ================= ENFOQUE NACIONAL ================= */}
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Asesoría corporativa en Bogotá y a nivel nacional
+            Asesoría corporativa en Bogotá y toda Colombia: atención para
+            empresas en crecimiento
           </h2>
 
           <p className={styles.text}>
@@ -267,7 +273,8 @@ export default function AsesoriaCorporativaContent() {
         <motion.section id="contacto" variants={fadeUp} className={styles.cta}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Asesoría corporativa en Bogotá y Colombia
+              Habla hoy con un abogado corporativo en Bogotá y protege tu
+              empresa
             </h2>
 
             <p className={styles.ctaText}>
@@ -281,7 +288,7 @@ export default function AsesoriaCorporativaContent() {
                 href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
                 className={styles.primary}
               >
-                Contactar ahora
+                Solicitar asesoría corporativa ahora
               </a>
 
               <a

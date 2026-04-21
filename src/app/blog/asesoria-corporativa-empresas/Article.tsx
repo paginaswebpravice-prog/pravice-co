@@ -74,8 +74,8 @@ export default function Article() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Asesoría corporativa en Colombia: toma decisiones legales
-            estratégicas
+            Asesoría corporativa en Colombia: cómo tomar decisiones legales
+            estratégicas para tu empresa
           </motion.h1>
 
           <motion.p
@@ -85,9 +85,9 @@ export default function Article() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            La asesoría corporativa en Colombia es clave para que las empresas
-            tomen decisiones legales informadas, reduzcan riesgos y aprovechen
-            oportunidades de crecimiento en Bogotá y todo el país.
+            La asesoría corporativa en Colombia permite a las empresas tomar
+            decisiones legales estratégicas, reducir riesgos y estructurar su
+            crecimiento con seguridad jurídica en Bogotá y todo el país.
           </motion.p>
         </motion.section>
 
@@ -95,17 +95,33 @@ export default function Article() {
         <motion.section className={styles.contentBox} {...fadeSection}>
           <h3>Contenido</h3>
           <ul>
-            <li>¿Qué es la asesoría corporativa?</li>
-            <li>Importancia para las empresas</li>
-            <li>Áreas clave de asesoría</li>
-            <li>Beneficios estratégicos</li>
-            <li>Conclusión</li>
+            <li>
+              Qué es la asesoría corporativa en Colombia y por qué es clave para
+              tu empresa
+            </li>
+            <li>
+              Por qué la asesoría corporativa es clave para tomar mejores
+              decisiones empresariales
+            </li>
+            <li>
+              Áreas clave de la asesoría corporativa en empresas colombianas
+            </li>
+            <li>
+              Beneficios de la asesoría corporativa para el crecimiento
+              empresarial en Colombia
+            </li>
+            <li>
+              Por qué tu empresa en Colombia necesita asesoría corporativa hoy
+            </li>
           </ul>
         </motion.section>
 
         {/* SECCIÓN 1 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>¿Qué es la asesoría corporativa?</h2>
+          <h2>
+            Qué es la asesoría corporativa en Colombia y por qué es clave para
+            tu empresa
+          </h2>
           <p>
             La asesoría corporativa consiste en el acompañamiento legal continuo
             a las empresas para orientar sus decisiones, garantizar el
@@ -115,7 +131,10 @@ export default function Article() {
 
         {/* SECCIÓN 2 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Importancia de la asesoría corporativa</h2>
+          <h2>
+            Por qué la asesoría corporativa es clave para tomar mejores
+            decisiones empresariales
+          </h2>
           <p>
             Contar con asesoría legal especializada permite a las empresas
             anticiparse a problemas, evitar sanciones y tomar decisiones con
@@ -130,7 +149,7 @@ export default function Article() {
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
           <motion.h2 {...fadeItem}>
-            Áreas clave de la asesoría corporativa
+            Áreas clave de la asesoría corporativa en empresas colombianas
           </motion.h2>
 
           {[
@@ -162,7 +181,10 @@ export default function Article() {
 
         {/* SECCIÓN 4 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Beneficios estratégicos para tu empresa</h2>
+          <h2>
+            Beneficios de la asesoría corporativa para el crecimiento
+            empresarial en Colombia
+          </h2>
           <p>
             La asesoría corporativa permite optimizar procesos, reducir riesgos
             legales y mejorar la toma de decisiones en todos los niveles de la
@@ -176,7 +198,9 @@ export default function Article() {
 
         {/* CONCLUSIÓN */}
         <motion.section className={styles.conclusion} {...fadeSection}>
-          <h2>Conclusión</h2>
+          <h2>
+            Por qué tu empresa en Colombia necesita asesoría corporativa hoy
+          </h2>
           <p>
             La asesoría corporativa en Colombia es una herramienta fundamental
             para cualquier empresa que busque crecer de forma segura y

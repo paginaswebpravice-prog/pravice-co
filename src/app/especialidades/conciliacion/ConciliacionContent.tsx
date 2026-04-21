@@ -42,8 +42,8 @@ export default function ConciliacionPage() {
           </span>
 
           <h1 className={styles.title}>
-            Conciliación extrajudicial en Colombia: solución legal rápida y
-            efectiva
+            Conciliación Extrajudicial en Bogotá: Resuelve Conflictos Rápido y
+            sin Juicio
           </h1>
 
           <p className={styles.description}>
@@ -75,7 +75,8 @@ export default function ConciliacionPage() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            ¿Qué es la conciliación extrajudicial en Colombia?
+            ¿Qué es la conciliación extrajudicial y cuándo debes usarla en
+            Colombia??
           </h2>
 
           <p className={styles.text}>
@@ -113,7 +114,9 @@ export default function ConciliacionPage() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className={styles.subtitle}>Tipos de conciliación en Colombia</h2>
+          <h2 className={styles.subtitle}>
+            Tipos de conciliación en Colombia: cuál te conviene según tu caso
+          </h2>
 
           <div className={styles.grid}>
             {[
@@ -159,7 +162,8 @@ export default function ConciliacionPage() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            Beneficios de la conciliación extrajudicial
+            Ventajas de la conciliación extrajudicial: ahorra tiempo, dinero y
+            evita demandas
           </h2>
 
           <div className={styles.infoGrid}>
@@ -205,9 +209,7 @@ export default function ConciliacionPage() {
           viewport={{ once: true }}
         >
           <div className={styles.ctaContent}>
-            <h2 className={styles.ctaTitle}>
-              Inicia tu proceso de conciliación en Bogotá
-            </h2>
+            <h2 className={styles.ctaTitle}>Iniciar conciliación ahora</h2>
 
             <p className={styles.ctaText}>
               Nuestro equipo te acompaña en todo el proceso de conciliación
@@ -220,7 +222,7 @@ export default function ConciliacionPage() {
                 href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
                 className={styles.primary}
               >
-                Solicitar conciliación
+                Iniciar conciliación ahora
               </a>
 
               <a
@@ -228,7 +230,7 @@ export default function ConciliacionPage() {
                 target="_blank"
                 className={styles.secondary}
               >
-                Hablar por WhatsApp
+                Hablar con un abogado por WhatsApp
               </a>
             </div>
           </div>

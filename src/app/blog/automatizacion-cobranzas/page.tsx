@@ -3,18 +3,19 @@ import Article from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "Automatización de cobranzas en Colombia: mejora tu recaudo y flujo de caja",
+    "Automatización de cobranzas en Colombia | Cómo recuperar cartera más rápido y mejorar flujo de caja",
   description:
-    "Aprende cómo implementar la automatización de cobranzas en Colombia para mejorar la recuperación de cartera, reducir costos y optimizar el flujo de caja empresarial.",
+    "Descubre cómo la automatización de cobranzas en Colombia ayuda a empresas a recuperar cartera más rápido, reducir costos operativos y mejorar el flujo de caja con herramientas digitales.",
 
   alternates: {
     canonical: "https://pravice.co/blog/automatizacion-cobranzas",
   },
 
   openGraph: {
-    title: "Automatización de cobranzas: mejora tu recaudo empresarial",
+    title:
+      "Automatización de cobranzas en Colombia: recupera cartera más rápido y mejora tu flujo de caja",
     description:
-      "Descubre cómo automatizar la cobranza y recuperar cartera más rápido en Colombia con estrategias digitales efectivas.",
+      "Aprende cómo automatizar la cobranza en tu empresa y mejorar la recuperación de cartera en Colombia con estrategias digitales efectivas.",
     url: "https://pravice.co/blog/automatizacion-cobranzas",
     type: "article",
     locale: "es_CO",

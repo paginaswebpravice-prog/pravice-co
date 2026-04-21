@@ -67,9 +67,10 @@ export default function Article() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
+          {/* H1 MEJORADO (CTR + intención + Colombia + negocio) */}
           <h1 className={styles.title} itemProp="headline">
-            Recuperación de cartera morosa: estrategias efectivas para empresas
-            en Colombia
+            Cómo recuperar cartera morosa en Colombia: estrategias legales
+            efectivas para empresas
           </h1>
 
           <p className={styles.intro} itemProp="description">
@@ -90,19 +91,21 @@ export default function Article() {
             <h2>Contenido</h2>
             <ul>
               <li>
-                <a href="#cartera">¿Qué es la cartera morosa?</a>
+                <a href="#cartera">¿Qué es la cartera morosa en Colombia?</a>
               </li>
               <li>
-                <a href="#impacto">Impacto en las empresas</a>
+                <a href="#impacto">Impacto financiero en las empresas</a>
               </li>
               <li>
-                <a href="#estrategias">Estrategias efectivas</a>
+                <a href="#estrategias">
+                  Estrategias legales para recuperar cartera
+                </a>
               </li>
               <li>
-                <a href="#errores">Errores comunes</a>
+                <a href="#errores">Errores comunes en la cobranza</a>
               </li>
               <li>
-                <a href="#conclusion">Conclusión</a>
+                <a href="#conclusion">Conclusión y recomendaciones legales</a>
               </li>
             </ul>
           </nav>
@@ -114,7 +117,7 @@ export default function Article() {
           className={styles.section}
           {...fadeSection}
         >
-          <h2>¿Qué es la cartera morosa?</h2>
+          <h2>¿Qué es la cartera morosa en Colombia?</h2>
 
           <p>
             Se considera cartera morosa cuando una deuda supera el plazo de pago
@@ -134,7 +137,7 @@ export default function Article() {
           className={styles.section}
           {...fadeSection}
         >
-          <h2>Impacto de la cartera morosa en las empresas</h2>
+          <h2>Impacto financiero de la cartera morosa en empresas</h2>
 
           <ul>
             <li>Disminución del flujo de caja</li>
@@ -150,10 +153,10 @@ export default function Article() {
           className={styles.section}
           {...fadeSection}
         >
-          <h2>Estrategias efectivas para recuperar cartera</h2>
+          <h2>Estrategias legales para recuperar cartera morosa</h2>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Comunicación temprana</h3>
+            <h3>Comunicación temprana con el deudor</h3>
             <p>
               Contactar al cliente antes de que la deuda se agrave permite
               soluciones amistosas.
@@ -161,7 +164,7 @@ export default function Article() {
           </motion.div>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Automatización</h3>
+            <h3>Automatización del proceso de cobro</h3>
             <p>
               Recordatorios automáticos mejoran el seguimiento y reducen errores
               humanos.
@@ -169,14 +172,14 @@ export default function Article() {
           </motion.div>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Acuerdos de pago</h3>
+            <h3>Acuerdos de pago estructurados</h3>
             <p>
               Ofrecer facilidades incrementa la probabilidad de recuperación.
             </p>
           </motion.div>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Conciliación extrajudicial</h3>
+            <h3>Conciliación extrajudicial en Colombia</h3>
             <p>
               Permite resolver conflictos de manera rápida sin acudir a
               tribunales.
@@ -190,7 +193,7 @@ export default function Article() {
           className={styles.section}
           {...fadeSection}
         >
-          <h2>Errores comunes</h2>
+          <h2>Errores comunes en la recuperación de cartera</h2>
 
           <ul>
             <li>No hacer seguimiento constante</li>
@@ -206,7 +209,9 @@ export default function Article() {
           className={styles.conclusion}
           {...fadeSection}
         >
-          <h2>Conclusión</h2>
+          <h2>
+            Conclusión: cómo mejorar la recuperación de cartera en Colombia
+          </h2>
 
           <p>
             Implementar estrategias efectivas de recuperación de cartera permite

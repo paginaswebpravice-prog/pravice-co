@@ -3,16 +3,20 @@ import DerechoAdministrativoContent from "./DerechoAdministrativoContent";
 
 export const metadata: Metadata = {
   title:
-    "Derecho administrativo en Colombia | Abogados contra el Estado en Bogotá",
+    "Abogados en Derecho Administrativo en Bogotá | Defensa contra el Estado en Colombia",
+
   description:
-    "Asesoría en derecho administrativo en Bogotá y Colombia. Defensa frente al Estado, contratación pública, recursos y procesos administrativos.",
+    "¿Problemas con el Estado? Abogados en derecho administrativo en Bogotá. Defensa en procesos administrativos, contratación pública y demandas contra entidades en Colombia.",
+
   alternates: {
     canonical: "https://pravice.co/especialidades/derecho-administrativo",
   },
+
   openGraph: {
-    title: "Derecho administrativo en Colombia | Pravice Abogados",
+    title:
+      "Abogados en Derecho Administrativo en Bogotá | Defensa contra el Estado",
     description:
-      "Abogados especializados en derecho administrativo en Bogotá. Defensa frente al Estado, contratación pública y procesos administrativos.",
+      "Defiende tus derechos frente al Estado en Colombia. Abogados expertos en procesos administrativos, contratación pública y demandas.",
     url: "https://pravice.co/especialidades/derecho-administrativo",
     siteName: "Pravice",
     locale: "es_CO",
@@ -22,10 +26,11 @@ export const metadata: Metadata = {
         url: "https://pravice.co/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Derecho administrativo en Colombia",
+        alt: "Abogados en derecho administrativo en Bogotá",
       },
     ],
   },
+
   robots: {
     index: true,
     follow: true,

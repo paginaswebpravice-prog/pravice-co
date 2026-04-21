@@ -6,7 +6,8 @@ import styles from "./Article.module.css";
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "Cómo la inteligencia artificial está revolucionando las cobranzas",
+  headline:
+    "IA en cobranzas en Colombia: cómo optimizar la recuperación de cartera",
   description:
     "Descubre cómo la inteligencia artificial está transformando los procesos de cobranzas en Colombia, mejorando la recuperación de cartera y optimizando la gestión financiera.",
   image: "https://pravice.co/og-image.jpg",
@@ -33,7 +34,6 @@ const schema = {
 export default function InteligenciaArtificialCobranzas() {
   return (
     <>
-      {/* ✅ SCHEMA */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -50,8 +50,7 @@ export default function InteligenciaArtificialCobranzas() {
       >
         {/* HERO */}
         <motion.h1 className={styles.titulo} itemProp="headline">
-          Cómo la inteligencia artificial está revolucionando las cobranzas en
-          Colombia
+          IA en cobranzas en Colombia: cómo optimizar la recuperación de cartera
         </motion.h1>
 
         <motion.p className={styles.intro} itemProp="description">
@@ -62,7 +61,6 @@ export default function InteligenciaArtificialCobranzas() {
           eficiencia financiera.
         </motion.p>
 
-        {/* INTRO SEO FUERTE */}
         <motion.p>
           En ciudades como Bogotá, Medellín y otras regiones del país, cada vez
           más empresas están adoptando soluciones de inteligencia artificial
@@ -71,7 +69,9 @@ export default function InteligenciaArtificialCobranzas() {
         </motion.p>
 
         {/* SECCIÓN */}
-        <motion.h2>¿Qué es la inteligencia artificial en cobranzas?</motion.h2>
+        <motion.h2>
+          Qué es la inteligencia artificial aplicada a cobranzas en Colombia
+        </motion.h2>
 
         <motion.p>
           La inteligencia artificial (IA) permite a los sistemas analizar
@@ -87,50 +87,56 @@ export default function InteligenciaArtificialCobranzas() {
         </motion.ul>
 
         {/* SECCIÓN */}
-        <motion.h2>Problemas de las cobranzas tradicionales</motion.h2>
+        <motion.h2>
+          Problemas de las cobranzas tradicionales en Colombia
+        </motion.h2>
 
-        <motion.h3>Falta de análisis predictivo</motion.h3>
+        <motion.h3>Falta de análisis predictivo en cartera</motion.h3>
         <motion.p>
           Sin tecnología, es difícil anticipar qué clientes no pagarán a tiempo.
         </motion.p>
 
-        <motion.h3>Procesos manuales</motion.h3>
+        <motion.h3>Procesos manuales en gestión de cobranzas</motion.h3>
         <motion.p>
           Muchas empresas en Colombia aún dependen de procesos manuales que
           consumen tiempo y recursos.
         </motion.p>
 
-        <motion.h3>Estrategias genéricas</motion.h3>
+        <motion.h3>Estrategias de cobro poco personalizadas</motion.h3>
         <motion.p>
           No todos los clientes son iguales, pero muchas empresas usan el mismo
           enfoque de cobro.
         </motion.p>
 
         {/* SECCIÓN */}
-        <motion.h2>Aplicaciones de la inteligencia artificial</motion.h2>
+        <motion.h2>
+          Aplicaciones de la inteligencia artificial en recuperación de cartera
+        </motion.h2>
 
-        <motion.h3>1. Predicción de pagos</motion.h3>
+        <motion.h3>1. Predicción de pagos y riesgo de mora</motion.h3>
         <motion.p>
           Permite identificar clientes con riesgo de mora antes de que ocurra.
         </motion.p>
 
-        <motion.h3>2. Segmentación inteligente</motion.h3>
+        <motion.h3>2. Segmentación inteligente de clientes</motion.h3>
         <motion.p>Clasifica clientes según comportamiento financiero.</motion.p>
 
-        <motion.h3>3. Automatización</motion.h3>
+        <motion.h3>3. Automatización de cobranzas en Colombia</motion.h3>
         <motion.ul>
           <li>emails automáticos</li>
           <li>mensajes SMS</li>
           <li>recordatorios digitales</li>
         </motion.ul>
 
-        <motion.h3>4. Chatbots</motion.h3>
+        <motion.h3>4. Chatbots para gestión de cartera</motion.h3>
         <motion.p>
           Permiten gestionar pagos y consultas sin intervención humana.
         </motion.p>
 
         {/* SECCIÓN */}
-        <motion.h2>Beneficios en Colombia</motion.h2>
+        <motion.h2>
+          Beneficios de la inteligencia artificial en cobranzas en Colombia
+        </motion.h2>
 
         <motion.ul>
           <li>mayor recuperación de cartera</li>
@@ -140,7 +146,9 @@ export default function InteligenciaArtificialCobranzas() {
         </motion.ul>
 
         {/* SECCIÓN */}
-        <motion.h2>Futuro de la IA en cobranzas</motion.h2>
+        <motion.h2>
+          Futuro de la inteligencia artificial en cobranzas en Latinoamérica
+        </motion.h2>
 
         <motion.ul>
           <li>automatización total</li>

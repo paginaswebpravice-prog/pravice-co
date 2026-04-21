@@ -3,16 +3,17 @@ import AsesoriaCorporativaContent from "./AsesoriaCorporativaContent";
 
 export const metadata: Metadata = {
   title:
-    "Asesoría corporativa en Colombia: estrategia legal para empresas | Bogotá",
+    "Asesoría corporativa en Bogotá y Colombia | Abogados para empresas y decisiones estratégicas",
   description:
-    "Asesoría corporativa en Bogotá y Colombia para empresas que buscan crecer con seguridad jurídica, visión estratégica y cumplimiento normativo.",
+    "Asesoría corporativa en Bogotá y Colombia para empresas que buscan crecer con seguridad jurídica, estrategia legal y cumplimiento normativo.",
   alternates: {
     canonical: "https://pravice.co/especialidades/asesoria-corporativa",
   },
   openGraph: {
-    title: "Asesoría corporativa en Colombia | Pravice Abogados",
+    title:
+      "Abogados de asesoría corporativa en Bogotá | Estrategia legal para empresas en Colombia",
     description:
-      "Estrategia legal empresarial en Bogotá y Colombia para toma de decisiones seguras y crecimiento corporativo.",
+      "Estrategia legal empresarial en Bogotá y Colombia para toma de decisiones seguras, crecimiento corporativo y reducción de riesgos.",
     url: "https://pravice.co/especialidades/asesoria-corporativa",
     siteName: "Pravice",
     locale: "es_CO",

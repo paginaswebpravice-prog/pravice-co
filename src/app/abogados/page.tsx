@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import AbogadosContent from "./AbogadosContent";
 
 export const metadata: Metadata = {
-  title: "Abogados en Bogotá Colombia | Equipo jurídico especializado",
+  title:
+    "Abogados en Bogotá Colombia | Equipo jurídico especializado en derecho empresarial",
   description:
     "Conoce nuestro equipo de abogados en Bogotá Colombia especializados en derecho comercial, laboral, familia y asesoría jurídica empresarial.",
   keywords: [
@@ -19,7 +20,8 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Abogados en Bogotá Colombia | Equipo jurídico Pravice",
+    title:
+      "Abogados en Bogotá Colombia | Firma jurídica especializada en empresas",
     description:
       "Equipo de abogados especializados en derecho comercial, laboral y familiar en Bogotá Colombia.",
     url: "https://pravice.co/abogados",

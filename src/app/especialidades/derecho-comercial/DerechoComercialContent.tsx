@@ -63,7 +63,8 @@ export default function DerechoComercialContent() {
               </span>
 
               <h1 className={styles.title}>
-                Derecho comercial en Colombia: asesoría legal para empresas
+                Derecho comercial en Bogotá y Colombia: abogados para empresas,
+                contratos y negocios seguros
               </h1>
 
               <p className={styles.description}>
@@ -86,7 +87,8 @@ export default function DerechoComercialContent() {
           {/* INTRO */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              ¿Qué es el derecho comercial en Colombia?
+              ¿Qué es el derecho comercial en Colombia y por qué es clave para
+              tu empresa?
             </h2>
 
             <p className={styles.text}>
@@ -109,7 +111,8 @@ export default function DerechoComercialContent() {
           {/* SERVICIOS */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              Servicios de derecho comercial para empresas
+              Servicios de derecho comercial en Bogotá: contratos, sociedades y
+              asesoría empresarial
             </h2>
 
             <div className={styles.grid}>
@@ -150,7 +153,8 @@ export default function DerechoComercialContent() {
           {/* IMPORTANCIA */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              Importancia del derecho comercial en Bogotá
+              Importancia del derecho comercial en Bogotá para proteger tu
+              empresa y reducir riesgos legales
             </h2>
 
             <div className={styles.infoGrid}>
@@ -185,7 +189,8 @@ export default function DerechoComercialContent() {
           {/* CONTRATOS */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              Contratos comerciales: base de cualquier negocio
+              Contratos comerciales en Colombia: la base legal para proteger tu
+              negocio
             </h2>
 
             <div className={styles.warningBox}>
@@ -201,7 +206,10 @@ export default function DerechoComercialContent() {
 
           {/* BENEFICIOS */}
           <motion.section variants={fadeUp}>
-            <h2 className={styles.subtitle}>Beneficios de la asesoría legal</h2>
+            <h2 className={styles.subtitle}>
+              Beneficios de la asesoría en derecho comercial en Colombia para
+              empresas
+            </h2>
 
             <div className={styles.benefits}>
               {[
@@ -233,7 +241,8 @@ export default function DerechoComercialContent() {
           >
             <div className={styles.ctaContent}>
               <h2 className={styles.ctaTitle}>
-                Asesoría en derecho comercial en Bogotá
+                Habla con un abogado de derecho comercial en Bogotá y protege tu
+                empresa hoy
               </h2>
 
               <p className={styles.ctaText}>

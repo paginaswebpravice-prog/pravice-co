@@ -6,7 +6,8 @@ import styles from "./Article.module.css";
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "Resolución de conflictos empresariales en Colombia",
+  headline:
+    "Cómo resolver conflictos empresariales en Colombia: guía legal completa",
   description:
     "Descubre cómo resolver conflictos empresariales en Colombia mediante negociación, conciliación, arbitraje y procesos judiciales.",
   author: {
@@ -45,7 +46,8 @@ export default function ResolucionConflictosEmpresariales() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
-          Resolución de conflictos empresariales en Colombia
+          Cómo resolver conflictos empresariales en Colombia: guía legal
+          completa
         </motion.h1>
 
         <motion.p
@@ -63,7 +65,7 @@ export default function ResolucionConflictosEmpresariales() {
 
       {/* CONTENIDO (SEO interno) */}
       <section className={styles.contentBox}>
-        <h2>Contenido</h2>
+        <h2>Qué encontrarás en esta guía de conflictos empresariales</h2>
         <ul>
           <li>¿Qué son los conflictos empresariales?</li>
           <li>Principales causas</li>
@@ -75,7 +77,7 @@ export default function ResolucionConflictosEmpresariales() {
 
       {/* SECCIÓN 1 */}
       <section className={styles.section}>
-        <h2>¿Qué son los conflictos empresariales?</h2>
+        <h2>¿Qué son los conflictos empresariales en Colombia?</h2>
         <p>
           Los conflictos empresariales son disputas legales o comerciales que
           surgen entre empresas, socios, clientes o proveedores debido a
@@ -86,10 +88,10 @@ export default function ResolucionConflictosEmpresariales() {
 
       {/* SECCIÓN 2 */}
       <section className={styles.section}>
-        <h2>Principales causas de conflictos empresariales</h2>
+        <h2>Principales causas de conflictos empresariales en Colombia</h2>
 
         <div className={styles.card}>
-          <h3>Incumplimiento de contratos</h3>
+          <h3>Incumplimiento de contratos empresariales</h3>
           <p>
             Es una de las principales causas de conflictos en Colombia cuando
             una de las partes no cumple con las obligaciones pactadas.
@@ -97,7 +99,7 @@ export default function ResolucionConflictosEmpresariales() {
         </div>
 
         <div className={styles.card}>
-          <h3>Problemas entre socios</h3>
+          <h3>Conflictos entre socios y accionistas</h3>
           <p>
             Diferencias en decisiones estratégicas, distribución de utilidades o
             administración del negocio.
@@ -105,7 +107,7 @@ export default function ResolucionConflictosEmpresariales() {
         </div>
 
         <div className={styles.card}>
-          <h3>Relaciones comerciales deficientes</h3>
+          <h3>Problemas en relaciones comerciales</h3>
           <p>
             La falta de claridad en acuerdos con clientes o proveedores puede
             generar disputas legales.
@@ -115,10 +117,10 @@ export default function ResolucionConflictosEmpresariales() {
 
       {/* SECCIÓN 3 */}
       <section className={styles.section}>
-        <h2>Mecanismos de resolución de conflictos en Colombia</h2>
+        <h2>Mecanismos legales para resolver conflictos en Colombia</h2>
 
         <div className={styles.card}>
-          <h3>Negociación</h3>
+          <h3>Negociación directa entre empresas</h3>
           <p>
             Permite a las partes llegar a acuerdos directos sin intervención de
             terceros.
@@ -126,7 +128,7 @@ export default function ResolucionConflictosEmpresariales() {
         </div>
 
         <div className={styles.card}>
-          <h3>Conciliación</h3>
+          <h3>Conciliación empresarial en Colombia</h3>
           <p>
             Un tercero imparcial facilita el diálogo para alcanzar una solución
             rápida y efectiva.
@@ -134,7 +136,7 @@ export default function ResolucionConflictosEmpresariales() {
         </div>
 
         <div className={styles.card}>
-          <h3>Arbitraje</h3>
+          <h3>Arbitraje empresarial</h3>
           <p>
             Un árbitro toma una decisión obligatoria para las partes,
             generalmente más rápida que un proceso judicial.
@@ -142,7 +144,7 @@ export default function ResolucionConflictosEmpresariales() {
         </div>
 
         <div className={styles.card}>
-          <h3>Proceso judicial</h3>
+          <h3>Procesos judiciales empresariales</h3>
           <p>
             Se utiliza cuando no es posible resolver el conflicto mediante otros
             mecanismos.
@@ -166,7 +168,7 @@ export default function ResolucionConflictosEmpresariales() {
 
       {/* CONCLUSIÓN */}
       <section className={styles.conclusion}>
-        <h2>Conclusión</h2>
+        <h2>Conclusión: cómo prevenir y resolver conflictos empresariales</h2>
         <p>
           La resolución de conflictos empresariales en Colombia es clave para la
           estabilidad de cualquier empresa. Implementar mecanismos como la

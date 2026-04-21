@@ -29,7 +29,8 @@ export default function CumplimientoNormativoArticle() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Cumplimiento normativo en Colombia: evita sanciones legales",
+    headline:
+      "Cumplimiento normativo en Colombia: cómo evitar sanciones, multas y riesgos legales en empresas",
     description:
       "Guía completa sobre cumplimiento normativo en Colombia, compliance empresarial y cómo implementar un programa efectivo.",
     image: "https://pravice.co/og-image.jpg",
@@ -56,7 +57,6 @@ export default function CumplimientoNormativoArticle() {
 
   return (
     <>
-      {/* SCHEMA */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -83,7 +83,8 @@ export default function CumplimientoNormativoArticle() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Cumplimiento normativo en Colombia: evita sanciones legales
+            Cumplimiento normativo en Colombia: cómo evitar sanciones, multas y
+            riesgos legales en tu empresa
           </motion.h1>
 
           <motion.p
@@ -101,19 +102,21 @@ export default function CumplimientoNormativoArticle() {
 
         {/* CONTENIDO */}
         <motion.section className={styles.contentBox} {...fadeSection}>
-          <h3>Contenido</h3>
+          <h3>Guía completa de compliance empresarial en Colombia</h3>
           <ul>
-            <li>¿Qué es el cumplimiento normativo?</li>
-            <li>Importancia del compliance</li>
-            <li>Riesgos legales en Colombia</li>
-            <li>Cómo implementar compliance</li>
-            <li>Conclusión</li>
+            <li>Qué es el cumplimiento normativo</li>
+            <li>Por qué el compliance es obligatorio en empresas</li>
+            <li>Riesgos legales más comunes en Colombia</li>
+            <li>Cómo implementar un sistema de compliance</li>
+            <li>Conclusión y recomendaciones legales</li>
           </ul>
         </motion.section>
 
         {/* SECCIÓN 1 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>¿Qué es el cumplimiento normativo en Colombia?</h2>
+          <h2>
+            ¿Qué es el cumplimiento normativo en Colombia y por qué es clave?
+          </h2>
 
           <p>
             El cumplimiento normativo o compliance es el conjunto de políticas,
@@ -129,7 +132,10 @@ export default function CumplimientoNormativoArticle() {
 
         {/* SECCIÓN 2 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Importancia del compliance en las empresas</h2>
+          <h2>
+            Importancia del compliance empresarial en Colombia para evitar
+            sanciones
+          </h2>
 
           <p>
             Un programa de cumplimiento normativo permite prevenir sanciones,
@@ -144,52 +150,58 @@ export default function CumplimientoNormativoArticle() {
 
         {/* SECCIÓN 3 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Principales riesgos legales en Colombia</h2>
+          <h2>
+            Principales riesgos legales que enfrentan las empresas en Colombia
+          </h2>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Incumplimiento tributario</h3>
+            <h3>Riesgo por incumplimiento tributario</h3>
             <p>Puede generar sanciones económicas importantes.</p>
           </motion.div>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Riesgos laborales</h3>
-            <p>Demandas y conflictos por incumplimiento de normas laborales.</p>
+            <h3>Riesgos laborales y demandas de empleados</h3>
+            <p>Conflictos por incumplimiento de normas laborales.</p>
           </motion.div>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Falta de controles internos</h3>
-            <p>Aumenta el riesgo de fraudes y errores administrativos.</p>
+            <h3>Falta de controles internos y fraude empresarial</h3>
+            <p>Aumenta el riesgo de errores y fraudes administrativos.</p>
           </motion.div>
         </motion.section>
 
         {/* SECCIÓN 4 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Cómo implementar un programa de cumplimiento</h2>
+          <h2>
+            Cómo implementar un programa de cumplimiento normativo paso a paso
+          </h2>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Diagnóstico legal</h3>
+            <h3>Diagnóstico legal empresarial</h3>
             <p>Identificar riesgos y obligaciones legales.</p>
           </motion.div>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Políticas internas</h3>
+            <h3>Diseño de políticas internas de compliance</h3>
             <p>Establecer reglas claras dentro de la empresa.</p>
           </motion.div>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Capacitación</h3>
-            <p>Formar a los empleados en cumplimiento normativo.</p>
+            <h3>Capacitación en cumplimiento normativo</h3>
+            <p>Formar a los empleados en compliance empresarial.</p>
           </motion.div>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Monitoreo</h3>
+            <h3>Monitoreo y mejora continua del sistema</h3>
             <p>Evaluar y ajustar constantemente el programa.</p>
           </motion.div>
         </motion.section>
 
         {/* CONCLUSIÓN */}
         <motion.section className={styles.conclusion} {...fadeSection}>
-          <h2>Conclusión</h2>
+          <h2>
+            Conclusión: por qué el compliance es clave para empresas en Colombia
+          </h2>
 
           <p>
             El cumplimiento normativo en Colombia es clave para evitar sanciones

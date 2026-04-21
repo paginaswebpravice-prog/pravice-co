@@ -2,16 +2,23 @@ import { Metadata } from "next";
 import CumplimientoNormativoContent from "./CumplimientoNormativoContent";
 
 export const metadata: Metadata = {
-  title: "Cumplimiento normativo en Colombia | Protege tu empresa legalmente",
+  title:
+    "Cumplimiento normativo en Bogotá y Colombia | Evita multas y protege tu empresa legalmente",
+
   description:
-    "Implementa cumplimiento normativo en Bogotá y Colombia para evitar sanciones, reducir riesgos legales y garantizar la seguridad jurídica de tu empresa.",
+    "Implementa cumplimiento normativo en Bogotá y Colombia para prevenir sanciones, reducir riesgos legales y garantizar la seguridad jurídica de tu empresa.",
+
   alternates: {
     canonical: "https://pravice.co/especialidades/cumplimiento-normativo",
   },
+
   openGraph: {
-    title: "Cumplimiento normativo en Colombia | Pravice Abogados",
+    title:
+      "Compliance en Bogotá y Colombia | Evita sanciones y protege tu empresa",
+
     description:
       "Evita sanciones y protege tu empresa con estrategias de compliance y cumplimiento normativo en Bogotá y Colombia.",
+
     url: "https://pravice.co/especialidades/cumplimiento-normativo",
     siteName: "Pravice",
     locale: "es_CO",
@@ -25,6 +32,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   robots: {
     index: true,
     follow: true,

@@ -63,8 +63,8 @@ export default function DerechoContractualContent() {
               </span>
 
               <h1 className={styles.title}>
-                Derecho contractual en Colombia: elaboración y revisión de
-                contratos
+                Derecho contractual en Bogotá y Colombia: abogados expertos en
+                contratos que protegen tu empresa
               </h1>
 
               <p className={styles.description}>
@@ -87,7 +87,8 @@ export default function DerechoContractualContent() {
           {/* INTRO */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              ¿Qué es el derecho contractual en Colombia?
+              ¿Qué es el derecho contractual en Colombia y por qué es clave para
+              tu empresa?
             </h2>
 
             <p className={styles.text}>
@@ -109,7 +110,8 @@ export default function DerechoContractualContent() {
           {/* SERVICIOS */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              Servicios de derecho contractual para empresas
+              Servicios de derecho contractual en Bogotá: contratos
+              empresariales, revisión y negociación legal
             </h2>
 
             <div className={styles.grid}>
@@ -150,7 +152,8 @@ export default function DerechoContractualContent() {
           {/* IMPORTANCIA */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              Importancia de los contratos en Colombia
+              Importancia de los contratos en Colombia para proteger tu empresa
+              y evitar conflictos legales
             </h2>
 
             <div className={styles.infoGrid}>
@@ -188,7 +191,10 @@ export default function DerechoContractualContent() {
 
           {/* TIPOS */}
           <motion.section variants={fadeUp}>
-            <h2 className={styles.subtitle}>Tipos de contratos en Colombia</h2>
+            <h2 className={styles.subtitle}>
+              Tipos de contratos en Colombia que toda empresa debe conocer antes
+              de firmar
+            </h2>
 
             <div className={styles.grid}>
               {[
@@ -223,7 +229,10 @@ export default function DerechoContractualContent() {
 
           {/* ERRORES */}
           <motion.section variants={fadeUp}>
-            <h2 className={styles.subtitle}>Errores comunes en contratos</h2>
+            <h2 className={styles.subtitle}>
+              Errores en contratos que pueden costarle dinero y problemas
+              legales a tu empresa
+            </h2>
 
             <div className={styles.warningBox}>
               ⚠ Un contrato mal redactado puede generar demandas y pérdidas
@@ -239,7 +248,8 @@ export default function DerechoContractualContent() {
           {/* BENEFICIOS */}
           <motion.section variants={fadeUp}>
             <h2 className={styles.subtitle}>
-              Beneficios de la asesoría contractual
+              Beneficios de la asesoría en derecho contractual en Colombia para
+              empresas
             </h2>
 
             <div className={styles.benefits}>
@@ -264,7 +274,10 @@ export default function DerechoContractualContent() {
             variants={fadeUp}
           >
             <div className={styles.ctaContent}>
-              <h2 className={styles.ctaTitle}>Derecho contractual en Bogotá</h2>
+              <h2 className={styles.ctaTitle}>
+                Habla con un abogado de contratos en Bogotá y protege tu empresa
+                hoy
+              </h2>
 
               <p className={styles.ctaText}>
                 Protege tu empresa con contratos sólidos y bien estructurados.

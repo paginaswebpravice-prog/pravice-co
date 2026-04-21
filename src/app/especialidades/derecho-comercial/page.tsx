@@ -2,16 +2,23 @@ import { Metadata } from "next";
 import DerechoComercialContent from "./DerechoComercialContent";
 
 export const metadata: Metadata = {
-  title: "Derecho comercial en Colombia | Abogados en Bogotá para empresas",
+  title:
+    "Derecho comercial en Bogotá y Colombia | Abogados para empresas, contratos y negocios",
+
   description:
     "Asesoría en derecho comercial en Bogotá y Colombia. Abogados expertos en contratos, sociedades, litigios comerciales y prevención de riesgos empresariales.",
+
   alternates: {
     canonical: "https://pravice.co/especialidades/derecho-comercial",
   },
+
   openGraph: {
-    title: "Derecho comercial en Colombia | Abogados en Bogotá",
+    title:
+      "Abogados de derecho comercial en Bogotá | Protege tu empresa y contratos en Colombia",
+
     description:
       "Protege tu empresa con asesoría en derecho comercial en Colombia. Contratos, sociedades y litigios empresariales.",
+
     url: "https://pravice.co/especialidades/derecho-comercial",
     siteName: "Pravice",
     locale: "es_CO",
@@ -25,6 +32,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   robots: {
     index: true,
     follow: true,
