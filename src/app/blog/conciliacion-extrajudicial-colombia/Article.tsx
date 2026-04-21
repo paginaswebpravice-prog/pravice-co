@@ -25,18 +25,20 @@ const fadeItem = {
    COMPONENTE
 ========================= */
 
-export default function CumplimientoNormativoArticle() {
+export default function ConciliacionExtrajudicialArticle() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Cumplimiento normativo en Colombia: evita sanciones legales",
+    headline:
+      "Conciliación extrajudicial en Colombia: cómo resolver conflictos legales sin ir a juicio",
     description:
-      "Guía completa sobre cumplimiento normativo en Colombia, compliance empresarial y cómo implementar un programa efectivo.",
+      "Guía completa sobre conciliación extrajudicial en Colombia, cómo funciona, beneficios y cuándo utilizarla para resolver conflictos legales.",
     image: "https://pravice.co/og-image.jpg",
     author: {
       "@type": "Organization",
       name: "Pravice Abogados",
     },
+
     publisher: {
       "@type": "Organization",
       name: "Pravice Abogados",
@@ -47,7 +49,7 @@ export default function CumplimientoNormativoArticle() {
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://pravice.co/blog/cumplimiento-normativo-colombia",
+      "@id": "https://pravice.co/blog/conciliacion-extrajudicial-colombia",
     },
     datePublished: "2026-03-18",
     dateModified: "2026-03-18",
@@ -65,13 +67,13 @@ export default function CumplimientoNormativoArticle() {
       />
 
       <main
-        className={styles.wrapper}
+        className={styles.article}
         itemScope
         itemType="https://schema.org/BlogPosting"
       >
         {/* HERO */}
-        <motion.section
-          className={styles.hero}
+        <motion.header
+          className={styles.header}
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -84,123 +86,129 @@ export default function CumplimientoNormativoArticle() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Cumplimiento normativo en Colombia: evita sanciones y protege tu
-            empresa legalmente
+            Conciliación extrajudicial en Colombia: resuelve conflictos legales
+            sin ir a juicio
           </motion.h1>
 
           <motion.p
-            className={styles.description}
+            className={styles.intro}
             itemProp="description"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            El cumplimiento normativo en Colombia es fundamental para que las
-            empresas operen dentro del marco legal, eviten sanciones y reduzcan
-            riesgos.
+            La conciliación extrajudicial en Colombia es un mecanismo legal que
+            permite resolver conflictos sin necesidad de acudir a un proceso
+            judicial, ahorrando tiempo y dinero.
           </motion.p>
-        </motion.section>
+
+          <motion.p className={styles.intro}>
+            Es una alternativa eficiente para empresas y personas que buscan
+            acuerdos rápidos y legales con validez jurídica.
+          </motion.p>
+        </motion.header>
 
         {/* CONTENIDO */}
-        <motion.section className={styles.contentBox} {...fadeSection}>
-          <h3>Contenido</h3>
+        <motion.section className={styles.section} {...fadeSection}>
+          <h2>Contenido</h2>
           <ul>
-            <li>¿Qué es el cumplimiento normativo en Colombia?</li>
-            <li>Importancia del compliance empresarial</li>
-            <li>Principales riesgos legales en Colombia</li>
-            <li>Cómo implementar un programa de compliance</li>
+            <li>¿Qué es la conciliación extrajudicial?</li>
+            <li>Cómo funciona en Colombia</li>
+            <li>Tipos de conflictos que se pueden conciliar</li>
+            <li>Ventajas frente a un proceso judicial</li>
             <li>Conclusión</li>
           </ul>
         </motion.section>
 
         {/* SECCIÓN 1 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>¿Qué es el cumplimiento normativo en Colombia?</h2>
+          <h2>¿Qué es la conciliación extrajudicial en Colombia?</h2>
 
           <p>
-            El cumplimiento normativo o compliance es el conjunto de políticas,
-            procedimientos y controles que implementa una empresa para asegurar
-            que cumple con las leyes y regulaciones en Colombia.
+            La conciliación extrajudicial es un mecanismo alternativo de
+            solución de conflictos en el que las partes buscan llegar a un
+            acuerdo con la ayuda de un conciliador imparcial.
           </p>
 
           <p>
-            Este enfoque permite operar dentro del marco legal, reducir riesgos
-            y evitar sanciones.
+            Este acuerdo tiene validez legal y puede evitar un proceso judicial
+            largo y costoso.
           </p>
         </motion.section>
 
         {/* SECCIÓN 2 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Importancia del compliance empresarial en Colombia</h2>
+          <h2>¿Cómo funciona la conciliación extrajudicial?</h2>
 
           <p>
-            Un programa de cumplimiento normativo permite prevenir sanciones,
-            mejorar la gestión interna y fortalecer la reputación empresarial.
+            El proceso inicia cuando las partes solicitan la intervención de un
+            centro de conciliación autorizado en Colombia.
           </p>
 
           <p>
-            También facilita la toma de decisiones y reduce la exposición a
-            riesgos legales.
+            El conciliador facilita el diálogo para lograr un acuerdo voluntario
+            entre las partes.
           </p>
         </motion.section>
 
         {/* SECCIÓN 3 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Principales riesgos legales en empresas colombianas</h2>
+          <h2>Tipos de conflictos que se pueden resolver por conciliación</h2>
 
-          <motion.div className={styles.card} {...fadeItem}>
-            <h3>Incumplimiento tributario en Colombia</h3>
-            <p>Puede generar sanciones económicas importantes.</p>
+          <motion.div className={styles.strategy} {...fadeItem}>
+            <h3>Conflictos contractuales</h3>
+            <p>Incumplimiento de contratos entre empresas o personas.</p>
           </motion.div>
 
-          <motion.div className={styles.card} {...fadeItem}>
-            <h3>Riesgos laborales y demandas</h3>
-            <p>Demandas y conflictos por incumplimiento de normas laborales.</p>
+          <motion.div className={styles.strategy} {...fadeItem}>
+            <h3>Conflictos comerciales</h3>
+            <p>Disputas entre proveedores, clientes o socios.</p>
           </motion.div>
 
-          <motion.div className={styles.card} {...fadeItem}>
-            <h3>Falta de controles internos empresariales</h3>
-            <p>Aumenta el riesgo de fraudes y errores administrativos.</p>
+          <motion.div className={styles.strategy} {...fadeItem}>
+            <h3>Conflictos civiles</h3>
+            <p>Problemas relacionados con obligaciones y acuerdos privados.</p>
           </motion.div>
         </motion.section>
 
         {/* SECCIÓN 4 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Cómo implementar un programa de compliance en tu empresa</h2>
+          <h2>Ventajas de la conciliación extrajudicial en Colombia</h2>
 
-          <motion.div className={styles.card} {...fadeItem}>
-            <h3>Diagnóstico legal empresarial</h3>
-            <p>Identificar riesgos y obligaciones legales.</p>
+          <motion.div className={styles.strategy} {...fadeItem}>
+            <h3>Rapidez en la solución</h3>
+            <p>Permite resolver conflictos en menos tiempo que un juicio.</p>
           </motion.div>
 
-          <motion.div className={styles.card} {...fadeItem}>
-            <h3>Políticas internas de cumplimiento</h3>
-            <p>Establecer reglas claras dentro de la empresa.</p>
+          <motion.div className={styles.strategy} {...fadeItem}>
+            <h3>Menor costo legal</h3>
+            <p>Reduce gastos judiciales y honorarios prolongados.</p>
           </motion.div>
 
-          <motion.div className={styles.card} {...fadeItem}>
-            <h3>Capacitación en compliance</h3>
-            <p>Formar a los empleados en cumplimiento normativo.</p>
+          <motion.div className={styles.strategy} {...fadeItem}>
+            <h3>Validez jurídica</h3>
+            <p>Los acuerdos tienen efectos legales obligatorios.</p>
           </motion.div>
 
-          <motion.div className={styles.card} {...fadeItem}>
-            <h3>Monitoreo y mejora continua</h3>
-            <p>Evaluar y ajustar constantemente el programa.</p>
+          <motion.div className={styles.strategy} {...fadeItem}>
+            <h3>Evita procesos judiciales</h3>
+            <p>Reduce la carga en los tribunales y el desgaste emocional.</p>
           </motion.div>
         </motion.section>
 
         {/* CONCLUSIÓN */}
         <motion.section className={styles.conclusion} {...fadeSection}>
-          <h2>Conclusión: por qué el compliance es clave en Colombia</h2>
+          <h2>Conclusión: por qué usar la conciliación en Colombia</h2>
 
           <p>
-            El cumplimiento normativo en Colombia es clave para evitar sanciones
-            y garantizar la estabilidad empresarial.
+            La conciliación extrajudicial en Colombia es una herramienta clave
+            para resolver conflictos de forma rápida, económica y con validez
+            legal.
           </p>
 
           <p>
-            Implementar compliance fortalece la empresa y permite un crecimiento
-            seguro a largo plazo.
+            Es una alternativa eficiente frente a los procesos judiciales
+            tradicionales.
           </p>
         </motion.section>
       </main>

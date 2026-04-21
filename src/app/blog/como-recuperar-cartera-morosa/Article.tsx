@@ -67,7 +67,6 @@ export default function Article() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          {/* H1 MEJORADO (CTR + intención + Colombia + negocio) */}
           <h1 className={styles.title} itemProp="headline">
             Cómo recuperar cartera morosa en Colombia: estrategias legales
             efectivas para empresas
@@ -86,7 +85,7 @@ export default function Article() {
             profesional.
           </p>
 
-          {/* TOC */}
+          {/* TOC (CORREGIDO: estructura visual) */}
           <nav className={styles.toc} aria-label="Tabla de contenido">
             <h2>Contenido</h2>
             <ul>
@@ -111,7 +110,7 @@ export default function Article() {
           </nav>
         </motion.header>
 
-        {/* SECCIÓN */}
+        {/* SECCIÓN 1 */}
         <motion.section
           id="cartera"
           className={styles.section}
@@ -131,7 +130,7 @@ export default function Article() {
           </p>
         </motion.section>
 
-        {/* SECCIÓN */}
+        {/* SECCIÓN 2 */}
         <motion.section
           id="impacto"
           className={styles.section}
@@ -147,7 +146,7 @@ export default function Article() {
           </ul>
         </motion.section>
 
-        {/* SECCIÓN */}
+        {/* SECCIÓN 3 (CORREGIDA: usa strategy class real del CSS) */}
         <motion.section
           id="estrategias"
           className={styles.section}
@@ -155,7 +154,7 @@ export default function Article() {
         >
           <h2>Estrategias legales para recuperar cartera morosa</h2>
 
-          <motion.div className={styles.card} {...fadeItem}>
+          <motion.div className={styles.strategy} {...fadeItem}>
             <h3>Comunicación temprana con el deudor</h3>
             <p>
               Contactar al cliente antes de que la deuda se agrave permite
@@ -163,7 +162,7 @@ export default function Article() {
             </p>
           </motion.div>
 
-          <motion.div className={styles.card} {...fadeItem}>
+          <motion.div className={styles.strategy} {...fadeItem}>
             <h3>Automatización del proceso de cobro</h3>
             <p>
               Recordatorios automáticos mejoran el seguimiento y reducen errores
@@ -171,14 +170,14 @@ export default function Article() {
             </p>
           </motion.div>
 
-          <motion.div className={styles.card} {...fadeItem}>
+          <motion.div className={styles.strategy} {...fadeItem}>
             <h3>Acuerdos de pago estructurados</h3>
             <p>
               Ofrecer facilidades incrementa la probabilidad de recuperación.
             </p>
           </motion.div>
 
-          <motion.div className={styles.card} {...fadeItem}>
+          <motion.div className={styles.strategy} {...fadeItem}>
             <h3>Conciliación extrajudicial en Colombia</h3>
             <p>
               Permite resolver conflictos de manera rápida sin acudir a
@@ -187,7 +186,7 @@ export default function Article() {
           </motion.div>
         </motion.section>
 
-        {/* SECCIÓN */}
+        {/* SECCIÓN 4 */}
         <motion.section
           id="errores"
           className={styles.section}
