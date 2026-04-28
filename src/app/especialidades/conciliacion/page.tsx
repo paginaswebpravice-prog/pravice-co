@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import ConciliacionContent from "./ConciliacionContent";
 
+const canonicalUrl = "https://pravice.co/especialidades/conciliacion";
+
 export const metadata: Metadata = {
   title:
     "Conciliación extrajudicial en Bogotá y Colombia | Evita juicios y resuelve conflictos rápido",
@@ -9,7 +11,7 @@ export const metadata: Metadata = {
     "Resuelve conflictos mediante conciliación extrajudicial en Colombia. Ahorra tiempo, reduce costos y evita procesos judiciales con asesoría legal en Bogotá y todo el país.",
 
   alternates: {
-    canonical: "https://pravice.co/especialidades/conciliacion",
+    canonical: canonicalUrl,
   },
 
   openGraph: {
@@ -19,7 +21,7 @@ export const metadata: Metadata = {
     description:
       "Solución legal rápida y efectiva para resolver conflictos sin juicio en Colombia.",
 
-    url: "https://pravice.co/especialidades/conciliacion",
+    url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "article",
@@ -39,6 +41,43 @@ export const metadata: Metadata = {
   },
 };
 
+// SEO Schema JSON-LD (SERVICIO LEGAL)
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  name: "Conciliación extrajudicial en Bogotá y Colombia",
+  description:
+    "Resuelve conflictos mediante conciliación extrajudicial en Colombia. Ahorra tiempo, reduce costos y evita procesos judiciales con asesoría legal en Bogotá y todo el país.",
+  url: canonicalUrl,
+  image: "https://pravice.co/og-image.jpg",
+  areaServed: {
+    "@type": "Country",
+    name: "Colombia",
+  },
+  provider: {
+    "@type": "Organization",
+    name: "Pravice",
+    url: "https://pravice.co",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://pravice.co/logo_pravice.png",
+    },
+  },
+  serviceType: "Conciliación extrajudicial",
+  inLanguage: "es-CO",
+};
+
 export default function Page() {
-  return <ConciliacionContent />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schemaData),
+        }}
+      />
+
+      <ConciliacionContent />
+    </>
+  );
 }

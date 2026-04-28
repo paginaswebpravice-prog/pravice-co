@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: "es_CO",
     images: [
       {
-        url: "https://pravice.co/og-image.jpg",
+        url: "https://pravice.co/logo_pravice.png",
         width: 1200,
         height: 630,
         alt: "Automatización de cobranzas en Colombia",
@@ -36,5 +36,39 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <Article />;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline:
+      "Automatización de cobranzas en Colombia: recupera cartera más rápido y mejora tu flujo de caja",
+    description:
+      "Descubre cómo la automatización de cobranzas en Colombia ayuda a empresas a recuperar cartera más rápido, reducir costos operativos y mejorar el flujo de caja con herramientas digitales.",
+    image: "https://pravice.co/logo_pravice.png",
+    author: {
+      "@type": "Organization",
+      name: "Pravice",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Pravice",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://pravice.co/logo_pravice.png",
+      },
+    },
+    url: "https://pravice.co/blog/automatizacion-cobranzas",
+    mainEntityOfPage: "https://pravice.co/blog/automatizacion-cobranzas",
+    datePublished: "2026-01-01",
+    dateModified: "2026-01-01",
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <Article />
+    </>
+  );
 }

@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import CumplimientoNormativoContent from "./CumplimientoNormativoContent";
 
+const canonicalUrl = "https://pravice.co/especialidades/cumplimiento-normativo";
+
 export const metadata: Metadata = {
   title:
     "Cumplimiento normativo en Bogotá y Colombia | Evita multas y protege tu empresa legalmente",
@@ -9,7 +11,7 @@ export const metadata: Metadata = {
     "Implementa cumplimiento normativo en Bogotá y Colombia para prevenir sanciones, reducir riesgos legales y garantizar la seguridad jurídica de tu empresa.",
 
   alternates: {
-    canonical: "https://pravice.co/especialidades/cumplimiento-normativo",
+    canonical: canonicalUrl,
   },
 
   openGraph: {
@@ -19,13 +21,13 @@ export const metadata: Metadata = {
     description:
       "Evita sanciones y protege tu empresa con estrategias de compliance y cumplimiento normativo en Bogotá y Colombia.",
 
-    url: "https://pravice.co/especialidades/cumplimiento-normativo",
+    url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "website",
     images: [
       {
-        url: "https://pravice.co/og-image.jpg",
+        url: "https://pravice.co/logo_pravice.png",
         width: 1200,
         height: 630,
         alt: "Cumplimiento normativo en Colombia",
@@ -39,6 +41,43 @@ export const metadata: Metadata = {
   },
 };
 
+// SEO Schema JSON-LD (SERVICIO LEGAL - COMPLIANCE)
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  name: "Cumplimiento normativo en Bogotá y Colombia",
+  description:
+    "Implementa cumplimiento normativo en Bogotá y Colombia para prevenir sanciones, reducir riesgos legales y garantizar la seguridad jurídica de tu empresa.",
+  url: canonicalUrl,
+  image: "https://pravice.co/logo_pravice.png",
+  areaServed: {
+    "@type": "Country",
+    name: "Colombia",
+  },
+  provider: {
+    "@type": "Organization",
+    name: "Pravice",
+    url: "https://pravice.co",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://pravice.co/logo_pravice.png",
+    },
+  },
+  serviceType: "Cumplimiento normativo y compliance empresarial",
+  inLanguage: "es-CO",
+};
+
 export default function Page() {
-  return <CumplimientoNormativoContent />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schemaData),
+        }}
+      />
+
+      <CumplimientoNormativoContent />
+    </>
+  );
 }

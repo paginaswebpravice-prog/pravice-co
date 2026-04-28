@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://pravice.co/og-image.jpg",
+        url: "https://pravice.co/logo_pravice.png",
         width: 1200,
         height: 630,
         alt: "Futuro de las cobranzas en Latinoamérica",
@@ -36,6 +36,58 @@ export const metadata: Metadata = {
   },
 };
 
+// SEO Schema JSON-LD
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://pravice.co/blog/futuro-cobranzas-latinoamerica",
+  },
+  headline:
+    "El futuro de las cobranzas en Latinoamérica y Colombia (IA, automatización y pagos digitales) | 2026",
+  description:
+    "Descubre cómo será el futuro de las cobranzas en Latinoamérica y Colombia en 2026: inteligencia artificial, automatización, pagos digitales y nuevas estrategias de recuperación de cartera.",
+  image: "https://pravice.co/logo_pravice.png",
+  author: {
+    "@type": "Organization",
+    name: "Pravice",
+    url: "https://pravice.co",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Pravice",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://pravice.co/logo_pravice.png",
+    },
+  },
+  datePublished: "2026-04-28",
+  dateModified: "2026-04-28",
+  inLanguage: "es-CO",
+  articleSection: "Cobranzas y Tecnología",
+  keywords: [
+    "futuro de las cobranzas",
+    "cobranzas en Latinoamérica",
+    "IA en cobranzas",
+    "automatización de cobranza",
+    "fintech Colombia",
+    "recuperación de cartera digital",
+    "pagos digitales Colombia",
+  ],
+};
+
 export default function Page() {
-  return <Article />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schemaData),
+        }}
+      />
+
+      <Article />
+    </>
+  );
 }

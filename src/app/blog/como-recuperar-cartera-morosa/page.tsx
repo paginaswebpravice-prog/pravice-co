@@ -19,6 +19,14 @@ export const metadata: Metadata = {
     url: "https://pravice.co/blog/recuperacion-cartera-morosa",
     type: "article",
     locale: "es_CO",
+    images: [
+      {
+        url: "https://pravice.co/logo_pravice.png",
+        width: 1200,
+        height: 630,
+        alt: "Recuperación de cartera morosa en Colombia",
+      },
+    ],
   },
 
   robots: {
@@ -28,5 +36,56 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <Article />;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+
+    headline:
+      "Recuperación de cartera morosa en Colombia: cómo cobrar deudas más rápido",
+
+    description:
+      "Aprende cómo recuperar cartera morosa en Colombia con estrategias legales efectivas para mejorar el flujo de caja y reducir la morosidad.",
+
+    image: "https://pravice.co/logo_pravice.png",
+
+    author: {
+      "@type": "Organization",
+      name: "Pravice",
+    },
+
+    publisher: {
+      "@type": "Organization",
+      name: "Pravice",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://pravice.co/logo_pravice.png",
+      },
+    },
+
+    url: "https://pravice.co/blog/recuperacion-cartera-morosa",
+    mainEntityOfPage: "https://pravice.co/blog/recuperacion-cartera-morosa",
+
+    datePublished: "2026-01-01",
+    dateModified: "2026-01-01",
+
+    keywords: [
+      "recuperación de cartera morosa Colombia",
+      "cobro de deudas Colombia",
+      "cartera vencida empresas",
+      "cobranza legal Colombia",
+      "flujo de caja empresas",
+    ],
+
+    articleSection: "Cobranza y finanzas empresariales",
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <Article />
+    </>
+  );
 }

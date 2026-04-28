@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: "es_CO",
     images: [
       {
-        url: "https://pravice.co/og-image.jpg",
+        url: "https://pravice.co/logo_pravice.png",
         width: 1200,
         height: 630,
         alt: "Conciliación extrajudicial en Colombia",
@@ -36,5 +36,57 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <ConciliacionExtrajudicialArticle />;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+
+    headline:
+      "Conciliación extrajudicial en Colombia: cómo resolver conflictos sin juicio",
+
+    description:
+      "Guía completa sobre conciliación extrajudicial en Colombia para resolver conflictos legales y empresariales sin necesidad de acudir a juicio.",
+
+    image: "https://pravice.co/logo_pravice.png",
+
+    author: {
+      "@type": "Organization",
+      name: "Pravice",
+    },
+
+    publisher: {
+      "@type": "Organization",
+      name: "Pravice",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://pravice.co/logo_pravice.png",
+      },
+    },
+
+    url: "https://pravice.co/blog/conciliacion-extrajudicial-colombia",
+    mainEntityOfPage:
+      "https://pravice.co/blog/conciliacion-extrajudicial-colombia",
+
+    datePublished: "2026-01-01", // ajusta si tienes fecha real
+    dateModified: "2026-01-01",
+
+    keywords: [
+      "conciliación extrajudicial Colombia",
+      "resolver conflictos sin juicio",
+      "mecanismos alternativos de solución de conflictos",
+      "derecho civil Colombia",
+      "conciliación empresarial",
+    ],
+
+    articleSection: "Derecho civil y resolución de conflictos",
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <ConciliacionExtrajudicialArticle />
+    </>
+  );
 }
