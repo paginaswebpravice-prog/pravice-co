@@ -15,7 +15,7 @@ import {
   faLocationDot,
   faClock,
 } from "@fortawesome/free-solid-svg-icons";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function Footer() {
@@ -26,16 +26,22 @@ export default function Footer() {
   const [showBubble, setShowBubble] = useState(false);
 
   useEffect(() => {
-    const alreadyShown = localStorage.getItem("waBubbleShown");
+    let interval: NodeJS.Timeout;
 
-    if (!alreadyShown) {
-      const timer = setTimeout(() => {
-        setShowBubble(true);
-        localStorage.setItem("waBubbleShown", "true");
+    const startLoop = () => {
+      setShowBubble(true);
+
+      interval = setInterval(() => {
+        setShowBubble((prev) => !prev);
       }, 6000);
+    };
 
-      return () => clearTimeout(timer);
-    }
+    const timer = setTimeout(startLoop, 4000);
+
+    return () => {
+      clearTimeout(timer);
+      if (interval) clearInterval(interval);
+    };
   }, []);
 
   return (
@@ -210,13 +216,13 @@ export default function Footer() {
               href="https://wa.me/573114659315"
               target="_blank"
               className={styles.cta}
+              rel="noopener noreferrer"
             >
               Consulta por WhatsApp
             </Link>
           </div>
         </div>
 
-        {/* BOTTOM */}
         <div className={styles.bottom}>
           <p>
             © {new Date().getFullYear()} Pravice Abogados — Todos los derechos
@@ -231,26 +237,41 @@ export default function Footer() {
         </div>
       </footer>
 
-      {/* BURBUJA WHATSAPP */}
-      {showBubble && (
-        <motion.div
-          initial={{ opacity: 0, y: 20, scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className={styles.whatsappBubble}
-        >
-          <p>¿Necesitas asesoría legal?</p>
-          <span>Te respondemos por WhatsApp ahora</span>
-          <button onClick={() => setShowBubble(false)}>x</button>
-        </motion.div>
-      )}
+      {/* BURBUJA */}
+      <AnimatePresence>
+        {showBubble && (
+          <motion.a
+            href="https://wa.me/573114659315"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: 20, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 20, scale: 0.9 }}
+            transition={{ duration: 0.4 }}
+            className={styles.whatsappBubble}
+          >
+            <p>💬 ¿Necesitas ayuda legal?</p>
+            <span>Resolvemos tu caso por WhatsApp ahora mismo</span>
 
-      {/* BOTÓN WHATSAPP */}
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                setShowBubble(false);
+              }}
+            >
+              ×
+            </button>
+          </motion.a>
+        )}
+      </AnimatePresence>
+
+      {/* BOTÓN */}
       <Link
         href="https://wa.me/573114659315"
         target="_blank"
         className={styles.whatsappFloat}
         aria-label="Contactar por WhatsApp"
+        rel="noopener noreferrer"
       >
         <FontAwesomeIcon icon={faWhatsapp} />
       </Link>
