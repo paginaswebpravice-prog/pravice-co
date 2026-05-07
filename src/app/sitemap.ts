@@ -49,11 +49,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "proteccion-juridica-empresarial",
   ];
 
+  const colombianosExterior = [
+    "",
+    "divorcios-colombia",
+    "custodia-alimentos",
+    "poderes-colombia",
+    "sucesiones-herencias",
+    "demandas-colombia",
+    "asesoria-legal-virtual",
+  ];
+
   const especialidadesUrls = especialidades.map((slug) => ({
     url: `${baseUrl}/especialidades/${slug}`,
     lastModified: today,
     changeFrequency: "weekly" as const,
     priority: 0.9,
+  }));
+
+  const colombianosExteriorUrls = colombianosExterior.map((slug) => ({
+    url: slug
+      ? `${baseUrl}/colombianos-exterior/${slug}`
+      : `${baseUrl}/colombianos-exterior`,
+    lastModified: today,
+    changeFrequency: "weekly" as const,
+    priority: slug === "" ? 0.95 : 0.9,
   }));
 
   return [
@@ -90,6 +109,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+
+    // COLOMBIANOS EXTERIOR
+    ...colombianosExteriorUrls,
 
     // ESPECIALIDADES
     ...especialidadesUrls,
