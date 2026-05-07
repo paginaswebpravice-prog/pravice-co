@@ -93,11 +93,11 @@ export default function Header() {
 
           <nav className={`${styles.nav} ${menuOpen ? styles.active : ""}`}>
             <Link href="/">Inicio</Link>
-            <Link href="/#services">Servicios</Link>
             <Link href="/#legalapp">Legal App</Link>
             <Link href="/#aboutUs">Nosotros</Link>
             <Link href="/especialidades">Especialidades</Link>
             <Link href="/abogados">Nuestros abogados</Link>
+            <Link href="/colombianos-exterior">Colombianos en el exterior</Link>
             <Link href="/#videos-pravice">Videos</Link>
             <Link href="/blog">Blog</Link>
 

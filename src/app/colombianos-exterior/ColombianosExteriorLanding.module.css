@@ -1,0 +1,611 @@
+.container {
+  overflow: hidden;
+  margin-top: -115px;
+  padding-top: 115px;
+  background: #ffffff;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero {
+  padding: 160px 20px 100px;
+
+  background: linear-gradient(135deg, #004a80, #002d4d);
+
+  color: #ffffff;
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+  top: -200px;
+  right: -200px;
+
+  width: 500px;
+  height: 500px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.hero::after {
+  content: "";
+
+  position: absolute;
+  bottom: -160px;
+  left: -160px;
+
+  width: 350px;
+  height: 350px;
+
+  border-radius: 50%;
+
+  background: rgba(247, 198, 0, 0.08);
+}
+
+.hero > div {
+  max-width: 950px;
+  margin: auto;
+
+  position: relative;
+  z-index: 2;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  margin-bottom: 25px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  font-size: 3.4rem;
+  line-height: 1.1;
+
+  margin-bottom: 25px;
+
+  font-weight: 800;
+}
+
+.description {
+  font-size: 1.15rem;
+  line-height: 1.9;
+
+  max-width: 800px;
+  margin: auto;
+
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.actions {
+  margin-top: 40px;
+
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.primary,
+.secondary,
+.ctaButton {
+  padding: 15px 28px;
+
+  border-radius: 12px;
+
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.primary,
+.ctaButton {
+  background: #f7c600;
+  color: #000000;
+}
+
+.primary:hover,
+.ctaButton:hover {
+  background: #c4911a;
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 16px 35px rgba(247, 198, 0, 0.25);
+}
+
+.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #ffffff;
+}
+
+.secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+
+  transform: translateY(-4px);
+}
+
+/* =========================
+INFO
+========================= */
+
+.info {
+  padding: 110px 20px;
+}
+
+.info > div {
+  max-width: 950px;
+  margin: auto;
+
+  text-align: center;
+}
+
+.info h2 {
+  font-size: 2.5rem;
+
+  margin-bottom: 30px;
+
+  color: #004a80;
+}
+
+.info p {
+  font-size: 1.08rem;
+  line-height: 1.95;
+
+  margin-bottom: 24px;
+
+  color: #3f3f3f;
+}
+
+/* =========================
+SERVICES
+========================= */
+
+.services {
+  padding: 20px 20px 110px;
+
+  background: linear-gradient(to bottom, #ffffff, #f8fbff);
+}
+
+.sectionTitle {
+  text-align: center;
+
+  font-size: 2.5rem;
+
+  margin-bottom: 22px;
+
+  color: #004a80;
+}
+
+.sectionDescription {
+  max-width: 850px;
+  margin: 0 auto 60px;
+
+  text-align: center;
+
+  color: #4a4a4a;
+
+  line-height: 1.9;
+  font-size: 1.05rem;
+}
+
+.grid {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 28px;
+}
+
+/* =========================
+CARD
+========================= */
+
+.card {
+  background: #ffffff;
+
+  padding: 38px 32px;
+
+  border-radius: 22px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.35s ease;
+
+  border: 1px solid rgba(0, 74, 128, 0.08);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    135deg,
+    rgba(0, 74, 128, 0.03),
+    rgba(247, 198, 0, 0.05)
+  );
+
+  opacity: 0;
+
+  transition: 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+
+  border-color: rgba(0, 74, 128, 0.16);
+
+  box-shadow: 0 22px 55px rgba(0, 74, 128, 0.14);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 18px;
+
+  background: rgba(0, 74, 128, 0.08);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+
+  color: #004a80;
+
+  margin-bottom: 24px;
+
+  transition: all 0.35s ease;
+
+  position: relative;
+  z-index: 2;
+}
+
+.card:hover .icon {
+  background: #004a80;
+  color: #ffffff;
+
+  transform: scale(1.08) rotate(-4deg);
+}
+
+.card h3 {
+  margin-bottom: 16px;
+
+  color: #000000;
+
+  font-size: 1.3rem;
+
+  position: relative;
+  z-index: 2;
+}
+
+.card p {
+  color: #4a4a4a;
+
+  line-height: 1.8;
+
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+BENEFITS
+========================= */
+
+.benefits {
+  padding: 120px 20px;
+
+  background: #f8fbff;
+}
+
+.benefits > div {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.benefits h2 {
+  text-align: center;
+
+  margin-bottom: 55px;
+
+  font-size: 2.4rem;
+
+  color: #004a80;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 24px;
+}
+
+.benefit {
+  background: #ffffff;
+
+  padding: 24px;
+
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+
+  border: 1px solid rgba(0, 74, 128, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.benefit:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 18px 40px rgba(0, 74, 128, 0.12);
+}
+
+.benefit svg {
+  color: #f7c600;
+
+  font-size: 20px;
+
+  flex-shrink: 0;
+}
+
+.benefit span {
+  color: #2d2d2d;
+
+  font-weight: 500;
+}
+
+.extraInfo {
+  max-width: 900px;
+  margin: 65px auto 0;
+
+  text-align: center;
+}
+
+.extraInfo p {
+  margin-bottom: 24px;
+
+  color: #4a4a4a;
+
+  line-height: 1.95;
+  font-size: 1.05rem;
+}
+
+/* =========================
+PROCESS
+========================= */
+
+.process {
+  padding: 120px 20px;
+}
+
+.process > div {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.process h2 {
+  text-align: center;
+
+  margin-bottom: 60px;
+
+  font-size: 2.5rem;
+
+  color: #004a80;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+  gap: 28px;
+}
+
+.step {
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  padding: 36px 30px;
+
+  border: 1px solid rgba(0, 74, 128, 0.08);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.35s ease;
+}
+
+.step:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 22px 45px rgba(0, 74, 128, 0.12);
+}
+
+.step span {
+  width: 58px;
+  height: 58px;
+
+  border-radius: 16px;
+
+  background: rgba(247, 198, 0, 0.16);
+
+  color: #c4911a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+
+  margin-bottom: 24px;
+}
+
+.step h3 {
+  margin-bottom: 16px;
+
+  color: #000000;
+
+  font-size: 1.2rem;
+}
+
+.step p {
+  color: #4a4a4a;
+
+  line-height: 1.8;
+}
+
+/* =========================
+CTA
+========================= */
+
+.cta {
+  padding: 130px 20px;
+
+  background: linear-gradient(135deg, #004a80, #002d4d);
+
+  color: #ffffff;
+
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.cta::before {
+  content: "";
+
+  position: absolute;
+  top: -200px;
+  right: -200px;
+
+  width: 500px;
+  height: 500px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.cta > div {
+  max-width: 780px;
+  margin: auto;
+
+  position: relative;
+  z-index: 2;
+}
+
+.ctaIcon {
+  font-size: 56px;
+
+  margin-bottom: 28px;
+
+  color: #f7c600;
+}
+
+.cta h2 {
+  font-size: 2.8rem;
+
+  margin-bottom: 22px;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+
+  margin-bottom: 38px;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: -80px;
+    padding-top: 80px;
+  }
+
+  .hero {
+    padding: 120px 20px 85px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .sectionTitle,
+  .info h2,
+  .benefits h2,
+  .process h2,
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  .description,
+  .info p,
+  .sectionDescription,
+  .extraInfo p,
+  .step p,
+  .card p,
+  .cta p {
+    font-size: 1rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primary,
+  .secondary,
+  .ctaButton {
+    width: 100%;
+    max-width: 320px;
+
+    text-align: center;
+  }
+
+  .card,
+  .benefit,
+  .step {
+    padding: 26px;
+  }
+}
