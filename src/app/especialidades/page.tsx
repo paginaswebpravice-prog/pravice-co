@@ -18,9 +18,6 @@ import {
   faBalanceScale,
   faClipboardCheck,
   faShieldHalved,
-  faUserTie,
-  faTrademark,
-  faWallet,
 } from "@fortawesome/free-solid-svg-icons";
 
 interface Especialidad {
@@ -243,6 +240,9 @@ export default function Especialidades() {
 
                 <h3 itemProp="name">{esp.titulo}</h3>
                 <p itemProp="description">{esp.descripcion}</p>
+                <span className={styles.cardLink}>
+                  Haz clic para conocer más
+                </span>
               </motion.a>
             ))}
           </div>

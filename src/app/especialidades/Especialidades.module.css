@@ -54,6 +54,8 @@
 
   transition: all 0.35s ease;
   position: relative;
+
+  text-decoration: none;
 }
 
 .card:hover {
@@ -82,12 +84,35 @@
   margin-bottom: 12px;
   color: #000;
   font-size: 1.2rem;
+  line-height: 1.4;
 }
 
 .card p {
   font-size: 0.95rem;
   color: #808080;
   line-height: 1.5;
+}
+
+/* TEXTO CTA TARJETA */
+
+.cardLink {
+  display: inline-block;
+  margin-top: 18px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  color: #004a80;
+
+  text-decoration: underline;
+  text-underline-offset: 4px;
+
+  transition: all 0.25s ease;
+}
+
+.card:hover .cardLink {
+  color: #c4911a;
+  transform: translateX(2px);
 }
 
 /* ================= PORTALES ================= */
@@ -112,12 +137,11 @@
   color: #004a80;
 }
 
-/* ================= GRID PORTALES (FIX PRINCIPAL) ================= */
+/* ================= GRID PORTALES ================= */
 
 .portalesGrid {
   display: grid;
 
-  /* 🔥 3 columnas fijas en desktop */
   grid-template-columns: repeat(3, 1fr);
 
   gap: 25px;
@@ -190,7 +214,29 @@
 }
 
 @media (max-width: 600px) {
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .descripcion {
+    font-size: 1rem;
+    margin-bottom: 50px;
+  }
+
+  .cards {
+    gap: 20px;
+  }
+
+  .card {
+    padding: 28px 22px;
+  }
+
   .portalesGrid {
     grid-template-columns: 1fr;
+  }
+
+  .tituloPortales {
+    font-size: 1.4rem;
+    flex-direction: column;
   }
 }
