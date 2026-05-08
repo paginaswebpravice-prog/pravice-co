@@ -70,39 +70,88 @@ export default function ColombianosExteriorContent() {
 
       <section className={styles.hero}>
         <motion.div
-          initial={{ opacity: 0, y: 35 }}
+          initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{
+            duration: 0.8,
+            ease: "easeOut",
+          }}
         >
-          <div className={styles.badge}>
+          <motion.div
+            className={styles.badge}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              delay: 0.2,
+              duration: 0.5,
+            }}
+            whileHover={{ scale: 1.04 }}
+          >
             <FontAwesomeIcon icon={faEarthAmericas} />
             Colombianos en el Exterior
-          </div>
+          </motion.div>
 
-          <h1 className={styles.title}>
+          <motion.h1
+            className={styles.title}
+            initial={{ opacity: 0, y: 25 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.25,
+              duration: 0.7,
+            }}
+          >
             Abogados para colombianos en el exterior
-          </h1>
+          </motion.h1>
 
-          <p className={styles.description}>
+          <motion.p
+            className={styles.description}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.45,
+              duration: 0.8,
+            }}
+          >
             Recibe asesoría legal en Colombia sin importar el país en el que te
             encuentres. Representamos colombianos en procesos de familia,
             sucesiones, poderes, demandas y trámites legales.
-          </p>
+          </motion.p>
 
-          <div className={styles.actions}>
-            <a
+          <motion.div
+            className={styles.actions}
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.6,
+              duration: 0.6,
+            }}
+          >
+            <motion.a
               href="https://wa.me/573114659315"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.primary}
+              whileHover={{
+                y: -4,
+                scale: 1.03,
+              }}
+              whileTap={{ scale: 0.98 }}
             >
               Hablar por WhatsApp
-            </a>
+            </motion.a>
 
-            <Link href="#servicios" className={styles.secondary}>
-              Ver servicios
-            </Link>
-          </div>
+            <motion.div
+              whileHover={{
+                y: -4,
+                scale: 1.03,
+              }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <Link href="#servicios" className={styles.secondary}>
+                Ver servicios
+              </Link>
+            </motion.div>
+          </motion.div>
         </motion.div>
       </section>
 
@@ -110,14 +159,29 @@ export default function ColombianosExteriorContent() {
 
       <section className={styles.info}>
         <motion.div
-          initial={{ opacity: 0, y: 25 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{
+            duration: 0.7,
+            ease: "easeOut",
+          }}
           viewport={{ once: true }}
         >
-          <h2>Asesoría legal para colombianos fuera de Colombia</h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            Asesoría legal para colombianos fuera de Colombia
+          </motion.h2>
 
-          <p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.15, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             Muchas personas que viven en Estados Unidos, España, Canadá,
             Australia, Chile y otros países necesitan resolver asuntos legales
             en Colombia sin viajar. En muchos casos, los procesos familiares,
@@ -125,18 +189,28 @@ export default function ColombianosExteriorContent() {
             persona reside en el exterior, lo que genera preocupación,
             incertidumbre y dificultades para asistir presencialmente a
             audiencias, firmas o trámites notariales.
-          </p>
+          </motion.p>
 
-          <p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.25, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             Nuestro equipo brinda acompañamiento jurídico remoto para procesos
             familiares, civiles y empresariales, permitiendo que puedas avanzar
             en trámites y procesos desde cualquier lugar del mundo. Ofrecemos
             atención virtual, seguimiento constante y representación legal en
             Colombia para que puedas tomar decisiones informadas y proteger tus
             intereses sin necesidad de desplazarte.
-          </p>
+          </motion.p>
 
-          <p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.35, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             Contamos con experiencia apoyando colombianos en el exterior que
             necesitan iniciar divorcios en Colombia, reclamar cuotas
             alimentarias, tramitar sucesiones, otorgar poderes especiales,
@@ -144,25 +218,35 @@ export default function ColombianosExteriorContent() {
             recibir asesoría jurídica personalizada. Nuestro objetivo es
             facilitar cada proceso mediante comunicación clara, herramientas
             digitales y acompañamiento profesional.
-          </p>
+          </motion.p>
 
-          <p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.45, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             Sabemos que vivir fuera del país puede dificultar la gestión de
             documentos, tiempos judiciales y trámites notariales. Por eso,
             trabajamos con soluciones legales adaptadas a colombianos en el
             exterior, incluyendo reuniones virtuales, recepción digital de
             documentos y coordinación jurídica para representar tus intereses
             ante entidades, notarías y juzgados en Colombia.
-          </p>
+          </motion.p>
 
-          <p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.55, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             Si te encuentras en el exterior y necesitas apoyo legal en Colombia,
             nuestro equipo puede orientarte desde el primer contacto,
             explicándote los requisitos, etapas del proceso y alternativas
             legales disponibles según tu caso. Buscamos que tengas tranquilidad,
             respaldo jurídico y acompañamiento permanente durante todo el
             procedimiento.
-          </p>
+          </motion.p>
         </motion.div>
       </section>
 
@@ -171,9 +255,9 @@ export default function ColombianosExteriorContent() {
       <section id="servicios" className={styles.services}>
         <motion.h2
           className={styles.sectionTitle}
-          initial={{ opacity: 0, y: 25 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
           Servicios legales para colombianos en el exterior
@@ -183,43 +267,57 @@ export default function ColombianosExteriorContent() {
           className={styles.sectionDescription}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.15, duration: 0.6 }}
+          transition={{ delay: 0.15, duration: 0.7 }}
           viewport={{ once: true }}
         >
           Brindamos asesoría y representación legal en Colombia para colombianos
           que residen fuera del país y necesitan resolver procesos jurídicos de
-          manera segura, rápida y con acompañamiento profesional. Nuestros
-          servicios están enfocados en facilitar trámites legales a distancia,
-          reduciendo desplazamientos y permitiendo avanzar en cada caso mediante
-          atención virtual.
+          manera segura, rápida y con acompañamiento profesional.
         </motion.p>
 
         <div className={styles.grid}>
           {servicios.map((item, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 35 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{
+                opacity: 0,
+                y: 45,
+                scale: 0.95,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                scale: 1,
+              }}
               transition={{
-                duration: 0.5,
-                delay: index * 0.05,
+                duration: 0.55,
+                delay: index * 0.08,
               }}
               viewport={{ once: true }}
-              whileHover={{ y: -8 }}
+              whileHover={{
+                y: -10,
+              }}
             >
               <Link href={item.link} className={styles.card}>
-                <div className={styles.icon}>
+                <motion.div
+                  className={styles.icon}
+                  whileHover={{
+                    rotate: -6,
+                    scale: 1.08,
+                  }}
+                  transition={{ duration: 0.25 }}
+                >
                   <FontAwesomeIcon icon={item.icono} />
-                </div>
+                </motion.div>
 
                 <h3>{item.titulo}</h3>
 
                 <p>{item.descripcion}</p>
 
-                <span className={styles.cardLink}>
+                <motion.span className={styles.cardLink} whileHover={{ x: 4 }}>
                   Ver más información
                   <FontAwesomeIcon icon={faArrowRight} />
-                </span>
+                </motion.span>
               </Link>
             </motion.div>
           ))}
@@ -230,79 +328,82 @@ export default function ColombianosExteriorContent() {
 
       <section className={styles.benefits}>
         <motion.div
-          initial={{ opacity: 0, y: 25 }}
+          initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <h2>¿Por qué elegir atención legal virtual?</h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            ¿Por qué elegir atención legal virtual?
+          </motion.h2>
 
           <motion.p
             className={styles.sectionDescription}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.15, duration: 0.6 }}
+            transition={{ delay: 0.15, duration: 0.7 }}
             viewport={{ once: true }}
           >
             La atención legal virtual permite que colombianos en cualquier país
             puedan acceder a asesoría jurídica en Colombia de manera práctica,
-            segura y eficiente. Nuestro enfoque combina tecnología,
-            acompañamiento personalizado y representación legal para ayudarte a
-            resolver tus procesos sin necesidad de viajar constantemente.
+            segura y eficiente.
           </motion.p>
 
           <div className={styles.benefitsGrid}>
-            <div className={styles.benefit}>
-              <FontAwesomeIcon icon={faCheckCircle} />
-              <span>Atención desde cualquier país</span>
-            </div>
-
-            <div className={styles.benefit}>
-              <FontAwesomeIcon icon={faCheckCircle} />
-              <span>Consultas por videollamada</span>
-            </div>
-
-            <div className={styles.benefit}>
-              <FontAwesomeIcon icon={faCheckCircle} />
-              <span>Representación legal en Colombia</span>
-            </div>
-
-            <div className={styles.benefit}>
-              <FontAwesomeIcon icon={faCheckCircle} />
-              <span>Envío digital de documentos</span>
-            </div>
-
-            <div className={styles.benefit}>
-              <FontAwesomeIcon icon={faCheckCircle} />
-              <span>Acompañamiento personalizado</span>
-            </div>
-
-            <div className={styles.benefit}>
-              <FontAwesomeIcon icon={faCheckCircle} />
-              <span>Procesos legales sin viajar</span>
-            </div>
+            {[
+              "Atención desde cualquier país",
+              "Consultas por videollamada",
+              "Representación legal en Colombia",
+              "Envío digital de documentos",
+              "Acompañamiento personalizado",
+              "Procesos legales sin viajar",
+            ].map((item, index) => (
+              <motion.div
+                className={styles.benefit}
+                key={index}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: index * 0.08,
+                  duration: 0.45,
+                }}
+                viewport={{ once: true }}
+                whileHover={{
+                  y: -6,
+                  scale: 1.02,
+                }}
+              >
+                <FontAwesomeIcon icon={faCheckCircle} />
+                <span>{item}</span>
+              </motion.div>
+            ))}
           </div>
 
           <motion.div
             className={styles.extraInfo}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
+            transition={{
+              delay: 0.2,
+              duration: 0.7,
+            }}
             viewport={{ once: true }}
           >
             <p>
               Nuestro equipo mantiene comunicación constante durante el proceso,
               brindando actualizaciones, orientación jurídica y acompañamiento
               estratégico para que tengas claridad sobre cada etapa del caso.
-              Además, te ayudamos a gestionar documentación, poderes y
-              requisitos necesarios para actuar legalmente desde el exterior.
             </p>
 
             <p>
               Trabajamos con enfoque humano y profesional, entendiendo que cada
               situación legal puede impactar aspectos familiares, personales y
-              patrimoniales. Por eso buscamos ofrecer soluciones jurídicas
-              claras, ágiles y enfocadas en proteger tus derechos en Colombia.
+              patrimoniales.
             </p>
           </motion.div>
         </motion.div>
@@ -317,26 +418,56 @@ export default function ColombianosExteriorContent() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <h2>Atendemos colombianos en países como:</h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            Atendemos colombianos en países como:
+          </motion.h2>
 
-          <p className={styles.sectionDescription}>
+          <motion.p
+            className={styles.sectionDescription}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.15, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             Hemos atendido consultas y procesos legales de colombianos que
-            residen en diferentes partes del mundo y necesitan apoyo jurídico en
-            Colombia para resolver asuntos familiares, patrimoniales, civiles y
-            empresariales.
-          </p>
+            residen en diferentes partes del mundo.
+          </motion.p>
 
           <div className={styles.countryList}>
-            <span>Estados Unidos</span>
-            <span>España</span>
-            <span>Canadá</span>
-            <span>Australia</span>
-            <span>México</span>
-            <span>Chile</span>
-            <span>Argentina</span>
-            <span>Francia</span>
-            <span>Alemania</span>
-            <span>Italia</span>
+            {[
+              "Estados Unidos",
+              "España",
+              "Canadá",
+              "Australia",
+              "México",
+              "Chile",
+              "Argentina",
+              "Francia",
+              "Alemania",
+              "Italia",
+            ].map((country, index) => (
+              <motion.span
+                key={country}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{
+                  delay: index * 0.05,
+                  duration: 0.35,
+                }}
+                viewport={{ once: true }}
+                whileHover={{
+                  y: -4,
+                  scale: 1.05,
+                }}
+              >
+                {country}
+              </motion.span>
+            ))}
           </div>
         </motion.div>
       </section>
@@ -345,12 +476,26 @@ export default function ColombianosExteriorContent() {
 
       <section className={styles.cta}>
         <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
+          initial={{ opacity: 0, scale: 0.92 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
+          transition={{
+            duration: 0.7,
+            ease: "easeOut",
+          }}
           viewport={{ once: true }}
         >
-          <FontAwesomeIcon icon={faPassport} className={styles.ctaIcon} />
+          <motion.div
+            animate={{
+              y: [0, -6, 0],
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
+            <FontAwesomeIcon icon={faPassport} className={styles.ctaIcon} />
+          </motion.div>
 
           <h2>¿Necesitas resolver un proceso legal en Colombia?</h2>
 
@@ -361,14 +506,19 @@ export default function ColombianosExteriorContent() {
             de forma segura y eficiente.
           </p>
 
-          <a
+          <motion.a
             href="https://wa.me/573114659315"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.ctaButton}
+            whileHover={{
+              scale: 1.04,
+              y: -4,
+            }}
+            whileTap={{ scale: 0.98 }}
           >
             Solicitar asesoría
-          </a>
+          </motion.a>
         </motion.div>
       </section>
 
