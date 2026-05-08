@@ -34,39 +34,90 @@ export default function SucesionesHerenciasContent() {
 
       <section className={styles.hero}>
         <motion.div
-          initial={{ opacity: 0, y: 35 }}
+          initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{
+            duration: 0.8,
+            ease: "easeOut",
+          }}
         >
-          <div className={styles.badge}>
+          <motion.div
+            className={styles.badge}
+            initial={{ opacity: 0, scale: 0.85 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              delay: 0.2,
+              duration: 0.5,
+            }}
+            whileHover={{
+              scale: 1.04,
+            }}
+          >
             <FontAwesomeIcon icon={faEarthAmericas} />
             Colombianos en el Exterior
-          </div>
+          </motion.div>
 
-          <h1 className={styles.title}>
+          <motion.h1
+            className={styles.title}
+            initial={{ opacity: 0, y: 25 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.7,
+            }}
+          >
             Sucesiones y herencias en Colombia desde el exterior
-          </h1>
+          </motion.h1>
 
-          <p className={styles.description}>
+          <motion.p
+            className={styles.description}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.45,
+              duration: 0.8,
+            }}
+          >
             Ayudamos a colombianos residentes en el exterior a realizar procesos
             de sucesión y herencia en Colombia con representación legal,
             atención virtual y acompañamiento durante cada etapa del trámite.
-          </p>
+          </motion.p>
 
-          <div className={styles.actions}>
-            <a
+          <motion.div
+            className={styles.actions}
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.6,
+              duration: 0.6,
+            }}
+          >
+            <motion.a
               href="https://wa.me/573114659315"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.primary}
+              whileHover={{
+                y: -4,
+                scale: 1.03,
+              }}
+              whileTap={{ scale: 0.98 }}
             >
               Solicitar asesoría
-            </a>
+            </motion.a>
 
-            <Link href="/colombianos-exterior" className={styles.secondary}>
-              Volver
-            </Link>
-          </div>
+            <motion.div
+              whileHover={{
+                y: -4,
+                scale: 1.03,
+              }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <Link href="/colombianos-exterior" className={styles.secondary}>
+                Volver
+              </Link>
+            </motion.div>
+          </motion.div>
         </motion.div>
       </section>
 
@@ -74,38 +125,68 @@ export default function SucesionesHerenciasContent() {
 
       <section className={styles.info}>
         <motion.div
-          initial={{ opacity: 0, y: 25 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{
+            duration: 0.7,
+            ease: "easeOut",
+          }}
           viewport={{ once: true }}
         >
-          <h2>Abogados para sucesiones y herencias en Colombia</h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            Abogados para sucesiones y herencias en Colombia
+          </motion.h2>
 
-          <p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.1, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             Muchos colombianos que viven en Estados Unidos, España, Canadá,
             Australia, Chile y otros países necesitan resolver procesos de
             sucesión en Colombia relacionados con bienes, propiedades, cuentas,
             herencias y derechos patrimoniales.
-          </p>
+          </motion.p>
 
-          <p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             La distancia y los procedimientos legales pueden dificultar el
             trámite, especialmente cuando existen varios herederos, bienes en
             distintas ciudades o diferencias entre las partes involucradas.
-          </p>
+          </motion.p>
 
-          <p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             En Pravice Abogados brindamos asesoría jurídica especializada para
             adelantar sucesiones notariales y judiciales desde el exterior,
             permitiendo que nuestros clientes puedan avanzar en el proceso sin
             necesidad de viajar a Colombia.
-          </p>
+          </motion.p>
 
-          <p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             Nuestro equipo acompaña cada etapa del trámite mediante revisión
             documental, elaboración de poderes, representación legal y atención
             virtual permanente para brindar tranquilidad y seguridad jurídica.
-          </p>
+          </motion.p>
         </motion.div>
       </section>
 
@@ -113,99 +194,113 @@ export default function SucesionesHerenciasContent() {
 
       <section className={styles.services}>
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <h2 className={styles.sectionTitle}>
+          <motion.h2
+            className={styles.sectionTitle}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             Servicios relacionados con sucesiones y herencias
-          </h2>
+          </motion.h2>
 
-          <p className={styles.sectionDescription}>
+          <motion.p
+            className={styles.sectionDescription}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.15, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             Analizamos cada caso de manera personalizada para definir el
             procedimiento más adecuado según la situación familiar, la
             existencia de bienes y los acuerdos entre herederos.
-          </p>
+          </motion.p>
 
           <div className={styles.grid}>
-            <div className={styles.card}>
-              <div className={styles.icon}>
-                <FontAwesomeIcon icon={faBuildingColumns} />
-              </div>
+            {[
+              {
+                icon: faBuildingColumns,
+                title: "Sucesión notarial",
+                text: "Procesos rápidos y organizados cuando existe acuerdo entre los herederos sobre la repartición de bienes.",
+              },
+              {
+                icon: faGavel,
+                title: "Sucesión judicial",
+                text: "Representación jurídica en procesos judiciales cuando existen conflictos o desacuerdos entre las partes.",
+              },
+              {
+                icon: faFileSignature,
+                title: "Poderes especiales",
+                text: "Elaboración de poderes para permitir representación legal desde el exterior sin viajar a Colombia.",
+              },
+              {
+                icon: faScaleBalanced,
+                title: "Asesoría patrimonial",
+                text: "Orientación jurídica sobre derechos hereditarios, bienes y distribución patrimonial.",
+              },
+              {
+                icon: faPeopleRoof,
+                title: "Acuerdos entre herederos",
+                text: "Acompañamiento legal para conciliaciones y acuerdos relacionados con herencias y repartición de bienes.",
+              },
+              {
+                icon: faPhoneVolume,
+                title: "Atención virtual",
+                text: "Consultas online y seguimiento permanente para colombianos en el exterior.",
+              },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{
+                  opacity: 0,
+                  y: 45,
+                  scale: 0.94,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  scale: 1,
+                }}
+                transition={{
+                  duration: 0.55,
+                  delay: index * 0.08,
+                }}
+                viewport={{ once: true }}
+                whileHover={{
+                  y: -10,
+                }}
+              >
+                <div className={styles.card}>
+                  <motion.div
+                    className={styles.icon}
+                    whileHover={{
+                      rotate: -6,
+                      scale: 1.08,
+                    }}
+                    transition={{ duration: 0.25 }}
+                  >
+                    <FontAwesomeIcon icon={item.icon} />
+                  </motion.div>
 
-              <h3>Sucesión notarial</h3>
+                  <h3>{item.title}</h3>
 
-              <p>
-                Procesos rápidos y organizados cuando existe acuerdo entre los
-                herederos sobre la repartición de bienes.
-              </p>
-            </div>
+                  <p>{item.text}</p>
 
-            <div className={styles.card}>
-              <div className={styles.icon}>
-                <FontAwesomeIcon icon={faGavel} />
-              </div>
-
-              <h3>Sucesión judicial</h3>
-
-              <p>
-                Representación jurídica en procesos judiciales cuando existen
-                conflictos o desacuerdos entre las partes.
-              </p>
-            </div>
-
-            <div className={styles.card}>
-              <div className={styles.icon}>
-                <FontAwesomeIcon icon={faFileSignature} />
-              </div>
-
-              <h3>Poderes especiales</h3>
-
-              <p>
-                Elaboración de poderes para permitir representación legal desde
-                el exterior sin viajar a Colombia.
-              </p>
-            </div>
-
-            <div className={styles.card}>
-              <div className={styles.icon}>
-                <FontAwesomeIcon icon={faScaleBalanced} />
-              </div>
-
-              <h3>Asesoría patrimonial</h3>
-
-              <p>
-                Orientación jurídica sobre derechos hereditarios, bienes y
-                distribución patrimonial.
-              </p>
-            </div>
-
-            <div className={styles.card}>
-              <div className={styles.icon}>
-                <FontAwesomeIcon icon={faPeopleRoof} />
-              </div>
-
-              <h3>Acuerdos entre herederos</h3>
-
-              <p>
-                Acompañamiento legal para conciliaciones y acuerdos relacionados
-                con herencias y repartición de bienes.
-              </p>
-            </div>
-
-            <div className={styles.card}>
-              <div className={styles.icon}>
-                <FontAwesomeIcon icon={faPhoneVolume} />
-              </div>
-
-              <h3>Atención virtual</h3>
-
-              <p>
-                Consultas online y seguimiento permanente para colombianos en el
-                exterior.
-              </p>
-            </div>
+                  <motion.span
+                    className={styles.cardLink}
+                    whileHover={{ x: 5 }}
+                  >
+                    Más información
+                    <FontAwesomeIcon icon={faArrowRight} />
+                  </motion.span>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
       </section>
@@ -214,42 +309,95 @@ export default function SucesionesHerenciasContent() {
 
       <section className={styles.benefits}>
         <motion.div
-          initial={{ opacity: 0, y: 25 }}
+          initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <h2>¿Por qué realizar tu proceso con nosotros?</h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            ¿Por qué realizar tu proceso con nosotros?
+          </motion.h2>
 
           <div className={styles.benefitsGrid}>
             {beneficios.map((item, index) => (
-              <div className={styles.benefit} key={index}>
-                <FontAwesomeIcon icon={faCheckCircle} />
+              <motion.div
+                className={styles.benefit}
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: index * 0.07,
+                  duration: 0.45,
+                }}
+                viewport={{ once: true }}
+                whileHover={{
+                  y: -6,
+                  scale: 1.02,
+                }}
+              >
+                <motion.div
+                  whileHover={{
+                    rotate: 8,
+                    scale: 1.12,
+                  }}
+                >
+                  <FontAwesomeIcon icon={faCheckCircle} />
+                </motion.div>
+
                 <span>{item}</span>
-              </div>
+              </motion.div>
             ))}
           </div>
 
-          <div className={styles.extraInfo}>
-            <p>
+          <motion.div
+            className={styles.extraInfo}
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.2,
+              duration: 0.7,
+            }}
+            viewport={{ once: true }}
+          >
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.25, duration: 0.7 }}
+              viewport={{ once: true }}
+            >
               Nuestro servicio está diseñado para facilitar los procesos
               sucesorales de colombianos que actualmente viven fuera del país y
               necesitan resolver trámites de herencia en Colombia.
-            </p>
+            </motion.p>
 
-            <p>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.35, duration: 0.7 }}
+              viewport={{ once: true }}
+            >
               Brindamos acompañamiento cercano durante todas las etapas del
               proceso, explicando claramente los requisitos, tiempos y
               procedimientos necesarios para avanzar de manera segura y
               organizada.
-            </p>
+            </motion.p>
 
-            <p>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.45, duration: 0.7 }}
+              viewport={{ once: true }}
+            >
               Buscamos proteger los derechos patrimoniales de nuestros clientes
               mediante representación jurídica confiable y atención
               personalizada desde cualquier lugar del mundo.
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
         </motion.div>
       </section>
 
@@ -262,52 +410,67 @@ export default function SucesionesHerenciasContent() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <h2>¿Cómo funciona el proceso?</h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            ¿Cómo funciona el proceso?
+          </motion.h2>
 
           <div className={styles.processGrid}>
-            <div className={styles.step}>
-              <span>01</span>
+            {[
+              {
+                number: "01",
+                title: "Consulta inicial",
+                text: "Analizamos el caso y revisamos la situación de los bienes y herederos involucrados.",
+              },
+              {
+                number: "02",
+                title: "Documentación y poder",
+                text: "Elaboramos poderes especiales y revisamos los documentos necesarios para iniciar la sucesión.",
+              },
+              {
+                number: "03",
+                title: "Representación legal",
+                text: "Nuestro equipo adelanta el trámite ante notaría o juzgado en Colombia.",
+              },
+              {
+                number: "04",
+                title: "Seguimiento continuo",
+                text: "Informamos avances y acompañamos el proceso hasta la finalización del trámite sucesoral.",
+              },
+            ].map((item, index) => (
+              <motion.div
+                className={styles.step}
+                key={index}
+                initial={{ opacity: 0, y: 35 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: index * 0.08,
+                  duration: 0.5,
+                }}
+                viewport={{ once: true }}
+                whileHover={{
+                  y: -8,
+                  scale: 1.02,
+                }}
+              >
+                <motion.span
+                  whileHover={{
+                    scale: 1.1,
+                    rotate: -5,
+                  }}
+                >
+                  {item.number}
+                </motion.span>
 
-              <h3>Consulta inicial</h3>
+                <h3>{item.title}</h3>
 
-              <p>
-                Analizamos el caso y revisamos la situación de los bienes y
-                herederos involucrados.
-              </p>
-            </div>
-
-            <div className={styles.step}>
-              <span>02</span>
-
-              <h3>Documentación y poder</h3>
-
-              <p>
-                Elaboramos poderes especiales y revisamos los documentos
-                necesarios para iniciar la sucesión.
-              </p>
-            </div>
-
-            <div className={styles.step}>
-              <span>03</span>
-
-              <h3>Representación legal</h3>
-
-              <p>
-                Nuestro equipo adelanta el trámite ante notaría o juzgado en
-                Colombia.
-              </p>
-            </div>
-
-            <div className={styles.step}>
-              <span>04</span>
-
-              <h3>Seguimiento continuo</h3>
-
-              <p>
-                Informamos avances y acompañamos el proceso hasta la
-                finalización del trámite sucesoral.
-              </p>
-            </div>
+                <p>{item.text}</p>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
       </section>
@@ -316,28 +479,59 @@ export default function SucesionesHerenciasContent() {
 
       <section className={styles.cta}>
         <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
+          initial={{ opacity: 0, scale: 0.92 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
+          transition={{
+            duration: 0.7,
+            ease: "easeOut",
+          }}
           viewport={{ once: true }}
         >
-          <FontAwesomeIcon icon={faPassport} className={styles.ctaIcon} />
+          <motion.div
+            animate={{
+              y: [0, -6, 0],
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
+            <FontAwesomeIcon icon={faPassport} className={styles.ctaIcon} />
+          </motion.div>
 
-          <h2>¿Necesitas resolver una sucesión en Colombia?</h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            ¿Necesitas resolver una sucesión en Colombia?
+          </motion.h2>
 
-          <p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             Recibe asesoría jurídica y representación legal sin importar el país
             en el que te encuentres.
-          </p>
+          </motion.p>
 
-          <a
+          <motion.a
             href="https://wa.me/573114659315"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.ctaButton}
+            whileHover={{
+              scale: 1.04,
+              y: -4,
+            }}
+            whileTap={{ scale: 0.98 }}
           >
             Hablar con un abogado
-          </a>
+          </motion.a>
         </motion.div>
       </section>
 
