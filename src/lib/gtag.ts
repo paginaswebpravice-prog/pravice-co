@@ -6,12 +6,17 @@ declare global {
   }
 }
 
-export const trackWhatsAppClick = (location: string) => {
+export const trackWhatsAppClick = (buttonName: string) => {
   if (typeof window !== "undefined" && window.gtag) {
     window.gtag("event", "whatsapp_click", {
       event_category: "engagement",
-      event_label: location,
+      event_label: buttonName,
+      page_path: window.location.pathname,
       value: 1,
     });
+
+    console.log("Evento enviado");
+  } else {
+    console.log("gtag no existe");
   }
 };
