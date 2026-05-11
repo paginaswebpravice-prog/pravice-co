@@ -98,7 +98,8 @@ export default function VideosPreview() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Videos de nuestros abogados en Bogotá - Pravice Abogados
+          Videos legales de abogados en Bogotá | Derecho comercial, laboral y
+          familiar
         </motion.h2>
 
         <motion.p
@@ -108,10 +109,9 @@ export default function VideosPreview() {
           transition={{ delay: 0.2, duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Conozca nuestros servicios legales en Bogotá Colombia a través de
-          nuestros videos sobre derecho tributario, derecho comercial, asesoría
-          jurídica empresarial, conciliaciones y servicios legales para empresas
-          y personas en Colombia.
+          Conozca videos de abogados en Bogotá Colombia sobre divorcios, derecho
+          comercial, derecho laboral, conciliaciones, asesoría jurídica
+          empresarial y soluciones legales para empresas y personas en Colombia.
         </motion.p>
 
         <div className={styles.videoGrid}>
@@ -145,7 +145,7 @@ export default function VideosPreview() {
 
         <div className={styles.buttonContainer}>
           <a href="/videos" className={styles.primaryBtn}>
-            Ver todos los videos
+            Ver videos legales y casos reales →
           </a>
         </div>
 

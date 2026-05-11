@@ -7,61 +7,61 @@ export default function Videos() {
   const videos = [
     {
       title:
-        "Cómo demandar por estafa en Colombia: pasos legales y asesoría en Bogotá",
+        "Cómo demandar por estafa en Colombia: guía legal y pasos para recuperar su dinero",
       url: "https://www.youtube.com/embed/DPQ9xUDyJEc",
       id: "DPQ9xUDyJEc",
     },
     {
       title:
-        "Divorcio por mutuo acuerdo en Bogotá: proceso, requisitos y costos en Colombia",
+        "Divorcio por mutuo acuerdo en Bogotá: requisitos, costos y proceso legal en Colombia",
       url: "https://www.youtube.com/embed/eQFEueWd5tw",
       id: "eQFEueWd5tw",
     },
     {
       title:
-        "Divorcio sin mutuo acuerdo en Colombia: qué hacer y cómo iniciar el proceso legal",
+        "Divorcio sin acuerdo en Colombia: qué hacer y cómo iniciar el proceso legal",
       url: "https://www.youtube.com/embed/q_b7N9qqWWM",
       id: "q_b7N9qqWWM",
     },
     {
       title:
-        "Abogados de familia en Bogotá: divorcios, custodia y asesoría legal en Colombia",
+        "Abogados de familia en Bogotá: divorcios, custodia y asesoría legal confiable",
       url: "https://www.youtube.com/embed/365WDDynZlc",
       id: "365WDDynZlc",
     },
     {
       title:
-        "Derecho laboral en Colombia para trabajadores: derechos, despidos y reclamaciones",
+        "Derecho laboral en Colombia: derechos del trabajador, despidos y reclamaciones",
       url: "https://www.youtube.com/embed/0mx-AE4GzIc",
       id: "0mx-AE4GzIc",
     },
     {
       title:
-        "Derecho laboral para empleadores en Bogotá: contratos, despidos y obligaciones legales",
+        "Derecho laboral para empresas en Bogotá: contratos, despidos y obligaciones legales",
       url: "https://www.youtube.com/embed/8NqdWyNrRQI",
       id: "8NqdWyNrRQI",
     },
     {
       title:
-        "Importancia del derecho laboral en Colombia: evita demandas y protege tu empresa",
+        "Derecho laboral en Colombia: cómo evitar demandas y proteger su empresa",
       url: "https://www.youtube.com/embed/sMcNzoPSo6Y",
       id: "sMcNzoPSo6Y",
     },
     {
       title:
-        "Recaudo de cartera en salud en Colombia: cómo recuperar cartera en IPS y EPS",
+        "Cómo recuperar cartera en salud en Colombia: estrategias legales para IPS y clínicas",
       url: "https://www.youtube.com/embed/4UzdDo8n22Y",
       id: "4UzdDo8n22Y",
     },
     {
       title:
-        "Cobro de cartera en Colombia: proceso legal para recuperar dinero paso a paso",
+        "Cobro de cartera en Colombia: proceso legal para recuperar deudas paso a paso",
       url: "https://www.youtube.com/embed/jXeBEImbDl8",
       id: "jXeBEImbDl8",
     },
     {
       title:
-        "Derecho comercial en Colombia: asesoría legal para empresas en Bogotá",
+        "Derecho comercial en Bogotá: asesoría legal para empresas y negocios en Colombia",
       url: "https://www.youtube.com/embed/bVky48kidxg",
       id: "bVky48kidxg",
     },
@@ -77,8 +77,8 @@ export default function Videos() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Videos de abogados en Bogotá: asesoría legal, demandas, divorcios y
-          derecho laboral en Colombia
+          Videos de abogados en Bogotá: divorcios, demandas y asesoría legal en
+          Colombia
         </motion.h1>
 
         <motion.p
@@ -87,10 +87,10 @@ export default function Videos() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          Explore nuestros videos legales en Bogotá Colombia sobre derecho
-          comercial, derecho laboral, derecho de familia, conciliaciones,
-          demandas, cobro de cartera y asesoría jurídica empresarial. Contenido
-          creado por abogados expertos en Colombia para empresas y personas.
+          Explore videos legales creados por abogados expertos en Bogotá
+          Colombia sobre derecho comercial, derecho laboral, divorcios,
+          conciliaciones, cobro de cartera y asesoría jurídica para empresas y
+          personas.
         </motion.p>
 
         {/* ================= GRID VIDEOS ================= */}
@@ -119,8 +119,8 @@ export default function Videos() {
         {/* ================= CONTENIDO SEO FUERTE ================= */}
         <section className={styles.seoBlock}>
           <h2>
-            Videos legales en Bogotá: asesoría de abogados en derecho comercial,
-            laboral y familiar en Colombia
+            Videos legales en Bogotá sobre divorcios, derecho laboral, cobro de
+            cartera y asesoría jurídica empresarial
           </h2>
 
           <p>
