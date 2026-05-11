@@ -53,9 +53,8 @@ export const metadata: Metadata = {
     },
   },
 
-  // ✅ CANONICAL GLOBAL
   alternates: {
-    canonical: "/",
+    canonical: "https://pravice.co",
   },
 
   openGraph: {
@@ -63,8 +62,6 @@ export const metadata: Metadata = {
     description:
       "Firma de abogados en Colombia especializada en asesoría jurídica empresarial y personal. Más de 25 años de experiencia.",
 
-    // ❌ ANTES: www
-    // ✅ AHORA: SIN www
     url: "https://pravice.co",
 
     siteName: "Pravice Abogados",
