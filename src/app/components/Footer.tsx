@@ -17,6 +17,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
+import { trackWhatsAppClick } from "@/lib/g.tgs";
 
 export default function Footer() {
   const emailUser = "servicioalcliente";
@@ -272,6 +273,7 @@ export default function Footer() {
         className={styles.whatsappFloat}
         aria-label="Contactar por WhatsApp"
         rel="noopener noreferrer"
+        onClick={() => trackWhatsAppClick("floating_whatsapp_button")}
       >
         <FontAwesomeIcon icon={faWhatsapp} />
       </Link>
