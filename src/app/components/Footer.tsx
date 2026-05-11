@@ -275,7 +275,7 @@ export default function Footer() {
         rel="noopener noreferrer"
         onClick={() => {
           console.log("click");
-          trackWhatsAppClick("floating_whatsapp_button");
+          trackWhatsAppClick("WhastAppBotonPrincipal");
         }}
       >
         <FontAwesomeIcon icon={faWhatsapp} />
