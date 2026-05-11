@@ -273,9 +273,22 @@ export default function Footer() {
         className={styles.whatsappFloat}
         aria-label="Contactar por WhatsApp"
         rel="noopener noreferrer"
-        onClick={() => {
-          console.log("click");
-          trackWhatsAppClick("WhastAppBotonPrincipal");
+        onClick={(e) => {
+          e.preventDefault();
+
+          window.gtag?.("event", "whatsapp_click", {
+            event_category: "engagement",
+            event_label: "whatsapp_click",
+            value: 1,
+          });
+
+          setTimeout(() => {
+            window.open(
+              "https://wa.me/573114659315",
+              "_blank",
+              "noopener,noreferrer",
+            );
+          }, 300);
         }}
       >
         <FontAwesomeIcon icon={faWhatsapp} />
