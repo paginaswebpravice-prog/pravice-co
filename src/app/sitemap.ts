@@ -25,6 +25,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "cumplimiento-normativo-colombia",
     "proteccion-juridica-empresarial",
     "asesoria-corporativa-empresas",
+    "errores-legales-empresas-colombia",
+    "cliente-no-quiere-pagar",
+    "empresa-no-paga-factura",
+    "como-proteger-empresa-legalmente",
+    "riesgos-legales-empresas",
+    "proveedor-incumple-contrato",
+    "empresa-demandada-colombia",
+    "evitar-demandas-empresas",
+    "contratos-empresariales-colombia",
+    "iguala-juridica-empresas",
   ];
 
   const blogUrls = blogArticles.map((slug) => ({

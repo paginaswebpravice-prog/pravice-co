@@ -161,6 +161,78 @@ const articles = [
       "Servicios legales estratégicos para el crecimiento empresarial.",
     category: "empresarial",
   },
+  {
+    slug: "errores-legales-empresas-colombia",
+    title:
+      "7 errores legales que pueden costarle millones a tu empresa en Colombia",
+    description:
+      "Conoce los errores jurídicos más comunes que afectan empresas y cómo evitarlos.",
+    category: "empresarial",
+  },
+  {
+    slug: "cliente-no-quiere-pagar",
+    title: "Cómo cobrar clientes que no quieren pagar en Colombia",
+    description:
+      "Estrategias legales y comerciales para recuperar pagos pendientes.",
+    category: "empresarial",
+  },
+  {
+    slug: "empresa-no-paga-factura",
+    title: "Qué hacer si una empresa no quiere pagar una factura en Colombia",
+    description:
+      "Opciones legales y estrategias para recuperar dinero de clientes morosos.",
+    category: "empresarial",
+  },
+  {
+    slug: "como-proteger-empresa-legalmente",
+    title: "Cómo proteger legalmente tu empresa en Colombia y evitar demandas",
+    description:
+      "Estrategias legales para reducir riesgos empresariales y proteger tu negocio.",
+    category: "empresarial",
+  },
+  {
+    slug: "riesgos-legales-empresas",
+    title: "Principales riesgos legales que enfrentan las empresas en Colombia",
+    description:
+      "Problemas legales frecuentes que pueden afectar el crecimiento empresarial.",
+    category: "empresarial",
+  },
+  {
+    slug: "proveedor-incumple-contrato",
+    title: "Qué hacer si un proveedor incumple un contrato en Colombia",
+    description:
+      "Acciones legales y comerciales frente a incumplimientos contractuales.",
+    category: "empresarial",
+  },
+  {
+    slug: "empresa-demandada-colombia",
+    title: "Qué hacer si demandan a tu empresa en Colombia",
+    description:
+      "Guía legal para empresas que enfrentan procesos judiciales en Colombia.",
+    category: "empresarial",
+  },
+  {
+    slug: "evitar-demandas-empresas",
+    title: "Cómo evitar demandas legales en empresas colombianas",
+    description:
+      "Medidas preventivas para reducir riesgos jurídicos empresariales.",
+    category: "empresarial",
+  },
+  {
+    slug: "contratos-empresariales-colombia",
+    title:
+      "Contratos empresariales en Colombia: errores que pueden generar demandas",
+    description:
+      "Cómo redactar contratos seguros y evitar conflictos comerciales.",
+    category: "empresarial",
+  },
+  {
+    slug: "iguala-juridica-empresas",
+    title: "Iguala jurídica para empresas en Colombia: qué es y cómo funciona",
+    description:
+      "Cómo funciona el servicio de asesoría jurídica mensual para empresas.",
+    category: "empresarial",
+  },
 ];
 
 /* ================= SCHEMA ================= */
