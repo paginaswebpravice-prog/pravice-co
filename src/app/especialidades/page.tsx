@@ -36,7 +36,8 @@ interface Portal {
 export default function Especialidades() {
   const especialidades: Especialidad[] = [
     {
-      titulo: "Derecho comercial en Colombia: asesoría para empresas en Bogotá",
+      titulo:
+        "Abogados de derecho comercial en Bogotá: protege contratos y empresas en Colombia",
       descripcion:
         "Asesoría en derecho comercial en Colombia para empresas, contratos mercantiles y operaciones comerciales, con abogados especializados en Bogotá.",
       icono: faScaleBalanced,
@@ -44,7 +45,7 @@ export default function Especialidades() {
     },
     {
       titulo:
-        "Recuperación de cartera en Colombia: cobro jurídico y prejurídico efectivo",
+        "Recuperación de cartera en Colombia: abogados expertos en cobro jurídico y prejurídico",
       descripcion:
         "Recuperación de cartera en Colombia mediante estrategias de cobro prejurídico y jurídico, optimizando el recaudo de deudas empresariales.",
       icono: faFileContract,
@@ -52,7 +53,7 @@ export default function Especialidades() {
     },
     {
       titulo:
-        "Conciliación extrajudicial en Colombia: solución rápida de conflictos legales",
+        "Conciliación extrajudicial en Colombia: evita demandas y resuelve conflictos rápido",
       descripcion:
         "Conciliación extrajudicial en Colombia como mecanismo eficaz para resolver conflictos empresariales sin necesidad de procesos judiciales.",
       icono: faHandshake,
@@ -60,7 +61,7 @@ export default function Especialidades() {
     },
     {
       titulo:
-        "Litigios en Colombia: abogados expertos en demandas y procesos judiciales",
+        "Litigios y demandas en Colombia: abogados expertos en procesos judiciales",
       descripcion:
         "Representación en litigios empresariales en Colombia ante juzgados, con abogados expertos en procesos judiciales y demandas ejecutivas.",
       icono: faGavel,
@@ -68,7 +69,7 @@ export default function Especialidades() {
     },
     {
       titulo:
-        "Derecho empresarial en Bogotá: asesoría legal para empresas en crecimiento",
+        "Derecho empresarial en Bogotá: asesoría legal para proteger y hacer crecer tu empresa",
       descripcion:
         "Servicios de derecho empresarial en Bogotá para la estructuración, protección y crecimiento legal de empresas en Colombia.",
       icono: faBuilding,
@@ -84,7 +85,7 @@ export default function Especialidades() {
     },
     {
       titulo:
-        "Derecho contractual en Colombia: elaboración y revisión de contratos legales",
+        "Derecho contractual en Colombia: revisión y elaboración de contratos seguros",
       descripcion:
         "Elaboración y revisión de contratos comerciales en Colombia, garantizando seguridad jurídica en acuerdos empresariales.",
       icono: faFileSignature,
@@ -92,7 +93,7 @@ export default function Especialidades() {
     },
     {
       titulo:
-        "Derecho societario en Colombia: creación y restructuración de empresas",
+        "Derecho societario en Colombia: crea, transforma y protege tu empresa",
       descripcion:
         "Constitución y reorganización de sociedades en Colombia, con abogados especializados en derecho societario en Bogotá.",
       icono: faUsers,
@@ -100,7 +101,7 @@ export default function Especialidades() {
     },
     {
       titulo:
-        "Derecho administrativo en Colombia: defensa ante entidades públicas",
+        "Derecho administrativo en Colombia: defensa legal ante entidades públicas",
       descripcion:
         "Asesoría en procesos administrativos en Colombia y representación ante entidades públicas para empresas y particulares.",
       icono: faLandmark,
@@ -108,7 +109,7 @@ export default function Especialidades() {
     },
     {
       titulo:
-        "Resolución de conflictos en Colombia: negociación y solución legal efectiva",
+        "Resolución de conflictos en Colombia: soluciones legales rápidas y efectivas",
       descripcion:
         "Solución de conflictos empresariales mediante negociación, conciliación y mecanismos legales eficientes en Colombia.",
       icono: faBalanceScale,
@@ -116,7 +117,7 @@ export default function Especialidades() {
     },
     {
       titulo:
-        "Cumplimiento normativo en Colombia: evita sanciones y riesgos legales",
+        "Cumplimiento normativo en Colombia: evita sanciones y protege tu empresa",
       descripcion:
         "Cumplimiento normativo en Colombia para empresas, prevención de riesgos legales y adaptación a regulaciones vigentes.",
       icono: faClipboardCheck,
@@ -124,7 +125,7 @@ export default function Especialidades() {
     },
     {
       titulo:
-        "Protección jurídica empresarial en Colombia: seguridad legal para tu negocio",
+        "Protección jurídica empresarial en Colombia: seguridad legal para empresas y negocios",
       descripcion:
         "Estrategias de protección jurídica empresarial en Colombia para salvaguardar activos, contratos y operaciones comerciales.",
       icono: faShieldHalved,
@@ -190,8 +191,8 @@ export default function Especialidades() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Servicios legales en Bogotá: abogados expertos en derecho
-            empresarial, comercial y litigios en Colombia
+            Abogados en Bogotá expertos en derecho empresarial, litigios y
+            recuperación de cartera en Colombia
           </motion.h2>
 
           {/* DESCRIPCION */}
@@ -258,8 +259,8 @@ export default function Especialidades() {
               viewport={{ once: true }}
             >
               <FontAwesomeIcon icon={faGlobeAmericas} />
-              Portales legales en Colombia: servicios especializados en cartera,
-              laboral y propiedad intelectual
+              Portales legales en Colombia para cartera, derecho laboral y
+              propiedad intelectual
             </motion.h3>
 
             <div className={styles.portalesGrid}>
