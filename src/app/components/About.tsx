@@ -54,7 +54,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             Desde <strong>1998</strong>, en <strong>Pravice Abogados</strong>{" "}
-            somos una
+            somos una{" "}
             <strong>
               firma de abogados especializados en Bogotá y Colombia
             </strong>
