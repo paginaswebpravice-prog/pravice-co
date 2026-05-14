@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "profile",
     images: [
       {
-        url: "https://pravice.co/PERFIL%20LEIDY%20TIRADO%20(1).jpg",
+        url: "https://pravice.co/doc-leidy.jpg",
         width: 1200,
         height: 1600,
         alt: "Leidy Tirado abogada comercial en Bogotá Colombia",

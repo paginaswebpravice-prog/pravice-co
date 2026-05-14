@@ -20,7 +20,7 @@ export default function LeidyTiradoContent() {
         >
           <div className={styles.imageWrapper}>
             <Image
-              src="/PERFIL LEIDY TIRADO (1).jpg"
+              src="/doc-leidy.jpg"
               alt="Leidy Tirado directora área comercial en Bogotá Colombia"
               width={700}
               height={1200}
@@ -148,7 +148,7 @@ export default function LeidyTiradoContent() {
             "@context": "https://schema.org",
             "@type": "Attorney",
             name: "Leidy Tirado",
-            image: "https://pravice.co/PERFIL%20LEIDY%20TIRADO%20(1).jpg",
+            image: "https://pravice.co/doc-leidy.jpg",
             jobTitle: "Directora área comercial",
             worksFor: {
               "@type": "Organization",
@@ -160,7 +160,7 @@ export default function LeidyTiradoContent() {
               addressCountry: "CO",
             },
             areaServed: "Colombia",
-            url: "https://pravice.co/abogados/leidy-tirado",
+            url: "https://pravice.co/abogados/abogada-Leidy",
             knowsAbout: [
               "Derecho comercial",
               "Recuperación de cartera",

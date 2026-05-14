@@ -157,10 +157,10 @@ export default function SantiagoFrancoContent() {
             "@type": "Person",
             name: "Santiago Franco",
             jobTitle: "Abogado especialista en derecho penal y compliance",
-            image: "https://pravice.co/PERFIL%20SANTIAGO%20FRANCO.jpg",
+            image: "https://pravice.co/doc-santiago.jpg",
             description:
               "Abogado especialista en derecho penal, compliance, delitos económicos, derecho informático y gestión de riesgos legales corporativos.",
-            url: "https://pravice.co/abogados/santiago-franco",
+            url: "https://pravice.co/abogados/abogado-Santiago",
             worksFor: {
               "@type": "Organization",
               name: "Pravice Abogados",

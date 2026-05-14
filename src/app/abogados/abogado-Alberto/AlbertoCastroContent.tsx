@@ -17,7 +17,7 @@ export default function AlbertoCastroContent() {
         >
           <div className={styles.imageWrapper}>
             <img
-              src="/PERFIL ALBERTO CASTRO.jpg"
+              src="/doc-alberto.jpg"
               alt="Alberto Castro abogado en Bogotá Colombia"
               className={styles.image}
             />
@@ -148,8 +148,8 @@ export default function AlbertoCastroContent() {
             "@type": "Person",
             name: "Alberto Castro",
             jobTitle: "Abogado y Fundador",
-            image: "https://pravice.co/PERFIL%20ALBERTO%20CASTRO.jpg",
-            url: "https://pravice.co/abogados/alberto-castro",
+            image: "https://pravice.co/doc-alberto.jpg",
+            url: "https://pravice.co/abogados/abogado-Alberto",
             worksFor: {
               "@type": "Organization",
               name: "Pravice Abogados",

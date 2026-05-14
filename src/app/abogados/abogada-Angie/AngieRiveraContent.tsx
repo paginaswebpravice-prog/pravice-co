@@ -20,7 +20,7 @@ export default function AngieRiveraContent() {
         >
           <div className={styles.imageWrapper}>
             <Image
-              src="/PERFIL ANGIE RIVERA (1).jpg"
+              src="/doc-angie.jpg"
               alt="Angie Rivera abogada en Bogotá Colombia"
               width={700}
               height={1200}
@@ -151,7 +151,7 @@ export default function AngieRiveraContent() {
             "@context": "https://schema.org",
             "@type": "Attorney",
             name: "Angie Rivera",
-            image: "https://pravice.co/PERFIL%20ANGIE%20RIVERA%20(1).jpg",
+            image: "https://pravice.co/doc-angie.jpg",
             jobTitle: "Abogada",
             worksFor: {
               "@type": "Organization",
@@ -163,7 +163,7 @@ export default function AngieRiveraContent() {
               addressCountry: "CO",
             },
             areaServed: "Colombia",
-            url: "https://pravice.co/abogados/angie-rivera",
+            url: "https://pravice.co/abogados/abogada-Angie",
             knowsAbout: [
               "Recuperación de cartera",
               "Derecho comercial",

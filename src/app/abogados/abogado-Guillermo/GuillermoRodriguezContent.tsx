@@ -182,10 +182,10 @@ export default function GuillermoRodriguezContent() {
             name: "Guillermo Rodríguez",
             jobTitle:
               "Abogado especialista en derecho laboral y derecho de familia",
-            image: "https://pravice.co/PERFIL%20GUILLERMO%20RODRIGUEZ.jpg",
+            image: "https://pravice.co/doc-guillermo.jpg",
             description:
               "Abogado especialista en derecho laboral, seguridad social y derecho de familia con amplia experiencia en litigios, asesoría preventiva y representación judicial.",
-            url: "https://pravice.co/abogados/guillermo-rodriguez",
+            url: "https://pravice.co/abogados/abogado-Guillermo",
             worksFor: {
               "@type": "Organization",
               name: "Pravice Abogados",

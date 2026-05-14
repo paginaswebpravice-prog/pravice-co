@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "profile",
     images: [
       {
-        url: "https://pravice.co/PERFIL%20SANTIAGO%20FRANCO.jpg",
+        url: "https://pravice.co/doc-santiago.jpg",
         width: 1200,
         height: 1600,
         alt: "Santiago Franco abogado especialista en derecho penal en Bogotá Colombia",

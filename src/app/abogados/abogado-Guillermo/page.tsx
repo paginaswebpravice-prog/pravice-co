@@ -24,11 +24,11 @@ export const metadata = {
       "Guillermo Rodríguez | Especialista en Derecho Laboral y Derecho de Familia",
     description:
       "Más de 10 años de experiencia en litigios laborales y procesos de derecho de familia.",
-    url: "https://pravice.co/abogados/guillermo-rodriguez",
+    url: "https://pravice.co/abogados/abogado-Guillermo",
     siteName: "Pravice Abogados",
     images: [
       {
-        url: "https://pravice.co/PERFIL%20GUILLERMO%20RODRIGUEZ.jpg",
+        url: "https://pravice.co/doc-guillermo.jpg",
         width: 1200,
         height: 1600,
         alt: "Guillermo Rodríguez abogado especialista en derecho laboral y derecho de familia",
@@ -38,7 +38,7 @@ export const metadata = {
     type: "profile",
   },
   alternates: {
-    canonical: "https://pravice.co/abogados/guillermo-rodriguez",
+    canonical: "https://pravice.co/abogados/abogado-Guillermo",
   },
 };
 

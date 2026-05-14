@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "profile",
     images: [
       {
-        url: "https://pravice.co/PERFIL%20ALBERTO%20CASTRO.jpg",
+        url: "https://pravice.co/doc-alberto.jpg",
         width: 1200,
         height: 1600,
         alt: "Alberto Castro abogado en Bogotá Colombia",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Alberto Castro | Abogado en Bogotá Colombia - Pravice Abogados",
     description:
       "Especialista en recuperación de cartera, conciliación y cobro jurídico empresarial.",
-    images: ["https://pravice.co/PERFIL%20ALBERTO%20CASTRO.jpg"],
+    images: ["https://pravice.co/doc-alberto.jpg"],
   },
 };
 
