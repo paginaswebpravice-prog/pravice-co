@@ -1,0 +1,188 @@
+.container {
+  width: 100%;
+  background:
+    radial-gradient(circle at top right, rgba(0, 64, 128, 0.08), transparent),
+    linear-gradient(to bottom, #f7f9fc, #ffffff);
+  padding: 90px 40px;
+  overflow: hidden;
+}
+
+.hero {
+  max-width: 1450px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 70px;
+  align-items: start;
+}
+
+/* ================= IMAGE ================= */
+
+.imageSide {
+  position: sticky;
+  top: 120px;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.12),
+    0 4px 18px rgba(0, 64, 128, 0.08);
+}
+
+.image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* ================= INFO ================= */
+
+.infoSide {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.badge {
+  width: fit-content;
+  background: rgba(0, 64, 128, 0.08);
+  color: #004080;
+  border: 1px solid rgba(0, 64, 128, 0.12);
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: clamp(52px, 7vw, 92px);
+  line-height: 0.9;
+  font-weight: 900;
+  color: #002b55;
+  letter-spacing: -3px;
+}
+
+.role {
+  font-size: 30px;
+  font-weight: 700;
+  color: #c9a13b;
+  margin-top: -12px;
+}
+
+/* ================= CARDS ================= */
+
+.card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 40px;
+  border: 1px solid rgba(0, 64, 128, 0.08);
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.06),
+    0 2px 12px rgba(0, 64, 128, 0.04);
+}
+
+.card h2 {
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 900;
+  color: #002b55;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.card p {
+  font-size: 19px;
+  line-height: 1.95;
+  color: #2b2b2b;
+}
+
+/* ================= LIST ================= */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.item span {
+  min-width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(201, 161, 59, 0.12);
+  color: #b78c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  margin-top: 4px;
+}
+
+.item p {
+  margin: 0;
+  flex: 1;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1200px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .imageSide {
+    position: relative;
+    top: unset;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 20px;
+  }
+
+  .title {
+    letter-spacing: -2px;
+  }
+
+  .role {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: 28px;
+    border-radius: 24px;
+  }
+
+  .card p,
+  .item p {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .item {
+    gap: 12px;
+  }
+
+  .item span {
+    min-width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
