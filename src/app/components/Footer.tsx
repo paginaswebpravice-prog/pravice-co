@@ -18,6 +18,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { trackWhatsAppClick } from "@/lib/gtag";
+import WhatsAppChat from "./whatsapp-chat/WhatsAppChat";
 
 export default function Footer() {
   const emailUser = "servicioalcliente";
@@ -267,32 +268,7 @@ export default function Footer() {
       </AnimatePresence>
 
       {/* BOTÓN */}
-      <Link
-        href="https://wa.me/573114659315"
-        target="_blank"
-        className={styles.whatsappFloat}
-        aria-label="Contactar por WhatsApp"
-        rel="noopener noreferrer"
-        onClick={(e) => {
-          e.preventDefault();
-
-          window.gtag?.("event", "whatsapp_click", {
-            event_category: "engagement",
-            event_label: "whatsapp_click",
-            value: 1,
-          });
-
-          setTimeout(() => {
-            window.open(
-              "https://wa.me/573114659315",
-              "_blank",
-              "noopener,noreferrer",
-            );
-          }, 300);
-        }}
-      >
-        <FontAwesomeIcon icon={faWhatsapp} />
-      </Link>
+      <WhatsAppChat />
     </>
   );
 }
