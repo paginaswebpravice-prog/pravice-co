@@ -16,7 +16,7 @@ export default function HarrisonPerezContent() {
         >
           <div className={styles.imageWrapper}>
             <img
-              src="/doc-harrison.jpg"
+              src="/doc-harrisonImage.jpg"
               alt="Harrison Pérez abogado especialista en derecho laboral, comercial y de familia en Bogotá Colombia"
               className={styles.image}
             />
