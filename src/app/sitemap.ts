@@ -69,6 +69,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "asesoria-legal-virtual",
   ];
 
+  const abogados = [
+    "",
+    "abogado-Alberto",
+    "abogada-Leidy",
+    "abogada-Angie",
+    "abogado-Guillermo",
+    "abogado-Harrison",
+    "abogado-Marcial",
+    "abogado-Santiago",
+  ];
+
   const especialidadesUrls = especialidades.map((slug) => ({
     url: `${baseUrl}/especialidades/${slug}`,
     lastModified: today,
@@ -80,6 +91,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: slug
       ? `${baseUrl}/colombianos-exterior/${slug}`
       : `${baseUrl}/colombianos-exterior`,
+    lastModified: today,
+    changeFrequency: "weekly" as const,
+    priority: slug === "" ? 0.95 : 0.9,
+  }));
+
+  const abogadosUrls = abogados.map((slug) => ({
+    url: slug ? `${baseUrl}/abogados/${slug}` : `${baseUrl}/abogados`,
     lastModified: today,
     changeFrequency: "weekly" as const,
     priority: slug === "" ? 0.95 : 0.9,
@@ -128,5 +146,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // BLOG
     ...blogUrls,
+
+    // ABOGADOS
+    ...abogadosUrls,
   ];
 }
