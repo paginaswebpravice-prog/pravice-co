@@ -6,7 +6,7 @@ export const services = [
   "Derecho contractual",
   "Derecho familiar",
   "Derecho empresarial",
-  "Dereecho societario",
+  "Derecho societario",
   "Derecho civil",
   "Conciliaciones",
   "Litigios",

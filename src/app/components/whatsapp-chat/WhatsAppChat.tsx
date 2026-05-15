@@ -1,37 +1,131 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./WhatsAppChat.module.css";
 import { services } from "./Services";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faPaperPlane, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { motion, AnimatePresence } from "framer-motion";
+
+type Message = {
+  type: "bot" | "user";
+  text: string;
+};
 
 export default function WhatsAppChat() {
   const [open, setOpen] = useState(false);
+
   const [step, setStep] = useState(0);
+
+  const [messages, setMessages] = useState<Message[]>([
+    {
+      type: "bot",
+      text: "Hola 👋 Te haré unas preguntas rápidas para dirigir tu caso con el área adecuada.",
+    },
+    {
+      type: "bot",
+      text: "¿Eres persona o empresa?",
+    },
+  ]);
+
+  const [input, setInput] = useState("");
 
   const [clientType, setClientType] = useState("");
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
   const [email, setEmail] = useState("");
+  const [newsletter, setNewsletter] = useState(false);
   const [service, setService] = useState("");
   const [description, setDescription] = useState("");
 
-  const nextStep = () => {
-    setStep((prev) => prev + 1);
+  const messagesEndRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }, [messages]);
+
+  const addBotMessage = (text: string) => {
+    setTimeout(() => {
+      setMessages((prev) => [
+        ...prev,
+        {
+          type: "bot",
+          text,
+        },
+      ]);
+    }, 400);
   };
 
-  const handleKeyDown = (
-    e: React.KeyboardEvent<HTMLInputElement | HTMLTextAreaElement>,
-    action: () => void,
-    disabled?: boolean,
-  ) => {
-    if (e.key === "Enter" && !disabled) {
-      e.preventDefault();
-      action();
+  const addUserMessage = (text: string) => {
+    setMessages((prev) => [
+      ...prev,
+      {
+        type: "user",
+        text,
+      },
+    ]);
+  };
+
+  const handleSend = () => {
+    if (!input.trim()) return;
+
+    const value = input.trim();
+
+    addUserMessage(value);
+
+    // PERSONA - NOMBRE
+    if (step === 1) {
+      setName(value);
+
+      addBotMessage("¿Qué tipo de servicio necesitas?");
+
+      setStep(2);
     }
+
+    // EMPRESA - NOMBRE CONTACTO
+    else if (step === 10) {
+      setName(value);
+
+      addBotMessage("¿Cuál es el nombre de la empresa?");
+
+      setStep(11);
+    }
+
+    // EMPRESA - EMPRESA
+    else if (step === 11) {
+      setCompany(value);
+
+      addBotMessage("Escribe un correo corporativo de contacto.");
+
+      setStep(12);
+    }
+
+    // EMPRESA - EMAIL
+    else if (step === 12) {
+      setEmail(value);
+
+      addBotMessage(
+        "¿Aceptas recibir información jurídica, novedades y contenido de interés por parte de Pravice Abogados?",
+      );
+
+      setStep(13);
+    }
+
+    // DESCRIPCIÓN
+    else if (step === 3) {
+      setDescription(value);
+
+      addBotMessage(
+        "Perfecto ✅ Ahora serás dirigido a un asesor vía WhatsApp.",
+      );
+
+      setStep(4);
+    }
+
+    setInput("");
   };
 
   const handleWhatsAppRedirect = () => {
@@ -49,6 +143,8 @@ ${
     ? `🏢 *Empresa:* ${company}
 
 📧 *Correo corporativo:* ${email}
+
+📨 *Acepta recibir información:* ${newsletter ? "Sí" : "No"}
 `
     : ""
 }
@@ -90,226 +186,191 @@ ${currentPage}
             {/* HEADER */}
             <div className={styles.header}>
               <div>
-                <h3>Asistente Virtual</h3>
+                <h3>Pravice Abogados</h3>
                 <p>Normalmente respondemos en minutos</p>
               </div>
             </div>
 
             {/* BODY */}
             <div className={styles.body}>
-              {/* PASO 0 */}
+              <div className={styles.timestamp}>Hoy</div>
+
+              {messages.map((msg, index) => (
+                <motion.div
+                  key={index}
+                  className={
+                    msg.type === "bot" ? styles.botWrapper : styles.userWrapper
+                  }
+                  initial={{
+                    opacity: 0,
+                    x: msg.type === "bot" ? -20 : 20,
+                  }}
+                  animate={{
+                    opacity: 1,
+                    x: 0,
+                  }}
+                  transition={{ duration: 0.25 }}
+                >
+                  <div
+                    className={
+                      msg.type === "bot"
+                        ? styles.botMessage
+                        : styles.userMessage
+                    }
+                  >
+                    {msg.text}
+                  </div>
+                </motion.div>
+              ))}
+
+              {/* PERSONA O EMPRESA */}
               {step === 0 && (
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                  <div className={styles.message}>
-                    Hola 👋 <br />
-                    Te haré unas preguntas rápidas para dirigir tu caso con el
-                    área adecuada.
-                  </div>
+                <motion.div
+                  className={styles.optionsGrid}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                >
+                  <button
+                    className={styles.optionCard}
+                    onClick={() => {
+                      addUserMessage("Persona");
 
-                  <button className={styles.primaryButton} onClick={nextStep}>
-                    Comenzar
+                      setClientType("Persona");
+
+                      addBotMessage("Perfecto. Escribe tu nombre completo.");
+
+                      setStep(1);
+                    }}
+                  >
+                    👤 Persona
+                  </button>
+
+                  <button
+                    className={styles.optionCard}
+                    onClick={() => {
+                      addUserMessage("Empresa");
+
+                      setClientType("Empresa");
+
+                      addBotMessage("¿Cuál es tu nombre de contacto?");
+
+                      setStep(10);
+                    }}
+                  >
+                    🏢 Empresa
                   </button>
                 </motion.div>
               )}
 
-              {/* PASO 1 */}
-              {step === 1 && (
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                  <div className={styles.message}>¿Eres persona o empresa?</div>
+              {/* NEWSLETTER */}
+              {step === 13 && (
+                <motion.div
+                  className={styles.optionsGrid}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                >
+                  <button
+                    className={styles.optionCard}
+                    onClick={() => {
+                      addUserMessage("Sí, acepto");
 
-                  <div className={styles.options}>
-                    <button
-                      className={styles.optionButton}
-                      onClick={() => {
-                        setClientType("Persona");
-                        nextStep();
-                      }}
-                    >
-                      Persona
-                    </button>
+                      setNewsletter(true);
 
-                    <button
-                      className={styles.optionButton}
-                      onClick={() => {
-                        setClientType("Empresa");
-                        nextStep();
-                      }}
-                    >
-                      Empresa
-                    </button>
-                  </div>
+                      addBotMessage(
+                        "Perfecto. ¿Qué tipo de servicio necesitas?",
+                      );
+
+                      setStep(2);
+                    }}
+                  >
+                    ✅ Sí, acepto
+                  </button>
+
+                  <button
+                    className={styles.optionCard}
+                    onClick={() => {
+                      addUserMessage("No deseo recibir información");
+
+                      setNewsletter(false);
+
+                      addBotMessage(
+                        "Perfecto. ¿Qué tipo de servicio necesitas?",
+                      );
+
+                      setStep(2);
+                    }}
+                  >
+                    ❌ No gracias
+                  </button>
                 </motion.div>
               )}
 
-              {/* PASO 2 */}
+              {/* SERVICIOS */}
               {step === 2 && (
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                  {clientType === "Persona" ? (
-                    <>
-                      <div className={styles.message}>
-                        Escribe tu nombre completo
-                      </div>
+                <motion.div
+                  className={styles.servicesGrid}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                >
+                  {services.map((item) => (
+                    <button
+                      key={item}
+                      className={styles.serviceButton}
+                      onClick={() => {
+                        addUserMessage(item);
 
-                      <input
-                        autoFocus
-                        type="text"
-                        placeholder="Nombre completo"
-                        className={styles.input}
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        onKeyDown={(e) => handleKeyDown(e, nextStep, !name)}
-                      />
+                        setService(item);
 
-                      <button
-                        className={styles.primaryButton}
-                        disabled={!name}
-                        onClick={nextStep}
-                      >
-                        Continuar
-                      </button>
-                    </>
-                  ) : (
-                    <>
-                      <div className={styles.message}>
-                        Completa la información de contacto
-                      </div>
+                        addBotMessage(
+                          "Escribe una breve descripción de tu caso.",
+                        );
 
-                      <input
-                        autoFocus
-                        type="text"
-                        placeholder="Nombre de contacto"
-                        className={styles.input}
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        onKeyDown={(e) =>
-                          handleKeyDown(
-                            e,
-                            nextStep,
-                            !name || !company || !email,
-                          )
-                        }
-                      />
-
-                      <input
-                        type="text"
-                        placeholder="Nombre de empresa"
-                        className={styles.input}
-                        value={company}
-                        onChange={(e) => setCompany(e.target.value)}
-                        onKeyDown={(e) =>
-                          handleKeyDown(
-                            e,
-                            nextStep,
-                            !name || !company || !email,
-                          )
-                        }
-                      />
-
-                      <input
-                        type="email"
-                        placeholder="Correo corporativo"
-                        className={styles.input}
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        onKeyDown={(e) =>
-                          handleKeyDown(
-                            e,
-                            nextStep,
-                            !name || !company || !email,
-                          )
-                        }
-                      />
-
-                      <button
-                        className={styles.primaryButton}
-                        disabled={!name || !company || !email}
-                        onClick={nextStep}
-                      >
-                        Continuar
-                      </button>
-                    </>
-                  )}
+                        setStep(3);
+                      }}
+                    >
+                      {item}
+                    </button>
+                  ))}
                 </motion.div>
               )}
 
-              {/* PASO 3 */}
-              {step === 3 && (
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                  <div className={styles.message}>
-                    ¿Qué tipo de servicio necesitas?
-                  </div>
-
-                  <div className={styles.servicesGrid}>
-                    {services.map((item) => (
-                      <button
-                        key={item}
-                        className={styles.serviceButton}
-                        onClick={() => {
-                          setService(item);
-                          nextStep();
-                        }}
-                      >
-                        {item}
-                      </button>
-                    ))}
-                  </div>
-                </motion.div>
-              )}
-
-              {/* PASO 4 */}
+              {/* FINAL */}
               {step === 4 && (
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                  <div className={styles.message}>
-                    Escribe una breve descripción de tu caso
-                  </div>
-
-                  <textarea
-                    autoFocus
-                    className={styles.textarea}
-                    placeholder="Cuéntanos brevemente tu situación..."
-                    value={description}
-                    onChange={(e) => setDescription(e.target.value)}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter" && e.ctrlKey && description) {
-                        e.preventDefault();
-                        nextStep();
-                      }
-                    }}
-                  />
-
-                  <button
-                    className={styles.primaryButton}
-                    disabled={!description}
-                    onClick={nextStep}
-                  >
-                    Continuar
-                  </button>
-                </motion.div>
+                <motion.button
+                  className={styles.whatsappButton}
+                  onClick={handleWhatsAppRedirect}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                >
+                  Continuar a WhatsApp
+                </motion.button>
               )}
 
-              {/* PASO FINAL */}
-              {step === 5 && (
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                  <div className={styles.message}>
-                    Perfecto ✅ <br />
-                    Ahora serás dirigido a un asesor vía WhatsApp.
-                  </div>
-
-                  <button
-                    autoFocus
-                    className={styles.whatsappButton}
-                    onClick={handleWhatsAppRedirect}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter") {
-                        handleWhatsAppRedirect();
-                      }
-                    }}
-                  >
-                    Continuar a WhatsApp
-                  </button>
-                </motion.div>
-              )}
+              <div ref={messagesEndRef} />
             </div>
+
+            {/* INPUT */}
+            {step !== 0 && step !== 2 && step !== 4 && step !== 13 && (
+              <div className={styles.inputArea}>
+                <input
+                  autoFocus
+                  type="text"
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
+                  placeholder="Escribe tu respuesta..."
+                  className={styles.chatInput}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      handleSend();
+                    }
+                  }}
+                />
+
+                <button className={styles.sendButton} onClick={handleSend}>
+                  <FontAwesomeIcon icon={faPaperPlane} />
+                </button>
+              </div>
+            )}
           </motion.div>
         )}
       </AnimatePresence>
