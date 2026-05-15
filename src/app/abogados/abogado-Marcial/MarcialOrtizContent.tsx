@@ -16,7 +16,7 @@ export default function MarcialOrtizContent() {
         >
           <div className={styles.imageWrapper}>
             <img
-              src="/PERFIL MARCIAL ORTIZ.jpg"
+              src="/doc-marcial.jpg"
               alt="Marcial Ortiz abogado especialista en derecho laboral en Bogotá Colombia"
               className={styles.image}
             />
