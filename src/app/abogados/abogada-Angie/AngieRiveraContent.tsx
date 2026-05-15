@@ -19,12 +19,9 @@ export default function AngieRiveraContent() {
           transition={{ duration: 0.7 }}
         >
           <div className={styles.imageWrapper}>
-            <Image
+            <img
               src="/doc-angie.jpg"
               alt="Angie Rivera abogada en Bogotá Colombia"
-              width={700}
-              height={1200}
-              priority
               className={styles.image}
             />
           </div>
