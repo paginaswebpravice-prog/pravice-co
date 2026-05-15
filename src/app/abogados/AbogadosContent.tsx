@@ -9,43 +9,50 @@ const abogados = [
     nombre: "Alberto Castro",
     slug: "abogado-Alberto",
     imagen: "/doc-alberto.jpg",
-    alt: "Alberto Castro abogado en derecho comercial en Bogotá Colombia",
+    alt: "Alberto Castro abogado especialista en recuperación de cartera y derecho comercial en Bogotá Colombia",
+    cargo: "Fundador y experto en recuperación de cartera",
   },
   {
     nombre: "Leidy Tirado",
     slug: "abogada-Leidy",
     imagen: "/doc-leidy.jpg",
-    alt: "Leidy Tirado abogada en derecho comercial en Bogotá Colombia",
+    alt: "Leidy Tirado abogada especialista en derecho comercial y empresarial en Bogotá Colombia",
+    cargo: "Directora área comercial y derecho empresarial",
   },
   {
     nombre: "Angie Rivera",
     slug: "abogada-Angie",
     imagen: "/doc-angie.jpg",
-    alt: "Angie Rivera abogada en derecho comercial en Bogotá Colombia",
+    alt: "Angie Rivera abogada especialista en recuperación de cartera y procesos ejecutivos en Bogotá Colombia",
+    cargo: "Especialista en cartera y procesos ejecutivos",
   },
   {
     nombre: "Guillermo Rodríguez",
     slug: "abogado-Guillermo",
     imagen: "/doc-guillermo.jpg",
-    alt: "Guillermo Rodríguez abogado en derecho comercial en Bogotá Colombia",
+    alt: "Guillermo Rodríguez abogado especialista en derecho en Bogotá Colombia",
+    cargo: "Abogado especialista en asesoría jurídica",
   },
   {
     nombre: "Harrison Pérez",
     slug: "abogado-Harrison",
     imagen: "/doc-harrison.jpg",
-    alt: "Harrison Pérez abogado en derecho comercial en Bogotá Colombia",
+    alt: "Harrison Pérez abogado especialista en derecho comercial en Bogotá Colombia",
+    cargo: "Especialista en derecho comercial",
   },
   {
     nombre: "Marcial Ortiz",
     slug: "abogado-Marcial",
     imagen: "/doc-marcial.jpg",
-    alt: "Marcial Ortiz abogado en derecho comercial en Bogotá Colombia",
+    alt: "Marcial Ortiz abogado especialista en recuperación de cartera en Bogotá Colombia",
+    cargo: "Especialista en gestión de cobros",
   },
   {
     nombre: "Santiago Franco",
     slug: "abogado-Santiago",
     imagen: "/doc-santiago.jpg",
-    alt: "Santiago Franco abogado en derecho comercial en Bogotá Colombia",
+    alt: "Santiago Franco abogado penalista y compliance en Bogotá Colombia",
+    cargo: "Especialista en derecho penal y compliance",
   },
 ];
 
@@ -65,12 +72,13 @@ export default function AbogadosGrid() {
         <span className={styles.badge}>Equipo Jurídico</span>
 
         <h2 className={styles.title}>
-          Abogados especialistas en Bogotá Colombia
+          Abogados especialistas en Bogotá para empresas y personas
         </h2>
 
         <p className={styles.subtitle}>
-          Conoce nuestro equipo de abogados y encuentra asesoría jurídica
-          especializada para empresas y personas.
+          Conoce nuestro equipo de abogados expertos en derecho comercial,
+          recuperación de cartera, derecho penal, compliance y asesoría jurídica
+          empresarial en Bogotá Colombia.
         </p>
       </motion.div>
 
@@ -89,7 +97,7 @@ export default function AbogadosGrid() {
               ease: "easeOut",
             }}
             viewport={{ once: true }}
-            whileHover={{ y: -6 }}
+            whileHover={{ y: -8 }}
             whileTap={{ scale: 0.98 }}
           >
             <div className={styles.imageWrapper}>
@@ -103,19 +111,21 @@ export default function AbogadosGrid() {
               />
 
               <div className={styles.overlay}>
-                <span>Ver perfil</span>
+                <span>Ver perfil profesional</span>
               </div>
             </div>
 
             <div className={styles.info}>
               <h3>{abogado.nombre}</h3>
 
-              <p>Abogado especialista en Bogotá Colombia</p>
+              <p>{abogado.cargo}</p>
             </div>
 
             <p className={styles.seoText}>
-              {abogado.nombre} abogado en Bogotá Colombia especializado en
-              derecho comercial, asesoría jurídica empresarial y contratos.
+              {abogado.nombre} abogado especialista en Bogotá Colombia con
+              experiencia en asesoría jurídica, derecho comercial, recuperación
+              de cartera, procesos ejecutivos y representación legal para
+              empresas y personas.
             </p>
           </motion.article>
         ))}
@@ -127,7 +137,9 @@ export default function AbogadosGrid() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ItemList",
-            name: "Equipo de abogados en Bogotá Colombia",
+            name: "Abogados especialistas en Bogotá Colombia",
+            description:
+              "Equipo de abogados especialistas en derecho comercial, recuperación de cartera, compliance, derecho penal y asesoría jurídica empresarial en Bogotá Colombia.",
             itemListElement: abogados.map((a, index) => ({
               "@type": "ListItem",
               position: index + 1,

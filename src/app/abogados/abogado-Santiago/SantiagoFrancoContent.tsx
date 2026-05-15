@@ -16,7 +16,7 @@ export default function SantiagoFrancoContent() {
         >
           <div className={styles.imageWrapper}>
             <img
-              src="/PERFIL SANTIAGO FRANCO.jpg"
+              src="/doc-santiago.jpg"
               alt="Santiago Franco abogado especialista en derecho penal y compliance en Bogotá Colombia"
               className={styles.image}
             />

@@ -1,8 +1,6 @@
 "use client";
 
 // app/abogados/leidy-tirado/LeidyTiradoContent.tsx
-
-import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "../AbogadoProfile.module.css";
 
@@ -19,12 +17,9 @@ export default function LeidyTiradoContent() {
           transition={{ duration: 0.7 }}
         >
           <div className={styles.imageWrapper}>
-            <Image
+            <img
               src="/doc-leidy.jpg"
               alt="Leidy Tirado directora área comercial en Bogotá Colombia"
-              width={700}
-              height={1200}
-              priority
               className={styles.image}
             />
           </div>
