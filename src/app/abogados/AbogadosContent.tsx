@@ -3,6 +3,7 @@
 import styles from "./AbogadosGrid.module.css";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const abogados = [
   {
@@ -101,14 +102,19 @@ export default function AbogadosGrid() {
             whileTap={{ scale: 0.98 }}
           >
             <div className={styles.imageWrapper}>
-              <motion.img
-                src={abogado.imagen}
-                alt={abogado.alt}
-                loading="lazy"
-                className={styles.image}
+              <motion.div
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.4 }}
-              />
+              >
+                <Image
+                  src={abogado.imagen}
+                  alt={abogado.alt}
+                  width={500}
+                  height={600}
+                  className={styles.image}
+                  loading="lazy"
+                />
+              </motion.div>
 
               <div className={styles.overlay}>
                 <span>Ver perfil profesional</span>
