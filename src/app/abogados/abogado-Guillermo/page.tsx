@@ -28,7 +28,7 @@ export const metadata = {
     siteName: "Pravice Abogados",
     images: [
       {
-        url: "https://pravice.co/doc-guillermo.jpg",
+        url: "https://pravice.co/doc-guillermoImage.jpg",
         width: 1200,
         height: 1600,
         alt: "Guillermo Rodríguez abogado especialista en derecho laboral y derecho de familia",

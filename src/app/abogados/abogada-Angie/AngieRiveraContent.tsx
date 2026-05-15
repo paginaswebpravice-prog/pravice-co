@@ -2,7 +2,6 @@
 
 // app/abogados/angie-rivera/AngieRiveraContent.tsx
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "../AbogadoProfile.module.css";
 
@@ -20,7 +19,7 @@ export default function AngieRiveraContent() {
         >
           <div className={styles.imageWrapper}>
             <img
-              src="/doc-angie.jpg"
+              src="/doc-angieImage.jpg"
               alt="Angie Rivera abogada en Bogotá Colombia"
               className={styles.image}
             />
@@ -148,7 +147,7 @@ export default function AngieRiveraContent() {
             "@context": "https://schema.org",
             "@type": "Attorney",
             name: "Angie Rivera",
-            image: "https://pravice.co/doc-angie.jpg",
+            image: "https://pravice.co/doc-angieImage.jpg",
             jobTitle: "Abogada",
             worksFor: {
               "@type": "Organization",

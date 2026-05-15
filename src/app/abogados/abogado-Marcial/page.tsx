@@ -30,7 +30,7 @@ export const metadata = {
 
     images: [
       {
-        url: "https://pravice.co/PERFIL%20MARCIAL%20ORTIZ.jpg",
+        url: "https://pravice.co/doc-marcialImage.jpg",
         width: 1200,
         height: 630,
         alt: "Marcial Ortiz - Pravice Abogados",
@@ -49,7 +49,7 @@ export const metadata = {
     description:
       "Asesoría jurídica laboral, recursos humanos y prevención de riesgos laborales en Bogotá.",
 
-    images: ["https://pravice.co/PERFIL%20MARCIAL%20ORTIZ.jpg"],
+    images: ["https://pravice.co/doc-marcialImage.jpg"],
   },
 
   alternates: {

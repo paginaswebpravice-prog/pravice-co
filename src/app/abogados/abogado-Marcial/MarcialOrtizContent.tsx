@@ -16,7 +16,7 @@ export default function MarcialOrtizContent() {
         >
           <div className={styles.imageWrapper}>
             <img
-              src="/doc-marcial.jpg"
+              src="/doc-marcialImage.jpg"
               alt="Marcial Ortiz abogado especialista en derecho laboral en Bogotá Colombia"
               className={styles.image}
             />
@@ -155,7 +155,7 @@ export default function MarcialOrtizContent() {
             "@type": "Person",
             name: "Marcial Ortiz",
             jobTitle: "Abogado especialista en derecho laboral",
-            image: "https://pravice.co/PERFIL%20MARCIAL%20ORTIZ.jpg",
+            image: "https://pravice.co/doc-marcialImage.jpg",
             description:
               "Abogado especialista en derecho laboral, recursos humanos y prevención de riesgos laborales en Bogotá Colombia.",
             url: "https://pravice.co/abogados/abogado-Marcial",

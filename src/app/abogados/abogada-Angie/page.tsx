@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     type: "profile",
     images: [
       {
-        url: "https://pravice.co/doc-angie.jpg",
+        url: "https://pravice.co/doc-angieImage.jpg",
         width: 1200,
         height: 1600,
         alt: "Angie Rivera abogada en Bogotá Colombia",

@@ -16,7 +16,7 @@ export default function SantiagoFrancoContent() {
         >
           <div className={styles.imageWrapper}>
             <img
-              src="/doc-santiago.jpg"
+              src="/doc-santiagoImage.jpg"
               alt="Santiago Franco abogado especialista en derecho penal y compliance en Bogotá Colombia"
               className={styles.image}
             />
@@ -157,7 +157,7 @@ export default function SantiagoFrancoContent() {
             "@type": "Person",
             name: "Santiago Franco",
             jobTitle: "Abogado especialista en derecho penal y compliance",
-            image: "https://pravice.co/doc-santiago.jpg",
+            image: "https://pravice.co/doc-santiagoImage.jpg",
             description:
               "Abogado especialista en derecho penal, compliance, delitos económicos, derecho informático y gestión de riesgos legales corporativos.",
             url: "https://pravice.co/abogados/abogado-Santiago",

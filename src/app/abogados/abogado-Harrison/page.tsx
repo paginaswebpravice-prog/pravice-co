@@ -34,7 +34,7 @@ export const metadata = {
 
     images: [
       {
-        url: "https://pravice.co/doc-harrison.jpg",
+        url: "https://pravice.co/doc-harrisonImage.jpg",
         width: 1200,
         height: 630,
         alt: "Harrison Pérez - Pravice Abogados",
@@ -54,7 +54,7 @@ export const metadata = {
     description:
       "Asesoría jurídica en Derecho Laboral, Comercial, Seguridad Social y Derecho de Familia en Bogotá.",
 
-    images: ["https://pravice.co/doc-harrison.jpg"],
+    images: ["https://pravice.co/doc-harrisonImage.jpg"],
   },
 
   alternates: {

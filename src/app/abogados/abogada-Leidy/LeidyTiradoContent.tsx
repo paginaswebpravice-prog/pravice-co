@@ -18,7 +18,7 @@ export default function LeidyTiradoContent() {
         >
           <div className={styles.imageWrapper}>
             <img
-              src="/doc-leidy.jpg"
+              src="/doc-leidyImage.jpg"
               alt="Leidy Tirado directora área comercial en Bogotá Colombia"
               className={styles.image}
             />
@@ -143,7 +143,7 @@ export default function LeidyTiradoContent() {
             "@context": "https://schema.org",
             "@type": "Attorney",
             name: "Leidy Tirado",
-            image: "https://pravice.co/doc-leidy.jpg",
+            image: "https://pravice.co/doc-leidyImage.jpg",
             jobTitle: "Directora área comercial",
             worksFor: {
               "@type": "Organization",

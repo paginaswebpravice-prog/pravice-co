@@ -18,7 +18,7 @@ export default function GuillermoRodriguezContent() {
         >
           <div className={styles.imageWrapper}>
             <img
-              src="/doc-guillermo.jpg"
+              src="/doc-guillermoImage.jpg"
               alt="Guillermo Rodríguez abogado especialista en derecho laboral y derecho de familia en Bogotá Colombia"
               className={styles.image}
             />

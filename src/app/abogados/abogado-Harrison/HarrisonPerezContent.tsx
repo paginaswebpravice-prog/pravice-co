@@ -229,7 +229,7 @@ export default function HarrisonPerezContent() {
             name: "Harrison Pérez",
             jobTitle:
               "Abogado especialista en derecho laboral, comercial y de familia",
-            image: "https://pravice.co/doc-harrison.jpg",
+            image: "https://pravice.co/doc-harrisonImage.jpg",
             description:
               "Abogado especialista en derecho laboral, derecho comercial, seguridad social y derecho de familia en Bogotá Colombia.",
             url: "https://pravice.co/abogados/abogado-Harrison",
