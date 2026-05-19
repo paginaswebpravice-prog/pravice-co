@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+
 import styles from "./WhatsAppChat.module.css";
+
 import { services } from "./Services";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -36,11 +38,17 @@ export default function WhatsAppChat() {
   const [input, setInput] = useState("");
 
   const [clientType, setClientType] = useState("");
+
   const [name, setName] = useState("");
+
   const [company, setCompany] = useState("");
+
   const [email, setEmail] = useState("");
+
   const [newsletter, setNewsletter] = useState(false);
+
   const [service, setService] = useState("");
+
   const [description, setDescription] = useState("");
 
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
@@ -80,9 +88,10 @@ export default function WhatsAppChat() {
 
     addUserMessage(value);
 
-    // =========================================
+    // =========================
     // PERSONA - NOMBRE
-    // =========================================
+    // =========================
+
     if (step === 1) {
       setName(value);
 
@@ -91,9 +100,9 @@ export default function WhatsAppChat() {
       setStep(5);
     }
 
-    // =========================================
+    // =========================
     // PERSONA - EMAIL
-    // =========================================
+    // =========================
     else if (step === 5) {
       setEmail(value);
 
@@ -101,12 +110,12 @@ export default function WhatsAppChat() {
         "¿Aceptas recibir información jurídica, novedades y contenido de interés por parte de Pravice Abogados?",
       );
 
-      setStep(6);
+      setStep(13);
     }
 
-    // =========================================
+    // =========================
     // EMPRESA - NOMBRE CONTACTO
-    // =========================================
+    // =========================
     else if (step === 10) {
       setName(value);
 
@@ -115,9 +124,9 @@ export default function WhatsAppChat() {
       setStep(11);
     }
 
-    // =========================================
+    // =========================
     // EMPRESA - EMPRESA
-    // =========================================
+    // =========================
     else if (step === 11) {
       setCompany(value);
 
@@ -126,9 +135,9 @@ export default function WhatsAppChat() {
       setStep(12);
     }
 
-    // =========================================
+    // =========================
     // EMPRESA - EMAIL
-    // =========================================
+    // =========================
     else if (step === 12) {
       setEmail(value);
 
@@ -139,9 +148,9 @@ export default function WhatsAppChat() {
       setStep(13);
     }
 
-    // =========================================
+    // =========================
     // DESCRIPCIÓN
-    // =========================================
+    // =========================
     else if (step === 3) {
       setDescription(value);
 
@@ -158,52 +167,38 @@ export default function WhatsAppChat() {
   const handleWhatsAppRedirect = async () => {
     const currentPage = window.location.href;
 
-    // =========================================
-    // GUARDAR EN GOOGLE SHEETS
-    // =========================================
+    // =========================
+    // GOOGLE SHEETS
+    // =========================
 
     try {
-      console.log("Guardando lead...");
+      const params = new URLSearchParams({
+        clientType,
+        name,
+        company,
+        email,
+        newsletter: newsletter ? "Sí" : "No",
+        service,
+        description,
+        page: currentPage,
+      });
 
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzTc7-2jQo_ipIsdL0ZRwqAlb-U2B1D-YMOpiLlSfAGBxCMt9MGbllNH4p0LPmtZwYNeQ/exec",
+      await fetch(
+        `https://script.google.com/macros/s/AKfycbzTc7-2jQo_ipIsdL0ZRwqAlb-U2B1D-YMOpiLlSfAGBxCMt9MGbllNH4p0LPmtZwYNeQ/exec?${params.toString()}`,
         {
-          method: "POST",
-
-          headers: {
-            "Content-Type": "application/json",
-          },
-
-          body: JSON.stringify({
-            clientType,
-
-            name,
-
-            company: company || "",
-
-            email: email || "",
-
-            newsletter: newsletter || false,
-
-            service,
-
-            description,
-
-            page: currentPage,
-          }),
+          method: "GET",
+          mode: "no-cors",
         },
       );
 
-      const result = await response.json();
-
-      console.log("Lead guardado:", result);
+      console.log("Lead guardado correctamente");
     } catch (error) {
       console.error("Error guardando lead:", error);
     }
 
-    // =========================================
+    // =========================
     // MENSAJE WHATSAPP
-    // =========================================
+    // =========================
 
     const message = `
 📋 *Nueva solicitud de asesoría jurídica*
@@ -212,9 +207,9 @@ export default function WhatsAppChat() {
 
 🙍 *Nombre:* ${name}
 
-${clientType === "Empresa" ? `🏢 *Empresa:* ${company}` : ""}
-
 📧 *Correo:* ${email}
+
+${clientType === "Empresa" ? `🏢 *Empresa:* ${company}` : ""}
 
 📨 *Acepta recibir información:* ${newsletter ? "Sí" : "No"}
 
@@ -238,11 +233,13 @@ ${currentPage}
   return (
     <>
       {/* BOTÓN FLOTANTE */}
+
       <button className={styles.floatingButton} onClick={() => setOpen(!open)}>
         <FontAwesomeIcon icon={open ? faXmark : faWhatsapp} size="lg" />
       </button>
 
       {/* CHAT */}
+
       <AnimatePresence>
         {open && (
           <motion.div
@@ -267,6 +264,7 @@ ${currentPage}
             }}
           >
             {/* HEADER */}
+
             <div className={styles.header}>
               <div>
                 <h3>Pravice Abogados</h3>
@@ -276,6 +274,7 @@ ${currentPage}
             </div>
 
             {/* BODY */}
+
             <div className={styles.body}>
               <div className={styles.timestamp}>Hoy</div>
 
@@ -310,6 +309,7 @@ ${currentPage}
               ))}
 
               {/* PERSONA O EMPRESA */}
+
               {step === 0 && (
                 <motion.div
                   className={styles.optionsGrid}
@@ -348,50 +348,8 @@ ${currentPage}
                 </motion.div>
               )}
 
-              {/* NEWSLETTER PERSONA */}
-              {step === 6 && (
-                <motion.div
-                  className={styles.optionsGrid}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                >
-                  <button
-                    className={styles.optionCard}
-                    onClick={() => {
-                      addUserMessage("Sí, acepto");
+              {/* NEWSLETTER */}
 
-                      setNewsletter(true);
-
-                      addBotMessage(
-                        "Perfecto. ¿Qué tipo de servicio necesitas?",
-                      );
-
-                      setStep(2);
-                    }}
-                  >
-                    ✅ Sí, acepto
-                  </button>
-
-                  <button
-                    className={styles.optionCard}
-                    onClick={() => {
-                      addUserMessage("No deseo recibir información");
-
-                      setNewsletter(false);
-
-                      addBotMessage(
-                        "Perfecto. ¿Qué tipo de servicio necesitas?",
-                      );
-
-                      setStep(2);
-                    }}
-                  >
-                    ❌ No gracias
-                  </button>
-                </motion.div>
-              )}
-
-              {/* NEWSLETTER EMPRESA */}
               {step === 13 && (
                 <motion.div
                   className={styles.optionsGrid}
@@ -435,6 +393,7 @@ ${currentPage}
               )}
 
               {/* SERVICIOS */}
+
               {step === 2 && (
                 <motion.div
                   className={styles.servicesGrid}
@@ -464,6 +423,7 @@ ${currentPage}
               )}
 
               {/* FINAL */}
+
               {step === 4 && (
                 <motion.button
                   className={styles.whatsappButton}
@@ -479,31 +439,28 @@ ${currentPage}
             </div>
 
             {/* INPUT */}
-            {step !== 0 &&
-              step !== 2 &&
-              step !== 4 &&
-              step !== 6 &&
-              step !== 13 && (
-                <div className={styles.inputArea}>
-                  <input
-                    autoFocus
-                    type="text"
-                    value={input}
-                    onChange={(e) => setInput(e.target.value)}
-                    placeholder="Escribe tu respuesta..."
-                    className={styles.chatInput}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter") {
-                        handleSend();
-                      }
-                    }}
-                  />
 
-                  <button className={styles.sendButton} onClick={handleSend}>
-                    <FontAwesomeIcon icon={faPaperPlane} />
-                  </button>
-                </div>
-              )}
+            {step !== 0 && step !== 2 && step !== 4 && step !== 13 && (
+              <div className={styles.inputArea}>
+                <input
+                  autoFocus
+                  type="text"
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
+                  placeholder="Escribe tu respuesta..."
+                  className={styles.chatInput}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      handleSend();
+                    }
+                  }}
+                />
+
+                <button className={styles.sendButton} onClick={handleSend}>
+                  <FontAwesomeIcon icon={faPaperPlane} />
+                </button>
+              </div>
+            )}
           </motion.div>
         )}
       </AnimatePresence>
