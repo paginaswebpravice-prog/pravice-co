@@ -133,7 +133,7 @@ export default function WhatsAppChat() {
 
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbxkmqzCO4H_fCzvquXq5G_fx6iNic3t76AygZxonVaDXTiQHUCKtzXeE08Qm5XVnlklDA/exec",
+        "https://script.google.com/macros/s/AKfycbzvBQvjk73YBzoGuri8t-flyXC3isxZIotUY1jGodYJ/dev",
         {
           method: "POST",
           headers: {
