@@ -128,8 +128,32 @@ export default function WhatsAppChat() {
     setInput("");
   };
 
-  const handleWhatsAppRedirect = () => {
+  const handleWhatsAppRedirect = async () => {
     const currentPage = window.location.href;
+
+    try {
+      await fetch(
+        "https://docs.google.com/spreadsheets/d/1157xolHXnl_l1m29km1QZuvr6I_rzx2YU0oM1HjcnZI/edit?usp=sharing",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            clientType,
+            name,
+            company,
+            email,
+            newsletter,
+            service,
+            description,
+            page: currentPage,
+          }),
+        },
+      );
+    } catch (error) {
+      console.error("Error al guardar lead:", error);
+    }
 
     const message = `
 📋 *Nueva solicitud de asesoría jurídica*
