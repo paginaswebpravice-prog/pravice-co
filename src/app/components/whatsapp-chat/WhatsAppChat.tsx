@@ -142,12 +142,12 @@ export default function WhatsAppChat() {
           body: JSON.stringify({
             clientType,
             name,
-            company,
-            email,
-            newsletter,
+            company: company || "",
+            email: email || "",
+            newsletter: newsletter || false,
             service,
             description,
-            page: currentPage,
+            page: window.location.href,
           }),
         },
       );
