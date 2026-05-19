@@ -3,9 +3,13 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./WhatsAppChat.module.css";
 import { services } from "./Services";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+
 import { faPaperPlane, faXmark } from "@fortawesome/free-solid-svg-icons";
+
 import { motion, AnimatePresence } from "framer-motion";
 
 type Message = {
@@ -76,16 +80,33 @@ export default function WhatsAppChat() {
 
     addUserMessage(value);
 
+    // =========================================
     // PERSONA - NOMBRE
+    // =========================================
     if (step === 1) {
       setName(value);
 
-      addBotMessage("¿Qué tipo de servicio necesitas?");
+      addBotMessage("Ahora escribe tu correo electrónico.");
 
-      setStep(2);
+      setStep(5);
     }
 
+    // =========================================
+    // PERSONA - EMAIL
+    // =========================================
+    else if (step === 5) {
+      setEmail(value);
+
+      addBotMessage(
+        "¿Aceptas recibir información jurídica, novedades y contenido de interés por parte de Pravice Abogados?",
+      );
+
+      setStep(6);
+    }
+
+    // =========================================
     // EMPRESA - NOMBRE CONTACTO
+    // =========================================
     else if (step === 10) {
       setName(value);
 
@@ -94,7 +115,9 @@ export default function WhatsAppChat() {
       setStep(11);
     }
 
+    // =========================================
     // EMPRESA - EMPRESA
+    // =========================================
     else if (step === 11) {
       setCompany(value);
 
@@ -103,7 +126,9 @@ export default function WhatsAppChat() {
       setStep(12);
     }
 
+    // =========================================
     // EMPRESA - EMAIL
+    // =========================================
     else if (step === 12) {
       setEmail(value);
 
@@ -114,7 +139,9 @@ export default function WhatsAppChat() {
       setStep(13);
     }
 
+    // =========================================
     // DESCRIPCIÓN
+    // =========================================
     else if (step === 3) {
       setDescription(value);
 
@@ -131,51 +158,49 @@ export default function WhatsAppChat() {
   const handleWhatsAppRedirect = async () => {
     const currentPage = window.location.href;
 
-    // =========================
+    // =========================================
     // GUARDAR EN GOOGLE SHEETS
-    // =========================
+    // =========================================
 
     try {
       console.log("Guardando lead...");
 
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzTc7-2jQo_ipIsdL0ZRwqAlb-U2B1D-YMOpiLlSfAGBxCMt9MGbllNH4p0LPmtZwYNeQ/exec",
-        {
-          method: "POST",
+      const response = await fetch("/api/save-lead", {
+        method: "POST",
 
-          // IMPORTANTE:
-          // NO usar Content-Type application/json
-          // para evitar errores CORS con Apps Script
-
-          body: JSON.stringify({
-            clientType,
-            name,
-
-            company: company || "",
-
-            email: email || "",
-
-            newsletter: newsletter || false,
-
-            service,
-
-            description,
-
-            page: currentPage,
-          }),
+        headers: {
+          "Content-Type": "application/json",
         },
-      );
 
-      const result = await response.text();
+        body: JSON.stringify({
+          clientType,
+
+          name,
+
+          company: company || "",
+
+          email: email || "",
+
+          newsletter: newsletter || false,
+
+          service,
+
+          description,
+
+          page: currentPage,
+        }),
+      });
+
+      const result = await response.json();
 
       console.log("Lead guardado:", result);
     } catch (error) {
       console.error("Error guardando lead:", error);
     }
 
-    // =========================
+    // =========================================
     // MENSAJE WHATSAPP
-    // =========================
+    // =========================================
 
     const message = `
 📋 *Nueva solicitud de asesoría jurídica*
@@ -184,15 +209,11 @@ export default function WhatsAppChat() {
 
 🙍 *Nombre:* ${name}
 
-${
-  clientType === "Empresa"
-    ? `🏢 *Empresa:* ${company}
+${clientType === "Empresa" ? `🏢 *Empresa:* ${company}` : ""}
 
-📧 *Correo corporativo:* ${email}
+📧 *Correo:* ${email}
 
-📨 *Acepta recibir información:* ${newsletter ? "Sí" : "No"}`
-    : ""
-}
+📨 *Acepta recibir información:* ${newsletter ? "Sí" : "No"}
 
 ⚖️ *Servicio requerido:* ${service}
 
@@ -324,7 +345,50 @@ ${currentPage}
                 </motion.div>
               )}
 
-              {/* NEWSLETTER */}
+              {/* NEWSLETTER PERSONA */}
+              {step === 6 && (
+                <motion.div
+                  className={styles.optionsGrid}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                >
+                  <button
+                    className={styles.optionCard}
+                    onClick={() => {
+                      addUserMessage("Sí, acepto");
+
+                      setNewsletter(true);
+
+                      addBotMessage(
+                        "Perfecto. ¿Qué tipo de servicio necesitas?",
+                      );
+
+                      setStep(2);
+                    }}
+                  >
+                    ✅ Sí, acepto
+                  </button>
+
+                  <button
+                    className={styles.optionCard}
+                    onClick={() => {
+                      addUserMessage("No deseo recibir información");
+
+                      setNewsletter(false);
+
+                      addBotMessage(
+                        "Perfecto. ¿Qué tipo de servicio necesitas?",
+                      );
+
+                      setStep(2);
+                    }}
+                  >
+                    ❌ No gracias
+                  </button>
+                </motion.div>
+              )}
+
+              {/* NEWSLETTER EMPRESA */}
               {step === 13 && (
                 <motion.div
                   className={styles.optionsGrid}
@@ -412,27 +476,31 @@ ${currentPage}
             </div>
 
             {/* INPUT */}
-            {step !== 0 && step !== 2 && step !== 4 && step !== 13 && (
-              <div className={styles.inputArea}>
-                <input
-                  autoFocus
-                  type="text"
-                  value={input}
-                  onChange={(e) => setInput(e.target.value)}
-                  placeholder="Escribe tu respuesta..."
-                  className={styles.chatInput}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter") {
-                      handleSend();
-                    }
-                  }}
-                />
+            {step !== 0 &&
+              step !== 2 &&
+              step !== 4 &&
+              step !== 6 &&
+              step !== 13 && (
+                <div className={styles.inputArea}>
+                  <input
+                    autoFocus
+                    type="text"
+                    value={input}
+                    onChange={(e) => setInput(e.target.value)}
+                    placeholder="Escribe tu respuesta..."
+                    className={styles.chatInput}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") {
+                        handleSend();
+                      }
+                    }}
+                  />
 
-                <button className={styles.sendButton} onClick={handleSend}>
-                  <FontAwesomeIcon icon={faPaperPlane} />
-                </button>
-              </div>
-            )}
+                  <button className={styles.sendButton} onClick={handleSend}>
+                    <FontAwesomeIcon icon={faPaperPlane} />
+                  </button>
+                </div>
+              )}
           </motion.div>
         )}
       </AnimatePresence>
