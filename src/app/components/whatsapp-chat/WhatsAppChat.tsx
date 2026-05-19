@@ -3,9 +3,13 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./WhatsAppChat.module.css";
 import { services } from "./Services";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+
 import { faPaperPlane, faXmark } from "@fortawesome/free-solid-svg-icons";
+
 import { motion, AnimatePresence } from "framer-motion";
 
 type Message = {
@@ -56,7 +60,7 @@ export default function WhatsAppChat() {
           text,
         },
       ]);
-    }, 400);
+    }, 350);
   };
 
   const addUserMessage = (text: string) => {
@@ -131,29 +135,50 @@ export default function WhatsAppChat() {
   const handleWhatsAppRedirect = async () => {
     const currentPage = window.location.href;
 
+    // =========================
+    // GUARDAR EN GOOGLE SHEETS
+    // =========================
+
     try {
-      await fetch(
+      console.log("Guardando lead...");
+
+      const response = await fetch(
         "https://script.google.com/macros/s/AKfycbzvBQvjk73YBzoGuri8t-flyXC3isxZIotUY1jGodYJ/exec",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
+
           body: JSON.stringify({
             clientType,
             name,
+
             company: company || "",
+
             email: email || "",
+
             newsletter: newsletter || false,
+
             service,
+
             description,
-            page: window.location.href,
+
+            page: currentPage,
           }),
         },
       );
+
+      const result = await response.text();
+
+      console.log("Lead guardado:", result);
     } catch (error) {
-      console.error("Error al guardar lead:", error);
+      console.error("Error guardando lead:", error);
     }
+
+    // =========================
+    // MENSAJE WHATSAPP
+    // =========================
 
     const message = `
 📋 *Nueva solicitud de asesoría jurídica*
@@ -168,8 +193,7 @@ ${
 
 📧 *Correo corporativo:* ${email}
 
-📨 *Acepta recibir información:* ${newsletter ? "Sí" : "No"}
-`
+📨 *Acepta recibir información:* ${newsletter ? "Sí" : "No"}`
     : ""
 }
 
@@ -202,15 +226,30 @@ ${currentPage}
         {open && (
           <motion.div
             className={styles.chatContainer}
-            initial={{ opacity: 0, y: 40, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 40, scale: 0.95 }}
-            transition={{ duration: 0.25 }}
+            initial={{
+              opacity: 0,
+              y: 40,
+              scale: 0.95,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+            }}
+            exit={{
+              opacity: 0,
+              y: 40,
+              scale: 0.95,
+            }}
+            transition={{
+              duration: 0.25,
+            }}
           >
             {/* HEADER */}
             <div className={styles.header}>
               <div>
                 <h3>Pravice Abogados</h3>
+
                 <p>Normalmente respondemos en minutos</p>
               </div>
             </div>
@@ -233,7 +272,9 @@ ${currentPage}
                     opacity: 1,
                     x: 0,
                   }}
-                  transition={{ duration: 0.25 }}
+                  transition={{
+                    duration: 0.25,
+                  }}
                 >
                   <div
                     className={
