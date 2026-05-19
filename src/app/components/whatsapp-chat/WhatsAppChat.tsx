@@ -168,26 +168,29 @@ export default function WhatsAppChat() {
     const currentPage = window.location.href;
 
     // =========================
-    // GOOGLE SHEETS
+    // GUARDAR LEAD
     // =========================
 
     try {
-      const params = new URLSearchParams({
-        clientType,
-        name,
-        company,
-        email,
-        newsletter: newsletter ? "Sí" : "No",
-        service,
-        description,
-        page: currentPage,
-      });
-
       await fetch(
-        `https://script.google.com/macros/s/AKfycbzTc7-2jQo_ipIsdL0ZRwqAlb-U2B1D-YMOpiLlSfAGBxCMt9MGbllNH4p0LPmtZwYNeQ/exec?${params.toString()}`,
+        "https://script.google.com/macros/s/AKfycbzTc7-2jQo_ipIsdL0ZRwqAlb-U2B1D-YMOpiLlSfAGBxCMt9MGbllNH4p0LPmtZwYNeQ/exec",
         {
-          method: "GET",
-          mode: "no-cors",
+          method: "POST",
+
+          // IMPORTANTE:
+          // NO usar Content-Type
+          // para evitar preflight CORS
+
+          body: JSON.stringify({
+            clientType,
+            name,
+            company,
+            email,
+            newsletter,
+            service,
+            description,
+            page: currentPage,
+          }),
         },
       );
 
