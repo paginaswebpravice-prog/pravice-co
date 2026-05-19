@@ -3,13 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./WhatsAppChat.module.css";
 import { services } from "./Services";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-
 import { faPaperPlane, faXmark } from "@fortawesome/free-solid-svg-icons";
-
 import { motion, AnimatePresence } from "framer-motion";
 
 type Message = {
@@ -146,9 +142,10 @@ export default function WhatsAppChat() {
         "https://script.google.com/macros/s/AKfycbzTc7-2jQo_ipIsdL0ZRwqAlb-U2B1D-YMOpiLlSfAGBxCMt9MGbllNH4p0LPmtZwYNeQ/exec",
         {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
+
+          // IMPORTANTE:
+          // NO usar Content-Type application/json
+          // para evitar errores CORS con Apps Script
 
           body: JSON.stringify({
             clientType,
