@@ -165,31 +165,34 @@ export default function WhatsAppChat() {
     try {
       console.log("Guardando lead...");
 
-      const response = await fetch("/api/save-lead", {
-        method: "POST",
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbzTc7-2jQo_ipIsdL0ZRwqAlb-U2B1D-YMOpiLlSfAGBxCMt9MGbllNH4p0LPmtZwYNeQ/exec",
+        {
+          method: "POST",
 
-        headers: {
-          "Content-Type": "application/json",
+          headers: {
+            "Content-Type": "application/json",
+          },
+
+          body: JSON.stringify({
+            clientType,
+
+            name,
+
+            company: company || "",
+
+            email: email || "",
+
+            newsletter: newsletter || false,
+
+            service,
+
+            description,
+
+            page: currentPage,
+          }),
         },
-
-        body: JSON.stringify({
-          clientType,
-
-          name,
-
-          company: company || "",
-
-          email: email || "",
-
-          newsletter: newsletter || false,
-
-          service,
-
-          description,
-
-          page: currentPage,
-        }),
-      });
+      );
 
       const result = await response.json();
 
