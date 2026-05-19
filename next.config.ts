@@ -19,14 +19,14 @@ const nextConfig: NextConfig = {
           {
             key: "Content-Security-Policy",
             value: `
-              default-src 'self';
-              script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://maps.gstatic.com https://www.youtube.com https://www.youtube-nocookie.com;
-              style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-              img-src 'self' data: https://maps.googleapis.com https://maps.gstatic.com https: https://i.ytimg.com;
-              font-src 'self' https://fonts.gstatic.com;
-              connect-src 'self' https://maps.googleapis.com;
-              frame-src https://www.google.com https://maps.google.com https://www.youtube.com https://www.youtube-nocookie.com;
-            `.replace(/\n/g, ""),
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://maps.gstatic.com https://www.youtube.com https://www.youtube-nocookie.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    img-src 'self' data: https://maps.googleapis.com https://maps.gstatic.com https: https://i.ytimg.com;
+    font-src 'self' https://fonts.gstatic.com;
+    connect-src 'self' https://maps.googleapis.com https://script.google.com https://script.googleusercontent.com;
+    frame-src https://www.google.com https://maps.google.com https://www.youtube.com https://www.youtube-nocookie.com;
+  `.replace(/\n/g, ""),
           },
         ],
       },
