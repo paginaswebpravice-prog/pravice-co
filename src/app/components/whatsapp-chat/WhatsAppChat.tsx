@@ -143,7 +143,7 @@ export default function WhatsAppChat() {
       console.log("Guardando lead...");
 
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzvBQvjk73YBzoGuri8t-flyXC3isxZIotUY1jGodYJ/exec",
+        "https://script.google.com/macros/s/AKfycbzTc7-2jQo_ipIsdL0ZRwqAlb-U2B1D-YMOpiLlSfAGBxCMt9MGbllNH4p0LPmtZwYNeQ/exec",
         {
           method: "POST",
           headers: {
