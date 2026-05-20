@@ -4,6 +4,7 @@ import styles from "../styles/Hero.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import WhatsAppChat from "./whatsapp-chat/WhatsAppChat";
 
 export default function Hero() {
   const schema = {
