@@ -83,70 +83,53 @@ export default function WhatsAppChat() {
     ]);
   };
 
-  const redirectToWhatsApp = async (
-    finalPhone?: string,
-    finalDescription?: string,
-  ) => {
+  const redirectToWhatsApp = async (finalDescription: string) => {
     const currentPage = window.location.href;
 
-    const finalPhoneValue = finalPhone || phone;
+    console.log("EJECUTANDO redirectToWhatsApp");
 
-    const finalDescriptionValue = finalDescription || description;
-
-    // =========================
-    // DEBUG
-    // =========================
-
-    console.log("DATOS A ENVIAR:", {
+    console.log({
       clientType,
       name,
       company,
       email,
-      phone: finalPhoneValue,
+      phone,
       newsletter,
       service,
-      description: finalDescriptionValue,
+      description: finalDescription,
       page: currentPage,
     });
 
-    // =========================
-    // GOOGLE SHEETS
-    // =========================
-
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbxoGXu6foIpfj21tc7OSGI0KHibfQKC92SHKzdPx-kFzFzLajkgePRqK9p0q3080UBegQ/exec",
+        "https://script.google.com/macros/s/AKfycbyciaDwQig5DsEp5hCNbXff2ZgWjXdp42HHV2iADWsEOhxC-NIsOsQKQxBNRf25Pje7/exec",
         {
           method: "POST",
 
           mode: "no-cors",
 
           headers: {
-            "Content-Type": "text/plain;charset=utf-8",
+            "Content-Type": "application/json",
           },
 
           body: JSON.stringify({
             clientType,
             name,
-            company,
             email,
-            phone: finalPhoneValue,
-            newsletter,
+            company,
+            phone,
+            newsletter: newsletter ? "Sí" : "No",
             service,
-            description: finalDescriptionValue,
+            description: finalDescription,
             page: currentPage,
           }),
         },
       );
 
-      console.log("LEAD ENVIADO");
+      console.log("Lead enviado correctamente");
     } catch (error) {
       console.error("Error enviando lead:", error);
     }
-
-    // =========================
-    // MENSAJE WHATSAPP
-    // =========================
 
     const message = `
 📋 *Nueva solicitud de asesoría jurídica*
@@ -155,7 +138,7 @@ export default function WhatsAppChat() {
 
 🙍 *Nombre:* ${name}
 
-📞 *Teléfono:* ${finalPhoneValue}
+📞 *Teléfono:* ${phone}
 
 📧 *Correo:* ${email}
 
@@ -166,7 +149,7 @@ ${clientType === "Empresa" ? `🏢 *Empresa:* ${company}` : ""}
 ⚖️ *Servicio requerido:* ${service}
 
 📝 *Descripción del caso:*  
-${finalDescriptionValue}
+${finalDescription}
 
 🌐 *Página de origen:*  
 ${currentPage}
@@ -174,10 +157,9 @@ ${currentPage}
 
     const phoneNumber = "573114659315";
 
-    window.open(
-      `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
-      "_blank",
-    );
+    window.location.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message,
+    )}`;
   };
 
   const handleSend = () => {
@@ -192,6 +174,8 @@ ${currentPage}
     // =========================
 
     if (step === 1) {
+      setCompany("");
+
       setName(value);
 
       addBotMessage("Ahora escribe tu correo electrónico.");
@@ -214,8 +198,6 @@ ${currentPage}
     // PERSONA - TELÉFONO
     // =========================
     else if (step === 6) {
-      console.log("TELÉFONO PERSONA INPUT:", value);
-
       setPhone(value);
 
       addBotMessage(
@@ -226,7 +208,7 @@ ${currentPage}
     }
 
     // =========================
-    // EMPRESA - NOMBRE CONTACTO
+    // EMPRESA - CONTACTO
     // =========================
     else if (step === 10) {
       setName(value);
@@ -262,8 +244,6 @@ ${currentPage}
     // EMPRESA - TELÉFONO
     // =========================
     else if (step === 14) {
-      console.log("TELÉFONO EMPRESA INPUT:", value);
-
       setPhone(value);
 
       addBotMessage(
@@ -277,19 +257,37 @@ ${currentPage}
     // DESCRIPCIÓN FINAL
     // =========================
     else if (step === 3) {
-      console.log("DESCRIPCIÓN INPUT:", value);
-
       setDescription(value);
+
+      console.log("ENTRÓ AL STEP 3");
+
+      console.log({
+        clientType,
+        name,
+        email,
+        company,
+        phone,
+        newsletter,
+        service,
+        description: value,
+      });
+
+      redirectToWhatsApp(value);
 
       setInput("");
 
-      setTimeout(() => {
-        redirectToWhatsApp(phone || value, value);
-      }, 300);
-
       return;
     }
-
+    console.log({
+      clientType,
+      name,
+      email,
+      company,
+      phone,
+      newsletter,
+      service,
+      description: value,
+    });
     setInput("");
   };
 
@@ -385,6 +383,8 @@ ${currentPage}
                       addUserMessage("Persona");
 
                       setClientType("Persona");
+
+                      setCompany("");
 
                       addBotMessage("Perfecto. Escribe tu nombre completo.");
 
