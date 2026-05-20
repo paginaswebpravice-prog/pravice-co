@@ -114,12 +114,16 @@ export default function WhatsAppChat() {
     // =========================
 
     try {
-      fetch(
+      await fetch(
         "https://script.google.com/macros/s/AKfycbw6qUfUtO-Fx6t5iRSSrpvKg62W1f_zyzxBE2ceD-3_TCP8NwEUahIpnHJu-G9WWsX-uw/exec",
         {
           method: "POST",
 
           mode: "no-cors",
+
+          headers: {
+            "Content-Type": "text/plain;charset=utf-8",
+          },
 
           body: JSON.stringify({
             clientType,
