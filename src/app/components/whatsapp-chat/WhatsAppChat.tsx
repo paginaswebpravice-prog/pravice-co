@@ -45,6 +45,8 @@ export default function WhatsAppChat() {
 
   const [email, setEmail] = useState("");
 
+  const [phone, setPhone] = useState("");
+
   const [newsletter, setNewsletter] = useState(false);
 
   const [service, setService] = useState("");
@@ -81,6 +83,80 @@ export default function WhatsAppChat() {
     ]);
   };
 
+  const redirectToWhatsApp = async (
+    finalPhone?: string,
+    finalDescription?: string,
+  ) => {
+    const currentPage = window.location.href;
+
+    const finalPhoneValue = finalPhone || phone;
+
+    const finalDescriptionValue = finalDescription || description;
+
+    // =========================
+    // GUARDAR EN GOOGLE SHEETS
+    // =========================
+
+    try {
+      fetch(
+        "https://script.google.com/macros/s/AKfycbw6qUfUtO-Fx6t5iRSSrpvKg62W1f_zyzxBE2ceD-3_TCP8NwEUahIpnHJu-G9WWsX-uw/exec",
+        {
+          method: "POST",
+
+          mode: "no-cors",
+
+          body: JSON.stringify({
+            clientType,
+            name,
+            company,
+            email,
+            phone: finalPhoneValue,
+            newsletter,
+            service,
+            description: finalDescriptionValue,
+            page: currentPage,
+          }),
+        },
+      );
+    } catch (error) {
+      console.error("Error guardando lead:", error);
+    }
+
+    // =========================
+    // MENSAJE WHATSAPP
+    // =========================
+
+    const message = `
+📋 *Nueva solicitud de asesoría jurídica*
+
+👤 *Tipo de cliente:* ${clientType}
+
+🙍 *Nombre:* ${name}
+
+📞 *Teléfono:* ${finalPhoneValue}
+
+📧 *Correo:* ${email}
+
+${clientType === "Empresa" ? `🏢 *Empresa:* ${company}` : ""}
+
+📨 *Acepta recibir información:* ${newsletter ? "Sí" : "No"}
+
+⚖️ *Servicio requerido:* ${service}
+
+📝 *Descripción del caso:*  
+${finalDescriptionValue}
+
+🌐 *Página de origen:*  
+${currentPage}
+`.trim();
+
+    const phoneNumber = "573114659315";
+
+    window.location.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message,
+    )}`;
+  };
+
   const handleSend = () => {
     if (!input.trim()) return;
 
@@ -105,6 +181,17 @@ export default function WhatsAppChat() {
     // =========================
     else if (step === 5) {
       setEmail(value);
+
+      addBotMessage("Ahora escribe tu número de teléfono.");
+
+      setStep(6);
+    }
+
+    // =========================
+    // PERSONA - TELÉFONO
+    // =========================
+    else if (step === 6) {
+      setPhone(value);
 
       addBotMessage(
         "¿Aceptas recibir información jurídica, novedades y contenido de interés por parte de Pravice Abogados?",
@@ -141,6 +228,17 @@ export default function WhatsAppChat() {
     else if (step === 12) {
       setEmail(value);
 
+      addBotMessage("Ahora escribe tu número de teléfono.");
+
+      setStep(14);
+    }
+
+    // =========================
+    // EMPRESA - TELÉFONO
+    // =========================
+    else if (step === 14) {
+      setPhone(value);
+
       addBotMessage(
         "¿Aceptas recibir información jurídica, novedades y contenido de interés por parte de Pravice Abogados?",
       );
@@ -149,88 +247,25 @@ export default function WhatsAppChat() {
     }
 
     // =========================
-    // DESCRIPCIÓN
+    // DESCRIPCIÓN FINAL
     // =========================
     else if (step === 3) {
-      setDescription(value);
+      const finalDescription = value;
 
-      addBotMessage(
-        "Perfecto ✅ Ahora serás dirigido a un asesor vía WhatsApp.",
-      );
+      const finalPhone = phone;
 
-      setStep(4);
+      setDescription(finalDescription);
+
+      setInput("");
+
+      setTimeout(() => {
+        redirectToWhatsApp(finalPhone, finalDescription);
+      }, 300);
+
+      return;
     }
 
     setInput("");
-  };
-
-  const handleWhatsAppRedirect = async () => {
-    const currentPage = window.location.href;
-
-    // =========================
-    // GUARDAR LEAD
-    // =========================
-
-    try {
-      await fetch(
-        "https://script.google.com/macros/s/AKfycbzTc7-2jQo_ipIsdL0ZRwqAlb-U2B1D-YMOpiLlSfAGBxCMt9MGbllNH4p0LPmtZwYNeQ/exec",
-        {
-          method: "POST",
-
-          // IMPORTANTE:
-          // NO usar Content-Type
-          // para evitar preflight CORS
-
-          body: JSON.stringify({
-            clientType,
-            name,
-            company,
-            email,
-            newsletter,
-            service,
-            description,
-            page: currentPage,
-          }),
-        },
-      );
-
-      console.log("Lead guardado correctamente");
-    } catch (error) {
-      console.error("Error guardando lead:", error);
-    }
-
-    // =========================
-    // MENSAJE WHATSAPP
-    // =========================
-
-    const message = `
-📋 *Nueva solicitud de asesoría jurídica*
-
-👤 *Tipo de cliente:* ${clientType}
-
-🙍 *Nombre:* ${name}
-
-📧 *Correo:* ${email}
-
-${clientType === "Empresa" ? `🏢 *Empresa:* ${company}` : ""}
-
-📨 *Acepta recibir información:* ${newsletter ? "Sí" : "No"}
-
-⚖️ *Servicio requerido:* ${service}
-
-📝 *Descripción del caso:*  
-${description}
-
-🌐 *Página de origen:*  
-${currentPage}
-`.trim();
-
-    const phone = "573114659315";
-
-    window.open(
-      `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
-      "_blank",
-    );
   };
 
   return (
@@ -425,25 +460,12 @@ ${currentPage}
                 </motion.div>
               )}
 
-              {/* FINAL */}
-
-              {step === 4 && (
-                <motion.button
-                  className={styles.whatsappButton}
-                  onClick={handleWhatsAppRedirect}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                >
-                  Continuar a WhatsApp
-                </motion.button>
-              )}
-
               <div ref={messagesEndRef} />
             </div>
 
             {/* INPUT */}
 
-            {step !== 0 && step !== 2 && step !== 4 && step !== 13 && (
+            {step !== 0 && step !== 2 && step !== 13 && (
               <div className={styles.inputArea}>
                 <input
                   autoFocus
