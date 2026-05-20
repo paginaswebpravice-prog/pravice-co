@@ -93,17 +93,15 @@ export default function WhatsAppChat() {
 
     const finalDescriptionValue = finalDescription || description;
 
-    // =========================
-    // GUARDAR EN GOOGLE SHEETS
-    // =========================
-
     try {
-      fetch(
+      await fetch(
         "https://script.google.com/macros/s/AKfycbw6qUfUtO-Fx6t5iRSSrpvKg62W1f_zyzxBE2ceD-3_TCP8NwEUahIpnHJu-G9WWsX-uw/exec",
         {
           method: "POST",
 
-          mode: "no-cors",
+          headers: {
+            "Content-Type": "text/plain;charset=utf-8",
+          },
 
           body: JSON.stringify({
             clientType,
@@ -118,13 +116,11 @@ export default function WhatsAppChat() {
           }),
         },
       );
-    } catch (error) {
-      console.error("Error guardando lead:", error);
-    }
 
-    // =========================
-    // MENSAJE WHATSAPP
-    // =========================
+      console.log("Lead enviado correctamente");
+    } catch (error) {
+      console.error("Error enviando lead:", error);
+    }
 
     const message = `
 📋 *Nueva solicitud de asesoría jurídica*
@@ -152,9 +148,10 @@ ${currentPage}
 
     const phoneNumber = "573114659315";
 
-    window.location.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message,
-    )}`;
+    window.open(
+      `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
+      "_blank",
+    );
   };
 
   const handleSend = () => {
