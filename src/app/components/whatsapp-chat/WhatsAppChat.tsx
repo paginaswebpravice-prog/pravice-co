@@ -132,26 +132,26 @@ export default function WhatsAppChat() {
     }
 
     const message = `
-📋 *Nueva solicitud de asesoría jurídica*
+- *Nueva solicitud de asesoría jurídica*
 
-👤 *Tipo de cliente:* ${clientType}
+- *Tipo de cliente:* ${clientType}
 
-🙍 *Nombre:* ${name}
+- *Nombre:* ${name}
 
-📞 *Teléfono:* ${phone}
+- *Teléfono:* ${phone}
 
-📧 *Correo:* ${email}
+- *Correo:* ${email}
 
-${clientType === "Empresa" ? `🏢 *Empresa:* ${company}` : ""}
+${clientType === "Empresa" ? `- *Empresa:* ${company}` : ""}
 
-📨 *Acepta recibir información:* ${newsletter ? "Sí" : "No"}
+- *Acepta recibir información:* ${newsletter ? "Sí" : "No"}
 
-⚖️ *Servicio requerido:* ${service}
+- *Servicio requerido:* ${service}
 
-📝 *Descripción del caso:*  
+- *Descripción del caso:*  
 ${finalDescription}
 
-🌐 *Página de origen:*  
+- *Página de origen:*  
 ${currentPage}
 `.trim();
 
