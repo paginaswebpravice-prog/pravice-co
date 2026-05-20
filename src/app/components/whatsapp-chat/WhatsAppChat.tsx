@@ -93,15 +93,33 @@ export default function WhatsAppChat() {
 
     const finalDescriptionValue = finalDescription || description;
 
+    // =========================
+    // DEBUG
+    // =========================
+
+    console.log("DATOS A ENVIAR:", {
+      clientType,
+      name,
+      company,
+      email,
+      phone: finalPhoneValue,
+      newsletter,
+      service,
+      description: finalDescriptionValue,
+      page: currentPage,
+    });
+
+    // =========================
+    // GOOGLE SHEETS
+    // =========================
+
     try {
-      await fetch(
+      fetch(
         "https://script.google.com/macros/s/AKfycbw6qUfUtO-Fx6t5iRSSrpvKg62W1f_zyzxBE2ceD-3_TCP8NwEUahIpnHJu-G9WWsX-uw/exec",
         {
           method: "POST",
 
-          headers: {
-            "Content-Type": "text/plain;charset=utf-8",
-          },
+          mode: "no-cors",
 
           body: JSON.stringify({
             clientType,
@@ -117,10 +135,14 @@ export default function WhatsAppChat() {
         },
       );
 
-      console.log("Lead enviado correctamente");
+      console.log("LEAD ENVIADO");
     } catch (error) {
       console.error("Error enviando lead:", error);
     }
+
+    // =========================
+    // MENSAJE WHATSAPP
+    // =========================
 
     const message = `
 📋 *Nueva solicitud de asesoría jurídica*
@@ -188,6 +210,8 @@ ${currentPage}
     // PERSONA - TELÉFONO
     // =========================
     else if (step === 6) {
+      console.log("TELÉFONO PERSONA INPUT:", value);
+
       setPhone(value);
 
       addBotMessage(
@@ -234,6 +258,8 @@ ${currentPage}
     // EMPRESA - TELÉFONO
     // =========================
     else if (step === 14) {
+      console.log("TELÉFONO EMPRESA INPUT:", value);
+
       setPhone(value);
 
       addBotMessage(
@@ -247,16 +273,14 @@ ${currentPage}
     // DESCRIPCIÓN FINAL
     // =========================
     else if (step === 3) {
-      const finalDescription = value;
+      console.log("DESCRIPCIÓN INPUT:", value);
 
-      const finalPhone = phone;
-
-      setDescription(finalDescription);
+      setDescription(value);
 
       setInput("");
 
       setTimeout(() => {
-        redirectToWhatsApp(finalPhone, finalDescription);
+        redirectToWhatsApp(phone || value, value);
       }, 300);
 
       return;
