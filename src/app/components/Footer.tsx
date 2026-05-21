@@ -199,7 +199,7 @@ export default function Footer() {
 
             <div className={styles.contactItem}>
               <FontAwesomeIcon icon={faPhone} />
-              <span>+57 311 465 9315</span>
+              <span>.</span>
             </div>
 
             <div className={styles.contactItem}>

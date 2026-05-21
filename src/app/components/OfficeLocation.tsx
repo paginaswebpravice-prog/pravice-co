@@ -56,7 +56,7 @@ export default function OfficeLocation() {
           <h3>Pravice Abogados</h3>
           <p>Calle 98 # 22-64 Oficina 716</p>
           <p>Bogotá D.C., Colombia</p>
-          <p>+57 311 465 9315</p>
+          <p>.</p>
         </motion.div>
       </div>
     </section>
