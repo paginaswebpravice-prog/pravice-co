@@ -43,7 +43,7 @@ export default function Header() {
 
             <span>
               <FontAwesomeIcon icon={faPhone} />
-              (601) 3099331
+              +57 311 465 9315
             </span>
           </div>
 
