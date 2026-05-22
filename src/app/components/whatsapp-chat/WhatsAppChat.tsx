@@ -21,9 +21,7 @@ type Message = {
 
 export default function WhatsAppChat() {
   const [open, setOpen] = useState(false);
-
   const [step, setStep] = useState(0);
-
   const [messages, setMessages] = useState<Message[]>([
     {
       type: "bot",
@@ -36,23 +34,15 @@ export default function WhatsAppChat() {
   ]);
 
   const [input, setInput] = useState("");
-
   const [clientType, setClientType] = useState("");
-
   const [name, setName] = useState("");
-
   const [company, setCompany] = useState("");
-
   const [email, setEmail] = useState("");
-
   const [phone, setPhone] = useState("");
-
   const [newsletter, setNewsletter] = useState(false);
-
   const [service, setService] = useState("");
-
   const [description, setDescription] = useState("");
-
+  const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -84,6 +74,7 @@ export default function WhatsAppChat() {
   };
 
   const redirectToWhatsApp = async (finalDescription: string) => {
+    setLoading(true);
     const currentPage = window.location.href;
 
     console.log("EJECUTANDO redirectToWhatsApp");
@@ -157,9 +148,11 @@ ${currentPage}
 
     const phoneNumber = "573114659315";
 
-    window.location.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message,
-    )}`;
+    setTimeout(() => {
+      window.location.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+        message,
+      )}`;
+    }, 1200);
   };
 
   const handleSend = () => {
@@ -511,6 +504,29 @@ ${currentPage}
                 </button>
               </div>
             )}
+          </motion.div>
+        )}
+      </AnimatePresence>
+      <AnimatePresence>
+        {loading && (
+          <motion.div
+            className={styles.loadingOverlay}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <motion.div
+              className={styles.loadingModal}
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+            >
+              <div className={styles.spinner} />
+
+              <h3>Redirigiendo a WhatsApp...</h3>
+
+              <p>Estamos preparando tu solicitud de asesoría jurídica.</p>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

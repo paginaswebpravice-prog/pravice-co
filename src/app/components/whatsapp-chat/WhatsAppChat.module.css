@@ -204,6 +204,66 @@
   cursor: pointer;
 }
 
+.loadingOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+  z-index: 999999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingModal {
+  width: 90%;
+  max-width: 340px;
+
+  background: white;
+  border-radius: 20px;
+
+  padding: 28px 24px;
+
+  text-align: center;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+.loadingModal h3 {
+  margin-top: 18px;
+  margin-bottom: 8px;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.loadingModal p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.spinner {
+  width: 52px;
+  height: 52px;
+
+  margin: 0 auto;
+
+  border-radius: 50%;
+  border: 4px solid #e5e5e5;
+  border-top-color: #25d366;
+
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (max-width: 480px) {
   .chatContainer {
     width: calc(100% - 20px);
