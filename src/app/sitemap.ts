@@ -2,7 +2,9 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://pravice.co";
-  const today = new Date();
+
+  // FECHA ESTÁTICA ÚLTIMA ACTUALIZACIÓN SEO
+  const lastUpdate = new Date("2026-05-27");
 
   const blogArticles = [
     "como-recuperar-cartera-morosa",
@@ -36,13 +38,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "contratos-empresariales-colombia",
     "iguala-juridica-empresas",
   ];
-
-  const blogUrls = blogArticles.map((slug) => ({
-    url: `${baseUrl}/blog/${slug}`,
-    lastModified: today,
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
-  }));
 
   const especialidades = [
     "derecho-comercial",
@@ -80,34 +75,45 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "abogado-Santiago",
   ];
 
-  const especialidadesUrls = especialidades.map((slug) => ({
-    url: `${baseUrl}/especialidades/${slug}`,
-    lastModified: today,
+  // BLOG
+  const blogUrls = blogArticles.map((slug) => ({
+    url: `${baseUrl}/blog/${slug}`,
+    lastModified: lastUpdate,
     changeFrequency: "weekly" as const,
-    priority: 0.9,
+    priority: 0.5,
   }));
 
+  // ESPECIALIDADES
+  const especialidadesUrls = especialidades.map((slug) => ({
+    url: `${baseUrl}/especialidades/${slug}`,
+    lastModified: lastUpdate,
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
+  }));
+
+  // COLOMBIANOS EN EL EXTERIOR
   const colombianosExteriorUrls = colombianosExterior.map((slug) => ({
     url: slug
       ? `${baseUrl}/colombianos-exterior/${slug}`
       : `${baseUrl}/colombianos-exterior`,
-    lastModified: today,
+    lastModified: lastUpdate,
     changeFrequency: "weekly" as const,
-    priority: slug === "" ? 0.95 : 0.9,
+    priority: slug === "" ? 0.7 : 0.6,
   }));
 
+  // ABOGADOS
   const abogadosUrls = abogados.map((slug) => ({
     url: slug ? `${baseUrl}/abogados/${slug}` : `${baseUrl}/abogados`,
-    lastModified: today,
+    lastModified: lastUpdate,
     changeFrequency: "weekly" as const,
-    priority: slug === "" ? 0.95 : 0.9,
+    priority: slug === "" ? 0.75 : 0.7,
   }));
 
   return [
     // HOME
     {
       url: baseUrl,
-      lastModified: today,
+      lastModified: lastUpdate,
       changeFrequency: "weekly",
       priority: 1,
     },
@@ -115,45 +121,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // PÁGINAS PRINCIPALES
     {
       url: `${baseUrl}/videos`,
-      lastModified: today,
+      lastModified: lastUpdate,
       changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/abogados`,
-      lastModified: today,
+      lastModified: lastUpdate,
       changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.75,
     },
     {
       url: `${baseUrl}/especialidades`,
-      lastModified: today,
+      lastModified: lastUpdate,
       changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/abogados`,
-      lastModified: today,
-      changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/colombianos-exterior`,
-      lastModified: today,
+      lastModified: lastUpdate,
       changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/videos`,
-      lastModified: today,
-      changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: today,
+      lastModified: lastUpdate,
       changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.6,
     },
 
     // COLOMBIANOS EXTERIOR
