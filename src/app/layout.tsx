@@ -16,25 +16,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  // ✅ CANONICAL BASE (CLAVE)
   metadataBase: new URL("https://pravice.co"),
 
   title: {
-    default: "Pravice Abogados | Firma de Abogados en Bogotá",
+    default: "Pravice Abogados | Equipo jurídico y soluciones legales",
     template: "%s | Pravice Abogados",
   },
 
   description:
-    "Pravice Abogados es una firma legal en Bogotá con más de 25 años de experiencia ofreciendo asesoría jurídica en derecho laboral, civil, comercial, penal y registro de marcas.",
+    "Pravice Abogados es una firma jurídica en Colombia enfocada en acompañamiento legal, soluciones corporativas y orientación jurídica para empresas y personas.",
 
   keywords: [
-    "abogados en Bogotá",
-    "firma de abogados en Colombia",
-    "derecho laboral Bogotá",
-    "derecho civil Colombia",
-    "registro de marcas Colombia",
-    "abogados especialistas Bogotá",
-    "asesoría legal empresarial",
+    "Pravice Abogados",
+    "firma jurídica Colombia",
+    "equipo jurídico",
+    "acompañamiento legal",
+    "asesoría corporativa",
+    "soluciones jurídicas",
+    "orientación legal empresarial",
   ],
 
   authors: [{ name: "Pravice Abogados" }],
@@ -58,21 +57,23 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Pravice Abogados | Firma de abogados en Bogotá",
+    title: "Pravice Abogados | Soluciones jurídicas y acompañamiento legal",
+
     description:
-      "Firma de abogados en Colombia especializada en asesoría jurídica empresarial y personal. Más de 25 años de experiencia.",
+      "Firma jurídica en Colombia enfocada en acompañamiento legal, soluciones corporativas y orientación jurídica para empresas y personas.",
 
     url: "https://pravice.co",
 
     siteName: "Pravice Abogados",
     locale: "es_CO",
     type: "website",
+
     images: [
       {
         url: "https://pravice.co/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Pravice Abogados - Firma de abogados en Bogotá",
+        alt: "Pravice Abogados - Firma jurídica en Colombia",
       },
     ],
   },
@@ -86,21 +87,29 @@ export default function RootLayout({
   const schema = {
     "@context": "https://schema.org",
     "@type": "LegalService",
+
     name: "Pravice Abogados",
+
     url: "https://pravice.co",
+
     logo: "https://pravice.co/logo_pravice.png",
+
     image: "https://pravice.co/logo_pravice.png",
+
     description:
-      "Firma de abogados en Bogotá especializada en asesoría jurídica empresarial y personal.",
+      "Firma jurídica en Colombia enfocada en acompañamiento legal, soluciones corporativas y orientación jurídica para empresas y personas.",
+
     address: {
       "@type": "PostalAddress",
       addressLocality: "Bogotá",
       addressCountry: "CO",
     },
+
     areaServed: {
       "@type": "Country",
       name: "Colombia",
     },
+
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+57-601-3099331",
@@ -108,10 +117,18 @@ export default function RootLayout({
       areaServed: "CO",
       availableLanguage: "Spanish",
     },
+
+    parentOrganization: {
+      "@type": "LegalService",
+      name: "Abogados Especialistas",
+      url: "https://abogadosespecialistas.com.co",
+    },
+
     sameAs: [
       "https://www.facebook.com/praviceabogadosespecializados",
       "https://www.instagram.com/pravice_abogados/",
       "https://co.linkedin.com/company/praviceabogadosespecializados",
+      "https://abogadosespecialistas.com.co",
     ],
   };
 
@@ -129,12 +146,13 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
 
             window.gtag = function(){
-            window.dataLayer.push(arguments);
+              window.dataLayer.push(arguments);
             };
 
             window.gtag('js', new Date());
+
             window.gtag('config', 'G-MNESPQQ54T');
-        `}
+          `}
         </Script>
 
         {/* Schema */}
@@ -147,7 +165,9 @@ export default function RootLayout({
         </Script>
 
         <Header />
+
         <main>{children}</main>
+
         <Footer />
       </body>
     </html>
