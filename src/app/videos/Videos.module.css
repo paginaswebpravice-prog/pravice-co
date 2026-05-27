@@ -86,6 +86,19 @@
   margin-bottom: 15px;
 }
 
+/* ================= LINK BACKLINK ================= */
+
+.seoBlock a {
+  color: #f7c600;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+}
+
+.seoBlock a:hover {
+  opacity: 0.8;
+}
+
 /* ================= SEO TEXT OCULTO ================= */
 .seoText {
   margin-top: 40px;
@@ -110,5 +123,9 @@
 
   .seoBlock {
     padding: 25px;
+  }
+
+  .seoBlock h2 {
+    font-size: 22px;
   }
 }

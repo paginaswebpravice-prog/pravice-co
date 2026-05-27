@@ -70,15 +70,13 @@ export default function Videos() {
   return (
     <main className={styles.page}>
       <div className={styles.container}>
-        {/* ================= HERO SEO ================= */}
         <motion.h1
           className={styles.title}
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Videos de abogados en Bogotá: divorcios, demandas y asesoría legal en
-          Colombia
+          Videos jurídicos y contenido legal informativo en Colombia
         </motion.h1>
 
         <motion.p
@@ -87,13 +85,12 @@ export default function Videos() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          Explore videos legales creados por abogados expertos en Bogotá
-          Colombia sobre derecho comercial, derecho laboral, divorcios,
-          conciliaciones, cobro de cartera y asesoría jurídica para empresas y
-          personas.
+          En Pravice compartimos videos informativos sobre derecho comercial,
+          derecho laboral, conciliaciones, divorcios, recuperación de cartera y
+          diferentes temas legales de interés para empresas y personas en
+          Colombia.
         </motion.p>
 
-        {/* ================= GRID VIDEOS ================= */}
         <div className={styles.videoGrid}>
           {videos.map((video, index) => (
             <motion.div
@@ -111,68 +108,57 @@ export default function Videos() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
+
               <h3>{video.title}</h3>
             </motion.div>
           ))}
         </div>
 
-        {/* ================= CONTENIDO SEO FUERTE ================= */}
         <section className={styles.seoBlock}>
           <h2>
-            Videos legales en Bogotá sobre divorcios, derecho laboral, cobro de
-            cartera y asesoría jurídica empresarial
+            Recursos audiovisuales sobre temas legales y empresariales en
+            Colombia
           </h2>
 
           <p>
-            En Pravice Abogados, firma ubicada en Bogotá Colombia, ofrecemos
-            contenido jurídico en video enfocado en derecho comercial, derecho
-            laboral, derecho de familia y asesoría jurídica empresarial. Nuestro
-            objetivo es brindar información clara, confiable y útil para
-            empresas y personas en Colombia.
+            Este espacio reúne contenido audiovisual informativo sobre procesos
+            jurídicos, derecho empresarial, conciliaciones, divorcios,
+            obligaciones laborales y recuperación de cartera.
           </p>
 
           <p>
-            Estos videos explican temas como demandas por estafa en Colombia,
-            divorcios por mutuo acuerdo, procesos sin acuerdo, cobro de cartera,
-            conciliaciones legales y obligaciones laborales. Todo el contenido
-            está diseñado por abogados especialistas en Bogotá con experiencia
-            en litigio y asesoría legal.
-          </p>
-
-          <p>
-            Si busca abogados en Bogotá Colombia o asesoría jurídica confiable,
-            estos videos le permitirán entender mejor sus derechos y tomar
-            decisiones informadas en temas legales.
+            Si desea conocer más sobre servicios jurídicos especializados y
+            asesoría legal integral en Colombia, también puede visitar{" "}
+            <a
+              href="https://abogadosespecialistas.com.co/video.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Abogados Especialistas
+            </a>
+            , donde encontrará información adicional sobre diferentes áreas del
+            derecho y servicios legales especializados.
           </p>
         </section>
 
-        {/* ================= SEO OCULTO ================= */}
         <p className={styles.seoText}>
-          abogados en Bogotá Colombia videos legales, derecho comercial
-          Colombia, abogados derecho laboral Bogotá, abogados de familia
-          Colombia, asesoría jurídica empresas Bogotá, conciliaciones legales
-          Colombia, abogados expertos Bogotá Colombia, firma de abogados Bogotá
-          Pravice
+          videos jurídicos Colombia, contenido legal audiovisual, recursos
+          legales Colombia, videos derecho empresarial, videos conciliaciones,
+          videos recuperación de cartera, información legal Colombia
         </p>
 
-        {/* ================= SCHEMA AVANZADO ================= */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "WebPage",
-              name: "Videos de abogados en Bogotá Colombia",
+              "@type": "CollectionPage",
+              name: "Videos jurídicos en Colombia",
               description:
-                "Videos legales sobre derecho comercial, laboral, familiar y asesoría jurídica en Bogotá Colombia.",
+                "Colección de videos informativos sobre derecho empresarial, conciliaciones y temas legales en Colombia.",
               publisher: {
                 "@type": "Organization",
                 name: "Pravice Abogados",
-                address: {
-                  "@type": "PostalAddress",
-                  addressLocality: "Bogotá",
-                  addressCountry: "CO",
-                },
               },
               mainEntity: {
                 "@type": "ItemList",

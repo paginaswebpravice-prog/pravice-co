@@ -4,20 +4,17 @@ import VideosContent from "./VideosContent";
 const canonicalUrl = "https://pravice.co/videos";
 
 export const metadata: Metadata = {
-  title:
-    "Videos de Abogados en Bogotá Colombia | Derecho Comercial, Laboral y Familiar",
+  title: "Videos jurídicos en Colombia | Pravice",
 
   description:
-    "Explora videos legales en Bogotá Colombia sobre derecho comercial, laboral, familia, demandas, conciliaciones y cobro de cartera con abogados expertos.",
+    "Contenido audiovisual e informativo sobre temas legales, conciliaciones, derecho empresarial y recuperación de cartera en Colombia.",
 
   keywords: [
-    "abogados en Bogotá Colombia",
+    "videos jurídicos Colombia",
+    "contenido legal audiovisual",
     "videos legales Colombia",
-    "derecho comercial Bogotá",
-    "derecho laboral Colombia",
-    "abogados de familia Bogotá",
-    "cobro de cartera Colombia",
-    "asesoría jurídica empresas Bogotá",
+    "recursos jurídicos",
+    "videos derecho empresarial",
   ],
 
   alternates: {
@@ -25,14 +22,13 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "Videos de Abogados en Bogotá Colombia | Derecho Comercial, Laboral y Familiar",
+    title: "Videos jurídicos en Colombia | Pravice",
 
     description:
-      "Contenido jurídico en video sobre derecho comercial, laboral, familia y asesoría legal en Colombia.",
+      "Contenido audiovisual sobre temas jurídicos y empresariales en Colombia.",
 
     url: canonicalUrl,
-    siteName: "Pravice Abogados",
+    siteName: "Pravice",
     locale: "es_CO",
     type: "website",
   },
@@ -43,40 +39,6 @@ export const metadata: Metadata = {
   },
 };
 
-const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  name: "Videos de abogados en Bogotá Colombia",
-  description:
-    "Explora videos legales en Bogotá Colombia sobre derecho comercial, laboral, familia, demandas, conciliaciones y cobro de cartera con abogados expertos.",
-  url: canonicalUrl,
-  inLanguage: "es-CO",
-  isPartOf: {
-    "@type": "WebSite",
-    name: "Pravice",
-    url: "https://pravice.co",
-  },
-  about: [
-    "Derecho comercial",
-    "Derecho laboral",
-    "Derecho de familia",
-    "Conciliación",
-    "Cobro de cartera",
-    "Asesoría jurídica empresarial",
-  ],
-};
-
 export default function Page() {
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(schemaData),
-        }}
-      />
-
-      <VideosContent />
-    </>
-  );
+  return <VideosContent />;
 }
