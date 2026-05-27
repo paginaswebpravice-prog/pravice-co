@@ -1,43 +1,28 @@
-// app/abogados/angie-rivera/page.tsx
-
 import type { Metadata } from "next";
 import AngieRiveraContent from "./AngieRiveraContent";
 
 export const metadata: Metadata = {
-  title:
-    "Angie Rivera Abogada en Bogotá Colombia | Derecho Comercial y Recuperación de Cartera",
+  title: "Angie Rivera | Equipo jurídico Pravice Bogotá",
   description:
-    "Conoce a Angie Rivera, abogada en Bogotá especializada en recuperación de cartera, conciliaciones, acuerdos de pago, derecho comercial y procesos ejecutivos.",
-  keywords: [
-    "Angie Rivera abogada",
-    "abogada en Bogotá",
-    "abogada derecho comercial",
-    "recuperación de cartera",
-    "procesos ejecutivos Colombia",
-    "abogada conciliaciones",
-    "abogada cobro de cartera",
-    "abogada empresarial Bogotá",
-  ],
+    "Carta de presentación de Angie Rivera dentro del equipo jurídico Pravice. Apoyo en procesos de cartera, conciliaciones y gestión de conflictos empresariales.",
+
   alternates: {
     canonical: "https://pravice.co/abogados/abogada-Angie",
   },
+
   openGraph: {
-    title:
-      "Angie Rivera Abogada en Bogotá | Recuperación de Cartera y Derecho Comercial",
+    title: "Angie Rivera | Equipo jurídico Pravice",
     description:
-      "Especialista en gestión de cartera, conciliaciones, acuerdos de pago y procesos ejecutivos en Colombia.",
+      "Perfil corporativo dentro del equipo jurídico Pravice en Bogotá Colombia.",
     url: "https://pravice.co/abogados/abogada-Angie",
     siteName: "Pravice",
     locale: "es_CO",
     type: "profile",
-    images: [
-      {
-        url: "https://pravice.co/doc-angieImage.jpg",
-        width: 1200,
-        height: 1600,
-        alt: "Angie Rivera abogada en Bogotá Colombia",
-      },
-    ],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

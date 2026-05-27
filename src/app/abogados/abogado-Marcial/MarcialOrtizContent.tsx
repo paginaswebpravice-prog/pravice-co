@@ -38,115 +38,62 @@ export default function MarcialOrtizContent() {
             <p className={styles.role}>Especialista en Derecho Laboral</p>
           </div>
 
-          {/* PERFIL */}
-          <div className={styles.card}>
-            <h2>Perfil profesional</h2>
+          {/* CARTA DE PRESENTACIÓN */}
+          <motion.section
+            className={styles.card}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2>Carta de presentación</h2>
 
             <p>
-              Abogado de la Universidad Militar Nueva Granada, especialista en
-              Derecho Laboral por la Pontificia Universidad Javeriana y Magíster
-              en Prevención de Riesgos Laborales por la Universidad
-              Internacional de La Rioja (España).
+              Marcial Ortiz Ballesteros hace parte del equipo jurídico de
+              Pravice Abogados, enfocando su ejercicio profesional en Derecho
+              Laboral, relaciones laborales y prevención de riesgos en entornos
+              empresariales.
             </p>
-
-            <br />
 
             <p>
-              Marcial Ortiz Ballesteros cuenta con amplia experiencia como
-              Director de Recursos Humanos, consultor empresarial, litigante y
-              docente universitario, integrando la práctica jurídica laboral con
-              la gestión estratégica del talento humano y la prevención de
-              riesgos en entornos organizacionales.
+              Su trayectoria integra experiencia en consultoría, gestión humana
+              y asesoría jurídica laboral, brindando acompañamiento estratégico
+              a empresas y organizaciones en Colombia.
             </p>
-          </div>
 
-          {/* ÁREAS */}
-          <div className={styles.card}>
-            <h2>Áreas de especialidad</h2>
+            <p>
+              Puedes conocer el{" "}
+              <a
+                href="https://abogadosespecialistas.com.co/abogados/abogados-marcial-ortiz.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                perfil profesional de Marcial Ortiz en detalle
+              </a>
+              .
+            </p>
+          </motion.section>
 
-            <div className={styles.list}>
-              <div className={styles.item}>
-                <span>⚖</span>
+          {/* ENFOQUE PROFESIONAL */}
+          <motion.section
+            className={styles.card}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2>Enfoque profesional</h2>
 
-                <p>Derecho Laboral individual y colectivo.</p>
-              </div>
-
-              <div className={styles.item}>
-                <span>👥</span>
-
-                <p>Gestión de Recursos Humanos y relaciones laborales.</p>
-              </div>
-
-              <div className={styles.item}>
-                <span>⚠</span>
-
-                <p>Prevención de riesgos laborales y salud en el trabajo.</p>
-              </div>
-
-              <div className={styles.item}>
-                <span>📑</span>
-
-                <p>
-                  Consultoría empresarial en cumplimiento normativo laboral.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>🎓</span>
-
-                <p>
-                  Formación, capacitación y conferencias en temas laborales de
-                  actualidad.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* ENFOQUE */}
-          <div className={styles.card}>
-            <h2>Enfoque de trabajo</h2>
-
-            <div className={styles.list}>
-              <div className={styles.item}>
-                <span>✓</span>
-
-                <p>
-                  Integración de la perspectiva jurídica y la gestión humana
-                  para prevenir conflictos laborales.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>✓</span>
-
-                <p>
-                  Diseño de estrategias laborales alineadas con la normatividad
-                  vigente y los objetivos de la organización.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>✓</span>
-
-                <p>
-                  Acompañamiento técnico a empresas y firmas de abogados en
-                  casos complejos y en la toma de decisiones estratégicas.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>✓</span>
-
-                <p>
-                  Formación continua a través de docencia y conferencias,
-                  aportando actualización y claridad en materia laboral.
-                </p>
-              </div>
-            </div>
-          </div>
+            <p>
+              Su enfoque se orienta a la prevención de conflictos laborales, el
+              cumplimiento normativo y la construcción de estrategias jurídicas
+              alineadas con la gestión humana y los objetivos organizacionales.
+            </p>
+          </motion.section>
         </motion.div>
       </section>
 
+      {/* JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -156,8 +103,6 @@ export default function MarcialOrtizContent() {
             name: "Marcial Ortiz",
             jobTitle: "Abogado especialista en derecho laboral",
             image: "https://pravice.co/doc-marcialImage.jpg",
-            description:
-              "Abogado especialista en derecho laboral, recursos humanos y prevención de riesgos laborales en Bogotá Colombia.",
             url: "https://pravice.co/abogados/abogado-Marcial",
             worksFor: {
               "@type": "Organization",
@@ -168,6 +113,12 @@ export default function MarcialOrtizContent() {
               addressLocality: "Bogotá",
               addressCountry: "CO",
             },
+            knowsAbout: [
+              "Derecho laboral",
+              "Relaciones laborales",
+              "Gestión humana",
+              "Prevención de riesgos laborales",
+            ],
           }),
         }}
       />

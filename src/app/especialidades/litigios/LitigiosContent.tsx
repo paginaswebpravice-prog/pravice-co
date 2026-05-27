@@ -14,23 +14,26 @@ export default function LitigiosContent() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className={styles.badge}>Litigios en Bogotá y Colombia</span>
+          <span className={styles.badge}>
+            Litigios y procesos judiciales empresariales
+          </span>
 
           <h1 className={styles.title}>
-            Litigios en Bogotá y Colombia: abogados expertos en defensa judicial
-            para empresas
+            Litigios empresariales en Colombia: gestión estratégica de procesos
+            judiciales y controversias legales
           </h1>
 
           <p className={styles.description}>
-            Defiende los intereses de tu empresa con abogados expertos en
-            litigios en Colombia. Representación judicial en Bogotá y a nivel
-            nacional en procesos civiles, comerciales y ejecutivos.
+            Conoce aspectos clave sobre litigios empresariales en Colombia,
+            procesos civiles, comerciales y ejecutivos, así como estrategias de
+            prevención y gestión jurídica para empresas y organizaciones.
           </p>
 
           <div className={styles.actions}>
             <a href="#contacto" className={styles.primary}>
-              Iniciar proceso legal
+              Solicitar orientación jurídica
             </a>
+
             <a href="/blog" className={styles.secondary}>
               Ver blog legal
             </a>
@@ -40,6 +43,24 @@ export default function LitigiosContent() {
 
       {/* CONTENIDO */}
       <main className={styles.container}>
+        {/* PORTAL SEO */}
+        <section className={styles.portalSeo}>
+          <p>
+            Si buscas representación judicial especializada y acompañamiento en
+            procesos civiles, comerciales o litigios empresariales complejos,
+            puedes consultar nuestro portal principal de{" "}
+            <a
+              href="https://abogadosespecialistas.com.co/litigios-abogado-litigante.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              abogados litigantes y litigios en Colombia
+            </a>
+            , donde encontrarás información más amplia sobre defensa judicial,
+            estrategias procesales y representación legal empresarial.
+          </p>
+        </section>
+
         {/* INTRO */}
         <motion.section
           className={styles.section}
@@ -49,37 +70,38 @@ export default function LitigiosContent() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            ¿Qué son los litigios en Colombia y cuándo necesitas un abogado?
+            ¿Qué son los litigios empresariales y cómo funcionan en Colombia?
           </h2>
 
           <p className={styles.text}>
-            Los litigios en Colombia son procesos judiciales mediante los cuales
-            una persona o empresa acude a los tribunales para resolver un
-            conflicto legal. Estos procesos son fundamentales cuando no es
-            posible llegar a un acuerdo previo entre las partes.
+            Los litigios empresariales en Colombia corresponden a controversias
+            legales que deben resolverse mediante procesos judiciales ante
+            juzgados o tribunales. Estos conflictos pueden originarse por
+            incumplimientos contractuales, disputas comerciales, obligaciones
+            pendientes, conflictos societarios o reclamaciones civiles.
           </p>
 
           <div className={styles.highlightBox}>
-            <strong>Importante:</strong> Un litigio mal gestionado puede generar
-            pérdidas económicas significativas y afectar la estabilidad de una
-            empresa.
+            <strong>Importante:</strong> Una estrategia procesal adecuada puede
+            reducir riesgos financieros, sanciones y afectaciones operativas
+            para las empresas.
           </div>
 
           <p className={styles.text}>
-            En ciudades como Bogotá, donde existe una alta actividad
-            empresarial, los litigios comerciales, civiles y contractuales son
-            frecuentes, por lo que contar con representación legal especializada
-            es clave para obtener resultados favorables.
+            En ciudades como Bogotá, donde existe una alta actividad económica y
+            empresarial, los litigios comerciales y civiles forman parte del
+            entorno corporativo y requieren análisis jurídico, gestión
+            documental y seguimiento procesal constante.
           </p>
 
           <p className={styles.text}>
-            Un buen manejo del litigio no solo implica conocimiento jurídico,
-            sino también estrategia, análisis del caso y una correcta ejecución
-            procesal.
+            La gestión de litigios no solo implica acudir a un proceso judicial,
+            sino también evaluar riesgos, estructurar estrategias legales y
+            analizar alternativas preventivas o conciliatorias según cada caso.
           </p>
         </motion.section>
 
-        {/* TIPOS DE LITIGIOS */}
+        {/* TIPOS */}
         <motion.section
           className={styles.section}
           initial={{ opacity: 0, y: 40 }}
@@ -88,27 +110,26 @@ export default function LitigiosContent() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            Tipos de litigios en Colombia que pueden afectar a tu empresa o
-            negocio
+            Tipos de litigios y procesos judiciales empresariales en Colombia
           </h2>
 
           <div className={styles.grid}>
             {[
               {
                 title: "Litigios civiles",
-                text: "Conflictos entre personas o empresas relacionados con obligaciones y bienes.",
+                text: "Procesos relacionados con obligaciones, responsabilidad civil y conflictos patrimoniales.",
               },
               {
                 title: "Litigios comerciales",
-                text: "Disputas derivadas de contratos, negocios y relaciones empresariales.",
+                text: "Controversias derivadas de contratos, relaciones mercantiles y operaciones empresariales.",
               },
               {
                 title: "Procesos ejecutivos",
-                text: "Acciones legales para exigir el pago de deudas con respaldo jurídico.",
+                text: "Acciones judiciales orientadas al cobro de obligaciones respaldadas jurídicamente.",
               },
               {
-                title: "Litigios contractuales",
-                text: "Incumplimiento de contratos entre empresas o particulares.",
+                title: "Conflictos contractuales",
+                text: "Procesos asociados a incumplimientos o interpretación de acuerdos comerciales.",
               },
             ].map((item, i) => (
               <motion.div
@@ -127,8 +148,9 @@ export default function LitigiosContent() {
           </div>
 
           <p className={styles.text}>
-            Identificar correctamente el tipo de litigio permite diseñar una
-            estrategia legal adecuada y aumentar las probabilidades de éxito.
+            Identificar correctamente el tipo de proceso judicial permite
+            estructurar estrategias jurídicas más eficientes y mejorar la
+            administración de riesgos legales empresariales.
           </p>
         </motion.section>
 
@@ -141,29 +163,29 @@ export default function LitigiosContent() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            Importancia de una estrategia legal en litigios en Colombia para
-            ganar tu caso
+            Importancia de la estrategia jurídica en litigios empresariales
           </h2>
 
           <p className={styles.text}>
-            En Colombia, los procesos judiciales pueden ser complejos y
-            prolongados. Por esta razón, contar con una estrategia clara desde
-            el inicio es fundamental.
+            Los procesos judiciales pueden impactar la estabilidad financiera,
+            reputacional y operativa de una empresa. Por ello, la planeación
+            jurídica y el análisis preventivo son fundamentales dentro de la
+            gestión empresarial moderna.
           </p>
 
           <div className={styles.infoGrid}>
             {[
               {
-                title: "✔ Análisis del caso",
-                text: "Evaluación detallada para definir la mejor estrategia.",
+                title: "✔ Análisis de riesgos",
+                text: "Evaluación jurídica y procesal antes de iniciar acciones legales.",
               },
               {
-                title: "✔ Representación efectiva",
-                text: "Defensa sólida ante juzgados y tribunales.",
+                title: "✔ Gestión documental",
+                text: "Organización de pruebas, contratos y soportes procesales.",
               },
               {
-                title: "✔ Reducción de riesgos",
-                text: "Minimiza pérdidas económicas y legales.",
+                title: "✔ Estrategia procesal",
+                text: "Definición de mecanismos legales según cada controversia.",
               },
             ].map((item, i) => (
               <motion.div
@@ -189,20 +211,20 @@ export default function LitigiosContent() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            Riesgos de enfrentar un litigio sin abogado en Colombia: pérdidas y
-            sanciones
+            Riesgos de una mala gestión de litigios empresariales
           </h2>
 
           <div className={styles.warningBox}>
-            ⚠ Enfrentar un proceso judicial sin asesoría especializada puede
-            resultar en pérdidas económicas, sanciones legales y fallos
-            desfavorables.
+            ⚠ Una gestión inadecuada de procesos judiciales puede generar
+            pérdidas económicas, sanciones, bloqueos operativos y afectaciones
+            reputacionales para las empresas.
           </div>
 
           <p className={styles.text}>
-            Muchas empresas en Bogotá y Colombia subestiman la complejidad de
-            los litigios, lo que puede llevar a errores procesales y
-            consecuencias graves.
+            Muchas organizaciones subestiman la complejidad de los litigios
+            civiles y comerciales, lo que puede ocasionar errores procesales,
+            incumplimientos o decisiones desfavorables dentro de los procesos
+            judiciales.
           </p>
         </motion.section>
 
@@ -215,17 +237,17 @@ export default function LitigiosContent() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            Beneficios de contar con abogados de litigios en Colombia para tu
-            defensa legal
+            Beneficios de una adecuada gestión de litigios y controversias
+            legales
           </h2>
 
           <div className={styles.benefits}>
             {[
-              "✔ Defensa legal especializada",
-              "✔ Estrategias jurídicas efectivas",
-              "✔ Mayor probabilidad de éxito",
-              "✔ Protección de intereses empresariales",
-              "✔ Acompañamiento durante todo el proceso",
+              "✔ Prevención de riesgos legales",
+              "✔ Mejor control procesal",
+              "✔ Protección patrimonial empresarial",
+              "✔ Estrategias jurídicas organizadas",
+              "✔ Mayor seguridad jurídica",
             ].map((item, i) => (
               <motion.span
                 key={i}
@@ -241,6 +263,47 @@ export default function LitigiosContent() {
           </div>
         </motion.section>
 
+        {/* CONTEXTO SEO */}
+        <motion.section
+          className={styles.section}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <h2 className={styles.subtitle}>
+            Litigios, defensa judicial y resolución de conflictos empresariales
+          </h2>
+
+          <p className={styles.text}>
+            La resolución de controversias legales en Colombia puede involucrar
+            procesos judiciales, conciliaciones, negociaciones y mecanismos
+            alternativos dependiendo del tipo de conflicto y de la estrategia
+            jurídica adoptada.
+          </p>
+
+          <p className={styles.text}>
+            Las empresas suelen enfrentar disputas relacionadas con contratos,
+            incumplimientos, obligaciones comerciales, recuperación de cartera y
+            conflictos societarios, por lo que una adecuada planeación legal es
+            esencial para reducir contingencias.
+          </p>
+
+          <p className={styles.text}>
+            Si deseas ampliar información sobre representación judicial y
+            litigios empresariales en Colombia, puedes consultar también nuestro
+            portal especializado de{" "}
+            <a
+              href="https://abogadosespecialistas.com.co/litigios-abogado-litigante.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              abogados litigantes y defensa judicial empresarial
+            </a>
+            .
+          </p>
+        </motion.section>
+
         {/* CTA */}
         <motion.section
           id="contacto"
@@ -252,14 +315,14 @@ export default function LitigiosContent() {
         >
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Habla con un abogado de litigios en Bogotá y defiende tu empresa
-              hoy
+              Recibe orientación sobre litigios y procesos judiciales
+              empresariales
             </h2>
 
             <p className={styles.ctaText}>
-              Nuestro equipo te representa en procesos judiciales en Colombia
-              con estrategias legales sólidas, defendiendo los intereses de tu
-              empresa en cada etapa del litigio.
+              Conoce estrategias jurídicas aplicadas a litigios civiles,
+              comerciales y controversias empresariales en Colombia para mejorar
+              la protección legal de tu empresa.
             </p>
 
             <div className={styles.actions}>
@@ -267,15 +330,16 @@ export default function LitigiosContent() {
                 href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
                 className={styles.primary}
               >
-                Iniciar proceso legal
+                Solicitar orientación
               </a>
 
               <a
-                href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+                href="https://abogadosespecialistas.com.co/litigios-abogado-litigante.html"
                 target="_blank"
+                rel="noopener noreferrer"
                 className={styles.secondary}
               >
-                Contactar por WhatsApp
+                Ver portal especializado
               </a>
             </div>
           </div>

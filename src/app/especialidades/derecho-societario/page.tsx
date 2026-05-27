@@ -5,26 +5,36 @@ const canonicalUrl = "https://pravice.co/especialidades/derecho-societario";
 
 export const metadata: Metadata = {
   title:
-    "Derecho societario en Bogotá y Colombia | Abogados para creación y gestión de empresas",
+    "Derecho societario y estructuras empresariales en Colombia | Gestión corporativa",
 
   description:
-    "Asesoría en derecho societario en Colombia y Bogotá. Creación de empresas, manejo de socios, reformas estatutarias y protección legal empresarial.",
+    "Información sobre derecho societario en Colombia, sociedades comerciales, organización empresarial, estructuras corporativas y gestión societaria.",
+
+  keywords: [
+    "derecho societario Colombia",
+    "sociedades comerciales Colombia",
+    "estructuras empresariales",
+    "gestión corporativa",
+    "sociedades SAS Colombia",
+    "organización empresarial",
+    "derecho corporativo Colombia",
+  ],
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title:
-      "Abogados de derecho societario en Bogotá | Crea y protege tu empresa en Colombia",
+    title: "Derecho societario y gestión empresarial en Colombia",
 
     description:
-      "Asesoría legal para creación de empresas y gestión societaria en Bogotá y Colombia.",
+      "Conoce aspectos relacionados con sociedades comerciales, estructuras corporativas y organización empresarial en Colombia.",
 
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "article",
+
     images: [
       {
         url: "https://pravice.co/og-derecho-societario.jpg",
@@ -41,20 +51,17 @@ export const metadata: Metadata = {
   },
 };
 
-// SEO Schema JSON-LD (SERVICIO LEGAL)
+// SCHEMA SEO
 const schemaData = {
   "@context": "https://schema.org",
-  "@type": "LegalService",
-  name: "Abogados en derecho societario en Bogotá y Colombia",
+  "@type": "Article",
+  headline: "Derecho societario y estructuras empresariales en Colombia",
   description:
-    "Asesoría en derecho societario en Colombia y Bogotá. Creación de empresas, manejo de socios, reformas estatutarias y protección legal empresarial.",
-  url: canonicalUrl,
-  image: "https://pravice.co/og-derecho-societario.jpg",
-  areaServed: {
-    "@type": "Country",
-    name: "Colombia",
-  },
-  provider: {
+    "Información sobre derecho societario, estructuras corporativas, sociedades comerciales y gestión empresarial en Colombia.",
+  mainEntityOfPage: canonicalUrl,
+  inLanguage: "es-CO",
+
+  publisher: {
     "@type": "Organization",
     name: "Pravice",
     url: "https://pravice.co",
@@ -63,8 +70,14 @@ const schemaData = {
       url: "https://pravice.co/logo_pravice.png",
     },
   },
-  serviceType: "Derecho societario y creación de empresas",
-  inLanguage: "es-CO",
+
+  mentions: [
+    {
+      "@type": "WebPage",
+      name: "Registro de marca en Colombia",
+      url: "https://abogadosespecialistas.com.co/registro-de-marca.html",
+    },
+  ],
 };
 
 export default function Page() {

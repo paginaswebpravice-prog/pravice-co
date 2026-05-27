@@ -1,30 +1,20 @@
-// app/abogados/leidy-tirado/page.tsx
-
 import type { Metadata } from "next";
 import LeidyTiradoContent from "./LeidyTiradoContent";
 
 export const metadata: Metadata = {
-  title:
-    "Leidy Tirado | Abogada Comercial y Recuperación de Cartera en Bogotá Colombia",
+  title: "Leidy Tirado | Dirección Comercial en Bogotá | Pravice Abogados",
+
   description:
-    "Conoce a Leidy Tirado, directora del área comercial en Pravice Abogados. Especialista en derecho comercial, protección al consumidor, recuperación de cartera y contratos comerciales en Bogotá Colombia.",
-  keywords: [
-    "Leidy Tirado",
-    "abogada comercial Bogotá",
-    "recuperación de cartera Colombia",
-    "cobro jurídico Bogotá",
-    "derecho comercial Colombia",
-    "protección al consumidor",
-    "abogados empresariales Bogotá",
-    "Pravice abogados",
-  ],
+    "Perfil profesional de Leidy Tirado, directora del área comercial en Pravice Abogados. Enfoque en gestión jurídica empresarial y acompañamiento corporativo en Colombia.",
+
   alternates: {
     canonical: "https://pravice.co/abogados/abogada-Leidy",
   },
+
   openGraph: {
-    title: "Leidy Tirado | Directora Área Comercial en Pravice Abogados",
+    title: "Leidy Tirado | Pravice Abogados",
     description:
-      "Especialista en derecho comercial, recuperación de cartera y protección al consumidor en Colombia.",
+      "Dirección comercial con enfoque en estrategia jurídica empresarial en Colombia.",
     url: "https://pravice.co/abogados/abogada-Leidy",
     siteName: "Pravice Abogados",
     locale: "es_CO",
@@ -34,7 +24,7 @@ export const metadata: Metadata = {
         url: "https://pravice.co/doc-leidyImage.jpg",
         width: 1200,
         height: 1600,
-        alt: "Leidy Tirado abogada comercial en Bogotá Colombia",
+        alt: "Leidy Tirado",
       },
     ],
   },

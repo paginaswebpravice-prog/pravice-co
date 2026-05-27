@@ -2,38 +2,35 @@ import type { Metadata } from "next";
 import SantiagoFrancoContent from "./SantiagoFrancoContent";
 
 export const metadata: Metadata = {
-  title: "Santiago Franco | Abogado Penalista y Compliance en Bogotá Colombia",
+  title: "Santiago Franco | Pravice Abogados",
+
   description:
-    "Conoce a Santiago Franco, abogado especialista en derecho penal, compliance, delitos económicos, derecho informático y gestión de riesgos legales en Bogotá Colombia.",
-  keywords: [
-    "Santiago Franco abogado",
-    "abogado penalista Bogotá",
-    "compliance Colombia",
-    "derecho penal empresarial",
-    "derecho informático Colombia",
-    "delitos económicos abogado",
-    "abogado compliance Bogotá",
-    "riesgos legales corporativos",
-    "fraude corporativo Colombia",
-    "abogado penal corporativo",
-  ],
+    "Perfil profesional de Santiago Franco, integrante del equipo jurídico de Pravice Abogados en Colombia.",
+
   alternates: {
     canonical: "https://pravice.co/abogados/abogado-Santiago",
   },
+
   openGraph: {
-    title: "Santiago Franco | Especialista en Derecho Penal y Compliance",
+    title: "Santiago Franco | Pravice Abogados",
+
     description:
-      "Abogado con experiencia en derecho penal, compliance, delitos económicos y gestión de riesgos legales corporativos en Colombia.",
+      "Conoce el perfil profesional de Santiago Franco y su enfoque jurídico en Derecho Penal y Compliance.",
+
     url: "https://pravice.co/abogados/abogado-Santiago",
-    siteName: "Pravice",
+
+    siteName: "Pravice Abogados",
+
     locale: "es_CO",
+
     type: "profile",
+
     images: [
       {
         url: "https://pravice.co/doc-santiagoImage.jpg",
         width: 1200,
         height: 1600,
-        alt: "Santiago Franco abogado especialista en derecho penal en Bogotá Colombia",
+        alt: "Santiago Franco - Pravice Abogados",
       },
     ],
   },

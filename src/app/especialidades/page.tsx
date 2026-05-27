@@ -1,17 +1,16 @@
 "use client";
 
 import styles from "./Especialidades.module.css";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
-  faGlobeAmericas,
-  faArrowUpRightFromSquare,
   faScaleBalanced,
   faFileContract,
   faHandshake,
   faGavel,
   faBuilding,
-  faBriefcase,
   faFileSignature,
   faUsers,
   faLandmark,
@@ -27,148 +26,91 @@ interface Especialidad {
   link: string;
 }
 
-interface Portal {
-  nombre: string;
-  descripcion: string;
-  link: string;
-}
-
 export default function Especialidades() {
   const especialidades: Especialidad[] = [
     {
-      titulo:
-        "Abogados de derecho comercial en Bogotá: protege contratos y empresas en Colombia",
+      titulo: "Derecho comercial y operaciones empresariales",
       descripcion:
-        "Asesoría en derecho comercial en Colombia para empresas, contratos mercantiles y operaciones comerciales, con abogados especializados en Bogotá.",
+        "Aspectos jurídicos relacionados con contratos mercantiles, operaciones comerciales y actividad empresarial en Colombia.",
       icono: faScaleBalanced,
       link: "/especialidades/derecho-comercial",
     },
     {
-      titulo:
-        "Recuperación de cartera en Colombia: abogados expertos en cobro jurídico y prejurídico",
+      titulo: "Gestión y recuperación de cartera",
       descripcion:
-        "Recuperación de cartera en Colombia mediante estrategias de cobro prejurídico y jurídico, optimizando el recaudo de deudas empresariales.",
+        "Estrategias jurídicas y mecanismos aplicados a procesos de recaudo y recuperación de obligaciones comerciales.",
       icono: faFileContract,
       link: "/especialidades/recuperacion-de-cartera",
     },
     {
-      titulo:
-        "Conciliación extrajudicial en Colombia: evita demandas y resuelve conflictos rápido",
+      titulo: "Conciliación y mecanismos alternativos",
       descripcion:
-        "Conciliación extrajudicial en Colombia como mecanismo eficaz para resolver conflictos empresariales sin necesidad de procesos judiciales.",
+        "Métodos orientados a la resolución de conflictos mediante conciliación y negociación extrajudicial.",
       icono: faHandshake,
       link: "/especialidades/conciliacion",
     },
     {
-      titulo:
-        "Litigios y demandas en Colombia: abogados expertos en procesos judiciales",
+      titulo: "Procesos judiciales y resolución de disputas",
       descripcion:
-        "Representación en litigios empresariales en Colombia ante juzgados, con abogados expertos en procesos judiciales y demandas ejecutivas.",
+        "Información sobre litigios, representación judicial y manejo estratégico de controversias legales.",
       icono: faGavel,
       link: "/especialidades/litigios",
     },
     {
-      titulo:
-        "Derecho empresarial en Bogotá: asesoría legal para proteger y hacer crecer tu empresa",
+      titulo: "Estructura y organización empresarial",
       descripcion:
-        "Servicios de derecho empresarial en Bogotá para la estructuración, protección y crecimiento legal de empresas en Colombia.",
+        "Soluciones relacionadas con estructura jurídica, crecimiento corporativo y operación empresarial.",
       icono: faBuilding,
       link: "/especialidades/derecho-empresarial",
     },
     {
-      titulo:
-        "Asesoría corporativa en Colombia: decisiones legales estratégicas para empresas",
+      titulo: "Derecho de familia",
       descripcion:
-        "Asesoría corporativa estratégica para empresas en Colombia, enfocada en toma de decisiones legales, cumplimiento y gestión de riesgos.",
-      icono: faBriefcase,
-      link: "/especialidades/asesoria-corporativa",
+        "Asesoría legal en divorcios, custodia, alimentos, sucesiones y conflictos familiares en Colombia.",
+      icono: faUsers,
+      link: "/especialidades/derecho-familia",
     },
     {
-      titulo:
-        "Derecho contractual en Colombia: revisión y elaboración de contratos seguros",
+      titulo: "Contratos y seguridad jurídica",
       descripcion:
-        "Elaboración y revisión de contratos comerciales en Colombia, garantizando seguridad jurídica en acuerdos empresariales.",
+        "Revisión, análisis y estructuración de acuerdos comerciales y documentos contractuales.",
       icono: faFileSignature,
       link: "/especialidades/derecho-contractual",
     },
     {
-      titulo:
-        "Derecho societario en Colombia: crea, transforma y protege tu empresa",
+      titulo: "Derecho societario y sociedades comerciales",
       descripcion:
-        "Constitución y reorganización de sociedades en Colombia, con abogados especializados en derecho societario en Bogotá.",
+        "Aspectos legales relacionados con constitución, reorganización y gestión societaria.",
       icono: faUsers,
       link: "/especialidades/derecho-societario",
     },
     {
-      titulo:
-        "Derecho administrativo en Colombia: defensa legal ante entidades públicas",
+      titulo: "Relaciones con entidades y regulación administrativa",
       descripcion:
-        "Asesoría en procesos administrativos en Colombia y representación ante entidades públicas para empresas y particulares.",
+        "Procesos administrativos y gestión jurídica frente a entidades públicas y regulatorias.",
       icono: faLandmark,
       link: "/especialidades/derecho-administrativo",
     },
     {
-      titulo:
-        "Resolución de conflictos en Colombia: soluciones legales rápidas y efectivas",
+      titulo: "Resolución estratégica de conflictos",
       descripcion:
-        "Solución de conflictos empresariales mediante negociación, conciliación y mecanismos legales eficientes en Colombia.",
+        "Alternativas jurídicas enfocadas en prevención, negociación y solución de controversias empresariales.",
       icono: faBalanceScale,
       link: "/especialidades/resolucion-de-conflictos",
     },
     {
-      titulo:
-        "Cumplimiento normativo en Colombia: evita sanciones y protege tu empresa",
+      titulo: "Cumplimiento normativo y prevención legal",
       descripcion:
-        "Cumplimiento normativo en Colombia para empresas, prevención de riesgos legales y adaptación a regulaciones vigentes.",
+        "Prácticas orientadas al cumplimiento regulatorio y mitigación de riesgos legales empresariales.",
       icono: faClipboardCheck,
       link: "/especialidades/cumplimiento-normativo",
     },
     {
-      titulo:
-        "Protección jurídica empresarial en Colombia: seguridad legal para empresas y negocios",
+      titulo: "Protección jurídica para empresas",
       descripcion:
-        "Estrategias de protección jurídica empresarial en Colombia para salvaguardar activos, contratos y operaciones comerciales.",
+        "Herramientas legales para fortalecer la seguridad jurídica y protección de operaciones comerciales.",
       icono: faShieldHalved,
       link: "/especialidades/proteccion-juridica-empresarial",
-    },
-  ];
-
-  const portales: Portal[] = [
-    {
-      nombre: "Cobrando Online",
-      descripcion:
-        "Plataforma especializada en recuperación de cartera en Colombia, cobro prejurídico y gestión de deudas empresariales.",
-      link: "https://cobrandoonline.com/",
-    },
-    {
-      nombre: "Recaudo Cartera IPS y EPS",
-      descripcion:
-        "Soluciones jurídicas para recuperación de cartera en el sector salud en Colombia, IPS y EPS.",
-      link: "https://recaudocarteraipsyeps.com/",
-    },
-    {
-      nombre: "Derecho Laboral",
-      descripcion:
-        "Asesoría en derecho laboral en Colombia para empresas y trabajadores, con abogados especializados en relaciones laborales y conflictos laborales.",
-      link: "https://pravice-abogadoslaboralistas.vercel.app/",
-    },
-    {
-      nombre: " Marcas y Patentes",
-      descripcion:
-        "Protección de propiedad intelectual en Colombia, registro de marcas y patentes para empresas y emprendedores.",
-      link: "https://marcas-y-patentes.vercel.app",
-    },
-    {
-      nombre: "Gestion de Cartera en Cali",
-      descripcion:
-        "Servicios de gestión de cartera en Cali, Colombia, para optimizar el recaudo de deudas empresariales y mejorar la liquidez.",
-      link: "https://gestion-cartera-cali-pravice.vercel.app/",
-    },
-    {
-      nombre: "Gestion de Cartera en Bucaramanga",
-      descripcion:
-        "Soluciones de gestión de cartera en Bucaramanga, Colombia, para empresas que buscan mejorar su recuperación de deudas y flujo de caja.",
-      link: "https://gestion-cartera-bucaramanga-iota.vercel.app/",
     },
   ];
 
@@ -191,11 +133,12 @@ export default function Especialidades() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Abogados en Bogotá expertos en derecho empresarial, litigios y
-            recuperación de cartera en Colombia
+            Especialidades jurídicas y soluciones legales empresariales en
+            Colombia
           </motion.h2>
 
           {/* DESCRIPCION */}
+
           <motion.p
             className={styles.descripcion}
             itemProp="description"
@@ -204,92 +147,116 @@ export default function Especialidades() {
             transition={{ delay: 0.2, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Somos una firma de abogados especializados en Bogotá y Colombia, con
-            amplia experiencia en derecho empresarial, derecho comercial,
-            recuperación de cartera y litigios. Brindamos servicios legales
-            estratégicos a empresas y particulares, ofreciendo soluciones en
-            cobro prejurídico, cobro jurídico, conciliación extrajudicial y
-            asesoría corporativa. Nuestro enfoque combina experiencia jurídica,
-            análisis estratégico y gestión eficiente para proteger los intereses
-            legales y financieros de nuestros clientes en Colombia.
+            En esta sección encontrarás distintas áreas de práctica jurídica y
+            soluciones legales orientadas al entorno empresarial en Colombia.
+            Exploramos temas relacionados con contratos, conciliación,
+            cumplimiento normativo, estructura societaria, recuperación de
+            cartera y resolución de conflictos comerciales, ofreciendo recursos
+            informativos y enfoques estratégicos aplicados al ámbito
+            corporativo.
           </motion.p>
+
+          {/* ENLACE CONTEXTUAL HACIA EL PORTAL PRINCIPAL */}
+
+          <motion.div
+            className={styles.portalPrincipal}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <p>
+              Si buscas servicios jurídicos empresariales y acompañamiento legal
+              especializado en Colombia, puedes visitar nuestro portal principal
+              de{" "}
+              <a
+                href="https://abogadosespecialistas.com.co/abogados-especialistas.html"
+                target="_blank"
+                rel="noopener"
+              >
+                soluciones jurídicas empresariales en Colombia
+              </a>
+              , donde encontrarás información ampliada sobre conciliación,
+              litigios, contratos y estrategias legales corporativas.
+            </p>
+          </motion.div>
 
           {/* ESPECIALIDADES */}
 
           <div className={styles.cards}>
             {especialidades.map((esp, index) => (
-              <motion.a
+              <motion.div
                 key={index}
-                className={styles.card}
-                href={esp.link}
-                itemScope
-                itemType="https://schema.org/Service"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.05, duration: 0.5 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -6 }}
               >
-                <motion.div
-                  initial={{ scale: 0.8, opacity: 0 }}
-                  whileInView={{ scale: 1, opacity: 1 }}
-                  transition={{ delay: index * 0.05 }}
-                  viewport={{ once: true }}
+                <Link
+                  href={esp.link}
+                  className={styles.card}
+                  itemProp="hasOfferCatalog"
                 >
-                  <FontAwesomeIcon icon={esp.icono} className={styles.icono} />
-                </motion.div>
+                  <motion.div
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ delay: index * 0.05 }}
+                    viewport={{ once: true }}
+                  >
+                    <FontAwesomeIcon
+                      icon={esp.icono}
+                      className={styles.icono}
+                    />
+                  </motion.div>
 
-                <h3 itemProp="name">{esp.titulo}</h3>
-                <p itemProp="description">{esp.descripcion}</p>
-                <span className={styles.cardLink}>
-                  Haz clic para conocer más
-                </span>
-              </motion.a>
+                  <h3>{esp.titulo}</h3>
+
+                  <p>{esp.descripcion}</p>
+
+                  <span className={styles.cardLink}>Explorar especialidad</span>
+                </Link>
+              </motion.div>
             ))}
           </div>
 
-          {/* PORTALES */}
+          {/* CONTEXTO SEO */}
 
-          <div className={styles.portalesWrapper}>
-            <motion.h3
-              className={styles.tituloPortales}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <FontAwesomeIcon icon={faGlobeAmericas} />
-              Portales legales en Colombia para cartera, derecho laboral y
-              propiedad intelectual
-            </motion.h3>
+          <section className={styles.contextoSeo}>
+            <h2>
+              ¿Cómo funcionan las distintas especialidades jurídicas
+              empresariales?
+            </h2>
 
-            <div className={styles.portalesGrid}>
-              {portales.map((portal, index) => (
-                <motion.a
-                  key={index}
-                  href={portal.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.portalCard}
-                  title={portal.nombre}
-                  aria-label={`Visitar portal ${portal.nombre}`}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1, duration: 0.5 }}
-                  viewport={{ once: true }}
-                  whileHover={{ y: -5, scale: 1.02 }}
-                >
-                  <h4>{portal.nombre}</h4>
-                  <p>{portal.descripcion}</p>
+            <p>
+              Las empresas y organizaciones enfrentan retos legales relacionados
+              con contratos, cumplimiento normativo, recuperación de cartera,
+              conflictos comerciales y relaciones societarias. Cada área de
+              práctica jurídica permite abordar riesgos específicos y mejorar la
+              seguridad legal de las operaciones empresariales.
+            </p>
 
-                  <span className={styles.portalLink}>
-                    Visitar portal
-                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                  </span>
-                </motion.a>
-              ))}
-            </div>
-          </div>
+            <p>
+              Comprender las diferentes especialidades jurídicas facilita la
+              toma de decisiones estratégicas, la prevención de contingencias y
+              la correcta estructuración de procesos legales dentro del entorno
+              corporativo en Colombia.
+            </p>
+
+            <p>
+              Para conocer soluciones jurídicas empresariales y servicios
+              legales especializados, también puedes consultar nuestro portal
+              principal de{" "}
+              <a
+                href="https://abogadosespecialistas.com.co/abogados-especialistas.html"
+                target="_blank"
+                rel="noopener"
+              >
+                servicios jurídicos empresariales en Colombia
+              </a>
+              .
+            </p>
+          </section>
         </div>
       </section>
 
@@ -301,13 +268,16 @@ export default function Especialidades() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Nuestras Especialidades",
+            name: "Especialidades jurídicas empresariales",
             areaServed: "Colombia",
+
             hasOfferCatalog: {
               "@type": "OfferCatalog",
-              name: "Especialidades Jurídicas",
+              name: "Áreas de práctica jurídica",
+
               itemListElement: especialidades.map((esp) => ({
                 "@type": "Offer",
+
                 itemOffered: {
                   "@type": "Service",
                   name: esp.titulo,
@@ -315,7 +285,6 @@ export default function Especialidades() {
                 },
               })),
             },
-            sameAs: portales.map((portal) => portal.link),
           }),
         }}
       />

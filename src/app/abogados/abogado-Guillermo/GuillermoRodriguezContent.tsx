@@ -1,5 +1,3 @@
-// app/abogados/guillermo-rodriguez/GuillermoRodriguezContent.tsx
-
 "use client";
 
 import styles from "../AbogadoProfile.module.css";
@@ -19,7 +17,7 @@ export default function GuillermoRodriguezContent() {
           <div className={styles.imageWrapper}>
             <img
               src="/doc-guillermoImage.jpg"
-              alt="Guillermo Rodríguez abogado especialista en derecho laboral y derecho de familia en Bogotá Colombia"
+              alt="Guillermo Rodríguez abogado en Bogotá Colombia"
               className={styles.image}
             />
           </div>
@@ -32,9 +30,7 @@ export default function GuillermoRodriguezContent() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <span className={styles.badge}>
-            Pravice Abogados · Bogotá Colombia
-          </span>
+          <span className={styles.badge}>Pravice Abogados</span>
 
           <div>
             <h1 className={styles.title}>Guillermo Rodríguez</h1>
@@ -44,135 +40,62 @@ export default function GuillermoRodriguezContent() {
             </p>
           </div>
 
-          {/* PERFIL */}
-          <div className={styles.card}>
-            <h2>Perfil profesional</h2>
+          {/* CARTA DE PRESENTACIÓN */}
+          <motion.section
+            className={styles.card}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2>Carta de presentación</h2>
 
             <p>
-              Abogado especializado en Derecho Laboral, Seguridad Social y
-              Derecho de Familia, con más de 10 años de experiencia asesorando y
-              representando personas y empresas en escenarios judiciales y
-              extrajudiciales.
+              Guillermo Rodríguez forma parte del equipo de Pravice Abogados,
+              enfocando su práctica profesional en derecho laboral, seguridad
+              social y derecho de familia, acompañando tanto a personas como a
+              empresas en procesos jurídicos y consultivos.
             </p>
-
-            <br />
 
             <p>
-              Su trayectoria profesional se ha caracterizado por un enfoque
-              técnico, estratégico y humano, permitiéndole acompañar tanto a
-              empleadores y trabajadores como a familias en la resolución de
-              conflictos complejos, priorizando siempre la protección de los
-              derechos, la estabilidad jurídica y la búsqueda de soluciones
-              efectivas.
+              Su experiencia se orienta al manejo estratégico de conflictos
+              laborales y familiares, priorizando soluciones claras, prácticas y
+              ajustadas a las necesidades de cada caso.
             </p>
-          </div>
 
-          {/* ESPECIALIDADES */}
-          <div className={styles.card}>
-            <h2>Áreas de especialidad</h2>
+            <p>
+              Puedes conocer el{" "}
+              <a
+                href="https://abogadosespecialistas.com.co/abogados/abogados-guillermo-rodriguez.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                perfil profesional del abogado en detalle
+              </a>
+              .
+            </p>
+          </motion.section>
 
-            <div className={styles.list}>
-              <div className={styles.item}>
-                <span>⚖</span>
-                <p>
-                  Derecho Laboral individual y colectivo, asesoría preventiva y
-                  litigios laborales.
-                </p>
-              </div>
+          {/* ENFOQUE PROFESIONAL */}
+          <motion.section
+            className={styles.card}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2>Enfoque profesional</h2>
 
-              <div className={styles.item}>
-                <span>🛡</span>
-                <p>
-                  Seguridad Social, accidentes de trabajo y gestión de riesgos
-                  laborales.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>📑</span>
-                <p>
-                  Elaboración y revisión de contratos laborales, reglamentos
-                  internos y políticas corporativas.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>👨‍👩‍👧</span>
-                <p>
-                  Procesos de divorcio, cesación de efectos civiles y
-                  liquidación de sociedades conyugales.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>👶</span>
-                <p>
-                  Custodia de menores, regulación de visitas, patria potestad y
-                  acuerdos de crianza.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>💰</span>
-                <p>
-                  Fijación, reajuste y cobro de cuotas alimentarias, sucesiones
-                  y partición de herencias.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* ENFOQUE */}
-          <div className={styles.card}>
-            <h2>Enfoque de trabajo</h2>
-
-            <div className={styles.list}>
-              <div className={styles.item}>
-                <span>✓</span>
-                <p>
-                  Acompañamiento integral en procedimientos judiciales y
-                  administrativos en materia laboral y familiar.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>✓</span>
-                <p>
-                  Diseño de estrategias jurídicas preventivas ajustadas a las
-                  necesidades de cada cliente y al cumplimiento normativo.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>✓</span>
-                <p>
-                  Manejo técnico y conciliador de conflictos familiares,
-                  priorizando soluciones efectivas con el menor desgaste
-                  emocional posible.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>✓</span>
-                <p>
-                  Protección de los derechos e intereses de trabajadores,
-                  empleadores y núcleos familiares mediante un acompañamiento
-                  cercano, claro y estratégico.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>✓</span>
-                <p>
-                  Capacitación y asesoría especializada para fortalecer la
-                  gestión de relaciones laborales y la prevención de conflictos.
-                </p>
-              </div>
-            </div>
-          </div>
+            <p>
+              Su trabajo se caracteriza por un acompañamiento jurídico cercano,
+              preventivo y estratégico, enfocado en la protección de derechos,
+              la estabilidad jurídica y la resolución efectiva de conflictos.
+            </p>
+          </motion.section>
         </motion.div>
       </section>
 
+      {/* JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -182,9 +105,7 @@ export default function GuillermoRodriguezContent() {
             name: "Guillermo Rodríguez",
             jobTitle:
               "Abogado especialista en derecho laboral y derecho de familia",
-            image: "https://pravice.co/doc-guillermo.jpg",
-            description:
-              "Abogado especialista en derecho laboral, seguridad social y derecho de familia con amplia experiencia en litigios, asesoría preventiva y representación judicial.",
+            image: "https://pravice.co/doc-guillermoImage.jpg",
             url: "https://pravice.co/abogados/abogado-Guillermo",
             worksFor: {
               "@type": "Organization",
@@ -195,6 +116,13 @@ export default function GuillermoRodriguezContent() {
               addressLocality: "Bogotá",
               addressCountry: "CO",
             },
+            knowsAbout: [
+              "Derecho laboral",
+              "Derecho de familia",
+              "Seguridad social",
+              "Litigios laborales",
+              "Procesos familiares",
+            ],
           }),
         }}
       />

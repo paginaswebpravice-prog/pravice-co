@@ -1,14 +1,15 @@
 import { Metadata } from "next";
 import DerechoEmpresarialContent from "./DerechoEmpresarialContent";
 
-const canonicalUrl = "https://pravice.co/especialidades/derecho-empresarial";
+const canonicalUrl =
+  "https://pravice.co/especialidades/proteccion-juridica-empresarial";
 
 export const metadata: Metadata = {
   title:
-    "Derecho empresarial en Bogotá y Colombia | Abogados para empresas y crecimiento legal",
+    "Protección jurídica empresarial en Colombia | Gestión legal y prevención de riesgos corporativos",
 
   description:
-    "Asesoría en derecho empresarial en Colombia y Bogotá. Protección legal, estructuración de empresas, gestión de riesgos y crecimiento empresarial con abogados expertos.",
+    "Información sobre protección jurídica empresarial en Colombia, cumplimiento normativo, riesgos corporativos, contratos y gestión legal para empresas.",
 
   alternates: {
     canonical: canonicalUrl,
@@ -16,21 +17,22 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Abogados de derecho empresarial en Bogotá | Protege y haz crecer tu empresa en Colombia",
+      "Protección jurídica empresarial en Colombia | Gestión legal corporativa",
 
     description:
-      "Asesoría legal estratégica para empresas en Bogotá y Colombia en derecho empresarial.",
+      "Conoce aspectos relacionados con protección jurídica empresarial, cumplimiento legal y prevención de riesgos corporativos en Colombia.",
 
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
-    type: "article",
+    type: "website",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
         width: 1200,
         height: 630,
-        alt: "Derecho empresarial en Colombia",
+        alt: "Protección jurídica empresarial en Colombia",
       },
     ],
   },
@@ -41,29 +43,40 @@ export const metadata: Metadata = {
   },
 };
 
-// SEO Schema JSON-LD (SERVICIO LEGAL)
 const schemaData = {
   "@context": "https://schema.org",
-  "@type": "LegalService",
-  name: "Abogados en derecho empresarial en Bogotá y Colombia",
+  "@type": "Article",
+
+  headline:
+    "Protección jurídica empresarial en Colombia y gestión legal corporativa",
+
   description:
-    "Asesoría en derecho empresarial en Colombia y Bogotá. Protección legal, estructuración de empresas, gestión de riesgos y crecimiento empresarial con abogados expertos.",
-  url: canonicalUrl,
-  image: "https://pravice.co/logo_pravice.png",
-  areaServed: {
-    "@type": "Country",
-    name: "Colombia",
-  },
-  provider: {
+    "Información sobre protección jurídica empresarial, riesgos corporativos y cumplimiento normativo en Colombia.",
+
+  author: {
     "@type": "Organization",
     name: "Pravice",
-    url: "https://pravice.co",
+  },
+
+  publisher: {
+    "@type": "Organization",
+    name: "Pravice",
+
     logo: {
       "@type": "ImageObject",
       url: "https://pravice.co/logo_pravice.png",
     },
   },
-  serviceType: "Derecho empresarial y asesoría legal corporativa",
+
+  mainEntityOfPage: canonicalUrl,
+
+  about: [
+    "Protección jurídica empresarial",
+    "Derecho comercial",
+    "Gestión legal corporativa",
+    "Cumplimiento empresarial",
+  ],
+
   inLanguage: "es-CO",
 };
 

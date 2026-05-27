@@ -136,6 +136,23 @@
   flex: 1;
 }
 
+/* ================= ENFOQUE CORPORATIVO ================= */
+
+.card p {
+  text-align: justify;
+}
+
+.card a {
+  color: #004080;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+}
+
+.card a:hover {
+  opacity: 0.75;
+}
+
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 1200px) {

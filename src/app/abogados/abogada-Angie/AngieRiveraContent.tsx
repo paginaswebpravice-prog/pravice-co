@@ -1,7 +1,5 @@
 "use client";
 
-// app/abogados/angie-rivera/AngieRiveraContent.tsx
-
 import { motion } from "framer-motion";
 import styles from "../AbogadoProfile.module.css";
 
@@ -10,7 +8,6 @@ export default function AngieRiveraContent() {
     <main className={styles.container}>
       <section className={styles.hero}>
         {/* ================= IMAGE ================= */}
-
         <motion.div
           className={styles.imageSide}
           initial={{ opacity: 0, x: -50 }}
@@ -20,30 +17,27 @@ export default function AngieRiveraContent() {
           <div className={styles.imageWrapper}>
             <img
               src="/doc-angieImage.jpg"
-              alt="Angie Rivera abogada en Bogotá Colombia"
+              alt="Angie Rivera - Equipo jurídico Pravice"
               className={styles.image}
             />
           </div>
         </motion.div>
 
         {/* ================= INFO ================= */}
-
         <motion.div
           className={styles.infoSide}
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <span className={styles.badge}>Pravice Abogados</span>
+          <span className={styles.badge}>Equipo Jurídico Pravice</span>
 
           <div>
             <h1 className={styles.title}>Angie Rivera</h1>
-
             <p className={styles.role}>Abogada</p>
           </div>
 
-          {/* ================= DESCRIPCIÓN ================= */}
-
+          {/* ================= CARTA DE PRESENTACIÓN ================= */}
           <motion.div
             className={styles.card}
             initial={{ opacity: 0, y: 30 }}
@@ -51,59 +45,38 @@ export default function AngieRiveraContent() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2>Perfil profesional</h2>
+            <h2>Carta de presentación</h2>
 
             <p>
-              Abogada experta en gestión de cartera, conciliaciones y acuerdos
-              de pago. Se ha posicionado como especialista en derecho comercial
-              y procesos ejecutivos. Con una destacada trayectoria en la
-              recuperación de activos y la resolución de conflictos financieros,
-              se ha consolidado como un referente en la creación de estrategias
-              efectivas que permiten a las empresas recuperar su liquidez de
-              manera eficiente y sin complicaciones.
+              Recibe un cordial saludo. Mi nombre es Angie Rivera y hago parte
+              del equipo jurídico de Pravice, donde participo en el apoyo de
+              procesos relacionados con recuperación de cartera, conciliaciones
+              y acuerdos de pago.
+            </p>
+
+            <p>
+              Mi labor se integra dentro de las estrategias jurídicas del
+              despacho, orientadas a la gestión eficiente de conflictos
+              financieros y al acompañamiento de clientes en procesos
+              empresariales.
+            </p>
+
+            <p>
+              Puedes conocer más sobre el área principal de práctica en la que
+              se enmarca este trabajo en nuestro servicio de{" "}
+              <a
+                href="https://abogadosespecialistas.com.co/abogados/abogados-angie-rivera.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                abogados especialistas en recuperación de cartera y procesos
+                ejecutivos
+              </a>
+              .
             </p>
           </motion.div>
 
-          {/* ================= ÁREAS ================= */}
-
-          <motion.div
-            className={styles.card}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2>Áreas de especialidad</h2>
-
-            <div className={styles.list}>
-              <div className={styles.item}>
-                <span>⚖</span>
-
-                <p>Gestión de cartera y recuperación de activos.</p>
-              </div>
-
-              <div className={styles.item}>
-                <span>🤝</span>
-
-                <p>Conciliaciones y acuerdos de pago.</p>
-              </div>
-
-              <div className={styles.item}>
-                <span>📄</span>
-
-                <p>Derecho comercial y procesos ejecutivos.</p>
-              </div>
-
-              <div className={styles.item}>
-                <span>🏛</span>
-
-                <p>Resolución de conflictos financieros para empresas.</p>
-              </div>
-            </div>
-          </motion.div>
-
           {/* ================= ENFOQUE ================= */}
-
           <motion.div
             className={styles.card}
             initial={{ opacity: 0, y: 30 }}
@@ -111,65 +84,30 @@ export default function AngieRiveraContent() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2>Enfoque de trabajo</h2>
+            <h2>Enfoque profesional</h2>
 
             <div className={styles.list}>
               <div className={styles.item}>
                 <span>✓</span>
-
-                <p>Enfoque práctico y personalizado para cada caso.</p>
+                <p>Trabajo coordinado dentro del equipo jurídico Pravice.</p>
               </div>
 
               <div className={styles.item}>
                 <span>✓</span>
-
-                <p>Enfoque práctico y personalizado para cada caso.</p>
+                <p>Apoyo en conciliaciones y acuerdos de pago empresariales.</p>
               </div>
 
               <div className={styles.item}>
                 <span>✓</span>
-
                 <p>
-                  Compromiso con el éxito empresarial de sus clientes,
-                  optimizando la gestión de cobros y asegurando soluciones
-                  estratégicas alineadas con los objetivos de cada empresa.
+                  Participación en estrategias de recuperación de cartera y
+                  gestión de conflictos financieros.
                 </p>
               </div>
             </div>
           </motion.div>
         </motion.div>
       </section>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Attorney",
-            name: "Angie Rivera",
-            image: "https://pravice.co/doc-angieImage.jpg",
-            jobTitle: "Abogada",
-            worksFor: {
-              "@type": "Organization",
-              name: "Pravice Abogados",
-            },
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Bogotá",
-              addressCountry: "CO",
-            },
-            areaServed: "Colombia",
-            url: "https://pravice.co/abogados/abogada-Angie",
-            knowsAbout: [
-              "Recuperación de cartera",
-              "Derecho comercial",
-              "Procesos ejecutivos",
-              "Conciliaciones",
-              "Acuerdos de pago",
-            ],
-          }),
-        }}
-      />
     </main>
   );
 }

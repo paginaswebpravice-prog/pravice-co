@@ -13,22 +13,13 @@ const fadeUp = {
   },
 };
 
-const container = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.08,
-    },
-  },
-};
-
 export default function CumplimientoNormativoContent() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Cumplimiento normativo en Colombia",
+    name: "Cumplimiento normativo laboral en Colombia",
     description:
-      "Servicio de compliance y cumplimiento normativo para empresas en Bogotá y Colombia para prevenir sanciones y riesgos legales.",
+      "Servicio de cumplimiento normativo laboral y compliance empresarial en Bogotá y Colombia para prevenir sanciones, demandas y riesgos jurídicos laborales.",
     areaServed: "Colombia",
     provider: {
       "@type": "Organization",
@@ -38,7 +29,6 @@ export default function CumplimientoNormativoContent() {
 
   return (
     <>
-      {/* ================= SCHEMA ================= */}
       <Script
         id="schema"
         type="application/ld+json"
@@ -47,86 +37,126 @@ export default function CumplimientoNormativoContent() {
         }}
       />
 
-      {/* ================= HERO ================= */}
+      {/* HERO */}
+
       <motion.section variants={fadeUp} className={styles.hero}>
         <div className={styles.heroContent}>
-          <span className={styles.badge}>Abogados en Bogotá y Colombia</span>
+          <span className={styles.badge}>Compliance laboral en Colombia</span>
 
           <h1 className={styles.title}>
-            Cumplimiento Normativo en Bogotá: Evita Multas y Protege tu Empresa
-            en Colombia
+            Cumplimiento normativo laboral en Bogotá: evita sanciones y riesgos
+            legales en tu empresa
           </h1>
 
           <p className={styles.description}>
-            Implementa estrategias de cumplimiento normativo en Bogotá y
-            Colombia para prevenir riesgos legales, evitar sanciones y
-            garantizar el correcto funcionamiento de tu empresa frente a la ley.
+            Implementa estrategias de compliance laboral y cumplimiento
+            normativo empresarial en Bogotá y Colombia para prevenir demandas,
+            multas, conflictos laborales y riesgos jurídicos dentro de tu
+            organización.
           </p>
 
           <div className={styles.actions}>
             <a href="#contacto" className={styles.primary}>
               Solicitar asesoría
             </a>
-            <a href="/blog" className={styles.secondary}>
-              Ver blog legal
+
+            <a
+              href="https://abogadosespecialistas.com.co/derecho-del-trabajo.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.secondary}
+            >
+              Ver derecho laboral
             </a>
           </div>
         </div>
       </motion.section>
 
-      {/* ================= INTRO ================= */}
+      {/* MAIN */}
+
       <main className={styles.container}>
-        <motion.section variants={fadeUp}>
+        {/* INTRO */}
+
+        <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Qué es el cumplimiento normativo y por qué tu empresa lo necesita
-            en Colombia?
+            ¿Qué es el cumplimiento normativo laboral y por qué es importante en
+            Colombia?
           </h2>
 
           <p className={styles.text}>
-            El cumplimiento normativo, también conocido como compliance, es el
-            conjunto de políticas, procedimientos y acciones que implementa una
-            empresa para asegurar que todas sus actividades se desarrollen
-            conforme a la legislación vigente en Colombia.
+            El cumplimiento normativo laboral es el conjunto de políticas,
+            controles y procedimientos que implementa una empresa para cumplir
+            correctamente las obligaciones establecidas por la legislación
+            laboral colombiana.
+          </p>
+
+          <p className={styles.text}>
+            Este tipo de compliance empresarial permite reducir riesgos
+            relacionados con contratos laborales, seguridad social, jornadas,
+            despidos, reglamentos internos y obligaciones frente a trabajadores.
           </p>
 
           <div className={styles.highlightBox}>
-            <strong>Clave:</strong> No cumplir con la normativa puede generar
-            sanciones económicas, demandas legales e incluso el cierre de una
-            empresa.
+            <strong>Clave:</strong> Un sistema de cumplimiento laboral ayuda a
+            prevenir sanciones del Ministerio del Trabajo, demandas laborales y
+            conflictos internos.
           </div>
+        </motion.section>
 
-          <p className={styles.text}>
-            En ciudades como Bogotá, donde existe una alta regulación en
-            sectores empresariales, financieros y comerciales, el cumplimiento
-            normativo se ha convertido en una necesidad estratégica para
-            cualquier organización.
+        {/* PORTAL SEO */}
+
+        <motion.section variants={fadeUp} className={styles.portalSeo}>
+          <h2 className={styles.subtitle}>
+            Relación entre compliance laboral y derecho del trabajo en Colombia
+          </h2>
+
+          <p>
+            El cumplimiento normativo empresarial está directamente relacionado
+            con la correcta aplicación del derecho laboral colombiano dentro de
+            las organizaciones. Las empresas deben garantizar el cumplimiento de
+            obligaciones frente a trabajadores, contratos, seguridad social y
+            normativas internas para evitar conflictos legales y sanciones.
+          </p>
+
+          <p>
+            Si necesitas asesoría jurídica especializada en procesos laborales,
+            defensa judicial o conflictos entre empleadores y trabajadores,
+            puedes consultar esta guía sobre{" "}
+            <a
+              href="https://abogadosespecialistas.com.co/derecho-del-trabajo.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              derecho del trabajo en Colombia
+            </a>
+            .
           </p>
         </motion.section>
 
-        {/* ================= COMPONENTES ================= */}
-        <motion.section variants={fadeUp}>
+        {/* COMPONENTES */}
+
+        <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Elementos clave del compliance empresarial en Colombia que debes
-            implementar
+            Elementos clave del compliance laboral para empresas en Colombia
           </h2>
 
           <div className={styles.grid}>
             {[
               {
-                title: "Políticas internas",
-                text: "Normas y lineamientos que regulan el comportamiento dentro de la empresa.",
+                title: "Contratación laboral",
+                text: "Verificación de contratos y obligaciones laborales.",
               },
               {
-                title: "Gestión de riesgos",
-                text: "Identificación y control de riesgos legales y operativos.",
+                title: "Seguridad social",
+                text: "Control del cumplimiento frente a salud, pensión y ARL.",
               },
               {
-                title: "Auditorías",
-                text: "Revisión periódica del cumplimiento de normas internas y externas.",
+                title: "Reglamentos internos",
+                text: "Implementación de políticas y manuales empresariales.",
               },
               {
-                title: "Capacitación",
-                text: "Formación del equipo en normativas legales aplicables.",
+                title: "Auditorías laborales",
+                text: "Revisión preventiva de riesgos jurídicos laborales.",
               },
             ].map((item, i) => (
               <motion.div
@@ -145,33 +175,30 @@ export default function CumplimientoNormativoContent() {
           </div>
         </motion.section>
 
-        {/* ================= IMPORTANCIA ================= */}
-        <motion.section variants={fadeUp}>
-          <h2 className={styles.subtitle}>
-            ¿Por qué el cumplimiento normativo es clave para empresas en Bogotá
-            y Colombia?
-          </h2>
+        {/* IMPORTANCIA */}
 
-          <p className={styles.text}>
-            Las empresas en Colombia están sujetas a múltiples regulaciones
-            dependiendo de su actividad económica. Desde normas laborales hasta
-            regulaciones financieras y comerciales, el cumplimiento normativo
-            garantiza la legalidad de las operaciones.
-          </p>
+        <motion.section variants={fadeUp} className={styles.section}>
+          <h2 className={styles.subtitle}>
+            Beneficios del cumplimiento laboral empresarial en Bogotá y Colombia
+          </h2>
 
           <div className={styles.infoGrid}>
             {[
               {
-                title: "✔ Prevención de sanciones",
-                text: "Evita multas y problemas legales.",
+                title: "✔ Prevención de demandas",
+                text: "Reduce conflictos laborales y riesgos jurídicos.",
               },
               {
-                title: "✔ Confianza empresarial",
-                text: "Mejora la reputación frente a clientes y socios.",
+                title: "✔ Seguridad jurídica",
+                text: "Garantiza cumplimiento frente a normas laborales.",
               },
               {
-                title: "✔ Estabilidad operativa",
-                text: "Permite operar con seguridad jurídica.",
+                title: "✔ Protección empresarial",
+                text: "Minimiza riesgos económicos y sancionatorios.",
+              },
+              {
+                title: "✔ Mejor ambiente laboral",
+                text: "Fortalece la organización y la gestión interna.",
               },
             ].map((item, i) => (
               <motion.div
@@ -188,45 +215,45 @@ export default function CumplimientoNormativoContent() {
           </div>
         </motion.section>
 
-        {/* ================= RIESGOS ================= */}
-        <motion.section variants={fadeUp}>
+        {/* RIESGOS */}
+
+        <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Consecuencias legales de no cumplir la normativa en Colombia (multas
-            y sanciones)
+            Riesgos de incumplir normas laborales en Colombia
           </h2>
 
           <p className={styles.text}>
-            No implementar un sistema de cumplimiento normativo puede traer
-            consecuencias graves para cualquier empresa en Colombia.
+            El incumplimiento de obligaciones laborales puede generar demandas,
+            investigaciones administrativas, multas y afectaciones económicas
+            para las empresas.
           </p>
 
           <div className={styles.warningBox}>
-            ⚠ Multas, sanciones administrativas, demandas legales e incluso
-            cierre de operaciones son algunas de las consecuencias del
-            incumplimiento.
+            ⚠ Errores en contratación, pagos, afiliaciones o manejo laboral
+            pueden derivar en sanciones del Ministerio del Trabajo y procesos
+            judiciales.
           </div>
 
           <p className={styles.text}>
-            Además, la falta de cumplimiento puede afectar la reputación de la
-            empresa, generar desconfianza en el mercado y limitar su
-            crecimiento.
+            Implementar compliance laboral permite detectar riesgos antes de que
+            se conviertan en problemas legales mayores.
           </p>
         </motion.section>
 
-        {/* ================= BENEFICIOS ================= */}
-        <motion.section variants={fadeUp}>
+        {/* BENEFICIOS */}
+
+        <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Beneficios del compliance: protege tu empresa y evita riesgos
-            legales en Colombia
+            Ventajas del compliance laboral empresarial
           </h2>
 
           <div className={styles.benefits}>
             {[
-              "✔ Reducción de riesgos legales",
-              "✔ Mejora de la reputación empresarial",
-              "✔ Cumplimiento de normativas en Colombia",
-              "✔ Mayor control interno",
-              "✔ Crecimiento sostenible",
+              "✔ Prevención de sanciones laborales",
+              "✔ Reducción de riesgos jurídicos",
+              "✔ Mejor control empresarial",
+              "✔ Cumplimiento normativo",
+              "✔ Protección financiera",
             ].map((b, i) => (
               <motion.span
                 key={i}
@@ -242,33 +269,34 @@ export default function CumplimientoNormativoContent() {
           </div>
         </motion.section>
 
-        {/* ================= CTA ================= */}
+        {/* CTA */}
+
         <motion.section id="contacto" variants={fadeUp} className={styles.cta}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Habla con un abogado y evita sanciones en tu empresa hoy
+              Fortalece el cumplimiento laboral de tu empresa hoy
             </h2>
 
             <p className={styles.ctaText}>
-              Nuestro equipo de abogados te ayuda a implementar estrategias de
-              compliance para proteger tu empresa, evitar sanciones y garantizar
-              el cumplimiento legal en Colombia.
+              Implementa estrategias de compliance laboral y reduce riesgos
+              legales, sanciones y conflictos en tu organización.
             </p>
 
             <div className={styles.actions}>
               <a
-                href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+                href="https://api.whatsapp.com/send/?phone=573114659315"
                 className={styles.primary}
               >
-                Hablar con un abogado ahora
+                Hablar con un abogado
               </a>
 
               <a
-                href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+                href="https://abogadosespecialistas.com.co/derecho-del-trabajo.html"
                 target="_blank"
+                rel="noopener noreferrer"
                 className={styles.secondary}
               >
-                Asesoría por WhatsApp inmediata
+                Ver portal laboral
               </a>
             </div>
           </div>

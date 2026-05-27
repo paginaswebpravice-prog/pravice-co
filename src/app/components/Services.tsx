@@ -1,68 +1,75 @@
 "use client";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "../styles/Process.module.css";
+import styles from "../styles/Services.module.css";
 import { motion } from "framer-motion";
+import Link from "next/link";
+
 import {
   faBalanceScale,
   faBarChart,
   faPeopleCarry,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function Process() {
+export default function Services() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    name: "Proceso de asesoría legal en Pravice Abogados",
+    name: "Metodología de atención jurídica de Pravice Abogados",
     description:
-      "Metodología de trabajo de Pravice Abogados para analizar, planificar y resolver casos legales en Colombia.",
+      "Proceso de acompañamiento y orientación jurídica desarrollado por Pravice Abogados en Colombia.",
   };
 
   const steps = [
     {
       icon: <FontAwesomeIcon icon={faPeopleCarry} />,
-      title: "Asesoría legal inicial",
-      text: "Analizamos tu situación legal en detalle para comprender el contexto del caso, identificar riesgos jurídicos y determinar las posibles soluciones legales disponibles.",
+      title: "Orientación inicial",
+      text: "Escuchamos el contexto del caso y brindamos una primera orientación jurídica para identificar posibles rutas de acompañamiento.",
     },
+
     {
       icon: <FontAwesomeIcon icon={faBarChart} />,
-      title: "Análisis jurídico y planificación estratégica",
-      text: "Nuestro equipo estudia la normativa aplicable, los antecedentes del caso y la documentación relevante para diseñar una estrategia legal personalizada.",
+      title: "Revisión y estrategia",
+      text: "Analizamos la documentación y definimos alternativas legales ajustadas a las necesidades de cada cliente.",
     },
+
     {
       icon: <FontAwesomeIcon icon={faBalanceScale} />,
-      title: "Gestión del proceso y resolución",
-      text: "Representamos tus intereses mediante negociación, conciliación o acciones judiciales según sea necesario.",
+      title: "Acompañamiento del proceso",
+      text: "Realizamos seguimiento jurídico y acompañamiento durante las diferentes etapas del proceso legal.",
     },
   ];
 
   const stats = [
     {
       number: "25+",
-      title: "Años de experiencia legal",
-      text: "Trayectoria asesorando empresas y personas en diversas áreas del derecho.",
+      title: "Años de trayectoria",
+      text: "Experiencia acompañando empresas y personas en distintos escenarios jurídicos.",
     },
+
     {
       number: "98",
-      title: "Aliados estratégicos",
-      text: "Red de profesionales y especialistas jurídicos.",
+      title: "Aliados profesionales",
+      text: "Red de apoyo jurídico y profesionales especializados.",
     },
+
     {
-      number: "40%",
-      title: "Casos resueltos favorablemente",
-      text: "Resultados obtenidos mediante estrategias jurídicas efectivas.",
+      number: "Colombia",
+      title: "Cobertura nacional",
+      text: "Acompañamiento jurídico para clientes en distintas ciudades del país.",
     },
+
     {
       number: "100%",
-      title: "Compromiso con cada cliente",
-      text: "Acompañamiento integral durante todo el proceso.",
+      title: "Seguimiento cercano",
+      text: "Comunicación y acompañamiento durante el desarrollo del caso.",
     },
   ];
 
   return (
     <section
       className={styles.section}
-      aria-labelledby="process-title"
+      aria-labelledby="services-title"
       id="services"
     >
       <script
@@ -74,14 +81,15 @@ export default function Process() {
         {/* HEADER */}
 
         <motion.h2
-          id="process-title"
+          id="services-title"
           className={styles.title}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Nuestro proceso legal <span>paso a paso</span>
+          Nuestra metodología de
+          <span> acompañamiento jurídico</span>
         </motion.h2>
 
         <motion.p
@@ -91,8 +99,9 @@ export default function Process() {
           transition={{ delay: 0.2, duration: 0.6 }}
           viewport={{ once: true }}
         >
-          En <strong>Pravice Abogados</strong> seguimos una metodología clara y
-          estratégica para brindar <strong>asesoría jurídica efectiva</strong>.
+          En <strong>Pravice Abogados</strong> desarrollamos procesos de
+          atención enfocados en la claridad, el seguimiento y el acompañamiento
+          estratégico para empresas y personas en Colombia.
         </motion.p>
 
         {/* TIMELINE */}
@@ -119,6 +128,7 @@ export default function Process() {
               </motion.div>
 
               <h4>{step.title}</h4>
+
               <p>{step.text}</p>
             </motion.div>
           ))}
@@ -145,6 +155,31 @@ export default function Process() {
             </motion.div>
           ))}
         </div>
+
+        <motion.p
+          className={styles.subtitle}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+          viewport={{ once: true }}
+          style={{
+            marginTop: "50px",
+            maxWidth: "950px",
+            marginInline: "auto",
+            textAlign: "center",
+          }}
+        >
+          Para conocer información más amplia sobre servicios jurídicos,
+          abogados especializados y áreas de práctica, puedes consultar el{" "}
+          <Link
+            href="https://abogadosespecialistas.com.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            portal jurídico de referencia
+          </Link>
+          .
+        </motion.p>
       </div>
     </section>
   );

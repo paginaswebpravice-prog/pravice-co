@@ -5,26 +5,26 @@ const canonicalUrl = "https://pravice.co/especialidades/derecho-comercial";
 
 export const metadata: Metadata = {
   title:
-    "Derecho comercial en Bogotá y Colombia | Abogados para empresas, contratos y negocios",
+    "Derecho comercial en Colombia | Información legal empresarial y contratos comerciales",
 
   description:
-    "Asesoría en derecho comercial en Bogotá y Colombia. Abogados expertos en contratos, sociedades, litigios comerciales y prevención de riesgos empresariales.",
+    "Conoce aspectos clave del derecho comercial en Colombia, contratos empresariales, cumplimiento normativo y estructuras jurídicas para empresas.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title:
-      "Abogados de derecho comercial en Bogotá | Protege tu empresa y contratos en Colombia",
+    title: "Derecho comercial en Colombia | Información empresarial y jurídica",
 
     description:
-      "Protege tu empresa con asesoría en derecho comercial en Colombia. Contratos, sociedades y litigios empresariales.",
+      "Información sobre contratos comerciales, cumplimiento corporativo y aspectos legales empresariales en Colombia.",
 
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "website",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
@@ -41,29 +41,33 @@ export const metadata: Metadata = {
   },
 };
 
-// SEO Schema JSON-LD (SERVICIO LEGAL)
 const schemaData = {
   "@context": "https://schema.org",
-  "@type": "LegalService",
-  name: "Abogados en derecho comercial en Bogotá y Colombia",
+  "@type": "Article",
+
+  headline: "Derecho comercial en Colombia y aspectos legales empresariales",
+
   description:
-    "Asesoría en derecho comercial en Bogotá y Colombia. Abogados expertos en contratos, sociedades, litigios comerciales y prevención de riesgos empresariales.",
-  url: canonicalUrl,
-  image: "https://pravice.co/logo_pravice.png",
-  areaServed: {
-    "@type": "Country",
-    name: "Colombia",
-  },
-  provider: {
+    "Información sobre derecho comercial en Colombia, contratos empresariales, cumplimiento normativo y prevención de riesgos corporativos.",
+
+  author: {
     "@type": "Organization",
     name: "Pravice",
-    url: "https://pravice.co",
+  },
+
+  publisher: {
+    "@type": "Organization",
+    name: "Pravice",
     logo: {
       "@type": "ImageObject",
       url: "https://pravice.co/logo_pravice.png",
     },
   },
-  serviceType: "Derecho comercial y asesoría empresarial",
+
+  mainEntityOfPage: canonicalUrl,
+
+  image: "https://pravice.co/logo_pravice.png",
+
   inLanguage: "es-CO",
 };
 

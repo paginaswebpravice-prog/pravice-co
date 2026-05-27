@@ -5,10 +5,10 @@ const canonicalUrl = "https://pravice.co/especialidades/derecho-administrativo";
 
 export const metadata: Metadata = {
   title:
-    "Abogados en Derecho Administrativo en Bogotá | Defensa contra el Estado en Colombia",
+    "Derecho administrativo en Colombia | Información sobre procesos administrativos y contratación estatal",
 
   description:
-    "¿Problemas con el Estado? Abogados en derecho administrativo en Bogotá. Defensa en procesos administrativos, contratación pública y demandas contra entidades en Colombia.",
+    "Información sobre derecho administrativo en Colombia, procesos frente al Estado, contratación pública, recursos administrativos y actuaciones de entidades públicas.",
 
   alternates: {
     canonical: canonicalUrl,
@@ -16,19 +16,22 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Abogados en Derecho Administrativo en Bogotá | Defensa contra el Estado",
+      "Derecho administrativo en Colombia | Procesos administrativos y contratación estatal",
+
     description:
-      "Defiende tus derechos frente al Estado en Colombia. Abogados expertos en procesos administrativos, contratación pública y demandas.",
+      "Conoce cómo funciona el derecho administrativo en Colombia y los principales procesos frente a entidades públicas.",
+
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "website",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
         width: 1200,
         height: 630,
-        alt: "Abogados en derecho administrativo en Bogotá",
+        alt: "Derecho administrativo en Colombia",
       },
     ],
   },
@@ -39,29 +42,40 @@ export const metadata: Metadata = {
   },
 };
 
-// SEO Schema JSON-LD (SERVICIO LEGAL)
 const schemaData = {
   "@context": "https://schema.org",
-  "@type": "LegalService",
-  name: "Abogados en derecho administrativo en Bogotá y Colombia",
+  "@type": "Article",
+
+  headline:
+    "Derecho administrativo en Colombia: procesos administrativos y contratación estatal",
+
   description:
-    "¿Problemas con el Estado? Abogados en derecho administrativo en Bogotá. Defensa en procesos administrativos, contratación pública y demandas contra entidades en Colombia.",
-  url: canonicalUrl,
-  image: "https://pravice.co/logo_pravice.png",
-  areaServed: {
-    "@type": "Country",
-    name: "Colombia",
-  },
-  provider: {
+    "Información sobre procesos administrativos, contratación pública y actuaciones de entidades estatales en Colombia.",
+
+  author: {
     "@type": "Organization",
     name: "Pravice",
-    url: "https://pravice.co",
+  },
+
+  publisher: {
+    "@type": "Organization",
+    name: "Pravice",
+
     logo: {
       "@type": "ImageObject",
       url: "https://pravice.co/logo_pravice.png",
     },
   },
-  serviceType: "Derecho administrativo y defensa contra el Estado",
+
+  mainEntityOfPage: canonicalUrl,
+
+  about: [
+    "Derecho administrativo",
+    "Contratación estatal",
+    "Procesos administrativos",
+    "Entidades públicas en Colombia",
+  ],
+
   inLanguage: "es-CO",
 };
 

@@ -1,28 +1,26 @@
 import MarcialOrtizContent from "./MarcialOrtizContent";
 
 export const metadata = {
-  title: "Marcial Ortiz | Abogado Especialista en Derecho Laboral en Bogotá",
+  title: "Marcial Ortiz | Abogado Laboral y Consultoría Empresarial en Bogotá",
 
   description:
-    "Marcial Ortiz Ballesteros es abogado especialista en Derecho Laboral, Recursos Humanos y Prevención de Riesgos Laborales en Bogotá Colombia. Consultoría empresarial y asesoría jurídica laboral.",
+    "Conoce a Marcial Ortiz, abogado enfocado en derecho laboral, relaciones laborales y prevención de riesgos laborales en Colombia.",
 
   keywords: [
-    "abogado laboral Bogotá",
-    "derecho laboral Bogotá",
-    "abogado recursos humanos",
-    "prevención riesgos laborales",
-    "consultoría laboral empresarial",
-    "cumplimiento normativo laboral",
-    "abogado seguridad y salud en el trabajo",
     "Marcial Ortiz",
+    "abogado laboral Bogotá",
+    "derecho laboral Colombia",
+    "consultoría laboral empresarial",
+    "relaciones laborales",
+    "prevención de riesgos laborales",
     "Pravice Abogados",
   ],
 
   openGraph: {
-    title: "Marcial Ortiz | Especialista en Derecho Laboral",
+    title: "Marcial Ortiz | Derecho Laboral y Consultoría Empresarial",
 
     description:
-      "Abogado en Bogotá especializado en Derecho Laboral, Recursos Humanos y Prevención de Riesgos Laborales.",
+      "Perfil profesional de Marcial Ortiz y su enfoque en derecho laboral y gestión estratégica empresarial.",
 
     url: "https://pravice.co/abogados/abogado-Marcial",
 
@@ -44,10 +42,10 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Marcial Ortiz | Especialista en Derecho Laboral",
+    title: "Marcial Ortiz | Derecho Laboral y Consultoría Empresarial",
 
     description:
-      "Asesoría jurídica laboral, recursos humanos y prevención de riesgos laborales en Bogotá.",
+      "Perfil profesional y enfoque jurídico de Marcial Ortiz en Colombia.",
 
     images: ["https://pravice.co/doc-marcialImage.jpg"],
   },

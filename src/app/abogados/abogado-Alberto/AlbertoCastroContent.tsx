@@ -6,9 +6,8 @@ import { motion } from "framer-motion";
 export default function AlbertoCastroContent() {
   return (
     <main className={styles.container}>
-      {/* HERO */}
       <section className={styles.hero}>
-        {/* FOTO */}
+        {/* IMAGE */}
         <motion.div
           className={styles.imageSide}
           initial={{ opacity: 0, x: -60 }}
@@ -35,104 +34,67 @@ export default function AlbertoCastroContent() {
 
           <h1 className={styles.title}>Alberto Castro</h1>
 
-          <p className={styles.role}>Fundador</p>
+          <p className={styles.role}>Abogado & Fundador</p>
 
-          {/* PERFIL */}
+          {/* ================= CARTA DE PRESENTACIÓN ================= */}
           <motion.section
             className={styles.card}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
           >
-            <h2>Perfil profesional</h2>
+            <h2>Presentación profesional</h2>
 
             <p>
-              Fundador de la firma, se destaca como uno de los mejores
-              conciliadores y expertos en gestión de cobros de la ciudad. Su
-              habilidad para resolver disputas complejas con deudores de alto
-              perfil lo ha convertido en un líder reconocido en la recuperación
-              de activos. Con un enfoque práctico, directo y altamente efectivo,
-              ha logrado obtener resultados inmediatos y satisfactorios para sus
-              clientes, optimizando tiempo y recursos en cada negociación.
+              Alberto Castro es abogado y fundador de Pravice Abogados, con
+              experiencia en conciliación y gestión de cobros empresariales en
+              Bogotá, Colombia.
+            </p>
+
+            <p>
+              Su enfoque se centra en la resolución estratégica de conflictos
+              financieros y en la estructuración de acuerdos que permitan a las
+              empresas recuperar cartera de forma eficiente.
+            </p>
+
+            <p>
+              Puedes ver su perfil completo en la firma aquí:{" "}
+              <a
+                href={
+                  "https://abogadosespecialistas.com.co/abogados/abogados-alberto-castro.html"
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Abogados Especialistas - Alberto Castro
+              </a>
             </p>
           </motion.section>
 
-          {/* ESPECIALIDADES */}
+          {/* ================= ENFOQUE PROFESIONAL ================= */}
           <motion.section
             className={styles.card}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
           >
-            <h2>Áreas de especialidad</h2>
-
-            <div className={styles.list}>
-              <div className={styles.item}>
-                <span>✓</span>
-                <p>
-                  Conciliación y resolución de disputas con deudores de alto
-                  perfil.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>✓</span>
-                <p>
-                  Gestión de cobros y recuperación de activos para empresas.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>✓</span>
-                <p>
-                  Diseño de soluciones personalizadas para deudores que no
-                  cumplen sus obligaciones.
-                </p>
-              </div>
-            </div>
-          </motion.section>
-
-          {/* ENFOQUE */}
-          <motion.section
-            className={styles.card}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2>Enfoque de trabajo</h2>
+            <h2>Enfoque profesional</h2>
 
             <div className={styles.list}>
               <div className={styles.item}>
                 <span>•</span>
-                <p>
-                  Enfoque práctico, directo y orientado a resultados inmediatos.
-                </p>
+                <p>Resolución estratégica de conflictos empresariales.</p>
+              </div>
+
+              <div className={styles.item}>
+                <span>•</span>
+                <p>Negociación y conciliación orientada a resultados.</p>
               </div>
 
               <div className={styles.item}>
                 <span>•</span>
                 <p>
-                  Creación de estrategias hechas a la medida de las necesidades
-                  de cada empresa.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>•</span>
-                <p>
-                  Negociación y mediación para alcanzar acuerdos beneficiosos
-                  para las empresas.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>•</span>
-                <p>
-                  Compromiso con la eficacia y una gestión integral en la
-                  recuperación de cartera y activos.
+                  Recuperación eficiente de cartera y activos empresariales.
                 </p>
               </div>
             </div>
@@ -140,6 +102,7 @@ export default function AlbertoCastroContent() {
         </motion.div>
       </section>
 
+      {/* ================= SCHEMA ================= */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -149,20 +112,14 @@ export default function AlbertoCastroContent() {
             name: "Alberto Castro",
             jobTitle: "Abogado y Fundador",
             image: "https://pravice.co/doc-albertoImage.jpg",
-            url: "https://pravice.co/abogados/abogado-Alberto",
             worksFor: {
               "@type": "Organization",
               name: "Pravice Abogados",
             },
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Bogotá",
-              addressCountry: "CO",
-            },
             knowsAbout: [
-              "Cobro jurídico",
-              "Recuperación de cartera",
               "Conciliación",
+              "Recuperación de cartera",
+              "Cobro jurídico",
               "Gestión de activos",
             ],
           }),

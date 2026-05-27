@@ -98,16 +98,16 @@ export default function Footer() {
 
             <ul>
               <li>
-                <Link href="#hero">Inicio</Link>
+                <Link href="/#hero">Inicio</Link>
               </li>
               <li>
-                <Link href="#services">Servicios</Link>
+                <Link href="/#services">Servicios</Link>
               </li>
               <li>
-                <Link href="#legalapp">Legal App</Link>
+                <Link href="/#legalapp">Legal App</Link>
               </li>
               <li>
-                <Link href="#about">Nosotros</Link>
+                <Link href="/#about">Nosotros</Link>
               </li>
               <li>
                 <Link href="/especialidades">Especialidades</Link>
@@ -116,7 +116,13 @@ export default function Footer() {
                 <Link href="/abogados">Nuestro abogados</Link>
               </li>
               <li>
-                <Link href="/videos">Videos</Link>
+                <Link
+                  href="https://abogadosespecialistas.com.co/video.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Videos
+                </Link>
               </li>
               <li>
                 <Link href="/blog">Blog</Link>

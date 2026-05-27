@@ -5,19 +5,19 @@ const canonicalUrl = "https://pravice.co/especialidades/litigios";
 
 export const metadata: Metadata = {
   title:
-    "Litigios en Bogotá y Colombia | Abogados expertos en defensa judicial de empresas",
+    "Litigios empresariales y procesos judiciales en Colombia | Gestión jurídica corporativa",
 
   description:
-    "Abogados expertos en litigios en Bogotá y Colombia. Representación en procesos civiles, comerciales y ejecutivos. Defensa legal estratégica para empresas.",
+    "Información sobre litigios empresariales, procesos judiciales civiles y comerciales en Colombia, gestión de controversias legales y estrategias jurídicas corporativas.",
 
   keywords: [
-    "litigios en Colombia",
-    "abogados litigios Bogotá",
-    "procesos judiciales Colombia",
-    "abogados civiles Bogotá",
+    "litigios empresariales Colombia",
+    "procesos judiciales empresariales",
     "litigios comerciales Colombia",
-    "procesos ejecutivos abogados",
-    "defensa legal empresas Colombia",
+    "procesos civiles empresas",
+    "controversias legales empresariales",
+    "defensa judicial empresarial",
+    "gestión jurídica corporativa",
   ],
 
   alternates: {
@@ -25,33 +25,39 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "Abogados de litigios en Bogotá y Colombia | Defensa legal estratégica para empresas",
+    title: "Litigios empresariales y controversias legales en Colombia",
 
     description:
-      "Defiende tu empresa con abogados expertos en litigios en Bogotá y Colombia. Procesos civiles, comerciales y ejecutivos.",
+      "Conoce información sobre litigios civiles, comerciales y procesos judiciales empresariales en Colombia.",
 
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
-    type: "website",
+    type: "article",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
-// SEO Schema JSON-LD (SERVICIO LEGAL)
+// SCHEMA SEO
 const schemaData = {
   "@context": "https://schema.org",
-  "@type": "LegalService",
-  name: "Abogados de litigios en Bogotá y Colombia",
+  "@type": "Article",
+  headline: "Litigios empresariales y procesos judiciales en Colombia",
   description:
-    "Abogados expertos en litigios en Bogotá y Colombia. Representación en procesos civiles, comerciales y ejecutivos. Defensa legal estratégica para empresas.",
-  url: canonicalUrl,
-  image: "https://pravice.co/logo_pravice.png",
-  areaServed: {
-    "@type": "Country",
-    name: "Colombia",
-  },
-  provider: {
+    "Información sobre litigios civiles, comerciales, controversias legales y gestión jurídica empresarial en Colombia.",
+  mainEntityOfPage: canonicalUrl,
+  inLanguage: "es-CO",
+  about: [
+    "Litigios empresariales",
+    "Procesos judiciales",
+    "Defensa judicial",
+    "Controversias comerciales",
+  ],
+  publisher: {
     "@type": "Organization",
     name: "Pravice",
     url: "https://pravice.co",
@@ -60,8 +66,13 @@ const schemaData = {
       url: "https://pravice.co/logo_pravice.png",
     },
   },
-  serviceType: "Litigios y defensa judicial empresarial",
-  inLanguage: "es-CO",
+  mentions: [
+    {
+      "@type": "WebPage",
+      name: "Abogados litigantes y litigios en Colombia",
+      url: "https://abogadosespecialistas.com.co/litigios-abogado-litigante.html",
+    },
+  ],
 };
 
 export default function Page() {

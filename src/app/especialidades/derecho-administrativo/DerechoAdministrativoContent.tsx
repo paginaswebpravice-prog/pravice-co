@@ -13,22 +13,13 @@ const fadeUp = {
   },
 };
 
-const container = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.08,
-    },
-  },
-};
-
 export default function DerechoAdministrativoContent() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "Derecho administrativo en Colombia",
     description:
-      "Servicio de asesoría en derecho administrativo en Bogotá y Colombia para defensa frente al Estado, contratación pública y procesos administrativos.",
+      "Información y orientación jurídica sobre derecho administrativo en Colombia, contratación estatal y procesos frente a entidades públicas.",
     areaServed: "Colombia",
     provider: {
       "@type": "Organization",
@@ -38,95 +29,125 @@ export default function DerechoAdministrativoContent() {
 
   return (
     <>
-      {/* ================= SCHEMA ================= */}
       <Script
-        id="schema"
+        id="schema-derecho-administrativo"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(schema),
         }}
       />
+
       {/* ================= HERO ================= */}
       <motion.section variants={fadeUp} className={styles.hero}>
         <div className={styles.heroContent}>
-          <span className={styles.badge}>Abogados en Bogotá y Colombia</span>
+          <span className={styles.badge}>Información legal en Colombia</span>
 
           <h1 className={styles.title}>
-            Abogados en Derecho Administrativo en Bogotá: Defensa contra el
-            Estado y Procesos Administrativos en Colombia
+            Derecho administrativo en Colombia: procesos administrativos,
+            contratación estatal y defensa frente a entidades públicas
           </h1>
 
           <p className={styles.description}>
-            Defiende tus derechos frente a entidades públicas con abogados
-            especializados en derecho administrativo en Bogotá y Colombia.
-            Asesoría en procesos administrativos, contratos estatales y defensa
-            jurídica ante el Estado.
+            Conoce cómo funciona el derecho administrativo en Colombia, cuáles
+            son los principales procesos frente al Estado y qué aspectos deben
+            tener en cuenta ciudadanos y empresas al interactuar con entidades
+            públicas.
           </p>
 
           <div className={styles.actions}>
-            <a href="#contacto" className={styles.primary}>
-              Solicitar asesoría
+            <a href="#guia" className={styles.primary}>
+              Ver información
             </a>
-            <a href="/blog" className={styles.secondary}>
-              Ver blog legal
+
+            <a
+              href="https://abogadosespecialistas.com.co/derecho-administrativo.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.secondary}
+            >
+              Portal especializado
             </a>
           </div>
         </div>
       </motion.section>
 
-      {/* ================= INTRO ================= */}
       <main className={styles.container}>
-        <motion.section variants={fadeUp}>
+        {/* ================= INTRO ================= */}
+        <motion.section variants={fadeUp} className={styles.section} id="guia">
           <h2 className={styles.subtitle}>
-            ¿Qué hace un abogado en derecho administrativo y cuándo lo necesitas
-            en Colombia?
+            ¿Qué es el derecho administrativo en Colombia?
           </h2>
 
           <p className={styles.text}>
-            El derecho administrativo en Colombia es la rama del derecho que
-            regula la relación entre los ciudadanos, las empresas y las
-            entidades del Estado. Su objetivo principal es garantizar que la
-            administración pública actúe conforme a la ley, protegiendo los
-            derechos de los particulares frente a decisiones estatales.
+            El derecho administrativo es la rama del derecho encargada de
+            regular las actuaciones de las entidades públicas y la relación
+            entre el Estado, los ciudadanos y las empresas.
+          </p>
+
+          <p className={styles.text}>
+            En Colombia, este campo jurídico abarca procedimientos
+            administrativos, contratación estatal, sanciones, licencias,
+            recursos administrativos y mecanismos de control frente a decisiones
+            emitidas por autoridades públicas.
           </p>
 
           <div className={styles.highlightBox}>
-            <strong>Clave:</strong> Toda actuación de una entidad pública puede
-            ser controlada legalmente. No estás en desventaja frente al Estado.
+            <strong>Importante:</strong> Toda actuación administrativa debe
+            respetar principios como legalidad, debido proceso y transparencia.
           </div>
 
           <p className={styles.text}>
-            En Bogotá, donde se concentra gran parte de la actividad
-            administrativa del país, es común que empresas y personas deban
-            interactuar constantemente con entidades públicas, lo que hace
-            indispensable contar con asesoría legal especializada.
+            En Bogotá y otras ciudades del país, muchas empresas interactúan
+            constantemente con entidades públicas, por lo que comprender el
+            funcionamiento del derecho administrativo resulta fundamental para
+            evitar riesgos legales y errores procedimentales.
+          </p>
+        </motion.section>
+
+        {/* ================= PORTAL SEO ================= */}
+        <motion.section variants={fadeUp} className={styles.portalSeo}>
+          <h2 className={styles.subtitle}>
+            Portal especializado en derecho administrativo en Colombia
+          </h2>
+
+          <p>
+            Si buscas información más amplia sobre procesos administrativos,
+            contratación estatal, demandas contra entidades públicas y defensa
+            jurídica frente al Estado, puedes visitar el portal especializado en{" "}
+            <a
+              href="https://abogadosespecialistas.com.co/derecho-administrativo.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              derecho administrativo en Colombia
+            </a>
+            .
           </p>
         </motion.section>
 
         {/* ================= SERVICIOS ================= */}
-        <motion.section variants={fadeUp}>
+        <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Servicios de derecho administrativo en Bogotá: defensa, contratación
-            estatal y recursos legales
+            Temas frecuentes en derecho administrativo
           </h2>
 
           <div className={styles.grid}>
             {[
               {
                 title: "Procesos administrativos",
-                text: "Defensa y acompañamiento en actuaciones ante entidades públicas.",
+                text: "Actuaciones adelantadas por entidades públicas frente a ciudadanos y empresas.",
               },
               {
                 title: "Contratación estatal",
-                text: "Asesoría en licitaciones, contratos públicos y cumplimiento.",
-              },
-              {
-                title: "Demandas contra el Estado",
-                text: "Reclamaciones por daños causados por entidades públicas.",
+                text: "Licitaciones, contratos públicos y requisitos legales para contratar con el Estado.",
               },
               {
                 title: "Recursos administrativos",
-                text: "Impugnación de decisiones mediante recursos legales.",
+                text: "Mecanismos legales para controvertir decisiones emitidas por autoridades.",
+              },
+              {
+                title: "Responsabilidad del Estado",
+                text: "Procesos relacionados con daños ocasionados por entidades públicas.",
               },
             ].map((item, i) => (
               <motion.div
@@ -146,31 +167,24 @@ export default function DerechoAdministrativoContent() {
         </motion.section>
 
         {/* ================= IMPORTANCIA ================= */}
-        <motion.section variants={fadeUp}>
+        <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Por qué necesitas defensa en derecho administrativo en Bogotá?
+            Importancia del derecho administrativo para empresas y ciudadanos
           </h2>
-
-          <p className={styles.text}>
-            En Colombia, las entidades públicas tienen un papel fundamental en
-            la regulación de actividades económicas, licencias, permisos y
-            contratos. En Bogotá, esto es aún más evidente debido a la alta
-            concentración institucional.
-          </p>
 
           <div className={styles.infoGrid}>
             {[
               {
-                title: "✔ Defensa frente al Estado",
-                text: "Protege tus derechos ante decisiones administrativas.",
-              },
-              {
                 title: "✔ Seguridad jurídica",
-                text: "Evita sanciones y errores en trámites públicos.",
+                text: "Permite actuar conforme a las normas y procedimientos vigentes.",
               },
               {
-                title: "✔ Control legal",
-                text: "Permite cuestionar actuaciones irregulares.",
+                title: "✔ Protección de derechos",
+                text: "Ayuda a cuestionar actuaciones irregulares de entidades públicas.",
+              },
+              {
+                title: "✔ Prevención de sanciones",
+                text: "Reduce riesgos derivados de incumplimientos administrativos.",
               },
             ].map((item, i) => (
               <motion.div
@@ -188,43 +202,43 @@ export default function DerechoAdministrativoContent() {
         </motion.section>
 
         {/* ================= CONTRATACIÓN ================= */}
-        <motion.section variants={fadeUp}>
+        <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Contratación estatal en Colombia: cómo evitar errores, sanciones y
-            pérdida de contratos
+            Contratación estatal y cumplimiento normativo en Colombia
           </h2>
 
           <p className={styles.text}>
-            La contratación estatal es uno de los pilares del derecho
-            administrativo. Las empresas que desean trabajar con el Estado deben
-            cumplir requisitos estrictos y procesos regulados.
+            La contratación pública en Colombia exige el cumplimiento de
+            requisitos técnicos, jurídicos y financieros que deben revisarse con
+            cuidado antes de participar en procesos estatales.
           </p>
 
           <div className={styles.warningBox}>
-            ⚠ Errores en procesos de contratación pueden generar sanciones,
-            pérdida de contratos o inhabilidades legales.
+            ⚠ Errores en documentación, requisitos o procedimientos pueden
+            generar sanciones, exclusiones o pérdida de oportunidades
+            contractuales.
           </div>
 
           <p className={styles.text}>
-            Por esta razón, es fundamental contar con abogados especializados en
-            derecho administrativo que asesoren cada etapa del proceso.
+            Por esta razón, muchas organizaciones buscan orientación
+            especializada para comprender los procesos administrativos y actuar
+            correctamente frente a entidades públicas.
           </p>
         </motion.section>
 
         {/* ================= BENEFICIOS ================= */}
-        <motion.section variants={fadeUp}>
+        <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Beneficios de contratar abogados en derecho administrativo en
-            Colombia
+            Aspectos clave del derecho administrativo en Colombia
           </h2>
 
           <div className={styles.benefits}>
             {[
-              "✔ Defensa legal frente al Estado",
-              "✔ Reducción de riesgos administrativos",
-              "✔ Correcta gestión de trámites",
+              "✔ Debido proceso administrativo",
+              "✔ Control de actuaciones estatales",
+              "✔ Contratación pública",
+              "✔ Recursos legales",
               "✔ Cumplimiento normativo",
-              "✔ Mayor seguridad jurídica",
             ].map((b, i) => (
               <motion.span
                 key={i}
@@ -240,34 +254,31 @@ export default function DerechoAdministrativoContent() {
           </div>
         </motion.section>
 
-        {/* ================= CTA ================= */}
-        <motion.section id="contacto" className={styles.cta} variants={fadeUp}>
+        {/* ================= CTA SEO ================= */}
+        <motion.section className={styles.cta} variants={fadeUp}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Abogados en derecho administrativo en Bogotá - Defiende tus
-              derechos frente al Estado hoy
+              Consulta más información sobre derecho administrativo en Colombia
             </h2>
 
             <p className={styles.ctaText}>
-              Nuestro equipo te asesora en procesos administrativos,
-              contratación estatal y defensa frente a entidades públicas en
-              Colombia.
+              Accede a contenido especializado sobre procesos administrativos,
+              contratación estatal y defensa jurídica frente a entidades
+              públicas.
             </p>
 
             <div className={styles.actions}>
               <a
-                href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+                href="https://abogadosespecialistas.com.co/derecho-administrativo.html"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={styles.primary}
               >
-                Contactar ahora
+                Ir al portal especializado
               </a>
 
-              <a
-                href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
-                target="_blank"
-                className={styles.secondary}
-              >
-                Hablar por WhatsApp
+              <a href="/blog" className={styles.secondary}>
+                Ver blog jurídico
               </a>
             </div>
           </div>

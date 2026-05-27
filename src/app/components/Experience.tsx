@@ -2,12 +2,13 @@
 
 import styles from "../styles/Experience.module.css";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Experience() {
   const stats = [
-    { number: "25+", label: "Años de experiencia" },
-    { number: "1500+", label: "Casos asesorados" },
-    { number: "300+", label: "Empresas asesoradas" },
+    { number: "25+", label: "Años de trayectoria" },
+    { number: "1500+", label: "Procesos acompañados" },
+    { number: "300+", label: "Empresas atendidas" },
     { number: "Colombia", label: "Cobertura nacional" },
   ];
 
@@ -24,8 +25,8 @@ export default function Experience() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Más de 25 años de experiencia{" "}
-          <span>en servicios legales en Colombia</span>
+          Más de 25 años de trayectoria
+          <span> acompañando empresas y personas en Colombia</span>
         </motion.h2>
 
         <motion.p
@@ -35,9 +36,9 @@ export default function Experience() {
           transition={{ delay: 0.2 }}
           viewport={{ once: true }}
         >
-          En <strong>Pravice Abogados</strong> contamos con más de
-          <strong> 25 años de experiencia en asesoría jurídica</strong>,
-          representando a empresas y personas en múltiples áreas del derecho.
+          En <strong>Pravice Abogados</strong> contamos con experiencia en
+          acompañamiento jurídico corporativo y consultoría legal para empresas
+          y personas en distintas áreas del derecho y escenarios empresariales.
         </motion.p>
 
         {/* STATS */}
@@ -54,6 +55,7 @@ export default function Experience() {
               whileHover={{ scale: 1.05 }}
             >
               <span className={styles.number}>{stat.number}</span>
+
               <p>{stat.label}</p>
             </motion.div>
           ))}
@@ -64,16 +66,18 @@ export default function Experience() {
         <div className={styles.cards}>
           {[
             {
-              title: "Áreas del derecho",
-              text: "Derecho laboral, civil, penal, comercial, registro de marcas y procesos de insolvencia.",
+              title: "Acompañamiento corporativo",
+              text: "Experiencia en consultoría y acompañamiento jurídico para empresas y organizaciones en Colombia.",
             },
+
             {
-              title: "Atención en toda Colombia",
-              text: "Asesoría jurídica presencial y remota con herramientas digitales seguras.",
+              title: "Cobertura nacional",
+              text: "Atención jurídica presencial y virtual para clientes en distintas ciudades del país.",
             },
+
             {
-              title: "Casos complejos",
-              text: "Acompañamiento legal integral desde la consulta inicial hasta la resolución.",
+              title: "Seguimiento estratégico",
+              text: "Procesos orientados al análisis, prevención y acompañamiento legal continuo.",
             },
           ].map((card, index) => (
             <motion.div
@@ -86,6 +90,7 @@ export default function Experience() {
               whileHover={{ y: -6, scale: 1.02 }}
             >
               <h4>{card.title}</h4>
+
               <p>{card.text}</p>
             </motion.div>
           ))}

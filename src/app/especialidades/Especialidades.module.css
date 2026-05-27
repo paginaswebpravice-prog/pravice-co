@@ -25,11 +25,47 @@
 .descripcion {
   text-align: center;
   color: #000;
-  margin-bottom: 70px;
-  max-width: 700px;
+  margin-bottom: 50px;
+  max-width: 760px;
   margin-left: auto;
   margin-right: auto;
   font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* ================= BLOQUE SEO ================= */
+
+.portalPrincipal {
+  max-width: 900px;
+  margin: 0 auto 70px auto;
+
+  background: #ffffff;
+
+  padding: 24px 28px;
+
+  border-radius: 14px;
+
+  border-left: 4px solid #f7c600;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.portalPrincipal p {
+  margin: 0;
+
+  line-height: 1.8;
+
+  color: #222;
+}
+
+.portalPrincipal a {
+  color: #004a80;
+
+  font-weight: 600;
+
+  text-decoration: underline;
+
+  text-underline-offset: 4px;
 }
 
 /* ================= GRID ESPECIALIDADES ================= */
@@ -56,6 +92,10 @@
   position: relative;
 
   text-decoration: none;
+
+  display: block;
+
+  height: 100%;
 }
 
 .card:hover {
@@ -89,8 +129,8 @@
 
 .card p {
   font-size: 0.95rem;
-  color: #808080;
-  line-height: 1.5;
+  color: #666;
+  line-height: 1.6;
 }
 
 /* TEXTO CTA TARJETA */
@@ -115,112 +155,62 @@
   transform: translateX(2px);
 }
 
-/* ================= PORTALES ================= */
+/* ================= CONTEXTO SEO ================= */
 
-.portalesWrapper {
-  border-top: 2px solid #e9eef3;
-  padding-top: 60px;
-}
-
-/* TITULO PORTALES */
-
-.tituloPortales {
-  text-align: center;
-  font-size: 1.7rem;
+.contextoSeo {
   margin-bottom: 40px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
+  padding: 40px;
 
-  color: #004a80;
-}
-
-/* ================= GRID PORTALES ================= */
-
-.portalesGrid {
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 25px;
-}
-
-/* ================= CARD PORTAL ================= */
-
-.portalCard {
   background: #ffffff;
-  padding: 28px;
-  border-radius: 14px;
 
-  text-decoration: none;
-  color: inherit;
+  border-radius: 18px;
 
-  border-left: 4px solid #004a80;
-
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-
-  transition: all 0.35s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-.portalCard:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(0, 74, 128, 0.15);
-  border-left: 4px solid #f7c600;
-}
+.contextoSeo h2 {
+  font-size: 2rem;
 
-/* TITULO PORTAL */
-
-.portalCard h4 {
-  margin-bottom: 10px;
   color: #004a80;
-  font-size: 1.1rem;
+
+  margin-bottom: 22px;
+
+  text-align: center;
+
+  line-height: 1.4;
 }
 
-/* TEXTO PORTAL */
+.contextoSeo p {
+  color: #333;
 
-.portalCard p {
-  font-size: 0.95rem;
-  color: #000;
-  line-height: 1.5;
+  line-height: 1.8;
+
+  margin-bottom: 18px;
+
+  font-size: 1rem;
 }
 
-/* LINK PORTAL */
-
-.portalLink {
-  margin-top: 18px;
-
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+.contextoSeo a {
+  color: #004a80;
 
   font-weight: 600;
 
-  color: #004a80;
-  transition: 0.25s;
-}
+  text-decoration: underline;
 
-.portalCard:hover .portalLink {
-  color: #c4911a;
+  text-underline-offset: 4px;
 }
 
 /* ================= RESPONSIVE ================= */
 
-@media (max-width: 1024px) {
-  .portalesGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .titulo {
     font-size: 2rem;
   }
 
   .descripcion {
     font-size: 1rem;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .cards {
@@ -231,12 +221,15 @@
     padding: 28px 22px;
   }
 
-  .portalesGrid {
-    grid-template-columns: 1fr;
+  .contextoSeo {
+    padding: 28px;
   }
 
-  .tituloPortales {
-    font-size: 1.4rem;
-    flex-direction: column;
+  .contextoSeo h2 {
+    font-size: 1.5rem;
+  }
+
+  .portalPrincipal {
+    padding: 22px;
   }
 }

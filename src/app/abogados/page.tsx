@@ -2,30 +2,20 @@ import type { Metadata } from "next";
 import AbogadosContent from "./AbogadosContent";
 
 export const metadata: Metadata = {
-  title:
-    "Abogados en Bogotá Colombia | Equipo jurídico especializado en derecho empresarial",
+  title: "Equipo de abogados en Colombia | Pravice",
   description:
-    "Conoce nuestro equipo de abogados en Bogotá Colombia especializados en derecho comercial, laboral, familia y asesoría jurídica empresarial.",
-  keywords: [
-    "abogados en Bogotá Colombia",
-    "equipo de abogados Bogotá",
-    "abogados derecho comercial Colombia",
-    "abogados derecho laboral Bogotá",
-    "firma de abogados Bogotá",
-    "asesoría jurídica Colombia",
-  ],
+    "Conoce el equipo jurídico de Pravice en Colombia, especialistas en derecho empresarial, laboral, penal y familiar.",
 
   alternates: {
     canonical: "https://pravice.co/abogados",
   },
 
   openGraph: {
-    title:
-      "Abogados en Bogotá Colombia | Firma jurídica especializada en empresas",
+    title: "Equipo de abogados en Colombia | Pravice",
     description:
-      "Equipo de abogados especializados en derecho comercial, laboral y familiar en Bogotá Colombia.",
+      "Conoce nuestro equipo de abogados especializados en diferentes áreas del derecho en Colombia.",
     url: "https://pravice.co/abogados",
-    siteName: "Pravice Abogados",
+    siteName: "Pravice",
     locale: "es_CO",
     type: "website",
   },
@@ -36,6 +26,26 @@ export const metadata: Metadata = {
   },
 };
 
+// ================= SEO SCHEMA =================
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Pravice",
+  url: "https://pravice.co",
+  department: "Equipo jurídico",
+};
+
 export default function Page() {
-  return <AbogadosContent />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schemaData),
+        }}
+      />
+
+      <AbogadosContent />
+    </>
+  );
 }

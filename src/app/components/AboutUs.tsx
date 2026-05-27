@@ -3,6 +3,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/AboutUs.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import { faScaleBalanced } from "@fortawesome/free-solid-svg-icons/faScaleBalanced";
 import { motion } from "framer-motion";
 
@@ -10,9 +11,9 @@ export default function AboutUs() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LegalService",
-    name: "Pravice Abogados",
+    name: "Pravice",
     description:
-      "Firma de abogados en Colombia especializada en asesoría jurídica empresarial y personal.",
+      "Firma jurídica y plataforma de acompañamiento legal en Colombia.",
   };
 
   return (
@@ -46,13 +47,10 @@ export default function AboutUs() {
             transition={{ delay: 0.2, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <strong>Pravice Abogados</strong> es una{" "}
-            <strong>firma de abogados en Bogotá, Colombia</strong> con más de{" "}
-            <strong>25 años de experiencia</strong> brindando asesoría legal a
-            empresas y personas. Contamos con abogados especializados en derecho
-            empresarial, derecho comercial, recuperación de cartera, litigios,
-            conciliación extrajudicial y asesoría jurídica corporativa en
-            Colombia.
+            <strong>Pravice</strong> es una plataforma de acompañamiento
+            jurídico y apoyo legal en Colombia orientada a empresas y personas
+            que requieren orientación estratégica en diferentes áreas del
+            derecho.
           </motion.p>
 
           <motion.p
@@ -62,14 +60,34 @@ export default function AboutUs() {
             transition={{ delay: 0.35, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Lo que comenzó como un proyecto enfocado en{" "}
-            <strong>recuperación de cartera en Colombia</strong> se ha
-            transformado en una firma legal con abogados especializados en
-            diferentes áreas del derecho, ofreciendo soluciones en cobro
-            prejurídico, cobro jurídico, contratos comerciales, derecho
-            societario, litigios empresariales y cumplimiento normativo para
-            empresas en Bogotá y en toda Colombia.
+            Trabajamos de forma complementaria con abogados y especialistas
+            aliados, facilitando procesos de orientación jurídica, gestión
+            documental y acompañamiento legal en distintas áreas de práctica.
           </motion.p>
+
+          {/* BACKLINK SEO */}
+
+          <motion.div
+            className={styles.referenceBox}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.45, duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <p>
+              Conoce más sobre nuestra red de abogados especialistas,
+              experiencia jurídica y áreas de práctica en:
+            </p>
+
+            <Link
+              href="https://abogadosespecialistas.com.co/quienes-somos.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.referenceLink}
+            >
+              abogadosespecialistas.com.co/quienes-somos.html
+            </Link>
+          </motion.div>
 
           <motion.a
             className={styles.button}
@@ -88,8 +106,8 @@ export default function AboutUs() {
               transition={{ delay: 0.4 }}
               viewport={{ once: true }}
             >
-              Innovar en la prestación de{" "}
-              <strong>servicios legales en Bogotá y Colombia</strong>.
+              Orientación y acompañamiento jurídico para empresas y personas en
+              Colombia.
             </motion.li>
 
             <motion.li
@@ -98,11 +116,7 @@ export default function AboutUs() {
               transition={{ delay: 0.5 }}
               viewport={{ once: true }}
             >
-              Brindar{" "}
-              <strong>
-                soluciones jurídicas estratégicas para empresas y personas
-              </strong>
-              .
+              Integración de soluciones digitales y apoyo legal estratégico.
             </motion.li>
 
             <motion.li
@@ -111,11 +125,8 @@ export default function AboutUs() {
               transition={{ delay: 0.6 }}
               viewport={{ once: true }}
             >
-              Acompañar a nuestros clientes en procesos de{" "}
-              <strong>
-                recuperación de cartera, litigios y asesoría legal empresarial
-              </strong>
-              .
+              Trabajo conjunto con abogados y especialistas en distintas áreas
+              del derecho.
             </motion.li>
           </ul>
         </div>
@@ -131,7 +142,7 @@ export default function AboutUs() {
           >
             <Image
               src="/foto-grupal.jpg"
-              alt="Equipo de abogados de Pravice Abogados en Colombia"
+              alt="Equipo jurídico y abogados aliados de Pravice en Colombia"
               fill
               className={styles.image}
             />
@@ -145,11 +156,11 @@ export default function AboutUs() {
             viewport={{ once: true }}
           >
             <p>
-              "Pravice Abogados nos brindó un acompañamiento excepcional en
-              nuestro proceso de recuperación de cartera y asesoría legal
-              empresarial en Colombia."
+              "Pravice nos permitió acceder a orientación jurídica y
+              acompañamiento estratégico de forma clara y organizada."
             </p>
-            <span>— Juan Camilo Restrepo, Gerente General</span>
+
+            <span>— Cliente corporativo</span>
           </motion.div>
         </div>
       </div>

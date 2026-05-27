@@ -13,26 +13,17 @@ const fadeUp = {
   },
 };
 
-const container = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.08,
-    },
-  },
-};
-
 export default function DerechoSocietarioContent() {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    name: "Derecho societario en Colombia",
+    "@type": "Article",
+    headline: "Derecho societario y estructuras empresariales en Colombia",
     description:
-      "Asesoría en derecho societario para creación de empresas, manejo de socios y estructuras empresariales en Bogotá y Colombia.",
-    areaServed: "Colombia",
-    provider: {
+      "Información sobre derecho societario, estructuras empresariales, tipos de sociedades y gestión corporativa en Colombia.",
+    inLanguage: "es-CO",
+    author: {
       "@type": "Organization",
-      name: "TuFirmaLegal",
+      name: "Pravice",
     },
   };
 
@@ -40,7 +31,7 @@ export default function DerechoSocietarioContent() {
     <>
       {/* SCHEMA */}
       <Script
-        id="schema"
+        id="schema-derecho-societario"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(schema),
@@ -48,25 +39,33 @@ export default function DerechoSocietarioContent() {
       />
 
       {/* HERO */}
-      <motion.section variants={fadeUp} className={styles.hero}>
+      <motion.section
+        initial="hidden"
+        animate="visible"
+        variants={fadeUp}
+        className={styles.hero}
+      >
         <div className={styles.heroContent}>
-          <span className={styles.badge}>Abogados en Bogotá y Colombia</span>
+          <span className={styles.badge}>
+            Derecho societario y gestión empresarial
+          </span>
 
           <h1 className={styles.title}>
-            Derecho societario en Bogotá y Colombia: abogados para crear,
-            estructurar y proteger tu empresa
+            Derecho societario en Colombia: estructuras empresariales,
+            sociedades y gestión corporativa
           </h1>
 
           <p className={styles.description}>
-            Asesoría en derecho societario en Bogotá y Colombia para creación de
-            empresas, manejo de socios, reformas estatutarias y protección legal
-            empresarial.
+            Conoce aspectos relacionados con derecho societario en Colombia,
+            constitución de sociedades, relaciones entre socios, estructuras
+            corporativas y organización empresarial.
           </p>
 
           <div className={styles.actions}>
             <a href="#contacto" className={styles.primary}>
-              Solicitar asesoría
+              Solicitar orientación jurídica
             </a>
+
             <a href="/blog" className={styles.secondary}>
               Ver blog legal
             </a>
@@ -74,54 +73,95 @@ export default function DerechoSocietarioContent() {
         </div>
       </motion.section>
 
-      {/* INTRO */}
+      {/* CONTENIDO */}
       <main className={styles.container}>
-        <motion.section variants={fadeUp} className={styles.section}>
+        {/* PORTAL SEO */}
+        <section className={styles.portalSeo}>
+          <p>
+            Si buscas información especializada sobre registro de marca,
+            protección de marca y propiedad industrial en Colombia, puedes
+            visitar nuestro portal principal de{" "}
+            <a
+              href="https://abogadosespecialistas.com.co/registro-de-marca.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              abogados expertos en registro de marca en Colombia
+            </a>
+            , donde encontrarás contenido ampliado sobre registro marcario,
+            protección de activos intangibles y procesos ante la
+            Superintendencia de Industria y Comercio.
+          </p>
+        </section>
+
+        {/* INTRO */}
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          className={styles.section}
+        >
           <h2 className={styles.subtitle}>
-            ¿Qué es el derecho societario en Colombia y por qué es clave para tu
-            empresa?
+            ¿Qué es el derecho societario en Colombia y cómo se relaciona con
+            las empresas?
           </h2>
 
           <p className={styles.text}>
-            El derecho societario en Colombia regula la creación, organización y
-            funcionamiento de las empresas.
+            El derecho societario en Colombia regula la constitución,
+            organización y funcionamiento de las sociedades comerciales y demás
+            estructuras empresariales utilizadas por personas y organizaciones
+            para desarrollar actividades económicas.
           </p>
 
           <p className={styles.text}>
-            En Bogotá, permite estructurar empresas legalmente y definir
-            responsabilidades entre socios.
+            Esta área jurídica aborda temas relacionados con tipos de
+            sociedades, derechos y obligaciones de socios, reformas
+            estatutarias, administración corporativa y crecimiento empresarial.
           </p>
 
           <div className={styles.highlightBox}>
-            <strong>Importante:</strong> Una buena estructura societaria evita
-            conflictos y protege el crecimiento.
+            <strong>Importante:</strong> Una adecuada estructura societaria
+            permite mejorar la organización empresarial, reducir riesgos y
+            facilitar el crecimiento corporativo.
           </div>
+
+          <p className={styles.text}>
+            En Colombia, las empresas suelen combinar estrategias societarias,
+            contractuales y de propiedad intelectual para fortalecer su
+            operación y proteger sus activos empresariales.
+          </p>
         </motion.section>
 
-        {/* SERVICIOS */}
-        <motion.section variants={fadeUp} className={styles.section}>
+        {/* ESTRUCTURAS */}
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          className={styles.section}
+        >
           <h2 className={styles.subtitle}>
-            Servicios de derecho societario en Bogotá: creación, reformas y
-            gestión de empresas
+            Estructuras societarias y tipos de empresas en Colombia
           </h2>
 
           <div className={styles.grid}>
             {[
               {
-                title: "Constitución de sociedades",
-                text: "Creación de SAS, LTDA y sociedades anónimas.",
+                title: "Sociedad por Acciones Simplificada (SAS)",
+                text: "Modelo empresarial flexible utilizado por emprendedores y empresas en Colombia.",
               },
               {
-                title: "Reformas estatutarias",
-                text: "Modificación de estatutos empresariales.",
+                title: "Sociedades limitadas",
+                text: "Estructuras societarias enfocadas en participación y responsabilidad limitada.",
               },
               {
-                title: "Manejo de socios",
-                text: "Regulación de relaciones y conflictos.",
+                title: "Sociedades anónimas",
+                text: "Organizaciones corporativas utilizadas para operaciones empresariales de mayor tamaño.",
               },
               {
-                title: "Fusiones y adquisiciones",
-                text: "Procesos de integración empresarial.",
+                title: "Estructuras corporativas",
+                text: "Modelos organizacionales adaptados a necesidades comerciales y empresariales.",
               },
             ].map((item, i) => (
               <motion.div
@@ -140,101 +180,135 @@ export default function DerechoSocietarioContent() {
         </motion.section>
 
         {/* IMPORTANCIA */}
-        <motion.section variants={fadeUp} className={styles.section}>
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          className={styles.section}
+        >
           <h2 className={styles.subtitle}>
-            Importancia del derecho societario en Bogotá para proteger socios y
-            estructurar empresas
+            Importancia de la organización societaria y corporativa
           </h2>
 
           <div className={styles.infoGrid}>
             <div>
-              <h4>✔ Estructura legal</h4>
-              <p>Define funcionamiento empresarial.</p>
+              <h4>✔ Organización empresarial</h4>
+              <p>
+                Facilita la administración y distribución de responsabilidades.
+              </p>
             </div>
 
             <div>
-              <h4>✔ Protección socios</h4>
-              <p>Evita conflictos.</p>
+              <h4>✔ Gestión entre socios</h4>
+              <p>
+                Permite establecer reglas claras de participación y toma de
+                decisiones.
+              </p>
             </div>
 
             <div>
-              <h4>✔ Cumplimiento</h4>
-              <p>Operación legal.</p>
+              <h4>✔ Seguridad jurídica</h4>
+              <p>
+                Reduce contingencias legales y mejora la estabilidad
+                empresarial.
+              </p>
             </div>
 
             <div>
-              <h4>✔ Crecimiento</h4>
-              <p>Facilita expansión.</p>
+              <h4>✔ Crecimiento corporativo</h4>
+              <p>
+                Facilita procesos de expansión y reorganización empresarial.
+              </p>
             </div>
           </div>
         </motion.section>
 
-        {/* TIPOS */}
-        <motion.section variants={fadeUp} className={styles.section}>
+        {/* MARCAS */}
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          className={styles.section}
+        >
           <h2 className={styles.subtitle}>
-            Tipos de sociedades en Colombia que debes conocer antes de crear tu
-            empresa
+            Registro de marca y protección empresarial en Colombia
           </h2>
 
-          <div className={styles.grid}>
-            <div className={styles.card}>
-              <h3>SAS</h3>
-              <p>Flexible y fácil de crear.</p>
-            </div>
+          <p className={styles.text}>
+            Además de la estructura societaria, muchas empresas en Colombia
+            buscan proteger sus activos intangibles mediante estrategias de
+            propiedad intelectual y registro de marca.
+          </p>
 
-            <div className={styles.card}>
-              <h3>LTDA</h3>
-              <p>Empresas familiares.</p>
-            </div>
-
-            <div className={styles.card}>
-              <h3>SA</h3>
-              <p>Empresas grandes.</p>
-            </div>
-
-            <div className={styles.card}>
-              <h3>Comandita</h3>
-              <p>Socios gestores y capitalistas.</p>
-            </div>
-          </div>
-        </motion.section>
-
-        {/* CONFLICTOS */}
-        <motion.section variants={fadeUp} className={styles.section}>
-          <h2 className={styles.subtitle}>
-            Conflictos entre socios en Colombia: riesgos y cómo evitarlos
-            legalmente
-          </h2>
+          <p className={styles.text}>
+            El registro marcario permite diferenciar productos, servicios y
+            actividades comerciales dentro del mercado, fortaleciendo la
+            identidad empresarial y la protección legal de los signos
+            distintivos.
+          </p>
 
           <div className={styles.warningBox}>
-            ⚠ Problemas entre socios afectan la estabilidad empresarial.
+            ⚠ Operar una marca sin protección adecuada puede generar conflictos
+            comerciales, riesgos reputacionales y limitaciones para el
+            crecimiento empresarial.
           </div>
+
+          <p className={styles.text}>
+            Si deseas ampliar información sobre protección de marca y propiedad
+            industrial en Colombia, puedes consultar también nuestro portal
+            especializado de{" "}
+            <a
+              href="https://abogadosespecialistas.com.co/registro-de-marca.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              registro de marca y propiedad intelectual
+            </a>
+            .
+          </p>
         </motion.section>
 
         {/* BENEFICIOS */}
-        <motion.section variants={fadeUp} className={styles.section}>
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          className={styles.section}
+        >
           <h2 className={styles.subtitle}>
-            Beneficios del derecho societario en Colombia para empresas y socios
+            Beneficios de una adecuada estructura societaria y empresarial
           </h2>
 
           <div className={styles.benefits}>
-            <span>✔ Creación legal</span>
-            <span>✔ Protección socios</span>
-            <span>✔ Menos conflictos</span>
-            <span>✔ Cumplimiento</span>
-            <span>✔ Crecimiento</span>
+            <span>✔ Organización corporativa</span>
+            <span>✔ Mejor administración empresarial</span>
+            <span>✔ Prevención de conflictos societarios</span>
+            <span>✔ Seguridad jurídica empresarial</span>
+            <span>✔ Protección de activos empresariales</span>
           </div>
         </motion.section>
 
         {/* CTA */}
-        <motion.section id="contacto" variants={fadeUp} className={styles.cta}>
+        <motion.section
+          id="contacto"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          className={styles.cta}
+        >
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Habla con un abogado societario en Bogotá y protege tu empresa hoy
+              Recibe orientación sobre derecho societario y gestión empresarial
             </h2>
 
             <p className={styles.ctaText}>
-              Te ayudamos a estructurar y proteger tu empresa en Colombia.
+              Conoce información relacionada con estructuras empresariales,
+              sociedades comerciales, organización corporativa y protección de
+              activos empresariales en Colombia.
             </p>
 
             <div className={styles.actions}>
@@ -242,14 +316,16 @@ export default function DerechoSocietarioContent() {
                 href="https://api.whatsapp.com/send/?phone=573114659315"
                 className={styles.primary}
               >
-                Contactar ahora
+                Solicitar orientación
               </a>
 
               <a
-                href="https://api.whatsapp.com/send/?phone=573114659315"
+                href="https://abogadosespecialistas.com.co/registro-de-marca.html"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={styles.secondary}
               >
-                WhatsApp
+                Ver portal especializado
               </a>
             </div>
           </div>

@@ -4,25 +4,18 @@ import styles from "../styles/Hero.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import WhatsAppChat from "./whatsapp-chat/WhatsAppChat";
 
 export default function Hero() {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "LegalService",
-    name: "Firma de Abogados",
+    "@type": "Organization",
+    name: "Pravice",
     description:
-      "Firma de abogados en Colombia especializada en asesoría legal para empresas y personas. Consulta tu caso con expertos legales.",
+      "Plataforma y equipo jurídico de apoyo orientado al acompañamiento legal y gestión de servicios jurídicos en Colombia.",
     areaServed: {
       "@type": "Country",
       name: "Colombia",
     },
-    serviceType: [
-      "Asesoría jurídica",
-      "Consulta legal",
-      "Representación legal",
-      "Defensa jurídica",
-    ],
   };
 
   return (
@@ -37,7 +30,7 @@ export default function Hero() {
       <section
         className={styles.hero}
         id="hero"
-        aria-label="Firma de abogados expertos en Colombia"
+        aria-label="Pravice plataforma jurídica en Colombia"
       >
         <div className={styles.overlay}></div>
 
@@ -53,7 +46,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            Abogados especialistas en asesoría legal en Colombia
+            Acompañamiento jurídico y gestión legal en Colombia
           </motion.h1>
 
           <motion.p
@@ -62,10 +55,26 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
-            Más de 25 años brindando <strong>soluciones jurídicas</strong> para
-            empresas y personas. Nuestro equipo de{" "}
-            <strong>abogados expertos</strong> te acompaña en cada proceso legal
-            con profesionalismo, estrategia y resultados.
+            En Pravice impulsamos soluciones de apoyo jurídico, seguimiento de
+            procesos y acompañamiento profesional para personas y empresas en
+            Colombia mediante herramientas legales y atención especializada.
+          </motion.p>
+
+          <motion.p
+            className={styles.subtitle}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.6 }}
+          >
+            Conoce también nuestra{" "}
+            <a
+              href="https://abogadosespecialistas.com.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              firma jurídica de referencia
+            </a>{" "}
+            y el equipo profesional que integra nuestra red de apoyo legal.
           </motion.p>
 
           <motion.div
@@ -110,9 +119,9 @@ export default function Hero() {
         </motion.div>
 
         <p className={styles.seoText}>
-          Firma de abogados en Colombia especializada en derecho corporativo,
-          civil, comercial y asesoría legal empresarial. Ofrecemos consultas
-          jurídicas y representación legal para empresas y personas.
+          Pravice es una plataforma de apoyo y acompañamiento jurídico en
+          Colombia orientada a la gestión legal, seguimiento de procesos y
+          atención profesional para personas y empresas.
         </p>
       </section>
     </>

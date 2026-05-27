@@ -1,31 +1,25 @@
 import type { Metadata } from "next";
 import AlbertoCastroContent from "./AlbertoCastroContent";
 
+const canonicalUrl = "https://pravice.co/abogados/abogado-Alberto";
+
+const motherUrl =
+  "https://abogadosespecialistas.com.co/abogados/abogados-alberto-castro.html";
+
 export const metadata: Metadata = {
-  title:
-    "Alberto Castro Abogado en Bogotá Colombia | Recuperación de Cartera y Cobro Jurídico",
+  title: "Alberto Castro | Abogado en Bogotá Colombia - Pravice Abogados",
   description:
-    "Conoce a Alberto Castro, fundador de Pravice Abogados y especialista en conciliación, recuperación de cartera, cobro jurídico y gestión de activos en Bogotá Colombia.",
-  keywords: [
-    "Alberto Castro abogado",
-    "abogado en Bogotá Colombia",
-    "recuperación de cartera Bogotá",
-    "cobro jurídico Colombia",
-    "abogado conciliador Bogotá",
-    "gestión de cobros empresariales",
-    "abogado empresarial Bogotá",
-    "recuperación de activos Colombia",
-    "Pravice Abogados",
-  ],
+    "Perfil profesional de Alberto Castro, abogado en Bogotá Colombia y fundador de Pravice Abogados, especializado en conciliación y gestión de cobros empresariales.",
+
   alternates: {
-    canonical: "https://pravice.co/abogados/abogado-Alberto",
+    canonical: canonicalUrl,
   },
+
   openGraph: {
     title: "Alberto Castro | Abogado en Bogotá Colombia - Pravice Abogados",
     description:
-      "Especialista en conciliación, cobro jurídico y recuperación de cartera empresarial en Colombia.",
-    url: "https://pravice.co/abogados/abogado-Alberto",
-
+      "Perfil profesional del fundador de Pravice Abogados especializado en conciliación y recuperación de cartera empresarial.",
+    url: canonicalUrl,
     siteName: "Pravice Abogados",
     locale: "es_CO",
     type: "profile",
@@ -38,12 +32,10 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Alberto Castro | Abogado en Bogotá Colombia - Pravice Abogados",
-    description:
-      "Especialista en recuperación de cartera, conciliación y cobro jurídico empresarial.",
-    images: ["https://pravice.co/doc-albertoImage.jpg"],
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

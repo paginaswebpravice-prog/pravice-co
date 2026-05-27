@@ -17,7 +17,7 @@ export default function HarrisonPerezContent() {
           <div className={styles.imageWrapper}>
             <img
               src="/doc-harrisonImage.jpg"
-              alt="Harrison Pérez abogado especialista en derecho laboral, comercial y de familia en Bogotá Colombia"
+              alt="Harrison Pérez abogado en Bogotá Colombia"
               className={styles.image}
             />
           </div>
@@ -30,9 +30,7 @@ export default function HarrisonPerezContent() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <span className={styles.badge}>
-            Pravice Abogados · Bogotá Colombia
-          </span>
+          <span className={styles.badge}>Pravice Abogados</span>
 
           <div>
             <h1 className={styles.title}>Harrison Pérez</h1>
@@ -42,184 +40,63 @@ export default function HarrisonPerezContent() {
             </p>
           </div>
 
-          {/* PERFIL */}
-          <div className={styles.card}>
-            <h2>Perfil profesional</h2>
+          {/* CARTA DE PRESENTACIÓN */}
+          <motion.section
+            className={styles.card}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2>Carta de presentación</h2>
 
             <p>
-              Abogado con más de 5 años de experiencia en Derecho Laboral,
-              Seguridad Social, Derecho Comercial y Derecho de Familia, dedicado
-              a la asesoría y representación de personas, familias,
-              trabajadores, empleadores y empresas en conflictos de alta
-              sensibilidad jurídica.
+              Harrison Pérez forma parte del equipo de Pravice Abogados,
+              enfocando su práctica profesional en derecho laboral, comercial,
+              seguridad social y derecho de familia, acompañando tanto a
+              personas como a empresas en diferentes escenarios jurídicos y
+              consultivos.
             </p>
-
-            <br />
 
             <p>
-              Harrison Pérez Calderón se destaca por su enfoque técnico,
-              estratégico y conciliador, orientado a prevenir contingencias,
-              proteger derechos e intereses y resolver disputas de manera
-              eficiente, brindando acompañamiento cercano y soluciones ajustadas
-              a las necesidades de cada cliente.
+              Su experiencia se orienta al análisis estratégico de conflictos y
+              la construcción de soluciones jurídicas claras, preventivas y
+              ajustadas a las necesidades de cada cliente.
             </p>
-          </div>
 
-          {/* ÁREAS */}
-          <div className={styles.card}>
-            <h2>Áreas de especialidad</h2>
+            <p>
+              Puedes conocer el{" "}
+              <a
+                href="https://abogadosespecialistas.com.co/abogados/abogados-harrison-perez.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                perfil profesional del abogado en detalle
+              </a>
+              .
+            </p>
+          </motion.section>
 
-            <div className={styles.list}>
-              <div className={styles.item}>
-                <span>⚖</span>
+          {/* ENFOQUE PROFESIONAL */}
+          <motion.section
+            className={styles.card}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2>Enfoque profesional</h2>
 
-                <p>
-                  Contratos laborales, modalidades de vinculación y asesoría en
-                  relaciones de trabajo.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>📑</span>
-
-                <p>
-                  Despidos, sanciones disciplinarias, reclamaciones laborales y
-                  acreencias derivadas de la relación laboral.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>🛡</span>
-
-                <p>
-                  Asesoría en Seguridad Social: afiliaciones, prestaciones,
-                  incapacidades y pensiones.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>🤝</span>
-
-                <p>
-                  Contratos comerciales, estructuración de negocios jurídicos y
-                  revisión de acuerdos empresariales.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>💼</span>
-
-                <p>
-                  Procesos ejecutivos, cobro de cartera y conflictos derivados
-                  de incumplimientos contractuales.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>🔐</span>
-
-                <p>
-                  Asesoría preventiva en riesgos comerciales, fraude y
-                  contingencias jurídicas empresariales.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>👨‍👩‍👧</span>
-
-                <p>
-                  Procesos de divorcio, cesación de efectos civiles y
-                  liquidación de sociedades conyugales y uniones maritales de
-                  hecho.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>👶</span>
-
-                <p>
-                  Custodia de menores, regulación de visitas, patria potestad y
-                  acuerdos de crianza.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>💰</span>
-
-                <p>
-                  Fijación, modificación y cobro de cuotas alimentarias,
-                  sucesiones y partición de herencias.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* ENFOQUE */}
-          <div className={styles.card}>
-            <h2>Enfoque de trabajo</h2>
-
-            <div className={styles.list}>
-              <div className={styles.item}>
-                <span>✓</span>
-
-                <p>
-                  Análisis jurídico preventivo para reducir riesgos y evitar
-                  litigios innecesarios en escenarios laborales, comerciales y
-                  familiares.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>✓</span>
-
-                <p>
-                  Diseño de estrategias claras y efectivas para la protección de
-                  derechos, patrimonio e intereses de cada cliente.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>✓</span>
-
-                <p>
-                  Acompañamiento cercano y humano en procesos de alta carga
-                  emocional y jurídica, brindando claridad y confianza durante
-                  todo el proceso.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>✓</span>
-
-                <p>
-                  Gestión estratégica de conflictos comerciales y laborales con
-                  orientación técnica, preventiva y enfocada en resultados.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>✓</span>
-
-                <p>
-                  Priorización de soluciones conciliatorias y mecanismos
-                  eficientes de resolución de conflictos.
-                </p>
-              </div>
-
-              <div className={styles.item}>
-                <span>✓</span>
-
-                <p>
-                  Comunicación directa, transparente y oportuna, facilitando una
-                  toma de decisiones informada y alineada con los objetivos del
-                  cliente.
-                </p>
-              </div>
-            </div>
-          </div>
+            <p>
+              Su trabajo se caracteriza por un acompañamiento jurídico cercano,
+              preventivo y estratégico, enfocado en la protección de derechos,
+              la reducción de riesgos y la resolución efectiva de conflictos.
+            </p>
+          </motion.section>
         </motion.div>
       </section>
 
+      {/* JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -230,8 +107,6 @@ export default function HarrisonPerezContent() {
             jobTitle:
               "Abogado especialista en derecho laboral, comercial y de familia",
             image: "https://pravice.co/doc-harrisonImage.jpg",
-            description:
-              "Abogado especialista en derecho laboral, derecho comercial, seguridad social y derecho de familia en Bogotá Colombia.",
             url: "https://pravice.co/abogados/abogado-Harrison",
             worksFor: {
               "@type": "Organization",
@@ -242,6 +117,13 @@ export default function HarrisonPerezContent() {
               addressLocality: "Bogotá",
               addressCountry: "CO",
             },
+            knowsAbout: [
+              "Derecho laboral",
+              "Derecho comercial",
+              "Derecho de familia",
+              "Seguridad social",
+              "Asesoría jurídica empresarial",
+            ],
           }),
         }}
       />

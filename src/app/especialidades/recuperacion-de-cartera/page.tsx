@@ -6,19 +6,19 @@ const canonicalUrl =
 
 export const metadata: Metadata = {
   title:
-    "Recuperación de cartera en Colombia | Abogados en Bogotá para cobrar deudas empresariales",
+    "Gestión y procesos de recuperación de cartera empresarial en Colombia | Pravice",
 
   description:
-    "Recupera tu cartera vencida en Bogotá y Colombia con abogados expertos en cobro prejurídico y jurídico. Mejora tu flujo de caja y reduce la morosidad empresarial.",
+    "Información sobre procesos de recuperación de cartera, estrategias de cobranza, morosidad empresarial y gestión financiera aplicada al entorno corporativo en Colombia.",
 
   keywords: [
-    "recuperación de cartera Colombia",
-    "cobro jurídico Bogotá",
-    "cobro prejurídico Colombia",
-    "abogados cartera vencida Bogotá",
-    "recuperar deudas empresas Colombia",
-    "procesos ejecutivos Colombia",
-    "cobranza empresarial Bogotá",
+    "gestión de cartera empresarial",
+    "procesos de cobranza",
+    "morosidad empresarial",
+    "flujo financiero empresas",
+    "estrategias de recuperación de cartera",
+    "gestión financiera empresarial",
+    "cobranza corporativa",
   ],
 
   alternates: {
@@ -26,11 +26,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "Recupera tu cartera en Colombia | Abogados expertos en cobro en Bogotá",
+    title: "Gestión y estrategias de recuperación de cartera empresarial",
 
     description:
-      "Reduce la morosidad y recupera deudas empresariales con abogados especializados en Bogotá y Colombia.",
+      "Conoce procesos de cobranza, gestión de morosidad y recuperación de cartera aplicados al entorno empresarial.",
 
     url: canonicalUrl,
     siteName: "Pravice",
@@ -39,31 +38,31 @@ export const metadata: Metadata = {
   },
 };
 
-// SEO Schema JSON-LD (SERVICIO LEGAL)
 const schemaData = {
   "@context": "https://schema.org",
-  "@type": "LegalService",
-  name: "Recuperación de cartera en Bogotá y Colombia",
+  "@type": "Article",
+
+  headline:
+    "Procesos y estrategias de recuperación de cartera empresarial en Colombia",
+
   description:
-    "Recupera tu cartera vencida en Bogotá y Colombia con abogados expertos en cobro prejurídico y jurídico. Mejora tu flujo de caja y reduce la morosidad empresarial.",
-  url: canonicalUrl,
-  image: "https://pravice.co/logo_pravice.png",
-  areaServed: {
-    "@type": "Country",
-    name: "Colombia",
-  },
-  provider: {
+    "Información relacionada con procesos de recuperación de cartera, morosidad empresarial y estrategias de cobranza.",
+
+  author: {
     "@type": "Organization",
     name: "Pravice",
-    url: "https://pravice.co",
+  },
+
+  publisher: {
+    "@type": "Organization",
+    name: "Pravice",
     logo: {
       "@type": "ImageObject",
       url: "https://pravice.co/logo_pravice.png",
     },
   },
-  serviceType:
-    "Recuperación de cartera y cobro jurídico y prejurídico empresarial",
-  inLanguage: "es-CO",
+
+  mainEntityOfPage: canonicalUrl,
 };
 
 export default function Page() {

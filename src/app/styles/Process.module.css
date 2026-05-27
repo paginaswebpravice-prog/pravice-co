@@ -25,7 +25,36 @@
   max-width: 850px;
   color: #000;
   line-height: 1.7;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+/* LINK REFERENCIA */
+
+.referenceBox {
   margin-bottom: 60px;
+  padding: 22px 24px;
+  border-radius: 10px;
+  background: #f7f9fc;
+  border: 1px solid #e6e6e6;
+  border-left: 3px solid #f7c600;
+}
+
+.referenceBox p {
+  margin: 0 0 10px;
+  line-height: 1.7;
+  color: #000;
+}
+
+.referenceLink {
+  color: #004a80;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+}
+
+.referenceLink:hover {
+  opacity: 0.75;
 }
 
 /* TIMELINE */
@@ -128,5 +157,9 @@
 
   .title {
     font-size: 32px;
+  }
+
+  .referenceBox {
+    padding: 20px;
   }
 }

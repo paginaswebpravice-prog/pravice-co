@@ -13,22 +13,13 @@ const fadeUp = {
   },
 };
 
-const container = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.08,
-    },
-  },
-};
-
 export default function DerechoComercialContent() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "Derecho comercial en Colombia",
     description:
-      "Asesoría legal en derecho comercial para empresas en Bogotá y Colombia.",
+      "Información y orientación sobre derecho comercial, contratos empresariales y cumplimiento corporativo en Colombia.",
     areaServed: "Colombia",
     provider: {
       "@type": "Organization",
@@ -45,212 +36,253 @@ export default function DerechoComercialContent() {
           __html: JSON.stringify(schema),
         }}
       />
+
       {/* HERO */}
       <motion.section variants={fadeUp} className={styles.hero}>
         <div className={styles.heroContent}>
-          <span className={styles.badge}>Abogados en Bogotá y Colombia</span>
+          <span className={styles.badge}>
+            Información legal empresarial en Colombia
+          </span>
 
           <h1 className={styles.title}>
-            Derecho comercial en Bogotá y Colombia: abogados para empresas,
-            contratos y negocios seguros
+            Derecho comercial en Colombia: aspectos legales clave para empresas
+            y negocios
           </h1>
 
           <p className={styles.description}>
-            Protege tu empresa con abogados especializados en derecho comercial
-            en Bogotá y Colombia. Asesoría en contratos, sociedades,
-            negociaciones y conflictos empresariales.
+            Conoce cómo funciona el derecho comercial en Colombia, los riesgos
+            empresariales más frecuentes y la importancia de los contratos,
+            sociedades y cumplimiento normativo para las empresas.
           </p>
 
           <div className={styles.actions}>
             <a href="#contacto" className={styles.primary}>
-              Solicitar asesoría
-            </a>
-            <a href="/blog" className={styles.secondary}>
-              Ver blog legal
-            </a>
-          </div>
-        </div>
-      </motion.section>
-
-      {/* INTRO */}
-      <motion.section variants={fadeUp} className={styles.container}>
-        <h2 className={styles.subtitle}>
-          ¿Qué es el derecho comercial en Colombia y por qué es clave para tu
-          empresa?
-        </h2>
-
-        <p className={styles.text}>
-          El derecho comercial en Colombia es la rama del derecho encargada de
-          regular todas las actividades económicas, los actos de comercio y las
-          relaciones entre empresas, comerciantes y organizaciones.
-        </p>
-
-        <div className={styles.highlightBox}>
-          <strong>Importante:</strong> En Bogotá, el derecho comercial es clave
-          para la estabilidad empresarial.
-        </div>
-
-        <p className={styles.text}>
-          Este campo del derecho abarca la constitución de sociedades, contratos
-          comerciales y resolución de conflictos empresariales.
-        </p>
-      </motion.section>
-
-      {/* SERVICIOS */}
-      <motion.section variants={fadeUp} className={styles.section}>
-        <h2 className={styles.subtitle}>
-          Servicios de derecho comercial en Bogotá: contratos, sociedades y
-          asesoría empresarial
-        </h2>
-
-        <div className={styles.grid}>
-          {[
-            {
-              title: "Constitución de empresas",
-              text: "Creación de sociedades cumpliendo requisitos legales.",
-            },
-            {
-              title: "Contratos comerciales",
-              text: "Redacción y revisión de contratos empresariales.",
-            },
-            {
-              title: "Cumplimiento normativo",
-              text: "Adaptación a la normativa vigente en Colombia.",
-            },
-            {
-              title: "Litigios comerciales",
-              text: "Representación en conflictos empresariales.",
-            },
-          ].map((item, i) => (
-            <motion.div
-              key={i}
-              className={styles.card}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -6, scale: 1.02 }}
-            >
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </motion.div>
-          ))}
-        </div>
-      </motion.section>
-
-      {/* IMPORTANCIA */}
-      <motion.section variants={fadeUp} className={styles.section}>
-        <h2 className={styles.subtitle}>
-          Importancia del derecho comercial en Bogotá para proteger tu empresa y
-          reducir riesgos legales
-        </h2>
-
-        <div className={styles.infoGrid}>
-          {[
-            {
-              title: "✔ Seguridad jurídica",
-              text: "Reduce riesgos legales en operaciones.",
-            },
-            {
-              title: "✔ Confianza empresarial",
-              text: "Fortalece relaciones comerciales.",
-            },
-            {
-              title: "✔ Crecimiento sostenible",
-              text: "Decisiones empresariales seguras.",
-            },
-          ].map((item, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <h4>{item.title}</h4>
-              <p>{item.text}</p>
-            </motion.div>
-          ))}
-        </div>
-      </motion.section>
-
-      {/* CONTRATOS */}
-      <motion.section variants={fadeUp} className={styles.section}>
-        <h2 className={styles.subtitle}>
-          Contratos comerciales en Colombia: la base legal para proteger tu
-          negocio
-        </h2>
-
-        <div className={styles.warningBox}>
-          ⚠ Una mala redacción contractual puede generar pérdidas legales y
-          económicas.
-        </div>
-
-        <p className={styles.text}>
-          Los contratos son la base de toda relación empresarial en Colombia.
-        </p>
-      </motion.section>
-
-      {/* BENEFICIOS */}
-      <motion.section variants={fadeUp} className={styles.section}>
-        <h2 className={styles.subtitle}>
-          Beneficios de la asesoría en derecho comercial en Colombia para
-          empresas
-        </h2>
-
-        <div className={styles.benefits}>
-          {[
-            "✔ Prevención de conflictos",
-            "✔ Protección empresarial",
-            "✔ Cumplimiento legal",
-            "✔ Optimización empresarial",
-            "✔ Seguridad jurídica",
-          ].map((b, i) => (
-            <motion.span
-              key={i}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: i * 0.05 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.1 }}
-            >
-              {b}
-            </motion.span>
-          ))}
-        </div>
-      </motion.section>
-
-      {/* CTA */}
-      <motion.section id="contacto" className={styles.cta} variants={fadeUp}>
-        <div className={styles.ctaContent}>
-          <h2 className={styles.ctaTitle}>
-            Habla con un abogado de derecho comercial en Bogotá y protege tu
-            empresa hoy
-          </h2>
-
-          <p className={styles.ctaText}>
-            Protege tu empresa con asesoría legal especializada en Colombia.
-          </p>
-
-          <div className={styles.actions}>
-            <a
-              href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
-              className={styles.primary}
-              target="_blank"
-            >
-              Contactar ahora
+              Recibir orientación legal
             </a>
 
             <a
-              href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+              href="https://abogadosespecialistas.com.co/derecho-comercial-mercantil.html"
               className={styles.secondary}
               target="_blank"
+              rel="noopener noreferrer"
             >
-              WhatsApp
+              Ver guía especializada
             </a>
           </div>
         </div>
       </motion.section>
+
+      <main className={styles.container}>
+        {/* INTRO */}
+        <motion.section variants={fadeUp} className={styles.section}>
+          <h2 className={styles.subtitle}>
+            ¿Qué es el derecho comercial en Colombia?
+          </h2>
+
+          <p className={styles.text}>
+            El derecho comercial en Colombia es la rama jurídica encargada de
+            regular las actividades mercantiles, las relaciones entre empresas,
+            comerciantes y organizaciones, así como los actos de comercio.
+          </p>
+
+          <p className={styles.text}>
+            Este campo legal resulta fundamental para garantizar operaciones
+            empresariales seguras, contratos claros y estructuras comerciales
+            ajustadas a la normativa vigente.
+          </p>
+
+          <div className={styles.highlightBox}>
+            <strong>Importante:</strong> Una correcta estructura jurídica ayuda
+            a reducir riesgos legales, financieros y conflictos empresariales.
+          </div>
+        </motion.section>
+
+        {/* SERVICIOS */}
+        <motion.section variants={fadeUp} className={styles.section}>
+          <h2 className={styles.subtitle}>
+            Aspectos del derecho comercial que toda empresa debe conocer
+          </h2>
+
+          <div className={styles.grid}>
+            {[
+              {
+                title: "Contratos comerciales",
+                text: "Documentos que regulan relaciones empresariales y operaciones mercantiles.",
+              },
+              {
+                title: "Sociedades comerciales",
+                text: "Estructuras empresariales utilizadas para operar legalmente en Colombia.",
+              },
+              {
+                title: "Cumplimiento normativo",
+                text: "Adecuación empresarial frente a obligaciones legales y regulatorias.",
+              },
+              {
+                title: "Prevención de conflictos",
+                text: "Medidas legales para reducir disputas comerciales y riesgos corporativos.",
+              },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                className={styles.card}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.section>
+
+        {/* IMPORTANCIA */}
+        <motion.section variants={fadeUp} className={styles.section}>
+          <h2 className={styles.subtitle}>
+            Importancia del derecho comercial para empresas en Colombia
+          </h2>
+
+          <div className={styles.infoGrid}>
+            {[
+              {
+                title: "✔ Seguridad jurídica",
+                text: "Permite operaciones empresariales más seguras y organizadas.",
+              },
+              {
+                title: "✔ Protección contractual",
+                text: "Reduce riesgos derivados de acuerdos mal estructurados.",
+              },
+              {
+                title: "✔ Cumplimiento empresarial",
+                text: "Facilita adaptación a normas comerciales vigentes.",
+              },
+              {
+                title: "✔ Crecimiento corporativo",
+                text: "Favorece expansión empresarial con respaldo legal.",
+              },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <h4>{item.title}</h4>
+                <p>{item.text}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.section>
+
+        {/* CONTRATOS */}
+        <motion.section variants={fadeUp} className={styles.section}>
+          <h2 className={styles.subtitle}>
+            Contratos comerciales en Colombia y riesgos empresariales frecuentes
+          </h2>
+
+          <div className={styles.warningBox}>
+            ⚠ Errores en contratos comerciales pueden generar conflictos
+            jurídicos y pérdidas económicas importantes.
+          </div>
+
+          <p className={styles.text}>
+            Los contratos comerciales son una de las principales herramientas
+            jurídicas para regular relaciones entre empresas, proveedores,
+            aliados estratégicos y clientes.
+          </p>
+
+          <p className={styles.text}>
+            Una adecuada redacción contractual permite establecer obligaciones,
+            responsabilidades y mecanismos de protección empresarial.
+          </p>
+        </motion.section>
+
+        {/* PORTAL SEO */}
+        <motion.section variants={fadeUp} className={styles.portalSeo}>
+          <h2 className={styles.subtitle}>
+            Más información sobre derecho comercial y mercantil
+          </h2>
+
+          <p>
+            Si deseas ampliar información sobre procesos comerciales,
+            representación jurídica empresarial, litigios mercantiles y defensa
+            legal corporativa, puedes consultar esta guía especializada en
+            derecho comercial y mercantil.
+          </p>
+
+          <a
+            href="https://abogadosespecialistas.com.co/derecho-comercial-mercantil.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver guía especializada de derecho comercial
+          </a>
+        </motion.section>
+
+        {/* BENEFICIOS */}
+        <motion.section variants={fadeUp} className={styles.section}>
+          <h2 className={styles.subtitle}>
+            Beneficios de comprender el derecho comercial en Colombia
+          </h2>
+
+          <div className={styles.benefits}>
+            {[
+              "✔ Prevención de riesgos",
+              "✔ Mayor seguridad jurídica",
+              "✔ Protección empresarial",
+              "✔ Mejor organización corporativa",
+              "✔ Relaciones comerciales más seguras",
+            ].map((b, i) => (
+              <motion.span
+                key={i}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: i * 0.05 }}
+                viewport={{ once: true }}
+              >
+                {b}
+              </motion.span>
+            ))}
+          </div>
+        </motion.section>
+
+        {/* CTA */}
+        <motion.section id="contacto" className={styles.cta} variants={fadeUp}>
+          <div className={styles.ctaContent}>
+            <h2 className={styles.ctaTitle}>
+              Recibe orientación sobre derecho comercial y estructura
+              empresarial
+            </h2>
+
+            <p className={styles.ctaText}>
+              Obtén información jurídica para comprender riesgos comerciales,
+              contratos empresariales y cumplimiento normativo en Colombia.
+            </p>
+
+            <div className={styles.actions}>
+              <a
+                href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+                className={styles.primary}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Hablar con un asesor
+              </a>
+
+              <a
+                href="https://abogadosespecialistas.com.co/derecho-comercial-mercantil.html"
+                className={styles.secondary}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver más información
+              </a>
+            </div>
+          </div>
+        </motion.section>
+      </main>
     </>
   );
 }

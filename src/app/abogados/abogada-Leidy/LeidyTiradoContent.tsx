@@ -1,6 +1,5 @@
 "use client";
 
-// app/abogados/leidy-tirado/LeidyTiradoContent.tsx
 import { motion } from "framer-motion";
 import styles from "../AbogadoProfile.module.css";
 
@@ -8,8 +7,7 @@ export default function LeidyTiradoContent() {
   return (
     <main className={styles.container}>
       <section className={styles.hero}>
-        {/* ================= IMAGE ================= */}
-
+        {/* IMAGE */}
         <motion.div
           className={styles.imageSide}
           initial={{ opacity: 0, x: -50 }}
@@ -19,14 +17,13 @@ export default function LeidyTiradoContent() {
           <div className={styles.imageWrapper}>
             <img
               src="/doc-leidyImage.jpg"
-              alt="Leidy Tirado directora área comercial en Bogotá Colombia"
+              alt="Leidy Tirado en Bogotá Colombia"
               className={styles.image}
             />
           </div>
         </motion.div>
 
-        {/* ================= INFO ================= */}
-
+        {/* INFO */}
         <motion.div
           className={styles.infoSide}
           initial={{ opacity: 0, y: 40 }}
@@ -37,114 +34,77 @@ export default function LeidyTiradoContent() {
 
           <div>
             <h1 className={styles.title}>Leidy Tirado</h1>
-
             <p className={styles.role}>Directora área comercial</p>
           </div>
 
-          {/* ================= PERFIL ================= */}
-
-          <motion.div
+          {/* CARTA DE PRESENTACIÓN */}
+          <motion.section
             className={styles.card}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2>Perfil profesional</h2>
+            <h2>Carta de presentación</h2>
 
             <p>
-              Abogada de la Universidad Militar, experta en gestión comercial,
-              con un profundo conocimiento de la Ley 1480 de 2011 (Estatuto del
-              Consumidor) y garantías mobiliarias. Orientada a apoyar a los
-              empresarios colombianos, ayudándolos a cumplir con las
-              regulaciones comerciales, proteger sus derechos y optimizar sus
-              operaciones, en un entorno legal dinámico.
+              Leidy Tirado forma parte del equipo de Pravice Abogados como
+              directora del área comercial, enfocada en el acompañamiento a
+              empresas en la estructuración de relaciones contractuales, gestión
+              de cartera y prevención de riesgos legales en el ámbito
+              empresarial.
             </p>
-          </motion.div>
 
-          {/* ================= ÁREAS ================= */}
+            <p>
+              Su enfoque está orientado a la toma de decisiones jurídicas con
+              visión comercial, apoyando la operación de empresas en Colombia
+              con soluciones prácticas y estratégicas.
+            </p>
 
-          <motion.div
+            <p>
+              Para conocer más sobre su trayectoria y experiencia profesional,
+              puedes consultar el{" "}
+              <a
+                href="https://abogadosespecialistas.com.co/abogados/abogados-leidy-tirado.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                perfil profesional de la abogada en detalle
+              </a>
+              .
+            </p>
+          </motion.section>
+
+          {/* ENFOQUE PROFESIONAL (CORTO) */}
+          <motion.section
             className={styles.card}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2>Áreas de especialidad</h2>
+            <h2>Enfoque profesional</h2>
 
-            <div className={styles.list}>
-              <div className={styles.item}>
-                <span>⚖</span>
-
-                <p>Derecho comercial y empresarial.</p>
-              </div>
-
-              <div className={styles.item}>
-                <span>🛡</span>
-
-                <p>Protección al consumidor.</p>
-              </div>
-
-              <div className={styles.item}>
-                <span>💼</span>
-
-                <p>Recuperación de cartera y cobro jurídico.</p>
-              </div>
-
-              <div className={styles.item}>
-                <span>📄</span>
-
-                <p>Diseño y revisión de contratos comerciales.</p>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* ================= ENFOQUE ================= */}
-
-          <motion.div
-            className={styles.card}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2>Enfoque de trabajo</h2>
-
-            <div className={styles.list}>
-              <div className={styles.item}>
-                <span>✓</span>
-
-                <p>Visión jurídica con criterio comercial.</p>
-              </div>
-
-              <div className={styles.item}>
-                <span>✓</span>
-
-                <p>Lenguaje claro para gerencias y equipos comerciales.</p>
-              </div>
-
-              <div className={styles.item}>
-                <span>✓</span>
-
-                <p>
-                  Orientada a resultados y prevención de litigios innecesarios.
-                </p>
-              </div>
-            </div>
-          </motion.div>
+            <p>
+              Su trabajo se centra en la gestión jurídica empresarial con un
+              enfoque preventivo, claro y orientado a resultados, facilitando la
+              toma de decisiones en entornos comerciales dinámicos.
+            </p>
+          </motion.section>
         </motion.div>
       </section>
 
+      {/* JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Attorney",
+            "@type": "Person",
             name: "Leidy Tirado",
-            image: "https://pravice.co/doc-leidyImage.jpg",
             jobTitle: "Directora área comercial",
+            image: "https://pravice.co/doc-leidyImage.jpg",
+            url: "https://pravice.co/abogados/abogada-Leidy",
             worksFor: {
               "@type": "Organization",
               name: "Pravice Abogados",
@@ -155,13 +115,11 @@ export default function LeidyTiradoContent() {
               addressCountry: "CO",
             },
             areaServed: "Colombia",
-            url: "https://pravice.co/abogados/abogada-Leidy",
             knowsAbout: [
               "Derecho comercial",
               "Recuperación de cartera",
+              "Contratos empresariales",
               "Protección al consumidor",
-              "Cobro jurídico",
-              "Contratos comerciales",
             ],
           }),
         }}
