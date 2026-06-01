@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 export default function EmpresaNoPagaFactura() {
   const schema = {
@@ -290,6 +291,13 @@ export default function EmpresaNoPagaFactura() {
             estabilidad financiera de cualquier negocio en Colombia.
           </p>
         </section>
+        <ArticleCTA
+          title="¿Una empresa no quiere pagar una factura y necesitas asesoría legal en Colombia?"
+          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia con recuperación de cartera, cobro prejurídico, negociación de pagos y acciones legales para recuperar facturas pendientes."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Cobro de cartera y recuperación de facturas"
+          buttonText="Hablar con un abogado especializado"
+        />
       </main>
     </>
   );

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 /* =========================
    ANIMACIONES
@@ -218,6 +219,13 @@ export default function Article() {
             el país.
           </p>
         </motion.section>
+        <ArticleCTA
+          title="¿Necesitas asesoría en derecho societario para crear o estructurar tu empresa en Colombia?"
+          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia con constitución de sociedades SAS, LTDA y S.A., acuerdos entre socios, estatutos y cumplimiento legal empresarial."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Derecho societario y creación de empresas"
+          buttonText="Hablar con un abogado societario"
+        />
       </main>
 
       {/* SCHEMA */}

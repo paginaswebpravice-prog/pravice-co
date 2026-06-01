@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 /* =========================
    ANIMACIONES
@@ -204,6 +205,14 @@ export default function DerechoAdministrativoColombia() {
             sanciones y proteger la estabilidad del negocio.
           </p>
         </motion.section>
+
+        <ArticleCTA
+          title="¿Necesitas asesoría en derecho administrativo para tu empresa en Colombia?"
+          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia a gestionar procesos ante entidades públicas, responder requerimientos administrativos y reducir riesgos legales y sanciones del Estado."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Derecho administrativo y asesoría empresarial"
+          buttonText="Hablar con un abogado especializado"
+        />
       </main>
     </>
   );

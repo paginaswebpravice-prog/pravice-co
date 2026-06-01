@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 /* =========================
    ANIMACIONES
@@ -207,6 +208,14 @@ export default function Article() {
             estratégica.
           </p>
         </motion.section>
+
+        <ArticleCTA
+          title="¿Tu empresa necesita respaldo legal estratégico en Colombia?"
+          description="Recibe acompañamiento jurídico para empresas en Bogotá y Colombia. Desde contratos y cumplimiento normativo hasta asesoría corporativa y prevención de riesgos legales."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Asesoría corporativa y empresarial"
+          buttonText="Hablar con abogados especialistas"
+        />
       </article>
 
       {/* SCHEMA */}

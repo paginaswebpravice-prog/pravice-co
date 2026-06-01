@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 /* =========================
    ANIMACIONES
@@ -218,6 +219,14 @@ export default function Article() {
             empresarial en Colombia.
           </p>
         </motion.section>
+
+        <ArticleCTA
+          badge="Recuperación de cartera y cobranza empresarial en Colombia"
+          title="Mejora la recuperación de cartera y protege el flujo de caja de tu empresa"
+          description="Recibe asesoría legal para recuperar cartera morosa, negociar acuerdos de pago y aplicar estrategias efectivas de cobranza empresarial en Colombia."
+          href="https://abogadosespecialistas.com.co/"
+          buttonText="Solicitar asesoría en recuperación de cartera"
+        />
       </article>
 
       {/* SCHEMA */}

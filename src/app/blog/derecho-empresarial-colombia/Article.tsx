@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 /* =========================
    ANIMACIONES
@@ -213,6 +214,14 @@ export default function Article() {
             procesos y asegurar el éxito a largo plazo.
           </p>
         </section>
+
+        <ArticleCTA
+          title="¿Necesitas asesoría en derecho empresarial para proteger tu empresa en Colombia?"
+          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia con cumplimiento normativo, contratos comerciales, estructura societaria y prevención de riesgos legales empresariales."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Derecho empresarial y asesoría corporativa"
+          buttonText="Hablar con un abogado empresarial"
+        />
       </main>
     </>
   );

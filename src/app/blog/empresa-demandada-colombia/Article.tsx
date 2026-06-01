@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 export default function EmpresaDemandadaColombia() {
   const schema = {
@@ -214,6 +215,14 @@ export default function EmpresaDemandadaColombia() {
             judiciales en Colombia.
           </p>
         </section>
+
+        <ArticleCTA
+          title="¿Demandaron a tu empresa en Colombia y necesitas asesoría jurídica?"
+          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia a responder demandas, gestionar conflictos contractuales, laborales y comerciales, y proteger su operación frente a riesgos legales."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Defensa jurídica y asesoría empresarial"
+          buttonText="Hablar con un abogado empresarial"
+        />
       </main>
     </>
   );

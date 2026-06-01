@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 /* =========================
    ANIMACIONES
@@ -18,7 +19,7 @@ const fadeSection = {
    COMPONENTE
 ========================= */
 
-export default function DerechoAdministrativoColombia() {
+export default function DerechoComercialEmpresasColombia() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -222,6 +223,14 @@ export default function DerechoAdministrativoColombia() {
             oportunidades de crecimiento.
           </p>
         </section>
+
+        <ArticleCTA
+          title="Protege tu empresa con asesoría en derecho comercial en Colombia"
+          description="Recibe acompañamiento jurídico en contratos comerciales, sociedades, negociación empresarial y cumplimiento normativo para reducir riesgos legales y fortalecer tu negocio."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Asesoría legal empresarial"
+          buttonText="Solicitar asesoría jurídica"
+        />
       </main>
     </>
   );

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 export default function ContratosEmpresarialesColombia() {
   const schema = {
@@ -224,6 +225,14 @@ export default function ContratosEmpresarialesColombia() {
             empresarial.
           </p>
         </section>
+
+        <ArticleCTA
+          title="¿Tu empresa necesita contratos empresariales sólidos en Colombia?"
+          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia a redactar, revisar y fortalecer contratos comerciales para reducir riesgos legales, prevenir demandas y proteger sus operaciones empresariales."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Contratos empresariales y protección jurídica"
+          buttonText="Recibir asesoría jurídica empresarial"
+        />
       </main>
     </>
   );

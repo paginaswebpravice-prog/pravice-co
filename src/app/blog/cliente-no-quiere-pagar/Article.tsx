@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 export default function ClienteNoQuierePagar() {
   const schema = {
@@ -277,6 +278,14 @@ export default function ClienteNoQuierePagar() {
             estabilidad financiera de tu negocio en Colombia.
           </p>
         </section>
+
+        <ArticleCTA
+          badge="Recuperación de cartera y cobro jurídico en Colombia"
+          title="¿Tu cliente no quiere pagar? Recibe apoyo legal para recuperar tu dinero"
+          description="Conoce estrategias legales y procesos de recuperación de cartera en Colombia para cobrar facturas, acuerdos incumplidos y deudas comerciales sin afectar la estabilidad de tu negocio."
+          href="https://abogadosespecialistas.com.co/"
+          buttonText="Recibir asesoría para cobro de cartera"
+        />
       </main>
     </>
   );

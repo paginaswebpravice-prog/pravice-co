@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 /* =========================
    ANIMACIONES
@@ -213,6 +214,14 @@ export default function CumplimientoNormativoArticle() {
             seguro a largo plazo.
           </p>
         </motion.section>
+
+        <ArticleCTA
+          title="¿Tu empresa necesita apoyo en cumplimiento normativo y compliance en Colombia?"
+          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia a implementar estrategias de cumplimiento normativo, reducir riesgos legales y prevenir sanciones, multas y conflictos empresariales."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Compliance empresarial y cumplimiento normativo"
+          buttonText="Solicitar asesoría jurídica empresarial"
+        />
       </main>
     </>
   );

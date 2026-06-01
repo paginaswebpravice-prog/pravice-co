@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 export default function ComoProtegerEmpresaLegalmente() {
   const schema = {
@@ -288,6 +289,14 @@ export default function ComoProtegerEmpresaLegalmente() {
             estabilidad empresarial a largo plazo.
           </p>
         </section>
+
+        <ArticleCTA
+          badge="Protección jurídica empresarial en Colombia"
+          title="Protege tu empresa legalmente y reduce riesgos jurídicos"
+          description="Recibe acompañamiento legal para fortalecer contratos, prevenir demandas, mejorar el cumplimiento normativo y proteger la estabilidad de tu empresa en Colombia."
+          href="https://abogadosespecialistas.com.co/"
+          buttonText="Solicitar asesoría jurídica empresarial"
+        />
       </main>
     </>
   );

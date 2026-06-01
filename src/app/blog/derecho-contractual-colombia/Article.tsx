@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 /* =========================
    ANIMACIONES
@@ -237,6 +238,14 @@ export default function Article() {
             estratégica para el crecimiento empresarial.
           </p>
         </section>
+
+        <ArticleCTA
+          title="¿Necesitas asesoría en derecho contractual para tu empresa en Colombia?"
+          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia con la elaboración, revisión y negociación de contratos para reducir riesgos legales y proteger relaciones comerciales."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Derecho contractual y contratos empresariales"
+          buttonText="Hablar con un abogado contractual"
+        />
       </main>
     </>
   );

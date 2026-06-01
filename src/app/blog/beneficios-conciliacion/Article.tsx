@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 /* =========================
    ANIMACIONES
@@ -233,6 +234,14 @@ export default function ConciliacionExtrajudicialArticle() {
             económica y legal para resolver conflictos sin juicio.
           </p>
         </motion.section>
+
+        <ArticleCTA
+          title="¿Necesitas resolver un conflicto legal sin ir a juicio?"
+          description="Recibe asesoría en conciliación extrajudicial en Bogotá y toda Colombia. Soluciona conflictos civiles, comerciales, contractuales y de cartera de forma rápida, legal y estratégica."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Conciliación extrajudicial en Colombia"
+          buttonText="Solicitar asesoría legal"
+        />
       </article>
     </>
   );
