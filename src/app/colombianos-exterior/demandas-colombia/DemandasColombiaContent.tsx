@@ -9,21 +9,22 @@ import {
   faGavel,
   faScaleBalanced,
   faPassport,
-  faPhoneVolume,
   faCheckCircle,
   faEarthAmericas,
   faBuildingColumns,
-  faFileSignature,
   faPeopleRoof,
+  faArrowUpRightFromSquare,
+  faFileSignature,
+  faLandmark,
 } from "@fortawesome/free-solid-svg-icons";
 
 const beneficios = [
-  "Representación judicial sin viajar a Colombia",
-  "Procesos civiles y familiares",
-  "Atención virtual desde cualquier país",
+  "Representación judicial sin necesidad de viajar a Colombia",
+  "Atención virtual para colombianos en cualquier país",
+  "Procesos civiles, familiares y patrimoniales",
   "Acompañamiento jurídico personalizado",
-  "Seguimiento constante del proceso",
-  "Elaboración de poderes especiales",
+  "Seguimiento permanente del proceso",
+  "Elaboración de poderes y documentos legales",
 ];
 
 export default function DemandasColombiaContent() {
@@ -66,7 +67,8 @@ export default function DemandasColombiaContent() {
               duration: 0.7,
             }}
           >
-            Demandas y litigios en Colombia desde el exterior
+            Demandas y procesos judiciales en Colombia para colombianos en el
+            exterior
           </motion.h1>
 
           <motion.p
@@ -78,10 +80,10 @@ export default function DemandasColombiaContent() {
               duration: 0.7,
             }}
           >
-            Representamos colombianos que viven fuera del país en procesos
-            judiciales y litigios en Colombia. Nuestro equipo jurídico brinda
-            acompañamiento integral en demandas civiles, familiares y otros
-            procesos legales sin necesidad de viajar.
+            En Pravice acompañamos colombianos que viven fuera del país en
+            procesos civiles, familiares y litigios en Colombia mediante
+            representación judicial virtual y seguimiento permanente sin
+            necesidad de desplazarse.
           </motion.p>
 
           <motion.div
@@ -137,25 +139,15 @@ export default function DemandasColombiaContent() {
             transition={{ delay: 0.1, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Abogados para procesos judiciales de colombianos en el exterior
+            Representación legal para colombianos fuera del país
           </motion.h2>
 
           {[
-            `Muchos colombianos que residen en Estados Unidos, España, Canadá,
-            Australia, Chile y otros países necesitan iniciar o responder
-            demandas en Colombia relacionadas con asuntos civiles, familiares,
-            patrimoniales o contractuales.`,
+            `Muchos colombianos que viven en Estados Unidos, España, Canadá, Chile, Australia y otros países necesitan iniciar o responder procesos judiciales en Colombia relacionados con conflictos familiares, patrimoniales, civiles o contractuales.`,
 
-            `La distancia puede dificultar el seguimiento del proceso y la
-            asistencia presencial a audiencias o diligencias judiciales. Por
-            eso, en Pravice Abogados ofrecemos representación legal integral
-            para colombianos en el exterior, permitiendo avanzar en procesos
-            judiciales sin necesidad de desplazarse al país.`,
+            `La distancia suele dificultar la atención presencial de audiencias, diligencias y trámites judiciales. Por ello, en Pravice brindamos acompañamiento jurídico remoto y representación judicial para colombianos en el exterior.`,
 
-            `Nuestro equipo se encarga de la revisión del caso, elaboración de
-            poderes, preparación documental, representación ante juzgados y
-            seguimiento permanente del proceso, manteniendo comunicación
-            constante con nuestros clientes mediante atención virtual.`,
+            `Nuestro equipo se encarga de la revisión del caso, elaboración de poderes, presentación de demandas, seguimiento procesal y comunicación constante durante cada etapa del proceso judicial en Colombia.`,
           ].map((text, index) => (
             <motion.p
               key={index}
@@ -173,7 +165,7 @@ export default function DemandasColombiaContent() {
         </motion.div>
       </section>
 
-      {/* SERVICIOS */}
+      {/* SERVICES */}
 
       <section className={styles.services}>
         <motion.div
@@ -189,7 +181,7 @@ export default function DemandasColombiaContent() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Procesos y litigios que manejamos
+            Procesos judiciales que acompañamos
           </motion.h2>
 
           <motion.p
@@ -202,9 +194,9 @@ export default function DemandasColombiaContent() {
             }}
             viewport={{ once: true }}
           >
-            Brindamos acompañamiento jurídico en diferentes tipos de procesos
-            judiciales para colombianos que necesitan resolver asuntos legales
-            en Colombia desde el exterior.
+            Prestamos representación y acompañamiento jurídico en diferentes
+            procesos legales en Colombia para personas que actualmente residen
+            en el exterior.
           </motion.p>
 
           <div className={styles.grid}>
@@ -217,12 +209,12 @@ export default function DemandasColombiaContent() {
               {
                 icon: faPeopleRoof,
                 title: "Procesos familiares",
-                text: "Representación en conflictos familiares relacionados con custodia, alimentos, divorcios, visitas y otros procesos ante jueces de familia.",
+                text: "Representación en divorcios, alimentos, custodia, visitas, sucesiones y otros asuntos de familia.",
               },
               {
                 icon: faBuildingColumns,
                 title: "Litigios patrimoniales",
-                text: "Asesoría y representación en disputas relacionadas con bienes, herencias, propiedades y derechos patrimoniales en Colombia.",
+                text: "Acompañamiento en disputas sobre bienes, herencias, propiedades y derechos patrimoniales en Colombia.",
               },
             ].map((item, index) => (
               <motion.div
@@ -269,7 +261,204 @@ export default function DemandasColombiaContent() {
         </motion.div>
       </section>
 
-      {/* BENEFICIOS */}
+      {/* SEO SUPPORT */}
+
+      <section className={styles.seoSupport}>
+        <motion.div
+          initial={{ opacity: 0, y: 35 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h2
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.55 }}
+            viewport={{ once: true }}
+          >
+            Procesos familiares y demandas en Colombia
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            Algunos procesos judiciales para colombianos en el exterior están
+            relacionados con conflictos familiares, divorcios, alimentos,
+            custodia, sucesiones y otros asuntos legales ante jueces de familia
+            en Colombia.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            Si deseas ampliar información específica sobre representación en
+            procesos familiares y abogados de familia en Colombia, puedes
+            consultar la guía principal desarrollada por el equipo de abogados
+            especializados.
+          </motion.p>
+
+          <motion.div
+            className={styles.seoLinkBox}
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <motion.div
+              className={styles.icon}
+              whileHover={{
+                rotate: 8,
+                scale: 1.08,
+              }}
+            >
+              <FontAwesomeIcon icon={faLandmark} />
+            </motion.div>
+
+            <h3>Guía de abogados de familia en Colombia</h3>
+
+            <p>
+              Accede al contenido especializado sobre derecho de familia,
+              divorcios, custodia, alimentos y representación judicial en
+              Colombia.
+            </p>
+
+            <motion.a
+              href="https://abogadosespecialistas.com.co/abogados-de-familia.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.seoLink}
+              whileHover={{
+                scale: 1.04,
+                y: -3,
+              }}
+              whileTap={{
+                scale: 0.97,
+              }}
+            >
+              Ver guía principal
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+            </motion.a>
+          </motion.div>
+        </motion.div>
+      </section>
+
+      {/* ARTICLE */}
+
+      <section className={styles.articleContent}>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h2
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            ¿Cómo iniciar una demanda en Colombia desde el exterior?
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            Los colombianos que viven fuera del país pueden iniciar procesos
+            judiciales en Colombia mediante representación legal otorgada a un
+            abogado a través de poder especial o poder consular, dependiendo del
+            tipo de proceso y país de residencia.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            Actualmente muchos trámites permiten avanzar de manera virtual,
+            facilitando la atención jurídica de personas que no pueden viajar a
+            Colombia para participar directamente en el proceso judicial.
+          </motion.p>
+
+          <motion.h3
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.25 }}
+            viewport={{ once: true }}
+          >
+            Aspectos importantes antes de iniciar el proceso
+          </motion.h3>
+
+          <ul>
+            <li>Revisión jurídica y viabilidad del caso.</li>
+            <li>Definición del tipo de proceso judicial.</li>
+            <li>Recolección de documentos y pruebas.</li>
+            <li>Elaboración de poderes y autorizaciones.</li>
+            <li>Seguimiento permanente del expediente.</li>
+            <li>Comunicación virtual durante todas las etapas.</li>
+          </ul>
+
+          <motion.h3
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            Demandas familiares para colombianos en el exterior
+          </motion.h3>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.35 }}
+            viewport={{ once: true }}
+          >
+            Una gran parte de las consultas de colombianos fuera del país está
+            relacionada con conflictos familiares, procesos de divorcio,
+            custodia de menores, alimentos, visitas y sucesiones en Colombia.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            Para profundizar específicamente sobre representación en derecho de
+            familia, puedes consultar la guía principal de abogados de familia
+            en Colombia desarrollada por el portal especializado.
+          </motion.p>
+
+          <div className={styles.internalSeoCta}>
+            <h3>¿Buscas información específica sobre abogados de familia?</h3>
+
+            <p>
+              Conoce más sobre divorcios, custodia, alimentos y representación
+              judicial en Colombia para procesos familiares.
+            </p>
+
+            <a
+              href="https://abogadosespecialistas.com.co/abogados-de-familia.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ir al contenido principal
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+            </a>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* BENEFITS */}
 
       <section className={styles.benefits}>
         <motion.div
@@ -334,11 +523,10 @@ export default function DemandasColombiaContent() {
               transition={{ delay: 0.3 }}
               viewport={{ once: true }}
             >
-              Entendemos la complejidad que representa para los colombianos en
-              el exterior enfrentar procesos judiciales en Colombia. Nuestro
-              servicio está diseñado para ofrecer soluciones legales claras,
-              eficientes y seguras mediante atención virtual y representación
-              jurídica integral.
+              Nuestro objetivo es que los colombianos en el exterior puedan
+              ejercer y proteger sus derechos en Colombia mediante procesos
+              judiciales claros, organizados y con acompañamiento jurídico
+              permanente.
             </motion.p>
 
             <motion.p
@@ -347,16 +535,15 @@ export default function DemandasColombiaContent() {
               transition={{ delay: 0.45 }}
               viewport={{ once: true }}
             >
-              Nuestro objetivo es que puedas ejercer y proteger tus derechos en
-              Colombia sin importar el país en el que te encuentres, manteniendo
-              seguimiento permanente y acompañamiento jurídico durante cada
-              etapa del proceso.
+              Priorizamos la comunicación constante, el seguimiento procesal y
+              la atención virtual para facilitar el desarrollo de los procesos
+              sin importar el país donde se encuentre el cliente.
             </motion.p>
           </motion.div>
         </motion.div>
       </section>
 
-      {/* PROCESO */}
+      {/* PROCESS */}
 
       <section className={styles.process}>
         <motion.div
@@ -379,22 +566,22 @@ export default function DemandasColombiaContent() {
               {
                 number: "01",
                 title: "Consulta inicial",
-                text: "Analizamos el caso y revisamos la situación jurídica del proceso o demanda en Colombia.",
+                text: "Analizamos el caso y revisamos la situación jurídica del proceso en Colombia.",
               },
               {
                 number: "02",
                 title: "Documentación y poder",
-                text: "Elaboramos el poder especial y solicitamos los documentos necesarios para la representación legal.",
+                text: "Preparamos el poder especial y los documentos necesarios para la representación.",
               },
               {
                 number: "03",
                 title: "Representación judicial",
-                text: "Nuestro equipo asume la representación ante juzgados y entidades correspondientes en Colombia.",
+                text: "Asumimos el proceso ante juzgados y entidades correspondientes.",
               },
               {
                 number: "04",
                 title: "Seguimiento continuo",
-                text: "Informamos cada avance del proceso y mantenemos comunicación permanente durante todas las etapas judiciales.",
+                text: "Informamos avances y mantenemos comunicación permanente durante todo el proceso.",
               },
             ].map((item, index) => (
               <motion.div
@@ -472,7 +659,7 @@ export default function DemandasColombiaContent() {
             transition={{ delay: 0.15 }}
             viewport={{ once: true }}
           >
-            ¿Necesitas representación legal en Colombia?
+            ¿Necesitas iniciar un proceso judicial en Colombia?
           </motion.h2>
 
           <motion.p
@@ -481,8 +668,8 @@ export default function DemandasColombiaContent() {
             transition={{ delay: 0.28 }}
             viewport={{ once: true }}
           >
-            Nuestro equipo puede ayudarte en procesos judiciales y litigios sin
-            importar el país en el que te encuentres.
+            Nuestro equipo brinda representación legal y acompañamiento jurídico
+            para colombianos en el exterior.
           </motion.p>
 
           <motion.a
@@ -511,14 +698,15 @@ export default function DemandasColombiaContent() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Demandas y Litigios en Colombia para Colombianos en el Exterior",
+            name: "Demandas y Procesos Judiciales en Colombia para Colombianos en el Exterior",
             provider: {
               "@type": "Organization",
-              name: "Pravice Abogados",
+              name: "Pravice",
             },
             areaServed: "Worldwide",
             url: "https://pravice.co/colombianos-exterior/demandas-colombia",
-            serviceType: "Demandas y litigios en Colombia",
+            serviceType:
+              "Representación judicial para colombianos en el exterior",
           }),
         }}
       />

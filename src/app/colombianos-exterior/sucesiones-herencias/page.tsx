@@ -3,24 +3,20 @@ import SucesionesHerenciasContent from "./SucesionesHerenciasContent";
 
 export const metadata: Metadata = {
   title:
-    "Sucesiones y Herencias en Colombia desde el Exterior | Abogados para Colombianos",
+    "Sucesiones y herencias en Colombia desde el exterior | Colombianos fuera del país",
+
   description:
-    "Abogados expertos en sucesiones y herencias en Colombia para colombianos en el exterior. Representación legal, trámites notariales y asesoría virtual.",
+    "Información sobre sucesiones y herencias en Colombia para colombianos que viven en el exterior. Conoce procesos notariales, judiciales, poderes y representación legal.",
+
   keywords: [
-    "sucesiones en Colombia",
-    "herencias en Colombia",
-    "abogados de sucesiones Colombia",
-    "sucesión desde el exterior",
-    "colombianos en el exterior",
-    "trámite de herencia Colombia",
-    "sucesión notarial Colombia",
-    "sucesión judicial Colombia",
-    "abogados para herencias",
-    "representación legal Colombia",
-    "sucesiones para colombianos",
-    "asesoría legal virtual Colombia",
-    "repartición de herencia Colombia",
-    "abogados colombianos en el exterior",
+    "sucesiones en colombia desde el exterior",
+    "herencias colombia colombianos exterior",
+    "proceso de sucesión colombia",
+    "abogados sucesiones colombia",
+    "sucesión notarial colombia",
+    "sucesión judicial colombia",
+    "herencias colombianos en usa",
+    "poder sucesión colombia",
   ],
 
   alternates: {
@@ -28,22 +24,18 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "Sucesiones y Herencias en Colombia desde el Exterior | Pravice Abogados",
-    description:
-      "Asesoría jurídica para sucesiones y herencias en Colombia para colombianos residentes en el exterior.",
-    url: "https://pravice.co/colombianos-exterior/sucesiones-herencias",
-    siteName: "Pravice Abogados",
-    locale: "es_CO",
-    type: "website",
-  },
+    title: "Sucesiones y herencias en Colombia para colombianos en el exterior",
 
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "Sucesiones y Herencias en Colombia desde el Exterior | Pravice Abogados",
     description:
-      "Representación legal y acompañamiento en procesos sucesorales y herencias en Colombia.",
+      "Guía informativa sobre procesos sucesorales, herencias y representación legal en Colombia para personas que viven fuera del país.",
+
+    url: "https://pravice.co/colombianos-exterior/sucesiones-herencias",
+
+    siteName: "Pravice Abogados",
+
+    locale: "es_CO",
+
+    type: "website",
   },
 
   robots: {

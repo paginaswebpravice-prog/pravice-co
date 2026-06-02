@@ -1,35 +1,42 @@
-// app/colombianos-exterior/divorcios-colombia/page.tsx
-
 import type { Metadata } from "next";
 import DivorciosColombiaContent from "./DivorciosColombiaContent";
 
 export const metadata: Metadata = {
   title:
-    "Divorcios en Colombia para Colombianos en el Exterior | Pravice Abogados",
+    "Divorcio para colombianos en el exterior | Poderes y trámite sin viajar",
+
   description:
-    "Abogados expertos en divorcios en Colombia para colombianos en el exterior. Divorcios notariales y judiciales sin viajar a Colombia.",
+    "Guía informativa para colombianos en el exterior sobre poderes, representación legal y trámite de divorcio en Colombia sin necesidad de viajar.",
+
   keywords: [
-    "divorcio en colombia desde el exterior",
-    "abogados divorcio colombia",
     "divorcio para colombianos en el exterior",
+    "divorcio colombiano viviendo en españa",
     "divorcio colombiano viviendo en usa",
-    "divorcio notarial colombia",
-    "abogados familia colombia",
-    "divorcio desde españa colombia",
-    "divorcio virtual colombia",
+    "poder para divorcio en colombia",
+    "divorcio sin viajar a colombia",
+    "tramite divorcio desde el exterior",
+    "colombianos en el exterior divorcio",
   ],
+
   alternates: {
     canonical: "https://pravice.co/colombianos-exterior/divorcios-colombia",
   },
+
   openGraph: {
-    title:
-      "Divorcios en Colombia para Colombianos en el Exterior | Pravice Abogados",
+    title: "Divorcio para colombianos en el exterior | Trámite desde otro país",
+
     description:
-      "Representación legal para divorcios en Colombia sin importar el país en el que te encuentres.",
+      "Información para colombianos en el exterior sobre poderes especiales, representación legal y trámites familiares en Colombia.",
+
     url: "https://pravice.co/colombianos-exterior/divorcios-colombia",
     siteName: "Pravice Abogados",
     locale: "es_CO",
     type: "website",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

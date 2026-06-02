@@ -12,9 +12,9 @@ import {
   faCheckCircle,
   faEarthAmericas,
   faPeopleRoof,
-  faBuildingColumns,
   faFileSignature,
   faGavel,
+  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 const beneficios = [
@@ -47,18 +47,8 @@ export default function AsesoriaLegalVirtualContent() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.15, duration: 0.5 }}
-              whileHover={{ scale: 1.05 }}
             >
-              <motion.div
-                animate={{ rotate: [0, -8, 8, 0] }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  repeatDelay: 2,
-                }}
-              >
-                <FontAwesomeIcon icon={faEarthAmericas} />
-              </motion.div>
+              <FontAwesomeIcon icon={faEarthAmericas} />
               Colombianos en el Exterior
             </motion.div>
 
@@ -78,9 +68,9 @@ export default function AsesoriaLegalVirtualContent() {
               transition={{ delay: 0.35, duration: 0.7 }}
             >
               Recibe orientación jurídica en Colombia sin importar el país en el
-              que te encuentres. Nuestro equipo de abogados brinda atención
-              virtual para resolver dudas legales, acompañar procesos y
-              representar colombianos en diferentes trámites y litigios.
+              que te encuentres. Nuestro equipo brinda atención virtual para
+              resolver dudas legales, acompañar procesos y representar
+              colombianos en diferentes trámites jurídicos.
             </motion.p>
 
             <motion.div
@@ -94,14 +84,14 @@ export default function AsesoriaLegalVirtualContent() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.primary}
-                whileHover={{ scale: 1.05, y: -3 }}
+                whileHover={{ scale: 1.04, y: -3 }}
                 whileTap={{ scale: 0.96 }}
               >
                 Solicitar asesoría
               </motion.a>
 
               <motion.div
-                whileHover={{ scale: 1.04, y: -2 }}
+                whileHover={{ scale: 1.03, y: -2 }}
                 whileTap={{ scale: 0.97 }}
               >
                 <Link href="/colombianos-exterior" className={styles.secondary}>
@@ -120,7 +110,7 @@ export default function AsesoriaLegalVirtualContent() {
           initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true }}
         >
           <motion.h2
             initial={{ opacity: 0, x: -25 }}
@@ -128,38 +118,41 @@ export default function AsesoriaLegalVirtualContent() {
             transition={{ delay: 0.1, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Abogados online para colombianos que viven fuera del país
+            Atención jurídica online para colombianos fuera del país
           </motion.h2>
 
-          {[
-            `Muchos colombianos que actualmente residen en Estados Unidos,
-            España, Canadá, Australia, Chile y otros países necesitan resolver
-            situaciones legales en Colombia pero no cuentan con el tiempo o la
-            posibilidad de viajar para atender estos asuntos personalmente.`,
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.15, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
+            Muchos colombianos que viven en Estados Unidos, España, Canadá,
+            Australia, Chile y otros países necesitan resolver situaciones
+            legales en Colombia sin desplazarse físicamente.
+          </motion.p>
 
-            `Gracias a la asesoría legal virtual es posible recibir orientación
-            jurídica profesional, iniciar procesos legales, revisar documentos y
-            obtener representación en Colombia mediante atención completamente
-            remota y segura.`,
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.25, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
+            Gracias a la asesoría legal virtual es posible recibir orientación
+            jurídica, revisar documentos, otorgar poderes especiales y avanzar
+            en diferentes trámites mediante atención remota segura y organizada.
+          </motion.p>
 
-            `En Pravice Abogados ofrecemos acompañamiento jurídico para procesos
-            civiles, familiares, patrimoniales y otros trámites legales,
-            facilitando la comunicación mediante videollamadas, correo
-            electrónico y atención digital personalizada.`,
-          ].map((text, index) => (
-            <motion.p
-              key={index}
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 0.15 + index * 0.12,
-                duration: 0.6,
-              }}
-              viewport={{ once: true }}
-            >
-              {text}
-            </motion.p>
-          ))}
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.35, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
+            En Pravice Abogados brindamos acompañamiento legal personalizado
+            para facilitar procesos jurídicos desde el exterior mediante
+            comunicación digital, videollamadas y representación en Colombia.
+          </motion.p>
         </motion.div>
       </section>
 
@@ -189,9 +182,8 @@ export default function AsesoriaLegalVirtualContent() {
             transition={{ delay: 0.15, duration: 0.7 }}
             viewport={{ once: true }}
           >
-            Nuestro equipo brinda orientación y representación legal para
-            diferentes situaciones jurídicas que pueden resolverse desde el
-            exterior mediante atención virtual.
+            Nuestro equipo brinda orientación y acompañamiento legal remoto para
+            diferentes trámites y procesos en Colombia.
           </motion.p>
 
           <div className={styles.grid}>
@@ -199,48 +191,71 @@ export default function AsesoriaLegalVirtualContent() {
               {
                 icon: faPeopleRoof,
                 title: "Procesos familiares",
-                text: "Asesoría en divorcios, custodia, alimentos, sucesiones y otros asuntos relacionados con derecho de familia en Colombia.",
+                text: "Asesoría virtual en divorcios, custodia, alimentos, sucesiones y otros asuntos de familia.",
               },
               {
                 icon: faFileSignature,
                 title: "Poderes y trámites",
-                text: "Elaboración de poderes especiales y acompañamiento en trámites legales, notariales y administrativos desde el exterior.",
+                text: "Elaboración de poderes especiales y acompañamiento en diligencias notariales y administrativas.",
               },
               {
                 icon: faGavel,
-                title: "Demandas y litigios",
-                text: "Representación jurídica en procesos judiciales civiles y familiares para colombianos fuera del país.",
+                title: "Procesos judiciales",
+                text: "Representación jurídica para colombianos en el exterior en diferentes litigios y procesos legales.",
+              },
+              {
+                icon: faScaleBalanced,
+                title: "Consultoría jurídica",
+                text: "Orientación legal clara y personalizada según las necesidades específicas de cada caso.",
+              },
+              {
+                icon: faPhoneVolume,
+                title: "Atención virtual",
+                text: "Consultas jurídicas online mediante videollamada, correo electrónico y canales digitales.",
+              },
+              {
+                icon: faPassport,
+                title: "Representación en Colombia",
+                text: "Acompañamiento legal para adelantar actuaciones y trámites sin viajar al país.",
               },
             ].map((item, index) => (
               <motion.div
                 key={index}
-                className={styles.card}
                 initial={{ opacity: 0, y: 45 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
                   duration: 0.55,
-                  delay: index * 0.12,
+                  delay: index * 0.08,
                 }}
                 viewport={{ once: true }}
                 whileHover={{
                   y: -10,
-                  scale: 1.02,
                 }}
               >
-                <motion.div
-                  className={styles.icon}
-                  whileHover={{
-                    rotate: [0, -8, 8, 0],
-                    scale: 1.1,
-                  }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <FontAwesomeIcon icon={item.icon} />
-                </motion.div>
+                <div className={styles.card}>
+                  <motion.div
+                    className={styles.icon}
+                    whileHover={{
+                      rotate: -6,
+                      scale: 1.08,
+                    }}
+                    transition={{ duration: 0.25 }}
+                  >
+                    <FontAwesomeIcon icon={item.icon} />
+                  </motion.div>
 
-                <h3>{item.title}</h3>
+                  <h3>{item.title}</h3>
 
-                <p>{item.text}</p>
+                  <p>{item.text}</p>
+
+                  <motion.span
+                    className={styles.cardLink}
+                    whileHover={{ x: 5 }}
+                  >
+                    Más información
+                    <FontAwesomeIcon icon={faArrowRight} />
+                  </motion.span>
+                </div>
               </motion.div>
             ))}
           </div>
@@ -262,7 +277,7 @@ export default function AsesoriaLegalVirtualContent() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            ¿Por qué elegir atención jurídica virtual?
+            ¿Por qué elegir asesoría legal virtual?
           </motion.h2>
 
           <div className={styles.benefitsGrid}>
@@ -277,17 +292,8 @@ export default function AsesoriaLegalVirtualContent() {
                   duration: 0.45,
                 }}
                 viewport={{ once: true }}
-                whileHover={{
-                  y: -5,
-                  scale: 1.03,
-                }}
               >
-                <motion.div
-                  whileHover={{ rotate: 12, scale: 1.15 }}
-                  transition={{ duration: 0.25 }}
-                >
-                  <FontAwesomeIcon icon={faCheckCircle} />
-                </motion.div>
+                <FontAwesomeIcon icon={faCheckCircle} />
 
                 <span>{item}</span>
               </motion.div>
@@ -301,29 +307,18 @@ export default function AsesoriaLegalVirtualContent() {
             transition={{ delay: 0.15, duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.2, duration: 0.7 }}
-              viewport={{ once: true }}
-            >
+            <p>
               Nuestro servicio está diseñado para facilitar el acceso a asesoría
               jurídica profesional desde cualquier parte del mundo, permitiendo
-              que los colombianos en el exterior puedan resolver sus inquietudes
-              legales y avanzar en sus procesos sin desplazamientos
-              innecesarios.
-            </motion.p>
+              que los colombianos en el exterior puedan resolver inquietudes
+              legales sin desplazamientos innecesarios.
+            </p>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.35, duration: 0.7 }}
-              viewport={{ once: true }}
-            >
-              Brindamos acompañamiento claro, cercano y organizado durante cada
-              etapa, manteniendo comunicación constante y atención personalizada
-              para cada caso.
-            </motion.p>
+            <p>
+              Brindamos acompañamiento cercano, comunicación constante y
+              atención personalizada para ayudar a nuestros clientes a tomar
+              decisiones jurídicas con mayor tranquilidad y seguridad.
+            </p>
           </motion.div>
         </motion.div>
       </section>
@@ -351,22 +346,22 @@ export default function AsesoriaLegalVirtualContent() {
               {
                 number: "01",
                 title: "Contacto inicial",
-                text: "Nos compartes tu caso y coordinamos una consulta jurídica virtual según tus necesidades.",
+                text: "Nos compartes tu situación jurídica y coordinamos una consulta virtual.",
               },
               {
                 number: "02",
                 title: "Revisión del caso",
-                text: "Analizamos documentos, antecedentes y situación legal para ofrecer orientación clara y precisa.",
+                text: "Analizamos documentos y antecedentes para identificar alternativas legales.",
               },
               {
                 number: "03",
-                title: "Asesoría y estrategia",
-                text: "Explicamos las alternativas legales y definimos los pasos necesarios para avanzar en el proceso.",
+                title: "Definición de estrategia",
+                text: "Explicamos los pasos necesarios y la mejor manera de avanzar en el proceso.",
               },
               {
                 number: "04",
                 title: "Acompañamiento continuo",
-                text: "Mantenemos seguimiento permanente y comunicación constante durante todas las etapas del servicio.",
+                text: "Mantenemos seguimiento permanente y comunicación durante el servicio.",
               },
             ].map((step, index) => (
               <motion.div
@@ -379,22 +374,8 @@ export default function AsesoriaLegalVirtualContent() {
                   duration: 0.55,
                 }}
                 viewport={{ once: true }}
-                whileHover={{
-                  y: -8,
-                }}
               >
-                <motion.span
-                  initial={{ scale: 0.8 }}
-                  whileInView={{ scale: 1 }}
-                  transition={{
-                    type: "spring",
-                    stiffness: 180,
-                    delay: index * 0.1,
-                  }}
-                  viewport={{ once: true }}
-                >
-                  {step.number}
-                </motion.span>
+                <span>{step.number}</span>
 
                 <h3>{step.title}</h3>
 
@@ -402,6 +383,194 @@ export default function AsesoriaLegalVirtualContent() {
               </motion.div>
             ))}
           </div>
+        </motion.div>
+      </section>
+
+      {/* SEO SUPPORT SECTION */}
+
+      <section className={styles.seoSupport}>
+        <motion.div
+          initial={{ opacity: 0, y: 35 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h2
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            Representación jurídica y asesoría legal para colombianos en el
+            exterior
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.1, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
+            La asesoría jurídica virtual permite que los colombianos que viven
+            fuera del país puedan resolver diferentes trámites y procesos
+            legales sin necesidad de desplazarse a Colombia.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
+            Dependiendo del caso, puede ser necesario contar con representación
+            legal para adelantar actuaciones judiciales, procesos notariales,
+            reclamaciones o diligencias administrativas en Colombia.
+          </motion.p>
+
+          <motion.div
+            className={styles.seoLinkBox}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h3>Conoce más sobre representación jurídica en Colombia</h3>
+
+            <p>
+              Accede a información complementaria sobre representación legal,
+              acompañamiento jurídico y servicios especializados.
+            </p>
+
+            <motion.a
+              href="https://abogadosespecialistas.com.co/representacion-juridica.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.seoLink}
+              whileHover={{
+                scale: 1.03,
+                y: -4,
+              }}
+              whileTap={{ scale: 0.98 }}
+            >
+              Ver información de representación jurídica
+              <FontAwesomeIcon icon={faArrowRight} />
+            </motion.a>
+          </motion.div>
+        </motion.div>
+      </section>
+
+      {/* ARTICLE CONTENT */}
+
+      <section className={styles.articleContent}>
+        <motion.div
+          initial={{ opacity: 0, y: 35 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            ¿Cómo funciona la representación legal desde el exterior?
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.1, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
+            Actualmente muchos procesos legales en Colombia pueden adelantarse
+            de manera remota mediante poderes especiales y acompañamiento
+            jurídico virtual.
+          </motion.p>
+
+          <motion.h3
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.15, duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            ¿Qué trámites pueden realizarse virtualmente?
+          </motion.h3>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
+            Dependiendo del caso, es posible adelantar procesos civiles,
+            familiares, notariales y administrativos mediante representación
+            legal y atención virtual.
+          </motion.p>
+
+          <motion.ul
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.25, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
+            <li>Procesos familiares y sucesiones.</li>
+            <li>Trámites notariales y poderes especiales.</li>
+            <li>Representación en procesos judiciales.</li>
+            <li>Revisión y validación documental.</li>
+            <li>Consultoría jurídica virtual.</li>
+          </motion.ul>
+
+          <motion.h3
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            Importancia de contar con acompañamiento legal
+          </motion.h3>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.35, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
+            Contar con asesoría jurídica adecuada puede ayudar a reducir
+            errores, agilizar trámites y brindar mayor claridad sobre los
+            procedimientos necesarios en Colombia.
+          </motion.p>
+
+          <motion.div
+            className={styles.internalSeoCta}
+            initial={{ opacity: 0, scale: 0.96 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.5, duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h3>
+              ¿Buscas información más detallada sobre representación jurídica?
+            </h3>
+
+            <p>
+              Consulta contenido especializado sobre representación legal y
+              acompañamiento jurídico en Colombia.
+            </p>
+
+            <motion.a
+              href="https://abogadosespecialistas.com.co/representacion-juridica.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{
+                scale: 1.03,
+                y: -4,
+              }}
+              whileTap={{ scale: 0.98 }}
+            >
+              Ir al sitio especializado
+              <FontAwesomeIcon icon={faArrowRight} />
+            </motion.a>
+          </motion.div>
         </motion.div>
       </section>
 
@@ -413,19 +582,8 @@ export default function AsesoriaLegalVirtualContent() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          whileHover={{ y: -4 }}
         >
-          <motion.div
-            animate={{
-              y: [0, -6, 0],
-            }}
-            transition={{
-              duration: 3,
-              repeat: Infinity,
-            }}
-          >
-            <FontAwesomeIcon icon={faPassport} className={styles.ctaIcon} />
-          </motion.div>
+          <FontAwesomeIcon icon={faPassport} className={styles.ctaIcon} />
 
           <motion.h2
             initial={{ opacity: 0, y: 18 }}

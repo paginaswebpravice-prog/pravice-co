@@ -3,24 +3,22 @@ import CustodiaAlimentosContent from "./CustodiaAlimentosContent";
 
 export const metadata: Metadata = {
   title:
-    "Custodia y Alimentos en Colombia desde el Exterior | Abogados para Colombianos",
+    "Custodia y Alimentos en Colombia desde el Exterior | Orientación Jurídica",
+
   description:
-    "Abogados expertos en custodia, visitas y cuotas alimentarias en Colombia para colombianos que viven en el exterior. Atención virtual y representación legal.",
+    "Orientación jurídica virtual para colombianos en el exterior sobre custodia de menores, visitas y cuotas alimentarias en Colombia.",
+
   keywords: [
     "custodia en Colombia",
     "cuota alimentaria Colombia",
-    "abogados de familia Colombia",
     "custodia de menores Colombia",
-    "alimentos en Colombia",
-    "colombianos en el exterior",
-    "abogados colombianos en el exterior",
     "régimen de visitas Colombia",
-    "proceso de alimentos Colombia",
-    "custodia y alimentos desde el exterior",
-    "abogados de familia para colombianos",
-    "custodia de hijos Colombia",
-    "abogados virtuales Colombia",
-    "asesoría legal familiar Colombia",
+    "abogados colombianos exterior",
+    "colombianos en el exterior",
+    "procesos familiares Colombia",
+    "custodia y alimentos Colombia",
+    "cuotas alimentarias desde el exterior",
+    "procesos de familia Colombia",
   ],
 
   alternates: {
@@ -28,22 +26,27 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "Custodia y Alimentos en Colombia desde el Exterior | Pravice Abogados",
+    title: "Custodia y Alimentos en Colombia desde el Exterior | Pravice",
+
     description:
-      "Asesoría jurídica para procesos de custodia, visitas y cuotas alimentarias en Colombia para colombianos residentes en el exterior.",
+      "Información y orientación jurídica virtual sobre custodia, visitas y cuotas alimentarias para colombianos residentes en el exterior.",
+
     url: "https://pravice.co/colombianos-exterior/custodia-alimentos",
-    siteName: "Pravice Abogados",
+
+    siteName: "Pravice",
+
     locale: "es_CO",
+
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Custodia y Alimentos en Colombia desde el Exterior | Pravice Abogados",
+
+    title: "Custodia y Alimentos en Colombia desde el Exterior | Pravice",
+
     description:
-      "Representación legal y asesoría virtual para procesos de custodia y alimentos en Colombia.",
+      "Orientación jurídica virtual para colombianos en el exterior sobre procesos familiares en Colombia.",
   },
 
   robots: {

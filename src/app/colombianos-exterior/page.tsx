@@ -3,35 +3,44 @@ import ColombianosExteriorContent from "./ColombianosExteriorContent";
 
 export const metadata: Metadata = {
   title:
-    "Abogados para Colombianos en el Exterior | Procesos Legales en Colombia",
+    "Procesos legales en Colombia para colombianos en el exterior | PRAVICE",
 
   description:
-    "Asesoría legal para colombianos en el exterior. Divorcios, sucesiones, custodia, poderes, alimentos y representación judicial en Colombia sin necesidad de viajar.",
+    "Asesoría jurídica y representación legal en Colombia para colombianos en el exterior. Divorcios, sucesiones, custodia, poderes y procesos familiares sin viajar al país.",
 
   keywords: [
-    "abogados para colombianos en el exterior",
-    "abogado colombiano en estados unidos",
-    "divorcio en colombia desde el exterior",
-    "abogados colombianos en españa",
+    "colombianos en el exterior abogados",
     "procesos legales en colombia desde el exterior",
-    "poderes desde el exterior colombia",
-    "sucesiones en colombia desde usa",
-    "custodia internacional colombia",
-    "abogados virtuales colombia",
-    "asesoría legal colombianos fuera del país",
+    "abogados colombianos en estados unidos",
+    "abogados colombianos en españa",
+    "divorcio en colombia desde el exterior",
+    "custodia y alimentos colombia",
+    "sucesiones colombia desde el exterior",
+    "poderes especiales colombia",
+    "asesoría legal virtual colombia",
+    "abogados de familia colombia",
   ],
-  openGraph: {
-    title: "Abogados para Colombianos en el Exterior | PRAVICE Abogados",
-    description:
-      "Gestionamos procesos legales en Colombia para colombianos en el exterior sin necesidad de viajar.",
 
-    url: "https://pravice.co/colombianos-en-el-exterior",
+  alternates: {
+    canonical: "https://pravice.co/colombianos-exterior",
+  },
+
+  openGraph: {
+    title:
+      "Procesos legales en Colombia para colombianos en el exterior | PRAVICE",
+
+    description:
+      "Asesoría jurídica virtual y representación legal en Colombia para colombianos residentes fuera del país.",
+
+    url: "https://pravice.co/colombianos-exterior",
     siteName: "PRAVICE Abogados",
     locale: "es_CO",
     type: "website",
   },
-  alternates: {
-    canonical: "https://pravice.co/colombianos-exterior",
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

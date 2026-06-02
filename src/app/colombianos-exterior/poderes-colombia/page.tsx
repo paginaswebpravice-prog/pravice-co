@@ -1,25 +1,30 @@
+// page.tsx
+
 import type { Metadata } from "next";
 import PoderesColombiaContent from "./PoderesColombiaContent";
 
 export const metadata: Metadata = {
-  title: "Poderes en Colombia desde el Exterior | Abogados para Colombianos",
+  title:
+    "Poderes y representación legal en Colombia desde el exterior | Pravice",
+
   description:
-    "Elaboración de poderes especiales y representación legal en Colombia para colombianos en el exterior. Asesoría virtual y trámites legales a distancia.",
+    "Asesoría jurídica para colombianos en el exterior que necesitan realizar trámites legales, procesos familiares y representación en Colombia mediante poderes especiales.",
+
   keywords: [
     "poderes en Colombia",
     "poder especial Colombia",
-    "abogados colombianos en el exterior",
-    "trámites legales Colombia",
+    "colombianos en el exterior",
+    "abogados colombianos exterior",
     "representación legal Colombia",
     "poder para abogado Colombia",
-    "colombianos en el exterior",
+    "trámites legales Colombia",
     "poder autenticado Colombia",
-    "poderes desde el exterior",
-    "asesoría legal virtual Colombia",
-    "poder notarial Colombia",
-    "abogados para colombianos",
-    "trámites legales a distancia",
+    "trámites notariales Colombia",
+    "divorcio Colombia desde el exterior",
+    "sucesiones Colombia exterior",
+    "abogados de familia Colombia",
     "poderes especiales Colombia",
+    "asesoría jurídica colombianos exterior",
   ],
 
   alternates: {
@@ -27,20 +32,29 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Poderes en Colombia desde el Exterior | Pravice Abogados",
+    title:
+      "Poderes y representación legal en Colombia desde el exterior | Pravice",
+
     description:
-      "Asesoría jurídica para elaboración de poderes y representación legal en Colombia para colombianos residentes en el exterior.",
+      "Asesoría jurídica y representación legal para colombianos residentes en el exterior que necesitan realizar trámites y procesos en Colombia.",
+
     url: "https://pravice.co/colombianos-exterior/poderes-colombia",
-    siteName: "Pravice Abogados",
+
+    siteName: "Pravice",
+
     locale: "es_CO",
+
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Poderes en Colombia desde el Exterior | Pravice Abogados",
+
+    title:
+      "Poderes y representación legal en Colombia desde el exterior | Pravice",
+
     description:
-      "Elaboración de poderes especiales y acompañamiento legal para colombianos en el exterior.",
+      "Asesoría jurídica para colombianos en el exterior y representación legal en Colombia.",
   },
 
   robots: {

@@ -15,13 +15,14 @@ import {
   faChild,
   faFileSignature,
   faGavel,
+  faArrowUpRightFromSquare,
 } from "@fortawesome/free-solid-svg-icons";
 
 const beneficios = [
-  "Procesos de custodia y visitas",
-  "Cuotas alimentarias en Colombia",
-  "Representación legal sin viajar",
-  "Atención virtual desde cualquier país",
+  "Procesos de custodia y visitas en Colombia",
+  "Cuotas alimentarias y regulación familiar",
+  "Representación legal sin necesidad de viajar",
+  "Atención virtual para colombianos en el exterior",
   "Elaboración de poderes especiales",
   "Acompañamiento jurídico personalizado",
 ];
@@ -78,10 +79,10 @@ export default function CustodiaAlimentosContent() {
               duration: 0.7,
             }}
           >
-            Asesoramos colombianos que viven fuera del país en procesos de
-            custodia de menores, regulación de visitas y cuotas alimentarias en
-            Colombia, brindando representación legal y atención virtual durante
-            todo el proceso.
+            Orientamos colombianos que viven fuera del país en procesos
+            relacionados con custodia de menores, régimen de visitas y cuotas
+            alimentarias en Colombia, brindando acompañamiento jurídico y
+            representación legal virtual.
           </motion.p>
 
           <motion.div
@@ -140,29 +141,17 @@ export default function CustodiaAlimentosContent() {
             }}
             viewport={{ once: true }}
           >
-            Abogados para procesos de custodia y alimentos en Colombia
+            Procesos familiares para colombianos residentes en el exterior
           </motion.h2>
 
           {[
-            `Muchos colombianos residentes en Estados Unidos, España, Canadá,
-            Australia, Chile y otros países necesitan resolver situaciones
-            relacionadas con hijos menores en Colombia. Estos procesos pueden
-            involucrar custodia, visitas, regulación de convivencia y fijación
-            de cuotas alimentarias.`,
+            `Muchos colombianos que actualmente viven en Estados Unidos, España, Canadá, Australia, Chile y otros países necesitan resolver situaciones legales relacionadas con hijos menores en Colombia. Estos casos pueden involucrar custodia, regulación de visitas, convivencia y cuotas alimentarias.`,
 
-            `En Pravice Abogados brindamos acompañamiento jurídico especializado
-            para adelantar procesos familiares en Colombia desde el exterior,
-            permitiendo que nuestros clientes puedan actuar legalmente sin
-            necesidad de desplazarse al país.`,
+            `En Pravice brindamos acompañamiento jurídico para adelantar procesos familiares en Colombia desde el exterior, permitiendo que nuestros clientes puedan gestionar actuaciones legales sin necesidad de desplazarse al país.`,
 
-            `Nuestro equipo se encarga de la elaboración de poderes,
-            representación ante juzgados y comisarías, revisión documental y
-            acompañamiento integral durante cada etapa del proceso, manteniendo
-            comunicación constante y atención virtual personalizada.`,
+            `Nuestro equipo jurídico apoya en la elaboración de poderes especiales, revisión documental, representación ante juzgados y orientación durante cada etapa del proceso.`,
 
-            `Entendemos la importancia de proteger los derechos de los menores y
-            garantizar soluciones legales eficientes para las familias
-            colombianas que actualmente viven fuera del país.`,
+            `Buscamos ofrecer soluciones jurídicas organizadas y atención virtual constante para colombianos que requieren resolver asuntos familiares en Colombia mientras residen fuera del país.`,
           ].map((text, index) => (
             <motion.p
               key={index}
@@ -180,7 +169,7 @@ export default function CustodiaAlimentosContent() {
         </motion.div>
       </section>
 
-      {/* SERVICIOS */}
+      {/* SERVICES */}
 
       <section className={styles.services}>
         <motion.div
@@ -209,9 +198,9 @@ export default function CustodiaAlimentosContent() {
             }}
             viewport={{ once: true }}
           >
-            Analizamos cada caso de manera personalizada para definir la mejor
-            estrategia jurídica según la situación familiar, el lugar de
-            residencia de los padres y las necesidades del menor.
+            Analizamos cada situación familiar para orientar el proceso jurídico
+            más adecuado según las necesidades del menor y el lugar de
+            residencia de los padres.
           </motion.p>
 
           <div className={styles.grid}>
@@ -219,32 +208,32 @@ export default function CustodiaAlimentosContent() {
               {
                 icon: faChild,
                 title: "Custodia de menores",
-                text: "Procesos relacionados con custodia personal, cuidado del menor y definición de responsabilidades parentales en Colombia.",
+                text: "Acompañamiento en procesos relacionados con custodia, cuidado personal y responsabilidades parentales.",
               },
               {
                 icon: faScaleBalanced,
                 title: "Cuotas alimentarias",
-                text: "Fijación, regulación y modificación de cuotas alimentarias para menores de edad mediante acuerdos o procesos judiciales.",
+                text: "Orientación en fijación, regulación o modificación de cuotas alimentarias en Colombia.",
               },
               {
                 icon: faPeopleRoof,
                 title: "Régimen de visitas",
-                text: "Acompañamiento legal para establecer acuerdos y procesos relacionados con visitas y convivencia familiar.",
+                text: "Procesos y acuerdos relacionados con visitas, convivencia y contacto con menores.",
               },
               {
                 icon: faGavel,
-                title: "Procesos judiciales",
-                text: "Representación jurídica ante jueces de familia y entidades competentes en Colombia.",
+                title: "Representación legal",
+                text: "Actuaciones ante juzgados de familia y entidades competentes en Colombia.",
               },
               {
                 icon: faFileSignature,
                 title: "Poderes especiales",
-                text: "Elaboración de poderes para permitir representación legal desde el exterior sin necesidad de viajar.",
+                text: "Elaboración de documentos y poderes para representación desde el exterior.",
               },
               {
                 icon: faPhoneVolume,
                 title: "Asesoría virtual",
-                text: "Consultas jurídicas online y acompañamiento permanente durante todo el proceso familiar.",
+                text: "Consultas online y acompañamiento remoto durante el desarrollo del proceso.",
               },
             ].map((item, index) => (
               <motion.div
@@ -290,7 +279,124 @@ export default function CustodiaAlimentosContent() {
         </motion.div>
       </section>
 
-      {/* BENEFICIOS */}
+      {/* SEO SUPPORT */}
+
+      <section className={styles.seoSupport}>
+        <div>
+          <h2>
+            Información complementaria sobre custodia y alimentos en Colombia
+          </h2>
+
+          <p>
+            Los procesos de custodia de menores y cuotas alimentarias en
+            Colombia pueden requerir actuaciones judiciales o acuerdos ante
+            entidades competentes dependiendo de cada caso familiar. Cuando uno
+            de los padres reside fuera del país, es importante contar con
+            acompañamiento jurídico adecuado y representación legal organizada.
+          </p>
+
+          <p>
+            Si deseas conocer información más amplia sobre procesos de derecho
+            de familia en Colombia, puedes consultar el portal principal de
+            nuestra firma aliado especializado en temas familiares, custodia,
+            alimentos y regulación de visitas.
+          </p>
+
+          <div className={styles.seoLinkBox}>
+            <h3>Portal principal especializado en derecho de familia</h3>
+
+            <p>
+              Accede a información jurídica complementaria relacionada con
+              procesos familiares, custodia, alimentos y visitas en Colombia.
+            </p>
+
+            <a
+              href="https://abogadosespecialistas.com.co/derecho-de-familia.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.seoLink}
+            >
+              Visitar portal principal
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ARTICLE */}
+
+      <section className={styles.articleContent}>
+        <div>
+          <h2>
+            Custodia, visitas y cuotas alimentarias para colombianos en el
+            exterior
+          </h2>
+
+          <p>
+            Los colombianos que viven fuera del país frecuentemente necesitan
+            resolver situaciones familiares relacionadas con hijos menores que
+            permanecen en Colombia. Estos procesos pueden involucrar custodia,
+            regulación de visitas, alimentos o definición de responsabilidades
+            parentales.
+          </p>
+
+          <p>
+            Dependiendo del caso, las actuaciones pueden adelantarse ante
+            juzgados de familia, comisarías de familia o mediante acuerdos entre
+            las partes. La posibilidad de actuar mediante apoderado permite que
+            muchos colombianos puedan gestionar estos procesos sin necesidad de
+            viajar.
+          </p>
+
+          <h3>¿Qué situaciones suelen presentarse?</h3>
+
+          <ul>
+            <li>Definición de custodia de menores.</li>
+            <li>Regulación de visitas y convivencia.</li>
+            <li>Fijación o modificación de cuota alimentaria.</li>
+            <li>Incumplimiento de obligaciones alimentarias.</li>
+            <li>Representación legal desde el exterior.</li>
+            <li>Trámites mediante poder especial.</li>
+          </ul>
+
+          <h3>Representación legal desde otro país</h3>
+
+          <p>
+            Muchas actuaciones pueden adelantarse de manera virtual mediante
+            poderes especiales y comunicación remota. Esto permite que el
+            cliente tenga acompañamiento jurídico constante mientras el proceso
+            se desarrolla en Colombia.
+          </p>
+
+          <p>
+            La organización documental, el seguimiento procesal y la correcta
+            orientación jurídica son aspectos importantes para facilitar el
+            desarrollo del caso y proteger los derechos del menor.
+          </p>
+
+          <div className={styles.internalSeoCta}>
+            <h3>
+              ¿Buscas más información sobre procesos familiares en Colombia?
+            </h3>
+
+            <p>
+              Consulta contenido jurídico complementario sobre derecho de
+              familia, custodia y alimentos en Colombia.
+            </p>
+
+            <a
+              href="https://abogadosespecialistas.com.co/derecho-de-familia.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ir al portal principal
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* BENEFITS */}
 
       <section className={styles.benefits}>
         <motion.div
@@ -338,56 +444,10 @@ export default function CustodiaAlimentosContent() {
               </motion.div>
             ))}
           </div>
-
-          <motion.div
-            className={styles.extraInfo}
-            initial={{ opacity: 0, y: 28 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.2,
-              duration: 0.7,
-            }}
-            viewport={{ once: true }}
-          >
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              viewport={{ once: true }}
-            >
-              Nuestro servicio está diseñado para colombianos que necesitan
-              resolver asuntos familiares en Colombia mientras viven en el
-              exterior. Ofrecemos atención remota, revisión digital de
-              documentos y representación jurídica integral.
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.45 }}
-              viewport={{ once: true }}
-            >
-              Cada proceso familiar requiere sensibilidad, estrategia y claridad
-              jurídica. Por eso trabajamos de manera cercana con nuestros
-              clientes para brindar soluciones eficientes y acompañamiento
-              permanente durante todas las etapas del caso.
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
-              viewport={{ once: true }}
-            >
-              Buscamos que puedas avanzar en tu proceso de custodia, alimentos o
-              visitas de forma organizada, segura y sin complicaciones,
-              protegiendo siempre los derechos de los menores involucrados.
-            </motion.p>
-          </motion.div>
         </motion.div>
       </section>
 
-      {/* PROCESO */}
+      {/* PROCESS */}
 
       <section className={styles.process}>
         <motion.div
@@ -410,22 +470,22 @@ export default function CustodiaAlimentosContent() {
               {
                 number: "01",
                 title: "Consulta inicial",
-                text: "Analizamos tu caso y resolvemos dudas relacionadas con custodia, visitas y cuotas alimentarias.",
+                text: "Analizamos la situación familiar y resolvemos dudas jurídicas relacionadas con el caso.",
               },
               {
                 number: "02",
-                title: "Documentación y poder",
-                text: "Elaboramos el poder especial y revisamos los documentos necesarios para iniciar el proceso en Colombia.",
+                title: "Revisión documental",
+                text: "Organizamos documentos y elaboramos los poderes necesarios para representación legal.",
               },
               {
                 number: "03",
-                title: "Representación legal",
-                text: "Nuestro equipo adelanta actuaciones ante juzgados, comisarías y demás entidades competentes.",
+                title: "Actuaciones legales",
+                text: "Se adelantan actuaciones ante las entidades correspondientes en Colombia.",
               },
               {
                 number: "04",
-                title: "Seguimiento continuo",
-                text: "Mantenemos comunicación constante contigo hasta finalizar el proceso legal.",
+                title: "Seguimiento",
+                text: "Mantenemos comunicación constante sobre avances y novedades del proceso.",
               },
             ].map((item, index) => (
               <motion.div
@@ -503,7 +563,7 @@ export default function CustodiaAlimentosContent() {
             transition={{ delay: 0.15 }}
             viewport={{ once: true }}
           >
-            ¿Necesitas resolver un proceso de custodia o alimentos en Colombia?
+            ¿Necesitas orientación jurídica familiar en Colombia?
           </motion.h2>
 
           <motion.p
@@ -512,8 +572,8 @@ export default function CustodiaAlimentosContent() {
             transition={{ delay: 0.28 }}
             viewport={{ once: true }}
           >
-            Recibe acompañamiento jurídico y representación legal sin importar
-            el país en el que te encuentres.
+            Recibe atención virtual y acompañamiento legal para procesos de
+            custodia, visitas y alimentos desde cualquier país.
           </motion.p>
 
           <motion.a
@@ -542,15 +602,15 @@ export default function CustodiaAlimentosContent() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Custodia y alimentos en Colombia para colombianos en el exterior",
+            name: "Custodia y alimentos en Colombia desde el exterior",
             provider: {
               "@type": "Organization",
-              name: "Pravice Abogados",
+              name: "Pravice",
             },
             areaServed: "Worldwide",
             url: "https://pravice.co/colombianos-exterior/custodia-alimentos",
             serviceType:
-              "Procesos de custodia y cuotas alimentarias en Colombia",
+              "Orientación jurídica para custodia y alimentos en Colombia",
           }),
         }}
       />

@@ -49,9 +49,6 @@ export default function SucesionesHerenciasContent() {
               delay: 0.2,
               duration: 0.5,
             }}
-            whileHover={{
-              scale: 1.04,
-            }}
           >
             <FontAwesomeIcon icon={faEarthAmericas} />
             Colombianos en el Exterior
@@ -78,9 +75,9 @@ export default function SucesionesHerenciasContent() {
               duration: 0.8,
             }}
           >
-            Ayudamos a colombianos residentes en el exterior a realizar procesos
-            de sucesión y herencia en Colombia con representación legal,
-            atención virtual y acompañamiento durante cada etapa del trámite.
+            Información para colombianos residentes en el exterior que necesitan
+            realizar procesos de sucesión y herencia en Colombia mediante
+            representación legal y acompañamiento jurídico.
           </motion.p>
 
           <motion.div
@@ -106,17 +103,9 @@ export default function SucesionesHerenciasContent() {
               Solicitar asesoría
             </motion.a>
 
-            <motion.div
-              whileHover={{
-                y: -4,
-                scale: 1.03,
-              }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <Link href="/colombianos-exterior" className={styles.secondary}>
-                Volver
-              </Link>
-            </motion.div>
+            <Link href="/colombianos-exterior" className={styles.secondary}>
+              Volver
+            </Link>
           </motion.div>
         </motion.div>
       </section>
@@ -139,54 +128,42 @@ export default function SucesionesHerenciasContent() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Abogados para sucesiones y herencias en Colombia
+            Guía para sucesiones y herencias en Colombia
           </motion.h2>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.1, duration: 0.7 }}
-            viewport={{ once: true }}
-          >
-            Muchos colombianos que viven en Estados Unidos, España, Canadá,
-            Australia, Chile y otros países necesitan resolver procesos de
-            sucesión en Colombia relacionados con bienes, propiedades, cuentas,
-            herencias y derechos patrimoniales.
+          <motion.p>
+            Muchos colombianos que viven actualmente en Estados Unidos, España,
+            Canadá, Australia, Chile y otros países necesitan resolver procesos
+            relacionados con bienes, propiedades, cuentas bancarias y derechos
+            hereditarios en Colombia.
           </motion.p>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.7 }}
-            viewport={{ once: true }}
-          >
-            La distancia y los procedimientos legales pueden dificultar el
-            trámite, especialmente cuando existen varios herederos, bienes en
-            distintas ciudades o diferencias entre las partes involucradas.
+          <motion.p>
+            Dependiendo del caso, el trámite puede adelantarse mediante sucesión
+            notarial cuando existe acuerdo entre herederos o mediante proceso
+            judicial cuando existen conflictos o desacuerdos patrimoniales.
           </motion.p>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.7 }}
-            viewport={{ once: true }}
-          >
-            En Pravice Abogados brindamos asesoría jurídica especializada para
-            adelantar sucesiones notariales y judiciales desde el exterior,
-            permitiendo que nuestros clientes puedan avanzar en el proceso sin
-            necesidad de viajar a Colombia.
+          <motion.p>
+            En muchos casos es posible realizar el trámite mediante poder
+            especial y representación legal en Colombia sin necesidad de viajar.
           </motion.p>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.7 }}
-            viewport={{ once: true }}
-          >
-            Nuestro equipo acompaña cada etapa del trámite mediante revisión
-            documental, elaboración de poderes, representación legal y atención
-            virtual permanente para brindar tranquilidad y seguridad jurídica.
-          </motion.p>
+          <div className={styles.extraInfo}>
+            <p>
+              Si deseas conocer información más amplia sobre requisitos,
+              documentación y procedimientos sucesorales, puedes consultar
+              nuestra guía principal sobre{" "}
+              <a
+                href="https://abogadosespecialistas.com.co/proceso-de-sucesion.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                proceso de sucesión en Colombia
+              </a>
+              .
+            </p>
+          </div>
         </motion.div>
       </section>
 
@@ -199,26 +176,13 @@ export default function SucesionesHerenciasContent() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <motion.h2
-            className={styles.sectionTitle}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
+          <motion.h2 className={styles.sectionTitle}>
             Servicios relacionados con sucesiones y herencias
           </motion.h2>
 
-          <motion.p
-            className={styles.sectionDescription}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.15, duration: 0.7 }}
-            viewport={{ once: true }}
-          >
-            Analizamos cada caso de manera personalizada para definir el
-            procedimiento más adecuado según la situación familiar, la
-            existencia de bienes y los acuerdos entre herederos.
+          <motion.p className={styles.sectionDescription}>
+            Los procedimientos pueden variar según la existencia de bienes,
+            acuerdos entre herederos y el tipo de trámite requerido.
           </motion.p>
 
           <div className={styles.grid}>
@@ -226,79 +190,63 @@ export default function SucesionesHerenciasContent() {
               {
                 icon: faBuildingColumns,
                 title: "Sucesión notarial",
-                text: "Procesos rápidos y organizados cuando existe acuerdo entre los herederos sobre la repartición de bienes.",
+                text: "Trámite aplicable cuando existe acuerdo entre los herederos respecto a la repartición de bienes.",
               },
               {
                 icon: faGavel,
                 title: "Sucesión judicial",
-                text: "Representación jurídica en procesos judiciales cuando existen conflictos o desacuerdos entre las partes.",
+                text: "Proceso judicial cuando existen conflictos o desacuerdos patrimoniales entre herederos.",
               },
               {
                 icon: faFileSignature,
                 title: "Poderes especiales",
-                text: "Elaboración de poderes para permitir representación legal desde el exterior sin viajar a Colombia.",
+                text: "Documentos para representación legal desde el exterior sin viajar a Colombia.",
               },
               {
                 icon: faScaleBalanced,
                 title: "Asesoría patrimonial",
-                text: "Orientación jurídica sobre derechos hereditarios, bienes y distribución patrimonial.",
+                text: "Orientación jurídica sobre derechos hereditarios y distribución de bienes.",
               },
               {
                 icon: faPeopleRoof,
                 title: "Acuerdos entre herederos",
-                text: "Acompañamiento legal para conciliaciones y acuerdos relacionados con herencias y repartición de bienes.",
+                text: "Acompañamiento en conciliaciones y acuerdos relacionados con herencias.",
               },
               {
                 icon: faPhoneVolume,
                 title: "Atención virtual",
-                text: "Consultas online y seguimiento permanente para colombianos en el exterior.",
+                text: "Consultas online y seguimiento permanente desde cualquier país.",
               },
             ].map((item, index) => (
               <motion.div
                 key={index}
+                className={styles.card}
                 initial={{
                   opacity: 0,
                   y: 45,
-                  scale: 0.94,
                 }}
                 whileInView={{
                   opacity: 1,
                   y: 0,
-                  scale: 1,
                 }}
                 transition={{
                   duration: 0.55,
                   delay: index * 0.08,
                 }}
                 viewport={{ once: true }}
-                whileHover={{
-                  y: -10,
-                }}
               >
-                <div className={styles.card}>
-                  <motion.div
-                    className={styles.icon}
-                    whileHover={{
-                      rotate: -6,
-                      scale: 1.08,
-                    }}
-                    transition={{ duration: 0.25 }}
-                  >
-                    <FontAwesomeIcon icon={item.icon} />
-                  </motion.div>
-
-                  <h3>{item.title}</h3>
-
-                  <p>{item.text}</p>
-
-                  <motion.span
-                    className={styles.cardLink}
-                    whileHover={{ x: 5 }}
-                  >
-                    Más información
-                    <FontAwesomeIcon icon={faArrowRight} />
-                  </motion.span>
+                <div className={styles.icon}>
+                  <FontAwesomeIcon icon={item.icon} />
                 </div>
+
+                <h3>{item.title}</h3>
+
+                <p>{item.text}</p>
+
+                <span className={styles.cardLink}>
+                  Más información
+                  <FontAwesomeIcon icon={faArrowRight} />
+                </span>
               </motion.div>
             ))}
           </div>
@@ -314,13 +262,8 @@ export default function SucesionesHerenciasContent() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <motion.h2
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            ¿Por qué realizar tu proceso con nosotros?
+          <motion.h2>
+            Aspectos importantes sobre sucesiones en Colombia
           </motion.h2>
 
           <div className={styles.benefitsGrid}>
@@ -335,69 +278,169 @@ export default function SucesionesHerenciasContent() {
                   duration: 0.45,
                 }}
                 viewport={{ once: true }}
-                whileHover={{
-                  y: -6,
-                  scale: 1.02,
-                }}
               >
-                <motion.div
-                  whileHover={{
-                    rotate: 8,
-                    scale: 1.12,
-                  }}
-                >
-                  <FontAwesomeIcon icon={faCheckCircle} />
-                </motion.div>
+                <FontAwesomeIcon icon={faCheckCircle} />
 
                 <span>{item}</span>
               </motion.div>
             ))}
           </div>
 
-          <motion.div
-            className={styles.extraInfo}
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.2,
-              duration: 0.7,
-            }}
-            viewport={{ once: true }}
-          >
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.25, duration: 0.7 }}
-              viewport={{ once: true }}
-            >
-              Nuestro servicio está diseñado para facilitar los procesos
-              sucesorales de colombianos que actualmente viven fuera del país y
-              necesitan resolver trámites de herencia en Colombia.
-            </motion.p>
+          <div className={styles.extraInfo}>
+            <p>
+              Los procesos sucesorales pueden involucrar propiedades, vehículos,
+              cuentas bancarias y diferentes activos ubicados en Colombia.
+            </p>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.35, duration: 0.7 }}
-              viewport={{ once: true }}
-            >
-              Brindamos acompañamiento cercano durante todas las etapas del
-              proceso, explicando claramente los requisitos, tiempos y
-              procedimientos necesarios para avanzar de manera segura y
-              organizada.
-            </motion.p>
+            <p>
+              En algunos casos es necesario adelantar procesos judiciales para
+              resolver conflictos entre herederos o definir derechos
+              patrimoniales.
+            </p>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.45, duration: 0.7 }}
-              viewport={{ once: true }}
+            <p>
+              También puede requerirse acompañamiento relacionado con bienes
+              familiares, representación legal y elaboración de poderes
+              especiales para actuaciones desde el exterior.
+            </p>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* SEO SUPPORT */}
+
+      <section className={styles.seoSupport}>
+        <motion.div
+          initial={{ opacity: 0, y: 35 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h2>
+            Información sobre sucesiones y herencias en Colombia
+          </motion.h2>
+
+          <motion.p>
+            Los procesos de sucesión en Colombia pueden adelantarse mediante
+            trámite notarial cuando existe acuerdo entre herederos o mediante
+            proceso judicial cuando existen conflictos relacionados con bienes,
+            repartición patrimonial o diferencias familiares.
+          </motion.p>
+
+          <motion.p>
+            Para colombianos en el exterior, estos procedimientos normalmente
+            requieren revisión documental, poderes especiales y representación
+            legal en Colombia.
+          </motion.p>
+
+          <motion.p>
+            Si deseas conocer información más amplia sobre requisitos, tiempos y
+            procesos sucesorales, puedes consultar nuestra guía principal sobre{" "}
+            <a
+              href="https://abogadosespecialistas.com.co/proceso-de-sucesion.html"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Buscamos proteger los derechos patrimoniales de nuestros clientes
-              mediante representación jurídica confiable y atención
-              personalizada desde cualquier lugar del mundo.
-            </motion.p>
+              proceso de sucesión en Colombia
+            </a>
+            .
+          </motion.p>
+
+          <motion.div className={styles.seoLinkBox}>
+            <h3>Guía completa sobre sucesiones en Colombia</h3>
+
+            <p>
+              Accede a información detallada sobre herencias, repartición de
+              bienes y procesos sucesorales notariales y judiciales.
+            </p>
+
+            <motion.a
+              href="https://abogadosespecialistas.com.co/proceso-de-sucesion.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.seoLink}
+              whileHover={{
+                scale: 1.03,
+                y: -4,
+              }}
+            >
+              Ver guía de sucesiones
+              <FontAwesomeIcon icon={faArrowRight} />
+            </motion.a>
           </motion.div>
+        </motion.div>
+      </section>
+
+      {/* ARTICLE CONTENT */}
+
+      <section className={styles.articleContent}>
+        <motion.div
+          initial={{ opacity: 0, y: 35 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h2>
+            ¿Cómo funcionan las sucesiones para colombianos en el exterior?
+          </motion.h2>
+
+          <motion.p>
+            Muchos colombianos residentes fuera del país necesitan resolver
+            procesos relacionados con herencias, propiedades y bienes ubicados
+            en Colombia.
+          </motion.p>
+
+          <motion.h3>Sucesión notarial</motion.h3>
+
+          <motion.p>
+            Este procedimiento suele aplicarse cuando todos los herederos están
+            de acuerdo respecto a la repartición de bienes.
+          </motion.p>
+
+          <motion.h3>Sucesión judicial</motion.h3>
+
+          <motion.p>
+            Cuando existen conflictos patrimoniales o desacuerdos entre
+            herederos, normalmente es necesario adelantar un proceso judicial.
+          </motion.p>
+
+          <motion.h3>Poderes y representación legal</motion.h3>
+
+          <motion.p>
+            Los colombianos en el exterior pueden otorgar poderes especiales
+            para que abogados en Colombia adelanten actuaciones notariales y
+            judiciales en su representación.
+          </motion.p>
+
+          <ul>
+            <li>Revisión documental y derechos hereditarios.</li>
+            <li>Elaboración de poderes especiales.</li>
+            <li>Representación ante notarías y juzgados.</li>
+            <li>Seguimiento jurídico del proceso sucesoral.</li>
+            <li>Atención virtual para colombianos en el exterior.</li>
+          </ul>
+
+          <div className={styles.internalSeoCta}>
+            <h3>¿Buscas información más detallada sobre sucesiones?</h3>
+
+            <p>
+              Consulta nuestra guía principal con información sobre herencias,
+              repartición de bienes y procesos sucesorales en Colombia.
+            </p>
+
+            <motion.a
+              href="https://abogadosespecialistas.com.co/proceso-de-sucesion.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{
+                scale: 1.03,
+                y: -4,
+              }}
+            >
+              Ir a la guía principal
+              <FontAwesomeIcon icon={faArrowRight} />
+            </motion.a>
+          </div>
         </motion.div>
       </section>
 
@@ -410,36 +453,29 @@ export default function SucesionesHerenciasContent() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <motion.h2
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            ¿Cómo funciona el proceso?
-          </motion.h2>
+          <motion.h2>¿Cómo funciona el proceso?</motion.h2>
 
           <div className={styles.processGrid}>
             {[
               {
                 number: "01",
                 title: "Consulta inicial",
-                text: "Analizamos el caso y revisamos la situación de los bienes y herederos involucrados.",
+                text: "Se analiza el caso y la situación patrimonial correspondiente.",
               },
               {
                 number: "02",
                 title: "Documentación y poder",
-                text: "Elaboramos poderes especiales y revisamos los documentos necesarios para iniciar la sucesión.",
+                text: "Se preparan documentos y poderes necesarios para iniciar el trámite.",
               },
               {
                 number: "03",
                 title: "Representación legal",
-                text: "Nuestro equipo adelanta el trámite ante notaría o juzgado en Colombia.",
+                text: "El trámite avanza ante notaría o juzgado en Colombia.",
               },
               {
                 number: "04",
-                title: "Seguimiento continuo",
-                text: "Informamos avances y acompañamos el proceso hasta la finalización del trámite sucesoral.",
+                title: "Seguimiento",
+                text: "Se realiza acompañamiento y actualización permanente del proceso.",
               },
             ].map((item, index) => (
               <motion.div
@@ -452,19 +488,8 @@ export default function SucesionesHerenciasContent() {
                   duration: 0.5,
                 }}
                 viewport={{ once: true }}
-                whileHover={{
-                  y: -8,
-                  scale: 1.02,
-                }}
               >
-                <motion.span
-                  whileHover={{
-                    scale: 1.1,
-                    rotate: -5,
-                  }}
-                >
-                  {item.number}
-                </motion.span>
+                <span>{item.number}</span>
 
                 <h3>{item.title}</h3>
 
@@ -487,36 +512,16 @@ export default function SucesionesHerenciasContent() {
           }}
           viewport={{ once: true }}
         >
-          <motion.div
-            animate={{
-              y: [0, -6, 0],
-            }}
-            transition={{
-              duration: 3,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          >
-            <FontAwesomeIcon icon={faPassport} className={styles.ctaIcon} />
-          </motion.div>
+          <FontAwesomeIcon icon={faPassport} className={styles.ctaIcon} />
 
-          <motion.h2
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            ¿Necesitas resolver una sucesión en Colombia?
+          <motion.h2>
+            ¿Necesitas orientación sobre una sucesión en Colombia?
           </motion.h2>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.7 }}
-            viewport={{ once: true }}
-          >
-            Recibe asesoría jurídica y representación legal sin importar el país
-            en el que te encuentres.
+          <motion.p>
+            Nuestro equipo brinda acompañamiento jurídico para colombianos que
+            viven en el exterior y necesitan resolver procesos sucesorales en
+            Colombia.
           </motion.p>
 
           <motion.a
@@ -550,7 +555,16 @@ export default function SucesionesHerenciasContent() {
             },
             areaServed: "Worldwide",
             url: "https://pravice.co/colombianos-exterior/sucesiones-herencias",
-            serviceType: "Sucesiones y herencias en Colombia",
+            serviceType:
+              "Asesoría legal para sucesiones y herencias en Colombia",
+            sameAs: [
+              "https://abogadosespecialistas.com.co/proceso-de-sucesion.html",
+            ],
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id":
+                "https://pravice.co/colombianos-exterior/sucesiones-herencias",
+            },
           }),
         }}
       />

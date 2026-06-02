@@ -16,47 +16,48 @@ import {
   faGavel,
   faUserTie,
   faArrowRight,
+  faPeopleRoof,
 } from "@fortawesome/free-solid-svg-icons";
 
 const beneficios = [
-  "Elaboración de poderes especiales",
-  "Representación legal en Colombia",
-  "Asesoría virtual desde cualquier país",
-  "Acompañamiento en trámites legales",
-  "Revisión y preparación documental",
-  "Atención personalizada para colombianos en el exterior",
+  "Orientación jurídica para colombianos en el exterior",
+  "Elaboración de poderes especiales y autenticaciones",
+  "Representación legal en trámites familiares y civiles",
+  "Atención virtual desde cualquier país",
+  "Acompañamiento documental y revisión de requisitos",
+  "Apoyo jurídico para actuaciones en Colombia sin viajar",
 ];
 
 const servicios = [
   {
     icon: faFileSignature,
     title: "Poderes especiales",
-    text: "Elaboración de poderes para procesos judiciales, notariales, administrativos y trámites legales en Colombia.",
+    text: "Elaboración de poderes para trámites notariales, procesos judiciales y actuaciones administrativas en Colombia.",
   },
   {
     icon: faScaleBalanced,
     title: "Representación jurídica",
-    text: "Actuación legal en nombre del cliente ante entidades, notarías y juzgados en Colombia.",
+    text: "Representación legal ante notarías, entidades públicas y despachos judiciales en Colombia.",
+  },
+  {
+    icon: faPeopleRoof,
+    title: "Procesos familiares",
+    text: "Acompañamiento jurídico en divorcios, custodia, sucesiones y otros asuntos de derecho de familia.",
   },
   {
     icon: faBuildingColumns,
     title: "Trámites notariales",
-    text: "Acompañamiento en autenticaciones, escrituras, sucesiones, divorcios y otros procedimientos notariales.",
+    text: "Asesoría para escrituras, autenticaciones, declaraciones y actuaciones notariales desde el exterior.",
   },
   {
     icon: faGavel,
     title: "Procesos judiciales",
-    text: "Representación en procesos civiles, familiares y otros asuntos legales ante jueces en Colombia.",
+    text: "Representación en procesos civiles y familiares que requieren actuación legal en Colombia.",
   },
   {
     icon: faUserTie,
     title: "Asesoría personalizada",
-    text: "Orientación jurídica para determinar qué tipo de poder necesitas según tu situación específica.",
-  },
-  {
-    icon: faPhoneVolume,
-    title: "Atención virtual",
-    text: "Consultas online y seguimiento permanente para colombianos en cualquier parte del mundo.",
+    text: "Orientación jurídica para identificar el tipo de poder y procedimiento más adecuado según cada caso.",
   },
 ];
 
@@ -64,12 +65,12 @@ const steps = [
   {
     number: "01",
     title: "Consulta inicial",
-    text: "Analizamos el trámite o proceso legal que necesitas realizar en Colombia.",
+    text: "Analizamos el trámite, proceso o actuación legal que necesitas adelantar en Colombia.",
   },
   {
     number: "02",
-    title: "Preparación del poder",
-    text: "Elaboramos el documento y explicamos el proceso de firma y autenticación desde el exterior.",
+    title: "Preparación documental",
+    text: "Elaboramos el poder y explicamos el proceso de autenticación desde tu país de residencia.",
   },
   {
     number: "03",
@@ -78,8 +79,8 @@ const steps = [
   },
   {
     number: "04",
-    title: "Seguimiento continuo",
-    text: "Informamos avances y acompañamos el trámite hasta su finalización.",
+    title: "Seguimiento del proceso",
+    text: "Brindamos acompañamiento continuo e información sobre el avance del trámite.",
   },
 ];
 
@@ -103,7 +104,6 @@ export default function PoderesColombiaContent() {
               duration: 0.5,
               type: "spring",
             }}
-            whileHover={{ scale: 1.04 }}
           >
             <motion.div
               animate={{ rotate: [0, -8, 8, 0] }}
@@ -115,7 +115,7 @@ export default function PoderesColombiaContent() {
             >
               <FontAwesomeIcon icon={faEarthAmericas} />
             </motion.div>
-            Colombianos en el Exterior
+            Colombianos en el exterior
           </motion.div>
 
           <motion.h1
@@ -124,7 +124,7 @@ export default function PoderesColombiaContent() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15, duration: 0.7 }}
           >
-            Poderes y representación legal en Colombia
+            Poderes y representación legal en Colombia desde el exterior
           </motion.h1>
 
           <motion.p
@@ -133,9 +133,10 @@ export default function PoderesColombiaContent() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Ayudamos a colombianos en el exterior a realizar trámites y procesos
-            legales en Colombia mediante poderes especiales y representación
-            jurídica, evitando desplazamientos innecesarios al país.
+            Asesoramos colombianos residentes en el exterior que necesitan
+            realizar trámites legales, actuaciones notariales y procesos
+            familiares en Colombia mediante poderes especiales y representación
+            jurídica.
           </motion.p>
 
           <motion.div
@@ -158,7 +159,7 @@ export default function PoderesColombiaContent() {
               Solicitar asesoría
             </motion.a>
 
-            <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
+            <motion.div whileHover={{ scale: 1.04 }}>
               <Link href="/colombianos-exterior" className={styles.secondary}>
                 Volver
               </Link>
@@ -182,14 +183,14 @@ export default function PoderesColombiaContent() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Abogados para poderes y trámites legales desde el exterior
+            Abogados para colombianos en el exterior
           </motion.h2>
 
           {[
-            "Muchos colombianos que viven en Estados Unidos, España, Canadá, Australia, Chile y otros países necesitan adelantar trámites en Colombia sin poder viajar personalmente.",
-            "A través de poderes especiales es posible autorizar abogados o representantes para actuar legalmente en Colombia en procesos notariales, judiciales, familiares, civiles, empresariales y otros trámites administrativos.",
-            "En Pravice Abogados brindamos asesoría integral para elaboración, revisión y utilización de poderes, garantizando que cada documento cumpla los requisitos necesarios según el tipo de trámite o proceso.",
-            "Nuestro equipo acompaña a cada cliente durante todo el procedimiento mediante atención virtual, comunicación constante y representación legal profesional.",
+            "Muchos colombianos residentes en Estados Unidos, España, Canadá, Australia, Chile y otros países necesitan adelantar trámites legales en Colombia sin desplazarse físicamente.",
+            "A través de poderes especiales es posible autorizar abogados para actuar en procesos notariales, trámites familiares, sucesiones, divorcios, actuaciones civiles y otros procedimientos legales.",
+            "En Pravice brindamos acompañamiento jurídico para la elaboración y revisión de poderes, autenticaciones y representación legal en Colombia.",
+            "Nuestro equipo ofrece atención virtual y asesoría personalizada para facilitar procesos legales desde cualquier parte del mundo.",
           ].map((text, index) => (
             <motion.p
               key={index}
@@ -207,7 +208,7 @@ export default function PoderesColombiaContent() {
         </motion.div>
       </section>
 
-      {/* SERVICIOS */}
+      {/* SERVICES */}
 
       <section className={styles.services}>
         <motion.div
@@ -223,7 +224,7 @@ export default function PoderesColombiaContent() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Servicios relacionados con poderes en Colombia
+            Servicios legales para colombianos fuera del país
           </motion.h2>
 
           <motion.p
@@ -233,9 +234,9 @@ export default function PoderesColombiaContent() {
             transition={{ delay: 0.15, duration: 0.7 }}
             viewport={{ once: true }}
           >
-            Analizamos cada situación para definir el tipo de poder y la
-            estrategia jurídica más adecuada según el trámite que necesites
-            realizar en Colombia.
+            Analizamos cada caso para definir la mejor estrategia jurídica y el
+            tipo de representación legal más adecuado según el trámite o proceso
+            en Colombia.
           </motion.p>
 
           <div className={styles.grid}>
@@ -258,10 +259,6 @@ export default function PoderesColombiaContent() {
                   type: "spring",
                 }}
                 viewport={{ once: true }}
-                whileHover={{
-                  y: -10,
-                  rotateX: 2,
-                }}
               >
                 <div className={styles.card}>
                   <motion.div
@@ -293,7 +290,116 @@ export default function PoderesColombiaContent() {
         </motion.div>
       </section>
 
-      {/* BENEFICIOS */}
+      {/* SEO SUPPORT */}
+
+      <section className={styles.seoSupport}>
+        <div>
+          <h2>
+            Apoyo jurídico para procesos familiares y representación en Colombia
+          </h2>
+
+          <p>
+            Algunos trámites realizados mediante poderes especiales están
+            relacionados con procesos de derecho de familia en Colombia, como
+            divorcios, custodia, sucesiones, regulación de alimentos y otros
+            asuntos legales familiares.
+          </p>
+
+          <p>
+            Cuando el caso requiere acompañamiento especializado en litigios o
+            procesos familiares complejos, es recomendable contar con abogados
+            expertos en derecho de familia en Colombia.
+          </p>
+
+          <div className={styles.seoLinkBox}>
+            <h3>Conoce más sobre abogados de familia en Colombia</h3>
+
+            <p>
+              Si necesitas información más específica sobre representación en
+              procesos familiares, divorcios o asuntos legales familiares en
+              Colombia, puedes consultar esta guía jurídica especializada.
+            </p>
+
+            <Link
+              href="https://abogadosespecialistas.com.co/abogados-de-familia.html"
+              className={styles.seoLink}
+              target="_blank"
+            >
+              Ver abogados de familia
+              <FontAwesomeIcon icon={faArrowRight} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ARTICLE */}
+
+      <section className={styles.articleContent}>
+        <div>
+          <h2>¿Cómo funcionan los poderes para colombianos en el exterior?</h2>
+
+          <p>
+            Los poderes especiales permiten que una persona autorice a un
+            abogado o representante en Colombia para actuar en su nombre en
+            determinados trámites o procesos legales.
+          </p>
+
+          <p>
+            Dependiendo del tipo de actuación, el poder puede requerir
+            autenticación ante consulado colombiano, notario extranjero o
+            apostilla según el país donde se encuentre el ciudadano colombiano.
+          </p>
+
+          <h3>Trámites frecuentes realizados mediante poderes en Colombia</h3>
+
+          <ul>
+            <li>Procesos de divorcio y asuntos familiares.</li>
+            <li>Sucesiones y trámites hereditarios.</li>
+            <li>Actuaciones notariales y autenticaciones.</li>
+            <li>Representación en procesos civiles.</li>
+            <li>Trámites ante entidades públicas y privadas.</li>
+            <li>Firma de documentos y actuaciones administrativas.</li>
+          </ul>
+
+          <h3>Importancia de contar con asesoría jurídica adecuada</h3>
+
+          <p>
+            Cada proceso tiene requisitos diferentes relacionados con
+            autenticaciones, alcance del poder y representación legal. Por esta
+            razón, es importante revisar cada caso antes de iniciar cualquier
+            actuación en Colombia.
+          </p>
+
+          <p>
+            Una adecuada preparación documental ayuda a reducir errores,
+            devoluciones y retrasos en trámites legales realizados desde el
+            exterior.
+          </p>
+
+          <div className={styles.internalSeoCta}>
+            <h3>
+              ¿Necesitas apoyo en procesos familiares o representación legal en
+              Colombia?
+            </h3>
+
+            <p>
+              Puedes ampliar información sobre servicios jurídicos relacionados
+              con derecho de familia y representación legal especializada en
+              Colombia.
+            </p>
+
+            <Link
+              href="https://abogadosespecialistas.com.co/abogados-de-familia.html"
+              target="_blank"
+            >
+              Consultar abogados de familia
+              <FontAwesomeIcon icon={faArrowRight} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* BENEFITS */}
 
       <section className={styles.benefits}>
         <motion.div
@@ -329,10 +435,6 @@ export default function PoderesColombiaContent() {
                   delay: index * 0.07,
                 }}
                 viewport={{ once: true }}
-                whileHover={{
-                  y: -6,
-                  scale: 1.02,
-                }}
               >
                 <motion.div
                   whileHover={{
@@ -347,51 +449,10 @@ export default function PoderesColombiaContent() {
               </motion.div>
             ))}
           </div>
-
-          <motion.div
-            className={styles.extraInfo}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <motion.p
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55 }}
-              viewport={{ once: true }}
-            >
-              Nuestro servicio está diseñado para facilitar los trámites legales
-              de colombianos que actualmente residen fuera del país y necesitan
-              actuar en Colombia sin viajar.
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.12, duration: 0.55 }}
-              viewport={{ once: true }}
-            >
-              Revisamos cuidadosamente cada documento y brindamos asesoría clara
-              sobre autenticaciones, requisitos y procedimientos necesarios para
-              evitar errores y retrasos en los procesos.
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.24, duration: 0.55 }}
-              viewport={{ once: true }}
-            >
-              Buscamos que cada cliente pueda avanzar de manera segura,
-              organizada y eficiente mediante representación legal confiable y
-              atención personalizada.
-            </motion.p>
-          </motion.div>
         </motion.div>
       </section>
 
-      {/* PROCESO */}
+      {/* PROCESS */}
 
       <section className={styles.process}>
         <motion.div
@@ -427,9 +488,6 @@ export default function PoderesColombiaContent() {
                   delay: index * 0.1,
                 }}
                 viewport={{ once: true }}
-                whileHover={{
-                  y: -8,
-                }}
               >
                 <motion.span
                   whileHover={{
@@ -479,7 +537,7 @@ export default function PoderesColombiaContent() {
             transition={{ delay: 0.1, duration: 0.55 }}
             viewport={{ once: true }}
           >
-            ¿Necesitas realizar un trámite legal en Colombia?
+            ¿Necesitas realizar trámites legales en Colombia?
           </motion.h2>
 
           <motion.p
@@ -488,8 +546,8 @@ export default function PoderesColombiaContent() {
             transition={{ delay: 0.2, duration: 0.7 }}
             viewport={{ once: true }}
           >
-            Recibe asesoría jurídica y representación legal sin importar el país
-            en el que te encuentres.
+            Recibe asesoría jurídica y acompañamiento legal desde cualquier
+            país.
           </motion.p>
 
           <motion.a
@@ -519,11 +577,12 @@ export default function PoderesColombiaContent() {
             name: "Poderes y representación legal en Colombia",
             provider: {
               "@type": "Organization",
-              name: "Pravice Abogados",
+              name: "Pravice",
             },
             areaServed: "Worldwide",
             url: "https://pravice.co/colombianos-exterior/poderes-colombia",
-            serviceType: "Poderes y representación legal en Colombia",
+            serviceType:
+              "Poderes especiales y representación legal para colombianos en el exterior",
           }),
         }}
       />

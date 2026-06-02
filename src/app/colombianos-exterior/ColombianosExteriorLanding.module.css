@@ -102,6 +102,7 @@ HERO
 
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 18px;
   flex-wrap: wrap;
 }
@@ -320,6 +321,21 @@ CARD
   z-index: 2;
 }
 
+.cardLink {
+  margin-top: 24px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #004a80;
+
+  font-weight: 700;
+
+  position: relative;
+  z-index: 2;
+}
+
 /* =========================
 BENEFITS
 ========================= */
@@ -491,6 +507,231 @@ PROCESS
 }
 
 /* =========================
+SEO SUPPORT SECTION
+========================= */
+
+.seoSupport {
+  padding: 90px 20px;
+
+  background: #ffffff;
+
+  border-top: 1px solid rgba(0, 74, 128, 0.08);
+  border-bottom: 1px solid rgba(0, 74, 128, 0.08);
+}
+
+.seoSupport > div {
+  max-width: 950px;
+  margin: auto;
+}
+
+.seoSupport h2 {
+  font-size: 2.2rem;
+
+  margin-bottom: 28px;
+
+  color: #004a80;
+
+  text-align: center;
+}
+
+.seoSupport p {
+  font-size: 1.05rem;
+  line-height: 1.95;
+
+  color: #4a4a4a;
+
+  margin-bottom: 22px;
+}
+
+.seoSupport strong {
+  color: #002d4d;
+}
+
+.seoLinkBox {
+  margin-top: 45px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(0, 74, 128, 0.05),
+    rgba(247, 198, 0, 0.08)
+  );
+
+  border: 1px solid rgba(0, 74, 128, 0.1);
+
+  border-radius: 22px;
+
+  padding: 36px;
+
+  text-align: center;
+}
+
+.seoLinkBox h3 {
+  font-size: 1.45rem;
+
+  color: #004a80;
+
+  margin-bottom: 18px;
+}
+
+.seoLinkBox p {
+  margin-bottom: 28px;
+
+  color: #3f3f3f;
+}
+
+.seoLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 16px 28px;
+
+  background: #004a80;
+  color: #ffffff;
+
+  border-radius: 14px;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.seoLink:hover {
+  background: #002d4d;
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 18px 40px rgba(0, 74, 128, 0.18);
+}
+
+.seoLink svg {
+  font-size: 15px;
+}
+
+/* =========================
+ARTICLE CONTENT
+========================= */
+
+.articleContent {
+  padding: 110px 20px;
+
+  background: #ffffff;
+}
+
+.articleContent > div {
+  max-width: 950px;
+  margin: auto;
+}
+
+.articleContent h2 {
+  font-size: 2.4rem;
+
+  color: #004a80;
+
+  margin-bottom: 28px;
+
+  text-align: center;
+}
+
+.articleContent h3 {
+  font-size: 1.55rem;
+
+  color: #002d4d;
+
+  margin-top: 50px;
+  margin-bottom: 18px;
+}
+
+.articleContent p {
+  font-size: 1.06rem;
+  line-height: 1.95;
+
+  color: #4a4a4a;
+
+  margin-bottom: 22px;
+}
+
+.articleContent ul {
+  margin: 25px 0;
+  padding-left: 20px;
+}
+
+.articleContent li {
+  margin-bottom: 14px;
+
+  color: #3f3f3f;
+
+  line-height: 1.8;
+}
+
+.articleContent strong {
+  color: #002d4d;
+}
+
+/* =========================
+INTERNAL SEO CTA
+========================= */
+
+.internalSeoCta {
+  margin-top: 60px;
+
+  padding: 42px;
+
+  border-radius: 24px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(0, 74, 128, 0.06),
+    rgba(247, 198, 0, 0.08)
+  );
+
+  border: 1px solid rgba(0, 74, 128, 0.08);
+
+  text-align: center;
+}
+
+.internalSeoCta h3 {
+  margin-top: 0;
+
+  margin-bottom: 16px;
+}
+
+.internalSeoCta p {
+  margin-bottom: 26px;
+}
+
+.internalSeoCta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background: #004a80;
+  color: #ffffff;
+
+  padding: 15px 26px;
+
+  border-radius: 14px;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.internalSeoCta a:hover {
+  background: #002d4d;
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 18px 38px rgba(0, 74, 128, 0.18);
+}
+
+/* =========================
 CTA
 ========================= */
 
@@ -553,6 +794,20 @@ CTA
   color: rgba(255, 255, 255, 0.9);
 }
 
+.seoSupport a,
+.extraInfo a,
+.articleContent a {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.seoSupport a:hover,
+.extraInfo a:hover,
+.articleContent a:hover {
+  text-decoration: underline;
+}
+
 /* =========================
 RESPONSIVE
 ========================= */
@@ -575,8 +830,14 @@ RESPONSIVE
   .info h2,
   .benefits h2,
   .process h2,
-  .cta h2 {
+  .cta h2,
+  .seoSupport h2,
+  .articleContent h2 {
     font-size: 2rem;
+  }
+
+  .articleContent h3 {
+    font-size: 1.35rem;
   }
 
   .description,
@@ -585,7 +846,10 @@ RESPONSIVE
   .extraInfo p,
   .step p,
   .card p,
-  .cta p {
+  .cta p,
+  .seoSupport p,
+  .articleContent p,
+  .articleContent li {
     font-size: 1rem;
   }
 
@@ -596,7 +860,9 @@ RESPONSIVE
 
   .primary,
   .secondary,
-  .ctaButton {
+  .ctaButton,
+  .seoLink,
+  .internalSeoCta a {
     width: 100%;
     max-width: 320px;
 
@@ -605,7 +871,14 @@ RESPONSIVE
 
   .card,
   .benefit,
-  .step {
+  .step,
+  .seoLinkBox,
+  .internalSeoCta {
     padding: 26px;
+  }
+
+  .seoSupport,
+  .articleContent {
+    padding: 80px 20px;
   }
 }
