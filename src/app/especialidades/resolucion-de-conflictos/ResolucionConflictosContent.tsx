@@ -1,39 +1,78 @@
 "use client";
 
+import Script from "next/script";
 import styles from "../Especialidad.module.css";
 import { motion } from "framer-motion";
 
-export default function ResolucionConflictos() {
+const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5 },
+  },
+};
+
+export default function ResolucionConflictosContent() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    name: "Resolución de conflictos empresariales en Colombia",
+    description:
+      "Servicio de resolución de conflictos empresariales, conciliación y negociación legal en Bogotá y Colombia.",
+    areaServed: "Colombia",
+    provider: {
+      "@type": "Organization",
+      name: "Pravice",
+    },
+  };
+
   return (
     <>
+      <Script
+        id="schema-resolucion-conflictos"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema),
+        }}
+      />
+
       {/* ================= HERO ================= */}
       <section className={styles.hero}>
         <motion.div
           className={styles.heroContent}
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          initial="hidden"
+          animate="visible"
+          variants={fadeUp}
         >
-          <span className={styles.badge}>Abogados en Bogotá y Colombia</span>
+          <span className={styles.badge}>
+            Resolución de conflictos empresariales en Colombia
+          </span>
 
           <h1 className={styles.title}>
-            Resolución de conflictos en Colombia: abogados en Bogotá para evitar
-            juicios y llegar a acuerdos
+            Resolución de conflictos en Bogotá y Colombia para empresas y
+            relaciones comerciales
           </h1>
 
           <p className={styles.description}>
-            Soluciona conflictos empresariales y legales en Bogotá y Colombia
-            mediante negociación, conciliación y estrategias jurídicas
-            especializadas. Evita procesos judiciales largos y protege tus
-            intereses.
+            La resolución de conflictos permite a empresas y organizaciones en
+            Colombia solucionar disputas comerciales, contractuales y
+            societarias mediante negociación, conciliación y estrategias legales
+            preventivas.
           </p>
 
           <div className={styles.actions}>
             <a href="#contacto" className={styles.primary}>
-              Solicitar asesoría
+              Solicitar asesoría legal
             </a>
-            <a href="/blog" className={styles.secondary}>
-              Ver blog legal
+
+            <a
+              href="https://abogadosespecialistas.com.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.secondary}
+            >
+              Ver portal jurídico aliado
             </a>
           </div>
         </motion.div>
@@ -44,111 +83,158 @@ export default function ResolucionConflictos() {
         {/* INTRO */}
         <motion.section
           className={styles.section}
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
+          variants={fadeUp}
         >
           <h2 className={styles.subtitle}>
-            Resolución de conflictos en Colombia: cómo evitar juicios y
-            solucionar disputas legalmente
+            ¿Qué es la resolución de conflictos empresariales y por qué es
+            importante?
           </h2>
 
           <p className={styles.text}>
-            La resolución de conflictos en Colombia es el conjunto de métodos
-            legales y estratégicos utilizados para solucionar disputas entre
-            personas, empresas o entidades, sin necesidad de recurrir
-            necesariamente a procesos judiciales largos y costosos.
+            La resolución de conflictos en Colombia reúne mecanismos legales y
+            estratégicos que buscan solucionar disputas entre empresas, socios,
+            clientes o proveedores antes de llegar a litigios complejos.
+          </p>
+
+          <p className={styles.text}>
+            Una adecuada gestión de conflictos empresariales permite reducir
+            riesgos financieros, proteger relaciones comerciales y evitar
+            procesos judiciales prolongados.
           </p>
 
           <div className={styles.highlightBox}>
-            <strong>Importante:</strong> Resolver un conflicto a tiempo puede
-            evitar pérdidas económicas, daños reputacionales y problemas legales
-            mayores.
+            <strong>Importante:</strong> Resolver un conflicto de manera
+            temprana puede evitar demandas, sanciones económicas y afectaciones
+            reputacionales para una empresa.
           </div>
 
           <p className={styles.text}>
-            En ciudades como Bogotá, donde las relaciones comerciales son
-            constantes, los conflictos empresariales son comunes. Contar con una
-            estrategia adecuada de resolución permite proteger los intereses de
-            las partes involucradas y mantener la estabilidad del negocio.
+            En Bogotá y otras ciudades de Colombia, muchas organizaciones
+            utilizan mecanismos alternativos como conciliación y negociación
+            para proteger la continuidad de sus operaciones.
           </p>
         </motion.section>
 
-        {/* METODOS */}
-        <section className={styles.section}>
+        {/* PORTAL SEO */}
+        <motion.section
+          className={styles.portalSeo}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
           <h2 className={styles.subtitle}>
-            Métodos legales para resolver conflictos en Colombia sin ir a juicio
+            Asesoría jurídica empresarial y conflictos legales en Colombia
+          </h2>
+
+          <p>
+            Si necesitas acompañamiento jurídico integral para conflictos
+            comerciales, conciliaciones, incumplimientos contractuales o
+            disputas empresariales, puedes consultar también el portal aliado{" "}
+            <a
+              href="https://abogadosespecialistas.com.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Abogados Especialistas
+            </a>
+            , enfocado en asesoría legal corporativa y representación jurídica
+            en Colombia.
+          </p>
+        </motion.section>
+
+        {/* MÉTODOS */}
+        <motion.section
+          className={styles.section}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
+          <h2 className={styles.subtitle}>
+            Métodos de resolución de conflictos utilizados en Colombia
           </h2>
 
           <div className={styles.grid}>
             {[
               {
-                title: "Negociación",
-                text: "Acuerdos directos entre las partes con apoyo legal estratégico.",
+                title: "Negociación empresarial",
+                text: "Búsqueda de acuerdos estratégicos entre las partes involucradas.",
               },
               {
-                title: "Conciliación",
-                text: "Intervención de un tercero imparcial para lograr acuerdos.",
+                title: "Conciliación extrajudicial",
+                text: "Mecanismo legal para resolver conflictos sin necesidad de juicio.",
               },
               {
                 title: "Arbitraje",
-                text: "Resolución del conflicto mediante un tribunal arbitral.",
+                text: "Solución mediante tribunal arbitral especializado.",
               },
               {
-                title: "Litigio",
-                text: "Proceso judicial cuando no es posible un acuerdo previo.",
+                title: "Litigio judicial",
+                text: "Representación legal cuando no es posible alcanzar acuerdos.",
               },
             ].map((item, i) => (
               <motion.div
                 key={i}
                 className={styles.card}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: i * 0.08 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -5, scale: 1.02 }}
+                whileHover={{ y: -5 }}
               >
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </motion.div>
             ))}
           </div>
-        </section>
+        </motion.section>
 
         {/* IMPORTANCIA */}
-        <section className={styles.section}>
+        <motion.section
+          className={styles.section}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
           <h2 className={styles.subtitle}>
-            Por qué es clave resolver conflictos empresariales antes de llegar a
-            juicio
+            Cómo evitar litigios empresariales mediante estrategias preventivas
           </h2>
 
           <p className={styles.text}>
-            En Colombia, muchas empresas enfrentan conflictos comerciales,
-            contractuales o societarios que, si no se gestionan correctamente,
-            pueden escalar a problemas legales complejos.
+            Muchas disputas legales se originan por incumplimientos
+            contractuales, diferencias societarias o desacuerdos comerciales mal
+            gestionados.
           </p>
 
           <div className={styles.infoGrid}>
             {[
               {
-                title: "✔ Ahorro de costos",
-                text: "Evita procesos judiciales largos y costosos.",
+                title: "✔ Prevención de riesgos",
+                text: "Reduce conflictos legales antes de escalar.",
               },
               {
-                title: "✔ Protección empresarial",
-                text: "Mantiene la estabilidad del negocio.",
+                title: "✔ Protección financiera",
+                text: "Disminuye costos asociados a litigios.",
+              },
+              {
+                title: "✔ Continuidad empresarial",
+                text: "Protege la operación y reputación del negocio.",
               },
               {
                 title: "✔ Relaciones comerciales",
-                text: "Permite conservar vínculos con clientes o socios.",
+                text: "Permite conservar vínculos estratégicos.",
               },
             ].map((item, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: i * 0.08 }}
                 viewport={{ once: true }}
               >
                 <h4>{item.title}</h4>
@@ -156,60 +242,93 @@ export default function ResolucionConflictos() {
               </motion.div>
             ))}
           </div>
-        </section>
+        </motion.section>
 
-        {/* EMPRESAS */}
-        <section className={styles.section}>
+        {/* CONFLICTOS EMPRESARIALES */}
+        <motion.section
+          className={styles.section}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
           <h2 className={styles.subtitle}>
-            Resolución de conflictos empresariales en Bogotá: soluciones rápidas
-            para empresas
+            Conflictos empresariales más comunes en Bogotá y Colombia
           </h2>
 
-          <p className={styles.text}>
-            En Bogotá, los conflictos empresariales pueden surgir por
-            incumplimientos contractuales, disputas entre socios, problemas con
-            proveedores o desacuerdos comerciales.
-          </p>
-
-          <div className={styles.warningBox}>
-            ⚠ Ignorar un conflicto puede escalar rápidamente y afectar la
-            operación, reputación y estabilidad financiera de una empresa.
+          <div className={styles.grid}>
+            {[
+              {
+                title: "Incumplimientos contractuales",
+                text: "Problemas derivados del incumplimiento de obligaciones pactadas.",
+              },
+              {
+                title: "Conflictos societarios",
+                text: "Diferencias entre socios o accionistas.",
+              },
+              {
+                title: "Disputas comerciales",
+                text: "Desacuerdos con clientes o proveedores.",
+              },
+              {
+                title: "Cobro de obligaciones",
+                text: "Recuperación de pagos pendientes y cartera.",
+              },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                className={styles.card}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.08 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -5 }}
+              >
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </motion.div>
+            ))}
           </div>
 
-          <p className={styles.text}>
-            Por esta razón, es fundamental actuar de manera oportuna con apoyo
-            legal especializado que permita analizar el caso y definir la mejor
-            estrategia de solución.
-          </p>
-        </section>
+          <div className={styles.warningBox}>
+            ⚠ Ignorar un conflicto empresarial puede generar consecuencias
+            financieras, operativas y legales de alto impacto.
+          </div>
+        </motion.section>
 
         {/* BENEFICIOS */}
-        <section className={styles.section}>
+        <motion.section
+          className={styles.section}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
           <h2 className={styles.subtitle}>
-            Beneficios de resolver conflictos con abogados expertos en Colombia
+            Beneficios de resolver conflictos con apoyo legal especializado
           </h2>
 
           <div className={styles.benefits}>
             {[
-              "✔ Soluciones rápidas y efectivas",
-              "✔ Reducción de riesgos legales",
-              "✔ Protección de relaciones comerciales",
-              "✔ Ahorro de tiempo y dinero",
-              "✔ Mayor control del resultado",
-            ].map((b, i) => (
+              "✔ Soluciones estratégicas",
+              "✔ Reducción de riesgos jurídicos",
+              "✔ Protección reputacional",
+              "✔ Mayor estabilidad empresarial",
+              "✔ Ahorro de tiempo y costos",
+            ].map((item, i) => (
               <motion.span
                 key={i}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                whileHover={{ scale: 1.05 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 transition={{ delay: i * 0.05 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
               >
-                {b}
+                {item}
               </motion.span>
             ))}
           </div>
-        </section>
+        </motion.section>
 
         {/* CTA */}
         <motion.section
@@ -222,30 +341,32 @@ export default function ResolucionConflictos() {
         >
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Abogados en Bogotá expertos en resolución de conflictos
-              empresariales
+              Recibe asesoría para resolución de conflictos empresariales
             </h2>
 
             <p className={styles.ctaText}>
-              Nuestro equipo de abogados te ayuda a resolver conflictos de forma
-              estratégica, protegiendo tus intereses y evitando procesos
-              judiciales innecesarios.
+              Nuestro equipo jurídico analiza conflictos comerciales,
+              contractuales y societarios para ayudarte a encontrar soluciones
+              legales estratégicas en Colombia.
             </p>
 
             <div className={styles.actions}>
               <a
-                href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+                href="https://api.whatsapp.com/send/?phone=573114659315&text=Hola,%20necesito%20asesoría%20sobre%20resolución%20de%20conflictos&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={styles.primary}
               >
-                Contactar ahora
+                Solicitar asesoría
               </a>
 
               <a
-                href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+                href="https://abogadosespecialistas.com.co/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className={styles.secondary}
               >
-                Hablar por WhatsApp
+                Ir a Abogados Especialistas
               </a>
             </div>
           </div>

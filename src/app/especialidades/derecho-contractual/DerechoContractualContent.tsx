@@ -1,6 +1,7 @@
 "use client";
 
 import Script from "next/script";
+import Link from "next/link";
 import styles from "../Especialidad.module.css";
 import { motion } from "framer-motion";
 
@@ -9,26 +10,17 @@ const fadeUp = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5 },
-  },
-};
-
-const container = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.08,
-    },
+    transition: { duration: 0.55 },
   },
 };
 
 export default function DerechoContractualContent() {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    name: "Derecho contractual en Colombia",
+    "@type": "LegalService",
+    name: "Derecho contractual y contratos empresariales en Colombia",
     description:
-      "Servicio de asesoría en elaboración, revisión y negociación de contratos en Bogotá y Colombia.",
+      "Asesoría en contratos empresariales, revisión contractual y negociación de acuerdos comerciales en Colombia.",
     areaServed: "Colombia",
     provider: {
       "@type": "Organization",
@@ -38,9 +30,8 @@ export default function DerechoContractualContent() {
 
   return (
     <>
-      {/* ================= SCHEMA ================= */}
       <Script
-        id="schema"
+        id="schema-derecho-contractual"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(schema),
@@ -48,80 +39,147 @@ export default function DerechoContractualContent() {
       />
 
       {/* HERO */}
-      <motion.section className={styles.hero} variants={fadeUp}>
+
+      <motion.section
+        className={styles.hero}
+        initial="hidden"
+        animate="visible"
+        variants={fadeUp}
+      >
         <div className={styles.heroContent}>
-          <span className={styles.badge}>Abogados en Bogotá y Colombia</span>
+          <span className={styles.badge}>
+            Contratos empresariales en Colombia
+          </span>
 
           <h1 className={styles.title}>
-            Derecho contractual en Bogotá y Colombia: abogados expertos en
-            contratos que protegen tu empresa
+            Derecho contractual en Colombia para empresas y negocios
           </h1>
 
           <p className={styles.description}>
-            Protege tu empresa con abogados expertos en derecho contractual en
-            Bogotá y Colombia. Redacción, revisión y negociación de contratos
-            comerciales con seguridad jurídica.
+            Asesoramos empresas y profesionales en elaboración, revisión,
+            negociación y análisis de contratos comerciales en Colombia,
+            ayudando a prevenir riesgos jurídicos y conflictos contractuales.
           </p>
 
           <div className={styles.actions}>
-            <a href="#contacto" className={styles.primary}>
+            <a
+              href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+              className={styles.primary}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Solicitar asesoría
             </a>
-            <a href="/blog" className={styles.secondary}>
-              Ver blog legal
-            </a>
+
+            <Link href="/" className={styles.secondary}>
+              Ver más servicios
+            </Link>
           </div>
         </div>
       </motion.section>
 
-      {/* INTRO */}
       <main className={styles.container}>
-        <motion.section variants={fadeUp}>
+        {/* SEO SUPPORT */}
+
+        <motion.section
+          className={styles.portalSeo}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
+          <p>
+            Si buscas asesoría jurídica integral para empresas, cumplimiento
+            legal y acompañamiento en conflictos empresariales, puedes visitar
+            el portal principal de{" "}
+            <a
+              href="https://abogadosespecialistas.com.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              abogados especialistas en Colombia
+            </a>
+            , donde encontrarás información sobre representación empresarial,
+            litigios, derecho comercial y servicios legales corporativos.
+          </p>
+        </motion.section>
+
+        {/* INTRO */}
+
+        <motion.section
+          className={styles.section}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
           <h2 className={styles.subtitle}>
-            ¿Qué es el derecho contractual en Colombia y por qué es clave para
-            tu empresa?
+            ¿Qué es el derecho contractual y por qué es importante para las
+            empresas?
           </h2>
 
           <p className={styles.text}>
-            El derecho contractual en Colombia regula los acuerdos entre
-            personas y empresas mediante contratos legales.
+            El derecho contractual regula los acuerdos legales entre personas,
+            empresas y organizaciones mediante contratos que establecen
+            derechos, obligaciones y responsabilidades.
           </p>
 
           <div className={styles.highlightBox}>
-            <strong>Clave:</strong> Un contrato bien hecho evita conflictos y
-            pérdidas económicas.
+            <strong>Importante:</strong> Un contrato bien estructurado ayuda a
+            prevenir conflictos, incumplimientos y pérdidas económicas.
           </div>
 
           <p className={styles.text}>
-            En Bogotá, los contratos son esenciales para la actividad
-            empresarial diaria.
+            En Colombia, los contratos comerciales son fundamentales para
+            relaciones con proveedores, clientes, aliados estratégicos,
+            empleados y socios comerciales.
+          </p>
+
+          <p className={styles.text}>
+            Contar con asesoría jurídica en contratación permite reducir riesgos
+            legales, mejorar negociaciones y proteger los intereses económicos
+            de las empresas.
           </p>
         </motion.section>
 
         {/* SERVICIOS */}
-        <motion.section variants={fadeUp}>
+
+        <motion.section
+          className={styles.section}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
           <h2 className={styles.subtitle}>
-            Servicios de derecho contractual en Bogotá: contratos empresariales,
-            revisión y negociación legal
+            Servicios relacionados con derecho contractual en Colombia
           </h2>
 
           <div className={styles.grid}>
             {[
               {
                 title: "Elaboración de contratos",
-                text: "Redacción de contratos claros y legales.",
+                text: "Redacción de contratos civiles, comerciales y empresariales adaptados a cada negocio.",
               },
               {
                 title: "Revisión contractual",
-                text: "Identificación de riesgos en contratos existentes.",
+                text: "Análisis de cláusulas, riesgos jurídicos y obligaciones contractuales.",
               },
               {
                 title: "Negociación de acuerdos",
-                text: "Protección legal en negociaciones empresariales.",
+                text: "Acompañamiento legal en negociaciones y acuerdos comerciales.",
               },
               {
-                title: "Resolución de conflictos",
-                text: "Gestión de incumplimientos contractuales.",
+                title: "Incumplimientos contractuales",
+                text: "Asesoría en conflictos derivados de incumplimientos y disputas contractuales.",
+              },
+              {
+                title: "Contratos comerciales",
+                text: "Contratos de prestación de servicios, distribución, suministro y alianzas empresariales.",
+              },
+              {
+                title: "Asesoría preventiva",
+                text: "Prevención de riesgos jurídicos mediante contratos claros y estratégicos.",
               },
             ].map((item, i) => (
               <motion.div
@@ -129,11 +187,12 @@ export default function DerechoContractualContent() {
                 className={styles.card}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: i * 0.08 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -6, scale: 1.02 }}
               >
                 <h3>{item.title}</h3>
+
                 <p>{item.text}</p>
               </motion.div>
             ))}
@@ -141,133 +200,162 @@ export default function DerechoContractualContent() {
         </motion.section>
 
         {/* IMPORTANCIA */}
-        <motion.section variants={fadeUp}>
+
+        <motion.section
+          className={styles.section}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
           <h2 className={styles.subtitle}>
-            Importancia de los contratos en Colombia para proteger tu empresa y
-            evitar conflictos legales
+            Beneficios de contar con contratos empresariales bien estructurados
           </h2>
 
           <div className={styles.infoGrid}>
             {[
               {
                 title: "✔ Seguridad jurídica",
-                text: "Define obligaciones claras.",
+                text: "Define obligaciones y responsabilidades de forma clara.",
               },
               {
                 title: "✔ Prevención de conflictos",
-                text: "Evita disputas legales.",
+                text: "Reduce disputas legales y problemas contractuales.",
               },
               {
-                title: "✔ Protección económica",
-                text: "Reduce pérdidas financieras.",
+                title: "✔ Protección financiera",
+                text: "Ayuda a minimizar pérdidas económicas por incumplimientos.",
               },
               {
-                title: "✔ Formalización empresarial",
-                text: "Fortalece relaciones comerciales.",
+                title: "✔ Relaciones comerciales sólidas",
+                text: "Fortalece acuerdos entre empresas y aliados estratégicos.",
               },
             ].map((item, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
                 viewport={{ once: true }}
               >
                 <h4>{item.title}</h4>
+
                 <p>{item.text}</p>
               </motion.div>
             ))}
           </div>
         </motion.section>
 
-        {/* TIPOS */}
-        <motion.section variants={fadeUp}>
+        {/* ARTICULO SEO */}
+
+        <motion.section
+          className={styles.section}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
           <h2 className={styles.subtitle}>
-            Tipos de contratos en Colombia que toda empresa debe conocer antes
-            de firmar
+            Riesgos frecuentes en contratos comerciales en Colombia
           </h2>
 
-          <div className={styles.grid}>
-            {[
-              {
-                title: "Prestación de servicios",
-                text: "Contratos con profesionales o empresas.",
-              },
-              {
-                title: "Compraventa",
-                text: "Compra y venta de bienes o servicios.",
-              },
-              {
-                title: "Arrendamiento",
-                text: "Uso de bienes inmuebles.",
-              },
-              {
-                title: "Contratos comerciales",
-                text: "Relaciones empresariales.",
-              },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                className={styles.card}
-                whileHover={{ y: -6, scale: 1.02 }}
-              >
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
-
-        {/* ERRORES */}
-        <motion.section variants={fadeUp}>
-          <h2 className={styles.subtitle}>
-            Errores en contratos que pueden costarle dinero y problemas legales
-            a tu empresa
-          </h2>
+          <p className={styles.text}>
+            Muchas empresas enfrentan problemas jurídicos por contratos mal
+            redactados, cláusulas ambiguas o ausencia de mecanismos claros de
+            cumplimiento.
+          </p>
 
           <div className={styles.warningBox}>
-            ⚠ Un contrato mal redactado puede generar demandas y pérdidas
-            económicas.
+            ⚠ Un contrato sin revisión jurídica puede generar incumplimientos,
+            sanciones económicas y conflictos comerciales.
           </div>
 
           <p className={styles.text}>
-            Muchos problemas legales se originan por contratos mal
-            estructurados.
+            Algunos errores frecuentes incluyen definir obligaciones poco
+            claras, no regular penalidades por incumplimiento, utilizar modelos
+            genéricos sin adaptación al negocio y omitir mecanismos de solución
+            de controversias.
+          </p>
+
+          <p className={styles.text}>
+            La asesoría preventiva en contratación permite detectar riesgos
+            antes de firmar acuerdos y mejorar la protección jurídica de la
+            empresa.
           </p>
         </motion.section>
 
         {/* BENEFICIOS */}
-        <motion.section variants={fadeUp}>
+
+        <motion.section
+          className={styles.section}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
           <h2 className={styles.subtitle}>
-            Beneficios de la asesoría en derecho contractual en Colombia para
-            empresas
+            Ventajas de recibir asesoría en derecho contractual
           </h2>
 
           <div className={styles.benefits}>
             {[
-              "✔ Protección legal",
-              "✔ Reducción de riesgos",
-              "✔ Mejores negociaciones",
-              "✔ Cumplimiento normativo",
-              "✔ Seguridad contractual",
+              "✔ Prevención de riesgos legales",
+              "✔ Contratos personalizados",
+              "✔ Protección patrimonial",
+              "✔ Seguridad jurídica empresarial",
+              "✔ Mejor negociación contractual",
+              "✔ Reducción de conflictos",
             ].map((b, i) => (
-              <motion.span key={i} whileHover={{ scale: 1.1 }}>
+              <motion.span key={i} whileHover={{ scale: 1.08 }}>
                 {b}
               </motion.span>
             ))}
           </div>
         </motion.section>
 
+        {/* APOYO SEO */}
+
+        <motion.section
+          className={styles.portalSeo}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
+          <p>
+            Si tu empresa necesita acompañamiento jurídico más amplio en temas
+            comerciales, societarios o conflictos empresariales, también puedes
+            consultar el portal de{" "}
+            <a
+              href="https://abogadosespecialistas.com.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              abogados especialistas
+            </a>{" "}
+            para ampliar información sobre representación legal corporativa en
+            Colombia.
+          </p>
+        </motion.section>
+
         {/* CTA */}
-        <motion.section id="contacto" className={styles.cta} variants={fadeUp}>
+
+        <motion.section
+          id="contacto"
+          className={styles.cta}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Habla con un abogado de contratos en Bogotá y protege tu empresa
-              hoy
+              ¿Necesitas revisar o elaborar un contrato en Colombia?
             </h2>
 
             <p className={styles.ctaText}>
-              Protege tu empresa con contratos sólidos y bien estructurados.
+              Recibe acompañamiento jurídico para contratos empresariales,
+              negociaciones y prevención de riesgos legales.
             </p>
 
             <div className={styles.actions}>
@@ -275,16 +363,18 @@ export default function DerechoContractualContent() {
                 href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
                 className={styles.primary}
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                Contactar ahora
+                Hablar con un abogado
               </a>
 
               <a
-                href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+                href="https://abogadosespecialistas.com.co/"
                 className={styles.secondary}
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                WhatsApp
+                Portal jurídico principal
               </a>
             </div>
           </div>

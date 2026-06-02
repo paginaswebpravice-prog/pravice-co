@@ -5,10 +5,23 @@ const canonicalUrl = "https://pravice.co/especialidades/derecho-contractual";
 
 export const metadata: Metadata = {
   title:
-    "Derecho contractual en Bogotá y Colombia | Abogados expertos en contratos empresariales",
+    "Derecho contractual en Colombia | Contratos empresariales y asesoría jurídica",
 
   description:
-    "Abogados expertos en derecho contractual en Bogotá y Colombia. Elaboración, revisión y negociación de contratos comerciales con seguridad jurídica.",
+    "Asesoría en derecho contractual en Colombia para empresas y negocios. Elaboración, revisión y negociación de contratos comerciales.",
+
+  keywords: [
+    "derecho contractual Colombia",
+    "contratos empresariales Colombia",
+    "abogados contratos Colombia",
+    "revisión de contratos",
+    "contratos comerciales",
+    "incumplimiento contractual",
+    "asesoría contractual",
+    "contratos en Bogotá",
+    "negociación de contratos",
+    "servicios jurídicos empresariales",
+  ],
 
   alternates: {
     canonical: canonicalUrl,
@@ -16,15 +29,16 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Abogados de contratos en Bogotá y Colombia | Derecho contractual para empresas",
+      "Derecho contractual en Colombia | Contratos empresariales y asesoría jurídica",
 
     description:
-      "Protege tu empresa con contratos sólidos. Asesoría en derecho contractual en Bogotá y Colombia.",
+      "Asesoría jurídica en contratos comerciales, revisión contractual y negociación de acuerdos empresariales en Colombia.",
 
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "website",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
@@ -35,35 +49,54 @@ export const metadata: Metadata = {
     ],
   },
 
+  twitter: {
+    card: "summary_large_image",
+
+    title:
+      "Derecho contractual en Colombia | Contratos empresariales y asesoría jurídica",
+
+    description:
+      "Asesoría jurídica en elaboración, revisión y negociación de contratos comerciales.",
+  },
+
   robots: {
     index: true,
     follow: true,
   },
 };
 
-// SEO Schema JSON-LD (SERVICIO LEGAL)
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "LegalService",
-  name: "Abogados en derecho contractual en Bogotá y Colombia",
+
+  name: "Derecho contractual en Colombia",
+
   description:
-    "Abogados expertos en derecho contractual en Bogotá y Colombia. Elaboración, revisión y negociación de contratos comerciales con seguridad jurídica.",
+    "Asesoría en elaboración, revisión y negociación de contratos comerciales y empresariales en Colombia.",
+
   url: canonicalUrl,
+
   image: "https://pravice.co/logo_pravice.png",
+
   areaServed: {
     "@type": "Country",
     name: "Colombia",
   },
+
   provider: {
     "@type": "Organization",
     name: "Pravice",
     url: "https://pravice.co",
+
     logo: {
       "@type": "ImageObject",
       url: "https://pravice.co/logo_pravice.png",
     },
   },
-  serviceType: "Derecho contractual y asesoría en contratos empresariales",
+
+  serviceType:
+    "Asesoría en derecho contractual y contratos empresariales en Colombia",
+
   inLanguage: "es-CO",
 };
 

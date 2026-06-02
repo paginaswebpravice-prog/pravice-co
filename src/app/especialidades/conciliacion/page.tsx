@@ -4,11 +4,23 @@ import ConciliacionContent from "./ConciliacionContent";
 const canonicalUrl = "https://pravice.co/especialidades/conciliacion";
 
 export const metadata: Metadata = {
-  title:
-    "Conciliación extrajudicial en Bogotá y Colombia | Evita juicios y resuelve conflictos rápido",
+  title: "Conciliación Extrajudicial en Colombia | Resolución de conflictos",
 
   description:
-    "Resuelve conflictos mediante conciliación extrajudicial en Colombia. Ahorra tiempo, reduce costos y evita procesos judiciales con asesoría legal en Bogotá y todo el país.",
+    "Servicio de conciliación extrajudicial en Colombia para resolver conflictos civiles, comerciales y empresariales mediante acuerdos legales y asesoría jurídica.",
+
+  keywords: [
+    "conciliación extrajudicial Colombia",
+    "conciliación en Bogotá",
+    "conciliación civil",
+    "conciliación comercial",
+    "resolución de conflictos",
+    "abogados conciliación Colombia",
+    "conciliación empresarial",
+    "mecanismos alternativos de solución de conflictos",
+    "conciliación legal Colombia",
+    "acuerdos legales",
+  ],
 
   alternates: {
     canonical: canonicalUrl,
@@ -16,15 +28,16 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Conciliación en Bogotá y Colombia | Soluciona conflictos sin ir a juicio",
+      "Conciliación Extrajudicial en Colombia | Solución de conflictos legales",
 
     description:
-      "Solución legal rápida y efectiva para resolver conflictos sin juicio en Colombia.",
+      "Resuelve conflictos civiles, comerciales y empresariales mediante conciliación extrajudicial en Colombia.",
 
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
-    type: "article",
+    type: "website",
+
     images: [
       {
         url: "https://pravice.co/og-image.jpg",
@@ -35,36 +48,43 @@ export const metadata: Metadata = {
     ],
   },
 
+  twitter: {
+    card: "summary_large_image",
+    title: "Conciliación Extrajudicial en Colombia | Resolución de conflictos",
+
+    description:
+      "Asesoría jurídica para conciliación extrajudicial y resolución de conflictos en Colombia.",
+  },
+
   robots: {
     index: true,
     follow: true,
   },
 };
 
-// SEO Schema JSON-LD (SERVICIO LEGAL)
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "LegalService",
-  name: "Conciliación extrajudicial en Bogotá y Colombia",
+  name: "Conciliación extrajudicial en Colombia",
   description:
-    "Resuelve conflictos mediante conciliación extrajudicial en Colombia. Ahorra tiempo, reduce costos y evita procesos judiciales con asesoría legal en Bogotá y todo el país.",
+    "Servicio de conciliación extrajudicial para resolución de conflictos civiles, comerciales y empresariales en Colombia.",
   url: canonicalUrl,
-  image: "https://pravice.co/og-image.jpg",
+
   areaServed: {
     "@type": "Country",
     name: "Colombia",
   },
+
   provider: {
     "@type": "Organization",
     name: "Pravice",
     url: "https://pravice.co",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://pravice.co/logo_pravice.png",
-    },
   },
+
   serviceType: "Conciliación extrajudicial",
   inLanguage: "es-CO",
+
+  sameAs: ["https://abogadosespecialistas.com.co/"],
 };
 
 export default function Page() {

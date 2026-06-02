@@ -4,7 +4,7 @@ import styles from "../Especialidad.module.css";
 import { motion } from "framer-motion";
 import Script from "next/script";
 
-export default function ConciliacionPage() {
+export default function ConciliacionContent() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LegalService",
@@ -16,11 +16,12 @@ export default function ConciliacionPage() {
       "@type": "Organization",
       name: "Pravice Abogados",
     },
+    url: "https://pravice.co/especialidades/conciliacion",
+    serviceType: "Conciliación extrajudicial",
   };
 
   return (
     <>
-      {/* ================= SCHEMA ================= */}
       <Script
         id="schema-conciliacion"
         type="application/ld+json"
@@ -38,34 +39,68 @@ export default function ConciliacionPage() {
           transition={{ duration: 0.6 }}
         >
           <span className={styles.badge}>
-            Conciliación en Bogotá y Colombia
+            Conciliación extrajudicial en Colombia
           </span>
 
           <h1 className={styles.title}>
-            Conciliación Extrajudicial en Bogotá: Resuelve Conflictos Rápido y
-            sin Juicio
+            Conciliación Extrajudicial en Bogotá y Colombia
           </h1>
 
           <p className={styles.description}>
-            Resuelve conflictos sin necesidad de juicio mediante conciliación
-            extrajudicial en Colombia. Ahorra tiempo, costos y protege tus
-            relaciones comerciales con asesoría legal en Bogotá y a nivel
-            nacional.
+            Resuelve conflictos civiles, comerciales y empresariales mediante
+            conciliación extrajudicial en Colombia con acompañamiento jurídico
+            estratégico y soluciones legales eficientes.
           </p>
 
           <div className={styles.actions}>
-            <a href="#contacto" className={styles.primary}>
-              Solicitar conciliación
+            <a
+              href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+              className={styles.primary}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Solicitar asesoría
             </a>
-            <a href="/blog" className={styles.secondary}>
-              Ver blog legal
+
+            <a
+              href="https://abogadosespecialistas.com.co/"
+              className={styles.secondary}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver firma aliada
             </a>
           </div>
         </motion.div>
       </section>
 
-      {/* CONTENIDO */}
       <main className={styles.container}>
+        {/* PORTAL SEO */}
+        <motion.section
+          className={styles.portalSeo}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <p>
+            En Pravice abordamos procesos de conciliación extrajudicial como
+            mecanismo preventivo para resolver conflictos legales de manera
+            rápida y estratégica. Si necesitas una asesoría jurídica más amplia
+            sobre conflictos empresariales, civiles, familiares o comerciales en
+            Colombia, también puedes consultar el portal jurídico de nuestra
+            firma aliada{" "}
+            <a
+              href="https://abogadosespecialistas.com.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Abogados Especialistas
+            </a>
+            .
+          </p>
+        </motion.section>
+
         {/* INTRO */}
         <motion.section
           className={styles.section}
@@ -75,34 +110,32 @@ export default function ConciliacionPage() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            ¿Qué es la conciliación extrajudicial y cuándo debes usarla en
-            Colombia??
+            ¿Qué es la conciliación extrajudicial en Colombia?
           </h2>
 
           <p className={styles.text}>
-            La conciliación extrajudicial en Colombia es un mecanismo
-            alternativo de resolución de conflictos que permite a las partes
-            llegar a un acuerdo sin necesidad de acudir a un proceso judicial.
-            Es una de las herramientas más efectivas para resolver disputas de
-            manera rápida, económica y eficiente.
+            La conciliación extrajudicial es un mecanismo alternativo de
+            resolución de conflictos que permite llegar a acuerdos legales sin
+            acudir directamente a un proceso judicial.
+          </p>
+
+          <p className={styles.text}>
+            En Colombia, este procedimiento es utilizado en conflictos civiles,
+            comerciales, familiares y empresariales para buscar soluciones
+            rápidas, reducir costos legales y evitar procesos judiciales
+            prolongados.
           </p>
 
           <div className={styles.highlightBox}>
-            <strong>Dato clave:</strong> En muchos casos, la conciliación es un
-            requisito obligatorio antes de iniciar una demanda judicial en
+            <strong>Importante:</strong> En muchos casos la conciliación es un
+            requisito obligatorio antes de presentar una demanda judicial en
             Colombia.
           </div>
 
           <p className={styles.text}>
-            Este proceso se realiza con la intervención de un conciliador, quien
-            facilita el diálogo entre las partes para lograr un acuerdo que
-            tenga validez legal.
-          </p>
-
-          <p className={styles.text}>
-            En ciudades como Bogotá, donde los conflictos comerciales y civiles
-            son frecuentes, la conciliación se ha convertido en una alternativa
-            estratégica para evitar procesos largos y costosos.
+            La conciliación también permite mantener relaciones comerciales,
+            familiares o contractuales mediante acuerdos construidos entre las
+            partes con acompañamiento legal adecuado.
           </p>
         </motion.section>
 
@@ -115,26 +148,26 @@ export default function ConciliacionPage() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            Tipos de conciliación en Colombia: cuál te conviene según tu caso
+            Tipos de conciliación y conflictos que pueden resolverse
           </h2>
 
           <div className={styles.grid}>
             {[
               {
-                title: "Conciliación en derecho",
-                text: "Se realiza con efectos legales vinculantes entre las partes.",
+                title: "Conciliación civil",
+                text: "Conflictos relacionados con contratos, obligaciones, pagos y responsabilidades civiles.",
               },
               {
-                title: "Conciliación extrajudicial",
-                text: "Se lleva a cabo fuera de los tribunales antes de un proceso judicial.",
+                title: "Conciliación comercial",
+                text: "Disputas empresariales, incumplimientos contractuales y conflictos entre sociedades.",
               },
               {
-                title: "Conciliación judicial",
-                text: "Se realiza dentro de un proceso legal ante un juez.",
+                title: "Conciliación familiar",
+                text: "Acuerdos sobre alimentos, custodia, visitas y conflictos familiares.",
               },
               {
-                title: "Conciliación empresarial",
-                text: "Resolución de conflictos entre empresas, socios o contratos.",
+                title: "Conciliación laboral",
+                text: "Acuerdos relacionados con obligaciones laborales y conflictos entre empleadores y trabajadores.",
               },
             ].map((item, i) => (
               <motion.div
@@ -162,27 +195,26 @@ export default function ConciliacionPage() {
           viewport={{ once: true }}
         >
           <h2 className={styles.subtitle}>
-            Ventajas de la conciliación extrajudicial: ahorra tiempo, dinero y
-            evita demandas
+            Beneficios de resolver conflictos mediante conciliación
           </h2>
 
           <div className={styles.infoGrid}>
             {[
               {
-                title: "✔ Ahorro de tiempo",
-                text: "Los conflictos se resuelven mucho más rápido que en un juicio.",
+                title: "✔ Menor desgaste legal",
+                text: "Evita procesos judiciales largos y complejos.",
               },
               {
-                title: "✔ Reducción de costos",
-                text: "Evita gastos elevados asociados a procesos judiciales.",
+                title: "✔ Ahorro económico",
+                text: "Reduce costos asociados a litigios y demandas.",
               },
               {
-                title: "✔ Solución amigable",
-                text: "Permite mantener relaciones comerciales o personales.",
+                title: "✔ Soluciones rápidas",
+                text: "Permite acuerdos en menor tiempo frente a un juicio.",
               },
               {
-                title: "✔ Validez legal",
-                text: "Los acuerdos tienen efectos jurídicos en Colombia.",
+                title: "✔ Acuerdos con validez legal",
+                text: "Las conciliaciones pueden tener efectos jurídicos obligatorios.",
               },
             ].map((item, i) => (
               <motion.div
@@ -199,6 +231,46 @@ export default function ConciliacionPage() {
           </div>
         </motion.section>
 
+        {/* SEO SUPPORT */}
+        <motion.section
+          className={styles.section}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <h2 className={styles.subtitle}>
+            Conciliación como estrategia preventiva de conflictos legales
+          </h2>
+
+          <p className={styles.text}>
+            Muchas empresas y personas utilizan la conciliación como una
+            herramienta preventiva para evitar litigios, proteger relaciones
+            comerciales y disminuir riesgos jurídicos en Colombia.
+          </p>
+
+          <p className={styles.text}>
+            Cuando los conflictos requieren acompañamiento legal más amplio,
+            análisis estratégico o representación jurídica especializada, es
+            recomendable acudir a firmas con experiencia en litigios y solución
+            de controversias.
+          </p>
+
+          <div className={styles.warningBox}>
+            <strong>Recomendación jurídica:</strong> Si necesitas asesoría legal
+            integral para conflictos empresariales, civiles o familiares,
+            consulta también los servicios jurídicos de{" "}
+            <a
+              href="https://abogadosespecialistas.com.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Abogados Especialistas
+            </a>
+            .
+          </div>
+        </motion.section>
+
         {/* CTA */}
         <motion.section
           id="contacto"
@@ -209,28 +281,32 @@ export default function ConciliacionPage() {
           viewport={{ once: true }}
         >
           <div className={styles.ctaContent}>
-            <h2 className={styles.ctaTitle}>Iniciar conciliación ahora</h2>
+            <h2 className={styles.ctaTitle}>
+              Solicita asesoría en conciliación
+            </h2>
 
             <p className={styles.ctaText}>
-              Nuestro equipo te acompaña en todo el proceso de conciliación
-              extrajudicial en Colombia para lograr acuerdos efectivos, rápidos
-              y con respaldo legal.
+              Recibe acompañamiento jurídico para conciliaciones civiles,
+              comerciales, familiares y empresariales en Colombia.
             </p>
 
             <div className={styles.actions}>
               <a
                 href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
                 className={styles.primary}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Iniciar conciliación ahora
+                Hablar con un abogado
               </a>
 
               <a
-                href="https://api.whatsapp.com/send/?phone=573114659315&text&type=phone_number&app_absent=0"
+                href="https://abogadosespecialistas.com.co/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className={styles.secondary}
               >
-                Hablar con un abogado por WhatsApp
+                Ver firma jurídica aliada
               </a>
             </div>
           </div>

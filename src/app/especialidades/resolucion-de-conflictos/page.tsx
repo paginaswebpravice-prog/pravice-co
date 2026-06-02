@@ -6,19 +6,19 @@ const canonicalUrl =
 
 export const metadata: Metadata = {
   title:
-    "Resolución de conflictos en Colombia | Abogados en Bogotá para acuerdos y conciliación",
+    "Resolución de conflictos empresariales en Colombia | Negociación y conciliación",
 
   description:
-    "Resolución de conflictos en Bogotá y Colombia con abogados expertos en negociación, conciliación y arbitraje. Evita litigios y soluciona disputas empresariales de forma rápida y estratégica.",
+    "Resolución de conflictos empresariales en Bogotá y Colombia mediante negociación, conciliación y estrategias legales preventivas para empresas.",
 
   keywords: [
-    "resolución de conflictos Colombia",
-    "abogados conciliación Bogotá",
-    "negociación legal Colombia",
-    "arbitraje Colombia empresas",
-    "conflictos empresariales Bogotá",
-    "solución de conflictos legales",
-    "evitar litigios Colombia",
+    "resolución de conflictos empresariales",
+    "conciliación empresarial Colombia",
+    "negociación legal Bogotá",
+    "conflictos comerciales Colombia",
+    "abogados conflictos empresariales",
+    "evitar litigios empresariales",
+    "solución de conflictos corporativos",
   ],
 
   alternates: {
@@ -26,44 +26,67 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "Resolver conflictos en Colombia sin juicio | Abogados en Bogotá expertos en conciliación",
+    title: "Resolución de conflictos empresariales en Bogotá y Colombia",
 
     description:
-      "Evita procesos judiciales largos. Soluciona conflictos empresariales en Bogotá y Colombia con estrategias legales efectivas.",
+      "Soluciones jurídicas estratégicas para empresas en Colombia mediante conciliación, negociación y prevención de litigios.",
 
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
-    type: "website",
+    type: "article",
+
+    images: [
+      {
+        url: "https://pravice.co/logo_pravice.png",
+        width: 1200,
+        height: 630,
+        alt: "Resolución de conflictos empresariales en Colombia",
+      },
+    ],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
-// SEO Schema JSON-LD (SERVICIO LEGAL)
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "LegalService",
-  name: "Resolución de conflictos en Bogotá y Colombia",
+
+  name: "Resolución de conflictos empresariales en Colombia",
+
   description:
-    "Resolución de conflictos en Bogotá y Colombia con abogados expertos en negociación, conciliación y arbitraje. Evita litigios y soluciona disputas empresariales de forma rápida y estratégica.",
+    "Servicio de resolución de conflictos empresariales, conciliación y negociación legal en Bogotá y Colombia.",
+
   url: canonicalUrl,
+
   image: "https://pravice.co/logo_pravice.png",
+
   areaServed: {
     "@type": "Country",
     name: "Colombia",
   },
+
   provider: {
     "@type": "Organization",
     name: "Pravice",
+
     url: "https://pravice.co",
+
     logo: {
       "@type": "ImageObject",
       url: "https://pravice.co/logo_pravice.png",
     },
   },
-  serviceType:
-    "Resolución de conflictos, conciliación, negociación y arbitraje empresarial",
+
+  serviceType: "Resolución de conflictos empresariales y conciliación legal",
+
   inLanguage: "es-CO",
+
+  sameAs: ["https://abogadosespecialistas.com.co/"],
 };
 
 export default function Page() {
