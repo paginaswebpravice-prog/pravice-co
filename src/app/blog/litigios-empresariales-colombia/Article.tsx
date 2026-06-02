@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 export default function LitigiosEmpresarialesColombia() {
   const schema = {
@@ -188,6 +189,14 @@ export default function LitigiosEmpresarialesColombia() {
             largo plazo.
           </p>
         </section>
+
+        <ArticleCTA
+          title="¿Tu empresa enfrenta conflictos legales o riesgos de litigios en Colombia?"
+          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia a prevenir demandas empresariales, fortalecer contratos, resolver conflictos comerciales y proteger sus operaciones mediante asesoría jurídica estratégica."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Litigios empresariales y prevención legal"
+          buttonText="Hablar con un abogado empresarial"
+        />
       </main>
     </>
   );

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 const schema = {
   "@context": "https://schema.org",
@@ -173,6 +174,14 @@ export default function InteligenciaArtificialCobranzas() {
             un entorno empresarial cada vez más digital.
           </p>
         </motion.section>
+
+        <ArticleCTA
+          title="¿Quieres optimizar la recuperación de cartera de tu empresa con inteligencia artificial en Colombia?"
+          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia a fortalecer procesos de cobranza, automatizar recuperación de cartera y reducir riesgos financieros mediante estrategias legales y tecnológicas."
+          href="https://abogadosespecialistas.com.co/"
+          badge="IA, cobranzas y recuperación de cartera"
+          buttonText="Hablar con un abogado empresarial"
+        />
       </motion.article>
     </>
   );

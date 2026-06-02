@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 export default function ProveedorIncumpleContrato() {
   const schema = {
@@ -216,6 +217,13 @@ export default function ProveedorIncumpleContrato() {
             Colombia.
           </p>
         </section>
+        <ArticleCTA
+          title="¿Tu empresa enfrenta problemas por incumplimientos de proveedores en Colombia?"
+          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia a gestionar incumplimientos contractuales, fortalecer contratos comerciales, prevenir pérdidas económicas y proteger sus operaciones mediante asesoría jurídica empresarial."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Incumplimiento contractual y proveedores"
+          buttonText="Hablar con un abogado empresarial"
+        />
       </main>
     </>
   );

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 export default function RiesgosLegalesEmpresas() {
   const schema = {
@@ -226,6 +227,14 @@ export default function RiesgosLegalesEmpresas() {
             económicas innecesarias.
           </p>
         </section>
+
+        <ArticleCTA
+          title="¿Tu empresa busca prevenir riesgos legales y proteger sus operaciones en Colombia?"
+          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia a reducir riesgos legales, prevenir demandas, fortalecer contratos y cumplir obligaciones normativas mediante asesoría jurídica empresarial estratégica."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Riesgos legales y protección jurídica empresarial"
+          buttonText="Hablar con un abogado empresarial"
+        />
       </main>
     </>
   );

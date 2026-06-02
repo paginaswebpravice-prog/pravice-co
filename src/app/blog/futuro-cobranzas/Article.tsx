@@ -3,6 +3,7 @@
 import Script from "next/script";
 import styles from "./Article.module.css";
 import { motion } from "framer-motion";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -181,6 +182,14 @@ export default function Article() {
             competitividad.
           </motion.p>
         </motion.div>
+
+        <ArticleCTA
+          title="¿Quieres optimizar la recuperación de cartera de tu empresa con estrategias modernas en Colombia?"
+          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia a mejorar procesos de cobranza, implementar estrategias digitales y fortalecer la recuperación de pagos mediante soluciones legales y empresariales."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Cobranzas empresariales y recuperación de cartera"
+          buttonText="Hablar con un abogado empresarial"
+        />
       </article>
     </>
   );

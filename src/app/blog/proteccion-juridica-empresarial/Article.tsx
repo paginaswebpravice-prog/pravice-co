@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 export default function ProteccionJuridicaEmpresarial() {
   const schema = {
@@ -204,6 +205,14 @@ export default function ProteccionJuridicaEmpresarial() {
             entorno empresarial.
           </p>
         </section>
+
+        <ArticleCTA
+          title="¿Quieres fortalecer la protección jurídica de tu empresa en Colombia?"
+          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia a prevenir riesgos legales, proteger su patrimonio, fortalecer contratos y cumplir la normativa empresarial mediante asesoría jurídica estratégica."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Protección jurídica y prevención empresarial"
+          buttonText="Hablar con un abogado empresarial"
+        />
       </main>
     </>
   );

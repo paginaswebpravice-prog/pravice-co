@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 export default function ArticuloMediacion() {
   const schema = {
@@ -169,6 +170,13 @@ export default function ArticuloMediacion() {
             entre un conflicto costoso y una solución estratégica.
           </p>
         </section>
+        <ArticleCTA
+          title="¿Necesitas resolver conflictos empresariales sin llegar a juicio en Colombia?"
+          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia mediante mediación empresarial, negociación de conflictos y soluciones jurídicas estratégicas para evitar litigios largos y costosos."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Mediación empresarial y resolución de conflictos"
+          buttonText="Hablar con un abogado empresarial"
+        />
       </article>
     </>
   );

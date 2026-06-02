@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 export default function ErroresLegalesEmpresasColombia() {
   const schema = {
@@ -251,6 +252,14 @@ export default function ErroresLegalesEmpresasColombia() {
             seguridad en mercados competitivos.
           </p>
         </section>
+
+        <ArticleCTA
+          title="Protege tu empresa de demandas, sanciones y errores legales en Colombia"
+          description="Recibe acompañamiento jurídico para reducir riesgos empresariales, mejorar procesos internos y fortalecer la seguridad legal de tu negocio."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Asesoría legal corporativa"
+          buttonText="Solicitar asesoría jurídica"
+        />
       </main>
     </>
   );

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 export default function EvitarDemandasEmpresas() {
   const schema = {
@@ -217,6 +218,14 @@ export default function EvitarDemandasEmpresas() {
             de cualquier negocio en Colombia.
           </p>
         </section>
+
+        <ArticleCTA
+          title="Reduce riesgos legales y fortalece la seguridad jurídica de tu empresa"
+          description="Recibe acompañamiento legal para prevenir demandas, cumplir la normativa colombiana y proteger la estabilidad financiera y operativa de tu negocio."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Asesoría legal preventiva"
+          buttonText="Solicitar asesoría jurídica"
+        />
       </main>
     </>
   );

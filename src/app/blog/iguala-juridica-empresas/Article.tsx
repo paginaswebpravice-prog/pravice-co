@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 export default function IgualaJuridicaEmpresas() {
   const schema = {
@@ -214,6 +215,14 @@ export default function IgualaJuridicaEmpresas() {
             empresarial.
           </p>
         </section>
+
+        <ArticleCTA
+          title="¿Tu empresa necesita asesoría jurídica permanente en Colombia?"
+          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia mediante igualas jurídicas empresariales, revisión de contratos, prevención de riesgos legales y acompañamiento jurídico continuo."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Iguala jurídica y asesoría empresarial"
+          buttonText="Hablar con un abogado empresarial"
+        />
       </main>
     </>
   );

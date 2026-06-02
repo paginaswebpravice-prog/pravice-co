@@ -3,6 +3,7 @@
 import Script from "next/script";
 import styles from "./Article.module.css";
 import { motion } from "framer-motion";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 35 },
@@ -198,6 +199,14 @@ export default function Article() {
             servicios médicos.
           </p>
         </motion.section>
+
+        <ArticleCTA
+          title="¿Necesitas mejorar la recuperación de cartera de tu IPS o EPS en Colombia?"
+          description="En Abogados Especialistas ayudamos a IPS, EPS y empresas del sector salud en Bogotá y toda Colombia con gestión de cartera, recuperación de pagos, manejo de glosas médicas y conciliación para fortalecer el flujo financiero."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Gestión de cartera en salud y recuperación de pagos"
+          buttonText="Hablar con un abogado especializado"
+        />
       </article>
     </>
   );

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 export default function RecuperacionCarteraEmpresas() {
   const schema = {
@@ -223,6 +224,14 @@ export default function RecuperacionCarteraEmpresas() {
             permite mejorar el recaudo y reducir riesgos financieros.
           </motion.p>
         </motion.section>
+
+        <ArticleCTA
+          title="¿Tu empresa necesita mejorar la recuperación de cartera y reducir la morosidad en Colombia?"
+          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia a optimizar procesos de cobranza, recuperar pagos pendientes, implementar estrategias de recaudo y proteger el flujo de caja mediante acompañamiento jurídico y empresarial."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Recuperación de cartera y cobranzas empresariales"
+          buttonText="Hablar con un abogado empresarial"
+        />
       </motion.article>
     </>
   );

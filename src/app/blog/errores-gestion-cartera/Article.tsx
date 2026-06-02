@@ -3,6 +3,7 @@
 import Script from "next/script";
 import styles from "./Article.module.css";
 import { motion } from "framer-motion";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 35 },
@@ -189,6 +190,14 @@ export default function Article() {
             para una recuperación efectiva.
           </p>
         </motion.section>
+
+        <ArticleCTA
+          title="Mejora la recuperación de cartera y protege el flujo de caja de tu empresa"
+          description="Recibe acompañamiento jurídico para implementar procesos de cobranza, prevenir mora y gestionar recuperación de pagos empresariales en Colombia."
+          href="https://abogadosespecialistas.com.co/"
+          badge="Cobranza empresarial y cartera"
+          buttonText="Solicitar asesoría jurídica"
+        />
       </article>
     </>
   );

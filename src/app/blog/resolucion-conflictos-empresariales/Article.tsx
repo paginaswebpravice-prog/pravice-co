@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Article.module.css";
+import ArticleCTA from "@/app/components/ArticleCTA/ArticleCTA";
 
 const schema = {
   "@context": "https://schema.org",
@@ -176,6 +177,14 @@ export default function ResolucionConflictosEmpresariales() {
           del negocio y garantizar su crecimiento sostenible.
         </p>
       </section>
+
+      <ArticleCTA
+        title="¿Tu empresa necesita resolver conflictos empresariales de forma estratégica en Colombia?"
+        description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia a gestionar conflictos comerciales, incumplimientos contractuales, conciliaciones y negociaciones empresariales para proteger sus operaciones y evitar litigios prolongados."
+        href="https://abogadosespecialistas.com.co/"
+        badge="Resolución de conflictos y conciliación empresarial"
+        buttonText="Hablar con un abogado empresarial"
+      />
     </main>
   );
 }
