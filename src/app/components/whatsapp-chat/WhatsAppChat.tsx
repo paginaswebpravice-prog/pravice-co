@@ -14,6 +14,8 @@ import { faPaperPlane, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 import { motion, AnimatePresence } from "framer-motion";
 
+import { trackWhatsAppClick } from "@/lib/gtag";
+
 type Message = {
   type: "bot" | "user";
   text: string;
@@ -147,6 +149,8 @@ ${currentPage}
 `.trim();
 
     const phoneNumber = "573114659315";
+
+    trackWhatsAppClick("whatsapp_principal");
 
     setTimeout(() => {
       window.location.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
