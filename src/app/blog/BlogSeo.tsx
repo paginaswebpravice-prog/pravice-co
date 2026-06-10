@@ -62,8 +62,42 @@ const articles = [
     description: "La IA está transformando la gestión de cartera en Colombia.",
     category: "cartera",
   },
+  {
+    slug: "cobranza-prejuridica-colombia",
+    title: "Cobranza prejurídica en Colombia: qué es y cómo funciona",
+    description:
+      "Cómo funciona la cobranza prejurídica y cuándo usarla antes de demandar.",
+    category: "cartera",
+  },
+  {
+    slug: "indicadores-gestion-cartera",
+    title: "Indicadores de gestión de cartera: métricas clave para empresas",
+    description:
+      "KPIs esenciales para medir recuperación de cartera y morosidad.",
+    category: "cartera",
+  },
+  {
+    slug: "cartera-vencida-empresas",
+    title: "Cómo reducir la cartera vencida en empresas colombianas",
+    description:
+      "Estrategias para disminuir mora y mejorar flujo de caja empresarial.",
+    category: "cartera",
+  },
+  {
+    slug: "proceso-cobro-juridico-colombia",
+    title: "Cobro jurídico en Colombia: cómo funciona el proceso legal",
+    description:
+      "Paso a paso del proceso de cobro jurídico para empresas y acreedores.",
+    category: "cartera",
+  },
+  {
+    slug: "software-gestion-cartera",
+    title: "Software de gestión de cartera: ventajas para empresas en Colombia",
+    description: "Cómo los sistemas tecnológicos mejoran procesos de cobranza.",
+    category: "cartera",
+  },
 
-  /* ================= CONCILIACIÓN / CONFLICTOS ================= */
+  /* ================= CONFLICTOS ================= */
 
   {
     slug: "mediacion-empresarial",
@@ -79,6 +113,77 @@ const articles = [
     category: "conflictos",
   },
   {
+    slug: "conflictos-socios-empresas",
+    title: "Cómo resolver conflictos entre socios de una empresa en Colombia",
+    description:
+      "Alternativas legales y estratégicas para disputas societarias.",
+    category: "conflictos",
+  },
+  {
+    slug: "conflictos-laborales-empresas",
+    title: "Conflictos laborales en empresas: prevención y solución",
+    description:
+      "Cómo manejar conflictos laborales antes de llegar a demandas.",
+    category: "conflictos",
+  },
+  {
+    slug: "mecanismos-resolucion-conflictos",
+    title: "Mecanismos alternativos de resolución de conflictos en Colombia",
+    description: "Conciliación, arbitraje y mediación explicados fácilmente.",
+    category: "conflictos",
+  },
+  {
+    slug: "arbitraje-colombia",
+    title: "Arbitraje en Colombia: qué es y cuándo conviene usarlo",
+    description:
+      "Cómo funciona el arbitraje como alternativa a los procesos judiciales.",
+    category: "conflictos",
+  },
+  {
+    slug: "conflictos-contractuales",
+    title: "Conflictos contractuales en Colombia: causas y soluciones",
+    description:
+      "Problemas frecuentes en contratos y cómo resolverlos legalmente.",
+    category: "conflictos",
+  },
+  {
+    slug: "negociacion-empresarial",
+    title: "Negociación empresarial efectiva para resolver conflictos",
+    description:
+      "Técnicas para negociar disputas comerciales de forma estratégica.",
+    category: "conflictos",
+  },
+  {
+    slug: "conflictos-clientes-empresas",
+    title: "Cómo manejar conflictos con clientes en Colombia",
+    description:
+      "Estrategias legales y comerciales para resolver disputas con clientes.",
+    category: "conflictos",
+  },
+  {
+    slug: "conflictos-proveedores",
+    title: "Qué hacer ante conflictos con proveedores en Colombia",
+    description:
+      "Acciones legales frente a incumplimientos y disputas comerciales.",
+    category: "conflictos",
+  },
+  {
+    slug: "resolucion-pacificaconflictos",
+    title: "Resolución pacífica de conflictos en Colombia",
+    description:
+      "Métodos legales para solucionar conflictos sin llegar a juicio.",
+    category: "conflictos",
+  },
+  {
+    slug: "gestion-conflictos-organizacionales",
+    title: "Gestión de conflictos organizacionales en empresas",
+    description:
+      "Cómo prevenir disputas internas que afectan la productividad.",
+    category: "conflictos",
+  },
+
+  /* ================= CONCILIACIÓN ================= */
+  {
     slug: "beneficios-conciliacion",
     title: "Beneficios de la conciliación extrajudicial en Colombia explicados",
     description:
@@ -90,6 +195,71 @@ const articles = [
     title: "Conciliación extrajudicial en Colombia: cómo funciona paso a paso",
     description:
       "Cómo funciona la conciliación como mecanismo alternativo de solución de conflictos.",
+    category: "conciliacion",
+  },
+  {
+    slug: "tipos-conciliacion-colombia",
+    title: "Tipos de conciliación en Colombia y cuándo aplicar cada uno",
+    description:
+      "Conoce los diferentes mecanismos de conciliación en Colombia.",
+    category: "conciliacion",
+  },
+  {
+    slug: "conciliacion-laboral-colombia",
+    title: "Conciliación laboral en Colombia: guía práctica",
+    description: "Cómo resolver conflictos laborales mediante conciliación.",
+    category: "conciliacion",
+  },
+  {
+    slug: "conciliacion-civil-colombia",
+    title: "Conciliación civil en Colombia: casos más comunes",
+    description:
+      "Conflictos civiles que pueden resolverse sin proceso judicial.",
+    category: "conciliacion",
+  },
+  {
+    slug: "conciliacion-familiar-colombia",
+    title: "Conciliación familiar en Colombia: alimentos, custodia y acuerdos",
+    description: "Cómo funciona la conciliación en conflictos familiares.",
+    category: "conciliacion",
+  },
+  {
+    slug: "acta-conciliacion-colombia",
+    title: "Acta de conciliación en Colombia: efectos legales y validez",
+    description: "Qué valor jurídico tiene un acta de conciliación.",
+    category: "conciliacion",
+  },
+  {
+    slug: "ventajas-conciliacion-empresas",
+    title: "Ventajas de la conciliación para empresas en Colombia",
+    description:
+      "Cómo la conciliación reduce costos y evita litigios empresariales.",
+    category: "conciliacion",
+  },
+  {
+    slug: "centros-conciliacion-colombia",
+    title: "Centros de conciliación en Colombia: cómo funcionan",
+    description:
+      "Qué hacen los centros de conciliación y cuándo acudir a ellos.",
+    category: "conciliacion",
+  },
+  {
+    slug: "requisitos-conciliacion",
+    title: "Requisitos para iniciar una conciliación en Colombia",
+    description: "Documentos y pasos necesarios para solicitar conciliación.",
+    category: "conciliacion",
+  },
+  {
+    slug: "fracaso-conciliacion",
+    title: "Qué pasa si una conciliación fracasa en Colombia",
+    description:
+      "Consecuencias legales cuando no se logra acuerdo conciliatorio.",
+    category: "conciliacion",
+  },
+  {
+    slug: "conciliacion-virtual-colombia",
+    title: "Conciliación virtual en Colombia: cómo funciona",
+    description: "Audiencias virtuales de conciliación y su validez legal.",
     category: "conciliacion",
   },
 
@@ -145,10 +315,112 @@ const articles = [
     category: "derecho",
   },
   {
+    slug: "abogado-empresarial-colombia",
+    title: "Qué hace un abogado empresarial en Colombia",
+    description: "Funciones y beneficios de la asesoría jurídica empresarial.",
+    category: "derecho",
+  },
+  {
+    slug: "responsabilidad-civil-empresas",
+    title: "Responsabilidad civil de las empresas en Colombia",
+    description: "Cuándo una empresa puede enfrentar responsabilidad legal.",
+    category: "derecho",
+  },
+  {
+    slug: "demandas-comerciales-colombia",
+    title: "Demandas comerciales en Colombia: cómo funcionan",
+    description: "Procesos judiciales comerciales y defensa empresarial.",
+    category: "derecho",
+  },
+  {
+    slug: "propiedad-intelectual-empresas",
+    title: "Propiedad intelectual para empresas en Colombia",
+    description: "Cómo proteger marcas, software y activos intangibles.",
+    category: "derecho",
+  },
+  {
+    slug: "habeas-data-empresas",
+    title: "Habeas Data en Colombia para empresas: obligaciones legales",
+    description: "Protección de datos personales y cumplimiento empresarial.",
+    category: "derecho",
+  },
+
+  /* ================= NORMATIVA ================= */
+  {
     slug: "cumplimiento-normativo-colombia",
     title: "Cumplimiento normativo en Colombia (Compliance): guía empresarial",
     description:
       "Cómo asegurar que tu empresa cumpla con la regulación vigente.",
+    category: "normativo",
+  },
+  {
+    slug: "sarlaft-colombia",
+    title: "SARLAFT en Colombia: qué es y cómo afecta a las empresas",
+    description:
+      "Guía completa sobre SARLAFT, prevención de lavado de activos y obligaciones empresariales.",
+    category: "normativo",
+  },
+  {
+    slug: "compliance-empresarial-colombia",
+    title: "Compliance empresarial en Colombia: guía práctica para empresas",
+    description:
+      "Cómo implementar programas de cumplimiento normativo en empresas colombianas.",
+    category: "normativo",
+  },
+  {
+    slug: "proteccion-datos-empresas",
+    title: "Protección de datos personales en Colombia para empresas",
+    description:
+      "Obligaciones legales de las empresas frente al tratamiento de datos personales.",
+    category: "normativo",
+  },
+  {
+    slug: "prevencion-lavado-activos",
+    title: "Prevención de lavado de activos en empresas colombianas",
+    description:
+      "Medidas y controles para prevenir riesgos de lavado de activos y financiación del terrorismo.",
+    category: "normativo",
+  },
+  {
+    slug: "gobierno-corporativo-colombia",
+    title: "Gobierno corporativo en Colombia: buenas prácticas empresariales",
+    description:
+      "Cómo implementar estructuras de gobierno corporativo en empresas colombianas.",
+    category: "normativo",
+  },
+  {
+    slug: "riesgo-legal-empresas",
+    title: "Gestión del riesgo legal en empresas colombianas",
+    description:
+      "Cómo identificar y reducir riesgos jurídicos dentro de las organizaciones.",
+    category: "normativo",
+  },
+  {
+    slug: "auditoria-legal-empresas",
+    title: "Auditoría legal empresarial en Colombia: qué es y para qué sirve",
+    description:
+      "Importancia de realizar auditorías legales preventivas en las empresas.",
+    category: "normativo",
+  },
+  {
+    slug: "manual-cumplimiento-empresarial",
+    title: "Manual de cumplimiento empresarial: cómo elaborarlo correctamente",
+    description:
+      "Aspectos esenciales para crear políticas internas de cumplimiento normativo.",
+    category: "normativo",
+  },
+  {
+    slug: "debida-diligencia-empresarial",
+    title: "Debida diligencia empresarial en Colombia: guía completa",
+    description:
+      "Cómo realizar procesos de due diligence para prevenir riesgos legales y financieros.",
+    category: "normativo",
+  },
+  {
+    slug: "regulacion-empresarial-colombia-2026",
+    title: "Regulación empresarial en Colombia 2026: cambios y obligaciones",
+    description:
+      "Principales normas y obligaciones que impactan a las empresas colombianas en 2026.",
     category: "normativo",
   },
 
@@ -231,6 +503,13 @@ const articles = [
     title: "Iguala jurídica para empresas en Colombia: qué es y cómo funciona",
     description:
       "Cómo funciona el servicio de asesoría jurídica mensual para empresas.",
+    category: "empresarial",
+  },
+  {
+    slug: "asesoria-legal-pymes-colombia",
+    title: "Asesoría legal para pymes en Colombia: por qué es importante",
+    description:
+      "Cómo una asesoría jurídica puede proteger y hacer crecer una pyme.",
     category: "empresarial",
   },
 ];

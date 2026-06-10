@@ -7,6 +7,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const lastUpdate = new Date("2026-05-27");
 
   const blogArticles = [
+    /* ================= CARTERA ================= */
+
     "como-recuperar-cartera-morosa",
     "gestion-cartera-sector-salud",
     "automatizacion-cobranzas",
@@ -14,22 +16,76 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "recuperacion-cartera-empresas",
     "inteligencia-artificial-cobranzas",
     "futuro-cobranzas",
-    "conciliacion-extrajudicial-colombia",
-    "beneficios-conciliacion",
+    "cliente-no-quiere-pagar",
+    "empresa-no-paga-factura",
+    "cobranza-prejuridica-colombia",
+    "indicadores-gestion-cartera",
+    "cartera-vencida-empresas",
+    "proceso-cobro-juridico-colombia",
+    "software-gestion-cartera",
+
+    /* ================= CONFLICTOS ================= */
+
     "mediacion-empresarial",
     "resolucion-conflictos-empresariales",
+    "conflictos-socios-empresas",
+    "conflictos-laborales-empresas",
+    "mecanismos-resolucion-conflictos",
+    "arbitraje-colombia",
+    "conflictos-contractuales",
+    "negociacion-empresarial",
+    "conflictos-clientes-empresas",
+    "conflictos-proveedores",
+    "resolucion-pacificaconflictos",
+    "gestion-conflictos-organizacionales",
+
+    /* ================= CONCILIACION ================= */
+
+    "conciliacion-extrajudicial-colombia",
+    "beneficios-conciliacion",
+    "tipos-conciliacion-colombia",
+    "conciliacion-laboral-colombia",
+    "conciliacion-civil-colombia",
+    "acta-conciliacion-colombia",
+    "ventajas-conciliacion-empresas",
+    "centros-conciliacion-colombia",
+    "requisitos-conciliacion",
+    "fracaso-conciliacion",
+    "conciliacion-virtual-colombia",
+
+    /* ================= DERECHO ================= */
+
     "derecho-empresarial-colombia",
     "derecho-comercial-empresas-colombia",
     "derecho-contractual-colombia",
     "derecho-societario-colombia",
     "derecho-administrativo-colombia",
     "litigios-empresariales-colombia",
+    "abogado-empresarial-colombia",
+    "responsabilidad-civil-empresas",
+    "demandas-comerciales-colombia",
+    "propiedad-intelectual-empresas",
+    "habeas-data-empresas",
+
+    /* ================= NORMATIVO ================= */
+
     "cumplimiento-normativo-colombia",
+    "sarlaft-colombia",
+    "compliance-empresarial-colombia",
+    "proteccion-datos-empresas",
+    "prevencion-lavado-activos",
+    "gobierno-corporativo-colombia",
+    "riesgo-legal-empresas",
+    "auditoria-legal-empresas",
+    "manual-cumplimiento-empresarial",
+    "debida-diligencia-empresarial",
+    "regulacion-empresarial-colombia-2026",
+
+    /* ================= EMPRESARIAL ================= */
+
     "proteccion-juridica-empresarial",
     "asesoria-corporativa-empresas",
     "errores-legales-empresas-colombia",
-    "cliente-no-quiere-pagar",
-    "empresa-no-paga-factura",
     "como-proteger-empresa-legalmente",
     "riesgos-legales-empresas",
     "proveedor-incumple-contrato",
@@ -37,6 +93,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "evitar-demandas-empresas",
     "contratos-empresariales-colombia",
     "iguala-juridica-empresas",
+    "asesoria-legal-pymes-colombia",
   ];
 
   const especialidades = [

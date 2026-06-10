@@ -1,7 +1,7 @@
 /* ================= SECTION ================= */
 
 .section {
-  max-width: 1200px;
+  max-width: 1700px;
   margin: 0 auto;
   padding: 100px 20px;
   background: #ffffff;
@@ -32,7 +32,7 @@
 
 .categoryTitle {
   font-size: 26px;
-  margin: 50px 0 20px;
+  margin: 60px 0 24px;
   color: #004a80;
 }
 
@@ -40,10 +40,13 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  /* 🔥 4 columnas exactas */
+  grid-template-columns: repeat(4, 1fr);
+
   gap: 28px;
 
-  /* 🔥 CLAVE: hace que todas las cards tengan misma altura */
+  /* 🔥 mantiene alturas iguales */
   align-items: stretch;
 }
 
@@ -52,8 +55,8 @@
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centra vertical */
-  align-items: center; /* centra horizontal */
+  justify-content: center;
+  align-items: center;
 
   text-align: center;
 
@@ -65,7 +68,6 @@
   text-decoration: none;
   transition: all 0.25s ease;
 
-  /* 🔥 altura consistente */
   height: 100%;
   min-height: 230px;
 }
@@ -109,14 +111,77 @@
 
 /* ================= LINK ================= */
 
-.link {
+.card span {
   font-size: 14px;
   font-weight: 600;
   color: #c4911a;
   transition: all 0.2s ease;
 }
 
-.card:hover .link {
+.card:hover span {
   color: #f7c600;
   transform: translateX(4px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1400px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1050px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 18px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .categoryTitle {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: 24px;
+    min-height: 210px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 27px;
+  }
+
+  .card {
+    min-height: auto;
+  }
 }
