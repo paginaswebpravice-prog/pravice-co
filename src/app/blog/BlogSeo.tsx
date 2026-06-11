@@ -423,6 +423,13 @@ const articles = [
       "Principales normas y obligaciones que impactan a las empresas colombianas en 2026.",
     category: "normativo",
   },
+  {
+    slug: "oficial-cumplimiento-colombia",
+    title: "Oficial de cumplimiento en Colombia: funciones y responsabilidades",
+    description:
+      "Qué hace un oficial de cumplimiento, cuáles son sus funciones y cuándo una empresa debe designarlo.",
+    category: "normativo",
+  },
 
   /* ================= ESTRATEGIA CORPORATIVA ================= */
 

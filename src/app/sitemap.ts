@@ -80,6 +80,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "manual-cumplimiento-empresarial",
     "debida-diligencia-empresarial",
     "regulacion-empresarial-colombia-2026",
+    "oficial-cumplimiento-colombia",
 
     /* ================= EMPRESARIAL ================= */
 
