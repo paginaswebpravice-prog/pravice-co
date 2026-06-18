@@ -17,9 +17,9 @@ export default function DerechoAdministrativoContent() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Derecho administrativo en Colombia",
+    name: "Contratación Estatal y Procesos Administrativos para Empresas",
     description:
-      "Información y orientación jurídica sobre derecho administrativo en Colombia, contratación estatal y procesos frente a entidades públicas.",
+      "Información sobre contratación estatal, recursos administrativos, licitaciones públicas y relación entre empresas y entidades públicas en Colombia.",
     areaServed: "Colombia",
     provider: {
       "@type": "Organization",
@@ -40,18 +40,19 @@ export default function DerechoAdministrativoContent() {
       {/* ================= HERO ================= */}
       <motion.section variants={fadeUp} className={styles.hero}>
         <div className={styles.heroContent}>
-          <span className={styles.badge}>Información legal en Colombia</span>
+          <span className={styles.badge}>
+            Contratación pública y gestión regulatoria
+          </span>
 
           <h1 className={styles.title}>
-            Derecho administrativo en Colombia: procesos administrativos,
-            contratación estatal y defensa frente a entidades públicas
+            Contratación Estatal y Procesos Administrativos para Empresas en
+            Colombia
           </h1>
 
           <p className={styles.description}>
-            Conoce cómo funciona el derecho administrativo en Colombia, cuáles
-            son los principales procesos frente al Estado y qué aspectos deben
-            tener en cuenta ciudadanos y empresas al interactuar con entidades
-            públicas.
+            Conoce cómo las empresas en Colombia interactúan con entidades
+            públicas mediante procesos administrativos, contratación estatal,
+            recursos administrativos y cumplimiento regulatorio.
           </p>
 
           <div className={styles.actions}>
@@ -75,7 +76,8 @@ export default function DerechoAdministrativoContent() {
         {/* ================= INTRO ================= */}
         <motion.section variants={fadeUp} className={styles.section} id="guia">
           <h2 className={styles.subtitle}>
-            ¿Qué es el derecho administrativo en Colombia?
+            ¿Cómo se relacionan las empresas con las entidades públicas en
+            Colombia?
           </h2>
 
           <p className={styles.text}>
@@ -128,7 +130,8 @@ export default function DerechoAdministrativoContent() {
         {/* ================= SERVICIOS ================= */}
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Temas frecuentes en derecho administrativo
+            Procesos administrativos y contratación estatal más comunes para
+            empresas
           </h2>
 
           <div className={styles.grid}>
@@ -169,7 +172,7 @@ export default function DerechoAdministrativoContent() {
         {/* ================= IMPORTANCIA ================= */}
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Importancia del derecho administrativo para empresas y ciudadanos
+            Importancia de la gestión administrativa para empresas en Colombia
           </h2>
 
           <div className={styles.infoGrid}>
@@ -204,7 +207,8 @@ export default function DerechoAdministrativoContent() {
         {/* ================= CONTRATACIÓN ================= */}
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Contratación estatal y cumplimiento normativo en Colombia
+            Licitaciones públicas, contratación estatal y cumplimiento
+            regulatorio
           </h2>
 
           <p className={styles.text}>
@@ -229,7 +233,8 @@ export default function DerechoAdministrativoContent() {
         {/* ================= BENEFICIOS ================= */}
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Aspectos clave del derecho administrativo en Colombia
+            Aspectos clave de la contratación pública y los recursos
+            administrativos
           </h2>
 
           <div className={styles.benefits}>
@@ -254,11 +259,31 @@ export default function DerechoAdministrativoContent() {
           </div>
         </motion.section>
 
+        <motion.section variants={fadeUp} className={styles.section}>
+          <h2 className={styles.subtitle}>
+            Recursos administrativos y sanciones administrativas en Colombia
+          </h2>
+
+          <p className={styles.text}>
+            Las empresas pueden verse involucradas en procedimientos
+            administrativos relacionados con sanciones, requerimientos
+            regulatorios, licencias, permisos y actuaciones adelantadas por
+            entidades públicas.
+          </p>
+
+          <p className={styles.text}>
+            Conocer los recursos administrativos disponibles permite ejercer
+            adecuadamente el derecho de defensa y responder de manera oportuna
+            frente a actuaciones estatales.
+          </p>
+        </motion.section>
+
         {/* ================= CTA SEO ================= */}
         <motion.section className={styles.cta} variants={fadeUp}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Consulta más información sobre derecho administrativo en Colombia
+              Conoce más sobre contratación estatal y procesos administrativos
+              para empresas
             </h2>
 
             <p className={styles.ctaText}>

@@ -6,19 +6,22 @@ const canonicalUrl =
 
 export const metadata: Metadata = {
   title:
-    "Gestión y procesos de recuperación de cartera empresarial en Colombia | Pravice",
+    "Recuperación de cartera empresarial en Colombia: estrategias para reducir la morosidad",
 
   description:
-    "Información sobre procesos de recuperación de cartera, estrategias de cobranza, morosidad empresarial y gestión financiera aplicada al entorno corporativo en Colombia.",
+    "Guía sobre recuperación de cartera empresarial en Colombia. Conoce estrategias de cobranza, control de cartera vencida, indicadores financieros y reducción de la morosidad.",
 
   keywords: [
-    "gestión de cartera empresarial",
-    "procesos de cobranza",
+    "recuperación de cartera empresarial",
+    "cartera vencida Colombia",
+    "gestión de cartera",
     "morosidad empresarial",
-    "flujo financiero empresas",
-    "estrategias de recuperación de cartera",
+    "estrategias de cobranza",
+    "indicadores de cartera",
+    "cobranza empresarial",
+    "flujo de caja empresas",
+    "recuperación de cartera Colombia",
     "gestión financiera empresarial",
-    "cobranza corporativa",
   ],
 
   alternates: {
@@ -26,10 +29,11 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Gestión y estrategias de recuperación de cartera empresarial",
+    title:
+      "Recuperación de cartera empresarial en Colombia: guía y estrategias",
 
     description:
-      "Conoce procesos de cobranza, gestión de morosidad y recuperación de cartera aplicados al entorno empresarial.",
+      "Aprende cómo reducir la cartera vencida, mejorar el recaudo y fortalecer el flujo financiero de tu empresa.",
 
     url: canonicalUrl,
     siteName: "Pravice",
@@ -43,7 +47,7 @@ const schemaData = {
   "@type": "Article",
 
   headline:
-    "Procesos y estrategias de recuperación de cartera empresarial en Colombia",
+    "Recuperación de cartera empresarial en Colombia: cómo reducir la cartera vencida",
 
   description:
     "Información relacionada con procesos de recuperación de cartera, morosidad empresarial y estrategias de cobranza.",

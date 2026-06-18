@@ -17,9 +17,9 @@ export default function DerechoComercialContent() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Derecho comercial en Colombia",
+    name: "Gestión Comercial Empresarial en Colombia",
     description:
-      "Información y orientación sobre derecho comercial, contratos empresariales y cumplimiento corporativo en Colombia.",
+      "Información sobre gestión comercial empresarial, relaciones comerciales, riesgos empresariales y cumplimiento corporativo en Colombia.",
     areaServed: "Colombia",
     provider: {
       "@type": "Organization",
@@ -41,18 +41,19 @@ export default function DerechoComercialContent() {
       <motion.section variants={fadeUp} className={styles.hero}>
         <div className={styles.heroContent}>
           <span className={styles.badge}>
-            Información legal empresarial en Colombia
+            Gestión comercial y crecimiento empresarial
           </span>
 
           <h1 className={styles.title}>
-            Derecho comercial en Colombia: aspectos legales clave para empresas
-            y negocios
+            Gestión Comercial Empresarial en Colombia: Relaciones Comerciales,
+            Cumplimiento y Prevención de Riesgos
           </h1>
 
           <p className={styles.description}>
-            Conoce cómo funciona el derecho comercial en Colombia, los riesgos
-            empresariales más frecuentes y la importancia de los contratos,
-            sociedades y cumplimiento normativo para las empresas.
+            Conoce los principales factores que influyen en las operaciones
+            comerciales de las empresas en Colombia, desde la gestión de
+            clientes y proveedores hasta la prevención de riesgos empresariales
+            y el cumplimiento corporativo.
           </p>
 
           <div className={styles.actions}>
@@ -76,7 +77,7 @@ export default function DerechoComercialContent() {
         {/* INTRO */}
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Qué es el derecho comercial en Colombia?
+            ¿Cómo gestionar relaciones comerciales seguras en Colombia?
           </h2>
 
           <p className={styles.text}>
@@ -100,7 +101,7 @@ export default function DerechoComercialContent() {
         {/* SERVICIOS */}
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Aspectos del derecho comercial que toda empresa debe conocer
+            Aspectos clave para una gestión comercial empresarial eficiente
           </h2>
 
           <div className={styles.grid}>
@@ -140,7 +141,7 @@ export default function DerechoComercialContent() {
         {/* IMPORTANCIA */}
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Importancia del derecho comercial para empresas en Colombia
+            ¿Por qué la gestión comercial impacta el crecimiento empresarial?
           </h2>
 
           <div className={styles.infoGrid}>
@@ -179,7 +180,8 @@ export default function DerechoComercialContent() {
         {/* CONTRATOS */}
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Contratos comerciales en Colombia y riesgos empresariales frecuentes
+            Relaciones comerciales, proveedores y riesgos empresariales
+            frecuentes
           </h2>
 
           <div className={styles.warningBox}>
@@ -202,7 +204,7 @@ export default function DerechoComercialContent() {
         {/* PORTAL SEO */}
         <motion.section variants={fadeUp} className={styles.portalSeo}>
           <h2 className={styles.subtitle}>
-            Más información sobre derecho comercial y mercantil
+            Guía especializada sobre derecho comercial y mercantil
           </h2>
 
           <p>
@@ -224,7 +226,7 @@ export default function DerechoComercialContent() {
         {/* BENEFICIOS */}
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Beneficios de comprender el derecho comercial en Colombia
+            Beneficios de fortalecer la gestión comercial empresarial
           </h2>
 
           <div className={styles.benefits}>
@@ -248,12 +250,30 @@ export default function DerechoComercialContent() {
           </div>
         </motion.section>
 
+        <motion.section variants={fadeUp} className={styles.section}>
+          <h2 className={styles.subtitle}>
+            Riesgos comerciales que afectan a las empresas en Colombia
+          </h2>
+
+          <p className={styles.text}>
+            Las empresas enfrentan riesgos asociados a incumplimientos
+            contractuales, conflictos con proveedores, problemas de cartera,
+            diferencias comerciales y dificultades en la ejecución de acuerdos
+            empresariales.
+          </p>
+
+          <p className={styles.text}>
+            Una adecuada gestión comercial permite identificar estos riesgos de
+            forma anticipada y establecer mecanismos que fortalezcan la
+            estabilidad y el crecimiento empresarial.
+          </p>
+        </motion.section>
+
         {/* CTA */}
         <motion.section id="contacto" className={styles.cta} variants={fadeUp}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Recibe orientación sobre derecho comercial y estructura
-              empresarial
+              Fortalece la gestión comercial y la estabilidad de tu empresa
             </h2>
 
             <p className={styles.ctaText}>

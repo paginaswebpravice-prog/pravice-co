@@ -5,10 +5,10 @@ const canonicalUrl = "https://pravice.co/especialidades/derecho-administrativo";
 
 export const metadata: Metadata = {
   title:
-    "Derecho administrativo en Colombia | Información sobre procesos administrativos y contratación estatal",
+    "Contratación Estatal y Procesos Administrativos para Empresas en Colombia | Pravice",
 
   description:
-    "Información sobre derecho administrativo en Colombia, procesos frente al Estado, contratación pública, recursos administrativos y actuaciones de entidades públicas.",
+    "Guía sobre contratación estatal, recursos administrativos, sanciones administrativas y relación entre empresas y entidades públicas en Colombia.",
 
   alternates: {
     canonical: canonicalUrl,
@@ -16,10 +16,10 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Derecho administrativo en Colombia | Procesos administrativos y contratación estatal",
+      "Contratación Estatal y Procesos Administrativos para Empresas en Colombia",
 
     description:
-      "Conoce cómo funciona el derecho administrativo en Colombia y los principales procesos frente a entidades públicas.",
+      "Información sobre contratación pública, recursos administrativos, licitaciones estatales y cumplimiento regulatorio para empresas en Colombia.",
 
     url: canonicalUrl,
     siteName: "Pravice",
@@ -47,7 +47,7 @@ const schemaData = {
   "@type": "Article",
 
   headline:
-    "Derecho administrativo en Colombia: procesos administrativos y contratación estatal",
+    "Contratación Estatal, Recursos Administrativos y Relación Empresa-Estado en Colombia",
 
   description:
     "Información sobre procesos administrativos, contratación pública y actuaciones de entidades estatales en Colombia.",
@@ -70,10 +70,12 @@ const schemaData = {
   mainEntityOfPage: canonicalUrl,
 
   about: [
-    "Derecho administrativo",
     "Contratación estatal",
-    "Procesos administrativos",
-    "Entidades públicas en Colombia",
+    "Recursos administrativos",
+    "Licitaciones públicas",
+    "Relación empresa Estado",
+    "Cumplimiento regulatorio",
+    "Procesos administrativos empresariales",
   ],
 
   inLanguage: "es-CO",

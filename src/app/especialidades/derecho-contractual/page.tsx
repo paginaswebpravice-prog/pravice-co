@@ -5,22 +5,22 @@ const canonicalUrl = "https://pravice.co/especialidades/derecho-contractual";
 
 export const metadata: Metadata = {
   title:
-    "Derecho contractual en Colombia | Contratos empresariales y asesoría jurídica",
+    "Contratos Empresariales y Gestión Contractual en Colombia | Prevención de Riesgos Contractuales",
 
   description:
-    "Asesoría en derecho contractual en Colombia para empresas y negocios. Elaboración, revisión y negociación de contratos comerciales.",
+    "Guía sobre contratos empresariales en Colombia. Conoce buenas prácticas de gestión contractual, negociación, revisión de contratos y prevención de incumplimientos comerciales.",
 
   keywords: [
-    "derecho contractual Colombia",
-    "contratos empresariales Colombia",
-    "abogados contratos Colombia",
-    "revisión de contratos",
-    "contratos comerciales",
+    "contratos empresariales colombia",
+    "gestion contractual",
+    "contratos comerciales colombia",
+    "riesgos contractuales",
     "incumplimiento contractual",
-    "asesoría contractual",
-    "contratos en Bogotá",
-    "negociación de contratos",
-    "servicios jurídicos empresariales",
+    "negociacion de contratos",
+    "revision de contratos empresariales",
+    "proveedores y clientes",
+    "acuerdos comerciales",
+    "gestion de contratos",
   ],
 
   alternates: {
@@ -28,11 +28,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "Derecho contractual en Colombia | Contratos empresariales y asesoría jurídica",
+    title: "Contratos Empresariales y Gestión Contractual en Colombia",
 
     description:
-      "Asesoría jurídica en contratos comerciales, revisión contractual y negociación de acuerdos empresariales en Colombia.",
+      "Información sobre contratos empresariales, gestión contractual, riesgos contractuales y acuerdos comerciales en Colombia.",
 
     url: canonicalUrl,
     siteName: "Pravice",
@@ -52,11 +51,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title:
-      "Derecho contractual en Colombia | Contratos empresariales y asesoría jurídica",
+    title: "Contratos Empresariales y Gestión Contractual en Colombia",
 
     description:
-      "Asesoría jurídica en elaboración, revisión y negociación de contratos comerciales.",
+      "Guía sobre contratos empresariales, negociación contractual y prevención de riesgos comerciales.",
   },
 
   robots: {
@@ -69,7 +67,7 @@ const schemaData = {
   "@context": "https://schema.org",
   "@type": "LegalService",
 
-  name: "Derecho contractual en Colombia",
+  name: "Contratos Empresariales y Gestión Contractual en Colombia",
 
   description:
     "Asesoría en elaboración, revisión y negociación de contratos comerciales y empresariales en Colombia.",
@@ -95,7 +93,7 @@ const schemaData = {
   },
 
   serviceType:
-    "Asesoría en derecho contractual y contratos empresariales en Colombia",
+    "Gestión contractual, contratos empresariales y prevención de riesgos comerciales",
 
   inLanguage: "es-CO",
 };

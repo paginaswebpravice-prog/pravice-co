@@ -5,19 +5,21 @@ const canonicalUrl = "https://pravice.co/especialidades/derecho-societario";
 
 export const metadata: Metadata = {
   title:
-    "Derecho societario y estructuras empresariales en Colombia | Gestión corporativa",
+    "Derecho Societario para Empresas en Colombia | Gobierno Corporativo y Gestión Societaria",
 
   description:
-    "Información sobre derecho societario en Colombia, sociedades comerciales, organización empresarial, estructuras corporativas y gestión societaria.",
+    "Guía de derecho societario para empresas en Colombia. Conoce aspectos sobre gobierno corporativo, conflictos societarios, reformas estatutarias, sociedades SAS y gestión empresarial.",
 
   keywords: [
-    "derecho societario Colombia",
-    "sociedades comerciales Colombia",
-    "estructuras empresariales",
-    "gestión corporativa",
-    "sociedades SAS Colombia",
-    "organización empresarial",
-    "derecho corporativo Colombia",
+    "derecho societario empresas colombia",
+    "gobierno corporativo colombia",
+    "conflictos societarios",
+    "reformas estatutarias",
+    "sociedades sas colombia",
+    "gestion societaria",
+    "organizacion corporativa",
+    "derecho corporativo empresas",
+    "estructura societaria colombia",
   ],
 
   alternates: {
@@ -25,10 +27,11 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Derecho societario y gestión empresarial en Colombia",
+    title:
+      "Derecho Societario para Empresas en Colombia | Gobierno Corporativo",
 
     description:
-      "Conoce aspectos relacionados con sociedades comerciales, estructuras corporativas y organización empresarial en Colombia.",
+      "Conoce cómo el derecho societario ayuda a las empresas en Colombia mediante estructuras societarias, gobierno corporativo y gestión empresarial.",
 
     url: canonicalUrl,
     siteName: "Pravice",
@@ -40,7 +43,7 @@ export const metadata: Metadata = {
         url: "https://pravice.co/og-derecho-societario.jpg",
         width: 1200,
         height: 630,
-        alt: "Derecho societario en Colombia",
+        alt: "Derecho Societario para Empresas en Colombia",
       },
     ],
   },
@@ -51,14 +54,17 @@ export const metadata: Metadata = {
   },
 };
 
-// SCHEMA SEO
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Derecho societario y estructuras empresariales en Colombia",
+  headline:
+    "Derecho Societario para Empresas y Gobierno Corporativo en Colombia",
+
   description:
-    "Información sobre derecho societario, estructuras corporativas, sociedades comerciales y gestión empresarial en Colombia.",
+    "Información sobre derecho societario para empresas, gobierno corporativo, reformas estatutarias, conflictos societarios y organización empresarial en Colombia.",
+
   mainEntityOfPage: canonicalUrl,
+
   inLanguage: "es-CO",
 
   publisher: {
@@ -70,14 +76,6 @@ const schemaData = {
       url: "https://pravice.co/logo_pravice.png",
     },
   },
-
-  mentions: [
-    {
-      "@type": "WebPage",
-      name: "Registro de marca en Colombia",
-      url: "https://abogadosespecialistas.com.co/registro-de-marca.html",
-    },
-  ],
 };
 
 export default function Page() {

@@ -15,18 +15,18 @@ export default function RecuperacionCartera() {
           transition={{ duration: 0.6 }}
         >
           <span className={styles.badge}>
-            Gestión de cartera y flujo financiero empresarial
+            Reducción de cartera vencida y recaudo empresarial
           </span>
 
           <h1 className={styles.title}>
-            Procesos y estrategias de recuperación de cartera empresarial en
-            Colombia
+            Recuperación de cartera empresarial en Colombia: cómo reducir la
+            morosidad y mejorar el recaudo
           </h1>
 
           <p className={styles.description}>
-            Conoce cómo funcionan los procesos de recuperación de cartera, las
-            etapas de cobranza y las estrategias utilizadas por las empresas
-            para reducir la morosidad y fortalecer su estabilidad financiera.
+            Conoce las estrategias más utilizadas por empresas en Colombia para
+            recuperar cartera vencida, mejorar el flujo de caja y reducir los
+            riesgos derivados de la morosidad empresarial.
           </p>
 
           <div className={styles.actions}>
@@ -43,6 +43,7 @@ export default function RecuperacionCartera() {
 
       <main className={styles.container}>
         {/* PORTAL PRINCIPAL */}
+        {/* PORTAL PRINCIPAL */}
         <motion.section
           className={styles.portalSeo}
           initial={{ opacity: 0, y: 30 }}
@@ -50,10 +51,22 @@ export default function RecuperacionCartera() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
+          <h2 className={styles.subtitle}>
+            Guía sobre recuperación de cartera empresarial, cobranza y morosidad
+            en Colombia
+          </h2>
+
           <p>
-            Si buscas servicios especializados de recuperación de cartera, cobro
-            jurídico y acompañamiento legal empresarial en Colombia, puedes
-            consultar nuestro portal principal de{" "}
+            Esta sección de Pravice tiene un enfoque informativo sobre
+            recuperación de cartera empresarial en Colombia, indicadores de
+            morosidad, procesos de cobranza, flujo de caja y estrategias para
+            mejorar la gestión financiera de las empresas.
+          </p>
+
+          <p>
+            Si buscas servicios especializados de cobro prejurídico, cobro
+            jurídico, recuperación de cartera vencida y representación legal
+            para empresas, puedes consultar nuestro portal principal de{" "}
             <a
               href="https://abogadosespecialistas.com.co/recuperacion-de-cartera.html"
               target="_blank"
@@ -76,7 +89,8 @@ export default function RecuperacionCartera() {
             viewport={{ once: true }}
           >
             <h2 className={styles.subtitle}>
-              ¿Qué implica la gestión de cartera empresarial?
+              ¿Qué es la recuperación de cartera empresarial y por qué es
+              importante?
             </h2>
 
             <p className={styles.text}>
@@ -114,7 +128,8 @@ export default function RecuperacionCartera() {
             viewport={{ once: true }}
           >
             <h2 className={styles.subtitle}>
-              Etapas comunes en los procesos de cobranza empresarial
+              Etapas de recuperación de cartera utilizadas por las empresas en
+              Colombia
             </h2>
 
             <div className={styles.grid}>
@@ -166,7 +181,7 @@ export default function RecuperacionCartera() {
             viewport={{ once: true }}
           >
             <h2 className={styles.subtitle}>
-              Impacto de la morosidad en la estabilidad financiera empresarial
+              Cómo afecta la cartera vencida el flujo de caja de una empresa
             </h2>
 
             <p className={styles.text}>
@@ -212,7 +227,7 @@ export default function RecuperacionCartera() {
             viewport={{ once: true }}
           >
             <h2 className={styles.subtitle}>
-              Riesgos asociados a la acumulación de cartera vencida
+              Principales riesgos de una cartera vencida sin gestión adecuada
             </h2>
 
             <div className={styles.warningBox}>
@@ -237,7 +252,7 @@ export default function RecuperacionCartera() {
             viewport={{ once: true }}
           >
             <h2 className={styles.subtitle}>
-              Buenas prácticas para la gestión de cartera empresarial
+              Estrategias para reducir la morosidad y mejorar el recaudo
             </h2>
 
             <div className={styles.benefits}>
@@ -272,13 +287,13 @@ export default function RecuperacionCartera() {
           >
             <div className={styles.ctaContent}>
               <h2 className={styles.ctaTitle}>
-                Recursos y estrategias para la gestión de cartera empresarial
+                ¿Cómo mejorar la recuperación de cartera en tu empresa?
               </h2>
 
               <p className={styles.ctaText}>
-                Comprender los procesos de cobranza, negociación y recuperación
-                permite a las empresas fortalecer su flujo financiero y reducir
-                riesgos asociados a la morosidad.
+                Conoce prácticas utilizadas por empresas colombianas para
+                reducir la cartera vencida, fortalecer el recaudo y mejorar la
+                liquidez financiera.
               </p>
 
               <div className={styles.actions}>

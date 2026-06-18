@@ -17,7 +17,8 @@ export default function DerechoSocietarioContent() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Derecho societario y estructuras empresariales en Colombia",
+    headline:
+      "Derecho Societario para Empresas y Gobierno Corporativo en Colombia",
     description:
       "Información sobre derecho societario, estructuras empresariales, tipos de sociedades y gestión corporativa en Colombia.",
     inLanguage: "es-CO",
@@ -47,18 +48,19 @@ export default function DerechoSocietarioContent() {
       >
         <div className={styles.heroContent}>
           <span className={styles.badge}>
-            Derecho societario y gestión empresarial
+            Gobierno corporativo y gestión societaria
           </span>
 
           <h1 className={styles.title}>
-            Derecho societario en Colombia: estructuras empresariales,
-            sociedades y gestión corporativa
+            Derecho Societario para Empresas en Colombia: Gobierno Corporativo,
+            Sociedades y Gestión Empresarial
           </h1>
 
           <p className={styles.description}>
-            Conoce aspectos relacionados con derecho societario en Colombia,
-            constitución de sociedades, relaciones entre socios, estructuras
-            corporativas y organización empresarial.
+            Conoce cómo el derecho societario ayuda a las empresas en Colombia
+            mediante estructuras societarias, gobierno corporativo, reformas
+            estatutarias, relaciones entre socios y procesos de crecimiento
+            empresarial.
           </p>
 
           <div className={styles.actions}>
@@ -103,8 +105,8 @@ export default function DerechoSocietarioContent() {
           className={styles.section}
         >
           <h2 className={styles.subtitle}>
-            ¿Qué es el derecho societario en Colombia y cómo se relaciona con
-            las empresas?
+            ¿Qué es el derecho societario y por qué es importante para las
+            empresas en Colombia?
           </h2>
 
           <p className={styles.text}>
@@ -142,7 +144,8 @@ export default function DerechoSocietarioContent() {
           className={styles.section}
         >
           <h2 className={styles.subtitle}>
-            Estructuras societarias y tipos de empresas en Colombia
+            Tipos de sociedades y estructuras empresariales utilizadas en
+            Colombia
           </h2>
 
           <div className={styles.grid}>
@@ -188,7 +191,7 @@ export default function DerechoSocietarioContent() {
           className={styles.section}
         >
           <h2 className={styles.subtitle}>
-            Importancia de la organización societaria y corporativa
+            Gobierno corporativo y gestión societaria para empresas
           </h2>
 
           <div className={styles.infoGrid}>
@@ -279,7 +282,7 @@ export default function DerechoSocietarioContent() {
           className={styles.section}
         >
           <h2 className={styles.subtitle}>
-            Beneficios de una adecuada estructura societaria y empresarial
+            Beneficios de una correcta gestión societaria y corporativa
           </h2>
 
           <div className={styles.benefits}>
@@ -302,7 +305,8 @@ export default function DerechoSocietarioContent() {
         >
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Recibe orientación sobre derecho societario y gestión empresarial
+              Conoce más sobre gobierno corporativo y derecho societario para
+              empresas
             </h2>
 
             <p className={styles.ctaText}>

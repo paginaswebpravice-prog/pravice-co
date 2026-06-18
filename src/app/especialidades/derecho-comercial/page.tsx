@@ -5,20 +5,21 @@ const canonicalUrl = "https://pravice.co/especialidades/derecho-comercial";
 
 export const metadata: Metadata = {
   title:
-    "Derecho comercial en Colombia | Información legal empresarial y contratos comerciales",
+    "Gestión Comercial Empresarial en Colombia | Riesgos Comerciales y Cumplimiento Empresarial",
 
   description:
-    "Conoce aspectos clave del derecho comercial en Colombia, contratos empresariales, cumplimiento normativo y estructuras jurídicas para empresas.",
+    "Guía sobre gestión comercial empresarial, relaciones con clientes y proveedores, riesgos comerciales y cumplimiento empresarial en Colombia.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Derecho comercial en Colombia | Información empresarial y jurídica",
+    title:
+      "Gestión Comercial Empresarial en Colombia | Operaciones y Riesgos Comerciales",
 
     description:
-      "Información sobre contratos comerciales, cumplimiento corporativo y aspectos legales empresariales en Colombia.",
+      "Conoce cómo fortalecer la gestión comercial, prevenir conflictos empresariales y mejorar relaciones comerciales en Colombia.",
 
     url: canonicalUrl,
     siteName: "Pravice",
@@ -45,10 +46,11 @@ const schemaData = {
   "@context": "https://schema.org",
   "@type": "Article",
 
-  headline: "Derecho comercial en Colombia y aspectos legales empresariales",
+  headline:
+    "Gestión Comercial Empresarial y Prevención de Riesgos Comerciales en Colombia",
 
   description:
-    "Información sobre derecho comercial en Colombia, contratos empresariales, cumplimiento normativo y prevención de riesgos corporativos.",
+    "Información sobre operaciones comerciales, gestión empresarial, cumplimiento corporativo y prevención de riesgos comerciales en Colombia.",
 
   author: {
     "@type": "Organization",

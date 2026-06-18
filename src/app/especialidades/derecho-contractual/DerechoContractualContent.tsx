@@ -18,9 +18,9 @@ export default function DerechoContractualContent() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LegalService",
-    name: "Derecho contractual y contratos empresariales en Colombia",
+    name: "Gestión Contractual y Contratos Empresariales en Colombia",
     description:
-      "Asesoría en contratos empresariales, revisión contractual y negociación de acuerdos comerciales en Colombia.",
+      "Información sobre gestión contractual, negociación de contratos, acuerdos comerciales y prevención de riesgos contractuales para empresas.",
     areaServed: "Colombia",
     provider: {
       "@type": "Organization",
@@ -48,17 +48,18 @@ export default function DerechoContractualContent() {
       >
         <div className={styles.heroContent}>
           <span className={styles.badge}>
-            Contratos empresariales en Colombia
+            Gestión contractual y acuerdos comerciales
           </span>
 
           <h1 className={styles.title}>
-            Derecho contractual en Colombia para empresas y negocios
+            Contratos Empresariales en Colombia: Gestión Contractual y
+            Prevención de Riesgos Comerciales
           </h1>
 
           <p className={styles.description}>
-            Asesoramos empresas y profesionales en elaboración, revisión,
-            negociación y análisis de contratos comerciales en Colombia,
-            ayudando a prevenir riesgos jurídicos y conflictos contractuales.
+            Conoce cómo una adecuada gestión contractual ayuda a las empresas en
+            Colombia a fortalecer relaciones con proveedores, clientes y aliados
+            comerciales, reduciendo riesgos e incumplimientos contractuales.
           </p>
 
           <div className={styles.actions}>
@@ -114,8 +115,8 @@ export default function DerechoContractualContent() {
           variants={fadeUp}
         >
           <h2 className={styles.subtitle}>
-            ¿Qué es el derecho contractual y por qué es importante para las
-            empresas?
+            ¿Por qué la gestión contractual es clave para las empresas en
+            Colombia?
           </h2>
 
           <p className={styles.text}>
@@ -152,7 +153,7 @@ export default function DerechoContractualContent() {
           variants={fadeUp}
         >
           <h2 className={styles.subtitle}>
-            Servicios relacionados con derecho contractual en Colombia
+            Aspectos fundamentales de la gestión contractual empresarial
           </h2>
 
           <div className={styles.grid}>
@@ -209,7 +210,7 @@ export default function DerechoContractualContent() {
           variants={fadeUp}
         >
           <h2 className={styles.subtitle}>
-            Beneficios de contar con contratos empresariales bien estructurados
+            Beneficios de una adecuada gestión de contratos empresariales
           </h2>
 
           <div className={styles.infoGrid}>
@@ -256,7 +257,7 @@ export default function DerechoContractualContent() {
           variants={fadeUp}
         >
           <h2 className={styles.subtitle}>
-            Riesgos frecuentes en contratos comerciales en Colombia
+            Errores frecuentes en contratos empresariales y cómo prevenirlos
           </h2>
 
           <p className={styles.text}>
@@ -294,7 +295,7 @@ export default function DerechoContractualContent() {
           variants={fadeUp}
         >
           <h2 className={styles.subtitle}>
-            Ventajas de recibir asesoría en derecho contractual
+            Ventajas de fortalecer la gestión contractual de una empresa
           </h2>
 
           <div className={styles.benefits}>
@@ -338,6 +339,31 @@ export default function DerechoContractualContent() {
           </p>
         </motion.section>
 
+        <motion.section
+          className={styles.section}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
+          <h2 className={styles.subtitle}>
+            Incumplimiento de contratos comerciales en Colombia
+          </h2>
+
+          <p className={styles.text}>
+            Uno de los riesgos más frecuentes para las empresas es el
+            incumplimiento de contratos por parte de proveedores, clientes o
+            aliados estratégicos.
+          </p>
+
+          <p className={styles.text}>
+            Una adecuada gestión contractual permite establecer obligaciones
+            claras, mecanismos de seguimiento y procedimientos para resolver
+            controversias antes de que se conviertan en conflictos empresariales
+            mayores.
+          </p>
+        </motion.section>
+
         {/* CTA */}
 
         <motion.section
@@ -350,7 +376,7 @@ export default function DerechoContractualContent() {
         >
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              ¿Necesitas revisar o elaborar un contrato en Colombia?
+              Fortalece la gestión contractual de tu empresa
             </h2>
 
             <p className={styles.ctaText}>
