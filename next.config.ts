@@ -63,7 +63,7 @@ const nextConfig: NextConfig = {
         has: [
           {
             type: "host",
-            value: "www.pravice.co",
+            value: "pravice.co",
           },
         ],
         destination: "https://pravice.co/:path*",
@@ -117,6 +117,29 @@ const nextConfig: NextConfig = {
       {
         source: "/index.php/:path*",
         destination: "/:path*",
+        permanent: true,
+      },
+      {
+        source: "/faq/",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source:
+          "/noticias-juridicas/corte-suprema-reconoce-que-una-persona-puede-construir-patrimonio-con-su-pareja-aunque-siga-casada-con-otra/",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source:
+          "/https://pravice.co/noticias-juridicas/la-clausula-de-retroventa-y-el-tema-de-la-garantia/",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source:
+          "/puede-exigirse-a-un-abogado-que-entregue-un-paz-y-salvo-al-finalizar-su-gestion-esto-respondio-la-comision-de-disciplina-judicial/",
+        destination: "/blog",
         permanent: true,
       },
     ];
