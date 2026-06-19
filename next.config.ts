@@ -58,17 +58,20 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return [
+      // www → dominio principal
       {
         source: "/:path*",
         has: [
           {
             type: "host",
-            value: "pravice.co",
+            value: "www.pravice.co",
           },
         ],
         destination: "https://pravice.co/:path*",
         permanent: true,
       },
+
+      // URLs antiguas de WordPress
       {
         source: "/noticias-juridicas/:slug*",
         destination: "/blog/:slug*",
@@ -80,7 +83,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/category/noticias-juridicas/",
+        source: "/category/noticias-juridicas/:slug*",
         destination: "/blog",
         permanent: true,
       },
@@ -99,46 +102,56 @@ const nextConfig: NextConfig = {
         destination: "/blog",
         permanent: true,
       },
+
+      // Landings antiguas
       {
-        source: "/landing/",
+        source: "/landing",
         destination: "/",
         permanent: true,
       },
       {
-        source: "/landing-2/",
+        source: "/landing-2",
         destination: "/",
         permanent: true,
       },
+
+      // Política de datos
       {
-        source: "/politica-de-tratamiento-y-proteccion-de-datos-personales/",
+        source: "/politica-de-tratamiento-y-proteccion-de-datos-personales",
         destination: "/politica-privacidad",
         permanent: true,
       },
+
+      // URLs index.php
       {
         source: "/index.php/:path*",
         destination: "/:path*",
         permanent: true,
       },
+
+      // FAQ antigua
       {
-        source: "/faq/",
+        source: "/faq",
+        destination: "/blog",
+        permanent: true,
+      },
+
+      // Artículos eliminados
+      {
+        source:
+          "/noticias-juridicas/corte-suprema-reconoce-que-una-persona-puede-construir-patrimonio-con-su-pareja-aunque-siga-casada-con-otra",
         destination: "/blog",
         permanent: true,
       },
       {
         source:
-          "/noticias-juridicas/corte-suprema-reconoce-que-una-persona-puede-construir-patrimonio-con-su-pareja-aunque-siga-casada-con-otra/",
+          "/noticias-juridicas/la-clausula-de-retroventa-y-el-tema-de-la-garantia",
         destination: "/blog",
         permanent: true,
       },
       {
         source:
-          "/https://pravice.co/noticias-juridicas/la-clausula-de-retroventa-y-el-tema-de-la-garantia/",
-        destination: "/blog",
-        permanent: true,
-      },
-      {
-        source:
-          "/puede-exigirse-a-un-abogado-que-entregue-un-paz-y-salvo-al-finalizar-su-gestion-esto-respondio-la-comision-de-disciplina-judicial/",
+          "/puede-exigirse-a-un-abogado-que-entregue-un-paz-y-salvo-al-finalizar-su-gestion-esto-respondio-la-comision-de-disciplina-judicial",
         destination: "/blog",
         permanent: true,
       },
