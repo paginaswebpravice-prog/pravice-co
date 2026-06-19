@@ -41,18 +41,19 @@ export default function CumplimientoNormativoContent() {
 
       <motion.section variants={fadeUp} className={styles.hero}>
         <div className={styles.heroContent}>
-          <span className={styles.badge}>Compliance laboral en Colombia</span>
+          <span className={styles.badge}>
+            Compliance empresarial y gestión de riesgos laborales
+          </span>
 
           <h1 className={styles.title}>
-            Cumplimiento normativo laboral en Bogotá: evita sanciones y riesgos
-            legales en tu empresa
+            Cumplimiento normativo laboral en Colombia: guía para prevenir
+            multas, demandas y riesgos empresariales
           </h1>
 
           <p className={styles.description}>
-            Implementa estrategias de compliance laboral y cumplimiento
-            normativo empresarial en Bogotá y Colombia para prevenir demandas,
-            multas, conflictos laborales y riesgos jurídicos dentro de tu
-            organización.
+            Descubre cómo implementar programas de compliance laboral,
+            auditorías internas y controles empresariales para prevenir
+            sanciones, demandas laborales y contingencias jurídicas en Colombia.
           </p>
 
           <div className={styles.actions}>
@@ -79,8 +80,8 @@ export default function CumplimientoNormativoContent() {
 
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Qué es el cumplimiento normativo laboral y por qué es importante en
-            Colombia?
+            ¿Qué es el compliance laboral y cómo ayuda a prevenir sanciones
+            empresariales?
           </h2>
 
           <p className={styles.text}>
@@ -107,7 +108,7 @@ export default function CumplimientoNormativoContent() {
 
         <motion.section variants={fadeUp} className={styles.portalSeo}>
           <h2 className={styles.subtitle}>
-            Relación entre compliance laboral y derecho del trabajo en Colombia
+            Cómo el cumplimiento normativo ayuda a evitar conflictos laborales
           </h2>
 
           <p>
@@ -137,7 +138,8 @@ export default function CumplimientoNormativoContent() {
 
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Elementos clave del compliance laboral para empresas en Colombia
+            Aspectos que debe revisar un programa de compliance laboral
+            empresarial
           </h2>
 
           <div className={styles.grid}>
@@ -179,7 +181,7 @@ export default function CumplimientoNormativoContent() {
 
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Beneficios del cumplimiento laboral empresarial en Bogotá y Colombia
+            Beneficios de implementar compliance laboral en empresas colombianas
           </h2>
 
           <div className={styles.infoGrid}>
@@ -219,7 +221,8 @@ export default function CumplimientoNormativoContent() {
 
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Riesgos de incumplir normas laborales en Colombia
+            Consecuencias del incumplimiento laboral: multas, demandas y
+            sanciones
           </h2>
 
           <p className={styles.text}>
@@ -244,7 +247,8 @@ export default function CumplimientoNormativoContent() {
 
         <motion.section variants={fadeUp} className={styles.section}>
           <h2 className={styles.subtitle}>
-            Ventajas del compliance laboral empresarial
+            ¿Por qué las empresas están fortaleciendo sus programas de
+            compliance laboral?
           </h2>
 
           <div className={styles.benefits}>
@@ -274,7 +278,8 @@ export default function CumplimientoNormativoContent() {
         <motion.section id="contacto" variants={fadeUp} className={styles.cta}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Fortalece el cumplimiento laboral de tu empresa hoy
+              Evalúa los riesgos laborales de tu empresa antes de que generen
+              sanciones
             </h2>
 
             <p className={styles.ctaText}>

@@ -5,10 +5,10 @@ const canonicalUrl = "https://pravice.co/especialidades/cumplimiento-normativo";
 
 export const metadata: Metadata = {
   title:
-    "Cumplimiento normativo laboral en Bogotá | Compliance empresarial en Colombia",
+    "Compliance laboral en Colombia | Cumplimiento normativo y prevención de riesgos empresariales",
 
   description:
-    "Compliance laboral y cumplimiento normativo empresarial en Bogotá y Colombia para prevenir sanciones, demandas laborales y riesgos jurídicos.",
+    "Implementa compliance laboral y cumplimiento normativo en Colombia. Conoce cómo prevenir sanciones, reducir riesgos laborales y fortalecer la gestión empresarial.",
 
   alternates: {
     canonical: canonicalUrl,
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Cumplimiento normativo laboral en Colombia | Compliance empresarial",
+      "Compliance laboral en Colombia | Cómo prevenir sanciones y riesgos empresariales",
 
     description:
       "Implementa compliance laboral y cumplimiento normativo empresarial para prevenir sanciones y riesgos legales en Colombia.",
@@ -46,7 +46,7 @@ const schemaData = {
   "@context": "https://schema.org",
   "@type": "LegalService",
 
-  name: "Cumplimiento normativo laboral en Colombia",
+  name: "Compliance laboral y cumplimiento normativo empresarial en Colombia",
 
   description:
     "Compliance laboral y cumplimiento normativo empresarial para prevenir sanciones, demandas y riesgos jurídicos laborales en Colombia.",
