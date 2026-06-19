@@ -19,37 +19,40 @@ const nextConfig: NextConfig = {
           {
             key: "Content-Security-Policy",
             value: `
-    default-src 'self';
-    script-src 'self' 'unsafe-inline'
-      https://maps.googleapis.com
-      https://maps.gstatic.com
-      https://www.youtube.com
-      https://www.youtube-nocookie.com
-      https://www.googletagmanager.com;
-      
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+              default-src 'self';
+              
+              script-src 'self' 'unsafe-inline'
+                https://maps.googleapis.com
+                https://maps.gstatic.com
+                https://www.youtube.com
+                https://www.youtube-nocookie.com
+                https://www.googletagmanager.com;
+              
+              style-src 'self' 'unsafe-inline'
+                https://fonts.googleapis.com;
 
-    img-src 'self' data:
-      https://maps.googleapis.com
-      https://maps.gstatic.com
-      https:
-      https://i.ytimg.com;
+              img-src 'self' data:
+                https://maps.googleapis.com
+                https://maps.gstatic.com
+                https:
+                https://i.ytimg.com;
 
-    font-src 'self' https://fonts.gstatic.com;
+              font-src 'self'
+                https://fonts.gstatic.com;
 
-    connect-src 'self'
-      https://maps.googleapis.com
-      https://script.google.com
-      https://script.googleusercontent.com
-      https://www.google-analytics.com
-      https://www.googletagmanager.com;
+              connect-src 'self'
+                https://maps.googleapis.com
+                https://script.google.com
+                https://script.googleusercontent.com
+                https://www.google-analytics.com
+                https://www.googletagmanager.com;
 
-    frame-src
-      https://www.google.com
-      https://maps.google.com
-      https://www.youtube.com
-      https://www.youtube-nocookie.com;
-  `.replace(/\n/g, ""),
+              frame-src
+                https://www.google.com
+                https://maps.google.com
+                https://www.youtube.com
+                https://www.youtube-nocookie.com;
+            `.replace(/\n/g, ""),
           },
         ],
       },
@@ -58,20 +61,6 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return [
-      // www → dominio principal
-      {
-        source: "/:path*",
-        has: [
-          {
-            type: "host",
-            value: "www.pravice.co",
-          },
-        ],
-        destination: "https://pravice.co/:path*",
-        permanent: true,
-      },
-
-      // URLs antiguas de WordPress
       {
         source: "/noticias-juridicas/:slug*",
         destination: "/blog/:slug*",
@@ -102,8 +91,6 @@ const nextConfig: NextConfig = {
         destination: "/blog",
         permanent: true,
       },
-
-      // Landings antiguas
       {
         source: "/landing",
         destination: "/",
@@ -114,29 +101,21 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
-
-      // Política de datos
       {
         source: "/politica-de-tratamiento-y-proteccion-de-datos-personales",
         destination: "/politica-privacidad",
         permanent: true,
       },
-
-      // URLs index.php
       {
         source: "/index.php/:path*",
         destination: "/:path*",
         permanent: true,
       },
-
-      // FAQ antigua
       {
         source: "/faq",
         destination: "/blog",
         permanent: true,
       },
-
-      // Artículos eliminados
       {
         source:
           "/noticias-juridicas/corte-suprema-reconoce-que-una-persona-puede-construir-patrimonio-con-su-pareja-aunque-siga-casada-con-otra",
