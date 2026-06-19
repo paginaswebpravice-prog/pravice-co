@@ -8,14 +8,19 @@ import { motion } from "framer-motion";
 export default function Hero() {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "LegalService",
+
     name: "Pravice",
+
     description:
-      "Plataforma y equipo jurídico de apoyo orientado al acompañamiento legal y gestión de servicios jurídicos en Colombia.",
+      "Firma jurídica y plataforma empresarial en Colombia especializada en derecho corporativo, cumplimiento normativo, contratos empresariales, recuperación de cartera y gestión legal preventiva.",
+
     areaServed: {
       "@type": "Country",
       name: "Colombia",
     },
+
+    url: "https://pravice.co",
   };
 
   return (
@@ -30,7 +35,7 @@ export default function Hero() {
       <section
         className={styles.hero}
         id="hero"
-        aria-label="Pravice plataforma jurídica en Colombia"
+        aria-label="Firma jurídica empresarial en Colombia"
       >
         <div className={styles.overlay}></div>
 
@@ -40,13 +45,23 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
         >
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4 }}
+            className={styles.badge}
+          >
+            Soluciones jurídicas para empresas en Colombia
+          </motion.span>
+
           <motion.h1
             className={styles.title}
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            Acompañamiento jurídico y gestión legal en Colombia
+            Firma jurídica para empresas en Colombia: derecho corporativo,
+            cumplimiento normativo y gestión legal empresarial
           </motion.h1>
 
           <motion.p
@@ -55,9 +70,10 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
-            En Pravice impulsamos soluciones de apoyo jurídico, seguimiento de
-            procesos y acompañamiento profesional para personas y empresas en
-            Colombia mediante herramientas legales y atención especializada.
+            En Pravice acompañamos empresas en Colombia mediante soluciones de
+            derecho corporativo, cumplimiento normativo, gestión contractual,
+            recuperación de cartera y fortalecimiento de procesos jurídicos
+            empresariales orientados a la prevención de riesgos legales.
           </motion.p>
 
           <motion.p
@@ -66,15 +82,17 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.6 }}
           >
-            Conoce también nuestra{" "}
+            Pravice hace parte de un ecosistema jurídico empresarial
+            complementado por nuestra{" "}
             <a
               href="https://abogadosespecialistas.com.co/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              firma jurídica de referencia
-            </a>{" "}
-            y el equipo profesional que integra nuestra red de apoyo legal.
+              firma jurídica aliada
+            </a>
+            , especializada en litigios, representación judicial y servicios
+            legales especializados en Colombia.
           </motion.p>
 
           <motion.div
@@ -119,9 +137,13 @@ export default function Hero() {
         </motion.div>
 
         <p className={styles.seoText}>
-          Pravice es una plataforma de apoyo y acompañamiento jurídico en
-          Colombia orientada a la gestión legal, seguimiento de procesos y
-          atención profesional para personas y empresas.
+          Pravice es una firma jurídica empresarial en Colombia enfocada en
+          derecho corporativo, cumplimiento normativo, contratos empresariales,
+          recuperación de cartera, derecho societario, derecho comercial,
+          gestión legal preventiva y fortalecimiento de procesos jurídicos para
+          empresas. Nuestro objetivo es ayudar a las organizaciones a reducir
+          riesgos legales, mejorar el cumplimiento normativo y fortalecer su
+          estructura jurídica para crecer con mayor seguridad.
         </p>
       </section>
     </>

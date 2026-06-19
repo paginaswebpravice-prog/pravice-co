@@ -12,7 +12,7 @@ export default function About() {
     url: "https://pravice.co",
     foundingDate: "1998",
     description:
-      "Plataforma y equipo jurídico orientado al acompañamiento legal y gestión de servicios jurídicos en Colombia.",
+      "Plataforma jurídica y corporativa en Colombia especializada en acompañamiento legal empresarial, gestión jurídica y soporte para organizaciones.",
   };
 
   return (
@@ -27,7 +27,7 @@ export default function About() {
       <section
         className={styles.section}
         id="about"
-        aria-label="Pravice plataforma jurídica en Colombia"
+        aria-label="Pravice plataforma jurídica empresarial en Colombia"
       >
         <div className={styles.container}>
           <header>
@@ -38,8 +38,8 @@ export default function About() {
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              Acompañamiento jurídico y gestión legal con
-              <span> visión estratégica y enfoque corporativo</span>
+              Plataforma jurídica para empresas en Colombia con
+              <span> más de 25 años de experiencia</span>
             </motion.h2>
           </header>
 
@@ -50,10 +50,10 @@ export default function About() {
             transition={{ delay: 0.2, duration: 0.7 }}
             viewport={{ once: true }}
           >
-            Desde 1998, Pravice desarrolla soluciones orientadas al
-            acompañamiento jurídico, seguimiento de procesos y apoyo legal para
-            empresas y personas en Colombia, integrando experiencia profesional,
-            atención personalizada y herramientas de gestión legal.
+            Desde 1998, Pravice acompaña a empresas y organizaciones mediante
+            soluciones jurídicas, herramientas de gestión legal, seguimiento de
+            procesos y orientación especializada en distintas áreas del derecho
+            empresarial en Colombia.
           </motion.p>
 
           <motion.p
@@ -63,19 +63,19 @@ export default function About() {
             transition={{ delay: 0.4, duration: 0.7 }}
             viewport={{ once: true }}
           >
-            Nuestro enfoque combina organización jurídica, acompañamiento
-            estratégico y atención profesional en diferentes áreas legales,
-            facilitando procesos de gestión, orientación y soporte corporativo.
-            Además, contamos con una{" "}
+            Nuestro enfoque combina tecnología, organización jurídica y
+            acompañamiento estratégico para ayudar a empresas a gestionar
+            riesgos legales, fortalecer procesos internos y mejorar la toma de
+            decisiones corporativas. Además, contamos con una{" "}
             <a
               href="https://abogadosespecialistas.com.co/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              firma jurídica de referencia
+              firma jurídica especializada
             </a>{" "}
-            que integra parte del equipo profesional y áreas de práctica
-            relacionadas.
+            que presta servicios de representación judicial y asesoría legal en
+            áreas específicas del derecho colombiano.
           </motion.p>
 
           <div className={styles.cards}>
@@ -87,11 +87,12 @@ export default function About() {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h3>Acompañamiento profesional</h3>
+              <h3>Gestión jurídica empresarial</h3>
 
               <p>
-                Impulsamos procesos de apoyo jurídico y atención profesional con
-                un enfoque cercano, estratégico y orientado a soluciones.
+                Facilitamos procesos de organización legal, seguimiento de
+                asuntos corporativos y administración documental para empresas
+                en Colombia.
               </p>
             </motion.article>
 
@@ -103,12 +104,12 @@ export default function About() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h3>Gestión y seguimiento legal</h3>
+              <h3>Acompañamiento legal estratégico</h3>
 
               <p>
-                Facilitamos herramientas y procesos orientados a la
-                organización, seguimiento y acompañamiento de asuntos jurídicos
-                y corporativos.
+                Apoyamos la toma de decisiones mediante orientación jurídica,
+                análisis preventivo de riesgos y soporte profesional para
+                organizaciones.
               </p>
             </motion.article>
 
@@ -120,11 +121,12 @@ export default function About() {
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              <h3>Soporte jurídico corporativo</h3>
+              <h3>Tecnología aplicada al derecho</h3>
 
               <p>
-                Trabajamos con una visión preventiva y estratégica para apoyar
-                procesos legales, comerciales y organizacionales en Colombia.
+                Integramos herramientas digitales para mejorar el seguimiento de
+                procesos, la gestión documental y la comunicación jurídica con
+                nuestros clientes.
               </p>
             </motion.article>
           </div>
@@ -136,10 +138,13 @@ export default function About() {
             transition={{ delay: 0.6, duration: 0.7 }}
             viewport={{ once: true }}
           >
-            Pravice es una plataforma orientada al acompañamiento jurídico,
-            gestión legal y soporte corporativo en Colombia, integrando atención
-            profesional, seguimiento de procesos y herramientas de apoyo legal
-            para personas y empresas.
+            Pravice es una plataforma jurídica empresarial en Colombia enfocada
+            en gestión legal, tecnología aplicada al derecho, seguimiento de
+            procesos, cumplimiento normativo y apoyo corporativo para empresas.
+            Nuestro objetivo es facilitar el acceso a herramientas jurídicas,
+            información especializada y acompañamiento profesional para
+            organizaciones que buscan fortalecer su seguridad jurídica y
+            optimizar sus procesos legales.
           </motion.p>
         </div>
       </section>

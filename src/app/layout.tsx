@@ -19,12 +19,13 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://pravice.co"),
 
   title: {
-    default: "Pravice Abogados | Equipo jurídico y soluciones legales",
-    template: "%s | Pravice Abogados",
+    default:
+      "Pravice | Soluciones jurídicas empresariales y gestión legal en Colombia",
+    template: "%s | Pravice",
   },
 
   description:
-    "Pravice Abogados es una firma jurídica en Colombia enfocada en acompañamiento legal, soluciones corporativas y orientación jurídica para empresas y personas.",
+    "Pravice acompaña empresas en Colombia con soluciones jurídicas, cumplimiento normativo, gestión de riesgos legales, contratación, recuperación de cartera y derecho corporativo.",
 
   keywords: [
     "Pravice Abogados",
