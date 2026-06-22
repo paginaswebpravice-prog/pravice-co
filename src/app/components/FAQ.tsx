@@ -5,34 +5,55 @@ import { motion } from "framer-motion";
 
 const faqs = [
   {
-    question: "¿Cuánto tiempo dura un proceso legal en Colombia?",
+    question:
+      "¿Cómo solicitar una consulta jurídica para empresas en Colombia?",
     answer:
-      "La duración de un proceso legal depende del tipo de caso, la complejidad del conflicto y la carga de trabajo de los juzgados. En Pravice Abogados analizamos cada situación y te informamos desde el inicio los tiempos estimados del proceso.",
+      "Puedes contactar a Pravice para exponer tu situación jurídica. Nuestro equipo realiza una evaluación inicial, revisa la información disponible y orienta sobre las alternativas de acompañamiento legal para empresas y organizaciones en Colombia.",
   },
+
   {
-    question: "¿Puedo cambiar de abogado y trasladar mi caso?",
+    question: "¿Cuánto tiempo puede durar un proceso legal en Colombia?",
     answer:
-      "Sí. Es posible trasladar tu proceso legal a otro abogado. Nuestro equipo revisa tu expediente, analiza el estado del caso y te orienta sobre cómo continuar el proceso de la forma más conveniente.",
+      "Los tiempos varían según el tipo de proceso, la complejidad del caso y la entidad o autoridad competente. En Pravice realizamos seguimiento permanente y mantenemos informados a nuestros clientes sobre el avance de cada actuación jurídica.",
   },
+
   {
-    question: "¿Cuánto cuesta una asesoría con un abogado?",
+    question:
+      "¿Puedo recibir asesoría jurídica si me encuentro fuera de Bogotá?",
     answer:
-      "El costo de una asesoría legal depende del tipo de consulta y la complejidad del caso. En Pravice Abogados ofrecemos evaluaciones personalizadas para brindarte una propuesta clara y transparente.",
+      "Sí. Atendemos clientes en Bogotá, Medellín, Cali, Barranquilla y otras ciudades de Colombia mediante herramientas digitales, reuniones virtuales y canales de comunicación remota.",
   },
+
   {
-    question: "¿Pravice Abogados trabaja con clientes fuera de Bogotá?",
+    question: "¿Qué documentos necesito para iniciar una consulta legal?",
     answer:
-      "Sí. Atendemos clientes en todo Colombia. Gracias a herramientas digitales y atención remota podemos asesorar empresas y personas sin importar su ubicación.",
+      "Los documentos dependen de cada situación. Generalmente se recomienda reunir contratos, comunicaciones, certificados, facturas o cualquier soporte relacionado con el caso para facilitar el análisis jurídico inicial.",
   },
+
   {
-    question: "¿Ofrecen acompañamiento durante todo el proceso legal?",
+    question: "¿Pravice realiza seguimiento de procesos legales?",
     answer:
-      "Sí. Nuestro equipo brinda acompañamiento completo desde la asesoría inicial, el análisis del caso, la estrategia jurídica y la gestión del proceso hasta su resolución.",
+      "Sí. Contamos con herramientas tecnológicas y procesos internos que permiten realizar seguimiento de actuaciones, gestión documental y acompañamiento jurídico continuo durante el desarrollo del caso.",
   },
+
   {
-    question: "¿Qué necesito para iniciar un proceso legal?",
+    question:
+      "¿Las empresas pueden contratar acompañamiento jurídico permanente?",
     answer:
-      "Para empezar solo necesitas contarnos tu situación. Analizaremos tu caso, revisaremos los documentos disponibles y definiremos la estrategia legal más adecuada.",
+      "Sí. Muchas organizaciones requieren apoyo legal continuo para revisar contratos, gestionar riesgos jurídicos, fortalecer el cumplimiento normativo y acompañar decisiones empresariales estratégicas.",
+  },
+
+  {
+    question: "¿Qué beneficios ofrece Legal App Pravice?",
+    answer:
+      "Legal App Pravice permite consultar información relacionada con procesos, acceder a documentos autorizados, recibir notificaciones y mantener comunicación con el equipo jurídico desde cualquier lugar de Colombia.",
+  },
+
+  {
+    question:
+      "¿Pravice presta servicios de acompañamiento jurídico corporativo?",
+    answer:
+      "Sí. Trabajamos con empresas de distintos sectores económicos brindando apoyo en gestión legal, seguimiento de asuntos corporativos, organización documental y acompañamiento jurídico estratégico.",
   },
 ];
 
@@ -67,7 +88,8 @@ export default function FAQ() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Preguntas frecuentes sobre <span>servicios legales</span>
+            Preguntas frecuentes sobre{" "}
+            <span>acompañamiento jurídico en Colombia</span>
           </motion.h2>
 
           <motion.p
@@ -77,8 +99,9 @@ export default function FAQ() {
             transition={{ delay: 0.2, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Respondemos algunas de las preguntas más comunes sobre asesoría
-            jurídica, procesos legales y servicios de abogados en Colombia.
+            Resolvemos dudas frecuentes sobre procesos legales, gestión
+            jurídica, seguimiento de casos, consultoría empresarial, Legal App
+            Pravice y acompañamiento legal para empresas y personas en Colombia.
           </motion.p>
         </header>
 

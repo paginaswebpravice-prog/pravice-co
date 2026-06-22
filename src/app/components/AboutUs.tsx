@@ -37,7 +37,7 @@ export default function AboutUs() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Quiénes somos
+            Equipo jurídico y acompañamiento legal en Colombia
           </motion.h2>
 
           <motion.p
@@ -47,10 +47,10 @@ export default function AboutUs() {
             transition={{ delay: 0.2, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <strong>Pravice</strong> es una plataforma de acompañamiento
-            jurídico y apoyo legal en Colombia orientada a empresas y personas
-            que requieren orientación estratégica en diferentes áreas del
-            derecho.
+            <strong>Pravice</strong> es una firma jurídica y plataforma de
+            acompañamiento legal en Colombia orientada a empresas, emprendedores
+            y personas que requieren consultoría jurídica, orientación
+            estratégica y apoyo profesional en diferentes áreas del derecho.
           </motion.p>
 
           <motion.p
@@ -60,9 +60,10 @@ export default function AboutUs() {
             transition={{ delay: 0.35, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Trabajamos de forma complementaria con abogados y especialistas
-            aliados, facilitando procesos de orientación jurídica, gestión
-            documental y acompañamiento legal en distintas áreas de práctica.
+            Nuestro equipo trabaja junto a abogados y profesionales aliados para
+            facilitar procesos de consultoría legal, gestión documental,
+            cumplimiento normativo y acompañamiento jurídico empresarial y
+            particular.
           </motion.p>
 
           {/* BACKLINK SEO */}
@@ -75,8 +76,9 @@ export default function AboutUs() {
             viewport={{ once: true }}
           >
             <p>
-              Conoce más sobre nuestra red de abogados especialistas,
-              experiencia jurídica y áreas de práctica en:
+              Si deseas conocer más sobre nuestros abogados especialistas,
+              representación judicial y áreas jurídicas específicas, puedes
+              visitar:
             </p>
 
             <Link
@@ -96,7 +98,8 @@ export default function AboutUs() {
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 200 }}
           >
-            <FontAwesomeIcon icon={faScaleBalanced} /> Conoce nuestros abogados
+            <FontAwesomeIcon icon={faScaleBalanced} /> Ver abogados y
+            profesionales aliados
           </motion.a>
 
           <ul className={styles.list}>
@@ -106,8 +109,8 @@ export default function AboutUs() {
               transition={{ delay: 0.4 }}
               viewport={{ once: true }}
             >
-              Orientación y acompañamiento jurídico para empresas y personas en
-              Colombia.
+              Consultoría jurídica y acompañamiento legal para empresas y
+              personas en Colombia.
             </motion.li>
 
             <motion.li
@@ -116,7 +119,8 @@ export default function AboutUs() {
               transition={{ delay: 0.5 }}
               viewport={{ once: true }}
             >
-              Integración de soluciones digitales y apoyo legal estratégico.
+              Herramientas digitales para seguimiento de procesos y gestión
+              legal.
             </motion.li>
 
             <motion.li
@@ -125,8 +129,8 @@ export default function AboutUs() {
               transition={{ delay: 0.6 }}
               viewport={{ once: true }}
             >
-              Trabajo conjunto con abogados y especialistas en distintas áreas
-              del derecho.
+              Red de abogados especializados en derecho corporativo, comercial,
+              contractual, laboral y otras áreas jurídicas.
             </motion.li>
           </ul>
         </div>
@@ -142,7 +146,7 @@ export default function AboutUs() {
           >
             <Image
               src="/foto-grupal.jpg"
-              alt="Equipo jurídico y abogados aliados de Pravice en Colombia"
+              alt="Equipo jurídico de Pravice y profesionales aliados en Colombia"
               fill
               className={styles.image}
             />
@@ -156,13 +160,26 @@ export default function AboutUs() {
             viewport={{ once: true }}
           >
             <p>
-              "Pravice nos permitió acceder a orientación jurídica y
-              acompañamiento estratégico de forma clara y organizada."
+              "Pravice nos ayudó a organizar nuestros procesos legales y contar
+              con acompañamiento jurídico oportuno para la toma de decisiones
+              empresariales."
             </p>
 
             <span>— Cliente corporativo</span>
           </motion.div>
         </div>
+        <motion.p
+          className={styles.description}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.7 }}
+          viewport={{ once: true }}
+        >
+          Con más de 25 años de trayectoria, Pravice participa en procesos de
+          consultoría legal, acompañamiento jurídico empresarial, cumplimiento
+          normativo, derecho corporativo, derecho comercial y gestión
+          estratégica para organizaciones en Colombia.
+        </motion.p>
       </div>
     </section>
   );

@@ -63,3 +63,21 @@
   color: #000;
   opacity: 0.7;
 }
+
+.seoContent {
+  max-width: 900px;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+.seoContent h3 {
+  font-size: 24px;
+  color: #004a80;
+  margin-bottom: 15px;
+}
+
+.seoContent p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 16px;
+}

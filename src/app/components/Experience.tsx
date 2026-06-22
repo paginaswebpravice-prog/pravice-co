@@ -2,7 +2,6 @@
 
 import styles from "../styles/Experience.module.css";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 export default function Experience() {
   const stats = [
@@ -25,8 +24,7 @@ export default function Experience() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Más de 25 años de trayectoria
-          <span> acompañando empresas y personas en Colombia</span>
+          Firma jurídica con más de 25 años de experiencia en Colombia
         </motion.h2>
 
         <motion.p
@@ -36,9 +34,9 @@ export default function Experience() {
           transition={{ delay: 0.2 }}
           viewport={{ once: true }}
         >
-          En <strong>Pravice Abogados</strong> contamos con experiencia en
-          acompañamiento jurídico corporativo y consultoría legal para empresas
-          y personas en distintas áreas del derecho y escenarios empresariales.
+          En Pravice acompañamos empresas, emprendedores y personas mediante
+          consultoría legal, acompañamiento jurídico corporativo y gestión de
+          riesgos legales en Colombia, con más de 25 años de experiencia.
         </motion.p>
 
         {/* STATS */}
@@ -66,18 +64,18 @@ export default function Experience() {
         <div className={styles.cards}>
           {[
             {
-              title: "Acompañamiento corporativo",
-              text: "Experiencia en consultoría y acompañamiento jurídico para empresas y organizaciones en Colombia.",
+              title: "Asesoría jurídica para empresas",
+              text: "Apoyamos empresas en procesos de consultoría legal, cumplimiento normativo, contratación y toma de decisiones jurídicas estratégicas.",
             },
 
             {
-              title: "Cobertura nacional",
-              text: "Atención jurídica presencial y virtual para clientes en distintas ciudades del país.",
+              title: "Atención jurídica en toda Colombia",
+              text: "Prestamos acompañamiento legal para empresas y personas en Bogotá, Medellín, Cali, Barranquilla y demás ciudades del país.",
             },
 
             {
-              title: "Seguimiento estratégico",
-              text: "Procesos orientados al análisis, prevención y acompañamiento legal continuo.",
+              title: "Prevención y gestión de riesgos legales",
+              text: "Ayudamos a identificar riesgos jurídicos, contractuales, laborales y corporativos antes de que se conviertan en conflictos o contingencias para la organización.",
             },
           ].map((card, index) => (
             <motion.div
@@ -95,6 +93,25 @@ export default function Experience() {
             </motion.div>
           ))}
         </div>
+        <motion.p
+          className={styles.subtitle}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          viewport={{ once: true }}
+          style={{
+            marginTop: "40px",
+            maxWidth: "950px",
+            marginInline: "auto",
+            textAlign: "center",
+          }}
+        >
+          Pravice es una firma jurídica en Colombia con experiencia en derecho
+          corporativo, derecho comercial, derecho contractual, cumplimiento
+          normativo, recuperación de cartera y asesoría legal empresarial.
+          Nuestro enfoque está orientado a la prevención de riesgos y al
+          acompañamiento estratégico de empresas y organizaciones.
+        </motion.p>
       </div>
     </section>
   );

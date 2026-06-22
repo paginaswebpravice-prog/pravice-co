@@ -23,45 +23,45 @@ export default function Services() {
   const steps = [
     {
       icon: <FontAwesomeIcon icon={faPeopleCarry} />,
-      title: "Orientación inicial",
-      text: "Escuchamos el contexto del caso y brindamos una primera orientación jurídica para identificar posibles rutas de acompañamiento.",
+      title: "Diagnóstico jurídico y empresarial",
+      text: "Analizamos la situación legal de la empresa para identificar riesgos, oportunidades de mejora y necesidades de cumplimiento normativo.",
     },
 
     {
       icon: <FontAwesomeIcon icon={faBarChart} />,
-      title: "Revisión y estrategia",
-      text: "Analizamos la documentación y definimos alternativas legales ajustadas a las necesidades de cada cliente.",
+      title: "Diseño de estrategia legal",
+      text: "Definimos acciones enfocadas en gestión contractual, protección empresarial, recuperación de cartera y fortalecimiento corporativo.",
     },
 
     {
       icon: <FontAwesomeIcon icon={faBalanceScale} />,
-      title: "Acompañamiento del proceso",
-      text: "Realizamos seguimiento jurídico y acompañamiento durante las diferentes etapas del proceso legal.",
+      title: "Implementación y seguimiento",
+      text: "Realizamos seguimiento continuo para apoyar la ejecución de procesos jurídicos y la prevención de contingencias empresariales.",
     },
   ];
 
   const stats = [
     {
       number: "25+",
-      title: "Años de trayectoria",
+      title: "Años de experiencia jurídica",
       text: "Experiencia acompañando empresas y personas en distintos escenarios jurídicos.",
     },
 
     {
       number: "98",
-      title: "Aliados profesionales",
+      title: "Profesionales y aliados estratégicos",
       text: "Red de apoyo jurídico y profesionales especializados.",
     },
 
     {
-      number: "Colombia",
-      title: "Cobertura nacional",
+      number: "Nacional",
+      title: "Cobertura empresarial en Colombia",
       text: "Acompañamiento jurídico para clientes en distintas ciudades del país.",
     },
 
     {
-      number: "100%",
-      title: "Seguimiento cercano",
+      number: "Integral",
+      title: "Acompañamiento empresarial",
       text: "Comunicación y acompañamiento durante el desarrollo del caso.",
     },
   ];
@@ -88,8 +88,8 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Nuestra metodología de
-          <span> acompañamiento jurídico</span>
+          Soluciones jurídicas empresariales para prevenir riesgos y
+          <span> fortalecer la gestión legal</span>
         </motion.h2>
 
         <motion.p
@@ -99,9 +99,10 @@ export default function Services() {
           transition={{ delay: 0.2, duration: 0.6 }}
           viewport={{ once: true }}
         >
-          En <strong>Pravice Abogados</strong> desarrollamos procesos de
-          atención enfocados en la claridad, el seguimiento y el acompañamiento
-          estratégico para empresas y personas en Colombia.
+          Ayudamos a empresas en Colombia a fortalecer su gestión legal mediante
+          estrategias de cumplimiento normativo, recuperación de cartera,
+          derecho societario, derecho comercial y acompañamiento jurídico
+          corporativo.
         </motion.p>
 
         {/* TIMELINE */}
@@ -169,14 +170,17 @@ export default function Services() {
             textAlign: "center",
           }}
         >
-          Para conocer información más amplia sobre servicios jurídicos,
-          abogados especializados y áreas de práctica, puedes consultar el{" "}
+          Pravice desarrolla soluciones orientadas a la gestión legal
+          empresarial, cumplimiento normativo, recuperación de cartera, derecho
+          comercial, derecho contractual y derecho societario en Colombia. Si
+          buscas representación judicial especializada o servicios jurídicos
+          avanzados, puedes consultar el{" "}
           <Link
             href="https://abogadosespecialistas.com.co/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            portal jurídico de referencia
+            portal principal de Abogados Especialistas.
           </Link>
           .
         </motion.p>

@@ -13,21 +13,21 @@ import {
 
 const posts = [
   {
-    title: "Pravice Abogados: Firma de abogados en Bogotá y Colombia",
+    title: "Cumplimiento normativo para empresas en Colombia",
     description:
-      "Conoce nuestra firma de abogados, experiencia en derecho empresarial, recuperación de cartera y asesoría legal en Colombia.",
+      "Buenas prácticas para reducir riesgos legales, fortalecer procesos internos y cumplir obligaciones regulatorias.",
     icon: faScaleBalanced,
   },
   {
-    title: "¿Cómo elegir una firma de abogados en Bogotá?",
+    title: "Recuperación de cartera y cobro prejurídico",
     description:
-      "Guía para elegir abogados especializados en derecho empresarial, litigios y asesoría legal en Colombia.",
+      "Estrategias para mejorar la recuperación de cartera empresarial y reducir la morosidad de clientes.",
     icon: faBuilding,
   },
   {
-    title: "Cómo proteger tu empresa legalmente en Colombia",
+    title: "Gestión de riesgos jurídicos para empresas",
     description:
-      "Aprende sobre derecho empresarial, contratos comerciales, cumplimiento legal y protección jurídica empresarial.",
+      "Recomendaciones para prevenir conflictos legales, incumplimientos contractuales y contingencias empresariales.",
     icon: faShieldHalved,
   },
 ];
@@ -58,10 +58,8 @@ export default function BlogPreview() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Blog jurídico en Bogotá y Colombia:
-            <span>
-              guías legales, derecho empresarial y recuperación de cartera
-            </span>
+            Blog sobre gestión legal empresarial, cumplimiento normativo y
+            recuperación de cartera en Colombia
           </motion.h2>
 
           <motion.p
@@ -71,12 +69,13 @@ export default function BlogPreview() {
             transition={{ delay: 0.2, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            En el <strong>blog jurídico de Pravice Abogados</strong> compartimos
-            artículos sobre derecho empresarial, derecho comercial, recuperación
-            de cartera, cobro prejurídico, litigios, contratos comerciales y
-            asesoría legal en Bogotá y Colombia. Nuestro blog está diseñado para
-            ayudar a empresas y personas a entender sus derechos, prevenir
-            problemas legales y tomar mejores decisiones jurídicas.
+            En el blog de <strong>Pravice</strong> compartimos contenido
+            especializado sobre gestión legal empresarial, cumplimiento
+            normativo, recuperación de cartera, cobranza prejurídica, derecho
+            corporativo, riesgos jurídicos y tendencias regulatorias en
+            Colombia. Nuestro objetivo es ayudar a empresas, organizaciones y
+            profesionales a tomar decisiones mejor informadas y fortalecer sus
+            procesos legales.
           </motion.p>
         </header>
 
@@ -118,9 +117,29 @@ export default function BlogPreview() {
           viewport={{ once: true }}
         >
           <Link href="/blog" className={styles.button}>
-            Ver todos los artículos del blog jurídico
+            Explorar recursos de gestión legal y cumplimiento →
           </Link>
         </motion.div>
+
+        <div className={styles.seoContent}>
+          <h3>
+            Recursos sobre cumplimiento normativo, cartera y gestión legal
+            empresarial
+          </h3>
+
+          <p>
+            El blog de Pravice reúne contenido práctico para empresas
+            colombianas interesadas en fortalecer sus procesos de cumplimiento,
+            recuperación de cartera, gestión contractual, prevención de riesgos
+            legales y gobierno corporativo.
+          </p>
+
+          <p>
+            También compartimos análisis sobre cambios regulatorios, tendencias
+            empresariales y herramientas que ayudan a optimizar la gestión
+            jurídica dentro de organizaciones de diferentes sectores económicos.
+          </p>
+        </div>
       </div>
     </section>
   );

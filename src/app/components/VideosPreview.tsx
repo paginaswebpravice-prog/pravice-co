@@ -9,7 +9,7 @@ export default function VideosPreview() {
     "@graph": [
       {
         "@type": "VideoObject",
-        name: "Divorcio por mutuo acuerdo Bogotá",
+        name: "Actualidad jurídica y resolución de conflictos en Colombia",
         description:
           "Video informativo sobre divorcio por mutuo acuerdo en Colombia y orientación jurídica familiar.",
         thumbnailUrl: "https://i.ytimg.com/vi/eQFEueWd5tw/maxresdefault.jpg",
@@ -29,7 +29,7 @@ export default function VideosPreview() {
       },
       {
         "@type": "VideoObject",
-        name: "Abogados derecho comercial Bogotá Colombia",
+        name: "Gestión legal empresarial y derecho comercial en Colombia",
         description:
           "Contenido jurídico orientado a derecho comercial y asesoría empresarial en Colombia.",
         thumbnailUrl: "https://i.ytimg.com/vi/bVky48kidxg/maxresdefault.jpg",
@@ -49,7 +49,7 @@ export default function VideosPreview() {
       },
       {
         "@type": "VideoObject",
-        name: "Importancia del derecho laboral Colombia",
+        name: "Cumplimiento laboral y gestión de riesgos para empresas",
         description:
           "Video jurídico informativo sobre derecho laboral y relaciones laborales en Colombia.",
         thumbnailUrl: "https://i.ytimg.com/vi/sMcNzoPSo6Y/maxresdefault.jpg",
@@ -80,7 +80,8 @@ export default function VideosPreview() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Contenido audiovisual jurídico y orientación legal en Colombia
+          Videos sobre gestión legal, cumplimiento normativo y actualidad
+          jurídica en Colombia
         </motion.h2>
 
         <motion.p
@@ -90,10 +91,10 @@ export default function VideosPreview() {
           transition={{ delay: 0.2, duration: 0.6 }}
           viewport={{ once: true }}
         >
-          En <strong>Pravice Abogados</strong> compartimos contenido jurídico
-          informativo sobre derecho laboral, comercial, familiar y asesoría
-          empresarial. Si deseas conocer información más amplia sobre nuestro
-          equipo jurídico y servicios legales especializados, puedes visitar{" "}
+          En Pravice compartimos videos educativos sobre cumplimiento normativo,
+          gestión legal empresarial, prevención de riesgos jurídicos, actualidad
+          legal colombiana y diferentes temas de interés para empresas y
+          organizaciones., puedes visitar{" "}
           <a
             href="https://abogadosespecialistas.com.co/video.html"
             target="_blank"
@@ -140,7 +141,7 @@ export default function VideosPreview() {
             rel="noopener noreferrer"
             className={styles.primaryBtn}
           >
-            Ver contenido jurídico →
+            Ver biblioteca jurídica completa →
           </a>
         </div>
 
@@ -150,6 +151,24 @@ export default function VideosPreview() {
             __html: JSON.stringify(videoSchema),
           }}
         />
+      </div>
+      <div className={styles.seoContent}>
+        <h3>
+          Contenido jurídico para empresas, organizaciones y profesionales
+        </h3>
+
+        <p>
+          Nuestros videos abordan temas relacionados con cumplimiento normativo,
+          derecho corporativo, gestión legal empresarial, contratación,
+          prevención de conflictos y cambios regulatorios que impactan a las
+          organizaciones en Colombia.
+        </p>
+
+        <p>
+          Este contenido está orientado a brindar información clara y práctica
+          sobre aspectos legales que pueden influir en la toma de decisiones
+          empresariales y en la gestión de riesgos jurídicos.
+        </p>
       </div>
     </section>
   );

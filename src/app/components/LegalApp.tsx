@@ -16,7 +16,7 @@ export default function LegalApp() {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "Legal App Pravice",
-    applicationCategory: "BusinessApplication",
+    applicationCategory: "LegalApplication",
     operatingSystem: "Web",
     description:
       "Plataforma digital de Pravice Abogados que permite a los clientes consultar el estado de sus procesos legales, recibir notificaciones y acceder a documentos jurídicos de forma segura.",
@@ -30,6 +30,13 @@ export default function LegalApp() {
       "@type": "Country",
       name: "Colombia",
     },
+    featureList: [
+      "Seguimiento de procesos jurídicos",
+      "Consulta de expedientes",
+      "Gestión documental",
+      "Notificaciones automáticas",
+      "Comunicación con profesionales jurídicos",
+    ],
   };
 
   return (
@@ -54,7 +61,8 @@ export default function LegalApp() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Plataforma Legal para Clientes: <span>Legal App Pravice</span>
+          Legal App Pravice: plataforma para seguimiento de procesos legales en
+          Colombia
         </motion.h2>
 
         <motion.p
@@ -64,10 +72,10 @@ export default function LegalApp() {
           transition={{ delay: 0.2, duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Con <strong>Legal App Pravice</strong>, nuestros clientes pueden
-          realizar el <strong>seguimiento de su proceso legal online</strong>,
-          consultar documentos, comunicarse con su abogado y recibir
-          notificaciones automáticas sobre cualquier avance en su caso.
+          Con Legal App Pravice, empresas y clientes pueden consultar el estado
+          de sus procesos jurídicos, acceder a documentos legales, recibir
+          notificaciones y realizar seguimiento online desde cualquier lugar de
+          Colombia.
         </motion.p>
 
         {/* FEATURES GRID */}
@@ -76,23 +84,23 @@ export default function LegalApp() {
           {[
             {
               icon: faGlasses,
-              title: "Seguimiento de procesos legales en tiempo real",
-              text: "Consulta el estado actualizado de tu caso jurídico en cualquier momento sin necesidad de llamadas.",
+              title: "Consulta el estado de tu proceso jurídico online",
+              text: "Accede al avance de tus procesos legales, actuaciones y novedades desde una única plataforma digital.",
             },
             {
               icon: faComments,
-              title: "Comunicación directa con tu abogado",
-              text: "Realiza preguntas o solicita información adicional directamente a tu abogado desde la plataforma.",
+              title: "Comunicación y seguimiento jurídico centralizado",
+              text: "Mantén un canal organizado para resolver dudas y consultar información relacionada con tu proceso.",
             },
             {
               icon: faBell,
-              title: "Notificaciones automáticas del proceso",
-              text: "Recibe alertas cuando haya avances, nuevos documentos o cambios importantes.",
+              title: "Alertas y novedades en tiempo real",
+              text: "Recibe información sobre cambios, actualizaciones y movimientos importantes asociados a tu expediente.",
             },
             {
               icon: faLock,
-              title: "Acceso seguro a documentos legales",
-              text: "Descarga y revisa tus documentos jurídicos de forma organizada y segura.",
+              title: "Gestión digital de documentos jurídicos",
+              text: "Consulta y descarga documentos legales desde un entorno seguro y organizado.",
             },
           ].map((item, index) => (
             <motion.div
@@ -129,11 +137,11 @@ export default function LegalApp() {
         <div className={styles.bottom}>
           {[
             {
-              title: "Disponible 24/7",
+              title: "Acceso permanente a tu información legal",
               text: "Accede a tu expediente jurídico en cualquier momento desde cualquier lugar.",
             },
             {
-              title: "Seguridad y privacidad",
+              title: "Protección de datos y confidencialidad",
               text: "La plataforma utiliza protocolos de seguridad para proteger la información legal.",
             },
           ].map((card, index) => (
@@ -159,11 +167,12 @@ export default function LegalApp() {
             viewport={{ once: true }}
             whileHover={{ scale: 1.02 }}
           >
-            <h3>Acceder a Legal App Pravice</h3>
+            <h3>Gestiona tus procesos legales desde un solo lugar</h3>
 
             <p>
-              Ingresa al portal de clientes para consultar el estado de tu caso
-              y gestionar tu información legal.
+              Ingresa a Legal App para consultar expedientes, revisar documentos
+              jurídicos y realizar seguimiento de tus procesos de manera
+              digital.
             </p>
 
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
@@ -183,6 +192,25 @@ export default function LegalApp() {
             </span>
           </motion.div>
         </div>
+        <motion.p
+          className={styles.subtitle}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          viewport={{ once: true }}
+          style={{
+            maxWidth: "900px",
+            margin: "50px auto 0",
+            textAlign: "center",
+          }}
+        >
+          Legal App Pravice es una plataforma digital diseñada para facilitar el
+          seguimiento de procesos jurídicos, la gestión documental y la
+          comunicación entre clientes y profesionales del derecho. Su enfoque
+          permite centralizar información legal, optimizar tiempos de consulta y
+          mejorar la experiencia de empresas y personas que requieren
+          acompañamiento jurídico en Colombia.
+        </motion.p>
       </div>
     </section>
   );

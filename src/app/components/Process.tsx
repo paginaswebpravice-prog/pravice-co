@@ -22,18 +22,18 @@ export default function Process() {
   const steps = [
     {
       icon: <FontAwesomeIcon icon={faPeopleCarry} />,
-      title: "Orientación inicial",
-      text: "Analizamos el contexto general del caso para identificar necesidades jurídicas y definir posibles rutas de acompañamiento legal.",
+      title: "Diagnóstico y orientación jurídica inicial",
+      text: "Analizamos la situación jurídica de la empresa o persona, identificando riesgos, necesidades y posibles alternativas de actuación.",
     },
     {
       icon: <FontAwesomeIcon icon={faChartBar} />,
-      title: "Evaluación y estrategia",
-      text: "Revisamos la información relevante para orientar al usuario sobre alternativas legales y escenarios aplicables.",
+      title: "Análisis legal y definición de estrategia",
+      text: "Revisamos documentos, antecedentes y contexto jurídico para definir una ruta de trabajo alineada con los objetivos del caso.",
     },
     {
       icon: <FontAwesomeIcon icon={faBalanceScale} />,
-      title: "Acompañamiento jurídico",
-      text: "Brindamos apoyo y seguimiento jurídico según las necesidades particulares de cada caso y área del derecho.",
+      title: "Seguimiento y acompañamiento continuo",
+      text: "Brindamos apoyo permanente durante el desarrollo del proceso, facilitando seguimiento, comunicación y gestión jurídica.",
     },
   ];
 
@@ -45,18 +45,18 @@ export default function Process() {
     },
     {
       number: "Colombia",
-      title: "Cobertura nacional",
-      text: "Atención jurídica presencial y virtual en distintas ciudades del país.",
+      title: "Atención jurídica en Colombia",
+      text: "Atención presencial y virtual para empresas y personas en Bogotá y diferentes ciudades del país.",
     },
     {
       number: "Empresas",
-      title: "Acompañamiento corporativo",
-      text: "Soporte legal preventivo y estratégico para organizaciones y negocios.",
+      title: "Consultoría legal empresarial",
+      text: "Apoyo jurídico para empresas en temas corporativos, contractuales, comerciales y de cumplimiento normativo.",
     },
     {
       number: "Aliados",
-      title: "Red profesional",
-      text: "Trabajo conjunto con abogados y especialistas en diferentes áreas jurídicas.",
+      title: "Red de abogados especializados",
+      text: "Acceso a profesionales con experiencia en diferentes áreas jurídicas según las necesidades de cada caso.",
     },
   ];
 
@@ -78,7 +78,7 @@ export default function Process() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Nuestro proceso de <span>acompañamiento legal</span>
+          Proceso de asesoría y acompañamiento jurídico en Colombia
         </motion.h2>
 
         <motion.p
@@ -88,9 +88,10 @@ export default function Process() {
           transition={{ delay: 0.2, duration: 0.6 }}
           viewport={{ once: true }}
         >
-          En <strong>Pravice</strong> brindamos orientación jurídica y apoyo
-          estratégico para empresas y personas en Colombia, trabajando de forma
-          complementaria con abogados y especialistas aliados.
+          En <strong>Pravice</strong> desarrollamos procesos de consultoría
+          legal, acompañamiento jurídico empresarial y orientación legal para
+          personas y organizaciones en Colombia, apoyándonos en una red de
+          abogados y especialistas en distintas áreas del derecho.
         </motion.p>
 
         {/* BACKLINK SEO */}
@@ -103,9 +104,9 @@ export default function Process() {
           viewport={{ once: true }}
         >
           <p>
-            Si deseas conocer más sobre servicios jurídicos especializados,
-            abogados expertos y diferentes áreas del derecho en Colombia, puedes
-            visitar nuestro portal aliado:
+            Si buscas representación judicial, abogados especialistas o
+            servicios jurídicos enfocados en áreas específicas del derecho
+            colombiano, puedes consultar nuestro portal aliado:
           </p>
 
           <Link
@@ -168,6 +169,25 @@ export default function Process() {
             </motion.div>
           ))}
         </div>
+        <motion.p
+          className={styles.subtitle}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          viewport={{ once: true }}
+          style={{
+            marginTop: "50px",
+            maxWidth: "950px",
+            marginInline: "auto",
+            textAlign: "center",
+          }}
+        >
+          Nuestro proceso de acompañamiento jurídico está diseñado para
+          empresas, emprendedores y personas que requieren orientación legal,
+          consultoría jurídica, gestión de riesgos y apoyo estratégico en
+          Colombia. Trabajamos en coordinación con profesionales especializados
+          para ofrecer soluciones ajustadas a cada necesidad.
+        </motion.p>
       </div>
     </section>
   );
