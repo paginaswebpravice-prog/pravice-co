@@ -12,35 +12,35 @@ const abogados = [
     slug: "abogado-Alberto",
     imagen: "/doc-albertoImage.jpg",
     alt: "Alberto Castro abogado especialista en derecho comercial en Colombia",
-    cargo: "Fundador y experto en derecho empresarial",
+    cargo: "Más de 20 años apoyando empresas y negocios",
   },
   {
     nombre: "Leidy Tirado",
     slug: "abogada-Leidy",
     imagen: "/doc-leidyImage.jpg",
     alt: "Leidy Tirado abogada especialista en derecho corporativo en Colombia",
-    cargo: "Directora área jurídica empresarial",
+    cargo: "Dirección jurídica y estrategia empresarial",
   },
   {
     nombre: "Angie Rivera",
     slug: "abogada-Angie",
     imagen: "/doc-angieImage.jpg",
     alt: "Angie Rivera abogada especialista en procesos ejecutivos en Colombia",
-    cargo: "Especialista en recuperación de cartera",
+    cargo: "Recuperación de cartera y procesos ejecutivos",
   },
   {
     nombre: "Guillermo Rodríguez",
     slug: "abogado-Guillermo",
     imagen: "/doc-guillermoImage.jpg",
     alt: "Guillermo Rodríguez abogado en Colombia especialista en derecho laboral y familia",
-    cargo: "Abogado senior en litigios",
+    cargo: "Litigios y representación judicial",
   },
   {
     nombre: "Harrison Pérez",
     slug: "abogado-Harrison",
     imagen: "/doc-harrisonImage.jpg",
     alt: "Harrison Pérez abogado especialista en derecho empresarial en Colombia",
-    cargo: "Asesor en derecho comercial",
+    cargo: "Derecho laboral y gestión de relaciones laborales",
   },
   {
     nombre: "Marcial Ortiz",
@@ -54,7 +54,7 @@ const abogados = [
     slug: "abogado-Santiago",
     imagen: "/doc-santiagoImage.jpg",
     alt: "Santiago Franco abogado penalista en Colombia",
-    cargo: "Especialista en derecho penal y compliance",
+    cargo: "Compliance y derecho penal corporativo",
   },
 ];
 
@@ -66,7 +66,7 @@ export default function AbogadosContent() {
     "@type": "LegalService",
     name: "Equipo jurídico Pravice",
     description:
-      "Equipo de abogados especializados en diferentes áreas del derecho en Colombia.",
+      "Equipo jurídico de Pravice conformado por profesionales del derecho con experiencia en acompañamiento legal, consultoría jurídica empresarial y gestión de asuntos corporativos en Colombia.",
     provider: {
       "@type": "Organization",
       name: "Pravice",
@@ -91,24 +91,27 @@ export default function AbogadosContent() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
         >
-          <span className={styles.badge}>Equipo jurídico</span>
+          <span className={styles.badge}>Nuestro equipo jurídico</span>
 
           <h1 className={styles.title}>
-            Conoce nuestro equipo de abogados en Colombia
+            Conoce al Equipo Jurídico de Pravice en Colombia
           </h1>
 
           <p className={styles.subtitle}>
-            Profesionales en derecho empresarial, laboral, penal y familiar que
-            hacen parte del equipo jurídico de Pravice.
+            Profesionales con experiencia en derecho empresarial, derecho
+            comercial, recuperación de cartera, litigios, compliance y
+            acompañamiento jurídico corporativo.
             <br />
-            Conoce también nuestra área especializada de{" "}
+            <br />
+            Si buscas información sobre abogados especialistas por área de
+            práctica, también puedes consultar nuestro portal aliado{" "}
             <a
               href="https://abogadosespecialistas.com.co/abogados/index.html"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "#004080", fontWeight: 600 }}
             >
-              abogados especialistas en Colombia
+              abogadosespecialistas.com.co
             </a>
             .
           </p>

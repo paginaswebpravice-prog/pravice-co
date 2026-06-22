@@ -5,20 +5,21 @@ const canonicalUrl = "https://pravice.co/blog/empresa-no-paga-factura";
 
 export const metadata: Metadata = {
   title:
-    "Qué hacer si una empresa no quiere pagar una factura en Colombia 2026 | Pravice",
+    "Empresa no paga una factura: qué hacer para recuperar el dinero en Colombia | Pravice",
 
   description:
-    "Descubre qué hacer cuando una empresa no paga una factura en Colombia. Aprende cómo recuperar deudas comerciales y gestionar cobros de forma legal y efectiva.",
+    "Descubre qué hacer cuando una empresa no paga una factura. Aprende cómo recuperar pagos pendientes, reducir riesgos de cartera vencida y proteger el flujo de caja de tu negocio.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Qué hacer si una empresa no quiere pagar una factura en Colombia",
+    title:
+      "Empresa no paga una factura: pasos para recuperar el dinero en Colombia",
 
     description:
-      "Guía completa para recuperar facturas pendientes y manejar empresas morosas en Colombia.",
+      "Guía práctica para recuperar facturas vencidas, gestionar cartera morosa y reducir pérdidas financieras en empresas colombianas.",
 
     url: canonicalUrl,
     siteName: "Pravice",

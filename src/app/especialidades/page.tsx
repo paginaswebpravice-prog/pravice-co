@@ -133,8 +133,7 @@ export default function Especialidades() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Especialidades jurídicas y soluciones legales empresariales en
-            Colombia
+            Conoce nuestras áreas de práctica jurídica empresarial en Colombia
           </motion.h2>
 
           {/* DESCRIPCION */}
@@ -147,13 +146,11 @@ export default function Especialidades() {
             transition={{ delay: 0.2, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            En esta sección encontrarás distintas áreas de práctica jurídica y
-            soluciones legales orientadas al entorno empresarial en Colombia.
-            Exploramos temas relacionados con contratos, conciliación,
-            cumplimiento normativo, estructura societaria, recuperación de
-            cartera y resolución de conflictos comerciales, ofreciendo recursos
-            informativos y enfoques estratégicos aplicados al ámbito
-            corporativo.
+            Explora las principales áreas de práctica jurídica empresarial en
+            Colombia. Encuentra información sobre derecho comercial,
+            recuperación de cartera, conciliación, contratos, cumplimiento
+            normativo, litigios y derecho societario para empresas y
+            organizaciones.
           </motion.p>
 
           {/* ENLACE CONTEXTUAL HACIA EL PORTAL PRINCIPAL */}
@@ -224,8 +221,8 @@ export default function Especialidades() {
 
           <section className={styles.contextoSeo}>
             <h2>
-              ¿Cómo funcionan las distintas especialidades jurídicas
-              empresariales?
+              ¿Cuáles son las principales áreas de práctica jurídica para
+              empresas en Colombia?
             </h2>
 
             <p>
@@ -257,6 +254,51 @@ export default function Especialidades() {
               .
             </p>
           </section>
+
+          {/* FAQ 
+          <section className={styles.faq}>
+            <h2>
+              Preguntas frecuentes sobre especialidades jurídicas empresariales
+            </h2>
+
+            <h3>¿Qué es una especialidad jurídica empresarial?</h3>
+
+            <p>
+              Es un área específica del derecho enfocada en resolver necesidades
+              legales de empresas, organizaciones y actividades comerciales.
+            </p>
+
+            <h3>
+              ¿Cuáles son las áreas jurídicas más utilizadas por las empresas?
+            </h3>
+
+            <p>
+              Derecho comercial, derecho societario, contratos, recuperación de
+              cartera, conciliación, litigios y cumplimiento normativo.
+            </p>
+
+            <h3>
+              ¿Por qué es importante conocer las diferentes áreas de práctica
+              jurídica?
+            </h3>
+
+            <p>
+              Porque permite identificar riesgos legales, mejorar la toma de
+              decisiones y fortalecer la seguridad jurídica de las operaciones
+              empresariales.
+            </p>
+
+            <h3>
+              ¿Qué especialidad jurídica ayuda a recuperar deudas empresariales?
+            </h3>
+
+            <p>
+              La recuperación de cartera y los procesos de cobro prejurídico y
+              jurídico están orientados a la gestión y recuperación de
+              obligaciones pendientes.
+            </p>
+          </section>
+          */}
         </div>
       </section>
 

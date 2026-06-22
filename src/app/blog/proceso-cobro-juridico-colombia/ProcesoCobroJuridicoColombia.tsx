@@ -51,13 +51,13 @@ export default function ProcesoCobroJuridicoColombia() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Cobro jurídico en Colombia: cómo funciona el proceso legal
+            ¿Cómo funciona un cobro jurídico en Colombia? Guía paso a paso
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cómo funciona el proceso de cobro jurídico en Colombia y
-            cuáles son las etapas legales para recuperar deudas empresariales y
-            comerciales.
+            Conoce las etapas del cobro jurídico en Colombia, los documentos
+            necesarios, los tiempos aproximados del proceso y cuándo iniciar
+            acciones judiciales para recuperar una deuda.
           </motion.p>
         </motion.section>
 
@@ -91,7 +91,7 @@ export default function ProcesoCobroJuridicoColombia() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué es el cobro jurídico</h2>
+          <h2>¿Qué es un cobro jurídico y cuándo se utiliza?</h2>
 
           <p>
             El cobro jurídico es un proceso legal utilizado para exigir el pago
@@ -124,7 +124,7 @@ export default function ProcesoCobroJuridicoColombia() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Cómo funciona el proceso de cobro jurídico</h2>
+          <h2>Etapas de un cobro jurídico en Colombia paso a paso</h2>
 
           <p>
             El procedimiento puede variar según el tipo de deuda y la evidencia
@@ -166,7 +166,7 @@ export default function ProcesoCobroJuridicoColombia() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Documentos necesarios para iniciar cobro jurídico</h2>
+          <h2>¿Qué documentos se necesitan para iniciar un cobro jurídico?</h2>
 
           <p>
             Contar con soporte documental adecuado aumenta las probabilidades de
@@ -208,7 +208,7 @@ export default function ProcesoCobroJuridicoColombia() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Cuándo iniciar un proceso de cobro jurídico</h2>
+          <h2>¿Cuándo es recomendable iniciar un cobro jurídico?</h2>
 
           <p>
             No todas las deudas requieren inmediatamente una demanda judicial,
@@ -242,7 +242,7 @@ export default function ProcesoCobroJuridicoColombia() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Beneficios de una gestión jurídica organizada</h2>
+          <h2>Ventajas de iniciar un cobro jurídico a tiempo</h2>
 
           <p>
             Tener procesos legales estructurados ayuda a mejorar la recuperación
@@ -276,7 +276,10 @@ export default function ProcesoCobroJuridicoColombia() {
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre el cobro jurídico en Colombia</h2>
+          <h2>
+            Conclusión: cómo recuperar una deuda mediante cobro jurídico en
+            Colombia
+          </h2>
 
           <p>
             El cobro jurídico es una herramienta importante para recuperar
@@ -289,6 +292,48 @@ export default function ProcesoCobroJuridicoColombia() {
             adecuado mejora las probabilidades de recuperar pagos pendientes en
             Colombia.
           </p>
+        </section>
+
+        <section className={styles.section}>
+          <h2>Preguntas frecuentes sobre cobro jurídico en Colombia</h2>
+
+          <div className={styles.card}>
+            <h3>¿Cuánto tarda un cobro jurídico en Colombia?</h3>
+            <p>
+              El tiempo depende del tipo de proceso, la documentación disponible
+              y la carga de trabajo de los despachos judiciales. Algunos casos
+              pueden resolverse mediante acuerdos tempranos y otros requieren
+              procesos más extensos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Qué documentos sirven para cobrar una deuda judicialmente?</h3>
+            <p>
+              Facturas electrónicas, contratos, pagarés, títulos valores,
+              órdenes de servicio y demás soportes que acrediten la existencia
+              de la obligación.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>
+              ¿Es obligatorio realizar cobro prejurídico antes de demandar?
+            </h3>
+            <p>
+              No siempre es obligatorio, pero suele recomendarse porque permite
+              intentar recuperar la deuda sin acudir inmediatamente a un proceso
+              judicial.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Qué pasa si el deudor no responde a la demanda?</h3>
+            <p>
+              El proceso continúa conforme a la ley y el juez puede adoptar
+              decisiones con base en las pruebas aportadas por las partes.
+            </p>
+          </div>
         </section>
 
         <ArticleCTA

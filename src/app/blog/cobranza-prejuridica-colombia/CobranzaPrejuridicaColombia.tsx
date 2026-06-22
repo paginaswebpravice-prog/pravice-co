@@ -51,12 +51,14 @@ export default function CobranzaPrejuridicaColombia() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Cobranza prejurídica en Colombia: qué es y cómo funciona
+            Cobranza prejurídica en Colombia: cómo recuperar cartera antes de
+            demandar
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cómo funciona la cobranza prejurídica en Colombia y cuándo
-            utilizarla para recuperar cartera antes de iniciar procesos legales.
+            Descubre cómo las empresas en Colombia utilizan la cobranza
+            prejurídica para recuperar cartera vencida, negociar acuerdos de
+            pago y evitar procesos judiciales costosos.
           </motion.p>
         </motion.section>
 
@@ -262,6 +264,34 @@ export default function CobranzaPrejuridicaColombia() {
               clientes y proveedores.
             </p>
           </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            ¿Por qué la cobranza prejurídica es clave para las empresas en
+            Colombia?
+          </h2>
+
+          <p>
+            La cartera vencida afecta el flujo de caja, la liquidez y la
+            capacidad de crecimiento de las empresas. Por esta razón, cada vez
+            más organizaciones implementan estrategias de cobranza prejurídica
+            para recuperar facturas pendientes antes de iniciar procesos
+            judiciales.
+          </p>
+
+          <p>
+            Una gestión temprana permite aumentar las probabilidades de pago,
+            reducir costos operativos y proteger las relaciones comerciales con
+            clientes y proveedores.
+          </p>
+
+          <p>
+            En Colombia, la recuperación de cartera mediante procesos
+            prejurídicos se ha convertido en una herramienta fundamental para
+            empresas de servicios, comercio, industria, salud y sector
+            financiero.
+          </p>
         </section>
 
         {/* CONCLUSIÓN */}

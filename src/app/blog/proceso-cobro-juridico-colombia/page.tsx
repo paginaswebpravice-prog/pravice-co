@@ -4,38 +4,45 @@ import ProcesoCobroJuridicoColombia from "./ProcesoCobroJuridicoColombia";
 const canonicalUrl = "https://pravice.co/blog/proceso-cobro-juridico-colombia";
 
 export const metadata: Metadata = {
-  title: "Cobro jurídico en Colombia: cómo funciona el proceso legal | Pravice",
+  title:
+    "¿Cómo funciona un cobro jurídico en Colombia? Etapas, tiempos y documentos | Pravice",
 
   description:
-    "Conoce cómo funciona el proceso de cobro jurídico en Colombia, sus etapas legales y cómo recuperar deudas empresariales.",
+    "Aprende cómo funciona un cobro jurídico en Colombia, cuáles son sus etapas, qué documentos se necesitan y cuándo iniciar una demanda para recuperar una deuda.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Cobro jurídico en Colombia: cómo funciona el proceso legal",
+    title: "¿Cómo funciona un cobro jurídico en Colombia? Guía paso a paso",
+
     description:
-      "Guía paso a paso sobre el proceso de cobro jurídico para empresas y acreedores en Colombia.",
+      "Conoce las etapas del cobro jurídico, los documentos necesarios y cuándo acudir a un proceso judicial para recuperar cartera.",
+
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "article",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
         width: 1200,
         height: 630,
-        alt: "Cobro jurídico en Colombia",
+        alt: "Proceso de cobro jurídico en Colombia",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Cobro jurídico en Colombia",
+
+    title: "¿Cómo funciona un cobro jurídico en Colombia? Guía completa",
+
     description:
-      "Cómo funciona el proceso legal de recuperación de cartera en Colombia.",
+      "Etapas, documentos, tiempos y aspectos legales para recuperar una deuda mediante cobro jurídico.",
+
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -44,51 +51,40 @@ export const metadata: Metadata = {
 
 const schemaData = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id": canonicalUrl,
-  },
-
-  headline: "Cobro jurídico en Colombia: cómo funciona el proceso legal",
-
-  description:
-    "Conoce cómo funciona el proceso de cobro jurídico en Colombia, sus etapas legales y cómo recuperar deudas empresariales.",
-
-  image: "https://pravice.co/logo_pravice.png",
-
-  author: {
-    "@type": "Organization",
-    name: "Pravice",
-    url: "https://pravice.co",
-  },
-
-  publisher: {
-    "@type": "Organization",
-    name: "Pravice",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://pravice.co/logo_pravice.png",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "¿Cuánto tarda un cobro jurídico en Colombia?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "La duración depende del tipo de proceso, las pruebas disponibles y la complejidad del caso.",
+      },
     },
-  },
-
-  datePublished: "2026-06-10",
-  dateModified: "2026-06-10",
-
-  inLanguage: "es-CO",
-
-  articleSection: "Recuperación de Cartera",
-
-  keywords: [
-    "cobro jurídico Colombia",
-    "proceso de cobro jurídico",
-    "recuperación de cartera legal",
-    "demanda por deuda Colombia",
-    "cobranza judicial empresas",
-    "proceso ejecutivo Colombia",
-    "cobro de deudas legales",
-    "cartera vencida Colombia",
+    {
+      "@type": "Question",
+      name: "¿Qué documentos sirven para iniciar un cobro jurídico?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Facturas, contratos, pagarés, títulos valores y demás documentos que acrediten la existencia de la obligación.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Es obligatorio realizar cobro prejurídico antes de demandar?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No siempre es obligatorio, pero suele ser recomendable intentar una gestión previa de recuperación.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Qué ocurre si el deudor no responde a la demanda?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "El proceso continúa de acuerdo con las reglas procesales y el juez evalúa las pruebas aportadas.",
+      },
+    },
   ],
 };
 

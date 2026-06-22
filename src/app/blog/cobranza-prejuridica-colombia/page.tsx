@@ -4,23 +4,42 @@ import CobranzaPrejuridicaColombia from "./CobranzaPrejuridicaColombia";
 const canonicalUrl = "https://pravice.co/blog/cobranza-prejuridica-colombia";
 
 export const metadata: Metadata = {
-  title: "Cobranza prejurídica en Colombia: qué es y cómo funciona | Pravice",
+  title:
+    "Cobranza prejurídica en Colombia: cómo recuperar cartera antes de demandar",
 
   description:
-    "Conoce cómo funciona la cobranza prejurídica en Colombia, cuándo aplicarla y cómo recuperar cartera antes de iniciar procesos judiciales.",
+    "Aprende cómo funciona la cobranza prejurídica en Colombia, cuándo aplicarla y cómo recuperar cartera vencida antes de iniciar un proceso judicial.",
+
+  keywords: [
+    "cobranza prejurídica Colombia",
+    "cobro prejurídico",
+    "recuperación de cartera",
+    "cartera vencida Colombia",
+    "cómo recuperar cartera",
+    "cobranza empresarial",
+    "cobro jurídico",
+    "facturas vencidas",
+  ],
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Cobranza prejurídica en Colombia: qué es y cómo funciona",
+    title:
+      "Cobranza prejurídica en Colombia: cómo recuperar cartera antes de demandar",
+
     description:
-      "Aprende cómo funciona la cobranza prejurídica y cuándo utilizarla para recuperar cartera en Colombia.",
+      "Conoce las etapas de la cobranza prejurídica y las estrategias más utilizadas para recuperar cartera vencida en Colombia.",
+
     url: canonicalUrl,
+
     siteName: "Pravice",
+
     locale: "es_CO",
+
     type: "article",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
@@ -33,30 +52,37 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Cobranza prejurídica en Colombia",
+
+    title:
+      "Cobranza prejurídica en Colombia: cómo recuperar cartera antes de demandar",
+
     description:
-      "Qué es la cobranza prejurídica, cómo funciona y cuándo aplicarla en Colombia.",
+      "Estrategias de recuperación de cartera y cobranza prejurídica para empresas en Colombia.",
+
     images: ["https://pravice.co/logo_pravice.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
-/* ================= SEO SCHEMA JSON-LD ================= */
-
 const schemaData = {
   "@context": "https://schema.org",
+
   "@type": "BlogPosting",
+
+  headline:
+    "Cobranza prejurídica en Colombia: cómo recuperar cartera antes de demandar",
+
+  description:
+    "Guía sobre cobranza prejurídica, recuperación de cartera vencida y gestión de cobro empresarial en Colombia.",
 
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": canonicalUrl,
   },
-
-  headline: "Cobranza prejurídica en Colombia: qué es y cómo funciona",
-
-  description:
-    "Conoce cómo funciona la cobranza prejurídica en Colombia, cuándo aplicarla y cómo recuperar cartera antes de iniciar procesos judiciales.",
-
-  image: "https://pravice.co/logo_pravice.png",
 
   author: {
     "@type": "Organization",
@@ -73,6 +99,8 @@ const schemaData = {
     },
   },
 
+  image: "https://pravice.co/logo_pravice.png",
+
   datePublished: "2026-06-10",
   dateModified: "2026-06-10",
 
@@ -82,13 +110,11 @@ const schemaData = {
 
   keywords: [
     "cobranza prejurídica Colombia",
-    "qué es cobranza prejurídica",
+    "recuperación de cartera",
+    "cartera vencida",
     "cobro prejurídico",
-    "recuperación de cartera Colombia",
-    "cobranza de cartera empresas",
-    "cobro jurídico Colombia",
-    "cartera vencida Colombia",
-    "gestión de cobranza",
+    "cobranza empresarial",
+    "cómo recuperar cartera",
   ],
 };
 

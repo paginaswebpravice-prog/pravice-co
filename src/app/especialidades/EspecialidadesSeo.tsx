@@ -1,9 +1,9 @@
 export const metadata = {
   title:
-    "Especialidades jurídicas y soluciones legales empresariales en Colombia | Pravice",
+    "Áreas de práctica jurídica empresarial en Colombia | Derecho comercial, contratos y cartera",
 
   description:
-    "Conoce áreas de práctica jurídica, soluciones legales empresariales y recursos relacionados con derecho comercial, conciliación, contratos y cumplimiento normativo en Colombia.",
+    "Explora las principales especialidades jurídicas para empresas en Colombia. Encuentra recursos sobre derecho comercial, recuperación de cartera, conciliación, contratos, litigios y cumplimiento normativo.",
 
   keywords: [
     "especialidades jurídicas",
@@ -23,10 +23,9 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Especialidades jurídicas y soluciones legales empresariales en Colombia",
+    title: "Áreas de práctica jurídica empresarial en Colombia",
     description:
-      "Explora áreas de práctica jurídica y recursos legales empresariales relacionados con derecho comercial, contratos, conciliación y cumplimiento normativo.",
+      "Derecho comercial, recuperación de cartera, conciliación, contratos, litigios y cumplimiento normativo para empresas en Colombia.",
     url: "https://pravice.co/especialidades",
     type: "website",
   },

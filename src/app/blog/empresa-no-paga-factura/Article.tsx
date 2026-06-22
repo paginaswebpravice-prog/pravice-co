@@ -59,13 +59,14 @@ export default function EmpresaNoPagaFactura() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Qué hacer si una empresa no quiere pagar una factura en Colombia
+            Empresa no paga una factura: cómo recuperar el dinero en Colombia
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Aprende cómo recuperar facturas pendientes, cobrar empresas morosas
-            y proteger el flujo de caja de tu negocio con estrategias legales y
-            profesionales.
+            Si una empresa no ha pagado una factura dentro del plazo acordado,
+            existen estrategias de seguimiento, negociación y recuperación de
+            cartera que pueden ayudarte a recuperar el dinero y reducir el
+            impacto financiero en tu negocio.
           </motion.p>
         </motion.section>
 
@@ -97,7 +98,10 @@ export default function EmpresaNoPagaFactura() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Por qué algunas empresas no pagan facturas en Colombia</h2>
+          <h2>
+            ¿Por qué una empresa puede retrasar o incumplir el pago de una
+            factura?
+          </h2>
 
           <p>
             Existen múltiples razones por las cuales una empresa puede retrasar
@@ -134,7 +138,7 @@ export default function EmpresaNoPagaFactura() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Errores frecuentes al cobrar facturas empresariales</h2>
+          <h2>Errores que dificultan recuperar una factura pendiente</h2>
 
           <p>
             Muchos negocios pierden dinero porque manejan la recuperación de
@@ -171,7 +175,10 @@ export default function EmpresaNoPagaFactura() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Cómo cobrar una factura pendiente de forma profesional</h2>
+          <h2>
+            Pasos para recuperar una factura vencida sin afectar la relación
+            comercial
+          </h2>
 
           <p>
             Implementar procesos estructurados de cobranza mejora las
@@ -217,7 +224,10 @@ export default function EmpresaNoPagaFactura() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Cuándo iniciar cobro jurídico por una factura</h2>
+          <h2>
+            ¿Cuándo es momento de escalar la recuperación de una factura
+            pendiente?
+          </h2>
 
           <p>
             El cobro jurídico suele aplicarse cuando la empresa ignora
@@ -241,7 +251,7 @@ export default function EmpresaNoPagaFactura() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Cómo evitar problemas de cartera en el futuro</h2>
+          <h2>Cómo reducir el riesgo de clientes morosos en tu empresa</h2>
 
           <p>
             La prevención es clave para reducir el riesgo de facturas sin pagar
@@ -275,9 +285,51 @@ export default function EmpresaNoPagaFactura() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>Preguntas frecuentes sobre facturas pendientes en Colombia</h2>
+
+          <div className={styles.card}>
+            <h3>¿Qué hacer cuando una empresa no paga una factura?</h3>
+            <p>
+              Lo recomendable es iniciar seguimiento formal, documentar todas
+              las comunicaciones y buscar acuerdos de pago antes de escalar el
+              proceso.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Se puede recuperar una factura sin demandar?</h3>
+            <p>
+              Sí. Muchas facturas se recuperan mediante gestión de cartera,
+              negociación y cobranza prejurídica sin necesidad de acudir a un
+              proceso judicial.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Qué documentos ayudan a reclamar el pago?</h3>
+            <p>
+              Facturas electrónicas, contratos, órdenes de compra, correos y
+              soportes comerciales suelen ser documentos importantes dentro del
+              proceso de recuperación.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Cómo reducir el riesgo de clientes morosos?</h3>
+            <p>
+              Implementar políticas de crédito, realizar seguimiento temprano y
+              documentar adecuadamente las operaciones comerciales ayuda a
+              reducir el riesgo de cartera vencida.
+            </p>
+          </div>
+        </section>
+
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión: cómo recuperar facturas pendientes en Colombia</h2>
+          <h2>
+            Conclusión: actuar rápido aumenta las probabilidades de recuperación
+          </h2>
 
           <p>
             Cuando una empresa no quiere pagar una factura, actuar rápidamente y
@@ -292,8 +344,8 @@ export default function EmpresaNoPagaFactura() {
           </p>
         </section>
         <ArticleCTA
-          title="¿Una empresa no quiere pagar una factura y necesitas asesoría legal en Colombia?"
-          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia con recuperación de cartera, cobro prejurídico, negociación de pagos y acciones legales para recuperar facturas pendientes."
+          title="¿Tienes facturas pendientes de pago?"
+          description="Conoce estrategias de recuperación de cartera, seguimiento de facturas vencidas y gestión de pagos para mejorar el flujo de caja de tu empresa."
           href="https://abogadosespecialistas.com.co/"
           badge="Cobro de cartera y recuperación de facturas"
           buttonText="Hablar con un abogado especializado"

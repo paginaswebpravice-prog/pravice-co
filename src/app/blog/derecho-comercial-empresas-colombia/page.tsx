@@ -3,17 +3,16 @@ import Article from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "Derecho comercial en Colombia: guía práctica para empresas y contratos seguros | Pravice",
+    "Derecho comercial en Colombia: cómo proteger tu empresa y evitar riesgos legales | Pravice",
   description:
-    "Aprende qué es el derecho comercial en Colombia, tipos de contratos empresariales, normativa vigente y cómo proteger legalmente tu empresa.",
+    "Descubre cómo el derecho comercial ayuda a proteger empresas en Colombia. Conoce contratos clave, riesgos legales frecuentes y recomendaciones para evitar conflictos.",
 
   alternates: {
     canonical: "https://pravice.co/blog/derecho-comercial-empresas-colombia",
   },
 
   openGraph: {
-    title:
-      "Derecho comercial en Colombia: contratos, empresas y protección legal",
+    title: "Cómo proteger tu empresa con el derecho comercial en Colombia",
     description:
       "Guía completa sobre derecho comercial en Colombia, contratos empresariales y cómo proteger tu empresa legalmente.",
     url: "https://pravice.co/blog/derecho-comercial-empresas-colombia",
@@ -106,31 +105,47 @@ export default function Page() {
                   name: "¿Qué es el derecho comercial en Colombia?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Es la rama del derecho que regula las actividades mercantiles, contratos empresariales y relaciones comerciales entre empresas y comerciantes.",
+                    text: "El derecho comercial es la rama del derecho que regula las actividades mercantiles, contratos empresariales, sociedades y relaciones comerciales entre empresas y comerciantes.",
                   },
                 },
                 {
                   "@type": "Question",
-                  name: "¿Qué tipos de contratos existen en el derecho comercial?",
+                  name: "¿Qué protege el derecho comercial en una empresa?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Existen contratos como compraventa, distribución, suministro, arrendamiento comercial, franquicia y prestación de servicios, entre otros.",
+                    text: "Protege aspectos como contratos comerciales, relaciones con proveedores, acuerdos societarios, obligaciones mercantiles y operaciones empresariales que pueden generar riesgos legales.",
                   },
                 },
                 {
                   "@type": "Question",
-                  name: "¿Cómo proteger legalmente una empresa en Colombia?",
+                  name: "¿Cuáles son los contratos comerciales más utilizados por las empresas?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Mediante contratos bien redactados, cumplimiento normativo, asesoría legal continua y gestión adecuada de riesgos comerciales.",
+                    text: "Los más comunes son los contratos de compraventa, suministro, distribución, prestación de servicios, arrendamiento comercial y acuerdos societarios.",
                   },
                 },
                 {
                   "@type": "Question",
-                  name: "¿Por qué es importante el derecho comercial para empresas?",
+                  name: "¿Qué riesgos legales puede tener una empresa sin contratos adecuados?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Permite prevenir conflictos legales, asegurar relaciones comerciales y proteger los intereses económicos de la empresa.",
+                    text: "La ausencia de contratos claros puede generar incumplimientos, conflictos comerciales, pérdidas económicas, dificultades para exigir obligaciones y procesos judiciales.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "¿Por qué es importante el derecho comercial para las empresas en Colombia?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Porque permite reducir riesgos jurídicos, proteger operaciones comerciales, garantizar el cumplimiento normativo y fortalecer la seguridad legal del negocio.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "¿Cuándo una empresa necesita asesoría en derecho comercial?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Cuando va a celebrar contratos importantes, constituir sociedades, negociar acuerdos comerciales, gestionar conflictos empresariales o implementar medidas de cumplimiento legal.",
                   },
                 },
               ],

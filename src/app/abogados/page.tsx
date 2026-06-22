@@ -2,18 +2,30 @@ import type { Metadata } from "next";
 import AbogadosContent from "./AbogadosContent";
 
 export const metadata: Metadata = {
-  title: "Equipo de abogados en Colombia | Pravice",
+  title: "Equipo Jurídico Pravice | Conoce Nuestros Abogados en Colombia",
   description:
-    "Conoce el equipo jurídico de Pravice en Colombia, especialistas en derecho empresarial, laboral, penal y familiar.",
+    "Conoce el equipo jurídico de Pravice en Colombia. Profesionales con experiencia en derecho empresarial, comercial, laboral, penal, recuperación de cartera y acompañamiento legal corporativo.",
 
+  keywords: [
+    "equipo jurídico Colombia",
+    "abogados en Colombia",
+    "abogados corporativos",
+    "abogados empresariales",
+    "profesionales jurídicos",
+    "equipo legal Colombia",
+    "abogados Bogotá",
+    "Pravice abogados",
+  ],
   alternates: {
     canonical: "https://pravice.co/abogados",
   },
 
   openGraph: {
-    title: "Equipo de abogados en Colombia | Pravice",
+    title: "Equipo Jurídico Pravice | Abogados con Experiencia en Colombia",
+
     description:
-      "Conoce nuestro equipo de abogados especializados en diferentes áreas del derecho en Colombia.",
+      "Conoce a los profesionales que integran el equipo jurídico de Pravice y su experiencia en distintas áreas del derecho.",
+
     url: "https://pravice.co/abogados",
     siteName: "Pravice",
     locale: "es_CO",
