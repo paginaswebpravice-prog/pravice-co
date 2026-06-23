@@ -3,20 +3,17 @@ import SucesionesHerenciasContent from "./SucesionesHerenciasContent";
 
 export const metadata: Metadata = {
   title:
-    "Sucesiones y herencias en Colombia desde el exterior | Colombianos fuera del país",
+    "Sucesiones en Colombia desde el exterior | Herencias para colombianos fuera del país",
 
   description:
-    "Información sobre sucesiones y herencias en Colombia para colombianos que viven en el exterior. Conoce procesos notariales, judiciales, poderes y representación legal.",
+    "Guía sobre sucesiones y herencias en Colombia para colombianos en el exterior. Procesos notariales, judiciales y representación legal sin viajar.",
 
   keywords: [
-    "sucesiones en colombia desde el exterior",
-    "herencias colombia colombianos exterior",
-    "proceso de sucesión colombia",
-    "abogados sucesiones colombia",
-    "sucesión notarial colombia",
-    "sucesión judicial colombia",
-    "herencias colombianos en usa",
-    "poder sucesión colombia",
+    "sucesiones colombia exterior",
+    "herencias colombia extranjeros",
+    "proceso sucesión colombia",
+    "abogados herencias colombia",
+    "sucesión notarial judicial",
   ],
 
   alternates: {
@@ -24,17 +21,15 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Sucesiones y herencias en Colombia para colombianos en el exterior",
+    title: "Sucesiones en Colombia para colombianos en el exterior | Herencias",
 
     description:
-      "Guía informativa sobre procesos sucesorales, herencias y representación legal en Colombia para personas que viven fuera del país.",
+      "Procesos de herencia y sucesión en Colombia sin viajar desde el exterior.",
 
     url: "https://pravice.co/colombianos-exterior/sucesiones-herencias",
 
-    siteName: "Pravice Abogados",
-
+    siteName: "Pravice",
     locale: "es_CO",
-
     type: "website",
   },
 

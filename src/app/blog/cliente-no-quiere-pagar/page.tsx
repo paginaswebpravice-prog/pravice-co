@@ -4,18 +4,21 @@ import ClienteNoQuierePagar from "./Article";
 const canonicalUrl = "https://pravice.co/blog/cliente-no-quiere-pagar";
 
 export const metadata: Metadata = {
-  title: "Cómo cobrar clientes que no quieren pagar en Colombia 2026 | Pravice",
+  title:
+    "Cómo Cobrar Clientes Morosos en Colombia: Estrategias para Recuperar Pagos sin Conflictos",
+
   description:
-    "Aprende cómo cobrar clientes morosos en Colombia, recuperar pagos atrasados y evitar pérdidas económicas con estrategias profesionales y legales.",
+    "Aprende cómo cobrar clientes que no pagan en Colombia, recuperar deudas comerciales y manejar clientes morosos con estrategias efectivas de gestión de cartera.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Cómo cobrar clientes que no quieren pagar en Colombia 2026",
+    title:
+      "Cómo Recuperar Dinero de Clientes que No Pagan en Colombia (Guía 2026)",
     description:
-      "Guía completa para recuperar pagos atrasados y manejar clientes morosos en Colombia.",
+      "Estrategias prácticas para cobrar clientes morosos, reducir pérdidas y mejorar la recuperación de cartera en empresas colombianas.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -25,32 +28,37 @@ export const metadata: Metadata = {
         url: "https://pravice.co/logo_pravice.png",
         width: 1200,
         height: 630,
-        alt: "Cómo cobrar clientes que no quieren pagar en Colombia",
+        alt: "Cobro de clientes morosos en Colombia",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Cómo cobrar clientes que no quieren pagar en Colombia",
+    title: "Cómo cobrar clientes morosos en Colombia y recuperar tu dinero",
     description:
-      "Estrategias efectivas para recuperar pagos atrasados y evitar clientes morosos.",
+      "Guía práctica para mejorar la recuperación de cartera y manejar clientes que no pagan.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
 
-/* ================= SEO SCHEMA JSON-LD ================= */
+/* ================= SEO SCHEMA ================= */
 
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
+
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": canonicalUrl,
   },
-  headline: "Cómo cobrar clientes que no quieren pagar en Colombia 2026",
+
+  headline:
+    "Cómo Cobrar Clientes Morosos en Colombia: Estrategias para Recuperar Pagos sin Conflictos",
+
   description:
-    "Aprende cómo cobrar clientes morosos en Colombia, recuperar pagos atrasados y evitar pérdidas económicas con estrategias profesionales y legales.",
+    "Guía sobre cómo cobrar clientes morosos en Colombia, recuperar pagos atrasados y mejorar la gestión de cartera empresarial.",
+
   image: "https://pravice.co/logo_pravice.png",
 
   author: {
@@ -73,17 +81,17 @@ const schemaData = {
 
   inLanguage: "es-CO",
 
-  articleSection: "Recuperación de Cartera",
+  articleSection: "Gestión de Cartera",
 
   keywords: [
-    "clientes que no quieren pagar",
-    "cómo cobrar clientes morosos",
-    "recuperar pagos atrasados Colombia",
-    "cobro jurídico Colombia",
-    "gestión de cartera Colombia",
-    "clientes morosos empresas",
-    "cobranza empresarial Colombia",
+    "cómo cobrar clientes morosos Colombia",
+    "clientes que no pagan",
     "recuperación de cartera",
+    "cobro de deudas comerciales",
+    "gestión de cartera empresas",
+    "estrategias de cobranza",
+    "cobrar facturas atrasadas",
+    "clientes morosos empresas",
   ],
 };
 

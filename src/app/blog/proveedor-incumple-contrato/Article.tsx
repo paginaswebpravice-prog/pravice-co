@@ -8,9 +8,9 @@ export default function ProveedorIncumpleContrato() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Qué hacer si un proveedor incumple un contrato en Colombia",
+    headline: "Proveedor incumple contrato en Colombia: qué hacer paso a paso",
     description:
-      "Guía completa sobre incumplimiento contractual de proveedores en Colombia y cómo actuar legalmente.",
+      "Guía práctica sobre incumplimientos de proveedores en Colombia y cómo actuar legalmente.",
     image: "https://pravice.co/og-image.jpg",
     author: {
       "@type": "Organization",
@@ -51,178 +51,132 @@ export default function ProveedorIncumpleContrato() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Qué hacer si un proveedor incumple un contrato en Colombia en 2026
+            Proveedor incumple contrato en Colombia: qué hacer paso a paso para
+            reclamar legalmente en 2026
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            El incumplimiento de contratos por parte de proveedores puede
-            generar pérdidas económicas, retrasos operativos y conflictos
-            comerciales para empresas en Colombia.
+            Aprende cómo actuar si un proveedor incumple un contrato en
+            Colombia, qué pruebas necesitas y cómo reclamar el pago o la
+            indemnización de forma legal y efectiva.
           </motion.p>
         </motion.section>
 
         {/* INTRO */}
         <section className={styles.section}>
           <p>
-            Conocer las acciones legales y comerciales disponibles permite
-            proteger tu empresa y reducir el impacto de un proveedor que no
-            cumple con lo acordado.
+            Cuando un proveedor incumple un contrato, muchas empresas en
+            Colombia enfrentan pérdidas económicas y retrasos operativos.
+          </p>
+
+          <p>
+            Saber cómo actuar legalmente desde el inicio es clave para proteger
+            tu empresa y recuperar lo que te corresponde.
           </p>
         </section>
 
-        {/* CONTENIDO */}
+        {/* TOC */}
         <section className={styles.contentBox}>
-          <h3>Qué encontrarás en esta guía</h3>
-
+          <h3>Qué aprenderás en esta guía</h3>
           <ul>
-            <li>Qué se considera incumplimiento contractual</li>
-            <li>Problemas más comunes con proveedores</li>
-            <li>Qué hacer legalmente ante un incumplimiento</li>
-            <li>Cómo prevenir conflictos contractuales</li>
-            <li>Conclusión y recomendaciones empresariales</li>
+            <li>Qué hacer si un proveedor incumple contrato</li>
+            <li>Qué pruebas necesitas para reclamar</li>
+            <li>Opciones legales disponibles en Colombia</li>
+            <li>Cuándo iniciar acciones legales</li>
+            <li>Cómo prevenir futuros incumplimientos</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>¿Qué es el incumplimiento contractual de un proveedor?</h2>
+          <h2>Qué hacer cuando un proveedor incumple contrato</h2>
 
           <p>
-            Ocurre cuando un proveedor no cumple parcial o totalmente las
-            obligaciones pactadas dentro de un contrato comercial.
+            El primer paso es documentar el incumplimiento y reunir todas las
+            pruebas del acuerdo firmado.
           </p>
 
-          <p>
-            Esto puede incluir retrasos en entregas, productos defectuosos,
-            incumplimiento de pagos, falta de calidad o cancelaciones
-            injustificadas.
-          </p>
+          <div className={styles.card}>
+            <h3>Revisar el contrato firmado</h3>
+            <p>Identifica cláusulas de incumplimiento, plazos y penalidades.</p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Recolectar evidencias</h3>
+            <p>
+              Correos, facturas y comunicaciones son clave para sustentar el
+              caso.
+            </p>
+          </div>
         </section>
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Problemas más comunes con proveedores en Colombia</h2>
+          <h2>Opciones legales frente a incumplimientos de proveedores</h2>
 
           <div className={styles.card}>
-            <h3>Retrasos en entregas</h3>
-
+            <h3>Reclamación directa</h3>
             <p>
-              Los retrasos afectan operaciones, producción y cumplimiento con
-              clientes.
+              Intentar una solución amigable antes de iniciar acciones legales.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Productos o servicios defectuosos</h3>
-
-            <p>
-              La baja calidad puede generar pérdidas económicas y afectar la
-              reputación empresarial.
-            </p>
+            <h3>Conciliación</h3>
+            <p>Mecanismo legal para resolver conflictos sin ir a juicio.</p>
           </div>
 
           <div className={styles.card}>
-            <h3>Incumplimiento de condiciones pactadas</h3>
-
+            <h3>Acción judicial</h3>
             <p>
-              Cambios no autorizados en precios, cantidades o condiciones pueden
-              generar conflictos contractuales.
-            </p>
-          </div>
-
-          <div className={styles.card}>
-            <h3>Cancelaciones sin justificación</h3>
-
-            <p>
-              Algunos proveedores abandonan compromisos comerciales sin previo
-              aviso ni solución.
+              Se utiliza cuando no hay cumplimiento voluntario del proveedor.
             </p>
           </div>
         </section>
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Qué hacer si un proveedor incumple un contrato en Colombia</h2>
+          <h2>Cómo prevenir incumplimientos de proveedores</h2>
 
           <div className={styles.card}>
-            <h3>Revisar el contrato firmado</h3>
-
-            <p>
-              Es importante identificar obligaciones, cláusulas de
-              incumplimiento y mecanismos de solución establecidos.
-            </p>
+            <h3>Contratos bien estructurados</h3>
+            <p>Evitan ambigüedades y protegen legalmente a tu empresa.</p>
           </div>
 
           <div className={styles.card}>
-            <h3>Documentar el incumplimiento</h3>
-
-            <p>
-              Guardar correos, facturas, mensajes y pruebas facilita cualquier
-              reclamación legal o negociación.
-            </p>
+            <h3>Evaluación de proveedores</h3>
+            <p>Analizar historial y reputación reduce riesgos futuros.</p>
           </div>
 
           <div className={styles.card}>
-            <h3>Realizar requerimiento formal</h3>
-
-            <p>
-              Un requerimiento escrito puede servir como evidencia y abrir un
-              espacio de negociación antes de iniciar acciones legales.
-            </p>
+            <h3>Seguimiento constante</h3>
+            <p>Supervisar el cumplimiento evita sorpresas contractuales.</p>
           </div>
-
-          <div className={styles.card}>
-            <h3>Buscar asesoría jurídica empresarial</h3>
-
-            <p>
-              Un abogado puede evaluar el caso y definir si procede
-              conciliación, reclamación o demanda por incumplimiento
-              contractual.
-            </p>
-          </div>
-        </section>
-
-        {/* SECCIÓN 4 */}
-        <section className={styles.section}>
-          <h2>Cómo prevenir problemas contractuales con proveedores</h2>
-
-          <p>
-            La mejor forma de reducir riesgos empresariales es contar con
-            contratos claros, procesos de validación y seguimiento constante de
-            proveedores.
-          </p>
-
-          <p>
-            También es recomendable establecer cláusulas de penalización,
-            tiempos de entrega definidos y mecanismos de resolución de
-            conflictos.
-          </p>
         </section>
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
           <h2>
-            Conclusión: cómo actuar ante incumplimientos contractuales de
-            proveedores
+            Conclusión: cómo actuar ante un proveedor que incumple contrato
           </h2>
 
           <p>
-            Cuando un proveedor incumple un contrato, actuar rápidamente permite
-            reducir pérdidas y proteger la operación de la empresa.
+            Actuar rápido y con soporte legal es fundamental para recuperar
+            pérdidas y proteger tu empresa.
           </p>
 
           <p>
-            Tener respaldo jurídico y contratos empresariales bien estructurados
-            ayuda a prevenir conflictos y fortalecer la seguridad comercial en
-            Colombia.
+            Una gestión preventiva de contratos reduce significativamente el
+            riesgo de incumplimientos en Colombia.
           </p>
         </section>
+
         <ArticleCTA
-          title="¿Tu empresa enfrenta problemas por incumplimientos de proveedores en Colombia?"
-          description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia a gestionar incumplimientos contractuales, fortalecer contratos comerciales, prevenir pérdidas económicas y proteger sus operaciones mediante asesoría jurídica empresarial."
+          badge="Derecho contractual empresarial"
+          title="¿Tu proveedor incumplió un contrato? Recibe asesoría legal"
+          description="Te ayudamos a analizar tu caso, revisar contratos y tomar acciones legales para recuperar tu dinero en Colombia."
           href="https://abogadosespecialistas.com.co/"
-          badge="Incumplimiento contractual y proveedores"
-          buttonText="Hablar con un abogado empresarial"
+          buttonText="Hablar con un abogado"
         />
       </main>
     </>

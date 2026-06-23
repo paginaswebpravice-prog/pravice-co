@@ -52,12 +52,15 @@ export default function AuditoriaLegalEmpresas() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Auditoría legal empresarial en Colombia: qué es y para qué sirve
+            ¿Cómo Detectar Riesgos Legales en una Empresa? Guía de Auditoría
+            Legal Empresarial en Colombia
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cómo las auditorías legales ayudan a prevenir riesgos
-            jurídicos y fortalecer el cumplimiento empresarial.
+            Muchas empresas descubren errores legales cuando enfrentan una
+            demanda, una multa o una investigación. Una auditoría legal permite
+            identificar riesgos ocultos y corregirlos antes de que generen
+            pérdidas económicas o conflictos empresariales.
           </motion.p>
         </motion.section>
 
@@ -78,20 +81,23 @@ export default function AuditoriaLegalEmpresas() {
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Qué aprenderás en esta guía</h3>
+          <h3>
+            Todo lo que debes revisar para reducir riesgos legales en tu empresa
+          </h3>
 
           <ul>
             <li>Qué es una auditoría legal empresarial</li>
-            <li>Para qué sirve en las empresas</li>
-            <li>Qué áreas suelen revisarse</li>
-            <li>Beneficios de la auditoría preventiva</li>
-            <li>Cómo reducir riesgos legales empresariales</li>
+            <li>Cómo identificar riesgos jurídicos</li>
+            <li>Qué áreas debe revisar una empresa</li>
+            <li>Errores legales más frecuentes</li>
+            <li>Cómo prevenir demandas y sanciones</li>
+            <li>Beneficios de una auditoría preventiva</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué es una auditoría legal empresarial</h2>
+          <h2>¿Qué es una auditoría legal y cuándo debería realizarse?</h2>
 
           <p>
             La auditoría legal consiste en revisar documentos, contratos,
@@ -122,7 +128,10 @@ export default function AuditoriaLegalEmpresas() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Para qué sirve una auditoría legal</h2>
+          <h2>
+            7 Riesgos que una Auditoría Legal Puede Detectar Antes de una
+            Demanda
+          </h2>
 
           <p>
             Las auditorías legales fortalecen el control interno y ayudan a las
@@ -130,7 +139,7 @@ export default function AuditoriaLegalEmpresas() {
           </p>
 
           <div className={styles.card}>
-            <h3>Reducción de riesgos</h3>
+            <h3>Demandas laborales potenciales</h3>
             <p>
               Detectar incumplimientos oportunamente evita contingencias
               legales.
@@ -138,7 +147,7 @@ export default function AuditoriaLegalEmpresas() {
           </div>
 
           <div className={styles.card}>
-            <h3>Cumplimiento normativo</h3>
+            <h3>Incumplimientos regulatorios</h3>
             <p>
               Facilita verificar que la empresa cumpla las obligaciones legales
               aplicables.
@@ -146,14 +155,14 @@ export default function AuditoriaLegalEmpresas() {
           </div>
 
           <div className={styles.card}>
-            <h3>Protección empresarial</h3>
+            <h3>Contratos con cláusulas riesgosas</h3>
             <p>
               Mejora la seguridad jurídica y protege la operación corporativa.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Planeación estratégica</h3>
+            <h3>Problemas societarios internos</h3>
             <p>
               Permite fortalecer políticas internas y procesos organizacionales.
             </p>
@@ -162,7 +171,7 @@ export default function AuditoriaLegalEmpresas() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Áreas que suelen revisarse</h2>
+          <h2>Checklist de Auditoría Legal: ¿Qué Debe Revisar una Empresa?</h2>
 
           <p>
             Las auditorías legales pueden abarcar diferentes áreas dependiendo
@@ -201,7 +210,9 @@ export default function AuditoriaLegalEmpresas() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Beneficios de la auditoría legal preventiva</h2>
+          <h2>
+            Beneficios de Detectar Riesgos Jurídicos Antes de que Generen Costos
+          </h2>
 
           <p>
             Implementar auditorías legales periódicas genera ventajas
@@ -232,6 +243,93 @@ export default function AuditoriaLegalEmpresas() {
               empresa.
             </p>
           </div>
+        </section>
+
+        {/* NUEVA SECCIÓN SEO: ERRORES LEGALES */}
+        <section className={styles.section}>
+          <h2>Errores Legales Más Comunes en las Empresas Colombianas</h2>
+
+          <p>
+            Muchas empresas en Colombia descubren problemas legales cuando ya es
+            demasiado tarde: demandas, sanciones o conflictos internos que
+            pudieron evitarse con una revisión preventiva.
+          </p>
+
+          <p>
+            Estos son algunos de los errores más frecuentes que una auditoría
+            legal ayuda a identificar a tiempo:
+          </p>
+
+          <div className={styles.card}>
+            <h3>Contratos desactualizados o mal estructurados</h3>
+            <p>
+              Firmar contratos sin revisión jurídica puede generar cláusulas
+              abusivas o riesgos económicos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Incumplimientos laborales sin detectar</h3>
+            <p>
+              Errores en contratos laborales o pagos pueden generar demandas y
+              sanciones del Ministerio de Trabajo.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Falta de protección de datos personales</h3>
+            <p>
+              Muchas empresas no cumplen correctamente la normativa de habeas
+              data en Colombia.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Documentación societaria incompleta</h3>
+            <p>
+              Estatutos, actas y registros sin actualizar pueden generar
+              problemas legales internos entre socios.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Procesos internos sin respaldo jurídico</h3>
+            <p>
+              La falta de procedimientos legales claros puede generar conflictos
+              operativos y legales.
+            </p>
+          </div>
+        </section>
+
+        {/* NUEVA SECCIÓN SEO: CUÁNDO HACER AUDITORÍA */}
+        <section className={styles.section}>
+          <h2>¿Cuándo Debería una Empresa Hacer una Auditoría Legal?</h2>
+
+          <p>
+            No todas las empresas esperan a tener problemas legales para
+            realizar una auditoría, pero hacerlo a tiempo puede evitar pérdidas
+            importantes.
+          </p>
+
+          <div className={styles.contentBox}>
+            <h3>Se recomienda hacer una auditoría legal cuando:</h3>
+
+            <ul>
+              <li>
+                La empresa está creciendo rápidamente o contratando más personal
+              </li>
+              <li>Se firman contratos frecuentes con clientes o proveedores</li>
+              <li>Existen dudas sobre el cumplimiento normativo actual</li>
+              <li>Hay cambios en la estructura societaria o nuevos socios</li>
+              <li>La empresa quiere prevenir sanciones o demandas</li>
+            </ul>
+          </div>
+
+          <p>
+            En muchos casos, las auditorías legales se convierten en una
+            herramienta estratégica para tomar decisiones empresariales más
+            seguras.
+          </p>
         </section>
 
         {/* SECCIÓN 5 */}
@@ -276,7 +374,7 @@ export default function AuditoriaLegalEmpresas() {
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre auditoría legal empresarial</h2>
+          <h2>¿Vale la Pena Realizar una Auditoría Legal Empresarial?</h2>
 
           <p>
             La auditoría legal empresarial permite identificar riesgos y mejorar
@@ -292,10 +390,10 @@ export default function AuditoriaLegalEmpresas() {
 
         <ArticleCTA
           badge="Auditoría legal y cumplimiento empresarial"
-          title="¿Tu empresa necesita fortalecer su seguridad jurídica?"
-          description="Recibe asesoría sobre auditoría legal empresarial, cumplimiento normativo y prevención de riesgos jurídicos en Colombia."
+          title="¿Quieres saber si tu empresa tiene riesgos legales ocultos?"
+          description="Nuestros abogados ayudan a empresas en Bogotá y toda Colombia a identificar contingencias jurídicas, revisar contratos, evaluar cumplimiento normativo y reducir riesgos legales antes de que se conviertan en demandas o sanciones."
           href="https://abogadosespecialistas.com.co/"
-          buttonText="Solicitar asesoría jurídica"
+          buttonText="Solicitar diagnóstico legal empresarial"
         />
       </main>
     </>

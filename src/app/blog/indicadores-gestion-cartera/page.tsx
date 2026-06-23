@@ -5,19 +5,20 @@ const canonicalUrl = "https://pravice.co/blog/indicadores-gestion-cartera";
 
 export const metadata: Metadata = {
   title:
-    "Indicadores de gestión de cartera: métricas clave para empresas | Pravice",
+    "Indicadores de gestión de cartera en empresas: KPIs clave para mejorar la cobranza en Colombia 2026 | Pravice",
 
   description:
-    "Conoce los principales KPIs e indicadores de gestión de cartera para medir recuperación, morosidad y eficiencia de cobranza en empresas.",
+    "Guía completa sobre indicadores de gestión de cartera, KPIs financieros, morosidad y cómo mejorar la recuperación de pagos en empresas en Colombia.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Indicadores de gestión de cartera: métricas clave para empresas",
+    title:
+      "KPIs de cartera en empresas: cómo medir y mejorar la cobranza en Colombia",
     description:
-      "Aprende cuáles son los principales KPIs para medir recuperación de cartera y morosidad en empresas.",
+      "Aprende a interpretar indicadores de cartera y optimizar la recuperación de pagos en empresas con métricas financieras clave.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -34,14 +35,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Indicadores de gestión de cartera para empresas",
+    title: "KPIs de cartera: indicadores clave para empresas",
     description:
-      "KPIs esenciales para medir recuperación de cartera y morosidad empresarial.",
+      "Aprende cómo medir y mejorar la gestión de cartera con KPIs financieros esenciales.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
-
-/* ================= SEO SCHEMA JSON-LD ================= */
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -52,10 +51,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Indicadores de gestión de cartera: métricas clave para empresas",
+  headline:
+    "Indicadores de gestión de cartera en empresas: guía completa de KPIs financieros",
 
   description:
-    "Conoce los principales KPIs e indicadores de gestión de cartera para medir recuperación, morosidad y eficiencia de cobranza en empresas.",
+    "Guía completa sobre indicadores de cartera, KPIs financieros, morosidad y recuperación de pagos en empresas.",
 
   image: "https://pravice.co/logo_pravice.png",
 
@@ -79,17 +79,14 @@ const schemaData = {
 
   inLanguage: "es-CO",
 
-  articleSection: "Recuperación de Cartera",
+  articleSection: "Gestión Financiera Empresarial",
 
   keywords: [
-    "indicadores de cartera",
-    "KPIs gestión de cartera",
-    "métricas de cobranza",
-    "índice de morosidad",
-    "recuperación de cartera empresas",
-    "indicadores financieros cartera",
-    "gestión de cobranza Colombia",
-    "rotación de cartera",
+    "KPIs cartera",
+    "indicadores de cobranza",
+    "morosidad empresas Colombia",
+    "gestión de cartera",
+    "recuperación de cartera",
   ],
 };
 

@@ -52,14 +52,14 @@ export default function ClienteNoQuierePagar() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Cómo cobrar clientes que no quieren pagar en Colombia sin perder
-            dinero
+            Cómo Cobrar Clientes que No Pagan en Colombia: Estrategias para
+            Recuperar tu Dinero Rápidamente
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cómo recuperar pagos atrasados, manejar clientes morosos y
-            cobrar de forma profesional en Colombia sin afectar tu negocio ni tu
-            reputación.
+            Muchos negocios en Colombia pierden dinero por clientes que no
+            pagan. Aquí aprenderás estrategias prácticas para recuperar pagos
+            atrasados y manejar clientes morosos de forma profesional.
           </motion.p>
         </motion.section>
 
@@ -80,20 +80,20 @@ export default function ClienteNoQuierePagar() {
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Qué aprenderás en esta guía</h3>
+          <h3>Cómo recuperar dinero de clientes morosos en Colombia</h3>
 
           <ul>
-            <li>Por qué algunos clientes dejan de pagar</li>
-            <li>Errores frecuentes al cobrar clientes morosos</li>
-            <li>Cómo cobrar de forma profesional</li>
-            <li>Cuándo iniciar cobro jurídico en Colombia</li>
-            <li>Cómo prevenir problemas de pago futuros</li>
+            <li>Por qué los clientes dejan de pagar en Colombia</li>
+            <li>Errores comunes al intentar cobrar deudas</li>
+            <li>Estrategias efectivas para cobrar clientes morosos</li>
+            <li>Cuándo escalar a cobro prejurídico o jurídico</li>
+            <li>Cómo evitar clientes que no pagan en el futuro</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Por qué algunos clientes no quieren pagar en Colombia</h2>
+          <h2>Por qué los clientes dejan de pagar sus deudas en Colombia</h2>
 
           <p>
             Existen diferentes razones por las cuales un cliente puede retrasar
@@ -128,7 +128,9 @@ export default function ClienteNoQuierePagar() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Errores comunes al intentar cobrar clientes morosos</h2>
+          <h2>
+            Errores que hacen que pierdas dinero al cobrar clientes morosos
+          </h2>
 
           <p>
             Muchos negocios pierden dinero porque manejan la cobranza de manera
@@ -163,7 +165,7 @@ export default function ClienteNoQuierePagar() {
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
           <h2>
-            Cómo cobrar clientes que no quieren pagar de forma profesional
+            Cómo recuperar dinero de clientes que no quieren pagar paso a paso
           </h2>
 
           <p>
@@ -206,7 +208,10 @@ export default function ClienteNoQuierePagar() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Cuándo iniciar cobro jurídico en Colombia</h2>
+          <h2>
+            Cuándo escalar el cobro de una deuda en Colombia (prejurídico o
+            jurídico)
+          </h2>
 
           <p>
             El cobro jurídico suele aplicarse cuando el cliente incumple
@@ -231,7 +236,7 @@ export default function ClienteNoQuierePagar() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Cómo evitar clientes que no pagan en el futuro</h2>
+          <h2>Cómo evitar clientes morosos y proteger tu flujo de caja</h2>
 
           <p>
             La prevención es una de las herramientas más importantes para evitar
@@ -265,7 +270,10 @@ export default function ClienteNoQuierePagar() {
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión: cómo recuperar pagos atrasados en Colombia</h2>
+          <h2>
+            Conclusión: cómo recuperar dinero de clientes morosos sin afectar tu
+            negocio
+          </h2>
 
           <p>
             Cobrar clientes que no quieren pagar requiere estrategia,
@@ -281,10 +289,10 @@ export default function ClienteNoQuierePagar() {
 
         <ArticleCTA
           badge="Recuperación de cartera y cobro jurídico en Colombia"
-          title="¿Tu cliente no quiere pagar? Recibe apoyo legal para recuperar tu dinero"
-          description="Conoce estrategias legales y procesos de recuperación de cartera en Colombia para cobrar facturas, acuerdos incumplidos y deudas comerciales sin afectar la estabilidad de tu negocio."
+          title="¿Tienes clientes que no te pagan? Aprende cómo recuperar tu dinero más rápido?"
+          description="Te mostramos estrategias prácticas para recuperar dinero de clientes morosos, mejorar la cobranza y proteger la estabilidad financiera de tu empresa en Colombia."
           href="https://abogadosespecialistas.com.co/"
-          buttonText="Recibir asesoría para cobro de cartera"
+          buttonText="Mejorar mi proceso de cobro"
         />
       </main>
     </>

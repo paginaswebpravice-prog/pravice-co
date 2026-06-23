@@ -15,371 +15,236 @@ import {
   faGavel,
   faEarthAmericas,
   faBuildingColumns,
-  faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
 
 const beneficios = [
-  "Procesos notariales y judiciales",
-  "Representación legal sin viajar a Colombia",
-  "Atención para colombianos en cualquier país",
-  "Consultas virtuales",
-  "Elaboración de poderes especiales",
-  "Acompañamiento jurídico personalizado",
+  "Divorcio sin necesidad de viajar a Colombia",
+  "Representación legal desde cualquier país del mundo",
+  "Procesos notariales cuando existe acuerdo entre las partes",
+  "Procesos judiciales en casos de conflicto",
+  "Elaboración y autenticación de poderes especiales",
+  "Acompañamiento jurídico durante todo el trámite",
 ];
 
 export default function DivorciosColombiaContent() {
   return (
     <main className={styles.container}>
-      {/* HERO */}
+      {/* ================= HERO ================= */}
 
       <section className={styles.hero}>
         <motion.div
           initial={{ opacity: 0, y: 45 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.9 }}
         >
-          <motion.div
-            className={styles.badge}
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              delay: 0.15,
-              duration: 0.5,
-            }}
-          >
+          <motion.div className={styles.badge}>
             <FontAwesomeIcon icon={faEarthAmericas} />
             Colombianos en el exterior
           </motion.div>
 
-          <motion.h1
-            className={styles.title}
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.2,
-              duration: 0.7,
-            }}
-          >
-            Proceso de divorcio para colombianos en el exterior
+          <motion.h1 className={styles.title}>
+            Divorcio en Colombia desde el exterior: cómo hacerlo sin viajar y
+            con poder legal
           </motion.h1>
 
-          <motion.p
-            className={styles.description}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              delay: 0.4,
-              duration: 0.8,
-            }}
-          >
-            Guía informativa para colombianos que viven fuera del país y
-            necesitan conocer cómo funciona un proceso de divorcio en Colombia,
-            incluyendo poderes especiales, representación legal y trámites sin
-            necesidad de viajar.
+          <motion.p className={styles.description}>
+            Si vives en{" "}
+            <strong>
+              Estados Unidos, España, Canadá, Australia o cualquier país del
+              mundo
+            </strong>
+            , puedes realizar tu divorcio en Colombia sin regresar al país. Aquí
+            te explicamos cómo funciona el proceso con poder especial,
+            representación legal y trámite notarial o judicial.
           </motion.p>
 
-          <motion.div
-            className={styles.actions}
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.55,
-              duration: 0.6,
-            }}
-          >
+          <motion.div className={styles.actions}>
             <motion.a
               href="https://wa.me/573114659315"
               target="_blank"
-              rel="noopener noreferrer"
               className={styles.primary}
-              whileHover={{
-                scale: 1.04,
-                y: -2,
-              }}
-              whileTap={{ scale: 0.96 }}
             >
-              Conocer opciones legales
+              Evaluar mi caso de divorcio
             </motion.a>
 
-            <motion.div whileHover={{ y: -2 }}>
-              <Link href="/colombianos-exterior" className={styles.secondary}>
-                Volver
-              </Link>
-            </motion.div>
+            <Link href="/colombianos-exterior" className={styles.secondary}>
+              Volver
+            </Link>
           </motion.div>
         </motion.div>
       </section>
 
-      {/* INTRO */}
+      {/* ================= INTRO ================= */}
 
       <section className={styles.info}>
-        <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-        >
-          <motion.h2
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.1, duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            Guía para colombianos que necesitan resolver procesos familiares
-            desde otro país
+        <motion.div>
+          <motion.h2>
+            ¿Se puede divorciar un colombiano desde el exterior?
           </motion.h2>
 
-          <motion.p>
-            Muchas personas que viven actualmente en Estados Unidos, España,
-            Canadá, Australia, Chile, México y otros países necesitan resolver
-            su situación matrimonial en Colombia sin desplazarse físicamente al
-            país.
-          </motion.p>
+          <p>
+            Sí. Un ciudadano colombiano puede iniciar su proceso de divorcio
+            desde el exterior sin necesidad de viajar a{" "}
+            <strong>Colombia</strong>, siempre que otorgue un poder especial a
+            un abogado que lo represente ante notaría o juzgado.
+          </p>
 
-          <motion.p>
-            Dependiendo de las condiciones del caso, el trámite puede realizarse
-            mediante divorcio notarial cuando existe acuerdo entre las partes o
-            mediante proceso judicial cuando existen conflictos relacionados con
-            hijos, bienes, alimentos o desacuerdos.
-          </motion.p>
+          <p>
+            Este proceso es común en colombianos residentes en Estados Unidos,
+            España, Canadá y otros países, donde la distancia impide asistir
+            personalmente a audiencias o trámites.
+          </p>
 
-          <motion.p>
-            En muchos casos es posible adelantar el proceso mediante poder
-            especial y representación legal en Colombia, evitando viajes
-            innecesarios y facilitando el avance del trámite desde el exterior.
-          </motion.p>
+          <p>
+            Dependiendo del caso, el divorcio puede ser: notarial (cuando hay
+            acuerdo) o judicial (cuando existen conflictos sobre hijos, bienes o
+            alimentos).
+          </p>
 
-          <motion.div className={styles.extraInfo}>
+          <div className={styles.extraInfo}>
             <p>
-              Si deseas conocer información más amplia sobre causales,
-              requisitos y tipos de procesos, puedes consultar nuestra{" "}
+              Para una explicación más profunda sobre causales, tipos de
+              divorcio y normativa general en Colombia, puedes consultar la{" "}
               <a
                 href="https://abogadosespecialistas.com.co/divorcio.html"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                guía principal sobre divorcio en Colombia
+                guía completa de divorcio en Colombia
               </a>
               .
             </p>
-          </motion.div>
+          </div>
         </motion.div>
       </section>
 
-      {/* REQUISITOS */}
+      {/* ================= REQUISITOS ================= */}
 
       <section className={styles.services}>
-        <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-        >
-          <motion.h2 className={styles.sectionTitle}>
-            Requisitos para gestionar un divorcio desde el exterior
-          </motion.h2>
+        <motion.div>
+          <h2 className={styles.sectionTitle}>
+            Requisitos para divorciarse desde el exterior
+          </h2>
 
-          <motion.p className={styles.sectionDescription}>
-            Los documentos y requisitos pueden variar dependiendo del tipo de
-            proceso, si existen hijos menores, bienes o acuerdos entre las
-            partes.
-          </motion.p>
+          <p className={styles.sectionDescription}>
+            Estos son los elementos esenciales para iniciar un divorcio en
+            Colombia viviendo fuera del país.
+          </p>
 
           <div className={styles.grid}>
             {[
               {
                 icon: faFileSignature,
                 title: "Poder especial",
-                text: "Permite que un abogado represente el proceso en Colombia sin necesidad de viajar.",
+                text: "Permite que un abogado en Colombia te represente en todo el proceso sin que tengas que viajar.",
               },
               {
                 icon: faBuildingColumns,
-                title: "Documentación",
-                text: "Registro civil de matrimonio, identificación y demás soportes requeridos.",
+                title: "Registro civil de matrimonio",
+                text: "Documento obligatorio para iniciar el trámite de divorcio en Colombia.",
               },
               {
                 icon: faGavel,
-                title: "Proceso judicial o notarial",
-                text: "El trámite depende de si existe acuerdo o conflictos entre las partes.",
+                title: "Definición del tipo de proceso",
+                text: "Se determina si será divorcio notarial o judicial según el acuerdo entre las partes.",
               },
             ].map((item, index) => (
-              <motion.div
-                key={index}
-                className={styles.card}
-                initial={{ opacity: 0, y: 45 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.55,
-                  delay: index * 0.1,
-                }}
-                viewport={{ once: true }}
-              >
+              <div key={index} className={styles.card}>
                 <div className={styles.icon}>
                   <FontAwesomeIcon icon={item.icon} />
                 </div>
-
                 <h3>{item.title}</h3>
-
                 <p>{item.text}</p>
-
-                <span className={styles.cardLink}>
-                  Más información
-                  <FontAwesomeIcon icon={faArrowRight} />
-                </span>
-              </motion.div>
+              </div>
             ))}
           </div>
         </motion.div>
       </section>
 
-      {/* BENEFICIOS */}
+      {/* ================= BENEFICIOS ================= */}
 
       <section className={styles.benefits}>
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.65 }}
-          viewport={{ once: true }}
-        >
-          <motion.h2>Diferencias entre divorcio notarial y judicial</motion.h2>
+        <motion.div>
+          <h2>Ventajas del divorcio desde el exterior en Colombia</h2>
 
           <div className={styles.benefitsGrid}>
             {beneficios.map((item, index) => (
-              <motion.div
-                className={styles.benefit}
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{
-                  delay: index * 0.08,
-                  duration: 0.45,
-                }}
-                viewport={{ once: true }}
-              >
+              <div key={index} className={styles.benefit}>
                 <FontAwesomeIcon icon={faCheckCircle} />
-
                 <span>{item}</span>
-              </motion.div>
+              </div>
             ))}
           </div>
 
           <div className={styles.extraInfo}>
             <p>
-              El divorcio notarial suele aplicarse cuando ambas partes están de
-              acuerdo respecto al proceso, mientras que el divorcio judicial se
-              utiliza cuando existen desacuerdos o asuntos que requieren
-              intervención de un juez de familia.
-            </p>
-
-            <p>
-              Algunos casos también requieren acompañamiento relacionado con
-              custodia, alimentos o conflictos patrimoniales. Puedes consultar
-              más información sobre{" "}
-              <a
-                href="https://abogadosespecialistas.com.co/abogados-de-familia.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                derecho de familia en Colombia
-              </a>
-              .
+              El divorcio notarial es más rápido cuando hay mutuo acuerdo,
+              mientras que el divorcio judicial aplica cuando existen conflictos
+              entre las partes.
             </p>
           </div>
         </motion.div>
       </section>
 
-      {/* PROCESO */}
+      {/* ================= PROCESO ================= */}
 
       <section className={styles.process}>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <motion.h2>¿Cómo funciona el proceso desde el exterior?</motion.h2>
+        <motion.div>
+          <h2>¿Cómo es el proceso de divorcio desde el exterior?</h2>
 
           <div className={styles.processGrid}>
             {[
               {
                 number: "01",
-                title: "Consulta inicial",
-                text: "Se analiza el caso y el tipo de trámite aplicable.",
+                title: "Consulta del caso",
+                text: "Se analiza la situación y el tipo de divorcio aplicable.",
               },
               {
                 number: "02",
                 title: "Poder y documentos",
-                text: "Se preparan los documentos necesarios para iniciar el proceso.",
+                text: "Se elabora el poder especial y se recopilan los documentos.",
               },
               {
                 number: "03",
-                title: "Representación",
-                text: "El trámite avanza ante notaría o juzgado en Colombia.",
+                title: "Inicio del trámite",
+                text: "Se presenta el caso ante notaría o juzgado en Colombia.",
               },
               {
                 number: "04",
                 title: "Seguimiento",
-                text: "Se mantiene comunicación y actualización permanente.",
+                text: "Acompañamiento hasta la finalización del proceso.",
               },
             ].map((step, index) => (
-              <motion.div
-                key={index}
-                className={styles.step}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.55,
-                  delay: index * 0.1,
-                }}
-                viewport={{ once: true }}
-              >
+              <div key={index} className={styles.step}>
                 <span>{step.number}</span>
-
                 <h3>{step.title}</h3>
-
                 <p>{step.text}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </motion.div>
       </section>
 
-      {/* SEO SUPPORT */}
+      {/* ================= SEO + CANONICAL DIFFERENTIATION ================= */}
 
       <section className={styles.seoSupport}>
-        <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-        >
-          <h2>
-            Información complementaria sobre divorcio y derecho de familia en
-            Colombia
-          </h2>
+        <motion.div>
+          <h2>Divorcio en Colombia sin viajar: lo que debes saber</h2>
 
           <p>
-            Esta guía está enfocada especialmente en colombianos que residen
-            fuera del país y necesitan entender cómo funciona la representación
-            legal, los poderes especiales y los trámites familiares desde el
-            exterior.
+            Este contenido está enfocado exclusivamente en colombianos en el
+            exterior que necesitan entender cómo divorciarse sin regresar a
+            Colombia mediante representación legal.
           </p>
 
           <p>
-            Si deseas conocer información más amplia sobre causales de divorcio,
-            tipos de procesos, requisitos legales, divorcio notarial, divorcio
-            judicial y acompañamiento jurídico en Colombia, puedes consultar la
-            guía principal especializada.
+            Si buscas información más amplia sobre causales, jurisprudencia o
+            derecho de familia general en Colombia, consulta la guía principal
+            del portal especializado.
           </p>
 
           <div className={styles.seoLinkBox}>
-            <h3>Guía principal sobre divorcios en Colombia</h3>
-
-            <p>
-              Accede a información detallada sobre procesos de divorcio,
-              abogados de familia, separación de bienes y requisitos legales en
-              Colombia.
-            </p>
+            <h3>Guía completa de divorcio en Colombia</h3>
 
             <a
               href="https://abogadosespecialistas.com.co/divorcio.html"
@@ -387,97 +252,33 @@ export default function DivorciosColombiaContent() {
               rel="noopener noreferrer"
               className={styles.seoLink}
             >
-              Ver guía completa de divorcio en Colombia
+              Ver guía completa de divorcio{" "}
               <FontAwesomeIcon icon={faArrowRight} />
             </a>
           </div>
         </motion.div>
       </section>
 
-      {/* RELACIONADOS */}
-
-      <section className={styles.services}>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-        >
-          <h2 className={styles.sectionTitle}>
-            Temas relacionados para colombianos en el exterior
-          </h2>
-
-          <div className={styles.grid}>
-            {[
-              {
-                icon: faGlobe,
-                title: "Poderes en Colombia",
-                text: "Documentos y representación para procesos desde el exterior.",
-                link: "/colombianos-exterior/poderes-colombia",
-              },
-              {
-                icon: faPeopleRoof,
-                title: "Custodia y alimentos",
-                text: "Procesos relacionados con hijos y obligaciones familiares.",
-                link: "/colombianos-exterior/custodia-alimentos",
-              },
-              {
-                icon: faScaleBalanced,
-                title: "Sucesiones y herencias",
-                text: "Procesos patrimoniales y sucesorales en Colombia.",
-                link: "/colombianos-exterior/sucesiones-herencias",
-              },
-            ].map((item, index) => (
-              <Link href={item.link} key={index} className={styles.card}>
-                <div className={styles.icon}>
-                  <FontAwesomeIcon icon={item.icon} />
-                </div>
-
-                <h3>{item.title}</h3>
-
-                <p>{item.text}</p>
-              </Link>
-            ))}
-          </div>
-        </motion.div>
-      </section>
-
-      {/* CTA */}
+      {/* ================= CTA ================= */}
 
       <section className={styles.cta}>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.92 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.7,
-          }}
-          viewport={{ once: true }}
-        >
+        <motion.div>
           <FontAwesomeIcon icon={faPassport} className={styles.ctaIcon} />
 
-          <h2>¿Necesitas información sobre procesos familiares en Colombia?</h2>
+          <h2>Inicia tu divorcio desde el exterior hoy mismo</h2>
 
           <p>
-            Nuestro equipo brinda acompañamiento jurídico para colombianos que
-            residen fuera del país y necesitan resolver procesos legales en
-            Colombia.
+            Recibe asesoría legal y representación en Colombia sin necesidad de
+            viajar.
           </p>
 
-          <motion.a
-            href="https://wa.me/573114659315"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.ctaButton}
-            whileHover={{
-              scale: 1.05,
-            }}
-          >
-            Recibir información del proceso
-          </motion.a>
+          <a href="https://wa.me/573114659315" className={styles.ctaButton}>
+            Hablar con un abogado
+          </a>
         </motion.div>
       </section>
 
-      {/* SCHEMA */}
+      {/* ================= SCHEMA ================= */}
 
       <script
         type="application/ld+json"
@@ -485,22 +286,15 @@ export default function DivorciosColombiaContent() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Guía de divorcio para colombianos en el exterior",
+            name: "Divorcio para colombianos en el exterior",
             provider: {
               "@type": "Organization",
-              name: "Pravice Abogados",
+              name: "Pravice",
             },
             areaServed: "Worldwide",
             url: "https://pravice.co/colombianos-exterior/divorcios-colombia",
             serviceType:
-              "Información para colombianos en el exterior sobre procesos familiares en Colombia",
-            mentions: [
-              {
-                "@type": "WebPage",
-                name: "Guía de divorcio en Colombia",
-                url: "https://abogadosespecialistas.com.co/divorcio.html",
-              },
-            ],
+              "Divorcio en Colombia desde el exterior con poder legal",
           }),
         }}
       />

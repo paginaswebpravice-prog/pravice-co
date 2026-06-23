@@ -19,295 +19,171 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const beneficios = [
-  "Procesos de custodia y visitas en Colombia",
-  "Cuotas alimentarias y regulación familiar",
-  "Representación legal sin necesidad de viajar",
-  "Atención virtual para colombianos en el exterior",
-  "Elaboración de poderes especiales",
-  "Acompañamiento jurídico personalizado",
+  "Custodia de hijos en Colombia sin viajar desde el exterior",
+  "Gestión de cuotas alimentarias internacionales",
+  "Representación legal virtual en Colombia",
+  "Atención online para colombianos fuera del país",
+  "Poderes especiales para actuar desde el extranjero",
+  "Acompañamiento jurídico en todo el proceso familiar",
 ];
 
 export default function CustodiaAlimentosContent() {
   return (
     <main className={styles.container}>
-      {/* HERO */}
-
+      {/* ================= HERO ================= */}
       <section className={styles.hero}>
-        <motion.div
-          initial={{ opacity: 0, y: 50, scale: 0.96 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{
-            duration: 0.9,
-            ease: "easeOut",
-          }}
-        >
-          <motion.div
-            className={styles.badge}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              delay: 0.15,
-              duration: 0.5,
-            }}
-            whileHover={{
-              scale: 1.05,
-              y: -2,
-            }}
-          >
+        <motion.div>
+          <motion.div className={styles.badge}>
             <FontAwesomeIcon icon={faEarthAmericas} />
             Colombianos en el Exterior
           </motion.div>
 
-          <motion.h1
-            className={styles.title}
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.2,
-              duration: 0.7,
-            }}
-          >
+          <motion.h1 className={styles.title}>
             Custodia y alimentos en Colombia desde el exterior
           </motion.h1>
 
-          <motion.p
-            className={styles.description}
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.35,
-              duration: 0.7,
-            }}
-          >
-            Orientamos colombianos que viven fuera del país en procesos
-            relacionados con custodia de menores, régimen de visitas y cuotas
-            alimentarias en Colombia, brindando acompañamiento jurídico y
-            representación legal virtual.
+          <motion.p className={styles.description}>
+            Asesoría jurídica virtual para colombianos en el exterior en
+            procesos de custodia de menores, régimen de visitas y cuotas
+            alimentarias en Colombia, sin necesidad de viajar al país y con
+            representación legal completa.
           </motion.p>
 
-          <motion.div
-            className={styles.actions}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.5,
-              duration: 0.7,
-            }}
-          >
-            <motion.a
+          <div className={styles.actions}>
+            <a
               href="https://wa.me/573114659315"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.primary}
-              whileHover={{
-                scale: 1.05,
-                y: -3,
-              }}
-              whileTap={{ scale: 0.96 }}
             >
               Solicitar asesoría
-            </motion.a>
+            </a>
 
-            <motion.div
-              whileHover={{
-                scale: 1.04,
-                y: -2,
-              }}
-              whileTap={{ scale: 0.97 }}
-            >
-              <Link href="/colombianos-exterior" className={styles.secondary}>
-                Volver
-              </Link>
-            </motion.div>
-          </motion.div>
+            <Link href="/colombianos-exterior" className={styles.secondary}>
+              Ver más servicios
+            </Link>
+          </div>
         </motion.div>
       </section>
 
-      {/* INTRO */}
-
+      {/* ================= INFO ================= */}
       <section className={styles.info}>
-        <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-        >
-          <motion.h2
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.1,
-              duration: 0.6,
-            }}
-            viewport={{ once: true }}
-          >
-            Procesos familiares para colombianos residentes en el exterior
-          </motion.h2>
+        <div>
+          <h2>
+            Procesos de familia en Colombia para quienes viven en el exterior
+          </h2>
 
-          {[
-            `Muchos colombianos que actualmente viven en Estados Unidos, España, Canadá, Australia, Chile y otros países necesitan resolver situaciones legales relacionadas con hijos menores en Colombia. Estos casos pueden involucrar custodia, regulación de visitas, convivencia y cuotas alimentarias.`,
+          <p>
+            Si vives fuera de Colombia y necesitas resolver temas de custodia,
+            visitas o alimentos, puedes hacerlo mediante representación legal
+            sin necesidad de regresar al país.
+          </p>
 
-            `En Pravice brindamos acompañamiento jurídico para adelantar procesos familiares en Colombia desde el exterior, permitiendo que nuestros clientes puedan gestionar actuaciones legales sin necesidad de desplazarse al país.`,
+          <p>
+            En estos casos es común que uno de los padres resida en Estados
+            Unidos, España, Canadá, Chile, México o Australia, mientras el
+            proceso judicial o acuerdo se desarrolla en Colombia.
+          </p>
 
-            `Nuestro equipo jurídico apoya en la elaboración de poderes especiales, revisión documental, representación ante juzgados y orientación durante cada etapa del proceso.`,
+          <p>
+            Nuestro equipo jurídico brinda acompañamiento completo para que
+            puedas actuar mediante poderes especiales y gestión remota del
+            proceso.
+          </p>
 
-            `Buscamos ofrecer soluciones jurídicas organizadas y atención virtual constante para colombianos que requieren resolver asuntos familiares en Colombia mientras residen fuera del país.`,
-          ].map((text, index) => (
-            <motion.p
-              key={index}
-              initial={{ opacity: 0, y: 22 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: index * 0.12,
-                duration: 0.6,
-              }}
-              viewport={{ once: true }}
-            >
-              {text}
-            </motion.p>
-          ))}
-        </motion.div>
+          <p>
+            El objetivo es que puedas proteger los derechos de tus hijos y
+            resolver tu situación familiar desde cualquier país del mundo.
+          </p>
+        </div>
       </section>
 
-      {/* SERVICES */}
-
+      {/* ================= SERVICES ================= */}
       <section className={styles.services}>
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-        >
-          <motion.h2
-            className={styles.sectionTitle}
-            initial={{ opacity: 0, scale: 0.96 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            Servicios relacionados con custodia y alimentos
-          </motion.h2>
+        <div>
+          <h2 className={styles.sectionTitle}>
+            Servicios de custodia y alimentos desde el exterior
+          </h2>
 
-          <motion.p
-            className={styles.sectionDescription}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{
-              delay: 0.15,
-              duration: 0.7,
-            }}
-            viewport={{ once: true }}
-          >
-            Analizamos cada situación familiar para orientar el proceso jurídico
-            más adecuado según las necesidades del menor y el lugar de
-            residencia de los padres.
-          </motion.p>
+          <p className={styles.sectionDescription}>
+            Soluciones jurídicas virtuales para colombianos en el exterior en
+            procesos de familia en Colombia.
+          </p>
 
           <div className={styles.grid}>
             {[
               {
                 icon: faChild,
                 title: "Custodia de menores",
-                text: "Acompañamiento en procesos relacionados con custodia, cuidado personal y responsabilidades parentales.",
+                text: "Procesos de custodia y cuidado personal de hijos en Colombia desde el exterior.",
               },
               {
                 icon: faScaleBalanced,
                 title: "Cuotas alimentarias",
-                text: "Orientación en fijación, regulación o modificación de cuotas alimentarias en Colombia.",
+                text: "Fijación, modificación o cobro de alimentos desde otro país.",
               },
               {
                 icon: faPeopleRoof,
                 title: "Régimen de visitas",
-                text: "Procesos y acuerdos relacionados con visitas, convivencia y contacto con menores.",
+                text: "Regulación de visitas y contacto con menores en Colombia.",
               },
               {
                 icon: faGavel,
                 title: "Representación legal",
-                text: "Actuaciones ante juzgados de familia y entidades competentes en Colombia.",
+                text: "Actuación ante juzgados de familia sin necesidad de viajar.",
               },
               {
                 icon: faFileSignature,
-                title: "Poderes especiales",
-                text: "Elaboración de documentos y poderes para representación desde el exterior.",
+                title: "Poderes internacionales",
+                text: "Documentos legales para actuar desde el exterior en Colombia.",
               },
               {
                 icon: faPhoneVolume,
                 title: "Asesoría virtual",
-                text: "Consultas online y acompañamiento remoto durante el desarrollo del proceso.",
+                text: "Acompañamiento jurídico online en todo el proceso.",
               },
             ].map((item, index) => (
-              <motion.div
-                key={index}
-                className={styles.card}
-                initial={{
-                  opacity: 0,
-                  y: 45,
-                  scale: 0.92,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  scale: 1,
-                }}
-                transition={{
-                  duration: 0.55,
-                  delay: index * 0.08,
-                }}
-                viewport={{ once: true }}
-                whileHover={{
-                  y: -10,
-                  scale: 1.02,
-                }}
-              >
-                <motion.div
-                  className={styles.icon}
-                  whileHover={{
-                    rotate: 8,
-                    scale: 1.12,
-                  }}
-                  transition={{ duration: 0.3 }}
-                >
+              <div key={index} className={styles.card}>
+                <div className={styles.icon}>
                   <FontAwesomeIcon icon={item.icon} />
-                </motion.div>
-
+                </div>
                 <h3>{item.title}</h3>
-
                 <p>{item.text}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </section>
 
-      {/* SEO SUPPORT */}
-
+      {/* ================= SEO SUPPORT ================= */}
       <section className={styles.seoSupport}>
         <div>
-          <h2>
-            Información complementaria sobre custodia y alimentos en Colombia
-          </h2>
+          <h2>¿Cómo funciona la custodia y los alimentos desde el exterior?</h2>
 
           <p>
-            Los procesos de custodia de menores y cuotas alimentarias en
-            Colombia pueden requerir actuaciones judiciales o acuerdos ante
-            entidades competentes dependiendo de cada caso familiar. Cuando uno
-            de los padres reside fuera del país, es importante contar con
-            acompañamiento jurídico adecuado y representación legal organizada.
+            Los procesos de familia en Colombia permiten que los padres puedan
+            definir custodia, visitas y cuotas alimentarias incluso cuando uno
+            de ellos vive fuera del país.
           </p>
 
           <p>
-            Si deseas conocer información más amplia sobre procesos de derecho
-            de familia en Colombia, puedes consultar el portal principal de
-            nuestra firma aliado especializado en temas familiares, custodia,
-            alimentos y regulación de visitas.
+            En la mayoría de los casos, el proceso puede adelantarse mediante
+            apoderado, lo que evita la necesidad de viajar a Colombia para
+            asistir a audiencias o presentar documentos.
+          </p>
+
+          <p>
+            Esto es especialmente útil para colombianos que residen en el
+            exterior y necesitan resolver situaciones urgentes relacionadas con
+            sus hijos menores.
           </p>
 
           <div className={styles.seoLinkBox}>
-            <h3>Portal principal especializado en derecho de familia</h3>
+            <h3>Portal especializado en derecho de familia en Colombia</h3>
 
             <p>
-              Accede a información jurídica complementaria relacionada con
-              procesos familiares, custodia, alimentos y visitas en Colombia.
+              Consulta información ampliada sobre procesos familiares, custodia,
+              alimentos y régimen de visitas en Colombia.
             </p>
 
             <a
@@ -316,79 +192,6 @@ export default function CustodiaAlimentosContent() {
               rel="noopener noreferrer"
               className={styles.seoLink}
             >
-              Visitar portal principal
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* ARTICLE */}
-
-      <section className={styles.articleContent}>
-        <div>
-          <h2>
-            Custodia, visitas y cuotas alimentarias para colombianos en el
-            exterior
-          </h2>
-
-          <p>
-            Los colombianos que viven fuera del país frecuentemente necesitan
-            resolver situaciones familiares relacionadas con hijos menores que
-            permanecen en Colombia. Estos procesos pueden involucrar custodia,
-            regulación de visitas, alimentos o definición de responsabilidades
-            parentales.
-          </p>
-
-          <p>
-            Dependiendo del caso, las actuaciones pueden adelantarse ante
-            juzgados de familia, comisarías de familia o mediante acuerdos entre
-            las partes. La posibilidad de actuar mediante apoderado permite que
-            muchos colombianos puedan gestionar estos procesos sin necesidad de
-            viajar.
-          </p>
-
-          <h3>¿Qué situaciones suelen presentarse?</h3>
-
-          <ul>
-            <li>Definición de custodia de menores.</li>
-            <li>Regulación de visitas y convivencia.</li>
-            <li>Fijación o modificación de cuota alimentaria.</li>
-            <li>Incumplimiento de obligaciones alimentarias.</li>
-            <li>Representación legal desde el exterior.</li>
-            <li>Trámites mediante poder especial.</li>
-          </ul>
-
-          <h3>Representación legal desde otro país</h3>
-
-          <p>
-            Muchas actuaciones pueden adelantarse de manera virtual mediante
-            poderes especiales y comunicación remota. Esto permite que el
-            cliente tenga acompañamiento jurídico constante mientras el proceso
-            se desarrolla en Colombia.
-          </p>
-
-          <p>
-            La organización documental, el seguimiento procesal y la correcta
-            orientación jurídica son aspectos importantes para facilitar el
-            desarrollo del caso y proteger los derechos del menor.
-          </p>
-
-          <div className={styles.internalSeoCta}>
-            <h3>
-              ¿Buscas más información sobre procesos familiares en Colombia?
-            </h3>
-
-            <p>
-              Consulta contenido jurídico complementario sobre derecho de
-              familia, custodia y alimentos en Colombia.
-            </p>
-
-            <a
-              href="https://abogadosespecialistas.com.co/derecho-de-familia.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               Ir al portal principal
               <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
             </a>
@@ -396,213 +199,156 @@ export default function CustodiaAlimentosContent() {
         </div>
       </section>
 
-      {/* BENEFITS */}
+      {/* ================= ARTICLE ================= */}
+      <section className={styles.articleContent}>
+        <div>
+          <h2>
+            Custodia, visitas y alimentos para colombianos que viven en el
+            exterior
+          </h2>
 
+          <p>
+            Los colombianos residentes en el exterior pueden iniciar o continuar
+            procesos de familia en Colombia sin necesidad de regresar, mediante
+            poder especial otorgado a un abogado.
+          </p>
+
+          <p>
+            Esto permite gestionar casos de custodia, visitas o alimentos de
+            forma completamente remota, con seguimiento constante del proceso.
+          </p>
+
+          <h3>Casos más frecuentes</h3>
+
+          <ul>
+            <li>Definición de custodia de hijos menores en Colombia</li>
+            <li>Cuotas alimentarias desde el exterior</li>
+            <li>Régimen de visitas y convivencia</li>
+            <li>Incumplimiento de obligaciones alimentarias</li>
+            <li>Procesos judiciales de familia en Colombia</li>
+            <li>Representación legal sin viajar al país</li>
+          </ul>
+
+          <h3>Ventajas de hacerlo desde el exterior</h3>
+
+          <p>
+            El proceso puede adelantarse de forma organizada, con documentos
+            digitalizados, comunicación constante y representación ante juzgados
+            de familia en Colombia.
+          </p>
+
+          <p>
+            Esto reduce tiempos, evita desplazamientos y permite una gestión
+            jurídica más eficiente desde cualquier país.
+          </p>
+
+          <div className={styles.internalSeoCta}>
+            <h3>
+              ¿Necesitas ayuda con custodia o alimentos desde el exterior?
+            </h3>
+
+            <p>
+              Recibe orientación jurídica especializada en procesos familiares
+              en Colombia sin necesidad de viajar.
+            </p>
+
+            <a
+              href="https://abogadosespecialistas.com.co/derecho-de-familia.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver derecho de familia
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= BENEFITS ================= */}
       <section className={styles.benefits}>
-        <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-        >
-          <motion.h2
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            ¿Por qué realizar tu proceso con nosotros?
-          </motion.h2>
+        <div>
+          <h2>¿Por qué hacer tu proceso con nosotros?</h2>
 
           <div className={styles.benefitsGrid}>
             {beneficios.map((item, index) => (
-              <motion.div
-                className={styles.benefit}
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{
-                  delay: index * 0.08,
-                  duration: 0.45,
-                }}
-                viewport={{ once: true }}
-                whileHover={{
-                  x: 6,
-                  scale: 1.02,
-                }}
-              >
-                <motion.div
-                  whileHover={{
-                    scale: 1.2,
-                    rotate: 8,
-                  }}
-                >
-                  <FontAwesomeIcon icon={faCheckCircle} />
-                </motion.div>
-
+              <div key={index} className={styles.benefit}>
+                <FontAwesomeIcon icon={faCheckCircle} />
                 <span>{item}</span>
-              </motion.div>
+              </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </section>
 
-      {/* PROCESS */}
-
+      {/* ================= PROCESS ================= */}
       <section className={styles.process}>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <motion.h2
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            ¿Cómo funciona el proceso?
-          </motion.h2>
+        <div>
+          <h2>¿Cómo funciona el proceso?</h2>
 
           <div className={styles.processGrid}>
             {[
               {
                 number: "01",
                 title: "Consulta inicial",
-                text: "Analizamos la situación familiar y resolvemos dudas jurídicas relacionadas con el caso.",
+                text: "Revisamos tu caso de custodia, visitas o alimentos desde el exterior.",
               },
               {
                 number: "02",
-                title: "Revisión documental",
-                text: "Organizamos documentos y elaboramos los poderes necesarios para representación legal.",
+                title: "Documentos y poder",
+                text: "Organizamos documentos y poderes para actuar en Colombia.",
               },
               {
                 number: "03",
-                title: "Actuaciones legales",
-                text: "Se adelantan actuaciones ante las entidades correspondientes en Colombia.",
+                title: "Proceso legal",
+                text: "Iniciamos actuaciones ante juzgados de familia en Colombia.",
               },
               {
                 number: "04",
                 title: "Seguimiento",
-                text: "Mantenemos comunicación constante sobre avances y novedades del proceso.",
+                text: "Te mantenemos informado durante todo el proceso.",
               },
             ].map((item, index) => (
-              <motion.div
-                key={index}
-                className={styles.step}
-                initial={{
-                  opacity: 0,
-                  y: 40,
-                  scale: 0.9,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  scale: 1,
-                }}
-                transition={{
-                  delay: index * 0.1,
-                  duration: 0.55,
-                }}
-                viewport={{ once: true }}
-                whileHover={{
-                  y: -8,
-                  scale: 1.03,
-                }}
-              >
-                <motion.span
-                  whileHover={{
-                    scale: 1.15,
-                    rotate: -4,
-                  }}
-                >
-                  {item.number}
-                </motion.span>
-
+              <div key={index} className={styles.step}>
+                <span>{item.number}</span>
                 <h3>{item.title}</h3>
-
                 <p>{item.text}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </section>
 
-      {/* CTA */}
-
+      {/* ================= CTA ================= */}
       <section className={styles.cta}>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.92, y: 35 }}
-          whileInView={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{
-            duration: 0.75,
-            ease: "easeOut",
-          }}
-          viewport={{ once: true }}
-          whileHover={{
-            y: -4,
-          }}
-        >
-          <motion.div
-            animate={{
-              y: [0, -6, 0],
-            }}
-            transition={{
-              duration: 2.8,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          >
-            <FontAwesomeIcon icon={faPassport} className={styles.ctaIcon} />
-          </motion.div>
+        <div>
+          <FontAwesomeIcon icon={faPassport} className={styles.ctaIcon} />
 
-          <motion.h2
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.15 }}
-            viewport={{ once: true }}
-          >
-            ¿Necesitas orientación jurídica familiar en Colombia?
-          </motion.h2>
+          <h2>¿Necesitas resolver tu caso desde el exterior?</h2>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.28 }}
-            viewport={{ once: true }}
-          >
-            Recibe atención virtual y acompañamiento legal para procesos de
-            custodia, visitas y alimentos desde cualquier país.
-          </motion.p>
+          <p>
+            Recibe asesoría jurídica en Colombia para custodia, visitas y
+            alimentos sin viajar.
+          </p>
 
-          <motion.a
+          <a
             href="https://wa.me/573114659315"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.ctaButton}
-            whileHover={{
-              scale: 1.06,
-              y: -3,
-            }}
-            whileTap={{
-              scale: 0.96,
-            }}
           >
             Hablar con un abogado
-          </motion.a>
-        </motion.div>
+          </a>
+        </div>
       </section>
 
-      {/* SCHEMA */}
-
+      {/* ================= SCHEMA ================= */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Custodia y alimentos en Colombia desde el exterior",
+            name: "Custodia y alimentos desde el exterior",
             provider: {
               "@type": "Organization",
               name: "Pravice",
@@ -610,7 +356,7 @@ export default function CustodiaAlimentosContent() {
             areaServed: "Worldwide",
             url: "https://pravice.co/colombianos-exterior/custodia-alimentos",
             serviceType:
-              "Orientación jurídica para custodia y alimentos en Colombia",
+              "Custodia, visitas y alimentos para colombianos en el exterior",
           }),
         }}
       />

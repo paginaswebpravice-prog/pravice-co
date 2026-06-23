@@ -1,30 +1,25 @@
-// page.tsx
-
 import type { Metadata } from "next";
 import PoderesColombiaContent from "./PoderesColombiaContent";
 
 export const metadata: Metadata = {
   title:
-    "Poderes y representación legal en Colombia desde el exterior | Pravice",
+    "Poderes en Colombia desde el exterior | Trámites legales sin viajar | Colombianos en USA y España",
 
   description:
-    "Asesoría jurídica para colombianos en el exterior que necesitan realizar trámites legales, procesos familiares y representación en Colombia mediante poderes especiales.",
+    "Guía completa sobre poderes especiales en Colombia para colombianos en el exterior. Aprende cómo autorizar abogados, hacer trámites notariales, familiares y judiciales sin viajar desde USA, España, Canadá o cualquier país.",
 
   keywords: [
-    "poderes en Colombia",
-    "poder especial Colombia",
-    "colombianos en el exterior",
-    "abogados colombianos exterior",
-    "representación legal Colombia",
-    "poder para abogado Colombia",
-    "trámites legales Colombia",
-    "poder autenticado Colombia",
-    "trámites notariales Colombia",
-    "divorcio Colombia desde el exterior",
-    "sucesiones Colombia exterior",
-    "abogados de familia Colombia",
-    "poderes especiales Colombia",
-    "asesoría jurídica colombianos exterior",
+    "poderes en Colombia desde el exterior",
+    "poder especial Colombia desde USA",
+    "poder para abogado en Colombia",
+    "colombianos en el exterior trámites legales",
+    "apostilla poder Colombia",
+    "consulado colombiano poderes",
+    "representación legal Colombia exterior",
+    "trámites notariales Colombia desde extranjero",
+    "divorcio con poder Colombia",
+    "sucesiones desde el exterior Colombia",
+    "abogados colombianos exterior familia",
   ],
 
   alternates: {
@@ -33,28 +28,15 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Poderes y representación legal en Colombia desde el exterior | Pravice",
+      "Poderes en Colombia desde el exterior | Trámites legales sin viajar",
 
     description:
-      "Asesoría jurídica y representación legal para colombianos residentes en el exterior que necesitan realizar trámites y procesos en Colombia.",
+      "Cómo hacer poderes desde el exterior para Colombia: guía para trámites legales, notariales, familiares y judiciales sin viajar.",
 
     url: "https://pravice.co/colombianos-exterior/poderes-colombia",
-
-    siteName: "Pravice",
-
+    siteName: "Pravice Abogados",
     locale: "es_CO",
-
     type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-
-    title:
-      "Poderes y representación legal en Colombia desde el exterior | Pravice",
-
-    description:
-      "Asesoría jurídica para colombianos en el exterior y representación legal en Colombia.",
   },
 
   robots: {

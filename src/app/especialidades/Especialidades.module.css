@@ -201,6 +201,64 @@
   text-underline-offset: 4px;
 }
 
+/* ================= FAQ SEO ================= */
+
+.faq {
+  margin-top: 40px;
+
+  padding: 40px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.faq h2 {
+  text-align: center;
+
+  color: #004a80;
+
+  font-size: 2rem;
+
+  margin-bottom: 35px;
+
+  line-height: 1.4;
+}
+
+.faqItem {
+  padding: 24px 0;
+
+  border-bottom: 1px solid #e8eef5;
+}
+
+.faqItem:last-child {
+  border-bottom: none;
+}
+
+.faqItem h3 {
+  color: #111;
+
+  font-size: 1.15rem;
+
+  margin-bottom: 12px;
+
+  line-height: 1.5;
+
+  font-weight: 700;
+}
+
+.faqItem p {
+  color: #444;
+
+  line-height: 1.8;
+
+  font-size: 1rem;
+
+  margin: 0;
+}
+
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {
@@ -231,5 +289,16 @@
 
   .portalPrincipal {
     padding: 22px;
+  }
+  .faq {
+    padding: 28px;
+  }
+
+  .faq h2 {
+    font-size: 1.5rem;
+  }
+
+  .faqItem h3 {
+    font-size: 1.05rem;
   }
 }

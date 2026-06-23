@@ -3,10 +3,10 @@ import ColombianosExteriorContent from "./ColombianosExteriorContent";
 
 export const metadata: Metadata = {
   title:
-    "Procesos legales en Colombia para colombianos en el exterior | PRAVICE",
+    "Resolver trámites y procesos legales en Colombia desde el exterior | PRAVICE",
 
   description:
-    "Asesoría jurídica y representación legal en Colombia para colombianos en el exterior. Divorcios, sucesiones, custodia, poderes y procesos familiares sin viajar al país.",
+    "¿Vives fuera de Colombia? Gestiona divorcios, sucesiones, custodia, poderes y procesos legales en Colombia sin viajar. Atención virtual y representación jurídica.",
 
   keywords: [
     "colombianos en el exterior abogados",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Procesos legales en Colombia para colombianos en el exterior | PRAVICE",
+      "Procesos legales en Colombia sin viajar: guía para colombianos en el exterior",
 
     description:
       "Asesoría jurídica virtual y representación legal en Colombia para colombianos residentes fuera del país.",

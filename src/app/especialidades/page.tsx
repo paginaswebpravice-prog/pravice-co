@@ -124,7 +124,6 @@ export default function Especialidades() {
       >
         <div className={styles.container}>
           {/* TITULO */}
-
           <motion.h2
             className={styles.titulo}
             itemProp="name"
@@ -135,9 +134,7 @@ export default function Especialidades() {
           >
             Conoce nuestras áreas de práctica jurídica empresarial en Colombia
           </motion.h2>
-
           {/* DESCRIPCION */}
-
           <motion.p
             className={styles.descripcion}
             itemProp="description"
@@ -152,9 +149,7 @@ export default function Especialidades() {
             normativo, litigios y derecho societario para empresas y
             organizaciones.
           </motion.p>
-
           {/* ENLACE CONTEXTUAL HACIA EL PORTAL PRINCIPAL */}
-
           <motion.div
             className={styles.portalPrincipal}
             initial={{ opacity: 0 }}
@@ -177,9 +172,7 @@ export default function Especialidades() {
               litigios, contratos y estrategias legales corporativas.
             </p>
           </motion.div>
-
           {/* ESPECIALIDADES */}
-
           <div className={styles.cards}>
             {especialidades.map((esp, index) => (
               <motion.div
@@ -216,9 +209,7 @@ export default function Especialidades() {
               </motion.div>
             ))}
           </div>
-
           {/* CONTEXTO SEO */}
-
           <section className={styles.contextoSeo}>
             <h2>
               ¿Cuáles son las principales áreas de práctica jurídica para
@@ -254,8 +245,7 @@ export default function Especialidades() {
               .
             </p>
           </section>
-
-          {/* FAQ 
+          FAQ
           <section className={styles.faq}>
             <h2>
               Preguntas frecuentes sobre especialidades jurídicas empresariales
@@ -298,7 +288,6 @@ export default function Especialidades() {
               obligaciones pendientes.
             </p>
           </section>
-          */}
         </div>
       </section>
 
@@ -307,27 +296,113 @@ export default function Especialidades() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LegalService",
-            name: "Especialidades jurídicas empresariales",
-            areaServed: "Colombia",
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "LegalService",
 
-            hasOfferCatalog: {
-              "@type": "OfferCatalog",
-              name: "Áreas de práctica jurídica",
+              name: "Especialidades jurídicas empresariales",
 
-              itemListElement: especialidades.map((esp) => ({
-                "@type": "Offer",
+              description:
+                "Áreas de práctica jurídica empresarial relacionadas con derecho comercial, contratos, recuperación de cartera, conciliación, litigios, derecho societario y cumplimiento normativo en Colombia.",
 
-                itemOffered: {
-                  "@type": "Service",
-                  name: esp.titulo,
-                  description: esp.descripcion,
-                },
-              })),
+              url: "https://pravice.co/especialidades",
+
+              areaServed: {
+                "@type": "Country",
+                name: "Colombia",
+              },
+
+              provider: {
+                "@type": "Organization",
+                name: "Pravice",
+                url: "https://pravice.co",
+              },
+
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Áreas de práctica jurídica empresarial",
+
+                itemListElement: especialidades.map((esp) => ({
+                  "@type": "Offer",
+
+                  itemOffered: {
+                    "@type": "Service",
+                    name: esp.titulo,
+                    description: esp.descripcion,
+                  },
+                })),
+              },
             },
-          }),
+
+            {
+              "@context": "https://schema.org",
+
+              "@type": "FAQPage",
+
+              mainEntity: [
+                {
+                  "@type": "Question",
+
+                  name: "¿Qué son las especialidades jurídicas empresariales?",
+
+                  acceptedAnswer: {
+                    "@type": "Answer",
+
+                    text: "Son áreas de práctica del derecho orientadas a resolver necesidades legales relacionadas con empresas, contratos, cumplimiento normativo, recuperación de cartera y relaciones comerciales.",
+                  },
+                },
+
+                {
+                  "@type": "Question",
+
+                  name: "¿Cuáles son las áreas jurídicas más utilizadas por las empresas en Colombia?",
+
+                  acceptedAnswer: {
+                    "@type": "Answer",
+
+                    text: "Las más utilizadas incluyen derecho comercial, derecho societario, contratos empresariales, recuperación de cartera, conciliación, litigios y cumplimiento normativo.",
+                  },
+                },
+
+                {
+                  "@type": "Question",
+
+                  name: "¿Por qué es importante conocer las diferentes áreas de práctica jurídica?",
+
+                  acceptedAnswer: {
+                    "@type": "Answer",
+
+                    text: "Permite identificar riesgos legales, fortalecer la seguridad jurídica empresarial y tomar decisiones más informadas.",
+                  },
+                },
+
+                {
+                  "@type": "Question",
+
+                  name: "¿Qué especialidad jurídica se relaciona con la recuperación de cartera?",
+
+                  acceptedAnswer: {
+                    "@type": "Answer",
+
+                    text: "La recuperación de cartera incluye procesos de cobranza prejurídica, cobro jurídico y negociación de obligaciones pendientes.",
+                  },
+                },
+
+                {
+                  "@type": "Question",
+
+                  name: "¿Qué especialidad jurídica ayuda a estructurar contratos comerciales?",
+
+                  acceptedAnswer: {
+                    "@type": "Answer",
+
+                    text: "El derecho contractual y el derecho comercial permiten diseñar, revisar y fortalecer contratos empresariales para reducir riesgos legales.",
+                  },
+                },
+              ],
+            },
+          ]),
         }}
       />
     </>

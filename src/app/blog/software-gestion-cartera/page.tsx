@@ -5,19 +5,20 @@ const canonicalUrl = "https://pravice.co/blog/software-gestion-cartera";
 
 export const metadata: Metadata = {
   title:
-    "Software de gestión de cartera: ventajas para empresas en Colombia | Pravice",
+    "Software de Gestión de Cartera en Colombia: Cómo Reducir la Mora y Mejorar la Cobranza",
 
   description:
-    "Descubre cómo los sistemas tecnológicos mejoran procesos de cobranza, recuperación de cartera y flujo de caja empresarial.",
+    "Descubre cómo el software de gestión de cartera ayuda a automatizar la cobranza, reducir la morosidad y mejorar el flujo de caja en empresas en Colombia.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Software de gestión de cartera: ventajas para empresas en Colombia",
+    title:
+      "Cómo Reducir la Mora Empresarial con Software de Gestión de Cartera en Colombia",
     description:
-      "Cómo los sistemas tecnológicos ayudan a mejorar procesos de cobranza y recuperación de pagos.",
+      "Guía sobre herramientas digitales para mejorar la recuperación de cartera y optimizar la cobranza empresarial.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -27,21 +28,22 @@ export const metadata: Metadata = {
         url: "https://pravice.co/logo_pravice.png",
         width: 1200,
         height: 630,
-        alt: "Software de gestión de cartera",
+        alt: "Software de gestión de cartera en Colombia",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Software de gestión de cartera",
+    title:
+      "Cómo mejorar la cobranza con software de gestión de cartera en Colombia",
     description:
-      "Ventajas de utilizar tecnología para mejorar procesos de cobranza empresarial.",
+      "Automatiza la recuperación de cartera y reduce la mora empresarial con tecnología.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
 
-/* ================= SEO SCHEMA JSON-LD ================= */
+/* ================= SEO SCHEMA ================= */
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -53,10 +55,10 @@ const schemaData = {
   },
 
   headline:
-    "Software de gestión de cartera: ventajas para empresas en Colombia",
+    "Software de Gestión de Cartera en Colombia: Cómo Reducir la Mora y Mejorar la Cobranza",
 
   description:
-    "Descubre cómo los sistemas tecnológicos mejoran procesos de cobranza, recuperación de cartera y flujo de caja empresarial.",
+    "Guía sobre software de gestión de cartera para automatizar cobranza, reducir morosidad y mejorar flujo de caja en empresas colombianas.",
 
   image: "https://pravice.co/logo_pravice.png",
 
@@ -80,17 +82,17 @@ const schemaData = {
 
   inLanguage: "es-CO",
 
-  articleSection: "Recuperación de Cartera",
+  articleSection: "Gestión Financiera Empresarial",
 
   keywords: [
-    "software gestión de cartera",
+    "software gestión de cartera Colombia",
     "software de cobranza",
-    "automatización de cartera",
-    "gestión de cobranza empresas",
-    "sistemas de recuperación de cartera",
+    "recuperación de cartera",
+    "automatización de cobranza",
     "cartera vencida Colombia",
+    "flujo de caja empresarial",
+    "gestión financiera empresas",
     "tecnología para cobranza",
-    "software financiero empresas",
   ],
 };
 

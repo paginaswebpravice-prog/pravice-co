@@ -5,18 +5,20 @@ const canonicalUrl = "https://pravice.co/blog/proveedor-incumple-contrato";
 
 export const metadata: Metadata = {
   title:
-    "Qué hacer si un proveedor incumple un contrato en Colombia 2026 | Pravice",
+    "Proveedor incumple contrato en Colombia: qué hacer paso a paso (2026) | Guía legal",
+
   description:
-    "Aprende qué hacer cuando un proveedor incumple un contrato en Colombia. Conoce acciones legales, reclamaciones y cómo proteger tu empresa.",
+    "¿Tu proveedor incumplió un contrato en Colombia? Aprende qué hacer paso a paso, qué pruebas necesitas y cómo reclamar legalmente sin perder dinero.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Qué hacer si un proveedor incumple un contrato en Colombia",
+    title:
+      "Proveedor incumple contrato en Colombia: qué hacer y cómo reclamar legalmente",
     description:
-      "Guía legal para empresas sobre incumplimientos contractuales de proveedores en Colombia.",
+      "Guía práctica para empresas en Colombia sobre incumplimientos de proveedores y cómo actuar legalmente paso a paso.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -26,16 +28,17 @@ export const metadata: Metadata = {
         url: "https://pravice.co/logo_pravice.png",
         width: 1200,
         height: 630,
-        alt: "Proveedor incumple contrato en Colombia",
+        alt: "Incumplimiento de contrato por proveedor en Colombia",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Qué hacer si un proveedor incumple un contrato en Colombia",
+    title:
+      "Qué hacer si un proveedor incumple contrato en Colombia (Guía 2026)",
     description:
-      "Cómo actuar legalmente ante incumplimientos de proveedores en Colombia.",
+      "Aprende cómo actuar legalmente ante incumplimientos de proveedores en Colombia.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -47,9 +50,10 @@ const schemaData = {
     "@type": "WebPage",
     "@id": canonicalUrl,
   },
-  headline: "Qué hacer si un proveedor incumple un contrato en Colombia",
+  headline:
+    "Proveedor incumple contrato en Colombia: qué hacer paso a paso (2026)",
   description:
-    "Aprende qué hacer cuando un proveedor incumple un contrato en Colombia. Conoce acciones legales, reclamaciones y cómo proteger tu empresa.",
+    "Guía práctica para empresas sobre incumplimientos de proveedores en Colombia y acciones legales disponibles.",
   image: "https://pravice.co/logo_pravice.png",
   author: {
     "@type": "Organization",
@@ -71,11 +75,9 @@ const schemaData = {
   keywords: [
     "proveedor incumple contrato Colombia",
     "incumplimiento contractual proveedores",
-    "qué hacer si incumplen contrato",
-    "demanda por incumplimiento contractual",
+    "qué hacer incumplimiento contrato",
+    "reclamar proveedor Colombia",
     "derecho contractual Colombia",
-    "conflictos con proveedores",
-    "contratos empresariales Colombia",
   ],
 };
 
@@ -88,7 +90,6 @@ export default function Page() {
           __html: JSON.stringify(schemaData),
         }}
       />
-
       <ProveedorIncumpleContrato />
     </>
   );

@@ -5,18 +5,20 @@ const canonicalUrl = "https://pravice.co/blog/iguala-juridica-empresas";
 
 export const metadata: Metadata = {
   title:
-    "Iguala jurídica para empresas en Colombia: qué es y cómo funciona en 2026 | Pravice",
+    "Iguala Jurídica para Empresas en Colombia: Costos, Beneficios y Cómo Elegir una en 2026",
+
   description:
-    "Conoce qué es una iguala jurídica para empresas en Colombia, cómo funciona y cuáles son sus beneficios para prevenir riesgos legales y proteger tu negocio.",
+    "Descubre qué es una iguala jurídica para empresas, cuánto cuesta en Colombia, qué servicios incluye y cuándo conviene contratarla frente a un abogado interno.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Iguala jurídica para empresas en Colombia: guía completa 2026",
+    title:
+      "Iguala Jurídica para Empresas: Costos, Beneficios y Errores que Debes Evitar",
     description:
-      "Aprende cómo funciona una iguala jurídica empresarial y por qué puede ayudar a proteger tu empresa en Colombia.",
+      "Guía completa para empresas colombianas: precios, ventajas, servicios incluidos y diferencias frente a contratar un abogado interno.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -33,9 +35,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Iguala jurídica para empresas en Colombia",
+    title: "¿Cuánto cuesta una iguala jurídica para empresas en Colombia?",
     description:
-      "Qué es una iguala jurídica empresarial y cómo ayuda a prevenir riesgos legales.",
+      "Conoce precios, beneficios y cuándo realmente vale la pena contratar una iguala jurídica empresarial.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };

@@ -22,65 +22,52 @@ const fadeItem = {
 };
 
 export default function Article() {
-  const schema = [
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      headline:
-        "Derecho societario en Colombia: guía para crear empresas legalmente (SAS, LTDA y SA)",
-      description:
-        "Guía completa sobre derecho societario en Colombia, tipos de sociedades, creación de empresas y obligaciones legales en Bogotá y todo el país.",
-      image: "https://pravice.co/og-image.jpg",
-      author: {
-        "@type": "Organization",
-        name: "Pravice Abogados",
-      },
-      publisher: {
-        "@type": "Organization",
-        name: "Pravice Abogados",
-        logo: {
-          "@type": "ImageObject",
-          url: "https://pravice.co/logo_pravice.png",
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Qué es el derecho societario en Colombia?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Es la rama del derecho que regula la creación, organización y funcionamiento de las sociedades comerciales en Colombia.",
         },
       },
-      datePublished: "2026-03-20",
-      dateModified: "2026-03-20",
-      mainEntityOfPage: {
-        "@type": "WebPage",
-        "@id": "https://pravice.co/blog/derecho-societario-colombia",
+      {
+        "@type": "Question",
+        name: "¿Cuál es la sociedad más utilizada en Colombia?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "La SAS es actualmente la forma societaria más utilizada en Colombia debido a su flexibilidad y facilidad de constitución.",
+        },
       },
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "¿Qué es el derecho societario en Colombia?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Es la rama del derecho que regula la creación, organización y funcionamiento de las sociedades comerciales en Colombia.",
-          },
+      {
+        "@type": "Question",
+        name: "¿Cómo crear una empresa en Colombia?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Debes elegir el tipo de sociedad, elaborar los documentos de constitución, registrarla ante Cámara de Comercio, obtener el RUT y cumplir las obligaciones legales correspondientes.",
         },
-        {
-          "@type": "Question",
-          name: "¿Cuál es la sociedad más usada en Colombia?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "La SAS es la más utilizada en Colombia por su flexibilidad y facilidad de creación.",
-          },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué diferencia existe entre una SAS y una LTDA?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "La SAS ofrece mayor flexibilidad en su administración y estructura societaria, mientras que la LTDA tiene reglas más tradicionales sobre la participación de los socios.",
         },
-        {
-          "@type": "Question",
-          name: "¿Cómo crear una empresa en Colombia?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Debes definir el tipo de sociedad, registrar la empresa en Cámara de Comercio, obtener el RUT y cumplir obligaciones legales.",
-          },
+      },
+      {
+        "@type": "Question",
+        name: "¿Cuánto cuesta crear una empresa en Colombia?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "El costo depende del tipo de sociedad, capital registrado, actividad económica y gastos asociados al proceso de constitución y registro.",
         },
-      ],
-    },
-  ];
+      },
+    ],
+  };
 
   return (
     <>
@@ -93,8 +80,8 @@ export default function Article() {
         <motion.section className={styles.hero} {...fadeSection}>
           {/* H1 OPTIMIZADO CTR */}
           <h1 className={styles.title} itemProp="headline">
-            Derecho societario en Colombia: guía completa para crear empresas
-            legalmente (SAS, LTDA y SA paso a paso)
+            ¿Cómo Crear una Empresa en Colombia? Guía Paso a Paso para Elegir
+            entre SAS, LTDA y S.A.
           </h1>
 
           <p className={styles.description} itemProp="description">
@@ -107,7 +94,9 @@ export default function Article() {
 
         {/* TOC */}
         <motion.section className={styles.contentBox} {...fadeSection}>
-          <h2>Guía rápida del contenido</h2>
+          <h2>
+            Todo lo que necesitas saber para crear una empresa en Colombia
+          </h2>
           <ul>
             <li>¿Qué es el derecho societario en Colombia?</li>
             <li>Tipos de sociedades más usadas</li>
@@ -120,8 +109,8 @@ export default function Article() {
         {/* SECCIÓN 1 */}
         <motion.section className={styles.section} {...fadeSection}>
           <h2>
-            ¿Qué es el derecho societario en Colombia y para qué sirve en las
-            empresas?
+            ¿Qué es el derecho societario y por qué es importante al crear una
+            empresa?
           </h2>
 
           <p>
@@ -138,20 +127,21 @@ export default function Article() {
         {/* SECCIÓN 2 */}
         <motion.section className={styles.section} {...fadeSection}>
           <h2>
-            Tipos de sociedades en Colombia: cuál elegir para crear tu empresa
+            SAS, LTDA o S.A.: ¿Cuál es la mejor opción para crear una empresa en
+            Colombia?
           </h2>
 
           {[
             {
-              title: "Sociedad por Acciones Simplificada (SAS) en Colombia",
+              title: "¿Qué ventajas tiene una SAS en Colombia?",
               text: "La más utilizada en Colombia por su flexibilidad y facilidad de creación.",
             },
             {
-              title: "Sociedad Limitada (LTDA) en Colombia",
+              title: "¿Cuándo conviene crear una sociedad LTDA?",
               text: "Limita la responsabilidad de los socios al capital aportado.",
             },
             {
-              title: "Sociedad Anónima (S.A.) en Colombia",
+              title: "¿Quién debería constituir una Sociedad Anónima (S.A.)?",
               text: "Ideal para grandes empresas con múltiples accionistas.",
             },
           ].map((item, i) => (
@@ -164,7 +154,7 @@ export default function Article() {
 
         {/* SECCIÓN 3 */}
         <motion.section className={styles.section} {...fadeSection}>
-          <h2>Cómo crear una empresa en Colombia paso a paso (guía legal)</h2>
+          <h2>¿Cuánto cuesta crear una empresa en Colombia?)</h2>
 
           <ul>
             <li>Definir el tipo de sociedad</li>
@@ -178,7 +168,7 @@ export default function Article() {
         {/* SECCIÓN 4 */}
         <motion.section className={styles.section} {...fadeSection}>
           <h2>
-            Obligaciones legales de las empresas en Colombia que debes cumplir
+            5 Obligaciones Legales que Toda Empresa en Colombia Debe Cumplir
           </h2>
 
           {[
@@ -205,7 +195,8 @@ export default function Article() {
         {/* CONCLUSIÓN */}
         <motion.section className={styles.conclusion} {...fadeSection}>
           <h2>
-            Conclusión: por qué el derecho societario es clave para tu empresa
+            ¿Qué tipo de sociedad conviene más para crear una empresa en
+            Colombia?
           </h2>
 
           <p>
@@ -220,11 +211,11 @@ export default function Article() {
           </p>
         </motion.section>
         <ArticleCTA
-          title="¿Necesitas asesoría en derecho societario para crear o estructurar tu empresa en Colombia?"
+          title="¿Estás por crear una empresa y no sabes si elegir una SAS, LTDA o S.A.?"
           description="En Abogados Especialistas ayudamos a empresas en Bogotá y toda Colombia con constitución de sociedades SAS, LTDA y S.A., acuerdos entre socios, estatutos y cumplimiento legal empresarial."
           href="https://abogadosespecialistas.com.co/"
           badge="Derecho societario y creación de empresas"
-          buttonText="Hablar con un abogado societario"
+          buttonText="Recibir orientación para crear mi empresa"
         />
       </main>
 

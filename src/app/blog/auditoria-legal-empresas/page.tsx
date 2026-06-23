@@ -5,19 +5,21 @@ const canonicalUrl = "https://pravice.co/blog/auditoria-legal-empresas";
 
 export const metadata: Metadata = {
   title:
-    "Auditoría legal empresarial en Colombia: qué es y para qué sirve | Pravice",
+    "Auditoría Legal para Empresas en Colombia: Cómo Detectar Riesgos Antes de una Demanda",
 
   description:
-    "Importancia de realizar auditorías legales preventivas en las empresas.",
+    "Aprende cómo una auditoría legal permite identificar riesgos jurídicos, incumplimientos y posibles contingencias antes de que afecten a tu empresa en Colombia.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Auditoría legal empresarial en Colombia",
+    title:
+      "¿Tu Empresa Tiene Riesgos Legales? Guía de Auditoría Legal Empresarial",
+
     description:
-      "Guía sobre auditorías legales preventivas y cumplimiento empresarial.",
+      "Descubre qué revisa una auditoría legal, qué riesgos puede detectar y cómo prevenir demandas, sanciones y conflictos empresariales.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -52,7 +54,8 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Auditoría legal empresarial en Colombia: qué es y para qué sirve",
+  headline:
+    "Auditoría Legal para Empresas en Colombia: Cómo Detectar Riesgos Jurídicos Antes de que se Conviertan en Problemas",
 
   description:
     "Importancia de realizar auditorías legales preventivas en las empresas.",

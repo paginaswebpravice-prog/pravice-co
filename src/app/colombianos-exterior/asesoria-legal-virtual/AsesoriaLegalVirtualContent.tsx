@@ -49,7 +49,7 @@ export default function AsesoriaLegalVirtualContent() {
               transition={{ delay: 0.15, duration: 0.5 }}
             >
               <FontAwesomeIcon icon={faEarthAmericas} />
-              Colombianos en el Exterior
+              Abogados Colombianos Online
             </motion.div>
 
             <motion.h1
@@ -58,7 +58,7 @@ export default function AsesoriaLegalVirtualContent() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.7 }}
             >
-              Asesoría legal virtual para colombianos en el exterior
+              Consulta con un abogado colombiano desde cualquier país
             </motion.h1>
 
             <motion.p
@@ -118,7 +118,8 @@ export default function AsesoriaLegalVirtualContent() {
             transition={{ delay: 0.1, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Atención jurídica online para colombianos fuera del país
+            Consulta con abogados colombianos desde Estados Unidos, España,
+            Canadá y otros países
           </motion.h2>
 
           <motion.p
@@ -156,6 +157,25 @@ export default function AsesoriaLegalVirtualContent() {
         </motion.div>
       </section>
 
+      <section className={styles.countryIntent}>
+        <h2>
+          Abogados colombianos para personas que viven en Estados Unidos,
+          España, Canadá y otros países
+        </h2>
+
+        <p>
+          Atendemos colombianos residentes en Estados Unidos, España, Canadá,
+          Australia, Chile, México, Reino Unido, Alemania, Francia e Italia que
+          necesitan resolver procesos legales en Colombia.
+        </p>
+
+        <p>
+          Mediante atención virtual es posible recibir asesoría jurídica,
+          otorgar poderes y avanzar en diferentes trámites sin necesidad de
+          viajar al país.
+        </p>
+      </section>
+
       {/* SERVICIOS */}
 
       <section className={styles.services}>
@@ -190,32 +210,32 @@ export default function AsesoriaLegalVirtualContent() {
             {[
               {
                 icon: faPeopleRoof,
-                title: "Procesos familiares",
+                title: "Divorcios y asuntos de familia desde el exterior",
                 text: "Asesoría virtual en divorcios, custodia, alimentos, sucesiones y otros asuntos de familia.",
               },
               {
                 icon: faFileSignature,
-                title: "Poderes y trámites",
+                title: "Poderes para trámites en Colombia sin viajar",
                 text: "Elaboración de poderes especiales y acompañamiento en diligencias notariales y administrativas.",
               },
               {
                 icon: faGavel,
-                title: "Procesos judiciales",
+                title: "Representación en demandas y procesos judiciales",
                 text: "Representación jurídica para colombianos en el exterior en diferentes litigios y procesos legales.",
               },
               {
                 icon: faScaleBalanced,
-                title: "Consultoría jurídica",
+                title: "Consulta jurídica personalizada por videollamada",
                 text: "Orientación legal clara y personalizada según las necesidades específicas de cada caso.",
               },
               {
                 icon: faPhoneVolume,
-                title: "Atención virtual",
+                title: "Abogado colombiano online desde cualquier país",
                 text: "Consultas jurídicas online mediante videollamada, correo electrónico y canales digitales.",
               },
               {
                 icon: faPassport,
-                title: "Representación en Colombia",
+                title: "Representación legal en Colombia sin estar presente",
                 text: "Acompañamiento legal para adelantar actuaciones y trámites sin viajar al país.",
               },
             ].map((item, index) => (
@@ -401,8 +421,7 @@ export default function AsesoriaLegalVirtualContent() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Representación jurídica y asesoría legal para colombianos en el
-            exterior
+            ¿Cómo contratar un abogado colombiano desde el exterior?
           </motion.h2>
 
           <motion.p

@@ -3,19 +3,18 @@ import Article from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "Derecho societario en Colombia: cómo crear empresas (SAS, LTDA y SA) paso a paso",
+    "Cómo Crear una Empresa en Colombia en 2026: SAS, LTDA o S.A. (Guía Paso a Paso)",
   description:
-    "Guía completa sobre derecho societario en Colombia. Aprende cómo crear una empresa, tipos de sociedades (SAS, LTDA, SA) y obligaciones legales en Bogotá y todo el país.",
+    "Aprende cómo crear una empresa en Colombia paso a paso. Conoce las diferencias entre SAS, LTDA y S.A., requisitos legales, costos y errores que debes evitar.",
 
   alternates: {
     canonical: "https://pravice.co/blog/derecho-societario-colombia",
   },
 
   openGraph: {
-    title:
-      "Derecho societario en Colombia: guía para crear empresas legalmente",
+    title: "¿SAS, LTDA o S.A.? Guía para Crear una Empresa en Colombia",
     description:
-      "Descubre cómo crear una empresa en Colombia, tipos de sociedades y requisitos legales paso a paso.",
+      "Descubre qué tipo de sociedad te conviene, cómo registrarla y cuáles son los requisitos legales para emprender en Colombia.",
     url: "https://pravice.co/blog/derecho-societario-colombia",
     type: "article",
     locale: "es_CO",
@@ -39,20 +38,26 @@ export const metadata: Metadata = {
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
+
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://pravice.co/blog/derecho-societario-colombia",
   },
+
   headline:
-    "Derecho societario en Colombia: cómo crear empresas (SAS, LTDA y SA) paso a paso",
+    "Cómo Crear una Empresa en Colombia: Guía Completa para Elegir entre SAS, LTDA y S.A.",
+
   description:
-    "Guía completa sobre derecho societario en Colombia. Aprende cómo crear una empresa, tipos de sociedades (SAS, LTDA, SA) y obligaciones legales en Bogotá y todo el país.",
+    "Aprende cómo constituir una empresa en Colombia, qué tipo de sociedad elegir y cuáles son los requisitos legales para iniciar operaciones.",
+
   image: "https://pravice.co/logo_pravice.png",
+
   author: {
     "@type": "Organization",
     name: "Pravice",
     url: "https://pravice.co",
   },
+
   publisher: {
     "@type": "Organization",
     name: "Pravice",
@@ -61,17 +66,22 @@ const schemaData = {
       url: "https://pravice.co/logo_pravice.png",
     },
   },
+
   datePublished: "2026-04-28",
-  dateModified: "2026-04-28",
+  dateModified: "2026-06-23",
+
   inLanguage: "es-CO",
+
   articleSection: "Derecho Societario",
+
   keywords: [
+    "cómo crear una empresa en Colombia",
+    "crear SAS Colombia",
+    "SAS vs LTDA",
+    "tipos de sociedades en Colombia",
+    "constituir empresa Colombia",
     "derecho societario Colombia",
-    "crear empresa Colombia",
-    "SAS Colombia",
-    "LTDA Colombia",
-    "SA Colombia",
-    "constitución de empresas Bogotá",
+    "crear empresa Bogotá",
   ],
 };
 

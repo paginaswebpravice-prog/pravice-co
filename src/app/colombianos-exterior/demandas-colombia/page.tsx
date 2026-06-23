@@ -2,33 +2,42 @@ import type { Metadata } from "next";
 import DemandasColombiaContent from "./DemandasColombiaContent";
 
 export const metadata: Metadata = {
-  title: "Demandas en Colombia para Colombianos en el Exterior | Pravice",
+  title:
+    "Demandas en Colombia desde el Exterior | Representación Judicial para Colombianos 2026",
+
   description:
-    "Representación judicial para colombianos en el exterior en procesos civiles, familiares y litigios en Colombia sin necesidad de viajar.",
+    "Representación judicial en Colombia para colombianos en el exterior en demandas civiles, familiares y patrimoniales. Inicia o responde procesos legales sin viajar a Colombia.",
+
   keywords: [
     "demandas en Colombia desde el exterior",
-    "procesos judiciales Colombia",
-    "abogados para colombianos en el exterior",
-    "representación judicial Colombia",
-    "demandas familiares Colombia",
-    "divorcio en Colombia desde el exterior",
-    "abogados de familia Colombia",
-    "litigios Colombia",
-    "abogado civil Colombia",
-    "colombianos fuera del país abogados",
+    "representación judicial Colombia exterior",
+    "abogado colombiano en el exterior demandas",
+    "procesos judiciales Colombia sin viajar",
+    "demandas civiles Colombia exterior",
+    "divorcio desde el exterior Colombia",
+    "litigios Colombia desde el extranjero",
+    "abogados colombianos fuera del país",
+    "procesos familiares Colombia exterior",
+    "juicios en Colombia desde otro país",
   ],
+
   alternates: {
     canonical: "https://pravice.co/colombianos-exterior/demandas-colombia",
   },
+
   openGraph: {
-    title: "Demandas en Colombia para Colombianos en el Exterior | Pravice",
+    title:
+      "Demandas en Colombia desde el Exterior | Representación Judicial Virtual",
+
     description:
-      "Acompañamiento jurídico y representación judicial para colombianos fuera del país en procesos civiles y familiares en Colombia.",
+      "Acompañamiento legal para colombianos en el exterior en procesos judiciales en Colombia sin necesidad de viajar.",
+
     url: "https://pravice.co/colombianos-exterior/demandas-colombia",
     siteName: "Pravice",
     locale: "es_CO",
     type: "website",
   },
+
   robots: {
     index: true,
     follow: true,

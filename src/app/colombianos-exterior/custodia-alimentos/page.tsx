@@ -3,22 +3,22 @@ import CustodiaAlimentosContent from "./CustodiaAlimentosContent";
 
 export const metadata: Metadata = {
   title:
-    "Custodia y Alimentos en Colombia desde el Exterior | Orientación Jurídica",
+    "Custodia y Alimentos en Colombia desde el Exterior | Abogados Online para Colombianos en 2026",
 
   description:
-    "Orientación jurídica virtual para colombianos en el exterior sobre custodia de menores, visitas y cuotas alimentarias en Colombia.",
+    "Guía jurídica virtual para colombianos en el exterior sobre custodia de hijos, régimen de visitas y cuotas alimentarias en Colombia. Asesoría legal online sin viajar al país.",
 
   keywords: [
-    "custodia en Colombia",
-    "cuota alimentaria Colombia",
-    "custodia de menores Colombia",
-    "régimen de visitas Colombia",
-    "abogados colombianos exterior",
-    "colombianos en el exterior",
-    "procesos familiares Colombia",
-    "custodia y alimentos Colombia",
-    "cuotas alimentarias desde el exterior",
-    "procesos de familia Colombia",
+    "custodia en Colombia desde el exterior",
+    "cuota alimentaria Colombia exterior",
+    "abogado colombiano en el exterior",
+    "custodia de hijos Colombia online",
+    "régimen de visitas Colombia exterior",
+    "derecho de familia Colombia extranjeros",
+    "procesos familiares Colombia desde el exterior",
+    "abogados colombianos en el exterior",
+    "pensión alimentaria Colombia exterior",
+    "trámites familiares Colombia sin viajar",
   ],
 
   alternates: {
@@ -26,10 +26,11 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Custodia y Alimentos en Colombia desde el Exterior | Pravice",
+    title:
+      "Custodia y Alimentos en Colombia desde el Exterior | Asesoría Legal Online",
 
     description:
-      "Información y orientación jurídica virtual sobre custodia, visitas y cuotas alimentarias para colombianos residentes en el exterior.",
+      "Asesoría jurídica virtual para colombianos en el exterior en casos de custodia, visitas y alimentos en Colombia. Sin necesidad de viajar.",
 
     url: "https://pravice.co/colombianos-exterior/custodia-alimentos",
 
@@ -43,10 +44,11 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Custodia y Alimentos en Colombia desde el Exterior | Pravice",
+    title:
+      "Custodia y Alimentos en Colombia desde el Exterior | Abogados Online",
 
     description:
-      "Orientación jurídica virtual para colombianos en el exterior sobre procesos familiares en Colombia.",
+      "Guía legal virtual para colombianos en el exterior sobre custodia, visitas y alimentos en Colombia sin viajar.",
   },
 
   robots: {

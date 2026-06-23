@@ -52,13 +52,14 @@ export default function SoftwareGestionCartera() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Software de gestión de cartera: ventajas para empresas en Colombia
+            Software de Gestión de Cartera en Colombia: Cómo Reducir la Mora y
+            Mejorar la Cobranza Empresarial
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cómo los sistemas tecnológicos de gestión de cartera ayudan
-            a mejorar procesos de cobranza, reducir morosidad y optimizar el
-            flujo de caja empresarial.
+            Muchas empresas en Colombia pierden liquidez por una mala gestión de
+            cartera. El software de cobranza permite automatizar procesos,
+            reducir la mora y mejorar el flujo de caja de forma eficiente.
           </motion.p>
         </motion.section>
 
@@ -79,20 +80,26 @@ export default function SoftwareGestionCartera() {
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Qué aprenderás en este artículo</h3>
+          <h3>
+            Todo lo que debes saber sobre software de gestión de cartera en
+            Colombia
+          </h3>
 
           <ul>
             <li>Qué es un software de gestión de cartera</li>
-            <li>Cómo funciona este tipo de sistema</li>
-            <li>Ventajas para empresas colombianas</li>
-            <li>Cómo mejora la recuperación de pagos</li>
-            <li>Qué funciones son más importantes</li>
+            <li>Cómo ayuda a reducir la mora empresarial</li>
+            <li>Cómo funciona en empresas colombianas</li>
+            <li>Funciones clave para mejorar la cobranza</li>
+            <li>Errores frecuentes al implementar estos sistemas</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué es un software de gestión de cartera</h2>
+          <h2>
+            Qué es un Software de Gestión de Cartera y Cómo Ayuda a Reducir la
+            Mora
+          </h2>
 
           <p>
             Un software de gestión de cartera es una herramienta tecnológica
@@ -124,7 +131,9 @@ export default function SoftwareGestionCartera() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Cómo funciona un sistema de gestión de cartera</h2>
+          <h2>
+            Cómo Funciona un Software de Cobranza para Empresas en Colombia
+          </h2>
 
           <p>
             El software organiza información financiera y automatiza diferentes
@@ -166,7 +175,10 @@ export default function SoftwareGestionCartera() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Ventajas del software de gestión de cartera</h2>
+          <h2>
+            Beneficios de Utilizar Software para Recuperar Cartera y Mejorar el
+            Flujo de Caja
+          </h2>
 
           <p>
             Implementar herramientas tecnológicas puede mejorar
@@ -208,7 +220,9 @@ export default function SoftwareGestionCartera() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Funciones importantes en un software de cartera</h2>
+          <h2>
+            Funciones Clave que Debe Tener un Software de Gestión de Cartera
+          </h2>
 
           <p>
             No todos los sistemas ofrecen las mismas herramientas, por eso es
@@ -247,7 +261,7 @@ export default function SoftwareGestionCartera() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Errores comunes al implementar software de cartera</h2>
+          <h2>Errores que Aumentan la Mora Empresarial (y Cómo Evitarlos)</h2>
 
           <p>
             Algunas empresas no obtienen buenos resultados por errores en la
@@ -281,7 +295,10 @@ export default function SoftwareGestionCartera() {
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre software de gestión de cartera</h2>
+          <h2>
+            Cómo Mejorar la Recuperación de Cartera y Reducir la Morosidad en tu
+            Empresa
+          </h2>
 
           <p>
             Implementar software de gestión de cartera permite automatizar
@@ -298,10 +315,10 @@ export default function SoftwareGestionCartera() {
 
         <ArticleCTA
           badge="Software y recuperación de cartera"
-          title="¿Buscas mejorar los procesos de cobranza de tu empresa?"
-          description="Conoce estrategias y herramientas para optimizar la gestión de cartera, automatizar procesos y reducir mora empresarial en Colombia."
+          title="¿Tu empresa tiene problemas con la cartera vencida?"
+          description="Descubre cómo mejorar la cobranza, reducir la mora y optimizar el flujo de caja mediante herramientas y estrategias de gestión de cartera para empresas colombianas."
           href="https://abogadosespecialistas.com.co/"
-          buttonText="Recibir asesoría empresarial"
+          buttonText="Conocer estrategias de recuperación de cartera"
         />
       </main>
     </>

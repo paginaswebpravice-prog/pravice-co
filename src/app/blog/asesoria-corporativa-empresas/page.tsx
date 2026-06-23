@@ -3,9 +3,10 @@ import Article from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "Asesoría corporativa en Colombia | Cómo tomar decisiones legales estratégicas en tu empresa",
+    "Asesoría corporativa en Colombia: cómo tomar decisiones legales sin riesgos (2026)",
+
   description:
-    "La asesoría corporativa en Colombia ayuda a empresas en Bogotá y el país a tomar mejores decisiones legales, reducir riesgos y mejorar su crecimiento empresarial con respaldo jurídico experto.",
+    "Descubre cómo la asesoría corporativa ayuda a empresas en Colombia a tomar decisiones estratégicas, reducir riesgos legales y crecer con seguridad jurídica.",
 
   alternates: {
     canonical: "https://pravice.co/blog/asesoria-corporativa-empresas-colombia",
@@ -13,9 +14,9 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Asesoría corporativa en Colombia: decisiones legales para empresas que quieren crecer",
+      "Asesoría corporativa en Colombia: guía para tomar mejores decisiones empresariales",
     description:
-      "Aprende cómo la asesoría corporativa en Colombia ayuda a reducir riesgos legales y tomar decisiones estratégicas en tu empresa.",
+      "Aprende cómo la asesoría corporativa ayuda a reducir riesgos legales y mejorar la toma de decisiones en empresas colombianas.",
     url: "https://pravice.co/blog/asesoria-corporativa-empresas-colombia",
     type: "article",
     locale: "es_CO",
@@ -40,9 +41,9 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline:
-      "Asesoría corporativa en Colombia: decisiones legales para empresas que quieren crecer",
+      "Asesoría corporativa en Colombia: cómo tomar decisiones legales sin riesgos (2026)",
     description:
-      "La asesoría corporativa en Colombia ayuda a empresas a tomar mejores decisiones legales, reducir riesgos y mejorar su crecimiento empresarial.",
+      "Guía sobre asesoría corporativa en Colombia para empresas que buscan tomar mejores decisiones y reducir riesgos legales.",
     image: "https://pravice.co/logo_pravice.png",
     author: {
       "@type": "Organization",
@@ -64,9 +65,9 @@ export default function Page() {
 
     keywords: [
       "asesoría corporativa Colombia",
-      "abogados empresas Colombia",
-      "riesgo legal empresarial",
-      "consultoría legal empresas",
+      "decisiones empresariales legales",
+      "riesgo legal empresas",
+      "consultoría jurídica empresarial",
     ],
 
     articleSection: "Derecho corporativo",
@@ -76,7 +77,9 @@ export default function Page() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd),
+        }}
       />
       <Article />
     </>

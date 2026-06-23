@@ -3,20 +3,21 @@ import AsesoriaLegalVirtualContent from "./AsesoriaLegalVirtualContent";
 
 export const metadata: Metadata = {
   title:
-    "Asesoría Legal Virtual para Colombianos en el Exterior | Abogados Online",
+    "Abogado Colombiano Online para Colombianos en el Exterior | Consulta Virtual",
   description:
-    "Recibe asesoría legal virtual en Colombia desde cualquier país. Consultas online con abogados colombianos para procesos civiles, familiares y trámites legales.",
+    "Consulta con un abogado colombiano desde Estados Unidos, España, Canadá, Australia y cualquier país. Asesoría legal virtual y representación en Colombia sin necesidad de viajar.",
+
   keywords: [
-    "asesoría legal virtual Colombia",
-    "abogados online Colombia",
-    "consulta legal virtual",
-    "abogados colombianos online",
-    "asesoría jurídica virtual",
-    "colombianos en el exterior abogados",
-    "consulta abogado Colombia",
-    "abogado virtual Colombia",
+    "abogado colombiano online",
+    "abogado colombiano desde estados unidos",
+    "abogado colombiano desde españa",
     "asesoría legal para colombianos en el exterior",
-    "abogados Colombia videollamada",
+    "consulta abogado colombia desde el exterior",
+    "representación legal en colombia sin viajar",
+    "abogado colombiano por videollamada",
+    "colombianos en el exterior abogados",
+    "asesoría jurídica colombia desde estados unidos",
+    "consulta legal colombia online",
   ],
   alternates: {
     canonical: "https://pravice.co/colombianos-exterior/asesoria-legal-virtual",
