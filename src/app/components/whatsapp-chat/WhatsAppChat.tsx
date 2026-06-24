@@ -292,7 +292,12 @@ ${currentPage}
     <>
       {/* BOTÓN FLOTANTE */}
 
-      <button className={styles.floatingButton} onClick={() => setOpen(!open)}>
+      <button
+        className={styles.floatingButton}
+        onClick={() => setOpen(!open)}
+        aria-label={open ? "Cerrar chat de WhatsApp" : "Abrir chat de WhatsApp"}
+        title={open ? "Cerrar chat de WhatsApp" : "Abrir chat de WhatsApp"}
+      >
         <FontAwesomeIcon icon={open ? faXmark : faWhatsapp} size="lg" />
       </button>
 
@@ -503,7 +508,12 @@ ${currentPage}
                   }}
                 />
 
-                <button className={styles.sendButton} onClick={handleSend}>
+                <button
+                  className={styles.sendButton}
+                  onClick={handleSend}
+                  aria-label="Enviar mensaje"
+                  title="Enviar mensaje"
+                >
                   <FontAwesomeIcon icon={faPaperPlane} />
                 </button>
               </div>
