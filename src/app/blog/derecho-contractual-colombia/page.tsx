@@ -3,10 +3,10 @@ import Article from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "Derecho contractual en Colombia: guía para contratos seguros y sin errores legales | Pravice",
+    "Derecho contractual en Colombia: 12 errores que pueden costarle millones a una empresa",
 
   description:
-    "Aprende cómo hacer contratos seguros en Colombia, los elementos esenciales del derecho contractual y cómo evitar errores legales en tu empresa.",
+    "Conozca los principales riesgos del derecho contractual en Colombia, las cláusulas que no deberían faltar y cómo prevenir conflictos, demandas e incumplimientos contractuales.",
 
   alternates: {
     canonical: "https://pravice.co/blog/derecho-contractual-colombia",
@@ -14,12 +14,17 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Derecho contractual en Colombia: cómo hacer contratos seguros y evitar errores",
+      "Derecho contractual en Colombia: errores, riesgos y cláusulas esenciales",
+
     description:
-      "Guía completa sobre derecho contractual en Colombia, contratos empresariales y cómo evitar errores jurídicos.",
+      "Guía práctica para empresarios sobre contratos comerciales, prevención de conflictos e incumplimientos en Colombia.",
+
     url: "https://pravice.co/blog/derecho-contractual-colombia",
+
     type: "article",
+
     locale: "es_CO",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
@@ -45,7 +50,7 @@ const schemaData = {
     "@id": "https://pravice.co/blog/derecho-contractual-colombia",
   },
   headline:
-    "Derecho contractual en Colombia: guía para contratos seguros y sin errores legales",
+    "Derecho contractual en Colombia: 12 errores en contratos que pueden generar demandas y pérdidas económicas",
   description:
     "Aprende cómo hacer contratos seguros en Colombia, los elementos esenciales del derecho contractual y cómo evitar errores legales en tu empresa.",
   image: "https://pravice.co/logo_pravice.png",

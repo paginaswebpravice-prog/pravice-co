@@ -8,9 +8,10 @@ export default function CarteraVencidaEmpresas() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Cómo reducir la cartera vencida en empresas colombianas",
+    headline:
+      "Cartera vencida en empresas: 7 estrategias para recuperar pagos y mejorar el flujo de caja",
     description:
-      "Descubre estrategias para disminuir la cartera vencida, reducir la mora y mejorar el flujo de caja en empresas colombianas.",
+      "Guía práctica para reducir la cartera vencida, recuperar pagos atrasados y fortalecer el flujo de caja empresarial en Colombia.",
     image: "https://pravice.co/og-image.jpg",
     author: {
       "@type": "Organization",
@@ -51,12 +52,14 @@ export default function CarteraVencidaEmpresas() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Cómo reducir la cartera vencida en empresas colombianas
+            Cartera vencida en empresas: 7 estrategias para recuperar pagos y
+            mejorar el flujo de caja
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Conoce estrategias efectivas para disminuir la mora, recuperar pagos
-            atrasados y mejorar el flujo de caja de las empresas en Colombia.
+            Descubre cómo reducir la cartera vencida, recuperar pagos atrasados
+            más rápido y evitar que la morosidad afecte la liquidez y el
+            crecimiento de tu empresa.
           </motion.p>
         </motion.section>
 
@@ -90,7 +93,10 @@ export default function CarteraVencidaEmpresas() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué es la cartera vencida</h2>
+          <h2>
+            Qué es la cartera vencida y por qué afecta el flujo de caja de una
+            empresa
+          </h2>
 
           <p>
             La cartera vencida corresponde a las cuentas por cobrar que superan
@@ -122,7 +128,9 @@ export default function CarteraVencidaEmpresas() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Por qué aumenta la cartera vencida en empresas</h2>
+          <h2>
+            Las 4 causas más comunes de cartera vencida en empresas colombianas
+          </h2>
 
           <p>
             Existen múltiples factores que pueden incrementar la morosidad en
@@ -164,7 +172,10 @@ export default function CarteraVencidaEmpresas() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Estrategias para reducir la cartera vencida</h2>
+          <h2>
+            7 estrategias efectivas para reducir la cartera vencida y recuperar
+            pagos más rápido
+          </h2>
 
           <p>
             Implementar procesos preventivos y una gestión de cobranza
@@ -206,7 +217,10 @@ export default function CarteraVencidaEmpresas() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Cómo mejorar la recuperación de pagos</h2>
+          <h2>
+            Cómo mejorar la recuperación de cartera sin afectar la relación con
+            los clientes
+          </h2>
 
           <p>
             Reducir la cartera vencida requiere acciones rápidas y procesos
@@ -239,7 +253,9 @@ export default function CarteraVencidaEmpresas() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Errores comunes al gestionar cartera vencida</h2>
+          <h2>
+            Errores que hacen crecer la cartera vencida y aumentan la morosidad
+          </h2>
 
           <p>
             Muchas empresas pierden dinero por errores en la administración de
@@ -273,7 +289,7 @@ export default function CarteraVencidaEmpresas() {
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre cómo reducir la cartera vencida</h2>
+          <h2>Cómo mantener una cartera sana y evitar problemas de liquidez</h2>
 
           <p>
             Disminuir la cartera vencida es fundamental para proteger la

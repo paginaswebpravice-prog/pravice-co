@@ -3,9 +3,10 @@ import Article from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "Automatización de cobranzas en Colombia | Cómo recuperar cartera más rápido y mejorar flujo de caja",
+    "Automatización de cobranzas en Colombia: recupera cartera hasta 3 veces más rápido | Pravice",
+
   description:
-    "Descubre cómo la automatización de cobranzas en Colombia ayuda a empresas a recuperar cartera más rápido, reducir costos operativos y mejorar el flujo de caja con herramientas digitales.",
+    "Aprende cómo la automatización de cobranzas ayuda a reducir cartera vencida, recuperar pagos más rápido y mejorar el flujo de caja de tu empresa.",
 
   alternates: {
     canonical: "https://pravice.co/blog/automatizacion-cobranzas",
@@ -13,12 +14,15 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Automatización de cobranzas en Colombia: recupera cartera más rápido y mejora tu flujo de caja",
+      "Automatización de cobranzas: cómo recuperar cartera más rápido en Colombia",
+
     description:
-      "Aprende cómo automatizar la cobranza en tu empresa y mejorar la recuperación de cartera en Colombia con estrategias digitales efectivas.",
+      "Reduce cartera vencida, automatiza recordatorios y mejora el recaudo empresarial con procesos digitales.",
+
     url: "https://pravice.co/blog/automatizacion-cobranzas",
     type: "article",
     locale: "es_CO",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
@@ -40,9 +44,9 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Automatización de cobranzas en Colombia: recupera cartera más rápido y mejora tu flujo de caja",
+      "Automatización de cobranzas en Colombia: cómo recuperar cartera más rápido y reducir cartera vencida",
     description:
-      "Descubre cómo la automatización de cobranzas en Colombia ayuda a empresas a recuperar cartera más rápido, reducir costos operativos y mejorar el flujo de caja con herramientas digitales.",
+      "Guía para automatizar cobranzas, reducir cartera vencida y mejorar el recaudo empresarial en Colombia.",
     image: "https://pravice.co/logo_pravice.png",
     author: {
       "@type": "Organization",

@@ -24,7 +24,7 @@ export default function Article() {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline:
-      "Derecho contractual en Colombia: guía para contratos seguros y sin errores legales",
+      "Derecho contractual en Colombia: 12 errores en contratos que pueden generar demandas y pérdidas económicas",
     description:
       "Guía completa sobre derecho contractual en Colombia, contratos empresariales, elementos legales y cómo evitar errores jurídicos.",
     image: "https://pravice.co/og-image.jpg",
@@ -75,8 +75,8 @@ export default function Article() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Derecho contractual en Colombia: guía para contratos seguros y sin
-            errores legales
+            Derecho contractual en Colombia: 12 errores en contratos que pueden
+            generar demandas y pérdidas económicas
           </motion.h1>
 
           <motion.p
@@ -86,30 +86,42 @@ export default function Article() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            El derecho contractual en Colombia es clave para garantizar acuerdos
-            claros, seguros y legalmente válidos entre empresas y personas. Un
-            contrato bien estructurado permite prevenir conflictos, proteger tu
-            negocio y asegurar el cumplimiento de las obligaciones.
+            Un contrato mal redactado puede convertirse en uno de los mayores
+            riesgos para una empresa. Cláusulas ambiguas, obligaciones mal
+            definidas, incumplimientos y vacíos jurídicos generan conflictos que
+            terminan en demandas, pérdidas económicas y problemas comerciales
+            difíciles de resolver. En Colombia, el derecho contractual regula
+            miles de relaciones comerciales todos los días: contratos con
+            clientes, proveedores, aliados estratégicos, empleados,
+            distribuidores y socios. Comprender cómo funcionan estos acuerdos es
+            fundamental para reducir riesgos y proteger los intereses del
+            negocio. En esta guía encontrará los errores más frecuentes en
+            contratos empresariales, las cláusulas más importantes y las mejores
+            prácticas para fortalecer la seguridad jurídica de cualquier
+            organización.
           </motion.p>
         </motion.section>
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Contenido</h3>
+          <h3>Lo que aprenderás en esta guía</h3>
+
           <ul>
-            <li>¿Qué es el derecho contractual?</li>
-            <li>Elementos esenciales de un contrato</li>
-            <li>Errores comunes al contratar</li>
-            <li>Cómo hacer contratos seguros en Colombia</li>
-            <li>Conclusión</li>
+            <li>Qué es el derecho contractual y cómo funciona en Colombia.</li>
+            <li>Cuáles son los elementos que hacen válido un contrato.</li>
+            <li>Los errores contractuales más costosos para las empresas.</li>
+            <li>Qué cláusulas ayudan a prevenir conflictos.</li>
+            <li>Cómo reducir riesgos de incumplimiento contractual.</li>
+            <li>Buenas prácticas para contratos comerciales.</li>
+            <li>Cómo fortalecer la gestión contractual empresarial.</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
           <h2>
-            Derecho contractual en Colombia: qué es y por qué es clave en
-            empresas
+            ¿Qué es el derecho contractual en Colombia y por qué puede evitar
+            conflictos empresariales?
           </h2>
 
           <p>
@@ -128,7 +140,8 @@ export default function Article() {
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
           <h2>
-            Elementos esenciales de un contrato en Colombia que debes conocer
+            Los 3 elementos que determinan si un contrato es válido o puede ser
+            cuestionado legalmente
           </h2>
 
           <div className={styles.card}>
@@ -161,9 +174,61 @@ export default function Article() {
           </p>
         </section>
 
+        <section className={styles.section}>
+          <h2>
+            Los errores más frecuentes en contratos empresariales en Colombia
+          </h2>
+
+          <p>
+            Muchas controversias comerciales no surgen por mala fe de las partes
+            sino por contratos mal estructurados. Un documento incompleto o
+            ambiguo puede generar interpretaciones diferentes y terminar en
+            procesos judiciales.
+          </p>
+
+          <div className={styles.card}>
+            <h3>No definir claramente las obligaciones</h3>
+
+            <p>
+              Cuando las responsabilidades de cada parte no están descritas de
+              forma precisa, aumentan los riesgos de incumplimiento y conflicto.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Copiar contratos de internet</h3>
+
+            <p>
+              Utilizar modelos genéricos puede dejar por fuera aspectos críticos
+              del negocio y generar vacíos jurídicos importantes.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No incluir cláusulas de incumplimiento</h3>
+
+            <p>
+              Sin mecanismos de protección adecuados, la recuperación de
+              perjuicios puede volverse más compleja y costosa.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Ausencia de mecanismos de solución de conflictos</h3>
+
+            <p>
+              Definir conciliación, negociación o arbitraje puede ahorrar tiempo
+              y costos frente a disputas futuras.
+            </p>
+          </div>
+        </section>
+
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Errores comunes en contratos en Colombia que debes evitar</h2>
+          <h2>
+            ¿Por qué muchas empresas enfrentan demandas por contratos mal
+            redactados?
+          </h2>
 
           <p>
             Uno de los errores más frecuentes en Colombia es utilizar contratos
@@ -217,10 +282,42 @@ export default function Article() {
           </p>
         </section>
 
+        <section className={styles.section}>
+          <h2>
+            Cláusulas que no deberían faltar en un contrato comercial en
+            Colombia
+          </h2>
+
+          <p>
+            Aunque cada negocio tiene necesidades diferentes, existen cláusulas
+            que suelen ser fundamentales para proteger los intereses de las
+            partes.
+          </p>
+
+          <ul>
+            <li>Objeto y alcance del contrato.</li>
+            <li>Obligaciones específicas de cada parte.</li>
+            <li>Plazos de ejecución.</li>
+            <li>Condiciones de pago.</li>
+            <li>Confidencialidad.</li>
+            <li>Protección de información.</li>
+            <li>Terminación anticipada.</li>
+            <li>Cláusula penal.</li>
+            <li>Mecanismos de resolución de conflictos.</li>
+            <li>Jurisdicción aplicable.</li>
+          </ul>
+
+          <p>
+            La adecuada estructuración de estas disposiciones puede reducir
+            significativamente los riesgos legales y comerciales.
+          </p>
+        </section>
+
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
           <h2>
-            Conclusión: por qué un buen contrato protege tu empresa en Colombia
+            Cómo una gestión contractual sólida puede proteger el crecimiento de
+            una empresa
           </h2>
 
           <p>

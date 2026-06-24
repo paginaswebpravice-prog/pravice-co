@@ -4,19 +4,21 @@ import ConciliacionLaboralColombia from "./ConciliacionLaboralColombia";
 const canonicalUrl = "https://pravice.co/blog/conciliacion-laboral-colombia";
 
 export const metadata: Metadata = {
-  title: "Conciliación laboral en Colombia: guía práctica | Pravice",
+  title:
+    "Conciliación Laboral en Colombia: Cómo Funciona y Qué Casos se Pueden Resolver (2026)",
 
   description:
-    "Cómo resolver conflictos laborales mediante conciliación en Colombia y evitar demandas judiciales.",
+    "Aprende qué es la conciliación laboral en Colombia, qué conflictos pueden resolverse, cómo es la audiencia y cuándo acudir al Ministerio del Trabajo.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Conciliación laboral en Colombia: guía práctica",
+    title:
+      "Conciliación Laboral en Colombia: Cómo Funciona y Qué Casos se Pueden Resolver",
     description:
-      "Guía sobre conciliación laboral y resolución de conflictos entre trabajadores y empleadores.",
+      "Guía completa sobre conciliación laboral, audiencia, acuerdos entre trabajador y empleador y solución de conflictos laborales.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -33,8 +35,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Conciliación laboral en Colombia",
-    description: "Cómo resolver conflictos laborales mediante conciliación.",
+    title:
+      "Conciliación Laboral en Colombia: Cómo Funciona y Qué Casos se Pueden Resolver",
+    description:
+      "Descubre cuándo aplica la conciliación laboral, qué derechos pueden discutirse y cómo llegar a acuerdos válidos.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -50,10 +54,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Conciliación laboral en Colombia: guía práctica",
+  headline:
+    "Conciliación Laboral en Colombia: Cómo Funciona y Qué Casos se Pueden Resolver",
 
   description:
-    "Cómo resolver conflictos laborales mediante conciliación en Colombia y evitar demandas judiciales.",
+    "Guía completa sobre conciliación laboral en Colombia, requisitos, procedimiento, ventajas y conflictos que pueden resolverse sin juicio.",
 
   image: "https://pravice.co/logo_pravice.png",
 
@@ -73,21 +78,21 @@ const schemaData = {
   },
 
   datePublished: "2026-06-10",
-  dateModified: "2026-06-10",
+  dateModified: "2026-06-24",
 
   inLanguage: "es-CO",
 
   articleSection: "Conciliación Laboral",
 
   keywords: [
-    "conciliación laboral",
-    "conflictos laborales Colombia",
-    "resolución de conflictos laborales",
-    "conciliación trabajadores y empleadores",
-    "Ministerio del Trabajo conciliación",
-    "derecho laboral Colombia",
-    "acuerdos laborales",
-    "demanda laboral Colombia",
+    "conciliación laboral colombia",
+    "conciliación laboral ministerio del trabajo",
+    "audiencia de conciliación laboral",
+    "conflictos laborales",
+    "trabajador y empleador",
+    "acuerdo laboral",
+    "derecho laboral colombia",
+    "cómo funciona la conciliación laboral",
   ],
 };
 

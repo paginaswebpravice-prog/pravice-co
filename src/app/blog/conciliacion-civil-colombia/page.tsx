@@ -4,23 +4,28 @@ import ConciliacionCivilColombia from "./ConciliacionCivilColombia";
 const canonicalUrl = "https://pravice.co/blog/conciliacion-civil-colombia";
 
 export const metadata: Metadata = {
-  title: "Conciliación civil en Colombia: casos más comunes | Pravice",
+  title:
+    "Conciliación civil en Colombia: qué casos se pueden resolver sin demanda (2026)",
 
   description:
-    "Conoce qué conflictos civiles pueden resolverse mediante conciliación en Colombia.",
+    "Descubre qué conflictos pueden resolverse mediante conciliación civil en Colombia, cuándo aplica y cómo evitar procesos judiciales largos y costosos.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Conciliación civil en Colombia: casos más comunes",
+    title:
+      "Conciliación civil en Colombia: casos que puedes resolver sin ir a juicio",
+
     description:
-      "Guía sobre conflictos civiles que pueden solucionarse sin proceso judicial.",
+      "Conoce los conflictos civiles más comunes que pueden solucionarse mediante conciliación antes de iniciar una demanda.",
+
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "article",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
@@ -33,9 +38,13 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Conciliación civil en Colombia",
+
+    title:
+      "Conciliación civil en Colombia: qué casos pueden resolverse sin demanda",
+
     description:
-      "Conflictos civiles que pueden resolverse sin acudir a juicio.",
+      "Guía práctica sobre conflictos civiles que pueden solucionarse mediante conciliación en Colombia.",
+
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -51,10 +60,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Conciliación civil en Colombia: casos más comunes",
+  headline:
+    "Conciliación civil en Colombia: qué casos se pueden resolver sin demanda",
 
   description:
-    "Conoce qué conflictos civiles pueden resolverse mediante conciliación en Colombia.",
+    "Descubre qué conflictos civiles pueden resolverse mediante conciliación en Colombia y cuándo este mecanismo evita un proceso judicial.",
 
   image: "https://pravice.co/logo_pravice.png",
 

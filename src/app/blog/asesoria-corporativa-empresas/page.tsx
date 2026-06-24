@@ -1,25 +1,31 @@
 import type { Metadata } from "next";
 import Article from "./Article";
 
+const canonicalUrl =
+  "https://pravice.co/blog/asesoria-corporativa-empresas-colombia";
+
 export const metadata: Metadata = {
   title:
-    "Asesoría corporativa en Colombia: cómo tomar decisiones legales sin riesgos (2026)",
+    "Asesoría corporativa en Colombia: qué es, beneficios y cuándo la necesita una empresa | Pravice",
 
   description:
-    "Descubre cómo la asesoría corporativa ayuda a empresas en Colombia a tomar decisiones estratégicas, reducir riesgos legales y crecer con seguridad jurídica.",
+    "Aprende qué es la asesoría corporativa en Colombia, cómo ayuda a reducir riesgos legales, mejorar decisiones empresariales y fortalecer el crecimiento de una empresa.",
 
   alternates: {
-    canonical: "https://pravice.co/blog/asesoria-corporativa-empresas-colombia",
+    canonical: canonicalUrl,
   },
 
   openGraph: {
     title:
-      "Asesoría corporativa en Colombia: guía para tomar mejores decisiones empresariales",
+      "Asesoría corporativa en Colombia: beneficios y cuándo la necesita una empresa",
+
     description:
-      "Aprende cómo la asesoría corporativa ayuda a reducir riesgos legales y mejorar la toma de decisiones en empresas colombianas.",
-    url: "https://pravice.co/blog/asesoria-corporativa-empresas-colombia",
+      "Guía completa sobre asesoría corporativa, prevención de riesgos legales, gobierno corporativo y crecimiento empresarial.",
+
+    url: canonicalUrl,
     type: "article",
     locale: "es_CO",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
@@ -40,15 +46,20 @@ export default function Page() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+
     headline:
-      "Asesoría corporativa en Colombia: cómo tomar decisiones legales sin riesgos (2026)",
+      "Asesoría corporativa en Colombia: qué es, beneficios y cuándo la necesita una empresa",
+
     description:
-      "Guía sobre asesoría corporativa en Colombia para empresas que buscan tomar mejores decisiones y reducir riesgos legales.",
+      "Guía completa sobre asesoría corporativa en Colombia, prevención de riesgos legales y toma de decisiones empresariales.",
+
     image: "https://pravice.co/logo_pravice.png",
+
     author: {
       "@type": "Organization",
       name: "Pravice",
     },
+
     publisher: {
       "@type": "Organization",
       name: "Pravice",
@@ -57,20 +68,28 @@ export default function Page() {
         url: "https://pravice.co/logo_pravice.png",
       },
     },
-    url: "https://pravice.co/blog/asesoria-corporativa-empresas-colombia",
-    mainEntityOfPage:
-      "https://pravice.co/blog/asesoria-corporativa-empresas-colombia",
+
+    url: canonicalUrl,
+
+    mainEntityOfPage: canonicalUrl,
+
     datePublished: "2026-01-01",
-    dateModified: "2026-01-01",
+    dateModified: "2026-06-24",
 
     keywords: [
       "asesoría corporativa Colombia",
-      "decisiones empresariales legales",
-      "riesgo legal empresas",
+      "qué es asesoría corporativa",
+      "beneficios asesoría corporativa",
+      "asesoría empresarial Colombia",
+      "gobierno corporativo",
+      "riesgos legales empresas",
+      "cumplimiento normativo",
       "consultoría jurídica empresarial",
+      "crecimiento empresarial",
+      "protección legal empresas",
     ],
 
-    articleSection: "Derecho corporativo",
+    articleSection: "Derecho Corporativo",
   };
 
   return (

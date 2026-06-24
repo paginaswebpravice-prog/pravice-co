@@ -31,9 +31,9 @@ export default function Article() {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline:
-      "Automatización de cobranzas en Colombia: cómo mejorar tu recaudo empresarial",
+      "Automatización de cobranzas en Colombia: cómo recuperar cartera más rápido y reducir cartera vencida",
     description:
-      "Guía completa sobre automatización de cobranzas y estrategias para mejorar la recuperación de cartera en Colombia.",
+      "Aprende cómo automatizar la cobranza empresarial para recuperar pagos más rápido, reducir mora y mejorar el flujo de caja.",
     author: {
       "@type": "Organization",
       name: "Pravice Abogados",
@@ -75,8 +75,8 @@ export default function Article() {
           transition={{ duration: 0.6 }}
         >
           <h1 className={styles.title} itemProp="headline">
-            Automatización de cobranzas en Colombia: recupera cartera más rápido
-            y mejora tu flujo de caja
+            Automatización de cobranzas en Colombia: cómo recuperar cartera más
+            rápido y reducir cartera vencida
           </h1>
 
           <p className={styles.intro} itemProp="description">
@@ -123,8 +123,8 @@ export default function Article() {
         {/* SECCIÓN */}
         <motion.section className={styles.section} {...fadeUp}>
           <h2>
-            Qué es la automatización de cobranzas en Colombia y cómo mejora la
-            recuperación de cartera
+            Qué es la automatización de cobranzas y por qué las empresas están
+            reemplazando los cobros manuales
           </h2>
 
           <p>
@@ -145,8 +145,7 @@ export default function Article() {
         {/* SECCIÓN */}
         <motion.section className={styles.section} {...fadeUp}>
           <h2>
-            Problemas de la cobranza manual en empresas y por qué genera
-            pérdidas de dinero
+            4 problemas de la cobranza manual que aumentan la cartera vencida
           </h2>
 
           <motion.div className={styles.card} {...fadeUpSmall}>
@@ -174,7 +173,8 @@ export default function Article() {
         {/* SECCIÓN */}
         <motion.section className={styles.section} {...fadeUp}>
           <h2>
-            Beneficios de automatizar la cobranza en Colombia para empresas
+            Beneficios de automatizar cobranzas: más recaudo y menos trabajo
+            operativo
           </h2>
 
           <motion.div className={styles.card} {...fadeUpSmall}>
@@ -204,7 +204,8 @@ export default function Article() {
         {/* CONCLUSIÓN */}
         <motion.section className={styles.conclusion} {...fadeUp}>
           <h2>
-            Por qué automatizar la cobranza es clave para empresas en Colombia
+            Cómo la automatización de cobranzas mejora el flujo de caja
+            empresarial
           </h2>
 
           <p>

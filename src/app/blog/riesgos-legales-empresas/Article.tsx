@@ -52,14 +52,17 @@ export default function RiesgosLegalesEmpresas() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Principales riesgos legales que enfrentan las empresas en Colombia
-            en 2026
+            10 riesgos legales que pueden poner en peligro una empresa en
+            Colombia
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Muchas empresas en Colombia enfrentan riesgos legales que pueden
-            generar demandas, sanciones económicas, pérdida de dinero y
-            problemas operativos si no cuentan con prevención jurídica adecuada.
+            Muchas empresas no fracasan por falta de ventas, sino por problemas
+            jurídicos que pudieron prevenirse. Demandas laborales, contratos
+            deficientes, sanciones regulatorias y errores tributarios pueden
+            generar pérdidas económicas importantes. En esta guía descubrirás
+            los riesgos legales más frecuentes en Colombia y cómo reducirlos
+            antes de que afecten tu negocio.
           </motion.p>
         </motion.section>
 
@@ -74,45 +77,64 @@ export default function RiesgosLegalesEmpresas() {
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Qué encontrarás en esta guía</h3>
+          <h3>Lo que aprenderás en esta guía</h3>
 
           <ul>
             <li>Qué son los riesgos legales empresariales</li>
-            <li>Principales problemas jurídicos en empresas</li>
-            <li>Cómo prevenir demandas y sanciones</li>
-            <li>Estrategias de protección jurídica empresarial</li>
-            <li>Conclusión y recomendaciones legales</li>
+            <li>Los 10 riesgos jurídicos más comunes en Colombia</li>
+            <li>Qué riesgos generan más demandas</li>
+            <li>Cómo reducir sanciones y conflictos legales</li>
+            <li>Estrategias de prevención jurídica empresarial</li>
+            <li>Buenas prácticas para proteger tu empresa</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>¿Qué son los riesgos legales empresariales?</h2>
+          <h2>
+            ¿Qué son los riesgos legales empresariales y por qué pueden afectar
+            la estabilidad de una empresa?
+          </h2>
 
           <p>
-            Los riesgos legales empresariales son situaciones que pueden afectar
-            económicamente o jurídicamente a una empresa debido al
-            incumplimiento de normas, contratos o regulaciones.
+            Los riesgos legales empresariales son situaciones que pueden generar
+            pérdidas económicas, sanciones administrativas, demandas judiciales
+            o afectaciones reputacionales para una organización.
           </p>
 
           <p>
-            En Colombia, estos riesgos pueden surgir en áreas laborales,
-            comerciales, tributarias, contractuales o administrativas.
+            Aunque muchas empresas se concentran en riesgos financieros y
+            comerciales, los riesgos jurídicos suelen ser los que generan
+            consecuencias más costosas porque pueden afectar contratos,
+            operaciones, patrimonio e incluso la continuidad del negocio.
+          </p>
+
+          <p>
+            La prevención legal permite identificar amenazas antes de que se
+            conviertan en conflictos que requieran procesos judiciales largos y
+            costosos.
           </p>
         </section>
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
           <h2>
-            Principales riesgos legales que afectan a las empresas en Colombia
+            Los 10 riesgos legales más comunes que enfrentan las empresas en
+            Colombia
           </h2>
 
           <div className={styles.card}>
-            <h3>Incumplimientos contractuales</h3>
+            <h3>1. Incumplimientos contractuales</h3>
 
             <p>
-              Contratos mal redactados o incumplidos pueden generar demandas y
-              pérdidas económicas importantes.
+              Contratos ambiguos, mal redactados o incompletos pueden generar
+              conflictos con clientes, proveedores, socios e inversionistas.
+            </p>
+
+            <p>
+              La ausencia de cláusulas sobre incumplimientos, penalidades,
+              confidencialidad o terminación suele convertirse en una de las
+              principales causas de litigios empresariales.
             </p>
           </div>
 
@@ -126,27 +148,103 @@ export default function RiesgosLegalesEmpresas() {
           </div>
 
           <div className={styles.card}>
-            <h3>Sanciones por incumplimiento normativo</h3>
+            <h3>2. Demandas laborales</h3>
 
             <p>
-              No cumplir regulaciones puede ocasionar multas, investigaciones o
-              restricciones operativas.
+              Las reclamaciones laborales son una de las fuentes más frecuentes
+              de procesos judiciales en Colombia.
+            </p>
+
+            <p>
+              Liquidaciones incorrectas, despidos mal gestionados, horas extras,
+              prestaciones sociales y contratos laborales deficientes pueden
+              originar reclamaciones económicas importantes.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Problemas tributarios y fiscales</h3>
+            <h3>4. Riesgos tributarios y fiscales</h3>
 
             <p>
-              Errores en obligaciones tributarias pueden generar sanciones
-              económicas y procesos administrativos.
+              Errores en declaraciones tributarias, facturación electrónica o
+              manejo contable pueden generar sanciones económicas relevantes.
+            </p>
+
+            <p>
+              Una adecuada planeación fiscal ayuda a reducir contingencias
+              frente a autoridades tributarias.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>Otros riesgos jurídicos que las empresas suelen subestimar</h2>
+
+          <div className={styles.card}>
+            <h3>5. Protección de datos personales</h3>
+
+            <p>
+              El manejo inadecuado de información de clientes, empleados y
+              proveedores puede generar sanciones relacionadas con privacidad y
+              tratamiento de datos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Propiedad intelectual</h3>
+
+            <p>
+              El uso indebido de marcas, software, contenido digital o elementos
+              protegidos puede originar conflictos legales y reclamaciones
+              económicas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Fraude interno</h3>
+
+            <p>
+              La falta de controles internos aumenta el riesgo de fraude,
+              malversación y pérdidas patrimoniales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>8. Conflictos societarios</h3>
+
+            <p>
+              Diferencias entre socios, accionistas o administradores pueden
+              afectar la toma de decisiones y generar procesos judiciales
+              complejos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>9. Riesgos regulatorios</h3>
+
+            <p>
+              Sectores regulados como salud, tecnología, financiero y transporte
+              enfrentan obligaciones adicionales que requieren seguimiento
+              permanente.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>10. Riesgos reputacionales derivados de conflictos legales</h3>
+
+            <p>
+              Una demanda pública o una sanción relevante puede afectar la
+              confianza de clientes, proveedores e inversionistas.
             </p>
           </div>
         </section>
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Cómo prevenir riesgos legales en tu empresa</h2>
+          <h2>
+            Cómo reducir demandas, sanciones y riesgos legales antes de que
+            ocurran
+          </h2>
 
           <p>
             La prevención jurídica empresarial es clave para reducir conflictos
@@ -209,22 +307,54 @@ export default function RiesgosLegalesEmpresas() {
           </p>
         </section>
 
-        {/* CONCLUSIÓN */}
-        <section className={styles.conclusion}>
+        <section className={styles.section}>
           <h2>
-            Conclusión: cómo reducir riesgos legales empresariales en Colombia
+            ¿Cómo construir una estrategia de prevención legal empresarial?
           </h2>
 
           <p>
-            Identificar y prevenir riesgos legales permite proteger el
-            patrimonio, la operación y la estabilidad de cualquier empresa en
-            Colombia.
+            Las empresas con mejores resultados jurídicos no son necesariamente
+            las que tienen más abogados, sino las que identifican riesgos antes
+            de que se conviertan en problemas.
           </p>
 
           <p>
-            Implementar asesoría jurídica, contratos adecuados y estrategias de
-            cumplimiento normativo ayuda a evitar demandas, sanciones y pérdidas
-            económicas innecesarias.
+            Una estrategia preventiva normalmente incluye auditorías legales
+            periódicas, actualización contractual, cumplimiento normativo,
+            capacitación interna y monitoreo constante de obligaciones
+            regulatorias.
+          </p>
+
+          <p>
+            Este enfoque permite reducir litigios, proteger el patrimonio
+            empresarial y generar mayor confianza ante clientes, inversionistas
+            y aliados estratégicos.
+          </p>
+        </section>
+
+        {/* CONCLUSIÓN */}
+        <section className={styles.conclusion}>
+          <h2>
+            Cómo evitar que un riesgo legal se convierta en una crisis para tu
+            empresa
+          </h2>
+
+          <p>
+            Toda empresa está expuesta a riesgos jurídicos, pero la diferencia
+            entre una organización estable y una organización vulnerable suele
+            estar en la prevención.
+          </p>
+
+          <p>
+            Contratos adecuados, cumplimiento normativo, asesoría jurídica
+            estratégica y controles internos permiten reducir significativamente
+            la probabilidad de demandas, sanciones y pérdidas económicas.
+          </p>
+
+          <p>
+            Identificar riesgos legales de forma temprana no solo protege el
+            patrimonio empresarial, sino que también fortalece la competitividad
+            y el crecimiento sostenible de cualquier organización en Colombia.
           </p>
         </section>
 

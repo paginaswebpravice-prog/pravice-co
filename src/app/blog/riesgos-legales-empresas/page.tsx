@@ -5,22 +5,27 @@ const canonicalUrl = "https://pravice.co/blog/riesgos-legales-empresas";
 
 export const metadata: Metadata = {
   title:
-    "Principales riesgos legales que enfrentan las empresas en Colombia 2026 | Pravice",
+    "10 Riesgos Legales que Pueden Costarle Millones a una Empresa en Colombia",
+
   description:
-    "Conoce los riesgos legales más comunes en empresas en Colombia y cómo prevenir demandas, sanciones, conflictos laborales y problemas contractuales.",
+    "Conoce los principales riesgos legales empresariales en Colombia, cómo prevenir demandas, sanciones, multas y errores que afectan el crecimiento de una empresa.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Principales riesgos legales que enfrentan las empresas en Colombia",
+    title:
+      "10 Riesgos Legales que Pueden Costarle Millones a una Empresa en Colombia",
+
     description:
-      "Aprende cómo prevenir riesgos legales empresariales y proteger tu empresa en Colombia.",
+      "Guía práctica para identificar y prevenir riesgos legales empresariales antes de que se conviertan en demandas o sanciones.",
+
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "article",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
@@ -33,9 +38,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Principales riesgos legales que enfrentan las empresas en Colombia",
+
+    title: "10 Riesgos Legales que Pueden Costarle Millones a una Empresa",
+
     description:
-      "Cómo prevenir riesgos legales empresariales y proteger tu negocio.",
+      "Errores legales frecuentes que generan demandas, multas y pérdidas económicas.",
+
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };

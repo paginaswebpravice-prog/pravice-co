@@ -4,19 +4,21 @@ import CentrosConciliacionColombia from "./CentrosConciliacionColombia";
 const canonicalUrl = "https://pravice.co/blog/centros-conciliacion-colombia";
 
 export const metadata: Metadata = {
-  title: "Centros de conciliación en Colombia: cómo funcionan | Pravice",
+  title:
+    "Centros de conciliación en Colombia: qué son, cómo funcionan y cuándo acudir (2026) | Pravice",
 
   description:
-    "Conoce qué hacen los centros de conciliación y cuándo acudir a ellos en Colombia.",
+    "Descubre qué son los centros de conciliación en Colombia, cómo solicitar una audiencia y qué conflictos pueden resolverse sin llegar a juicio.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Centros de conciliación en Colombia: cómo funcionan",
+    title:
+      "Centros de conciliación en Colombia: qué son y cómo resolver conflictos sin juicio",
     description:
-      "Guía sobre el funcionamiento de los centros de conciliación y resolución de conflictos.",
+      "Aprende cómo funcionan los centros de conciliación, qué casos atienden y cuándo pueden ayudarte a evitar un proceso judicial.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -51,10 +53,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Centros de conciliación en Colombia: cómo funcionan",
+  headline:
+    "Centros de conciliación en Colombia: qué son, cómo funcionan y cuándo acudir (2026)",
 
   description:
-    "Conoce qué hacen los centros de conciliación y cuándo acudir a ellos en Colombia.",
+    "Guía sobre centros de conciliación en Colombia, requisitos, funcionamiento y tipos de conflictos que pueden resolverse sin acudir a un juez.",
 
   image: "https://pravice.co/logo_pravice.png",
 

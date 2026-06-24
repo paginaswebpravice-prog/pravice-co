@@ -3,9 +3,9 @@ import Article from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "Conciliación extrajudicial en Colombia | Evita demandas y resuelve conflictos rápido en Bogotá",
+    "Conciliación extrajudicial en Colombia: qué es, requisitos y cuándo es obligatoria | Pravice",
   description:
-    "Guía completa sobre conciliación extrajudicial en Colombia. Resuelve conflictos legales sin juicio, ahorra costos y agiliza acuerdos en Bogotá y todo el país.",
+    "Descubre qué es la conciliación extrajudicial en Colombia, cuándo es obligatoria, qué efectos tiene y qué sucede si no se logra un acuerdo.",
   alternates: {
     canonical: "https://pravice.co/blog/conciliacion-extrajudicial-colombia",
   },
@@ -39,9 +39,9 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline:
-      "Conciliación extrajudicial en Colombia: evita demandas y ahorra tiempo",
+      "Conciliación extrajudicial en Colombia: qué es, requisitos y cuándo es obligatoria",
     description:
-      "Guía completa sobre conciliación extrajudicial en Colombia para resolver conflictos legales sin juicio, reducir costos y agilizar acuerdos.",
+      "Guía sobre conciliación extrajudicial en Colombia, sus requisitos, efectos legales y situaciones donde puede ser obligatoria.",
     image: "https://pravice.co/logo_pravice.png",
 
     author: {

@@ -84,8 +84,8 @@ export default function CumplimientoNormativoArticle() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Cumplimiento normativo en Colombia: cómo evitar sanciones, multas y
-            riesgos legales en tu empresa
+            Cumplimiento normativo en Colombia: guía para evitar multas,
+            sanciones y riesgos legales empresariales
           </motion.h1>
 
           <motion.p
@@ -95,9 +95,10 @@ export default function CumplimientoNormativoArticle() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            El cumplimiento normativo en Colombia es fundamental para que las
-            empresas operen dentro del marco legal, eviten sanciones y reduzcan
-            riesgos.
+            Descubre cómo implementar un programa de cumplimiento normativo en
+            Colombia, prevenir multas, reducir riesgos legales, fortalecer el
+            gobierno corporativo y proteger tu empresa frente a investigaciones,
+            sanciones y conflictos regulatorios.
           </motion.p>
         </motion.section>
 
@@ -116,19 +117,84 @@ export default function CumplimientoNormativoArticle() {
         {/* SECCIÓN 1 */}
         <motion.section className={styles.section} {...fadeSection}>
           <h2>
-            ¿Qué es el cumplimiento normativo en Colombia y por qué es clave?
+            ¿Qué es el cumplimiento normativo en Colombia y por qué cada vez más
+            empresas lo consideran una prioridad?
           </h2>
 
           <p>
-            El cumplimiento normativo o compliance es el conjunto de políticas,
-            procedimientos y controles que implementa una empresa para asegurar
-            que cumple con las leyes y regulaciones en Colombia.
+            El cumplimiento normativo, también conocido como compliance
+            empresarial, es el conjunto de políticas, controles, procedimientos
+            y buenas prácticas que una organización implementa para garantizar
+            el cumplimiento de las leyes, regulaciones y obligaciones aplicables
+            a su actividad económica.
           </p>
 
           <p>
-            Este enfoque permite operar dentro del marco legal, reducir riesgos
-            y evitar sanciones.
+            Actualmente las empresas colombianas se enfrentan a un entorno
+            regulatorio cada vez más exigente. Las obligaciones laborales,
+            tributarias, societarias, comerciales y relacionadas con la
+            protección de datos requieren mecanismos internos que permitan
+            identificar riesgos antes de que se conviertan en sanciones o
+            conflictos legales.
           </p>
+
+          <p>
+            Un programa de cumplimiento normativo no solo busca evitar multas.
+            También contribuye a mejorar la transparencia empresarial,
+            fortalecer la confianza de clientes e inversionistas y optimizar la
+            toma de decisiones corporativas.
+          </p>
+
+          <p>
+            Las organizaciones que adoptan estrategias de compliance suelen
+            estar mejor preparadas para afrontar auditorías, requerimientos de
+            autoridades y cambios regulatorios que impactan directamente su
+            operación.
+          </p>
+
+          <p>
+            Por esta razón, el cumplimiento normativo se ha convertido en un
+            elemento estratégico para pequeñas, medianas y grandes empresas en
+            Colombia.
+          </p>
+        </motion.section>
+
+        <motion.section className={styles.section} {...fadeSection}>
+          <h2>
+            ¿Qué consecuencias puede enfrentar una empresa por incumplir la
+            normativa colombiana?
+          </h2>
+
+          <p>
+            Muchas organizaciones subestiman los riesgos asociados al
+            incumplimiento normativo hasta que reciben una investigación, una
+            sanción o una demanda.
+          </p>
+
+          <p>
+            Dependiendo de la infracción y de la autoridad competente, las
+            consecuencias pueden incluir multas económicas, restricciones
+            operativas, suspensión de actividades, litigios judiciales y
+            afectaciones reputacionales.
+          </p>
+
+          <p>
+            En sectores altamente regulados, incluso una infracción
+            aparentemente menor puede generar impactos financieros importantes.
+          </p>
+
+          <h3>Consecuencias más frecuentes del incumplimiento empresarial</h3>
+
+          <ul>
+            <li>Multas impuestas por entidades regulatorias.</li>
+            <li>Demandas laborales y conflictos con empleados.</li>
+            <li>Investigaciones administrativas.</li>
+            <li>Sanciones tributarias.</li>
+            <li>Daño reputacional.</li>
+            <li>Pérdida de confianza de clientes e inversionistas.</li>
+            <li>Problemas contractuales con proveedores y aliados.</li>
+            <li>Mayores costos operativos derivados de incumplimientos.</li>
+          </ul>
         </motion.section>
 
         {/* SECCIÓN 2 */}
@@ -172,36 +238,222 @@ export default function CumplimientoNormativoArticle() {
         </motion.section>
 
         {/* SECCIÓN 4 */}
+        {/* SECCIÓN 3 */}
+
         <motion.section className={styles.section} {...fadeSection}>
           <h2>
-            Cómo implementar un programa de cumplimiento normativo paso a paso
+            Principales riesgos legales y regulatorios que pueden generar
+            multas, investigaciones y sanciones empresariales en Colombia
           </h2>
 
+          <p>
+            Muchas empresas creen que el cumplimiento normativo se limita a
+            cumplir obligaciones tributarias o laborales. Sin embargo,
+            actualmente las organizaciones están expuestas a riesgos
+            regulatorios mucho más amplios que pueden afectar sus finanzas,
+            reputación y continuidad operativa.
+          </p>
+
+          <p>
+            Un programa de compliance busca identificar estos riesgos de forma
+            preventiva para reducir la posibilidad de investigaciones
+            administrativas, demandas judiciales, sanciones económicas o incluso
+            restricciones para contratar con entidades públicas y privadas.
+          </p>
+
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Diagnóstico legal empresarial</h3>
-            <p>Identificar riesgos y obligaciones legales.</p>
+            <h3>
+              Incumplimientos laborales que pueden derivar en demandas y
+              sanciones
+            </h3>
+
+            <p>
+              Las empresas deben cumplir obligaciones relacionadas con
+              contratación, afiliación a seguridad social, pagos salariales,
+              horas extras, prestaciones sociales, seguridad y salud en el
+              trabajo y protección de derechos laborales.
+            </p>
+
+            <p>
+              Errores en estos procesos pueden generar investigaciones,
+              reclamaciones individuales o colectivas y costos económicos
+              significativos para la organización.
+            </p>
           </motion.div>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Diseño de políticas internas de compliance</h3>
-            <p>Establecer reglas claras dentro de la empresa.</p>
+            <h3>
+              Riesgos tributarios y contables por incumplimiento de obligaciones
+              fiscales
+            </h3>
+
+            <p>
+              Las inconsistencias en declaraciones tributarias, facturación,
+              retenciones, soportes contables o reportes financieros pueden
+              generar sanciones económicas, requerimientos de autoridades y
+              procesos de fiscalización.
+            </p>
+
+            <p>
+              Un adecuado sistema de control interno permite reducir errores y
+              mejorar el cumplimiento de obligaciones fiscales.
+            </p>
           </motion.div>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Capacitación en cumplimiento normativo</h3>
-            <p>Formar a los empleados en compliance empresarial.</p>
+            <h3>
+              Protección de datos personales y tratamiento inadecuado de
+              información
+            </h3>
+
+            <p>
+              Las empresas que recopilan datos de clientes, empleados,
+              proveedores o usuarios deben implementar medidas para garantizar
+              el cumplimiento de las normas de protección de datos personales.
+            </p>
+
+            <p>
+              La ausencia de políticas, autorizaciones o procedimientos
+              adecuados puede generar riesgos regulatorios y afectar la
+              confianza de los usuarios.
+            </p>
           </motion.div>
 
           <motion.div className={styles.card} {...fadeItem}>
-            <h3>Monitoreo y mejora continua del sistema</h3>
-            <p>Evaluar y ajustar constantemente el programa.</p>
+            <h3>
+              Falta de controles internos que favorecen errores, fraude y
+              conflictos empresariales
+            </h3>
+
+            <p>
+              Cuando no existen procedimientos claros para la toma de
+              decisiones, autorizaciones, contratación o supervisión financiera,
+              aumentan los riesgos de fraude interno, conflictos de interés y
+              pérdidas económicas.
+            </p>
+
+            <p>
+              El compliance fortalece la cultura organizacional mediante
+              controles, auditorías y mecanismos de supervisión continua.
+            </p>
           </motion.div>
+
+          <motion.div className={styles.card} {...fadeItem}>
+            <h3>
+              Riesgos asociados a proveedores, contratistas y terceros
+              vinculados
+            </h3>
+
+            <p>
+              Una organización también puede verse afectada por incumplimientos
+              cometidos por aliados estratégicos, contratistas o proveedores que
+              actúan en su cadena de operación.
+            </p>
+
+            <p>
+              La debida diligencia y la evaluación de terceros son elementos
+              fundamentales dentro de cualquier programa de cumplimiento
+              normativo.
+            </p>
+          </motion.div>
+
+          <motion.div className={styles.card} {...fadeItem}>
+            <h3>
+              Riesgos reputacionales que afectan la confianza de clientes e
+              inversionistas
+            </h3>
+
+            <p>
+              Un incidente regulatorio puede afectar gravemente la imagen
+              corporativa, generar pérdida de clientes y disminuir oportunidades
+              comerciales.
+            </p>
+
+            <p>
+              En muchos casos, el impacto reputacional termina siendo más
+              costoso que la propia sanción económica impuesta por una
+              autoridad.
+            </p>
+          </motion.div>
+        </motion.section>
+
+        {/* NUEVA SECCIÓN */}
+
+        <motion.section className={styles.section} {...fadeSection}>
+          <h2>
+            ¿Qué empresas necesitan implementar programas de cumplimiento
+            normativo en Colombia?
+          </h2>
+
+          <p>
+            Una de las preguntas más frecuentes es si el compliance únicamente
+            aplica para grandes corporaciones. La realidad es que cualquier
+            organización, independientemente de su tamaño, enfrenta riesgos
+            legales que pueden ser mitigados mediante controles adecuados.
+          </p>
+
+          <p>
+            Las pequeñas y medianas empresas también deben gestionar
+            obligaciones relacionadas con contratación laboral, protección de
+            datos, relaciones con proveedores, obligaciones tributarias,
+            contratación comercial y gestión de riesgos empresariales.
+          </p>
+
+          <h3>Empresas familiares</h3>
+
+          <p>
+            Los negocios familiares suelen enfrentar desafíos relacionados con
+            estructura organizacional, toma de decisiones y formalización de
+            procesos. Un sistema de cumplimiento ayuda a definir
+            responsabilidades y reducir conflictos internos.
+          </p>
+
+          <h3>Startups y empresas en crecimiento</h3>
+
+          <p>
+            A medida que una empresa crece, aumentan las exigencias regulatorias
+            y los riesgos operativos. Implementar compliance desde etapas
+            tempranas facilita una expansión más organizada y sostenible.
+          </p>
+
+          <h3>Empresas con contratación de personal</h3>
+
+          <p>
+            Toda organización que vincule trabajadores debe establecer
+            procedimientos adecuados para contratación, cumplimiento laboral,
+            seguridad social y prevención de conflictos relacionados con
+            recursos humanos.
+          </p>
+
+          <h3>Empresas que manejan datos personales</h3>
+
+          <p>
+            Negocios que recopilan información de clientes, usuarios o empleados
+            deben adoptar medidas para garantizar una gestión responsable de
+            datos personales.
+          </p>
+
+          <h3>Organizaciones que trabajan con múltiples proveedores</h3>
+
+          <p>
+            Cuando existe una amplia red de contratistas y aliados comerciales,
+            resulta fundamental implementar mecanismos de evaluación y
+            supervisión que permitan reducir riesgos derivados de terceros.
+          </p>
+
+          <p>
+            En la práctica, el cumplimiento normativo no debe entenderse
+            únicamente como una obligación legal. También constituye una
+            herramienta estratégica que mejora la gestión empresarial, fortalece
+            la confianza del mercado y facilita la toma de decisiones.
+          </p>
         </motion.section>
 
         {/* CONCLUSIÓN */}
         <motion.section className={styles.conclusion} {...fadeSection}>
           <h2>
-            Conclusión: por qué el compliance es clave para empresas en Colombia
+            Cómo reducir riesgos legales y fortalecer el crecimiento sostenible
+            de tu empresa
           </h2>
 
           <p>

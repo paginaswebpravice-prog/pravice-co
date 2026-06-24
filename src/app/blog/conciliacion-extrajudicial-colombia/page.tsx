@@ -3,9 +3,9 @@ import ConciliacionExtrajudicialArticle from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "Conciliación extrajudicial en Colombia: cómo resolver conflictos sin juicio | Guía completa",
+    "Conciliación extrajudicial en Colombia: qué es, cómo funciona y cuándo evita una demanda (2026)",
   description:
-    "Aprende qué es la conciliación extrajudicial en Colombia, cómo funciona y cómo resolver conflictos legales y empresariales sin ir a juicio de forma rápida y efectiva.",
+    "Descubre qué es la conciliación extrajudicial en Colombia, cómo funciona paso a paso, qué conflictos pueden resolverse y cuándo permite evitar una demanda judicial.",
 
   alternates: {
     canonical: "https://pravice.co/blog/conciliacion-extrajudicial-colombia",
@@ -13,9 +13,9 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Conciliación extrajudicial en Colombia: evita juicios y resuelve conflictos legalmente",
+      "Conciliación extrajudicial en Colombia: casos donde puedes evitar un juicio",
     description:
-      "Descubre cómo funciona la conciliación extrajudicial en Colombia y cómo resolver conflictos sin procesos judiciales costosos y largos.",
+      "Aprende cómo funciona la conciliación extrajudicial, qué conflictos pueden resolverse y cuándo es una alternativa más rápida que una demanda.",
     url: "https://pravice.co/blog/conciliacion-extrajudicial-colombia",
     type: "article",
     locale: "es_CO",
@@ -41,10 +41,10 @@ export default function Page() {
     "@type": "BlogPosting",
 
     headline:
-      "Conciliación extrajudicial en Colombia: cómo resolver conflictos sin juicio",
+      "Conciliación extrajudicial en Colombia: qué es, cómo funciona y cuándo evita una demanda",
 
     description:
-      "Guía completa sobre conciliación extrajudicial en Colombia para resolver conflictos legales y empresariales sin necesidad de acudir a juicio.",
+      "Guía completa sobre conciliación extrajudicial en Colombia, conflictos conciliables, procedimiento, ventajas y efectos legales.",
 
     image: "https://pravice.co/logo_pravice.png",
 

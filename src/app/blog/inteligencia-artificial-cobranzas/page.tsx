@@ -6,19 +6,18 @@ const canonicalUrl =
 
 export const metadata: Metadata = {
   title:
-    "Inteligencia artificial en cobranzas en Colombia: cómo recuperar cartera más rápido | Pravice",
+    "IA para Cobranzas en Colombia: Cómo Reducir la Mora y Recuperar Más Cartera en 2026",
   description:
-    "Descubre cómo la inteligencia artificial está transformando las cobranzas en Colombia. Aprende a automatizar procesos, reducir mora y mejorar la recuperación de cartera empresarial.",
-
+    "Descubre cómo la inteligencia artificial ayuda a reducir la mora, automatizar cobranzas y aumentar la recuperación de cartera. Guía práctica para empresas colombianas.",
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
     title:
-      "IA en cobranzas en Colombia: automatiza y recupera cartera más rápido",
+      "IA para Cobranzas: Cómo Recuperar Más Cartera y Reducir la Mora Empresarial",
     description:
-      "Automatización, predicción y eficiencia: así impacta la IA en la recuperación de cartera en Colombia.",
+      "Aprende cómo las empresas están utilizando inteligencia artificial para automatizar cobranzas, reducir riesgos financieros y recuperar cartera de manera más eficiente.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",

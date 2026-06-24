@@ -4,18 +4,23 @@ import EmpresaDemandadaColombia from "./Article";
 const canonicalUrl = "https://pravice.co/blog/empresa-demandada-colombia";
 
 export const metadata: Metadata = {
-  title: "Qué hacer si demandan a tu empresa en Colombia 2026 | Pravice",
+  title:
+    "Demandaron a tu empresa en Colombia: 7 errores que pueden empeorar el caso",
+
   description:
-    "Conoce qué hacer si demandan a tu empresa en Colombia. Aprende cómo actuar legalmente, reducir riesgos y proteger tu negocio ante procesos judiciales.",
+    "Descubre qué hacer si tu empresa recibe una demanda en Colombia, cuáles son los errores más peligrosos y cómo reducir riesgos legales, financieros y reputacionales.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Qué hacer si demandan a tu empresa en Colombia",
+    title:
+      "Demandaron a tu empresa en Colombia: pasos clave para evitar errores costosos",
+
     description:
-      "Guía legal para empresas demandadas en Colombia y cómo responder correctamente.",
+      "Guía práctica para empresarios sobre demandas comerciales, laborales y contractuales en Colombia.",
+
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -46,7 +51,8 @@ const schemaData = {
     "@type": "WebPage",
     "@id": canonicalUrl,
   },
-  headline: "Qué hacer si demandan a tu empresa en Colombia",
+  headline:
+    "Demandaron a tu empresa en Colombia: 7 errores que pueden empeorar el caso",
   description:
     "Conoce qué hacer si demandan a tu empresa en Colombia. Aprende cómo actuar legalmente, reducir riesgos y proteger tu negocio ante procesos judiciales.",
   image: "https://pravice.co/logo_pravice.png",

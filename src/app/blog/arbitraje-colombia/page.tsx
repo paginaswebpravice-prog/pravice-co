@@ -4,23 +4,27 @@ import ArbitrajeColombia from "./ArbitrajeColombia";
 const canonicalUrl = "https://pravice.co/blog/arbitraje-colombia";
 
 export const metadata: Metadata = {
-  title: "Arbitraje en Colombia: qué es y cuándo conviene usarlo | Pravice",
+  title:
+    "Arbitraje en Colombia: qué es, cómo funciona y cuándo conviene en 2026 | Pravice",
 
   description:
-    "Conoce cómo funciona el arbitraje en Colombia y cuándo puede ser una alternativa frente a procesos judiciales.",
+    "Aprende qué es el arbitraje en Colombia, cómo funciona un tribunal arbitral, sus ventajas frente a una demanda judicial y cuándo puede convenir a empresas y particulares.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Arbitraje en Colombia: qué es y cuándo conviene usarlo",
+    title: "Arbitraje en Colombia: qué es, cómo funciona y cuándo conviene",
+
     description:
-      "Cómo funciona el arbitraje como alternativa a procesos judiciales en Colombia.",
+      "Guía completa sobre arbitraje en Colombia, laudo arbitral, ventajas, costos y resolución de conflictos empresariales.",
+
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "article",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
@@ -33,14 +37,15 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Arbitraje en Colombia",
+
+    title: "Arbitraje en Colombia: qué es, cómo funciona y cuándo conviene",
+
     description:
-      "Guía sobre arbitraje y resolución de conflictos empresariales.",
+      "Todo sobre arbitraje en Colombia, ventajas frente a procesos judiciales y conflictos empresariales.",
+
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
-
-/* ================= SEO SCHEMA JSON-LD ================= */
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -51,10 +56,10 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Arbitraje en Colombia: qué es y cuándo conviene usarlo",
+  headline: "Arbitraje en Colombia: qué es, cómo funciona y cuándo conviene",
 
   description:
-    "Conoce cómo funciona el arbitraje en Colombia y cuándo puede ser una alternativa frente a procesos judiciales.",
+    "Aprende qué es el arbitraje en Colombia, cómo funciona un tribunal arbitral y cuándo puede ser una alternativa eficiente frente a procesos judiciales.",
 
   image: "https://pravice.co/logo_pravice.png",
 
@@ -74,21 +79,23 @@ const schemaData = {
   },
 
   datePublished: "2026-06-10",
-  dateModified: "2026-06-10",
+  dateModified: "2026-06-24",
 
   inLanguage: "es-CO",
 
   articleSection: "Arbitraje y Conflictos",
 
   keywords: [
-    "arbitraje Colombia",
-    "qué es arbitraje",
-    "tribunal arbitral",
-    "resolución de conflictos empresariales",
+    "arbitraje en Colombia",
+    "qué es el arbitraje",
+    "cómo funciona el arbitraje",
+    "tribunal arbitral Colombia",
     "laudo arbitral",
-    "arbitraje comercial Colombia",
-    "mecanismos alternativos de resolución",
-    "conflictos comerciales Colombia",
+    "arbitraje comercial",
+    "arbitraje empresarial",
+    "ventajas del arbitraje",
+    "resolución de conflictos",
+    "arbitraje vs demanda judicial",
   ],
 };
 

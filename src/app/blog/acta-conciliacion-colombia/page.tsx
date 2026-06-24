@@ -5,19 +5,20 @@ const canonicalUrl = "https://pravice.co/blog/acta-conciliacion-colombia";
 
 export const metadata: Metadata = {
   title:
-    "Acta de conciliación en Colombia: efectos legales y validez | Pravice",
+    "Acta de conciliación en Colombia: ¿tiene validez legal y qué pasa si la incumplen? | Guía 2026",
 
   description:
-    "Conoce qué valor jurídico tiene un acta de conciliación en Colombia y cuáles son sus efectos legales.",
+    "Descubre si un acta de conciliación tiene validez legal en Colombia, cuáles son sus efectos jurídicos, qué significa el mérito ejecutivo y qué hacer si una de las partes incumple el acuerdo.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Acta de conciliación en Colombia: efectos legales y validez",
+    title:
+      "Acta de conciliación en Colombia: validez legal, efectos y consecuencias",
     description:
-      "Guía sobre la validez jurídica y efectos legales de un acta de conciliación en Colombia.",
+      "Aprende qué valor jurídico tiene un acta de conciliación y cómo exigir su cumplimiento en Colombia.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -52,10 +53,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Acta de conciliación en Colombia: efectos legales y validez",
+  headline:
+    "Acta de conciliación en Colombia: ¿tiene validez legal y qué pasa si la incumplen?",
 
   description:
-    "Conoce qué valor jurídico tiene un acta de conciliación en Colombia y cuáles son sus efectos legales.",
+    "Guía completa sobre la validez jurídica del acta de conciliación en Colombia, sus efectos legales, mérito ejecutivo, cosa juzgada y consecuencias del incumplimiento.",
 
   image: "https://pravice.co/logo_pravice.png",
 

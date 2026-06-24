@@ -4,19 +4,21 @@ import CarteraVencidaEmpresas from "./CarteraVencidaEmpresas";
 const canonicalUrl = "https://pravice.co/blog/cartera-vencida-empresas";
 
 export const metadata: Metadata = {
-  title: "Cómo reducir la cartera vencida en empresas colombianas | Pravice",
+  title:
+    "Cartera vencida en empresas: 7 estrategias para recuperar pagos y mejorar el flujo de caja (2026)",
 
   description:
-    "Aprende estrategias para disminuir la mora, recuperar pagos atrasados y mejorar el flujo de caja empresarial en Colombia.",
+    "Descubre cómo reducir la cartera vencida en tu empresa con estrategias prácticas de cobranza, recuperación de pagos y control de la morosidad en Colombia.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Cómo reducir la cartera vencida en empresas colombianas",
+    title:
+      "Cartera vencida en empresas: cómo recuperar pagos y reducir la morosidad",
     description:
-      "Estrategias efectivas para disminuir mora y mejorar el flujo de caja empresarial.",
+      "Aprende estrategias efectivas para recuperar cartera, disminuir la mora y proteger el flujo de caja empresarial.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -51,10 +53,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Cómo reducir la cartera vencida en empresas colombianas",
+  headline:
+    "Cartera vencida en empresas: 7 estrategias para recuperar pagos y mejorar el flujo de caja (2026)",
 
   description:
-    "Aprende estrategias para disminuir la mora, recuperar pagos atrasados y mejorar el flujo de caja empresarial en Colombia.",
+    "Descubre cómo reducir la cartera vencida en tu empresa con estrategias prácticas de cobranza, recuperación de pagos y control de la morosidad.",
 
   image: "https://pravice.co/logo_pravice.png",
 

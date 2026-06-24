@@ -4,19 +4,21 @@ import AbogadoEmpresarialColombia from "./AbogadoEmpresarialColombia";
 const canonicalUrl = "https://pravice.co/blog/abogado-empresarial-colombia";
 
 export const metadata: Metadata = {
-  title: "Qué hace un abogado empresarial en Colombia | Pravice",
+  title:
+    "Abogado empresarial en Colombia: funciones, beneficios y cuándo contratar uno | Guía 2026",
 
   description:
-    "Conoce las funciones y beneficios de la asesoría jurídica empresarial en Colombia.",
+    "Descubre qué hace un abogado empresarial en Colombia, cuáles son sus funciones, cuándo una empresa necesita asesoría jurídica y cómo ayuda a prevenir demandas, sanciones y riesgos legales.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Qué hace un abogado empresarial en Colombia",
+    title:
+      "Abogado empresarial en Colombia: qué hace y cómo protege tu empresa",
     description:
-      "Guía sobre funciones y beneficios de la asesoría jurídica empresarial.",
+      "Conoce las funciones de un abogado empresarial, cuándo contratarlo y cómo ayuda a prevenir conflictos legales en empresas colombianas.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -50,10 +52,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Qué hace un abogado empresarial en Colombia",
+  headline:
+    "Abogado empresarial en Colombia: funciones, beneficios y cuándo contratar uno",
 
   description:
-    "Conoce las funciones y beneficios de la asesoría jurídica empresarial en Colombia.",
+    "Guía completa sobre las funciones de un abogado empresarial en Colombia, beneficios de la asesoría jurídica preventiva y situaciones en las que una empresa necesita apoyo legal especializado.",
 
   image: "https://pravice.co/logo_pravice.png",
 

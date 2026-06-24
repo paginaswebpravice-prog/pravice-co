@@ -8,9 +8,10 @@ export default function ActaConciliacionColombia() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Acta de conciliación en Colombia: efectos legales y validez",
+    headline:
+      "Acta de conciliación en Colombia: ¿tiene validez legal y qué pasa si la incumplen?",
     description:
-      "Conoce qué validez jurídica tiene un acta de conciliación en Colombia y cuáles son sus efectos legales.",
+      "Conoce qué valor jurídico tiene un acta de conciliación en Colombia, cuándo puede exigirse judicialmente y cuáles son las consecuencias de incumplirla.",
     image: "https://pravice.co/og-image.jpg",
     author: {
       "@type": "Organization",
@@ -51,12 +52,15 @@ export default function ActaConciliacionColombia() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Acta de conciliación en Colombia: efectos legales y validez
+            Acta de conciliación en Colombia: ¿tiene validez legal y qué pasa si
+            la incumplen?
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre qué valor jurídico tiene un acta de conciliación y cómo
-            funciona este documento en Colombia.
+            Descubre si un acta de conciliación tiene validez legal en Colombia,
+            cuándo produce efectos obligatorios, qué significa que tenga mérito
+            ejecutivo y qué puedes hacer si una de las partes incumple el
+            acuerdo.
           </motion.p>
         </motion.section>
 
@@ -77,20 +81,21 @@ export default function ActaConciliacionColombia() {
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Qué aprenderás en este artículo</h3>
+          <h3>Qué aprenderás sobre el acta de conciliación en Colombia</h3>
 
           <ul>
             <li>Qué es un acta de conciliación</li>
-            <li>Qué validez jurídica tiene en Colombia</li>
-            <li>Cuáles son sus efectos legales</li>
-            <li>Qué ocurre si una parte incumple</li>
-            <li>Importancia de la asesoría legal</li>
+            <li>Qué validez jurídica tiene</li>
+            <li>Cuándo tiene mérito ejecutivo</li>
+            <li>Qué significa el efecto de cosa juzgada</li>
+            <li>Qué pasa si una parte incumple</li>
+            <li>Cómo exigir judicialmente el cumplimiento</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué es un acta de conciliación</h2>
+          <h2>¿Qué es un acta de conciliación y para qué sirve en Colombia?</h2>
 
           <p>
             El acta de conciliación es el documento que contiene los acuerdos
@@ -100,6 +105,18 @@ export default function ActaConciliacionColombia() {
           <p>
             Este documento es elaborado por el conciliador y firmado por los
             involucrados como prueba formal del acuerdo alcanzado.
+          </p>
+
+          <p>
+            Este documento representa la materialización escrita de los acuerdos
+            alcanzados durante una audiencia de conciliación y puede producir
+            importantes consecuencias jurídicas para quienes lo firman.
+          </p>
+
+          <p>
+            Por esta razón, antes de suscribir un acta de conciliación es
+            fundamental comprender plenamente las obligaciones asumidas y las
+            implicaciones legales que se derivan del acuerdo.
           </p>
 
           <div className={styles.card}>
@@ -121,7 +138,7 @@ export default function ActaConciliacionColombia() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Validez jurídica del acta de conciliación</h2>
+          <h2>¿El acta de conciliación tiene validez legal en Colombia?</h2>
 
           <p>
             En Colombia, las actas de conciliación tienen reconocimiento legal y
@@ -129,7 +146,9 @@ export default function ActaConciliacionColombia() {
           </p>
 
           <div className={styles.card}>
-            <h3>Carácter obligatorio</h3>
+            <h3>
+              <h3>El acuerdo es obligatorio para las partes</h3>
+            </h3>
             <p>
               Las partes deben cumplir los acuerdos establecidos en el acta de
               conciliación.
@@ -137,7 +156,7 @@ export default function ActaConciliacionColombia() {
           </div>
 
           <div className={styles.card}>
-            <h3>Efecto de cosa juzgada</h3>
+            <h3>Puede producir efecto de cosa juzgada</h3>
             <p>
               En muchos casos, el conflicto no puede volver a discutirse
               judicialmente después del acuerdo.
@@ -145,7 +164,7 @@ export default function ActaConciliacionColombia() {
           </div>
 
           <div className={styles.card}>
-            <h3>Mérito ejecutivo</h3>
+            <h3>Puede convertirse en un título ejecutivo</h3>
             <p>
               El acta puede servir como base para exigir judicialmente el
               cumplimiento de las obligaciones pactadas.
@@ -153,9 +172,50 @@ export default function ActaConciliacionColombia() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>
+            ¿Qué significan el mérito ejecutivo y la cosa juzgada en un acta de
+            conciliación?
+          </h2>
+
+          <p>
+            Dos de los efectos más importantes de un acta de conciliación son el
+            mérito ejecutivo y la cosa juzgada. Estos conceptos determinan el
+            alcance legal del acuerdo alcanzado.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Mérito ejecutivo</h3>
+
+            <p>
+              Permite acudir ante un juez para exigir el cumplimiento de las
+              obligaciones pactadas cuando una de las partes incumple.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Cosa juzgada</h3>
+
+            <p>
+              Impide que el mismo conflicto vuelva a discutirse posteriormente
+              ante las autoridades judiciales cuando el asunto ya fue conciliado
+              válidamente.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Mayor seguridad jurídica</h3>
+
+            <p>
+              Estos efectos fortalecen la estabilidad de los acuerdos y brindan
+              mayor confianza a las partes involucradas.
+            </p>
+          </div>
+        </section>
+
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Qué información contiene un acta de conciliación</h2>
+          <h2>¿Qué debe contener un acta de conciliación para ser válida?</h2>
 
           <p>
             El documento debe incluir información clara sobre las partes y los
@@ -196,11 +256,14 @@ export default function ActaConciliacionColombia() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Qué ocurre si una parte incumple el acta</h2>
+          <h2>
+            ¿Qué pasa si una persona o empresa incumple un acta de conciliación?
+          </h2>
 
           <p>
-            Cuando una de las partes incumple los compromisos establecidos en el
-            acta, pueden iniciarse acciones legales para exigir su cumplimiento.
+            El incumplimiento de un acuerdo conciliatorio puede generar
+            consecuencias legales importantes para la parte que no cumple con
+            las obligaciones asumidas.
           </p>
 
           <div className={styles.card}>
@@ -229,7 +292,10 @@ export default function ActaConciliacionColombia() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Importancia de la asesoría jurídica</h2>
+          <h2>
+            ¿Por qué es recomendable contar con asesoría legal antes de firmar
+            un acta de conciliación?
+          </h2>
 
           <p>
             Contar con apoyo legal durante una conciliación ayuda a garantizar
@@ -263,7 +329,10 @@ export default function ActaConciliacionColombia() {
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre el acta de conciliación en Colombia</h2>
+          <h2>
+            Conclusión: el acta de conciliación puede tener los mismos efectos
+            que una decisión judicial
+          </h2>
 
           <p>
             El acta de conciliación tiene un importante valor jurídico en

@@ -51,12 +51,14 @@ export default function CentrosConciliacionColombia() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Centros de conciliación en Colombia: cómo funcionan
+            Centros de conciliación en Colombia: qué son, cómo funcionan y
+            cuándo acudir
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Conoce cómo funcionan los centros de conciliación y cuándo acudir a
-            ellos para resolver conflictos sin necesidad de un juicio.
+            Descubre qué hacen los centros de conciliación en Colombia, qué
+            conflictos pueden resolver y cómo este mecanismo puede ayudarte a
+            evitar procesos judiciales largos y costosos.
           </motion.p>
         </motion.section>
 
@@ -89,7 +91,9 @@ export default function CentrosConciliacionColombia() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué son los centros de conciliación</h2>
+          <h2>
+            Qué son los centros de conciliación y para qué sirven en Colombia
+          </h2>
 
           <p>
             Los centros de conciliación son entidades autorizadas por la ley
@@ -121,7 +125,9 @@ export default function CentrosConciliacionColombia() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Cómo funcionan los centros de conciliación</h2>
+          <h2>
+            Cómo funciona una audiencia en un centro de conciliación paso a paso
+          </h2>
 
           <p>
             El procedimiento conciliatorio sigue etapas orientadas a facilitar
@@ -163,7 +169,7 @@ export default function CentrosConciliacionColombia() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Qué conflictos pueden atender</h2>
+          <h2>Qué conflictos pueden resolverse en un centro de conciliación</h2>
 
           <p>
             Los centros de conciliación pueden intervenir en diferentes tipos de
@@ -205,7 +211,9 @@ export default function CentrosConciliacionColombia() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Ventajas de acudir a un centro de conciliación</h2>
+          <h2>
+            5 ventajas de acudir a un centro de conciliación antes de demandar
+          </h2>
 
           <p>
             Utilizar estos mecanismos ofrece múltiples beneficios frente a los
@@ -246,7 +254,9 @@ export default function CentrosConciliacionColombia() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Importancia de la asesoría jurídica</h2>
+          <h2>
+            Por qué es recomendable recibir asesoría antes de una conciliación
+          </h2>
 
           <p>
             Aunque la conciliación promueve acuerdos amistosos, contar con apoyo
@@ -280,7 +290,7 @@ export default function CentrosConciliacionColombia() {
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre los centros de conciliación en Colombia</h2>
+          <h2>¿Vale la pena acudir a un centro de conciliación en Colombia?</h2>
 
           <p>
             Los centros de conciliación son herramientas fundamentales para

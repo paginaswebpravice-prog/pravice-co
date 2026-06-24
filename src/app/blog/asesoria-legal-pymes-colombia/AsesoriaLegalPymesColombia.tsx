@@ -8,9 +8,10 @@ export default function AsesoriaLegalPymesColombia() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Asesoría legal para pymes en Colombia: por qué es importante",
+    headline:
+      "Asesoría Legal para Pymes en Colombia: 7 Riesgos que Puedes Evitar",
     description:
-      "Conoce cómo una asesoría jurídica puede ayudar a proteger y hacer crecer una pyme en Colombia.",
+      "Aprende cómo la asesoría legal para pymes ayuda a prevenir demandas, sanciones y problemas empresariales en Colombia.",
     image: "https://pravice.co/og-image.jpg",
     author: {
       "@type": "Organization",
@@ -51,7 +52,8 @@ export default function AsesoriaLegalPymesColombia() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Asesoría legal para pymes en Colombia: por qué es importante
+            Asesoría Legal para Pymes en Colombia: 7 Riesgos que Puedes Evitar
+            en 2026
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
@@ -91,7 +93,10 @@ export default function AsesoriaLegalPymesColombia() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué es la asesoría legal para pymes</h2>
+          <h2>
+            Qué es la asesoría legal para pymes y por qué cada vez más empresas
+            la necesitan
+          </h2>
 
           <p>
             La asesoría legal empresarial consiste en el acompañamiento jurídico
@@ -120,7 +125,9 @@ export default function AsesoriaLegalPymesColombia() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Por qué las pymes necesitan asesoría jurídica</h2>
+          <h2>
+            7 riesgos legales que enfrentan las pymes sin asesoría jurídica
+          </h2>
 
           <p>
             Muchas pequeñas empresas operan sin acompañamiento legal y esto
@@ -162,7 +169,9 @@ export default function AsesoriaLegalPymesColombia() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Beneficios de contar con asesoría legal empresarial</h2>
+          <h2>
+            Cómo una asesoría legal puede ahorrar dinero y problemas a una pyme
+          </h2>
 
           <p>
             Una correcta asesoría jurídica fortalece la estabilidad y el
@@ -199,7 +208,9 @@ export default function AsesoriaLegalPymesColombia() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Áreas legales más importantes para una pyme</h2>
+          <h2>
+            Las áreas legales donde más errores cometen las pymes en Colombia
+          </h2>
 
           <p>
             Las pequeñas y medianas empresas requieren atención jurídica en
@@ -238,7 +249,9 @@ export default function AsesoriaLegalPymesColombia() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Cómo fortalecer la seguridad jurídica de una pyme</h2>
+          <h2>
+            Cómo proteger una pyme de demandas, sanciones y conflictos legales
+          </h2>
 
           <p>
             La prevención legal debe formar parte de la estrategia empresarial
@@ -276,7 +289,7 @@ export default function AsesoriaLegalPymesColombia() {
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre asesoría legal para pymes</h2>
+          <h2>¿Vale la pena invertir en asesoría legal para una pyme?</h2>
 
           <p>
             La asesoría jurídica empresarial es una herramienta clave para
@@ -292,10 +305,10 @@ export default function AsesoriaLegalPymesColombia() {
 
         <ArticleCTA
           badge="Asesoría jurídica empresarial para pymes"
-          title="¿Tu pyme necesita apoyo legal empresarial?"
-          description="Recibe asesoría jurídica para contratos, cumplimiento normativo, conflictos comerciales y protección legal de tu empresa en Colombia."
+          title="¿Tu pyme está expuesta a riesgos legales sin saberlo?"
+          description="Obtén orientación jurídica para prevenir demandas, revisar contratos, cumplir obligaciones legales y proteger el crecimiento de tu empresa."
           href="https://abogadosespecialistas.com.co/"
-          buttonText="Solicitar asesoría jurídica"
+          buttonText="Evaluar riesgos legales de mi empresa"
         />
       </main>
     </>

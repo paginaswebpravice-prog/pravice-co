@@ -8,9 +8,10 @@ export default function ConciliacionCivilColombia() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Conciliación civil en Colombia: casos más comunes",
+    headline:
+      "Conciliación civil en Colombia: qué casos se pueden resolver sin demanda",
     description:
-      "Conoce qué conflictos civiles pueden resolverse mediante conciliación en Colombia sin acudir a un proceso judicial.",
+      "Guía sobre conciliación civil en Colombia, los conflictos que pueden resolverse mediante acuerdos y cuándo evita una demanda.",
     image: "https://pravice.co/og-image.jpg",
     author: {
       "@type": "Organization",
@@ -51,7 +52,8 @@ export default function ConciliacionCivilColombia() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Conciliación civil en Colombia: casos más comunes
+            Conciliación civil en Colombia: qué casos se pueden resolver sin
+            demanda
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
@@ -90,7 +92,7 @@ export default function ConciliacionCivilColombia() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué es la conciliación civil</h2>
+          <h2>Qué es la conciliación civil en Colombia y cuándo se utiliza</h2>
 
           <p>
             La conciliación civil es un procedimiento legal mediante el cual dos
@@ -122,7 +124,10 @@ export default function ConciliacionCivilColombia() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Casos civiles más comunes que pueden conciliarse</h2>
+          <h2>
+            Qué conflictos pueden resolverse mediante conciliación civil en
+            Colombia
+          </h2>
 
           <p>
             Existen múltiples conflictos civiles que pueden resolverse mediante
@@ -164,7 +169,7 @@ export default function ConciliacionCivilColombia() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Cómo funciona la conciliación civil en Colombia</h2>
+          <h2>Cómo es el proceso de conciliación civil paso a paso</h2>
 
           <p>
             El proceso puede desarrollarse ante centros de conciliación,
@@ -206,7 +211,9 @@ export default function ConciliacionCivilColombia() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Ventajas de la conciliación civil</h2>
+          <h2>
+            Ventajas de la conciliación civil frente a una demanda judicial
+          </h2>
 
           <p>
             Resolver conflictos mediante conciliación ofrece importantes
@@ -247,7 +254,10 @@ export default function ConciliacionCivilColombia() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Importancia del acompañamiento legal</h2>
+          <h2>
+            Por qué es importante contar con asesoría jurídica durante la
+            conciliación
+          </h2>
 
           <p>
             Aunque la conciliación busca acuerdos amistosos, contar con asesoría
@@ -280,7 +290,10 @@ export default function ConciliacionCivilColombia() {
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre conciliación civil en Colombia</h2>
+          <h2>
+            Conciliación civil en Colombia: una alternativa rápida para resolver
+            conflictos
+          </h2>
 
           <p>
             La conciliación civil es una herramienta legal efectiva para

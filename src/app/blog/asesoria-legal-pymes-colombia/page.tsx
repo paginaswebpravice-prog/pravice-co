@@ -5,19 +5,19 @@ const canonicalUrl = "https://pravice.co/blog/asesoria-legal-pymes-colombia";
 
 export const metadata: Metadata = {
   title:
-    "Asesoría legal para pymes en Colombia: por qué es importante | Pravice",
+    "Asesoría Legal para Pymes en Colombia: 7 Riesgos que Puedes Evitar en 2026 | Pravice",
 
   description:
-    "Cómo una asesoría jurídica puede proteger y ayudar al crecimiento de las pymes en Colombia.",
+    "Descubre cómo la asesoría legal para pymes ayuda a evitar demandas, sanciones, problemas laborales y errores contractuales en Colombia.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Asesoría legal para pymes en Colombia",
+    title: "Asesoría Legal para Pymes en Colombia: 7 Riesgos que Puedes Evitar",
     description:
-      "Descubre por qué la asesoría jurídica es clave para las pequeñas y medianas empresas.",
+      "Conoce los principales riesgos legales de una pyme y cómo prevenirlos con asesoría jurídica empresarial.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -52,10 +52,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Asesoría legal para pymes en Colombia: por qué es importante",
+  headline:
+    "Asesoría Legal para Pymes en Colombia: 7 Riesgos que Puedes Evitar en 2026",
 
   description:
-    "Cómo una asesoría jurídica puede proteger y hacer crecer una pyme.",
+    "Descubre cómo la asesoría legal para pymes ayuda a evitar demandas, sanciones, problemas laborales y errores contractuales en Colombia.",
 
   image: "https://pravice.co/logo_pravice.png",
 
