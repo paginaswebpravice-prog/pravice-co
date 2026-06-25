@@ -3,19 +3,18 @@ import Article from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "Derecho empresarial en Colombia: guía legal para proteger tu empresa en 2026",
+    "Derecho empresarial en Colombia: qué es, qué regula y por qué es importante | Pravice",
   description:
-    "Descubre cómo funciona el derecho empresarial en Colombia y aprende a proteger tu empresa, cumplir la ley y evitar riesgos legales.",
+    "Conoce qué es el derecho empresarial en Colombia, qué áreas comprende, cómo se aplica y cuáles son las principales normas que regulan la actividad de las empresas.",
 
   alternates: {
     canonical: "https://pravice.co/blog/derecho-empresarial-colombia",
   },
 
   openGraph: {
-    title:
-      "Derecho empresarial en Colombia: cómo proteger tu empresa legalmente",
+    title: "Derecho empresarial en Colombia: qué es y cómo funciona",
     description:
-      "Guía completa sobre derecho empresarial en Colombia, aspectos legales clave y estrategias para proteger tu negocio.",
+      "Guía sobre derecho empresarial en Colombia, las normas que regulan las empresas y los aspectos jurídicos más importantes para cualquier organización.",
     url: "https://pravice.co/blog/derecho-empresarial-colombia",
     type: "article",
     locale: "es_CO",
@@ -44,9 +43,9 @@ const schemaData = {
     "@id": "https://pravice.co/blog/derecho-empresarial-colombia",
   },
   headline:
-    "Derecho empresarial en Colombia: guía legal para proteger tu empresa en 2026",
+    "Derecho empresarial en Colombia: qué es, qué regula y cómo funciona",
   description:
-    "Descubre cómo funciona el derecho empresarial en Colombia y aprende a proteger tu empresa, cumplir la ley y evitar riesgos legales.",
+    "Guía completa sobre derecho empresarial en Colombia, las áreas jurídicas que regulan las empresas y su importancia dentro del entorno empresarial.",
   image: "https://pravice.co/logo_pravice.png",
   author: {
     "@type": "Organization",

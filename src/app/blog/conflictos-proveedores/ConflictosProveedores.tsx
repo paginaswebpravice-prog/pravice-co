@@ -8,9 +8,10 @@ export default function ConflictosProveedores() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Qué hacer ante conflictos con proveedores en Colombia",
+    headline:
+      "Conflictos con proveedores: qué hacer ante incumplimientos y contratos",
     description:
-      "Conoce cómo actuar frente a incumplimientos y conflictos con proveedores mediante estrategias legales y comerciales.",
+      "Aprende qué hacer cuando un proveedor incumple un contrato y cuáles son las opciones para proteger a tu empresa.",
     image: "https://pravice.co/og-image.jpg",
     author: {
       "@type": "Organization",
@@ -51,12 +52,14 @@ export default function ConflictosProveedores() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Qué hacer ante conflictos con proveedores en Colombia
+            Conflictos con proveedores: qué hacer ante incumplimientos y
+            contratos
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cómo manejar incumplimientos y disputas comerciales con
-            proveedores para proteger la estabilidad y operación de tu empresa.
+            Descubre qué hacer cuando un proveedor incumple un contrato, retrasa
+            entregas o genera pérdidas para tu empresa y conoce las alternativas
+            legales disponibles en Colombia.
           </motion.p>
         </motion.section>
 
@@ -79,17 +82,22 @@ export default function ConflictosProveedores() {
           <h3>Qué aprenderás en este artículo</h3>
 
           <ul>
-            <li>Principales causas de conflictos con proveedores</li>
-            <li>Cómo actuar frente a incumplimientos</li>
-            <li>Estrategias para resolver disputas comerciales</li>
-            <li>Cuándo acudir a mecanismos legales</li>
-            <li>Cómo prevenir problemas futuros</li>
+            <li>
+              Cuáles son los incumplimientos más comunes de los proveedores
+            </li>
+            <li>Qué hacer cuando una entrega no se realiza a tiempo</li>
+            <li>Cómo reclamar por incumplimientos contractuales</li>
+            <li>Qué opciones legales tienen las empresas en Colombia</li>
+            <li>Cómo reducir riesgos en futuras relaciones comerciales</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Principales causas de conflictos con proveedores</h2>
+          <h2>
+            Las causas más frecuentes de conflictos e incumplimientos de
+            proveedores
+          </h2>
 
           <p>
             Las disputas comerciales con proveedores pueden surgir por múltiples
@@ -127,11 +135,20 @@ export default function ConflictosProveedores() {
               de disputa empresarial.
             </p>
           </div>
+
+          <div className={styles.card}>
+            <h3>Proveedor incumple contrato</h3>
+            <p>
+              Uno de los conflictos más frecuentes ocurre cuando el proveedor no
+              cumple las obligaciones, plazos o condiciones pactadas en el
+              contrato comercial.
+            </p>
+          </div>
         </section>
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Cómo actuar frente a incumplimientos de proveedores</h2>
+          <h2>Qué hacer cuando un proveedor incumple un contrato</h2>
 
           <p>
             Una respuesta rápida y organizada ayuda a minimizar impactos
@@ -173,7 +190,7 @@ export default function ConflictosProveedores() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Opciones legales ante conflictos comerciales</h2>
+          <h2>Opciones legales para reclamar ante un proveedor incumplido</h2>
 
           <p>
             Cuando no se logra una solución amistosa, pueden utilizarse
@@ -215,7 +232,7 @@ export default function ConflictosProveedores() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Cómo prevenir conflictos futuros con proveedores</h2>
+          <h2>Cómo evitar problemas e incumplimientos con proveedores</h2>
 
           <p>
             Implementar procesos claros y relaciones comerciales bien
@@ -257,7 +274,7 @@ export default function ConflictosProveedores() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Importancia del acompañamiento legal empresarial</h2>
+          <h2>Cuándo buscar asesoría legal por conflictos con proveedores</h2>
 
           <p>
             Contar con asesoría jurídica ayuda a proteger los intereses de la
@@ -291,7 +308,7 @@ export default function ConflictosProveedores() {
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre conflictos con proveedores</h2>
+          <h2>Cómo proteger a tu empresa frente a proveedores incumplidos</h2>
 
           <p>
             Los conflictos con proveedores pueden afectar seriamente la

@@ -5,10 +5,10 @@ const canonicalUrl = "https://pravice.co/blog/conflictos-socios-empresas";
 
 export const metadata: Metadata = {
   title:
-    "Cómo resolver conflictos entre socios de una empresa en Colombia | Pravice",
+    "Conflictos entre socios de una empresa: causas, soluciones y cómo evitarlos | Pravice",
 
   description:
-    "Conoce alternativas legales y estrategias para resolver conflictos societarios entre socios en empresas colombianas.",
+    "Descubre por qué surgen los conflictos entre socios, cómo prevenir disputas empresariales y qué hacer antes de que afecten la estabilidad de la empresa.",
 
   alternates: {
     canonical: canonicalUrl,
@@ -52,10 +52,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Cómo resolver conflictos entre socios de una empresa en Colombia",
+  title:
+    "Conflictos entre socios de una empresa: causas, soluciones y cómo evitarlos",
 
   description:
-    "Conoce alternativas legales y estrategias para resolver conflictos societarios entre socios en empresas colombianas.",
+    "Aprende cómo prevenir problemas entre socios y proteger la continuidad de tu empresa.",
 
   image: "https://pravice.co/logo_pravice.png",
 

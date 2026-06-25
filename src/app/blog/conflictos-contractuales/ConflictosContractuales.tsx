@@ -51,13 +51,14 @@ export default function ConflictosContractuales() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Conflictos contractuales en Colombia: causas y soluciones
+            Conflictos contractuales en Colombia: causas frecuentes y cómo
+            resolverlos
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cuáles son los problemas más frecuentes en contratos y qué
-            alternativas legales existen para resolver conflictos contractuales
-            en Colombia.
+            Descubre por qué surgen los conflictos contractuales en Colombia,
+            cuáles son los incumplimientos más comunes y qué opciones existen
+            para resolver disputas sin afectar tus derechos o tu negocio.
           </motion.p>
         </motion.section>
 
@@ -91,7 +92,7 @@ export default function ConflictosContractuales() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué son los conflictos contractuales</h2>
+          <h2>¿Qué son los conflictos contractuales y por qué ocurren?</h2>
 
           <p>
             Un conflicto contractual ocurre cuando una de las partes incumple,
@@ -105,7 +106,7 @@ export default function ConflictosContractuales() {
           </p>
 
           <div className={styles.card}>
-            <h3>Impacto económico</h3>
+            <h3>Pérdidas económicas para las partes</h3>
             <p>
               Los incumplimientos contractuales pueden generar pérdidas
               financieras y afectar la estabilidad de empresas y negocios.
@@ -113,7 +114,7 @@ export default function ConflictosContractuales() {
           </div>
 
           <div className={styles.card}>
-            <h3>Riesgos legales</h3>
+            <h3>Demandas y consecuencias legales</h3>
             <p>
               Cuando no se resuelven adecuadamente, los conflictos pueden
               terminar en demandas judiciales.
@@ -123,7 +124,9 @@ export default function ConflictosContractuales() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Principales causas de conflictos contractuales</h2>
+          <h2>
+            Las 7 causas más frecuentes de conflictos contractuales en Colombia
+          </h2>
 
           <p>
             Existen diferentes factores que pueden originar disputas entre las
@@ -131,7 +134,7 @@ export default function ConflictosContractuales() {
           </p>
 
           <div className={styles.card}>
-            <h3>Incumplimiento de pagos</h3>
+            <h3>Falta de pago o pagos atrasados</h3>
             <p>
               El retraso o falta de pago es una de las causas más frecuentes de
               conflicto contractual.
@@ -139,7 +142,7 @@ export default function ConflictosContractuales() {
           </div>
 
           <div className={styles.card}>
-            <h3>Interpretaciones ambiguas</h3>
+            <h3>Cláusulas ambiguas o poco claras</h3>
             <p>
               Contratos poco claros pueden generar diferencias sobre
               obligaciones y responsabilidades.
@@ -147,7 +150,7 @@ export default function ConflictosContractuales() {
           </div>
 
           <div className={styles.card}>
-            <h3>Incumplimiento de plazos</h3>
+            <h3>Retrasos en entregas o ejecución</h3>
             <p>
               No entregar productos o servicios en los tiempos acordados suele
               provocar disputas.
@@ -155,7 +158,7 @@ export default function ConflictosContractuales() {
           </div>
 
           <div className={styles.card}>
-            <h3>Falta de documentación</h3>
+            <h3>Ausencia de soportes y evidencias</h3>
             <p>
               La ausencia de soportes escritos dificulta demostrar acuerdos y
               condiciones pactadas.
@@ -165,7 +168,9 @@ export default function ConflictosContractuales() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Cómo prevenir conflictos contractuales</h2>
+          <h2>
+            Cómo evitar conflictos contractuales antes de firmar un contrato
+          </h2>
 
           <p>
             Una adecuada redacción y gestión de contratos reduce
@@ -206,7 +211,9 @@ export default function ConflictosContractuales() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Cómo resolver conflictos contractuales</h2>
+          <h2>
+            Cómo resolver un conflicto contractual sin llegar a una demanda
+          </h2>
 
           <p>
             Existen diferentes mecanismos legales y estratégicos para solucionar
@@ -214,7 +221,7 @@ export default function ConflictosContractuales() {
           </p>
 
           <div className={styles.card}>
-            <h3>Negociación directa</h3>
+            <h3>Negociación entre las partes</h3>
             <p>
               Muchas controversias pueden resolverse mediante acuerdos entre las
               partes.
@@ -222,7 +229,7 @@ export default function ConflictosContractuales() {
           </div>
 
           <div className={styles.card}>
-            <h3>Conciliación</h3>
+            <h3>Conciliación extrajudicial</h3>
             <p>
               La conciliación permite encontrar soluciones sin acudir
               inmediatamente a juicio.
@@ -230,7 +237,7 @@ export default function ConflictosContractuales() {
           </div>
 
           <div className={styles.card}>
-            <h3>Arbitraje</h3>
+            <h3>Arbitraje para controversias complejas</h3>
             <p>
               El arbitraje puede ser una alternativa eficiente para conflictos
               comerciales complejos.
@@ -238,7 +245,7 @@ export default function ConflictosContractuales() {
           </div>
 
           <div className={styles.card}>
-            <h3>Proceso judicial</h3>
+            <h3>Demanda por incumplimiento contractual</h3>
             <p>
               Cuando no existe acuerdo, puede ser necesario acudir ante jueces
               competentes.
@@ -248,7 +255,7 @@ export default function ConflictosContractuales() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Cuándo buscar apoyo legal</h2>
+          <h2>¿Cuándo es recomendable acudir a asesoría jurídica?</h2>
 
           <p>
             Algunas disputas contractuales requieren acompañamiento jurídico
@@ -280,9 +287,51 @@ export default function ConflictosContractuales() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>Ejemplos reales de conflictos contractuales en Colombia</h2>
+
+          <p>
+            Los conflictos contractuales pueden presentarse en diferentes
+            sectores económicos y afectar tanto a personas naturales como a
+            empresas.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Incumplimiento en contratos de prestación de servicios</h3>
+            <p>
+              Una de las partes no ejecuta las actividades pactadas o las
+              realiza de forma incompleta.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Problemas en contratos de arrendamiento</h3>
+            <p>
+              Retrasos en pagos, incumplimiento de obligaciones o desacuerdos
+              sobre la entrega del inmueble.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Disputas entre proveedores y empresas</h3>
+            <p>
+              Retrasos en entregas, productos defectuosos o incumplimientos de
+              calidad suelen generar controversias comerciales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Incumplimiento en contratos comerciales</h3>
+            <p>
+              Diferencias sobre pagos, exclusividad, distribución o ejecución de
+              obligaciones pactadas.
+            </p>
+          </div>
+        </section>
+
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre conflictos contractuales en Colombia</h2>
+          <h2>Conclusión: cómo actuar ante un incumplimiento contractual</h2>
 
           <p>
             Los conflictos contractuales pueden generar importantes
@@ -298,8 +347,8 @@ export default function ConflictosContractuales() {
 
         <ArticleCTA
           badge="Contratos y resolución de conflictos"
-          title="¿Tienes un conflicto contractual en Colombia?"
-          description="Recibe orientación sobre incumplimientos contractuales, disputas comerciales y soluciones legales para proteger tus derechos."
+          title="¿Existe un incumplimiento de contrato que afecta tu negocio?"
+          description="Obtén orientación sobre incumplimientos de contratos, disputas comerciales, conciliaciones y alternativas legales para resolver conflictos contractuales en Colombia."
           href="https://abogadosespecialistas.com.co/"
           buttonText="Recibir asesoría jurídica"
         />

@@ -18,9 +18,10 @@ export default function Article() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "7 errores en la gestión de cartera en Colombia y cómo evitarlos",
+    headline:
+      "7 errores en la gestión de cartera que hacen perder dinero a tu empresa",
     description:
-      "Errores frecuentes en la gestión de cartera en Colombia y estrategias para mejorar la recuperación de pagos y el flujo de caja empresarial.",
+      "Descubre los errores más comunes al gestionar cartera y aprende cómo recuperar pagos pendientes de forma más eficiente.",
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://pravice.co/blog/errores-gestion-cartera",
@@ -58,20 +59,23 @@ export default function Article() {
           animate="visible"
         >
           <h1 className={styles.title}>
-            7 errores en la gestión de cartera en Colombia que están afectando
-            tu flujo de caja (y cómo evitarlos)
+            7 errores en la gestión de cartera que hacen perder dinero a tu
+            empresa (y cómo evitarlos)
           </h1>
 
           <p className={styles.intro}>
-            La gestión de cartera en Colombia es un proceso clave para la
-            estabilidad financiera de cualquier empresa. Sin embargo, cometer
-            errores en la administración de cuentas por cobrar puede afectar el
-            flujo de caja y aumentar el riesgo de pérdidas.
+            ¿Tu empresa tiene clientes que pagan tarde o simplemente dejan
+            vencer las facturas? En muchos casos el problema no es únicamente la
+            mora de los clientes, sino errores dentro de la gestión de cartera.
+            Identificarlos a tiempo puede mejorar el recaudo, proteger el flujo
+            de caja y reducir las pérdidas financieras.
           </p>
 
           <p className={styles.intro}>
-            En ciudades como Bogotá y en todo el país, muchas empresas enfrentan
-            problemas de liquidez por una mala gestión de cartera.
+            En esta guía conocerás los errores más frecuentes que cometen las
+            empresas colombianas al administrar su cartera y qué estrategias
+            pueden ayudarte a aumentar la recuperación de pagos sin deteriorar
+            la relación comercial con tus clientes.
           </p>
         </motion.header>
 
@@ -83,7 +87,10 @@ export default function Article() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2>Gestión de cartera en Colombia: qué es y por qué es clave</h2>
+          <h2>
+            ¿Qué es la gestión de cartera y por qué puede afectar la liquidez de
+            una empresa?
+          </h2>
 
           <p>
             La gestión de cartera consiste en administrar y recuperar las
@@ -103,34 +110,37 @@ export default function Article() {
         {[
           {
             title:
-              "1. No evaluar la capacidad de pago del cliente antes de otorgar crédito",
+              "Error #1: Otorgar crédito sin evaluar la capacidad de pago del cliente",
             text: "Otorgar crédito sin analizar al cliente aumenta el riesgo de incumplimiento.",
           },
           {
-            title: "2. No tener políticas claras de cobranza en la empresa",
+            title:
+              "Error #2: No tener políticas claras para cobrar las facturas",
             text: "No tener procesos definidos genera desorden y baja recuperación.",
           },
           {
-            title: "3. No hacer seguimiento oportuno a las cuentas por cobrar",
+            title:
+              "Error #3: Esperar demasiado para hacer seguimiento a las cuentas por cobrar",
             text: "Esperar demasiado reduce la probabilidad de pago.",
           },
           {
             title:
-              "4. Uso excesivo de procesos manuales en la gestión de cartera",
+              "Error #4: Gestionar la cartera únicamente con procesos manuales",
             text: "La falta de automatización genera errores y pérdida de control.",
           },
           {
             title:
-              "5. No ofrecer alternativas de pago flexibles a clientes en Colombia",
+              "Error #5: No ofrecer alternativas de pago cuando el cliente tiene dificultades",
             text: "La flexibilidad mejora la recuperación de cartera.",
           },
           {
-            title: "6. Ignorar conflictos comerciales con clientes morosos",
+            title:
+              "Error #6: Ignorar los conflictos comerciales que retrasan los pagos",
             text: "Los problemas comerciales afectan directamente el pago.",
           },
           {
             title:
-              "7. No utilizar mecanismos legales para recuperación de cartera",
+              "Error #7: Esperar demasiado para iniciar un proceso de recuperación de cartera",
             text: "No acudir a conciliación o cobro jurídico limita la recuperación.",
           },
         ].map((item, i) => (
@@ -156,8 +166,8 @@ export default function Article() {
           viewport={{ once: true }}
         >
           <h2>
-            Cómo mejorar la gestión de cartera en Colombia y aumentar la
-            recuperación de pagos
+            Cómo mejorar la gestión de cartera y recuperar más facturas sin
+            aumentar los conflictos
           </h2>
 
           <ul>
@@ -177,7 +187,10 @@ export default function Article() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2>Conclusión: cómo evitar errores en cartera en Colombia</h2>
+          <h2>
+            Conclusión: una buena gestión de cartera mejora la liquidez de tu
+            empresa
+          </h2>
 
           <p>
             Evitar errores en la gestión de cartera en Colombia permite mejorar
@@ -192,8 +205,8 @@ export default function Article() {
         </motion.section>
 
         <ArticleCTA
-          title="Mejora la recuperación de cartera y protege el flujo de caja de tu empresa"
-          description="Recibe acompañamiento jurídico para implementar procesos de cobranza, prevenir mora y gestionar recuperación de pagos empresariales en Colombia."
+          title="¿Tu empresa tiene problemas para recuperar facturas? Conoce cómo mejorar la gestión de cartera"
+          description="Descubre estrategias para optimizar la gestión de cartera, reducir la mora, fortalecer los procesos de cobranza y evaluar cuándo es conveniente acudir a mecanismos de recuperación de cartera en Colombia."
           href="https://abogadosespecialistas.com.co/"
           badge="Cobranza empresarial y cartera"
           buttonText="Solicitar asesoría jurídica"

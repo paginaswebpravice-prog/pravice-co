@@ -4,23 +4,28 @@ import DemandasComercialesColombia from "./DemandasComercialesColombia";
 const canonicalUrl = "https://pravice.co/blog/demandas-comerciales-colombia";
 
 export const metadata: Metadata = {
-  title: "Demandas comerciales en Colombia: cómo funcionan | Pravice",
+  title:
+    "Demandas comerciales en Colombia: causas, etapas y cómo defender una empresa | Pravice",
 
   description:
-    "Conoce cómo funcionan los procesos judiciales comerciales y la defensa empresarial en Colombia.",
+    "Descubre cuáles son las causas más comunes de las demandas comerciales en Colombia, cuánto puede durar un proceso judicial y qué estrategias ayudan a proteger una empresa.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Demandas comerciales en Colombia: cómo funcionan",
+    title:
+      "Demandas comerciales en Colombia: causas, etapas y defensa empresarial",
+
     description:
-      "Guía sobre procesos judiciales comerciales y defensa empresarial en Colombia.",
+      "Guía práctica para entender cómo funciona una demanda comercial, qué riesgos enfrenta una empresa y cómo actuar ante un proceso judicial.",
+
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "article",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
@@ -33,8 +38,13 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Demandas comerciales en Colombia",
-    description: "Procesos judiciales comerciales y defensa empresarial.",
+
+    title:
+      "Demandas comerciales en Colombia: cómo funciona el proceso paso a paso",
+
+    description:
+      "Conoce las etapas, causas frecuentes y estrategias para enfrentar una demanda comercial en Colombia.",
+
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -50,10 +60,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Demandas comerciales en Colombia: cómo funcionan",
+  headline:
+    "Demandas comerciales en Colombia: causas, etapas y cómo defender una empresa",
 
   description:
-    "Conoce cómo funcionan los procesos judiciales comerciales y la defensa empresarial en Colombia.",
+    "Guía práctica para entender las demandas comerciales en Colombia, sus causas más frecuentes y las estrategias para reducir riesgos empresariales.",
 
   image: "https://pravice.co/logo_pravice.png",
 
@@ -73,21 +84,23 @@ const schemaData = {
   },
 
   datePublished: "2026-06-10",
-  dateModified: "2026-06-10",
+  dateModified: "2026-06-25",
 
   inLanguage: "es-CO",
 
   articleSection: "Derecho Comercial",
 
   keywords: [
-    "demandas comerciales Colombia",
-    "procesos judiciales comerciales",
-    "defensa empresarial",
-    "derecho comercial Colombia",
+    "demandas comerciales colombia",
+    "como responder una demanda comercial",
+    "proceso judicial comercial colombia",
+    "incumplimiento de contratos",
     "conflictos comerciales",
     "litigios empresariales",
-    "abogado comercial",
-    "demandas empresariales",
+    "etapas demanda comercial",
+    "defensa empresarial colombia",
+    "que hacer si demandan mi empresa",
+    "cuanto dura una demanda comercial",
   ],
 };
 

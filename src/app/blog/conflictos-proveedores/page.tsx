@@ -4,23 +4,28 @@ import ConflictosProveedores from "./ConflictosProveedores";
 const canonicalUrl = "https://pravice.co/blog/conflictos-proveedores";
 
 export const metadata: Metadata = {
-  title: "Qué hacer ante conflictos con proveedores en Colombia | Pravice",
+  title:
+    "Conflictos con proveedores: qué hacer ante incumplimientos y contratos | Pravice",
 
   description:
-    "Conoce acciones legales y comerciales frente a conflictos e incumplimientos con proveedores en Colombia.",
+    "Descubre qué hacer cuando un proveedor incumple un contrato, retrasa entregas o genera perjuicios comerciales en Colombia.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Qué hacer ante conflictos con proveedores en Colombia",
+    title:
+      "Conflictos con proveedores: qué hacer ante incumplimientos y contratos",
+
     description:
-      "Acciones legales frente a incumplimientos y disputas comerciales con proveedores.",
+      "Guía para empresas sobre incumplimientos de proveedores, reclamaciones contractuales y soluciones legales en Colombia.",
+
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "article",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
@@ -33,9 +38,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Conflictos con proveedores en Colombia",
+
+    title: "Qué hacer si un proveedor incumple un contrato en Colombia",
+
     description:
-      "Cómo manejar disputas comerciales e incumplimientos de proveedores.",
+      "Conoce las opciones legales y comerciales frente a incumplimientos de proveedores.",
+
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -51,10 +59,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Qué hacer ante conflictos con proveedores en Colombia",
+  headline:
+    "Conflictos con proveedores: qué hacer ante incumplimientos y contratos",
 
   description:
-    "Conoce acciones legales y comerciales frente a conflictos e incumplimientos con proveedores en Colombia.",
+    "Descubre qué hacer cuando un proveedor incumple un contrato, retrasa entregas o genera perjuicios comerciales en Colombia.",
 
   image: "https://pravice.co/logo_pravice.png",
 

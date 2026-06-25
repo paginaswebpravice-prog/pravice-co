@@ -4,19 +4,21 @@ import ConflictosContractuales from "./ConflictosContractuales";
 const canonicalUrl = "https://pravice.co/blog/conflictos-contractuales";
 
 export const metadata: Metadata = {
-  title: "Conflictos contractuales en Colombia: causas y soluciones | Pravice",
+  title:
+    "Conflictos contractuales en Colombia: causas, ejemplos y cómo resolverlos",
 
   description:
-    "Conoce las principales causas de conflictos contractuales y cómo resolver disputas legales en Colombia.",
+    "Descubre las causas más frecuentes de los conflictos contractuales en Colombia, ejemplos reales de incumplimiento y las alternativas para resolver disputas sin llegar a juicio.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Conflictos contractuales en Colombia: causas y soluciones",
+    title:
+      "Conflictos contractuales en Colombia: ejemplos, causas y soluciones legales",
     description:
-      "Problemas frecuentes en contratos y alternativas legales para resolverlos.",
+      "Aprende cómo resolver conflictos contractuales, incumplimientos y disputas comerciales en Colombia.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -51,7 +53,8 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Conflictos contractuales en Colombia: causas y soluciones",
+  headline:
+    "Conflictos contractuales en Colombia: causas, ejemplos y cómo resolverlos",
 
   description:
     "Conoce las principales causas de conflictos contractuales y cómo resolver disputas legales en Colombia.",
@@ -81,14 +84,16 @@ const schemaData = {
   articleSection: "Conflictos Contractuales",
 
   keywords: [
-    "conflictos contractuales",
-    "incumplimiento de contratos",
-    "problemas contractuales Colombia",
-    "disputas comerciales",
+    "conflictos contractuales en Colombia",
+    "incumplimiento de contrato",
+    "problemas contractuales",
+    "disputas contractuales",
+    "cómo resolver conflictos contractuales",
+    "solución de controversias contractuales",
     "contratos comerciales Colombia",
-    "solución de conflictos contractuales",
-    "asesoría contractual",
-    "derecho contractual Colombia",
+    "conflictos por incumplimiento contractual",
+    "ejemplos de conflictos contractuales",
+    "resolución de conflictos comerciales",
   ],
 };
 

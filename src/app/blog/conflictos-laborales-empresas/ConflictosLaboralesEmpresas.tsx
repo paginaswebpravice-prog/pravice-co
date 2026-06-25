@@ -8,9 +8,11 @@ export default function ConflictosLaboralesEmpresas() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Conflictos laborales en empresas: prevención y solución",
+    headline:
+      "Conflictos laborales en empresas: causas, ejemplos y cómo prevenir demandas",
+
     description:
-      "Conoce cómo prevenir y resolver conflictos laborales en empresas colombianas antes de llegar a demandas o procesos judiciales.",
+      "Aprende cuáles son los conflictos laborales más frecuentes en las empresas colombianas y qué medidas ayudan a evitar reclamaciones y demandas.",
     image: "https://pravice.co/og-image.jpg",
     author: {
       "@type": "Organization",
@@ -51,12 +53,14 @@ export default function ConflictosLaboralesEmpresas() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Conflictos laborales en empresas: prevención y solución
+            Conflictos laborales en empresas: causas frecuentes y cómo prevenir
+            demandas
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Aprende cómo manejar conflictos laborales en empresas colombianas y
-            qué estrategias aplicar para prevenir demandas y problemas internos.
+            Descubre cuáles son los conflictos laborales más comunes en las
+            empresas, qué los provoca y cómo reducir el riesgo de reclamaciones
+            y demandas laborales en Colombia.
           </motion.p>
         </motion.section>
 
@@ -80,17 +84,19 @@ export default function ConflictosLaboralesEmpresas() {
           <h3>Qué aprenderás en este artículo</h3>
 
           <ul>
-            <li>Qué son los conflictos laborales</li>
-            <li>Principales causas en empresas</li>
-            <li>Cómo prevenir problemas laborales</li>
-            <li>Estrategias para resolver disputas</li>
-            <li>Cuándo buscar apoyo legal</li>
+            <li>Cuáles son los conflictos laborales más comunes</li>
+            <li>Qué situaciones generan más reclamaciones laborales</li>
+            <li>Cómo prevenir demandas contra la empresa</li>
+            <li>Qué hacer cuando surge un conflicto con un trabajador</li>
+            <li>Cuándo es recomendable buscar asesoría jurídica</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué son los conflictos laborales</h2>
+          <h2>
+            Qué son los conflictos laborales y por qué afectan a las empresas
+          </h2>
 
           <p>
             Los conflictos laborales son disputas o desacuerdos que surgen entre
@@ -121,7 +127,9 @@ export default function ConflictosLaboralesEmpresas() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Principales causas de conflictos laborales</h2>
+          <h2>
+            Las 4 causas más frecuentes de conflictos laborales en Colombia
+          </h2>
 
           <p>
             Identificar las causas más frecuentes permite prevenir problemas
@@ -163,7 +171,10 @@ export default function ConflictosLaboralesEmpresas() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Cómo prevenir conflictos laborales en empresas</h2>
+          <h2>
+            Cómo prevenir conflictos laborales antes de que se conviertan en
+            demandas
+          </h2>
 
           <p>
             La prevención es una de las herramientas más efectivas para evitar
@@ -203,7 +214,9 @@ export default function ConflictosLaboralesEmpresas() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Cómo resolver conflictos laborales</h2>
+          <h2>
+            Cómo resolver conflictos laborales sin llegar a un proceso judicial
+          </h2>
 
           <p>
             Resolver disputas rápidamente evita afectaciones mayores dentro de
@@ -244,7 +257,7 @@ export default function ConflictosLaboralesEmpresas() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Cuándo buscar apoyo legal laboral</h2>
+          <h2>Cuándo una empresa debe buscar asesoría legal laboral</h2>
 
           <p>
             Algunas situaciones requieren acompañamiento jurídico especializado
@@ -278,7 +291,7 @@ export default function ConflictosLaboralesEmpresas() {
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre conflictos laborales en empresas</h2>
+          <h2>Cómo reducir los conflictos laborales y proteger a tu empresa</h2>
 
           <p>
             Gestionar adecuadamente los conflictos laborales ayuda a proteger la

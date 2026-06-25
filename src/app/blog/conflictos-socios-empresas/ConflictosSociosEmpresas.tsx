@@ -9,9 +9,9 @@ export default function ConflictosSociosEmpresas() {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline:
-      "Cómo resolver conflictos entre socios de una empresa en Colombia",
+      "Conflictos entre socios de una empresa: causas, soluciones y cómo evitarlos",
     description:
-      "Conoce alternativas legales y estrategias para resolver conflictos societarios entre socios de empresas en Colombia.",
+      "Descubre por qué surgen los conflictos entre socios, cómo prevenir disputas empresariales y qué hacer para proteger la estabilidad de la empresa.",
     image: "https://pravice.co/og-image.jpg",
     author: {
       "@type": "Organization",
@@ -52,13 +52,14 @@ export default function ConflictosSociosEmpresas() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Cómo resolver conflictos entre socios de una empresa en Colombia
+            Conflictos entre socios de una empresa: causas, soluciones y cómo
+            evitarlos
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre estrategias legales y alternativas para manejar disputas
-            societarias y resolver conflictos entre socios en empresas
-            colombianas.
+            Descubre las causas más comunes de los conflictos entre socios, cómo
+            prevenir disputas empresariales y qué soluciones existen para
+            proteger la estabilidad y el crecimiento de una empresa.
           </motion.p>
         </motion.section>
 
@@ -91,7 +92,9 @@ export default function ConflictosSociosEmpresas() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Por qué surgen conflictos entre socios</h2>
+          <h2>
+            Las principales causas de conflictos entre socios de una empresa
+          </h2>
 
           <p>
             Las diferencias entre socios pueden aparecer por problemas
@@ -126,7 +129,9 @@ export default function ConflictosSociosEmpresas() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Cómo prevenir conflictos societarios</h2>
+          <h2>
+            Cómo evitar problemas entre socios antes de que afecten la empresa
+          </h2>
 
           <p>
             La prevención es clave para evitar que las diferencias afecten el
@@ -168,7 +173,9 @@ export default function ConflictosSociosEmpresas() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Alternativas para resolver conflictos entre socios</h2>
+          <h2>
+            Cómo resolver conflictos entre socios sin llegar a una demanda
+          </h2>
 
           <p>
             Existen diferentes mecanismos legales y estratégicos para solucionar
@@ -210,7 +217,7 @@ export default function ConflictosSociosEmpresas() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Cuándo acudir a procesos legales</h2>
+          <h2>Cuándo un conflicto entre socios requiere apoyo legal</h2>
 
           <p>
             Algunas disputas societarias requieren intervención judicial cuando
@@ -244,7 +251,7 @@ export default function ConflictosSociosEmpresas() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Importancia del apoyo legal en conflictos societarios</h2>
+          <h2>Cómo proteger la empresa durante un conflicto entre socios</h2>
 
           <p>
             Contar con orientación jurídica adecuada permite proteger los
@@ -278,7 +285,9 @@ export default function ConflictosSociosEmpresas() {
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre conflictos entre socios en Colombia</h2>
+          <h2>
+            Qué hacer cuando existen conflictos entre socios de una empresa
+          </h2>
 
           <p>
             Resolver conflictos societarios de forma rápida y estratégica es
@@ -295,8 +304,8 @@ export default function ConflictosSociosEmpresas() {
 
         <ArticleCTA
           badge="Conflictos societarios y empresas"
-          title="¿Tu empresa enfrenta conflictos entre socios?"
-          description="Recibe orientación sobre disputas societarias, acuerdos empresariales y alternativas legales para resolver conflictos entre socios en Colombia."
+          title="¿Tienes problemas o desacuerdos entre socios?"
+          description="Conoce alternativas para manejar desacuerdos societarios, proteger la continuidad del negocio y encontrar soluciones efectivas para la empresa."
           href="https://abogadosespecialistas.com.co/"
           buttonText="Recibir asesoría empresarial"
         />

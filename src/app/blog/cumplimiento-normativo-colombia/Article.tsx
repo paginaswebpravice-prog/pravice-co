@@ -84,8 +84,8 @@ export default function CumplimientoNormativoArticle() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Cumplimiento normativo en Colombia: guía para evitar multas,
-            sanciones y riesgos legales empresariales
+            Cumplimiento normativo en Colombia: cómo evitar multas y sanciones
+            empresariales
           </motion.h1>
 
           <motion.p
@@ -117,8 +117,8 @@ export default function CumplimientoNormativoArticle() {
         {/* SECCIÓN 1 */}
         <motion.section className={styles.section} {...fadeSection}>
           <h2>
-            ¿Qué es el cumplimiento normativo en Colombia y por qué cada vez más
-            empresas lo consideran una prioridad?
+            ¿Qué es el cumplimiento normativo y por qué es clave para las
+            empresas en Colombia?
           </h2>
 
           <p>
@@ -161,8 +161,8 @@ export default function CumplimientoNormativoArticle() {
 
         <motion.section className={styles.section} {...fadeSection}>
           <h2>
-            ¿Qué consecuencias puede enfrentar una empresa por incumplir la
-            normativa colombiana?
+            Multas y sanciones: consecuencias de incumplir normas empresariales
+            en Colombia
           </h2>
 
           <p>
@@ -200,8 +200,7 @@ export default function CumplimientoNormativoArticle() {
         {/* SECCIÓN 2 */}
         <motion.section className={styles.section} {...fadeSection}>
           <h2>
-            Importancia del compliance empresarial en Colombia para evitar
-            sanciones
+            Cómo el compliance empresarial ayuda a evitar sanciones y demandas
           </h2>
 
           <p>
@@ -218,7 +217,8 @@ export default function CumplimientoNormativoArticle() {
         {/* SECCIÓN 3 */}
         <motion.section className={styles.section} {...fadeSection}>
           <h2>
-            Principales riesgos legales que enfrentan las empresas en Colombia
+            Los riesgos legales más comunes que afectan a las empresas
+            colombianas
           </h2>
 
           <motion.div className={styles.card} {...fadeItem}>
@@ -242,8 +242,8 @@ export default function CumplimientoNormativoArticle() {
 
         <motion.section className={styles.section} {...fadeSection}>
           <h2>
-            Principales riesgos legales y regulatorios que pueden generar
-            multas, investigaciones y sanciones empresariales en Colombia
+            Riesgos regulatorios que pueden generar multas e investigaciones
+            empresariales
           </h2>
 
           <p>
@@ -381,8 +381,8 @@ export default function CumplimientoNormativoArticle() {
 
         <motion.section className={styles.section} {...fadeSection}>
           <h2>
-            ¿Qué empresas necesitan implementar programas de cumplimiento
-            normativo en Colombia?
+            ¿Qué empresas deben implementar un programa de cumplimiento
+            normativo?
           </h2>
 
           <p>

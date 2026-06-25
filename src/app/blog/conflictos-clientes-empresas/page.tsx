@@ -4,19 +4,21 @@ import ConflictosClientesEmpresas from "./ConflictosClientesEmpresas";
 const canonicalUrl = "https://pravice.co/blog/conflictos-clientes-empresas";
 
 export const metadata: Metadata = {
-  title: "Cómo manejar conflictos con clientes en Colombia | Pravice",
+  title:
+    "Conflictos entre empresas y clientes en Colombia: causas, soluciones y prevención | Pravice",
 
   description:
-    "Aprende estrategias legales y comerciales para resolver conflictos con clientes y proteger tu empresa.",
+    "Aprende cómo resolver conflictos entre empresas y clientes en Colombia, cuáles son sus causas más frecuentes y qué estrategias ayudan a prevenir reclamaciones y disputas comerciales.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Cómo manejar conflictos con clientes en Colombia",
+    title:
+      "Conflictos entre empresas y clientes: causas, soluciones y prevención",
     description:
-      "Estrategias para resolver disputas comerciales y proteger relaciones con clientes.",
+      "Guía práctica para prevenir reclamaciones, resolver disputas comerciales y proteger la reputación empresarial.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -51,10 +53,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Cómo manejar conflictos con clientes en Colombia",
+  headline:
+    "Conflictos entre empresas y clientes en Colombia: causas, soluciones y prevención",
 
   description:
-    "Aprende estrategias legales y comerciales para resolver conflictos con clientes y proteger tu empresa.",
+    "Guía práctica para resolver conflictos entre empresas y clientes en Colombia y reducir riesgos comerciales y reputacionales.",
 
   image: "https://pravice.co/logo_pravice.png",
 
@@ -81,14 +84,16 @@ const schemaData = {
   articleSection: "Conflictos Empresariales",
 
   keywords: [
-    "conflictos con clientes",
-    "disputas comerciales",
-    "manejo de clientes difíciles",
-    "conflictos empresariales Colombia",
-    "resolución de conflictos comerciales",
+    "conflictos entre empresas y clientes",
     "problemas con clientes",
-    "estrategias comerciales",
-    "asesoría empresarial Colombia",
+    "clientes que no pagan",
+    "reclamaciones de clientes",
+    "disputas comerciales",
+    "resolución de conflictos comerciales",
+    "clientes insatisfechos",
+    "conflictos empresariales colombia",
+    "manejo de clientes difíciles",
+    "protección reputacional empresarial",
   ],
 };
 

@@ -3,18 +3,18 @@ import Article from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "Derecho comercial en Colombia: cómo proteger tu empresa y evitar riesgos legales | Pravice",
+    "Derecho comercial para empresas en Colombia: contratos, riesgos y obligaciones | Pravice",
   description:
-    "Descubre cómo el derecho comercial ayuda a proteger empresas en Colombia. Conoce contratos clave, riesgos legales frecuentes y recomendaciones para evitar conflictos.",
-
+    "Conoce cómo funciona el derecho comercial para empresas en Colombia, qué contratos debes utilizar, riesgos legales frecuentes y cómo proteger tu negocio.",
   alternates: {
     canonical: "https://pravice.co/blog/derecho-comercial-empresas-colombia",
   },
 
   openGraph: {
-    title: "Cómo proteger tu empresa con el derecho comercial en Colombia",
+    title:
+      "Derecho comercial para empresas en Colombia: contratos y riesgos legales",
     description:
-      "Guía completa sobre derecho comercial en Colombia, contratos empresariales y cómo proteger tu empresa legalmente.",
+      "Guía práctica sobre derecho comercial para empresas en Colombia: contratos, obligaciones legales y prevención de conflictos empresariales.",
     url: "https://pravice.co/blog/derecho-comercial-empresas-colombia",
     type: "article",
     locale: "es_CO",
@@ -48,9 +48,9 @@ export default function Page() {
               "@context": "https://schema.org",
               "@type": "Article",
               headline:
-                "Derecho comercial en Colombia: guía práctica para empresas y contratos seguros",
+                "Derecho comercial para empresas en Colombia: contratos, riesgos y obligaciones",
               description:
-                "Guía completa sobre derecho comercial en Colombia, contratos empresariales y protección legal para empresas.",
+                "Guía práctica sobre derecho comercial para empresas en Colombia, contratos comerciales, obligaciones legales y prevención de riesgos empresariales.",
               image: "https://pravice.co/logo_pravice.png",
               author: {
                 "@type": "Organization",

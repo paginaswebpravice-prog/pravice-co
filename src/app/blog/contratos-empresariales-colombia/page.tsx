@@ -5,18 +5,19 @@ const canonicalUrl = "https://pravice.co/blog/contratos-empresariales-colombia";
 
 export const metadata: Metadata = {
   title:
-    "Contratos empresariales en Colombia: errores que generan demandas en 2026 | Pravice",
+    "Contratos empresariales en Colombia: tipos, errores y claves para evitar problemas | Pravice",
   description:
-    "Conoce los errores más comunes en contratos empresariales en Colombia y cómo evitarlos para prevenir demandas, conflictos legales y pérdidas económicas.",
+    "Guía sobre contratos empresariales en Colombia, tipos de contratos comerciales, errores frecuentes y recomendaciones para reducir riesgos legales.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Contratos empresariales en Colombia: errores que generan demandas",
+    title:
+      "Contratos empresariales en Colombia: tipos, errores y recomendaciones",
     description:
-      "Aprende cómo evitar riesgos legales y conflictos por contratos mal estructurados en Colombia.",
+      "Todo lo que debes saber sobre contratos empresariales, riesgos contractuales y prevención de conflictos comerciales.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -33,9 +34,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Contratos empresariales en Colombia: errores legales frecuentes",
+    title: "Contratos empresariales en Colombia: guía completa para empresas",
     description:
-      "Errores contractuales que pueden generar demandas empresariales en Colombia.",
+      "Tipos de contratos empresariales, errores frecuentes y recomendaciones para empresas colombianas.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -49,7 +50,7 @@ const schemaData = {
     "@id": canonicalUrl,
   },
   headline:
-    "Contratos empresariales en Colombia: errores que generan demandas en 2026",
+    "Contratos empresariales en Colombia: tipos, errores y claves para evitar problemas",
   description:
     "Conoce los errores más comunes en contratos empresariales en Colombia y cómo evitarlos para prevenir demandas, conflictos legales y pérdidas económicas.",
   image: "https://pravice.co/logo_pravice.png",

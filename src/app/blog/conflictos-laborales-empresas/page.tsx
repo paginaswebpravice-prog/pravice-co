@@ -4,23 +4,28 @@ import ConflictosLaboralesEmpresas from "./ConflictosLaboralesEmpresas";
 const canonicalUrl = "https://pravice.co/blog/conflictos-laborales-empresas";
 
 export const metadata: Metadata = {
-  title: "Conflictos laborales en empresas: prevención y solución | Pravice",
+  title:
+    "Conflictos laborales en empresas: causas, ejemplos y cómo prevenir demandas | Pravice",
 
   description:
-    "Aprende cómo prevenir y resolver conflictos laborales en empresas colombianas antes de llegar a demandas.",
+    "Conoce las principales causas de conflictos laborales en empresas, ejemplos frecuentes y estrategias para prevenir demandas laborales en Colombia.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Conflictos laborales en empresas: prevención y solución",
+    title:
+      "Conflictos laborales en empresas: causas, ejemplos y cómo prevenir demandas",
+
     description:
-      "Cómo manejar conflictos laborales y prevenir demandas en empresas colombianas.",
+      "Guía práctica sobre conflictos laborales, reclamaciones de trabajadores y prevención de demandas en Colombia.",
+
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "article",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
@@ -33,9 +38,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Conflictos laborales en empresas",
+
+    title: "Conflictos laborales en empresas: causas y prevención de demandas",
+
     description:
-      "Guía para prevenir y solucionar conflictos laborales en Colombia.",
+      "Ejemplos reales de conflictos laborales y cómo reducir riesgos legales para las empresas.",
+
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -51,10 +59,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Conflictos laborales en empresas: prevención y solución",
+  headline:
+    "Conflictos laborales en empresas: causas, ejemplos y cómo prevenir demandas",
 
   description:
-    "Aprende cómo prevenir y resolver conflictos laborales en empresas colombianas antes de llegar a demandas.",
+    "Conoce las principales causas de conflictos laborales en empresas, ejemplos frecuentes y estrategias para prevenir demandas laborales en Colombia.",
 
   image: "https://pravice.co/logo_pravice.png",
 

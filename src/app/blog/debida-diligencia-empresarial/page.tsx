@@ -4,23 +4,28 @@ import DebidaDiligenciaEmpresarial from "./DebidaDiligenciaEmpresarial";
 const canonicalUrl = "https://pravice.co/blog/debida-diligencia-empresarial";
 
 export const metadata: Metadata = {
-  title: "Debida diligencia empresarial en Colombia: guía completa | Pravice",
+  title:
+    "Debida diligencia empresarial en Colombia: cómo detectar riesgos antes de cerrar un negocio | Pravice",
 
   description:
-    "Cómo realizar procesos de due diligence para prevenir riesgos legales y financieros.",
+    "Aprende cómo realizar una debida diligencia empresarial en Colombia para identificar riesgos legales, financieros, laborales y societarios antes de invertir, comprar una empresa o firmar acuerdos comerciales.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Debida diligencia empresarial en Colombia",
+    title:
+      "Debida diligencia empresarial en Colombia: cómo detectar riesgos antes de cerrar un negocio",
+
     description:
-      "Guía práctica sobre due diligence y prevención de riesgos empresariales.",
+      "Guía práctica para identificar riesgos legales, financieros y corporativos mediante procesos de due diligence empresarial.",
+
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "article",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
@@ -33,9 +38,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Debida diligencia empresarial en Colombia",
+
+    title: "Debida diligencia empresarial en Colombia: cómo detectar riesgos",
+
     description:
-      "Cómo implementar procesos de due diligence y reducir riesgos empresariales.",
+      "Evita problemas legales y financieros antes de invertir o cerrar acuerdos empresariales.",
+
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -51,10 +59,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Debida diligencia empresarial en Colombia: guía completa",
+  headline:
+    "Debida diligencia empresarial en Colombia: cómo detectar riesgos antes de cerrar un negocio",
 
   description:
-    "Cómo realizar procesos de due diligence para prevenir riesgos legales y financieros.",
+    "Aprende cómo realizar una debida diligencia empresarial en Colombia para identificar riesgos legales, financieros, laborales y societarios antes de invertir o firmar acuerdos comerciales.",
 
   image: "https://pravice.co/logo_pravice.png",
 
@@ -74,7 +83,7 @@ const schemaData = {
   },
 
   datePublished: "2026-06-10",
-  dateModified: "2026-06-10",
+  dateModified: "2026-06-25",
 
   inLanguage: "es-CO",
 
@@ -82,13 +91,15 @@ const schemaData = {
 
   keywords: [
     "debida diligencia empresarial",
-    "due diligence Colombia",
-    "riesgo legal empresarial",
+    "due diligence colombia",
+    "due diligence empresarial",
+    "auditoria legal empresarial",
+    "evaluacion de riesgos empresariales",
+    "riesgos corporativos",
+    "compra de empresas colombia",
+    "analisis legal empresarial",
     "compliance empresarial",
-    "prevención de riesgos corporativos",
-    "auditoría empresarial",
-    "cumplimiento normativo",
-    "análisis legal empresarial",
+    "revision empresarial",
   ],
 };
 

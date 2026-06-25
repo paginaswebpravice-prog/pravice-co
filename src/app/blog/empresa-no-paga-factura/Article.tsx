@@ -10,10 +10,10 @@ export default function EmpresaNoPagaFactura() {
     "@type": "BlogPosting",
 
     headline:
-      "Qué hacer si una empresa no quiere pagar una factura en Colombia",
+      "¿Una empresa no paga una factura? Cómo cobrarla y recuperar tu dinero en Colombia",
 
     description:
-      "Guía completa para recuperar facturas pendientes, cobrar empresas morosas y proteger el flujo de caja de tu negocio en Colombia.",
+      "Aprende cómo cobrar una factura vencida en Colombia, qué hacer si una empresa no paga y cuándo iniciar un proceso de cobro jurídico.",
 
     image: "https://pravice.co/og-image.jpg",
 
@@ -59,14 +59,15 @@ export default function EmpresaNoPagaFactura() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Empresa no paga una factura: cómo recuperar el dinero en Colombia
+            ¿Una empresa no paga una factura? Cómo recuperar tu dinero paso a
+            paso en Colombia
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Si una empresa no ha pagado una factura dentro del plazo acordado,
-            existen estrategias de seguimiento, negociación y recuperación de
-            cartera que pueden ayudarte a recuperar el dinero y reducir el
-            impacto financiero en tu negocio.
+            ¿Tu cliente no ha pagado una factura? Descubre cómo cobrar una
+            factura vencida en Colombia, cuándo negociar, cuándo iniciar un
+            cobro jurídico y qué acciones aumentan las probabilidades de
+            recuperar tu dinero sin afectar la relación comercial.
           </motion.p>
         </motion.section>
 
@@ -85,22 +86,22 @@ export default function EmpresaNoPagaFactura() {
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Qué aprenderás en este artículo</h3>
+          <h3>¿Qué encontrarás en esta guía?</h3>
 
           <ul>
-            <li>Por qué algunas empresas no pagan facturas</li>
-            <li>Errores comunes al cobrar deudas comerciales</li>
-            <li>Cómo recuperar facturas pendientes</li>
-            <li>Cuándo iniciar cobro jurídico</li>
+            <li>Qué hacer cuando una empresa no paga una factura</li>
+            <li>Por qué algunos clientes dejan de pagar</li>
+            <li>Cómo cobrar una factura vencida paso a paso</li>
+            <li>Cuándo iniciar un cobro prejurídico o jurídico</li>
             <li>Cómo evitar clientes morosos en el futuro</li>
+            <li>Preguntas frecuentes sobre recuperación de cartera</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
           <h2>
-            ¿Por qué una empresa puede retrasar o incumplir el pago de una
-            factura?
+            ¿Por qué una empresa no paga una factura? Las causas más comunes
           </h2>
 
           <p>
@@ -138,7 +139,7 @@ export default function EmpresaNoPagaFactura() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Errores que dificultan recuperar una factura pendiente</h2>
+          <h2>Los errores más comunes al cobrar una factura vencida</h2>
 
           <p>
             Muchos negocios pierden dinero porque manejan la recuperación de
@@ -176,8 +177,7 @@ export default function EmpresaNoPagaFactura() {
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
           <h2>
-            Pasos para recuperar una factura vencida sin afectar la relación
-            comercial
+            Cómo cobrar una factura vencida: 7 pasos para recuperar tu dinero
           </h2>
 
           <p>
@@ -224,10 +224,7 @@ export default function EmpresaNoPagaFactura() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>
-            ¿Cuándo es momento de escalar la recuperación de una factura
-            pendiente?
-          </h2>
+          <h2>¿Cuándo iniciar un cobro jurídico por una factura sin pagar?</h2>
 
           <p>
             El cobro jurídico suele aplicarse cuando la empresa ignora
@@ -251,7 +248,7 @@ export default function EmpresaNoPagaFactura() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Cómo reducir el riesgo de clientes morosos en tu empresa</h2>
+          <h2>Cómo evitar que tus clientes dejen facturas sin pagar</h2>
 
           <p>
             La prevención es clave para reducir el riesgo de facturas sin pagar
@@ -286,7 +283,7 @@ export default function EmpresaNoPagaFactura() {
         </section>
 
         <section className={styles.section}>
-          <h2>Preguntas frecuentes sobre facturas pendientes en Colombia</h2>
+          <h2>Preguntas frecuentes sobre facturas sin pagar en Colombia</h2>
 
           <div className={styles.card}>
             <h3>¿Qué hacer cuando una empresa no paga una factura?</h3>
@@ -328,7 +325,7 @@ export default function EmpresaNoPagaFactura() {
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
           <h2>
-            Conclusión: actuar rápido aumenta las probabilidades de recuperación
+            Conclusión: recuperar una factura es posible si actúas a tiempo
           </h2>
 
           <p>
@@ -344,8 +341,8 @@ export default function EmpresaNoPagaFactura() {
           </p>
         </section>
         <ArticleCTA
-          title="¿Tienes facturas pendientes de pago?"
-          description="Conoce estrategias de recuperación de cartera, seguimiento de facturas vencidas y gestión de pagos para mejorar el flujo de caja de tu empresa."
+          title="¿Una empresa no te paga una factura? Recibe orientación sobre cómo recuperar tu dinero"
+          description="Conoce las alternativas para recuperar facturas vencidas, gestionar cartera morosa y evaluar cuándo es conveniente iniciar un cobro prejurídico o jurídico en Colombia."
           href="https://abogadosespecialistas.com.co/"
           badge="Cobro de cartera y recuperación de facturas"
           buttonText="Hablar con un abogado especializado"

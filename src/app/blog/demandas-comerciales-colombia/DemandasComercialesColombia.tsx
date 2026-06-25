@@ -51,12 +51,15 @@ export default function DemandasComercialesColombia() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Demandas comerciales en Colombia: cómo funcionan
+            Demandas comerciales en Colombia: causas frecuentes, etapas y cómo
+            defender una empresa
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cómo funcionan los procesos judiciales comerciales y cuáles
-            son las principales estrategias de defensa empresarial en Colombia.
+            ¿Tu empresa enfrenta un incumplimiento contractual, una deuda o un
+            conflicto comercial? Conoce las causas más frecuentes de las
+            demandas comerciales en Colombia, cuánto puede durar un proceso
+            judicial y qué medidas ayudan a proteger el patrimonio empresarial.
           </motion.p>
         </motion.section>
 
@@ -90,7 +93,10 @@ export default function DemandasComercialesColombia() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué son las demandas comerciales</h2>
+          <h2>
+            ¿Qué es una demanda comercial y cuándo puede afectar a una empresa
+            en Colombia?
+          </h2>
 
           <p>
             Las demandas comerciales son acciones judiciales relacionadas con
@@ -121,7 +127,9 @@ export default function DemandasComercialesColombia() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Causas frecuentes de demandas comerciales</h2>
+          <h2>
+            Las 7 causas más comunes de las demandas comerciales en Colombia
+          </h2>
 
           <p>
             Existen diferentes motivos por los cuales puede iniciarse un proceso
@@ -163,7 +171,7 @@ export default function DemandasComercialesColombia() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Cómo funciona un proceso judicial comercial</h2>
+          <h2>¿Cómo funciona una demanda comercial en Colombia paso a paso?</h2>
 
           <p>
             Las demandas comerciales siguen etapas procesales reguladas por la
@@ -204,7 +212,10 @@ export default function DemandasComercialesColombia() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Estrategias de defensa empresarial</h2>
+          <h2>
+            Qué hacer si demandan a tu empresa: estrategias para reducir riesgos
+            legales
+          </h2>
 
           <p>
             Una adecuada estrategia jurídica puede ayudar a proteger los
@@ -246,7 +257,10 @@ export default function DemandasComercialesColombia() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Importancia de la asesoría jurídica empresarial</h2>
+          <h2>
+            Qué hacer si demandan a tu empresa: estrategias para reducir riesgos
+            legales
+          </h2>
 
           <p>
             Las empresas deben contar con apoyo legal para enfrentar procesos
@@ -278,9 +292,64 @@ export default function DemandasComercialesColombia() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>¿Cuánto puede durar una demanda comercial en Colombia?</h2>
+
+          <p>
+            La duración de una demanda comercial depende de factores como la
+            complejidad del caso, la cantidad de pruebas, los recursos
+            presentados por las partes y la carga procesal del despacho
+            judicial.
+          </p>
+
+          <p>
+            Algunos procesos pueden resolverse mediante conciliación o acuerdos
+            extrajudiciales, mientras que otros pueden extenderse durante varios
+            meses o incluso años.
+          </p>
+
+          <p>
+            Una estrategia jurídica adecuada desde el inicio suele reducir
+            tiempos, costos y riesgos para la empresa involucrada.
+          </p>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Errores que aumentan el riesgo de perder una demanda comercial
+          </h2>
+
+          <div className={styles.card}>
+            <h3>No conservar documentos y contratos</h3>
+            <p>
+              La ausencia de evidencia dificulta demostrar los hechos dentro del
+              proceso judicial.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Ignorar requerimientos legales</h3>
+            <p>
+              No responder oportunamente puede afectar la posición jurídica de
+              la empresa.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No buscar asesoría temprana</h3>
+            <p>
+              Actuar desde las primeras etapas del conflicto suele ampliar las
+              posibilidades de negociación y defensa.
+            </p>
+          </div>
+        </section>
+
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre las demandas comerciales en Colombia</h2>
+          <h2>
+            Cómo reducir el riesgo de demandas comerciales y fortalecer la
+            seguridad jurídica de una empresa
+          </h2>
 
           <p>
             Las demandas comerciales pueden afectar seriamente la estabilidad y
@@ -296,8 +365,8 @@ export default function DemandasComercialesColombia() {
 
         <ArticleCTA
           badge="Derecho comercial y defensa empresarial"
-          title="¿Tu empresa enfrenta una demanda comercial?"
-          description="Recibe asesoría jurídica empresarial para procesos judiciales, defensa comercial y prevención de riesgos legales en Colombia."
+          title="¿Recibiste una demanda comercial o existe riesgo de litigio empresarial?"
+          description="Obtén orientación sobre incumplimientos contractuales, conflictos entre empresas, cobro de obligaciones y estrategias jurídicas para reducir riesgos económicos y proteger la operación de tu negocio."
           href="https://abogadosespecialistas.com.co/"
           buttonText="Solicitar asesoría legal"
         />

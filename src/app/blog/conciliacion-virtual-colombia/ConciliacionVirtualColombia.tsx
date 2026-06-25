@@ -8,7 +8,8 @@ export default function ConciliacionVirtualColombia() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Conciliación virtual en Colombia: cómo funciona",
+    headline:
+      "Conciliación virtual en Colombia: requisitos, validez legal y cómo funciona",
     description:
       "Conoce cómo funcionan las audiencias virtuales de conciliación y su validez legal en Colombia.",
     image: "https://pravice.co/og-image.jpg",
@@ -51,12 +52,15 @@ export default function ConciliacionVirtualColombia() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Conciliación virtual en Colombia: cómo funciona
+            Conciliación virtual en Colombia: requisitos, validez legal y cómo
+            funciona paso a paso
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cómo funcionan las audiencias virtuales de conciliación y
-            cuál es su validez legal en Colombia.
+            Aprende cómo funciona una conciliación virtual en Colombia, cuáles
+            son sus requisitos, qué validez legal tiene un acuerdo alcanzado por
+            medios digitales y cuándo puede utilizarse para resolver conflictos
+            sin desplazamientos.
           </motion.p>
         </motion.section>
 
@@ -89,18 +93,75 @@ export default function ConciliacionVirtualColombia() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué es la conciliación virtual</h2>
+          <h2>
+            ¿Qué es la conciliación virtual en Colombia y cuándo puede
+            utilizarse?
+          </h2>
 
           <p>
-            La conciliación virtual es un mecanismo mediante el cual las partes
-            intentan resolver un conflicto utilizando plataformas digitales de
-            comunicación.
+            La conciliación virtual es una modalidad de conciliación que permite
+            a las partes participar en audiencias utilizando herramientas
+            tecnológicas como videollamadas, plataformas de reuniones en línea y
+            sistemas de firma electrónica.
           </p>
 
           <p>
-            Este procedimiento mantiene los mismos principios de la conciliación
-            tradicional, pero se desarrolla de forma remota.
+            En Colombia, esta modalidad ha adquirido gran relevancia debido a la
+            transformación digital de los mecanismos alternativos de solución de
+            conflictos y a la necesidad de facilitar el acceso a la justicia
+            para personas ubicadas en distintas ciudades o incluso fuera del
+            país.
           </p>
+
+          <p>
+            Aunque el procedimiento se desarrolla de manera remota, conserva los
+            mismos efectos jurídicos que una audiencia presencial siempre que se
+            cumplan los requisitos legales exigidos por la normativa colombiana.
+          </p>
+
+          <section className={styles.section}>
+            <h2>¿La conciliación virtual tiene validez legal en Colombia?</h2>
+
+            <p>
+              Sí. Los acuerdos alcanzados mediante conciliación virtual pueden
+              producir los mismos efectos jurídicos que aquellos logrados en una
+              audiencia presencial.
+            </p>
+
+            <p>
+              La legislación colombiana permite el uso de medios tecnológicos
+              para el desarrollo de diferentes actuaciones jurídicas, incluyendo
+              procedimientos conciliatorios realizados por entidades
+              autorizadas.
+            </p>
+
+            <div className={styles.card}>
+              <h3>Acta con fuerza legal</h3>
+
+              <p>
+                El acta de conciliación presta mérito ejecutivo y puede ser
+                exigida judicialmente en caso de incumplimiento.
+              </p>
+            </div>
+
+            <div className={styles.card}>
+              <h3>Identificación de participantes</h3>
+
+              <p>
+                Debe verificarse la identidad de quienes intervienen en la
+                audiencia para garantizar la seguridad jurídica del proceso.
+              </p>
+            </div>
+
+            <div className={styles.card}>
+              <h3>Registro digital</h3>
+
+              <p>
+                Las actuaciones pueden quedar respaldadas mediante registros
+                electrónicos y documentación digital.
+              </p>
+            </div>
+          </section>
 
           <div className={styles.card}>
             <h3>Audiencias remotas</h3>
@@ -121,11 +182,19 @@ export default function ConciliacionVirtualColombia() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Cómo funciona una audiencia virtual</h2>
+          <h2>Cómo funciona una conciliación virtual paso a paso</h2>
 
           <p>
-            El proceso virtual sigue etapas similares a las audiencias
-            presenciales tradicionales.
+            El procedimiento virtual sigue una estructura muy similar a la
+            conciliación presencial, pero utilizando herramientas tecnológicas
+            que permiten la participación remota de todas las partes
+            involucradas.
+          </p>
+
+          <p>
+            Dependiendo del centro de conciliación, algunas etapas pueden
+            realizarse completamente en línea, incluyendo la radicación de
+            documentos y la firma del acuerdo final.
           </p>
 
           <div className={styles.card}>
@@ -157,6 +226,51 @@ export default function ConciliacionVirtualColombia() {
             <p>
               Si existe consenso, se genera un acta conciliatoria con efectos
               legales.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>Requisitos para participar en una conciliación virtual</h2>
+
+          <p>
+            Para garantizar el correcto desarrollo de una audiencia virtual, las
+            partes deben cumplir ciertos requisitos técnicos y legales.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Documento de identidad</h3>
+
+            <p>
+              Es necesario acreditar adecuadamente la identidad de los
+              participantes.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Conexión estable a internet</h3>
+
+            <p>
+              La audiencia requiere una comunicación fluida entre las partes y
+              el conciliador.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Correo electrónico activo</h3>
+
+            <p>
+              Muchas notificaciones y documentos se remiten mediante medios
+              digitales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Acceso a plataforma virtual</h3>
+
+            <p>
+              Las partes deben poder conectarse a la herramienta utilizada por
+              el centro de conciliación.
             </p>
           </div>
         </section>
@@ -197,7 +311,10 @@ export default function ConciliacionVirtualColombia() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Ventajas de la conciliación virtual</h2>
+          <h2>
+            Ventajas de la conciliación virtual frente a una audiencia
+            presencial
+          </h2>
 
           <p>
             Este mecanismo ofrece diferentes beneficios para personas y empresas
@@ -267,9 +384,50 @@ export default function ConciliacionVirtualColombia() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>Preguntas frecuentes sobre conciliación virtual en Colombia</h2>
+
+          <div className={styles.card}>
+            <h3>¿Puedo participar desde otra ciudad?</h3>
+
+            <p>
+              Sí. Una de las principales ventajas es que las partes pueden
+              conectarse desde cualquier lugar con acceso a internet.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿El acuerdo tiene validez legal?</h3>
+
+            <p>
+              Sí. El acuerdo puede producir efectos jurídicos equivalentes a los
+              de una conciliación presencial.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Necesito abogado para participar?</h3>
+
+            <p>
+              Dependiendo del caso, puede ser recomendable contar con asesoría
+              jurídica para proteger adecuadamente los derechos e intereses de
+              cada parte.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Qué pasa si una persona no se conecta?</h3>
+
+            <p>
+              La inasistencia puede generar las consecuencias previstas por la
+              ley y por el procedimiento aplicable al caso concreto.
+            </p>
+          </div>
+        </section>
+
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre la conciliación virtual en Colombia</h2>
+          <h2>¿Vale la pena utilizar la conciliación virtual en Colombia?</h2>
 
           <p>
             La conciliación virtual representa una alternativa moderna y

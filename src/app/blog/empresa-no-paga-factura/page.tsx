@@ -5,22 +5,20 @@ const canonicalUrl = "https://pravice.co/blog/empresa-no-paga-factura";
 
 export const metadata: Metadata = {
   title:
-    "Empresa no paga una factura: qué hacer para recuperar el dinero en Colombia | Pravice",
+    "¿Una empresa no paga una factura? 7 pasos para recuperar tu dinero en Colombia",
 
   description:
-    "Descubre qué hacer cuando una empresa no paga una factura. Aprende cómo recuperar pagos pendientes, reducir riesgos de cartera vencida y proteger el flujo de caja de tu negocio.",
-
+    "¿Tu cliente no pagó una factura? Descubre cómo cobrar una factura vencida en Colombia, cuándo iniciar un cobro jurídico y qué hacer para recuperar tu dinero.",
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
     title:
-      "Empresa no paga una factura: pasos para recuperar el dinero en Colombia",
+      "¿Una empresa no paga una factura? Cómo cobrar una factura vencida en Colombia",
 
     description:
-      "Guía práctica para recuperar facturas vencidas, gestionar cartera morosa y reducir pérdidas financieras en empresas colombianas.",
-
+      "Aprende qué hacer cuando una empresa no paga una factura, cómo recuperar una deuda comercial y cuándo acudir al cobro jurídico.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -39,10 +37,11 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Qué hacer si una empresa no quiere pagar una factura en Colombia",
+    title:
+      "¿Qué hacer si una empresa no paga una factura? Guía para recuperar tu dinero",
 
     description:
-      "Aprende cómo recuperar facturas pendientes y cobrar empresas morosas legalmente.",
+      "Pasos para cobrar facturas vencidas, recuperar deudas comerciales y reducir el riesgo de cartera morosa.",
 
     images: ["https://pravice.co/logo_pravice.png"],
   },
@@ -60,10 +59,10 @@ const schemaData = {
   },
 
   headline:
-    "Qué hacer si una empresa no quiere pagar una factura en Colombia 2026",
+    "¿Una empresa no paga una factura? Cómo recuperar tu dinero paso a paso en Colombia",
 
   description:
-    "Descubre qué hacer cuando una empresa no paga una factura en Colombia. Aprende cómo recuperar deudas comerciales y gestionar cobros de forma legal y efectiva.",
+    "Guía práctica para cobrar una factura vencida en Colombia, recuperar deudas comerciales y saber cuándo iniciar un cobro jurídico.",
 
   image: "https://pravice.co/logo_pravice.png",
 

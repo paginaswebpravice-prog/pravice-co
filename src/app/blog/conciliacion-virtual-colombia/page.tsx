@@ -4,23 +4,28 @@ import ConciliacionVirtualColombia from "./ConciliacionVirtualColombia";
 const canonicalUrl = "https://pravice.co/blog/conciliacion-virtual-colombia";
 
 export const metadata: Metadata = {
-  title: "Conciliación virtual en Colombia: cómo funciona | Pravice",
+  title:
+    "Conciliación virtual en Colombia: requisitos, validez legal y paso a paso 2026 | Pravice",
 
   description:
-    "Conoce cómo funcionan las audiencias virtuales de conciliación y su validez legal en Colombia.",
+    "Aprende cómo funciona una conciliación virtual en Colombia, cuáles son sus requisitos, su validez legal y cómo participar en una audiencia online paso a paso.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Conciliación virtual en Colombia: cómo funciona",
+    title:
+      "Conciliación virtual en Colombia: requisitos, validez legal y proceso",
+
     description:
-      "Guía sobre audiencias virtuales de conciliación y acuerdos legales en Colombia.",
+      "Guía completa sobre conciliación virtual en Colombia. Conoce requisitos, audiencias online, validez jurídica y ventajas frente al proceso presencial.",
+
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "article",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
@@ -33,8 +38,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Conciliación virtual en Colombia",
-    description: "Cómo funcionan las audiencias virtuales y su validez legal.",
+
+    title: "Conciliación virtual en Colombia: requisitos y validez legal",
+
+    description:
+      "Todo lo que debes saber sobre audiencias virtuales de conciliación en Colombia.",
+
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -50,10 +59,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Conciliación virtual en Colombia: cómo funciona",
+  headline:
+    "Conciliación virtual en Colombia: requisitos, validez legal y paso a paso",
 
   description:
-    "Conoce cómo funcionan las audiencias virtuales de conciliación y su validez legal en Colombia.",
+    "Aprende cómo funciona una conciliación virtual en Colombia, cuáles son sus requisitos, su validez legal y cómo participar en una audiencia online.",
 
   image: "https://pravice.co/logo_pravice.png",
 
@@ -73,21 +83,23 @@ const schemaData = {
   },
 
   datePublished: "2026-06-10",
-  dateModified: "2026-06-10",
+  dateModified: "2026-06-25",
 
   inLanguage: "es-CO",
 
   articleSection: "Conciliación",
 
   keywords: [
-    "conciliación virtual Colombia",
-    "audiencias virtuales",
-    "conciliación online",
+    "conciliación virtual colombia",
+    "conciliación online colombia",
+    "audiencia virtual de conciliación",
     "validez legal conciliación virtual",
-    "resolución de conflictos",
-    "acta conciliatoria virtual",
-    "conciliación remota",
-    "mecanismos alternativos de resolución",
+    "requisitos conciliación virtual",
+    "acta de conciliación virtual",
+    "conciliación por videollamada",
+    "conciliación extrajudicial virtual",
+    "conciliación remota colombia",
+    "mecanismos alternativos de solución de conflictos",
   ],
 };
 

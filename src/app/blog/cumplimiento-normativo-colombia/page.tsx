@@ -3,10 +3,10 @@ import CumplimientoNormativoArticle from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "Cumplimiento normativo en Colombia: guía para evitar multas y riesgos legales empresariales",
+    "Cumplimiento normativo en Colombia: cómo evitar multas y sanciones empresariales",
 
   description:
-    "Descubre cómo implementar un programa de cumplimiento normativo en Colombia, reducir riesgos legales, evitar multas de la DIAN, SIC, UGPP y proteger tu empresa frente a sanciones y demandas.",
+    "Aprende qué es el cumplimiento normativo en Colombia, cómo implementar un programa de compliance empresarial y qué medidas ayudan a evitar multas, sanciones y riesgos legales.",
   alternates: {
     canonical: "https://pravice.co/blog/cumplimiento-normativo-colombia",
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Cumplimiento normativo en Colombia: cómo evitar multas, sanciones y riesgos empresariales",
+      "Cumplimiento normativo en Colombia: evita multas, sanciones y riesgos legales",
     description:
       "Guía práctica sobre compliance en Colombia: cómo evitar sanciones legales, reducir riesgos y fortalecer tu empresa.",
     url: "https://pravice.co/blog/cumplimiento-normativo-colombia",
@@ -68,7 +68,7 @@ export default function Page() {
               "@context": "https://schema.org",
               "@type": "Article",
               headline:
-                "Cumplimiento normativo en Colombia: evita multas y sanciones legales en tu empresa",
+                "Cumplimiento normativo en Colombia: cómo evitar multas y sanciones empresariales",
               description:
                 "Guía completa sobre cumplimiento normativo en Colombia y cómo implementar un programa de compliance empresarial.",
               image: "https://pravice.co/logo-pravice.png",

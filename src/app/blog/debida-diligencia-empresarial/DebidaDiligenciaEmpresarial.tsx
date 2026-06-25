@@ -51,12 +51,15 @@ export default function DebidaDiligenciaEmpresarial() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Debida diligencia empresarial en Colombia: guía completa
+            Debida diligencia empresarial en Colombia: cómo detectar riesgos
+            antes de invertir o cerrar un negocio
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cómo implementar procesos de due diligence para identificar
-            riesgos legales, financieros y corporativos en empresas.
+            Descubre cómo realizar un proceso de due diligence empresarial para
+            identificar riesgos legales, financieros, laborales, tributarios y
+            societarios antes de comprar una empresa, invertir o firmar acuerdos
+            estratégicos.
           </motion.p>
         </motion.section>
 
@@ -90,7 +93,10 @@ export default function DebidaDiligenciaEmpresarial() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué es la debida diligencia empresarial</h2>
+          <h2>
+            ¿Qué es la debida diligencia empresarial y por qué puede evitar
+            pérdidas millonarias?
+          </h2>
 
           <p>
             La debida diligencia es un procedimiento de investigación y análisis
@@ -122,7 +128,7 @@ export default function DebidaDiligenciaEmpresarial() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Para qué sirve el due diligence</h2>
+          <h2>¿Para qué sirve el due diligence y cuándo debería realizarse?</h2>
 
           <p>
             El due diligence ayuda a reducir incertidumbre y fortalecer la toma
@@ -161,7 +167,9 @@ export default function DebidaDiligenciaEmpresarial() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Áreas que suelen revisarse</h2>
+          <h2>
+            ¿Qué aspectos se revisan en una debida diligencia empresarial?
+          </h2>
 
           <p>
             La debida diligencia puede abarcar diferentes aspectos dependiendo
@@ -196,7 +204,7 @@ export default function DebidaDiligenciaEmpresarial() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Cómo implementar un proceso de debida diligencia</h2>
+          <h2>Cómo realizar una debida diligencia empresarial paso a paso</h2>
 
           <p>
             Un proceso de due diligence requiere planeación, análisis y
@@ -234,7 +242,10 @@ export default function DebidaDiligenciaEmpresarial() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Buenas prácticas para reducir riesgos empresariales</h2>
+          <h2>
+            Buenas prácticas para identificar riesgos antes de firmar acuerdos
+            empresariales
+          </h2>
 
           <p>
             Implementar controles preventivos fortalece la estabilidad jurídica
@@ -273,9 +284,89 @@ export default function DebidaDiligenciaEmpresarial() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>
+            ¿Cuándo es recomendable realizar una debida diligencia empresarial?
+          </h2>
+
+          <p>
+            Muchas empresas creen que la debida diligencia únicamente se utiliza
+            en procesos de compra o venta de compañías. Sin embargo, este
+            análisis también resulta útil en múltiples escenarios donde existen
+            riesgos financieros, legales o reputacionales.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Compra de empresas</h3>
+            <p>
+              Permite identificar deudas ocultas, litigios, incumplimientos y
+              riesgos que podrían afectar el valor real del negocio.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Ingreso de nuevos socios</h3>
+            <p>
+              Facilita evaluar la situación corporativa antes de realizar
+              inversiones o modificaciones societarias.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Fusiones y adquisiciones</h3>
+            <p>
+              Ayuda a validar información financiera, operativa y jurídica antes
+              de concretar operaciones empresariales complejas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Contratación de proveedores estratégicos</h3>
+            <p>
+              Reduce riesgos derivados de terceros mediante la revisión de
+              antecedentes, cumplimiento normativo y capacidad operativa.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Riesgos que una debida diligencia empresarial puede detectar a
+            tiempo
+          </h2>
+
+          <p>
+            Un proceso de due diligence bien ejecutado permite descubrir
+            situaciones que podrían afectar la rentabilidad, estabilidad o
+            reputación de una empresa.
+          </p>
+
+          <ul>
+            <li>Demandas judiciales en curso.</li>
+            <li>Incumplimientos laborales.</li>
+            <li>Deudas tributarias pendientes.</li>
+            <li>Contratos con riesgos jurídicos.</li>
+            <li>Problemas societarios entre accionistas.</li>
+            <li>Investigaciones administrativas.</li>
+            <li>Riesgos de protección de datos.</li>
+            <li>Dependencia excesiva de clientes o proveedores.</li>
+            <li>Contingencias regulatorias.</li>
+            <li>Deficiencias en gobierno corporativo.</li>
+          </ul>
+
+          <p>
+            Detectar estos factores antes de una inversión o alianza comercial
+            permite tomar decisiones con mayor información y reducir
+            significativamente la exposición al riesgo.
+          </p>
+        </section>
+
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre debida diligencia empresarial</h2>
+          <h2>
+            La debida diligencia puede evitar problemas legales antes de que
+            ocurran
+          </h2>
 
           <p>
             La debida diligencia empresarial es una herramienta clave para

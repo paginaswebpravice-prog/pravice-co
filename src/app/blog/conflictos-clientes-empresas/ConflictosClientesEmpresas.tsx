@@ -8,9 +8,10 @@ export default function ConflictosClientesEmpresas() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Cómo manejar conflictos con clientes en Colombia",
+    headline:
+      "Conflictos entre empresas y clientes en Colombia: causas, soluciones y prevención",
     description:
-      "Aprende estrategias legales y comerciales para resolver conflictos con clientes y proteger la reputación de tu empresa.",
+      "Aprende cómo resolver conflictos entre empresas y clientes, evitar reclamaciones y proteger la reputación de tu negocio.",
     image: "https://pravice.co/og-image.jpg",
     author: {
       "@type": "Organization",
@@ -51,13 +52,15 @@ export default function ConflictosClientesEmpresas() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Cómo manejar conflictos con clientes en Colombia
+            Conflictos entre empresas y clientes en Colombia: causas, soluciones
+            y prevención
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre estrategias legales y comerciales para resolver disputas
-            con clientes de manera profesional y proteger la reputación de tu
-            empresa.
+            Conoce las causas más frecuentes de los conflictos entre empresas y
+            clientes, cómo resolver reclamaciones de manera efectiva y qué
+            medidas implementar para evitar disputas comerciales que afecten la
+            reputación y rentabilidad del negocio.
           </motion.p>
         </motion.section>
 
@@ -77,7 +80,7 @@ export default function ConflictosClientesEmpresas() {
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Qué aprenderás en este artículo</h3>
+          <h3>Contenido de esta guía</h3>
 
           <ul>
             <li>Principales causas de conflictos con clientes</li>
@@ -90,7 +93,7 @@ export default function ConflictosClientesEmpresas() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Principales causas de conflictos entre empresas y clientes</h2>
+          <h2>¿Por qué surgen conflictos entre empresas y clientes?</h2>
 
           <p>
             Las disputas comerciales suelen originarse por diferencias en las
@@ -132,7 +135,10 @@ export default function ConflictosClientesEmpresas() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Cómo manejar conflictos con clientes de forma profesional</h2>
+          <h2>
+            Cómo resolver conflictos con clientes sin afectar la reputación de
+            tu empresa
+          </h2>
 
           <p>
             Una gestión adecuada de conflictos ayuda a reducir riesgos legales y
@@ -174,7 +180,9 @@ export default function ConflictosClientesEmpresas() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Cómo prevenir conflictos comerciales con clientes</h2>
+          <h2>
+            Estrategias para prevenir reclamaciones y disputas comerciales
+          </h2>
 
           <p>
             Implementar procesos claros y una comunicación adecuada disminuye
@@ -214,9 +222,52 @@ export default function ConflictosClientesEmpresas() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>Tipos de conflictos con clientes más frecuentes en Colombia</h2>
+
+          <p>
+            Dependiendo del sector económico, las empresas pueden enfrentar
+            diferentes tipos de reclamaciones que afectan la relación comercial
+            y la satisfacción del cliente.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Clientes que no realizan pagos</h3>
+            <p>
+              El incumplimiento de pagos es una de las principales causas de
+              conflicto entre empresas y consumidores o clientes corporativos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Quejas por calidad del servicio</h3>
+            <p>
+              Diferencias entre las expectativas del cliente y el resultado
+              obtenido pueden generar reclamaciones y solicitudes de
+              compensación.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Incumplimientos contractuales</h3>
+            <p>
+              Retrasos, entregas incompletas o incumplimiento de obligaciones
+              pactadas suelen originar disputas comerciales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Problemas de garantía</h3>
+            <p>
+              Los desacuerdos relacionados con garantías y devoluciones
+              representan una causa frecuente de conflictos empresariales.
+            </p>
+          </div>
+        </section>
+
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Cuándo acudir a mecanismos legales</h2>
+          <h2>¿Cuándo es necesario acudir a conciliación o apoyo legal?</h2>
 
           <p>
             Algunos conflictos requieren apoyo jurídico cuando existe riesgo
@@ -258,7 +309,10 @@ export default function ConflictosClientesEmpresas() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Importancia de proteger la reputación empresarial</h2>
+          <h2>
+            Cómo proteger la reputación empresarial durante un conflicto con un
+            cliente
+          </h2>
 
           <p>
             Manejar adecuadamente los conflictos fortalece la imagen de la
@@ -290,9 +344,51 @@ export default function ConflictosClientesEmpresas() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>
+            Preguntas frecuentes sobre conflictos entre empresas y clientes
+          </h2>
+
+          <div className={styles.card}>
+            <h3>¿Qué hacer cuando un cliente amenaza con demandar?</h3>
+
+            <p>
+              Lo recomendable es documentar todas las comunicaciones, revisar
+              las obligaciones contractuales y buscar una solución negociada
+              antes de que el conflicto escale.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Es obligatorio acudir a conciliación?</h3>
+
+            <p>
+              Dependiendo del tipo de conflicto, la conciliación puede ser un
+              mecanismo útil para evitar procesos judiciales más largos y
+              costosos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>
+              ¿Cómo proteger la reputación de una empresa durante una
+              reclamación?
+            </h3>
+
+            <p>
+              Mantener una comunicación profesional, responder oportunamente y
+              buscar soluciones razonables ayuda a preservar la confianza del
+              mercado.
+            </p>
+          </div>
+        </section>
+
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre manejo de conflictos con clientes</h2>
+          <h2>
+            Cómo convertir un conflicto con un cliente en una oportunidad de
+            mejora
+          </h2>
 
           <p>
             Resolver conflictos con clientes de manera estratégica y profesional

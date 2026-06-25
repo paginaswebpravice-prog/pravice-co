@@ -3,18 +3,18 @@ import Article from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "7 errores en la gestión de cartera en Colombia (y cómo evitarlos) | Bogotá | Pravice",
+    "7 errores en la gestión de cartera que hacen perder dinero a tu empresa (y cómo evitarlos)",
   description:
-    "Descubre los 7 errores más comunes en la gestión de cartera en Colombia y cómo evitarlos para mejorar la recuperación de pagos, liquidez y flujo de caja empresarial en Bogotá y todo el país.",
-
+    "¿Tu empresa tiene problemas para recuperar pagos? Descubre los 7 errores más comunes en la gestión de cartera y cómo mejorar el recaudo sin afectar la relación con tus clientes.",
   alternates: {
     canonical: "https://pravice.co/blog/errores-gestion-cartera",
   },
 
   openGraph: {
-    title: "7 errores en la gestión de cartera en Colombia y cómo evitarlos",
+    title:
+      "7 errores en la gestión de cartera que reducen el flujo de caja de tu empresa",
     description:
-      "Aprende a mejorar la recuperación de cartera en Colombia evitando errores que afectan el flujo de caja empresarial.",
+      "Aprende cómo evitar los errores más comunes en la cobranza empresarial y mejora la recuperación de cartera en Colombia.",
     url: "https://pravice.co/blog/errores-gestion-cartera",
     siteName: "Pravice",
     locale: "es_CO",
@@ -43,9 +43,10 @@ const schemaData = {
     "@type": "WebPage",
     "@id": "https://pravice.co/blog/errores-gestion-cartera",
   },
-  headline: "7 errores en la gestión de cartera en Colombia (y cómo evitarlos)",
+  headline:
+    "7 errores en la gestión de cartera que hacen perder dinero a las empresas en Colombia",
   description:
-    "Descubre los 7 errores más comunes en la gestión de cartera en Colombia y cómo evitarlos para mejorar la recuperación de pagos, liquidez y flujo de caja empresarial en Bogotá y todo el país.",
+    "Guía práctica para identificar los errores más frecuentes en la gestión de cartera y mejorar el recaudo de facturas pendientes en empresas colombianas.",
   image: "https://pravice.co/logo_pravice.png",
   author: {
     "@type": "Organization",
