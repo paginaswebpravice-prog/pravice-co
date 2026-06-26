@@ -4,19 +4,21 @@ import NegociacionEmpresarial from "./NegociacionEmpresarial";
 const canonicalUrl = "https://pravice.co/blog/negociacion-empresarial";
 
 export const metadata: Metadata = {
-  title: "Negociación empresarial efectiva para resolver conflictos | Pravice",
+  title:
+    "Negociación Empresarial en Colombia: Estrategias para Resolver Conflictos sin Demandas (Guía 2026) | Pravice",
 
   description:
-    "Aprende técnicas de negociación empresarial para resolver disputas comerciales de forma estratégica en Colombia.",
+    "Descubre qué es la negociación empresarial, cómo resolver conflictos comerciales sin llegar a juicio, cuándo conviene negociar y las mejores estrategias para empresas en Colombia.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Negociación empresarial efectiva para resolver conflictos",
+    title:
+      "Negociación Empresarial en Colombia: Cómo Resolver Conflictos sin Ir a Juicio",
     description:
-      "Técnicas y estrategias para negociar conflictos comerciales en Colombia.",
+      "Aprende estrategias de negociación empresarial, evita litigios costosos y protege las relaciones comerciales de tu empresa en Colombia.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -26,7 +28,7 @@ export const metadata: Metadata = {
         url: "https://pravice.co/logo_pravice.png",
         width: 1200,
         height: 630,
-        alt: "Negociación empresarial efectiva",
+        alt: "Negociación empresarial para resolver conflictos comerciales en Colombia",
       },
     ],
   },
@@ -50,10 +52,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Negociación empresarial efectiva para resolver conflictos",
+  headline:
+    "Negociación Empresarial en Colombia: Cómo Resolver Conflictos Comerciales sin Ir a Juicio",
 
   description:
-    "Aprende técnicas de negociación empresarial para resolver disputas comerciales de forma estratégica en Colombia.",
+    "Guía completa sobre negociación empresarial en Colombia, estrategias para resolver conflictos comerciales, evitar litigios y fortalecer las relaciones entre empresas, clientes y proveedores.",
 
   image: "https://pravice.co/logo_pravice.png",
 
@@ -77,17 +80,24 @@ const schemaData = {
 
   inLanguage: "es-CO",
 
-  articleSection: "Negociación Empresarial",
+  articleSection: "Derecho Empresarial",
 
   keywords: [
     "negociación empresarial",
-    "conflictos comerciales",
-    "estrategias de negociación",
-    "resolución de conflictos empresariales",
-    "negociación comercial Colombia",
-    "disputas empresariales",
+    "negociación empresarial Colombia",
+    "negociación comercial",
+    "cómo negociar conflictos empresariales",
+    "resolución de conflictos comerciales",
+    "negociación entre empresas",
+    "evitar demandas empresariales",
+    "estrategias de negociación empresarial",
+    "conflictos entre socios",
+    "conflictos con proveedores",
     "negociación de contratos",
-    "solución de conflictos corporativos",
+    "negociación corporativa",
+    "solución de conflictos empresariales",
+    "derecho empresarial Colombia",
+    "acuerdos comerciales",
   ],
 };
 

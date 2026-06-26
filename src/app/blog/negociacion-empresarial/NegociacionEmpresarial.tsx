@@ -204,38 +204,272 @@ export default function NegociacionEmpresarial() {
           </div>
         </section>
 
-        {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Errores frecuentes al negociar conflictos</h2>
+          <h2>
+            ¿Cuándo conviene utilizar la negociación empresarial para resolver
+            un conflicto?
+          </h2>
 
           <p>
-            Algunas prácticas pueden dificultar acuerdos y empeorar las
-            relaciones comerciales.
+            No todos los desacuerdos comerciales deben terminar en un proceso
+            judicial. En muchas ocasiones, una negociación bien estructurada
+            permite alcanzar un acuerdo que protege los intereses de ambas
+            partes y evita los costos, tiempos e incertidumbre de un litigio.
+          </p>
+
+          <p>
+            La negociación empresarial resulta especialmente útil cuando las
+            partes desean mantener una relación comercial, reducir riesgos
+            financieros y encontrar soluciones prácticas sin afectar la
+            continuidad de sus operaciones.
           </p>
 
           <div className={styles.card}>
-            <h3>Actuar impulsivamente</h3>
+            <h3>Conflictos entre socios</h3>
+
             <p>
-              Tomar decisiones emocionales puede afectar negativamente la
-              negociación.
+              Permite abordar diferencias sobre administración, distribución de
+              utilidades, inversión o toma de decisiones antes de que
+              evolucionen hacia procesos judiciales complejos.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>No documentar acuerdos</h3>
-            <p>Formalizar compromisos por escrito evita futuros problemas.</p>
-          </div>
+            <h3>Incumplimientos contractuales</h3>
 
-          <div className={styles.card}>
-            <h3>Ignorar alternativas legales</h3>
-            <p>Conocer opciones jurídicas fortalece la posición negociadora.</p>
-          </div>
-
-          <div className={styles.card}>
-            <h3>Falta de preparación</h3>
             <p>
-              Negociar sin información suficiente disminuye posibilidades de
-              éxito.
+              Muchas controversias derivadas de contratos comerciales pueden
+              resolverse mediante renegociaciones que permitan cumplir
+              parcialmente las obligaciones o modificar las condiciones
+              inicialmente pactadas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Problemas con proveedores</h3>
+
+            <p>
+              La negociación ayuda a redefinir plazos, precios, entregas o
+              condiciones comerciales sin romper definitivamente la relación
+              entre las empresas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Disputas con clientes</h3>
+
+            <p>
+              Alcanzar acuerdos tempranos suele proteger la reputación
+              empresarial y evitar reclamaciones que puedan convertirse
+              posteriormente en demandas.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            12 beneficios de la negociación empresarial frente a un proceso
+            judicial
+          </h2>
+
+          <p>
+            Para muchas empresas, negociar oportunamente representa una decisión
+            estratégica que permite reducir riesgos legales, proteger las
+            relaciones comerciales y disminuir los costos asociados a un
+            litigio.
+          </p>
+
+          <div className={styles.card}>
+            <h3>1. Reduce significativamente los costos legales</h3>
+            <p>
+              Evita gastos derivados de procesos judiciales prolongados,
+              honorarios, peritajes y actuaciones procesales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>2. Permite soluciones mucho más rápidas</h3>
+            <p>
+              Muchas negociaciones pueden concluir en pocos días o semanas,
+              mientras que un litigio puede extenderse durante años.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>3. Conserva las relaciones comerciales</h3>
+            <p>
+              Facilita que proveedores, clientes o socios continúen trabajando
+              juntos después del conflicto.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>4. Reduce la incertidumbre jurídica</h3>
+            <p>
+              Las partes controlan el contenido del acuerdo sin depender
+              totalmente de una decisión judicial.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Protege la reputación empresarial</h3>
+            <p>
+              Evita conflictos públicos que puedan afectar la confianza de
+              clientes, inversionistas y aliados estratégicos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Mayor flexibilidad para construir acuerdos</h3>
+            <p>
+              Las soluciones pueden adaptarse a las necesidades específicas de
+              cada empresa.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Disminuye el impacto financiero</h3>
+            <p>
+              Evita que un conflicto genere pérdidas económicas superiores a las
+              inicialmente previstas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>8. Favorece la continuidad del negocio</h3>
+            <p>
+              Resolver oportunamente los conflictos permite que la empresa
+              continúe sus operaciones con normalidad.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>9. Reduce el desgaste administrativo</h3>
+            <p>
+              Los directivos pueden concentrarse en el crecimiento del negocio
+              en lugar de dedicar recursos a procesos judiciales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>10. Mejora la toma de decisiones</h3>
+            <p>
+              Una negociación basada en análisis jurídico permite evaluar
+              riesgos antes de aceptar compromisos importantes.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>11. Fortalece la confianza entre las partes</h3>
+            <p>
+              La comunicación abierta favorece relaciones comerciales más
+              estables y duraderas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>12. Previene futuros conflictos</h3>
+            <p>
+              Un acuerdo bien estructurado puede incorporar mecanismos que
+              reduzcan la probabilidad de nuevas controversias.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            10 estrategias de negociación empresarial utilizadas por empresas
+            exitosas
+          </h2>
+
+          <p>
+            Una negociación efectiva no depende únicamente de la experiencia.
+            También requiere preparación, análisis jurídico y una estrategia
+            clara que permita alcanzar acuerdos sostenibles para todas las
+            partes involucradas.
+          </p>
+
+          <ol className={styles.numberList}>
+            <li>Preparar previamente toda la información del caso.</li>
+            <li>Identificar los intereses reales de ambas partes.</li>
+            <li>Definir límites mínimos y objetivos máximos.</li>
+            <li>Evaluar los riesgos legales antes de negociar.</li>
+            <li>Escuchar activamente durante todo el proceso.</li>
+            <li>Documentar correctamente cada acuerdo alcanzado.</li>
+            <li>Buscar soluciones donde ambas partes obtengan beneficios.</li>
+            <li>Evitar decisiones impulsivas bajo presión.</li>
+            <li>Contar con asesoría jurídica especializada.</li>
+            <li>Dar seguimiento al cumplimiento del acuerdo.</li>
+          </ol>
+        </section>
+
+        {/* SECCIÓN 4 */}
+        <section className={styles.section}>
+          <h2>
+            8 errores que pueden hacer fracasar una negociación empresarial
+          </h2>
+
+          <div className={styles.card}>
+            <h3>No preparar la negociación</h3>
+            <p>
+              Improvisar suele conducir a acuerdos poco favorables o a la
+              ruptura del proceso.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Negociar únicamente sobre posiciones</h3>
+            <p>
+              Es más efectivo comprender los intereses reales detrás de cada
+              postura.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Desconocer los riesgos jurídicos</h3>
+            <p>
+              La ausencia de análisis legal puede generar acuerdos difíciles de
+              cumplir o incluso inválidos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No dejar los acuerdos por escrito</h3>
+            <p>
+              Documentar cada compromiso evita interpretaciones diferentes en el
+              futuro.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Permitir que las emociones dominen la negociación</h3>
+            <p>
+              Mantener un enfoque profesional facilita alcanzar soluciones
+              objetivas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No considerar alternativas</h3>
+            <p>
+              Evaluar diferentes escenarios mejora la capacidad para construir
+              acuerdos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Buscar únicamente ganar</h3>
+            <p>
+              Las negociaciones sostenibles suelen generar beneficios para ambas
+              partes.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No contar con asesoría especializada</h3>
+            <p>
+              El acompañamiento jurídico ayuda a proteger los intereses de la
+              empresa y reduce riesgos futuros.
             </p>
           </div>
         </section>
@@ -270,6 +504,50 @@ export default function NegociacionEmpresarial() {
             <p>
               Formalizar correctamente los acuerdos brinda mayor seguridad
               jurídica.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Preguntas frecuentes sobre la negociación empresarial en Colombia
+          </h2>
+
+          <div className={styles.card}>
+            <h3>¿La negociación empresarial evita siempre una demanda?</h3>
+
+            <p>
+              No necesariamente. Sin embargo, en muchos casos permite alcanzar
+              acuerdos que eliminan la necesidad de iniciar un proceso judicial.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Es obligatorio contar con un abogado para negociar?</h3>
+
+            <p>
+              No siempre es obligatorio, pero contar con asesoría jurídica ayuda
+              a proteger los intereses de la empresa y a estructurar acuerdos
+              sólidos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Qué conflictos pueden resolverse mediante negociación?</h3>
+
+            <p>
+              Conflictos contractuales, comerciales, societarios, laborales,
+              financieros, con clientes o proveedores, entre muchos otros.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Qué sucede si las partes no llegan a un acuerdo?</h3>
+
+            <p>
+              Dependiendo del caso, pueden acudir a mecanismos como la
+              conciliación, el arbitraje o, en última instancia, a un proceso
+              judicial.
             </p>
           </div>
         </section>

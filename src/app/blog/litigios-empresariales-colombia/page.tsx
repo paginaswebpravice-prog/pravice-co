@@ -1,14 +1,27 @@
 import type { Metadata } from "next";
-import InteligenciaArtificialCobranzas from "./Article";
+import LitigiosEmpresarialesColombia from "./Article";
 
-const canonicalUrl =
-  "https://pravice.co/blog/inteligencia-artificial-cobranzas";
+const canonicalUrl = "https://pravice.co/blog/litigios-empresariales-colombia";
 
 export const metadata: Metadata = {
   title:
-    "Inteligencia artificial en cobranzas en Colombia: cómo recuperar cartera más rápido | Pravice",
+    "Litigios empresariales en Colombia: cómo prevenir demandas y proteger tu empresa en 2026 | Pravice",
+
   description:
-    "Descubre cómo la inteligencia artificial está transformando las cobranzas en Colombia. Aprende a automatizar procesos, reducir mora y mejorar la recuperación de cartera empresarial.",
+    "Guía completa sobre litigios empresariales en Colombia. Descubre las causas más comunes de demandas comerciales, cómo prevenir conflictos legales, reducir riesgos jurídicos y proteger tu empresa antes de llegar a un proceso judicial.",
+
+  keywords: [
+    "litigios empresariales Colombia",
+    "litigios comerciales",
+    "demandas empresariales",
+    "conflictos comerciales Colombia",
+    "abogados litigios empresariales",
+    "prevención de litigios",
+    "litigios societarios",
+    "derecho empresarial Colombia",
+    "procesos judiciales empresas",
+    "conflictos entre socios",
+  ],
 
   alternates: {
     canonical: canonicalUrl,
@@ -16,69 +29,93 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "IA en cobranzas en Colombia: automatiza y recupera cartera más rápido",
+      "Litigios empresariales en Colombia: 12 estrategias para evitar demandas",
+
     description:
-      "Automatización, predicción y eficiencia: así impacta la IA en la recuperación de cartera en Colombia.",
+      "Aprende cómo prevenir litigios empresariales, fortalecer contratos, reducir riesgos jurídicos y proteger tu empresa en Colombia.",
+
     url: canonicalUrl,
+
     siteName: "Pravice",
+
     locale: "es_CO",
+
     type: "article",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
         width: 1200,
         height: 630,
-        alt: "Inteligencia artificial en cobranzas",
+        alt: "Litigios empresariales en Colombia",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "IA en cobranzas en Colombia: cómo mejorar recuperación de cartera",
-    description: "Optimiza tu gestión de cartera con inteligencia artificial.",
+
+    title: "¿Cómo evitar litigios empresariales en Colombia? Guía completa",
+
+    description:
+      "Conoce las causas más comunes de los litigios empresariales y cómo reducir el riesgo de demandas.",
+
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
 
-// SEO Schema JSON-LD
 const schemaData = {
   "@context": "https://schema.org",
+
   "@type": "BlogPosting",
+
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": canonicalUrl,
   },
+
   headline:
-    "Inteligencia artificial en cobranzas en Colombia: cómo recuperar cartera más rápido",
+    "Litigios empresariales en Colombia: cómo prevenir demandas y proteger tu empresa",
+
   description:
-    "Descubre cómo la inteligencia artificial está transformando las cobranzas en Colombia. Aprende a automatizar procesos, reducir mora y mejorar la recuperación de cartera empresarial.",
+    "Guía completa sobre litigios empresariales en Colombia, prevención de conflictos comerciales, litigios societarios, demandas empresariales y estrategias legales para proteger tu negocio.",
+
   image: "https://pravice.co/logo_pravice.png",
+
   author: {
     "@type": "Organization",
     name: "Pravice",
     url: "https://pravice.co",
   },
+
   publisher: {
     "@type": "Organization",
+
     name: "Pravice",
+
     logo: {
       "@type": "ImageObject",
       url: "https://pravice.co/logo_pravice.png",
     },
   },
-  datePublished: "2026-04-28",
-  dateModified: "2026-04-28",
+
+  datePublished: "2026-06-26",
+
+  dateModified: "2026-06-26",
+
   inLanguage: "es-CO",
-  articleSection: "Inteligencia Artificial y Cobranzas",
+
+  articleSection: "Derecho Empresarial",
+
   keywords: [
-    "inteligencia artificial cobranzas Colombia",
-    "IA en recuperación de cartera",
-    "automatización de cobranzas",
-    "cobranza predictiva Colombia",
-    "machine learning finanzas",
-    "recuperación de cartera con IA",
-    "fintech Colombia cobranzas",
+    "litigios empresariales Colombia",
+    "litigios comerciales",
+    "litigios societarios",
+    "conflictos empresariales",
+    "abogados litigios empresariales",
+    "procesos judiciales empresas",
+    "demandas comerciales",
+    "prevención jurídica empresarial",
   ],
 };
 
@@ -92,7 +129,7 @@ export default function Page() {
         }}
       />
 
-      <InteligenciaArtificialCobranzas />
+      <LitigiosEmpresarialesColombia />
     </>
   );
 }

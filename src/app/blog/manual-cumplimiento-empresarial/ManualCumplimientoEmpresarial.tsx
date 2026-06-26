@@ -56,8 +56,13 @@ export default function ManualCumplimientoEmpresarial() {
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cómo estructurar políticas internas de cumplimiento
-            normativo para fortalecer la seguridad jurídica empresarial.
+            Un manual de cumplimiento empresarial bien estructurado ayuda a
+            prevenir sanciones, reducir riesgos legales, fortalecer el gobierno
+            corporativo y demostrar el compromiso de la empresa con el
+            cumplimiento normativo. En esta guía aprenderás qué debe contener,
+            cómo elaborarlo paso a paso, qué errores evitar y cuáles son las
+            mejores prácticas para implementar un programa de compliance en
+            Colombia.
           </motion.p>
         </motion.section>
 
@@ -78,20 +83,31 @@ export default function ManualCumplimientoEmpresarial() {
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Qué aprenderás en esta guía</h3>
+          <h3>Qué encontrarás en esta guía completa</h3>
 
           <ul>
-            <li>Qué es un manual de cumplimiento empresarial</li>
-            <li>Para qué sirve dentro de una empresa</li>
-            <li>Elementos esenciales del manual</li>
-            <li>Cómo implementar políticas internas</li>
-            <li>Buenas prácticas de compliance empresarial</li>
+            <li>Qué es un manual de cumplimiento empresarial.</li>
+            <li>Para qué sirve dentro de una organización.</li>
+            <li>Qué empresas deberían implementarlo.</li>
+            <li>Qué normas debe contemplar.</li>
+            <li>Los 12 elementos indispensables del manual.</li>
+            <li>Cómo elaborarlo paso a paso.</li>
+            <li>Errores más frecuentes al diseñarlo.</li>
+            <li>
+              Diferencias entre compliance, código de ética y manual de
+              cumplimiento.
+            </li>
+            <li>Cómo mantenerlo actualizado.</li>
+            <li>Preguntas frecuentes.</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué es un manual de cumplimiento empresarial</h2>
+          <h2>
+            ¿Qué es un manual de cumplimiento empresarial y por qué todas las
+            empresas deberían tener uno?
+          </h2>
 
           <p>
             El manual de cumplimiento es un documento que establece reglas,
@@ -122,7 +138,10 @@ export default function ManualCumplimientoEmpresarial() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Importancia del compliance empresarial</h2>
+          <h2>
+            7 beneficios de implementar un manual de cumplimiento empresarial en
+            Colombia
+          </h2>
 
           <p>
             Implementar programas de cumplimiento fortalece la seguridad
@@ -160,41 +179,247 @@ export default function ManualCumplimientoEmpresarial() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Elementos esenciales del manual</h2>
+          <h2>
+            ¿Qué debe incluir un manual de cumplimiento empresarial? 12
+            elementos indispensables
+          </h2>
 
           <p>
-            Un manual de cumplimiento debe adaptarse a las necesidades y riesgos
-            específicos de cada empresa.
+            Un manual de cumplimiento empresarial no consiste únicamente en un
+            conjunto de políticas internas. Debe convertirse en una guía
+            práctica que permita a directivos, colaboradores y terceros conocer
+            las obligaciones, controles y procedimientos que la organización
+            implementa para prevenir riesgos legales y fortalecer el
+            cumplimiento normativo.
+          </p>
+
+          <p>
+            Aunque cada empresa debe adaptar el contenido a su actividad
+            económica, tamaño y nivel de riesgo, estos son algunos de los
+            componentes que no deberían faltar en un programa de cumplimiento
+            empresarial en Colombia.
           </p>
 
           <div className={styles.card}>
-            <h3>Políticas internas</h3>
+            <h3>1. Código de ética y principios corporativos</h3>
+
             <p>
-              Incluyen normas de conducta, ética y procedimientos corporativos.
+              Debe establecer los valores, principios y estándares de conducta
+              que orientan las actuaciones de empleados, administradores,
+              proveedores y demás personas que interactúan con la organización.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Roles y responsabilidades</h3>
-            <p>Define funciones y obligaciones de empleados y directivos.</p>
-          </div>
+            <h3>2. Políticas internas de cumplimiento</h3>
 
-          <div className={styles.card}>
-            <h3>Controles y supervisión</h3>
-            <p>Establece mecanismos de seguimiento y monitoreo interno.</p>
-          </div>
-
-          <div className={styles.card}>
-            <h3>Canales de reporte</h3>
             <p>
-              Facilita la denuncia interna de irregularidades o incumplimientos.
+              Incluyen las reglas que deben seguir todas las áreas de la empresa
+              para garantizar el cumplimiento de la legislación, los reglamentos
+              internos y las obligaciones contractuales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>3. Roles, funciones y responsabilidades</h3>
+
+            <p>
+              El manual debe definir quiénes son responsables de implementar,
+              supervisar y actualizar el programa de cumplimiento, así como las
+              obligaciones de cada colaborador.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>4. Identificación y gestión de riesgos</h3>
+
+            <p>
+              Es recomendable incluir una metodología para identificar, evaluar,
+              clasificar y controlar los riesgos legales, financieros,
+              operativos y reputacionales que puedan afectar a la empresa.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Procedimientos de control interno</h3>
+
+            <p>
+              Deben establecerse mecanismos de supervisión, autorizaciones,
+              verificaciones y revisiones periódicas para garantizar el
+              cumplimiento de las políticas corporativas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Canales de denuncia y reporte</h3>
+
+            <p>
+              La organización debe contar con mecanismos seguros y
+              confidenciales para reportar posibles incumplimientos, fraudes o
+              conductas contrarias a las políticas internas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Procedimiento para investigaciones internas</h3>
+
+            <p>
+              El manual debe explicar cómo se gestionarán las investigaciones
+              cuando se detecten incumplimientos, garantizando imparcialidad,
+              confidencialidad y respeto por el debido proceso.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>8. Régimen disciplinario</h3>
+
+            <p>
+              También es importante establecer las consecuencias aplicables
+              cuando se incumplan las políticas de cumplimiento, siempre
+              respetando la legislación laboral vigente.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>9. Programa de capacitación permanente</h3>
+
+            <p>
+              El cumplimiento solo funciona cuando los colaboradores conocen las
+              normas y saben cómo aplicarlas en su trabajo diario mediante
+              capacitaciones periódicas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>10. Protección de datos y seguridad de la información</h3>
+
+            <p>
+              El manual debe incorporar procedimientos relacionados con Habeas
+              Data, confidencialidad, manejo de información sensible y controles
+              de seguridad informática cuando sean aplicables.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>11. Auditorías y seguimiento del programa</h3>
+
+            <p>
+              Es recomendable establecer revisiones periódicas que permitan
+              verificar si las políticas realmente se están cumpliendo e
+              identificar oportunidades de mejora.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>12. Procedimiento para actualizar el manual</h3>
+
+            <p>
+              El documento debe revisarse regularmente para incorporar cambios
+              normativos, nuevas actividades empresariales y riesgos que puedan
+              surgir con el crecimiento de la organización.
+            </p>
+          </div>
+        </section>
+
+        {/* SECCIÓN NUEVA */}
+        <section className={styles.section}>
+          <h2>
+            7 beneficios de implementar un manual de cumplimiento empresarial en
+            Colombia
+          </h2>
+
+          <p>
+            Implementar un manual de cumplimiento no solo ayuda a cumplir las
+            normas legales. También fortalece la gestión empresarial, mejora la
+            toma de decisiones y disminuye la probabilidad de enfrentar
+            investigaciones, sanciones o conflictos internos.
+          </p>
+
+          <p>
+            Cuando el manual está correctamente diseñado y es aplicado por toda
+            la organización, se convierte en una herramienta preventiva que
+            aporta valor a la empresa en el corto, mediano y largo plazo.
+          </p>
+
+          <div className={styles.card}>
+            <h3>1. Reduce riesgos legales y sanciones administrativas</h3>
+
+            <p>
+              Establecer procedimientos claros permite identificar
+              incumplimientos antes de que generen investigaciones por parte de
+              autoridades o conflictos judiciales que afecten la operación del
+              negocio.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>2. Fortalece la cultura de cumplimiento</h3>
+
+            <p>
+              Los colaboradores conocen qué comportamientos son aceptables,
+              cuáles son las políticas internas y cómo actuar frente a
+              situaciones que puedan representar riesgos legales o éticos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>3. Mejora la toma de decisiones empresariales</h3>
+
+            <p>
+              Directivos, administradores y líderes cuentan con lineamientos que
+              les permiten actuar de manera consistente, reduciendo decisiones
+              improvisadas que puedan afectar a la empresa.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>
+              4. Incrementa la confianza de clientes, inversionistas y aliados
+            </h3>
+
+            <p>
+              Una empresa con políticas claras transmite mayor transparencia,
+              fortalece su reputación y genera mayor seguridad en las relaciones
+              comerciales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Facilita auditorías y procesos de control interno</h3>
+
+            <p>
+              Tener procedimientos documentados permite demostrar cómo se
+              gestionan los riesgos y facilita las revisiones realizadas por
+              auditorías internas o externas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Disminuye conflictos laborales y operativos</h3>
+
+            <p>
+              Al definir funciones, responsabilidades y protocolos de actuación
+              se reducen errores, malentendidos y diferencias entre áreas de la
+              empresa.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Favorece el crecimiento sostenible de la organización</h3>
+
+            <p>
+              Un sistema de cumplimiento sólido permite que la empresa crezca
+              con mayor orden, seguridad jurídica y capacidad para adaptarse a
+              nuevos requisitos regulatorios.
             </p>
           </div>
         </section>
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Cómo implementar un manual correctamente</h2>
+          <h2>
+            Cómo elaborar un manual de cumplimiento empresarial paso a paso
+          </h2>
 
           <p>
             La implementación requiere planeación estratégica y participación de
@@ -235,48 +460,104 @@ export default function ManualCumplimientoEmpresarial() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Buenas prácticas de cumplimiento empresarial</h2>
+          <h2>
+            7 beneficios de implementar un manual de cumplimiento empresarial en
+            Colombia
+          </h2>
 
           <p>
-            Las organizaciones deben fortalecer continuamente sus sistemas de
-            control y cumplimiento.
+            Implementar un manual de cumplimiento no solo ayuda a cumplir las
+            normas legales. También fortalece la gestión empresarial, mejora la
+            toma de decisiones y disminuye la probabilidad de enfrentar
+            investigaciones, sanciones o conflictos internos.
+          </p>
+
+          <p>
+            Cuando el manual está correctamente diseñado y es aplicado por toda
+            la organización, se convierte en una herramienta preventiva que
+            aporta valor a la empresa en el corto, mediano y largo plazo.
           </p>
 
           <div className={styles.card}>
-            <h3>Asesoría jurídica especializada</h3>
+            <h3>1. Reduce riesgos legales y sanciones administrativas</h3>
+
             <p>
-              Contar con expertos facilita estructurar políticas empresariales
-              adecuadas.
+              Establecer procedimientos claros permite identificar
+              incumplimientos antes de que generen investigaciones por parte de
+              autoridades o conflictos judiciales que afecten la operación del
+              negocio.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Cultura organizacional ética</h3>
+            <h3>2. Fortalece la cultura de cumplimiento</h3>
+
             <p>
-              Promover valores corporativos fortalece el cumplimiento interno.
+              Los colaboradores conocen qué comportamientos son aceptables,
+              cuáles son las políticas internas y cómo actuar frente a
+              situaciones que puedan representar riesgos legales o éticos.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Auditorías periódicas</h3>
+            <h3>3. Mejora la toma de decisiones empresariales</h3>
+
             <p>
-              Revisar procesos internos ayuda a detectar incumplimientos
-              oportunamente.
+              Directivos, administradores y líderes cuentan con lineamientos que
+              les permiten actuar de manera consistente, reduciendo decisiones
+              improvisadas que puedan afectar a la empresa.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Uso de tecnología</h3>
+            <h3>
+              4. Incrementa la confianza de clientes, inversionistas y aliados
+            </h3>
+
             <p>
-              Las herramientas digitales facilitan el control y seguimiento
-              normativo.
+              Una empresa con políticas claras transmite mayor transparencia,
+              fortalece su reputación y genera mayor seguridad en las relaciones
+              comerciales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Facilita auditorías y procesos de control interno</h3>
+
+            <p>
+              Tener procedimientos documentados permite demostrar cómo se
+              gestionan los riesgos y facilita las revisiones realizadas por
+              auditorías internas o externas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Disminuye conflictos laborales y operativos</h3>
+
+            <p>
+              Al definir funciones, responsabilidades y protocolos de actuación
+              se reducen errores, malentendidos y diferencias entre áreas de la
+              empresa.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Favorece el crecimiento sostenible de la organización</h3>
+
+            <p>
+              Un sistema de cumplimiento sólido permite que la empresa crezca
+              con mayor orden, seguridad jurídica y capacidad para adaptarse a
+              nuevos requisitos regulatorios.
             </p>
           </div>
         </section>
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre manuales de cumplimiento empresarial</h2>
+          <h2>
+            Manual de cumplimiento empresarial: una inversión que reduce riesgos
+            legales y fortalece el crecimiento de la empresa
+          </h2>
 
           <p>
             Elaborar un manual de cumplimiento empresarial permite fortalecer la

@@ -5,19 +5,21 @@ const canonicalUrl =
   "https://pravice.co/blog/gestion-conflictos-organizacionales";
 
 export const metadata: Metadata = {
-  title: "Gestión de conflictos organizacionales en empresas | Pravice",
+  title:
+    "Gestión de conflictos organizacionales: 12 estrategias para resolverlos en empresas | Pravice",
 
   description:
-    "Cómo prevenir y resolver conflictos organizacionales que afectan la productividad empresarial.",
+    "Aprende cómo gestionar conflictos organizacionales en empresas colombianas. Descubre las causas más comunes, ejemplos, estrategias de resolución y buenas prácticas para mejorar el clima laboral.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Gestión de conflictos organizacionales en empresas",
+    title:
+      "Gestión de conflictos organizacionales: causas, ejemplos y soluciones",
     description:
-      "Estrategias para prevenir disputas internas y mejorar el clima laboral.",
+      "Conoce cómo prevenir y resolver conflictos organizacionales antes de que afecten la productividad y el ambiente laboral.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -36,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Gestión de conflictos organizacionales en empresas",
     description:
-      "Cómo prevenir conflictos internos y mejorar la productividad.",
+      "Guía práctica para prevenir conflictos internos y mejorar el clima laboral.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -52,10 +54,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Gestión de conflictos organizacionales en empresas",
+  headline:
+    "Gestión de conflictos organizacionales: causas, ejemplos y estrategias para resolverlos",
 
   description:
-    "Cómo prevenir y resolver conflictos organizacionales que afectan la productividad empresarial.",
+    "Guía completa para identificar, prevenir y resolver conflictos organizacionales en empresas colombianas sin afectar la productividad.",
 
   image: "https://pravice.co/logo_pravice.png",
 
@@ -82,14 +85,16 @@ const schemaData = {
   articleSection: "Conflictos Organizacionales",
 
   keywords: [
+    "gestión de conflictos organizacionales",
     "conflictos organizacionales",
-    "gestión de conflictos empresariales",
-    "conflictos laborales",
+    "cómo resolver conflictos laborales",
+    "tipos de conflictos organizacionales",
+    "causas de conflictos organizacionales",
+    "estrategias para resolver conflictos",
+    "conflictos en equipos de trabajo",
     "clima organizacional",
-    "productividad empresarial",
-    "manejo de equipos",
-    "resolución de conflictos internos",
     "liderazgo empresarial",
+    "manejo de conflictos empresariales",
   ],
 };
 

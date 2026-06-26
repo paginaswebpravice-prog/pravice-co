@@ -51,12 +51,16 @@ export default function MecanismosResolucionConflictos() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Mecanismos alternativos de resolución de conflictos en Colombia
+            Mecanismos alternativos de resolución de conflictos en Colombia:
+            cuándo usar conciliación, arbitraje o mediación
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cómo funcionan la conciliación, mediación y arbitraje en
-            Colombia para resolver conflictos de forma más rápida y eficiente.
+            Descubre cuáles son los principales mecanismos alternativos de
+            resolución de conflictos en Colombia, cuándo conviene utilizar la
+            conciliación, el arbitraje o la mediación y cómo pueden ayudarte a
+            resolver disputas legales de forma más rápida, económica y eficiente
+            que un proceso judicial tradicional.
           </motion.p>
         </motion.section>
 
@@ -80,18 +84,26 @@ export default function MecanismosResolucionConflictos() {
           <h3>Qué aprenderás en este artículo</h3>
 
           <ul>
-            <li>Qué son los mecanismos alternativos de resolución</li>
-            <li>Cómo funciona la conciliación</li>
-            <li>Qué es el arbitraje</li>
-            <li>Cómo actúa la mediación</li>
-            <li>Ventajas frente a procesos judiciales</li>
+            <li>
+              Qué son los mecanismos alternativos de resolución de conflictos
+              (MASC)
+            </li>
+            <li>Diferencias entre conciliación, arbitraje y mediación</li>
+            <li>Qué conflictos pueden resolverse sin acudir a un juez</li>
+            <li>Ventajas frente a un proceso judicial</li>
+            <li>Cuándo elegir cada mecanismo según el tipo de conflicto</li>
+            <li>Errores que debes evitar antes de iniciar una demanda</li>
+            <li>
+              Preguntas frecuentes sobre resolución alternativa de conflictos
+            </li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
           <h2>
-            Qué son los mecanismos alternativos de resolución de conflictos
+            ¿Qué son los mecanismos alternativos de resolución de conflictos
+            (MASC) y para qué sirven en Colombia?
           </h2>
 
           <p>
@@ -123,7 +135,10 @@ export default function MecanismosResolucionConflictos() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Conciliación en Colombia</h2>
+          <h2>
+            Conciliación en Colombia: cuándo conviene utilizarla y cuáles son
+            sus principales ventajas
+          </h2>
 
           <p>
             La conciliación es uno de los mecanismos más utilizados para
@@ -157,7 +172,10 @@ export default function MecanismosResolucionConflictos() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Qué es el arbitraje</h2>
+          <h2>
+            Arbitraje en Colombia: cómo funciona y cuándo es mejor que un
+            proceso judicial
+          </h2>
 
           <p>
             El arbitraje es un mecanismo donde un árbitro o tribunal arbitral
@@ -191,7 +209,10 @@ export default function MecanismosResolucionConflictos() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Cómo funciona la mediación</h2>
+          <h2>
+            Mediación de conflictos: cómo funciona y en qué casos puede ayudarte
+            a llegar a un acuerdo
+          </h2>
 
           <p>
             La mediación busca facilitar la comunicación entre las partes para
@@ -224,57 +245,283 @@ export default function MecanismosResolucionConflictos() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Ventajas de los mecanismos alternativos de resolución</h2>
+          <h2>
+            12 beneficios de utilizar mecanismos alternativos de resolución de
+            conflictos frente a un proceso judicial
+          </h2>
 
           <p>
-            Utilizar estos procedimientos ofrece múltiples beneficios frente a
-            procesos judiciales tradicionales.
+            Los mecanismos alternativos de resolución de conflictos (MASC) se
+            han convertido en una herramienta ampliamente utilizada por
+            personas, empresas y organizaciones que buscan solucionar
+            controversias de forma más rápida, eficiente y colaborativa. En
+            muchos casos permiten evitar largos procesos judiciales, reducir
+            costos y preservar las relaciones entre las partes.
+          </p>
+
+          <p>
+            Aunque no todos los conflictos pueden resolverse mediante
+            conciliación, arbitraje o mediación, cuando la ley lo permite estos
+            mecanismos ofrecen ventajas importantes tanto desde el punto de
+            vista económico como jurídico.
           </p>
 
           <div className={styles.card}>
-            <h3>Menor desgaste emocional</h3>
+            <h3>1. Resolución de conflictos en menos tiempo</h3>
             <p>
-              Los acuerdos negociados suelen reducir tensiones entre las partes.
+              Los procesos de conciliación, arbitraje o mediación suelen
+              desarrollarse mucho más rápido que un proceso judicial ordinario,
+              permitiendo obtener soluciones en semanas o pocos meses
+              dependiendo de la complejidad del caso.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Mayor rapidez</h3>
+            <h3>2. Reducción significativa de costos legales</h3>
             <p>
-              Muchos conflictos pueden resolverse en menos tiempo que un juicio
-              ordinario.
+              Al disminuir la duración del conflicto también se reducen
+              honorarios, gastos administrativos, costos procesales y el impacto
+              económico que representa mantener un litigio durante largos
+              periodos.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Protección de relaciones</h3>
+            <h3>3. Mayor confidencialidad del conflicto</h3>
             <p>
-              Facilitan mantener relaciones comerciales, laborales o familiares.
+              Especialmente en el arbitraje y en algunos procesos de mediación,
+              las actuaciones pueden desarrollarse con un mayor nivel de
+              reserva, lo que ayuda a proteger información comercial, financiera
+              o estratégica.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Soluciones más flexibles</h3>
+            <h3>4. Conservación de las relaciones comerciales y personales</h3>
             <p>
-              Las partes pueden construir acuerdos adaptados a sus necesidades.
+              A diferencia de un litigio tradicional, estos mecanismos promueven
+              el diálogo y la búsqueda de acuerdos, facilitando que clientes,
+              proveedores, socios o familiares puedan continuar su relación
+              después de resolver la controversia.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Mayor participación de las partes en la solución</h3>
+            <p>
+              En la conciliación y la mediación las partes participan
+              activamente en la construcción del acuerdo, lo que incrementa el
+              compromiso con su cumplimiento y reduce futuros conflictos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Soluciones adaptadas a las necesidades del caso</h3>
+            <p>
+              Los acuerdos alcanzados pueden ajustarse a la realidad económica,
+              comercial o personal de quienes participan, permitiendo soluciones
+              mucho más flexibles que una decisión judicial tradicional.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Disminución del desgaste emocional</h3>
+            <p>
+              Los procesos judiciales suelen generar altos niveles de estrés e
+              incertidumbre. Los mecanismos alternativos buscan reducir la
+              confrontación y favorecer un ambiente de diálogo y cooperación.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>8. Mayor especialización en la resolución del conflicto</h3>
+            <p>
+              En el arbitraje es posible contar con árbitros especializados en
+              materias como derecho comercial, contratación, construcción,
+              propiedad intelectual o conflictos societarios, lo que mejora la
+              calidad técnica de las decisiones.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>9. Menor congestión judicial</h3>
+            <p>
+              Al resolver controversias mediante mecanismos alternativos se
+              reduce la carga de los despachos judiciales y se promueve una
+              administración de justicia más eficiente para todos los
+              ciudadanos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>10. Mayor seguridad para empresas y organizaciones</h3>
+            <p>
+              Resolver oportunamente los conflictos permite disminuir riesgos
+              financieros, proteger la continuidad del negocio y evitar que una
+              disputa afecte la operación normal de la empresa.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>11. Cumplimiento más efectivo de los acuerdos</h3>
+            <p>
+              Cuando las partes participan en la construcción de la solución
+              existe una mayor disposición para cumplir los compromisos
+              adquiridos, reduciendo la posibilidad de nuevos conflictos
+              derivados del mismo problema.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>12. Prevención de futuros litigios</h3>
+            <p>
+              Además de resolver la controversia actual, estos mecanismos
+              permiten identificar las causas del conflicto, fortalecer la
+              comunicación entre las partes y establecer compromisos que ayuden
+              a prevenir nuevas disputas en el futuro.
+            </p>
+          </div>
+
+          <p>
+            Elegir el mecanismo adecuado dependerá del tipo de conflicto, de la
+            relación existente entre las partes y de los objetivos que se
+            pretendan alcanzar. Contar con asesoría jurídica desde el inicio
+            facilita determinar si la conciliación, el arbitraje o la mediación
+            representan la mejor alternativa para resolver la controversia de
+            manera eficiente y con menores riesgos.
+          </p>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Diferencias entre conciliación, arbitraje y mediación: ¿cuál elegir
+            según tu caso?
+          </h2>
+
+          <p>
+            Aunque estos mecanismos buscan resolver conflictos sin acudir a un
+            proceso judicial tradicional, cada uno tiene características,
+            procedimientos y efectos jurídicos diferentes. Elegir correctamente
+            puede reducir costos, ahorrar tiempo y aumentar las probabilidades
+            de llegar a una solución efectiva.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Conciliación</h3>
+            <p>
+              Las partes construyen un acuerdo con la ayuda de un conciliador
+              neutral. Es ideal cuando existe disposición para negociar y
+              mantener la relación entre las partes.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Arbitraje</h3>
+            <p>
+              Un árbitro o tribunal arbitral analiza las pruebas y adopta una
+              decisión obligatoria para las partes. Es frecuente en conflictos
+              comerciales, societarios y contractuales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Mediación</h3>
+            <p>
+              El mediador facilita la comunicación, pero no impone decisiones.
+              Su objetivo es que las partes construyan voluntariamente una
+              solución que beneficie a ambas.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            ¿Qué conflictos pueden resolverse mediante mecanismos alternativos
+            en Colombia?
+          </h2>
+
+          <p>
+            Los mecanismos alternativos son aplicables a una amplia variedad de
+            controversias civiles, comerciales, empresariales, laborales y
+            contractuales. Sin embargo, su procedencia depende de la naturaleza
+            del conflicto y de las normas que regulan cada materia.
+          </p>
+
+          <ul>
+            <li>Incumplimiento de contratos comerciales.</li>
+            <li>Conflictos entre socios.</li>
+            <li>Disputas entre empresas y proveedores.</li>
+            <li>Cobro de obligaciones.</li>
+            <li>Conflictos laborales conciliables.</li>
+            <li>Responsabilidad civil.</li>
+            <li>Problemas de arrendamiento.</li>
+            <li>Conflictos familiares permitidos por la ley.</li>
+            <li>Controversias mercantiles.</li>
+            <li>Conflictos sobre prestación de servicios.</li>
+          </ul>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Errores más comunes al intentar resolver un conflicto sin asesoría
+            jurídica
+          </h2>
+
+          <div className={styles.card}>
+            <h3>Firmar acuerdos poco claros</h3>
+            <p>
+              Los acuerdos ambiguos generan nuevos conflictos y pueden
+              dificultar su cumplimiento posterior.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No documentar las negociaciones</h3>
+            <p>
+              Conservar evidencia de las conversaciones y propuestas facilita
+              demostrar la buena fe y proteger los intereses de las partes.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Elegir un mecanismo inadecuado</h3>
+            <p>
+              No todos los conflictos deben resolverse mediante conciliación o
+              arbitraje. Analizar previamente el caso permite seleccionar el
+              procedimiento más conveniente.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Esperar demasiado para negociar</h3>
+            <p>
+              Retrasar el diálogo suele aumentar los costos, deteriorar las
+              relaciones y reducir las posibilidades de alcanzar un acuerdo
+              satisfactorio.
             </p>
           </div>
         </section>
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre resolución alternativa de conflictos</h2>
+          <h2>
+            ¿Cuál es el mejor mecanismo alternativo para resolver un conflicto
+            en Colombia?
+          </h2>
 
           <p>
-            Los mecanismos alternativos de resolución de conflictos permiten
-            solucionar disputas de forma más rápida, económica y colaborativa en
-            Colombia.
+            La conciliación, el arbitraje y la mediación representan
+            alternativas eficaces para resolver numerosos conflictos sin
+            necesidad de afrontar procesos judiciales extensos. Elegir el
+            mecanismo adecuado depende del tipo de controversia, de la relación
+            entre las partes y de los objetivos que se pretendan alcanzar.
           </p>
 
           <p>
-            La conciliación, mediación y arbitraje son herramientas importantes
-            para evitar litigios prolongados y encontrar soluciones efectivas
-            entre las partes.
+            Analizar cada caso con anticipación, contar con asesoría jurídica y
+            optar por la vía más apropiada puede reducir costos, disminuir
+            riesgos legales y lograr soluciones más rápidas, confidenciales y
+            sostenibles para empresas y personas en Colombia.
           </p>
         </section>
 

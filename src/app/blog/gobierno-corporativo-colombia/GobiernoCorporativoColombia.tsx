@@ -9,9 +9,9 @@ export default function GobiernoCorporativoColombia() {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline:
-      "Gobierno corporativo en Colombia: buenas prácticas empresariales",
+      "Gobierno corporativo en Colombia: qué es, beneficios y buenas prácticas para empresas",
     description:
-      "Conoce cómo implementar estructuras de gobierno corporativo y fortalecer la gestión empresarial en Colombia.",
+      "Aprende qué es el gobierno corporativo, cómo funciona en Colombia y cuáles son las mejores prácticas para reducir riesgos y fortalecer la sostenibilidad empresarial.",
     image: "https://pravice.co/og-image.jpg",
     author: {
       "@type": "Organization",
@@ -52,46 +52,78 @@ export default function GobiernoCorporativoColombia() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Gobierno corporativo en Colombia: buenas prácticas empresariales
+            ¿Qué es el gobierno corporativo en Colombia? Beneficios, principios
+            y buenas prácticas para empresas
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cómo implementar estructuras de gobierno corporativo para
-            fortalecer la transparencia y sostenibilidad empresarial.
+            El gobierno corporativo es uno de los pilares para construir
+            empresas más transparentes, sostenibles y competitivas. Conoce cómo
+            implementar buenas prácticas, fortalecer la toma de decisiones y
+            reducir riesgos legales, financieros y administrativos en
+            organizaciones colombianas.
           </motion.p>
         </motion.section>
 
         {/* INTRO */}
         <section className={styles.section}>
           <p>
-            El gobierno corporativo es un conjunto de principios, políticas y
-            estructuras que permiten dirigir y controlar adecuadamente una
-            empresa.
+            El crecimiento de una empresa no depende únicamente de sus ventas o
+            de la calidad de sus productos. También requiere una estructura
+            organizacional sólida que permita tomar decisiones de forma
+            transparente, administrar adecuadamente los riesgos y generar
+            confianza entre socios, inversionistas, clientes y colaboradores.
           </p>
 
           <p>
-            En Colombia, implementar buenas prácticas de gobierno corporativo
-            ayuda a fortalecer la confianza de inversionistas, socios y
-            clientes.
+            Precisamente ese es el objetivo del gobierno corporativo. Aunque
+            muchas personas creen que solo aplica para grandes compañías o
+            empresas que cotizan en bolsa, en realidad cualquier organización
+            puede beneficiarse de implementar políticas claras, órganos de
+            control, mecanismos de supervisión y procesos de cumplimiento.
+          </p>
+
+          <p>
+            En Colombia, cada vez más empresas familiares, sociedades
+            comerciales y compañías en proceso de expansión incorporan prácticas
+            de gobierno corporativo para fortalecer su sostenibilidad, prevenir
+            conflictos societarios y facilitar el acceso a inversión.
           </p>
         </section>
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Qué aprenderás en esta guía</h3>
+          <h3>
+            ¿Qué encontrarás en esta guía sobre gobierno corporativo en
+            Colombia?
+          </h3>
 
           <ul>
-            <li>Qué es el gobierno corporativo</li>
-            <li>Por qué es importante para las empresas</li>
-            <li>Estructuras básicas de gobierno empresarial</li>
-            <li>Principales riesgos organizacionales</li>
-            <li>Buenas prácticas corporativas</li>
+            <li>Qué es el gobierno corporativo y para qué sirve.</li>
+            <li>
+              Por qué es importante para empresas pequeñas, medianas y grandes.
+            </li>
+            <li>Los principios fundamentales del buen gobierno corporativo.</li>
+            <li>
+              Cómo implementar un sistema de gobierno corporativo paso a paso.
+            </li>
+            <li>
+              Funciones de la asamblea, junta directiva y representante legal.
+            </li>
+            <li>
+              Errores más comunes que afectan la transparencia empresarial.
+            </li>
+            <li>Beneficios para inversionistas, socios y clientes.</li>
+            <li>Buenas prácticas aplicadas por empresas colombianas.</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué es el gobierno corporativo</h2>
+          <h2>
+            ¿Qué es el gobierno corporativo y por qué es importante para las
+            empresas en Colombia?
+          </h2>
 
           <p>
             El gobierno corporativo define cómo se toman decisiones dentro de la
@@ -120,9 +152,74 @@ export default function GobiernoCorporativoColombia() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>
+            ¿Cuáles son los principios del gobierno corporativo en Colombia?
+          </h2>
+
+          <p>
+            Un sistema de gobierno corporativo no depende únicamente de tener
+            una junta directiva o un reglamento interno. Su verdadero propósito
+            es garantizar que todas las decisiones empresariales se tomen bajo
+            principios que generen confianza, transparencia y sostenibilidad.
+          </p>
+
+          <p>
+            Cuando estos principios se aplican correctamente, disminuyen los
+            conflictos societarios, mejoran la administración de riesgos y
+            fortalecen la reputación de la empresa frente a inversionistas,
+            entidades financieras, clientes y organismos de control.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Transparencia</h3>
+            <p>
+              Toda la información relevante debe comunicarse de forma clara,
+              completa y oportuna a socios, inversionistas y demás grupos de
+              interés.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Responsabilidad</h3>
+            <p>
+              Cada órgano de administración debe conocer sus funciones, límites
+              y obligaciones para evitar decisiones arbitrarias.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Rendición de cuentas</h3>
+            <p>
+              Los administradores deben explicar las decisiones tomadas y asumir
+              la responsabilidad de los resultados obtenidos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Equidad</h3>
+            <p>
+              Todos los socios deben recibir un trato justo, evitando
+              privilegios injustificados y posibles conflictos de interés.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Cumplimiento normativo</h3>
+            <p>
+              La empresa debe desarrollar mecanismos que aseguren el
+              cumplimiento de la legislación colombiana y de sus propias
+              políticas internas.
+            </p>
+          </div>
+        </section>
+
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Importancia del gobierno corporativo</h2>
+          <h2>
+            7 beneficios del gobierno corporativo para el crecimiento y la
+            sostenibilidad empresarial
+          </h2>
 
           <p>
             Implementar estructuras organizacionales sólidas mejora la
@@ -163,7 +260,10 @@ export default function GobiernoCorporativoColombia() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Estructuras básicas de gobierno corporativo</h2>
+          <h2>
+            ¿Cuáles son los órganos y estructuras del gobierno corporativo en
+            una empresa?
+          </h2>
 
           <p>
             Las empresas deben definir mecanismos claros de supervisión y
@@ -202,9 +302,79 @@ export default function GobiernoCorporativoColombia() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>
+            Cómo implementar un gobierno corporativo en una empresa paso a paso
+          </h2>
+
+          <p>
+            Muchas empresas creen que el gobierno corporativo solo aplica para
+            grandes compañías, pero cualquier organización puede implementar
+            mecanismos de control adaptados a su tamaño.
+          </p>
+
+          <div className={styles.card}>
+            <h3>1. Definir claramente la estructura organizacional</h3>
+
+            <p>
+              Es importante establecer quién toma decisiones estratégicas, quién
+              ejecuta las operaciones y quién supervisa el cumplimiento de las
+              políticas internas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>2. Elaborar políticas internas</h3>
+
+            <p>
+              Las políticas corporativas ayudan a estandarizar procesos y
+              reducir la improvisación en la toma de decisiones.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>3. Crear controles internos</h3>
+
+            <p>
+              Los sistemas de control permiten detectar riesgos financieros,
+              operativos y legales antes de que generen pérdidas importantes.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>4. Implementar auditorías periódicas</h3>
+
+            <p>
+              Las auditorías permiten verificar que las políticas realmente se
+              estén cumpliendo dentro de la organización.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Gestionar riesgos empresariales</h3>
+
+            <p>
+              Identificar los riesgos permite diseñar planes de prevención que
+              protejan la continuidad del negocio.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Capacitar permanentemente a directivos y colaboradores</h3>
+
+            <p>
+              Un buen gobierno corporativo depende de que todas las personas
+              comprendan sus responsabilidades dentro de la organización.
+            </p>
+          </div>
+        </section>
+
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Riesgos por falta de gobierno corporativo</h2>
+          <h2>
+            Los principales riesgos de una empresa que no implementa gobierno
+            corporativo
+          </h2>
 
           <p>
             La ausencia de controles y estructuras claras puede afectar
@@ -245,7 +415,10 @@ export default function GobiernoCorporativoColombia() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Buenas prácticas empresariales</h2>
+          <h2>
+            10 buenas prácticas de gobierno corporativo que toda empresa debería
+            implementar
+          </h2>
 
           <p>
             Las organizaciones deben fortalecer continuamente sus mecanismos de
@@ -284,9 +457,103 @@ export default function GobiernoCorporativoColombia() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>
+            Errores más comunes al implementar un gobierno corporativo en
+            Colombia
+          </h2>
+
+          <p>
+            Incluso empresas que cuentan con juntas directivas y manuales
+            internos pueden presentar deficiencias importantes cuando el
+            gobierno corporativo se implementa únicamente como un requisito
+            documental.
+          </p>
+
+          <div className={styles.card}>
+            <h3>No definir responsabilidades</h3>
+
+            <p>
+              La falta de claridad sobre quién toma decisiones genera duplicidad
+              de funciones y conflictos entre directivos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No actualizar las políticas internas</h3>
+
+            <p>
+              Las empresas evolucionan constantemente, por lo que las políticas
+              deben revisarse de forma periódica.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Ignorar la gestión de riesgos</h3>
+
+            <p>
+              No identificar riesgos financieros, legales o reputacionales puede
+              afectar gravemente la estabilidad empresarial.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Confundir administración con supervisión</h3>
+
+            <p>
+              Los órganos encargados de supervisar no deben asumir funciones
+              operativas, ya que esto afecta la independencia de los controles.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No documentar las decisiones</h3>
+
+            <p>
+              Registrar adecuadamente las decisiones corporativas mejora la
+              trazabilidad y facilita la rendición de cuentas.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Beneficios del gobierno corporativo para las empresas colombianas
+          </h2>
+
+          <p>
+            Un sistema sólido de gobierno corporativo genera beneficios que van
+            mucho más allá del cumplimiento legal. También mejora la eficiencia
+            administrativa, fortalece la confianza del mercado y facilita el
+            crecimiento sostenible.
+          </p>
+
+          <ul>
+            <li>Mayor transparencia en la toma de decisiones.</li>
+            <li>Reducción de conflictos entre socios.</li>
+            <li>
+              Mayor confianza para inversionistas y entidades financieras.
+            </li>
+            <li>Mejor control sobre riesgos empresariales.</li>
+            <li>Mayor facilidad para acceder a financiación.</li>
+            <li>Fortalecimiento de la reputación corporativa.</li>
+            <li>Mejor cumplimiento de obligaciones legales.</li>
+            <li>Mayor sostenibilidad a largo plazo.</li>
+          </ul>
+
+          <p>
+            Empresas con estructuras claras suelen responder mejor frente a
+            cambios del mercado, auditorías, procesos de expansión y situaciones
+            de crisis.
+          </p>
+        </section>
+
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre gobierno corporativo</h2>
+          <h2>
+            Conclusión: implementar un buen gobierno corporativo fortalece
+            cualquier empresa
+          </h2>
 
           <p>
             Implementar buenas prácticas de gobierno corporativo fortalece la

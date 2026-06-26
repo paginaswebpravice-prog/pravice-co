@@ -5,18 +5,19 @@ const canonicalUrl = "https://pravice.co/blog/evitar-demandas-empresas";
 
 export const metadata: Metadata = {
   title:
-    "Cómo evitar demandas legales en empresas colombianas en 2026 | Pravice",
+    "Cómo evitar demandas en tu empresa: guía para reducir riesgos legales en Colombia | Pravice",
   description:
-    "Aprende cómo evitar demandas legales en empresas colombianas mediante contratos, cumplimiento normativo y prevención de riesgos jurídicos.",
+    "Descubre cómo reducir el riesgo de demandas en tu empresa mediante contratos bien elaborados, cumplimiento normativo, políticas internas y controles preventivos. Guía práctica para empresas en Colombia.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Cómo evitar demandas legales en empresas colombianas en 2026",
+    title:
+      "Cómo evitar demandas en tu empresa: guía para reducir riesgos legales en Colombia",
     description:
-      "Estrategias jurídicas para prevenir demandas y proteger empresas en Colombia.",
+      "Aprende qué medidas preventivas ayudan a disminuir conflictos legales, sanciones y demandas empresariales antes de que afecten tu negocio.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -33,9 +34,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Cómo evitar demandas legales en empresas colombianas",
+    title:
+      "Cómo evitar demandas en una empresa: guía práctica para empresarios",
     description:
-      "Guía para prevenir conflictos y riesgos legales empresariales.",
+      "Conoce las medidas preventivas que ayudan a reducir riesgos legales y proteger tu empresa en Colombia.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -48,9 +50,10 @@ const schemaData = {
     "@type": "WebPage",
     "@id": canonicalUrl,
   },
-  headline: "Cómo evitar demandas legales en empresas colombianas en 2026",
+  headline:
+    "Cómo evitar demandas en tu empresa: guía para reducir riesgos legales en Colombia",
   description:
-    "Aprende cómo evitar demandas legales en empresas colombianas mediante contratos, cumplimiento normativo y prevención de riesgos jurídicos.",
+    "Guía práctica para empresarios que desean prevenir demandas mediante contratos adecuados, cumplimiento legal, procesos internos y una gestión preventiva de riesgos.",
   image: "https://pravice.co/logo_pravice.png",
   author: {
     "@type": "Organization",

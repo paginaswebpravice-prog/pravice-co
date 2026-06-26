@@ -4,19 +4,21 @@ import HabeasDataEmpresas from "./HabeasDataEmpresas";
 const canonicalUrl = "https://pravice.co/blog/habeas-data-empresas";
 
 export const metadata: Metadata = {
-  title: "Habeas Data en Colombia para empresas | Pravice",
+  title:
+    "Habeas Data para empresas en Colombia: obligaciones, requisitos y cómo cumplir la ley | Pravice",
 
   description:
-    "Conoce las obligaciones legales sobre protección de datos personales y cumplimiento empresarial en Colombia.",
+    "Aprende qué es el Habeas Data en Colombia, cuáles son las obligaciones de las empresas, cómo proteger datos personales y evitar sanciones por incumplimiento.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Habeas Data en Colombia para empresas",
+    title:
+      "Habeas Data para empresas en Colombia: guía completa para cumplir la ley",
     description:
-      "Guía sobre protección de datos personales y cumplimiento empresarial.",
+      "Conoce las obligaciones legales sobre protección de datos personales, políticas de tratamiento, derechos de los titulares y buenas prácticas empresariales.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -50,7 +52,8 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Habeas Data en Colombia para empresas: obligaciones legales",
+  headline:
+    "Habeas Data para empresas en Colombia: obligaciones, requisitos y buenas prácticas",
 
   description:
     "Conoce las obligaciones legales sobre protección de datos personales y cumplimiento empresarial en Colombia.",
@@ -81,13 +84,17 @@ const schemaData = {
 
   keywords: [
     "Habeas Data Colombia",
-    "protección de datos empresas",
-    "datos personales Colombia",
-    "cumplimiento empresarial",
-    "política de privacidad",
+    "Habeas Data empresas",
+    "protección de datos personales",
     "tratamiento de datos personales",
-    "protección de información",
-    "asesoría Habeas Data",
+    "Ley 1581 de 2012",
+    "cumplimiento Habeas Data",
+    "política de tratamiento de datos",
+    "autorización datos personales",
+    "Superintendencia de Industria y Comercio",
+    "protección de información empresarial",
+    "cumplimiento normativo empresas",
+    "seguridad de datos Colombia",
   ],
 };
 

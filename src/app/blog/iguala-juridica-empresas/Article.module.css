@@ -55,6 +55,19 @@
   font-size: 16px;
 }
 
+/* ================= CHECKLIST ================= */
+
+.checkList {
+  margin: 25px 0;
+  padding-left: 22px;
+}
+
+.checkList li {
+  margin-bottom: 12px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
 /* ================= SECTIONS ================= */
 
 .section {
@@ -102,6 +115,99 @@
   color: #000;
 }
 
+/* ================= TABLE ================= */
+
+.tableWrapper {
+  overflow-x: auto;
+  margin: 28px 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  min-width: 650px;
+}
+
+.table th {
+  background: #004a80;
+  color: #fff;
+  padding: 14px;
+  text-align: left;
+}
+
+.table td {
+  padding: 14px;
+  border: 1px solid #e5e5e5;
+}
+
+.table tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+/* ================= HIGHLIGHT ================= */
+
+.highlight {
+  margin: 30px 0;
+  padding: 22px;
+  border-left: 5px solid #004a80;
+  background: #eef7ff;
+  border-radius: 8px;
+}
+
+.highlight h3 {
+  color: #004a80;
+  margin-bottom: 12px;
+}
+
+.highlight p:last-child {
+  margin-bottom: 0;
+}
+
+/* ================= WARNING ================= */
+
+.warning {
+  margin: 28px 0;
+  padding: 22px;
+  border-left: 5px solid #d97706;
+  background: #fff8e7;
+  border-radius: 8px;
+}
+
+.warning h3 {
+  color: #a16207;
+  margin-bottom: 10px;
+}
+
+/* ================= STATS ================= */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 18px;
+  margin: 30px 0;
+}
+
+.statCard {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.statNumber {
+  display: block;
+  font-size: 34px;
+  font-weight: 700;
+  color: #004a80;
+}
+
+.statLabel {
+  margin-top: 8px;
+  color: #555;
+}
+
 /* ================= CONCLUSION ================= */
 
 .conclusion {
@@ -119,6 +225,41 @@
 
 .conclusion p {
   color: #000;
+}
+
+/* ================= FAQ ================= */
+
+.faq {
+  margin-top: 50px;
+}
+
+.faqItem {
+  margin-bottom: 18px;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
+
+.faqItem h3 {
+  color: #004a80;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.faqItem p {
+  margin: 0;
+}
+
+/* ================= ORDERED LIST ================= */
+
+.numberList {
+  padding-left: 24px;
+  margin: 22px 0;
+}
+
+.numberList li {
+  margin-bottom: 14px;
+  line-height: 1.8;
 }
 
 /* ================= LINKS ================= */
@@ -149,6 +290,25 @@
   }
 
   .card {
+    padding: 18px;
+  }
+
+  .table {
+    font-size: 14px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight,
+  .warning,
+  .conclusion,
+  .card {
+    padding: 18px;
+  }
+
+  .faqItem {
     padding: 18px;
   }
 }

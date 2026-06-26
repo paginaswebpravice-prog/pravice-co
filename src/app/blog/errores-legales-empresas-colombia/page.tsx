@@ -6,9 +6,10 @@ const canonicalUrl =
 
 export const metadata: Metadata = {
   title:
-    "Errores legales que afectan empresas en Colombia 2026: evita demandas y sanciones | Pravice",
+    "10 errores legales que cometen las empresas en Colombia (y cómo evitarlos) | Pravice",
+
   description:
-    "Conoce los errores legales más comunes que afectan empresas en Colombia y cómo prevenir demandas, sanciones y riesgos jurídicos empresariales.",
+    "Descubre los errores legales más comunes en las empresas colombianas y aprende cómo prevenir demandas, sanciones, multas y conflictos jurídicos antes de que afecten tu negocio.",
 
   alternates: {
     canonical: canonicalUrl,
@@ -16,28 +17,35 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Errores legales que afectan empresas en Colombia 2026: guía empresarial",
+      "10 errores legales que cometen las empresas en Colombia y cómo evitarlos",
+
     description:
-      "Aprende cómo evitar errores jurídicos empresariales que generan pérdidas y conflictos legales en Colombia.",
+      "Guía práctica para identificar los errores jurídicos más frecuentes en las empresas colombianas y reducir riesgos legales.",
+
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "article",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
         width: 1200,
         height: 630,
-        alt: "Errores legales en empresas en Colombia",
+        alt: "Errores legales en empresas colombianas",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Errores legales que afectan empresas en Colombia",
+
+    title:
+      "10 errores legales que pueden poner en riesgo una empresa en Colombia",
+
     description:
-      "Cómo evitar demandas, sanciones y problemas legales empresariales.",
+      "Aprende cómo evitar demandas, sanciones y problemas jurídicos empresariales.",
+
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -45,20 +53,26 @@ export const metadata: Metadata = {
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
+
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": canonicalUrl,
   },
+
   headline:
-    "Errores legales que afectan empresas en Colombia 2026: evita demandas y sanciones",
+    "10 errores legales que cometen las empresas en Colombia (y cómo evitarlos)",
+
   description:
-    "Conoce los errores legales más comunes que afectan empresas en Colombia y cómo prevenir demandas, sanciones y riesgos jurídicos empresariales.",
+    "Conoce los errores jurídicos más frecuentes que afectan a las empresas en Colombia y aprende cómo prevenir demandas, sanciones y pérdidas económicas.",
+
   image: "https://pravice.co/logo_pravice.png",
+
   author: {
     "@type": "Organization",
     name: "Pravice",
     url: "https://pravice.co",
   },
+
   publisher: {
     "@type": "Organization",
     name: "Pravice",
@@ -67,17 +81,22 @@ const schemaData = {
       url: "https://pravice.co/logo_pravice.png",
     },
   },
+
   datePublished: "2026-05-12",
   dateModified: "2026-05-12",
+
   inLanguage: "es-CO",
+
   articleSection: "Derecho Empresarial",
+
   keywords: [
     "errores legales empresas Colombia",
+    "errores jurídicos empresas",
     "riesgos legales empresariales",
-    "problemas jurídicos empresas",
-    "demandas empresariales Colombia",
-    "protección jurídica empresarial",
-    "asesoría legal empresas",
+    "cómo evitar demandas empresa",
+    "cumplimiento legal empresarial",
+    "protección jurídica empresas",
+    "problemas legales empresas Colombia",
     "derecho empresarial Colombia",
   ],
 };

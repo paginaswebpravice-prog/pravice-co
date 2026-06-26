@@ -5,22 +5,27 @@ const canonicalUrl = "https://pravice.co/blog/mediacion-empresarial-colombia";
 
 export const metadata: Metadata = {
   title:
-    "Mediación empresarial en Colombia: cómo resolver conflictos sin ir a juicio | Bogotá | Pravice",
+    "Mediación Empresarial en Colombia: Qué es, Cómo Funciona y Beneficios (2026) | Pravice",
+
   description:
-    "Descubre cómo funciona la mediación empresarial en Colombia y Bogotá. Resuelve conflictos comerciales de forma rápida, económica y sin procesos judiciales.",
+    "Aprende qué es la mediación empresarial en Colombia, cuándo se utiliza, cómo funciona paso a paso, sus beneficios y qué conflictos pueden resolverse sin acudir a un juicio.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Mediación empresarial en Colombia: solución rápida sin litigios",
+    title:
+      "Mediación empresarial en Colombia: guía completa para resolver conflictos sin juicio",
+
     description:
-      "Aprende cómo resolver conflictos empresariales sin ir a juicio mediante mediación en Colombia.",
+      "Descubre cómo funciona la mediación empresarial, qué ventajas tiene frente a un proceso judicial y cuándo conviene utilizarla.",
+
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "article",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
@@ -33,10 +38,13 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
+
     title:
-      "Mediación empresarial en Colombia: evita juicios y resuelve conflictos",
+      "¿Qué es la mediación empresarial en Colombia y cuándo conviene utilizarla?",
+
     description:
-      "Solución rápida y efectiva para conflictos empresariales en Colombia.",
+      "Guía práctica sobre mediación empresarial, conflictos comerciales y resolución extrajudicial en Colombia.",
+
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -50,9 +58,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
   headline:
-    "Mediación empresarial en Colombia: cómo resolver conflictos sin ir a juicio",
+    "Mediación empresarial en Colombia: qué es, cómo funciona y cuándo utilizarla",
+
   description:
-    "Descubre cómo funciona la mediación empresarial en Colombia y Bogotá. Resuelve conflictos comerciales de forma rápida, económica y sin procesos judiciales.",
+    "Guía completa sobre mediación empresarial en Colombia. Aprende cómo resolver conflictos comerciales sin acudir a un proceso judicial y conoce sus principales beneficios.",
+
   image: "https://pravice.co/logo_pravice.png",
   author: {
     "@type": "Organization",
@@ -71,14 +81,18 @@ const schemaData = {
   dateModified: "2026-04-28",
   inLanguage: "es-CO",
   articleSection: "Resolución de Conflictos Empresariales",
+
   keywords: [
     "mediación empresarial Colombia",
-    "resolución de conflictos empresariales",
-    "derecho comercial Colombia",
-    "solución de conflictos Bogotá",
-    "arreglo extrajudicial empresas",
-    "conciliación empresarial Colombia",
-    "evitar juicios empresas Colombia",
+    "mediación comercial",
+    "mediación entre empresas",
+    "resolver conflictos empresariales",
+    "mecanismos alternativos de resolución de conflictos",
+    "mediación mercantil Colombia",
+    "conflictos societarios",
+    "negociación empresarial",
+    "resolución de conflictos comerciales",
+    "mediación en empresas",
   ],
 };
 

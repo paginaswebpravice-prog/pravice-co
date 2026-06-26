@@ -5,19 +5,20 @@ const canonicalUrl = "https://pravice.co/blog/oficial-cumplimiento-colombia";
 
 export const metadata: Metadata = {
   title:
-    "Oficial de cumplimiento en Colombia: funciones y responsabilidades | Pravice",
+    "Oficial de Cumplimiento en Colombia: Funciones, Requisitos y Obligaciones para Empresas (Guía 2026) | Pravice",
 
   description:
-    "Qué hace un oficial de cumplimiento, cuáles son sus funciones y cuándo una empresa debe designarlo.",
+    "Descubre qué es un oficial de cumplimiento en Colombia, cuáles son sus funciones, responsabilidades, requisitos legales, cuándo es obligatorio y cómo fortalece el compliance empresarial.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Oficial de cumplimiento en Colombia: funciones y responsabilidades",
+    title:
+      "Oficial de Cumplimiento en Colombia: Funciones, Responsabilidades y Requisitos",
     description:
-      "Conoce el papel del oficial de cumplimiento dentro de las empresas colombianas.",
+      "Conoce qué hace un oficial de cumplimiento, cuándo una empresa debe designarlo y cómo ayuda a prevenir riesgos legales y sanciones.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -27,16 +28,17 @@ export const metadata: Metadata = {
         url: "https://pravice.co/logo_pravice.png",
         width: 1200,
         height: 630,
-        alt: "Oficial de cumplimiento en Colombia",
+        alt: "Oficial de cumplimiento para empresas en Colombia",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Oficial de cumplimiento en Colombia: funciones y responsabilidades",
+    title:
+      "¿Qué Hace un Oficial de Cumplimiento en Colombia? Funciones y Obligaciones",
     description:
-      "Funciones, responsabilidades y beneficios del oficial de cumplimiento.",
+      "Guía completa sobre el rol del oficial de cumplimiento, requisitos, funciones y beneficios para las empresas colombianas.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -51,10 +53,10 @@ const schemaData = {
   },
 
   headline:
-    "Oficial de cumplimiento en Colombia: funciones y responsabilidades",
+    "Oficial de Cumplimiento en Colombia: Funciones, Requisitos y Responsabilidades para Empresas",
 
   description:
-    "Qué hace un oficial de cumplimiento, cuáles son sus funciones y cuándo una empresa debe designarlo.",
+    "Guía completa sobre el oficial de cumplimiento en Colombia, sus funciones, requisitos, obligaciones legales y su importancia dentro de los programas de compliance y gestión de riesgos.",
 
   image: "https://pravice.co/logo_pravice.png",
 
@@ -82,13 +84,20 @@ const schemaData = {
 
   keywords: [
     "oficial de cumplimiento",
+    "oficial de cumplimiento Colombia",
+    "funciones del oficial de cumplimiento",
+    "qué hace un oficial de cumplimiento",
+    "responsabilidades del oficial de cumplimiento",
     "compliance Colombia",
-    "SARLAFT Colombia",
+    "SAGRILAFT",
+    "SARLAFT",
+    "PTEE",
     "cumplimiento normativo",
-    "gestión de riesgos empresariales",
-    "gobierno corporativo",
-    "prevención lavado de activos",
+    "gestión de riesgos",
     "compliance empresarial",
+    "prevención lavado de activos",
+    "oficial de cumplimiento empresas",
+    "gobierno corporativo",
   ],
 };
 

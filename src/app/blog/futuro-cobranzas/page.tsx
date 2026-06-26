@@ -3,19 +3,18 @@ import Article from "./Article";
 
 export const metadata: Metadata = {
   title:
-    "El futuro de las cobranzas en Latinoamérica y Colombia (IA, automatización y pagos digitales) | 2026",
+    "El futuro de las cobranzas en Colombia y Latinoamérica: 10 tendencias que transformarán la recuperación de cartera | Pravice",
   description:
-    "Descubre cómo será el futuro de las cobranzas en Latinoamérica y Colombia en 2026: inteligencia artificial, automatización, pagos digitales y nuevas estrategias de recuperación de cartera.",
-
+    "Conoce las principales tendencias que están cambiando las cobranzas en Colombia y Latinoamérica: inteligencia artificial, automatización, analítica, pagos digitales y estrategias modernas de recuperación de cartera.",
   alternates: {
     canonical: "https://pravice.co/blog/futuro-cobranzas-latinoamerica",
   },
 
   openGraph: {
     title:
-      "Futuro de las cobranzas en Latinoamérica: IA, automatización y pagos digitales",
+      "El futuro de las cobranzas: 10 tendencias que transformarán la recuperación de cartera",
     description:
-      "Conoce las tendencias que están transformando la gestión de cartera en Colombia y Latinoamérica en 2026.",
+      "Descubre cómo evolucionarán las cobranzas gracias a la inteligencia artificial, la automatización y las nuevas tecnologías financieras.",
     url: "https://pravice.co/blog/futuro-cobranzas-latinoamerica",
     siteName: "Pravice",
     locale: "es_CO",
@@ -45,7 +44,7 @@ const schemaData = {
     "@id": "https://pravice.co/blog/futuro-cobranzas-latinoamerica",
   },
   headline:
-    "El futuro de las cobranzas en Latinoamérica y Colombia (IA, automatización y pagos digitales) | 2026",
+    "El futuro de las cobranzas en Colombia y Latinoamérica: tendencias que cambiarán la recuperación de cartera",
   description:
     "Descubre cómo será el futuro de las cobranzas en Latinoamérica y Colombia en 2026: inteligencia artificial, automatización, pagos digitales y nuevas estrategias de recuperación de cartera.",
   image: "https://pravice.co/logo_pravice.png",
@@ -68,12 +67,19 @@ const schemaData = {
   articleSection: "Cobranzas y Tecnología",
   keywords: [
     "futuro de las cobranzas",
-    "cobranzas en Latinoamérica",
-    "IA en cobranzas",
-    "automatización de cobranza",
+    "tendencias en cobranzas",
+    "automatización de cobranzas",
+    "inteligencia artificial en cobranzas",
+    "IA recuperación de cartera",
+    "gestión de cartera digital",
+    "cobranzas Colombia",
+    "cobranzas Latinoamérica",
+    "software de cobranza",
+    "pagos digitales",
     "fintech Colombia",
-    "recuperación de cartera digital",
-    "pagos digitales Colombia",
+    "analítica para cobranzas",
+    "cobranza omnicanal",
+    "recuperación de cartera",
   ],
 };
 

@@ -5,18 +5,20 @@ const canonicalUrl = "https://pravice.co/blog/mecanismos-resolucion-conflictos";
 
 export const metadata: Metadata = {
   title:
-    "Mecanismos alternativos de resolución de conflictos en Colombia | Pravice",
+    "Mecanismos alternativos de resolución de conflictos en Colombia: guía completa 2026 | Pravice",
 
   description:
-    "Conoce cómo funcionan la conciliación, arbitraje y mediación en Colombia para resolver conflictos de forma más rápida.",
+    "Aprende qué son los mecanismos alternativos de resolución de conflictos en Colombia, cuándo conviene usar conciliación, arbitraje o mediación y cuáles son sus ventajas frente a un proceso judicial.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Mecanismos alternativos de resolución de conflictos en Colombia",
-    description: "Guía sobre conciliación, arbitraje y mediación en Colombia.",
+    title:
+      "Mecanismos alternativos de resolución de conflictos en Colombia: conciliación, arbitraje y mediación",
+    description:
+      "Guía completa para entender cómo funcionan la conciliación, el arbitraje y la mediación en Colombia y cuándo son la mejor alternativa para resolver conflictos.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -33,8 +35,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Resolución alternativa de conflictos en Colombia",
-    description: "Conciliación, arbitraje y mediación explicados fácilmente.",
+    title: "¿Conciliación, arbitraje o mediación? Guía completa en Colombia",
+    description:
+      "Conoce cuándo utilizar cada mecanismo alternativo de resolución de conflictos y evita procesos judiciales largos.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -50,10 +53,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Mecanismos alternativos de resolución de conflictos en Colombia",
+  headline:
+    "Mecanismos alternativos de resolución de conflictos en Colombia: guía completa para empresas y personas",
 
   description:
-    "Conoce cómo funcionan la conciliación, arbitraje y mediación en Colombia para resolver conflictos de forma más rápida.",
+    "Guía completa sobre conciliación, arbitraje, mediación y otros mecanismos alternativos de resolución de conflictos en Colombia para resolver disputas sin acudir a largos procesos judiciales.",
 
   image: "https://pravice.co/logo_pravice.png",
 
@@ -81,13 +85,19 @@ const schemaData = {
 
   keywords: [
     "mecanismos alternativos de resolución de conflictos",
+    "resolución de conflictos Colombia",
     "conciliación Colombia",
     "arbitraje Colombia",
     "mediación Colombia",
-    "resolución de conflictos",
-    "solución de disputas legales",
+    "MASC Colombia",
     "conciliación empresarial",
-    "mecanismos de conciliación",
+    "solución de conflictos empresariales",
+    "cómo resolver conflictos legales",
+    "mecanismos de solución de conflictos",
+    "conciliación extrajudicial",
+    "centros de conciliación",
+    "arbitraje comercial",
+    "resolución de disputas",
   ],
 };
 

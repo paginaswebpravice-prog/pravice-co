@@ -8,9 +8,10 @@ export default function FracasoConciliacion() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Qué pasa si una conciliación fracasa en Colombia",
+    headline:
+      "¿Qué pasa si una conciliación fracasa en Colombia? Todo lo que debes saber",
     description:
-      "Conoce las consecuencias legales cuando no se logra un acuerdo conciliatorio en Colombia.",
+      "Aprende qué ocurre cuando una conciliación termina sin acuerdo, qué valor tiene el acta de no conciliación y cuáles son las alternativas legales posteriores.",
     image: "https://pravice.co/og-image.jpg",
     author: {
       "@type": "Organization",
@@ -51,40 +52,95 @@ export default function FracasoConciliacion() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Qué pasa si una conciliación fracasa en Colombia
+            ¿Qué pasa si una conciliación fracasa en Colombia? Consecuencias
+            legales y qué hacer después
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre qué consecuencias legales existen cuando no se logra un
-            acuerdo conciliatorio en Colombia.
+            No todas las conciliaciones terminan con un acuerdo entre las
+            partes. Cuando una conciliación fracasa en Colombia, el conflicto no
+            desaparece, pero sí se abren diferentes alternativas legales para
+            continuar con la reclamación de derechos. Conocer las consecuencias
+            del acta de no conciliación, cuándo procede una demanda y qué
+            opciones existen puede ayudarte a tomar mejores decisiones.
           </motion.p>
         </motion.section>
 
         {/* INTRO */}
         <section className={styles.section}>
           <p>
-            La conciliación busca resolver conflictos mediante acuerdos entre
-            las partes sin acudir directamente a procesos judiciales.
+            Aunque la conciliación es uno de los mecanismos más utilizados para
+            resolver conflictos de manera rápida y económica, existen
+            situaciones en las que las partes no logran llegar a un acuerdo
+            durante la audiencia. Esto puede ocurrir por diferencias económicas,
+            desacuerdos sobre los hechos, falta de voluntad para negociar o
+            posiciones jurídicas incompatibles.
           </p>
 
           <p>
-            Sin embargo, no siempre es posible alcanzar un consenso. Cuando una
-            conciliación fracasa, existen diferentes consecuencias legales y
-            opciones que las partes pueden considerar.
+            Cuando esto sucede, muchas personas creen que perdieron el caso o
+            que ya no pueden reclamar sus derechos. Sin embargo, una
+            conciliación fallida no significa que el conflicto termine. En
+            muchos asuntos civiles, comerciales, familiares o de otra
+            naturaleza, el fracaso de la conciliación simplemente marca el
+            inicio de una nueva etapa en la que pueden utilizarse otros
+            mecanismos legales para solucionar la controversia.
+          </p>
+
+          <p>
+            En esta guía encontrarás qué significa realmente que una
+            conciliación fracase, qué efectos produce el acta de no
+            conciliación, cuándo es posible presentar una demanda y qué
+            recomendaciones pueden aumentar las probabilidades de éxito en una
+            futura negociación o proceso judicial.
           </p>
         </section>
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Qué aprenderás en este artículo</h3>
+          <h3>En esta guía aprenderás</h3>
 
           <ul>
-            <li>Qué significa que una conciliación fracase</li>
-            <li>Qué ocurre cuando no hay acuerdo</li>
-            <li>Qué efectos tiene el acta de no conciliación</li>
-            <li>Cuándo puede iniciarse una demanda judicial</li>
-            <li>Importancia de la asesoría legal</li>
+            <li>Qué significa que una conciliación termine sin acuerdo.</li>
+            <li>
+              Qué consecuencias jurídicas produce una conciliación fallida.
+            </li>
+            <li>Qué es el acta de no conciliación y para qué sirve.</li>
+            <li>
+              Cuándo puedes presentar una demanda después de la audiencia.
+            </li>
+            <li>
+              Cuáles son las causas más frecuentes del fracaso de una
+              conciliación.
+            </li>
+            <li>Qué alternativas existen antes de acudir a un juez.</li>
+            <li>Cómo prepararte mejor para una nueva negociación.</li>
           </ul>
+        </section>
+
+        <section className={styles.section}>
+          <h2>¿Una conciliación fallida significa que perdiste el caso?</h2>
+
+          <p>
+            No. Una de las dudas más frecuentes consiste en creer que si no hubo
+            acuerdo durante la audiencia, automáticamente se pierde el derecho a
+            reclamar. En realidad, la conciliación únicamente busca que las
+            partes intenten resolver voluntariamente el conflicto antes de
+            acudir a otras instancias.
+          </p>
+
+          <p>
+            Si ninguna de las personas involucradas acepta una propuesta o no
+            existe un punto de equilibrio, el procedimiento simplemente termina
+            sin acuerdo. Dependiendo del tipo de conflicto, esto puede permitir
+            continuar posteriormente con un proceso judicial.
+          </p>
+
+          <p>
+            Por esta razón es importante analizar cada caso de manera individual
+            y conocer cuáles son las alternativas legales disponibles después
+            del fracaso de la conciliación.
+          </p>
         </section>
 
         {/* SECCIÓN 1 */}
@@ -256,6 +312,100 @@ export default function FracasoConciliacion() {
             <p>
               Contar con orientación profesional brinda mayor seguridad durante
               el conflicto.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            ¿Qué puedes hacer para aumentar las probabilidades de lograr un
+            acuerdo en una próxima conciliación?
+          </h2>
+
+          <div className={styles.card}>
+            <h3>Llevar documentación organizada</h3>
+
+            <p>
+              Presentar contratos, facturas, comprobantes, correos electrónicos,
+              conversaciones y demás soportes facilita demostrar la posición de
+              cada parte durante la audiencia.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Definir previamente el objetivo de negociación</h3>
+
+            <p>
+              Antes de asistir a la audiencia es recomendable establecer cuál es
+              el resultado mínimo aceptable, qué aspectos pueden negociarse y
+              cuáles no son negociables.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Mantener una actitud abierta al diálogo</h3>
+
+            <p>
+              La conciliación funciona mejor cuando ambas partes buscan
+              solucionar el conflicto y están dispuestas a explorar alternativas
+              diferentes al litigio.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Recibir asesoría jurídica</h3>
+
+            <p>
+              Contar con orientación profesional permite comprender las
+              implicaciones legales del conflicto, evaluar riesgos y negociar
+              con mayor seguridad.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Preguntas frecuentes sobre una conciliación fallida en Colombia
+          </h2>
+
+          <div className={styles.card}>
+            <h3>¿Después de una conciliación fallida puedo demandar?</h3>
+
+            <p>
+              En muchos casos sí. Dependiendo del tipo de proceso y de los
+              requisitos establecidos por la ley, el acta de no conciliación
+              puede permitir acudir posteriormente ante la jurisdicción
+              competente.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Puedo volver a intentar una conciliación?</h3>
+
+            <p>
+              Sí. Si ambas partes están dispuestas a negociar nuevamente, es
+              posible intentar otra conciliación antes de iniciar un proceso
+              judicial.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Qué pasa si una persona no asiste a la audiencia?</h3>
+
+            <p>
+              Dependiendo de las circunstancias, el conciliador dejará
+              constancia de la inasistencia y esto puede producir efectos
+              jurídicos según el caso concreto.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Toda conciliación fallida termina en demanda?</h3>
+
+            <p>
+              No. Muchas controversias continúan resolviéndose mediante
+              negociación directa incluso después de que la audiencia haya
+              finalizado sin acuerdo.
             </p>
           </div>
         </section>

@@ -51,12 +51,14 @@ export default function HabeasDataEmpresas() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Habeas Data en Colombia para empresas: obligaciones legales
+            Habeas Data para empresas en Colombia: obligaciones, requisitos y
+            cómo cumplir la ley
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cuáles son las obligaciones legales sobre protección de
-            datos personales y cumplimiento empresarial en Colombia.
+            Descubre qué exige la legislación colombiana sobre protección de
+            datos personales, cuáles son las obligaciones de las empresas y cómo
+            implementar un sistema de cumplimiento para evitar sanciones.
           </motion.p>
         </motion.section>
 
@@ -78,14 +80,21 @@ export default function HabeasDataEmpresas() {
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Qué aprenderás en este artículo</h3>
+          <h3>
+            ¿Qué encontrarás en esta guía sobre Habeas Data para empresas?
+          </h3>
 
           <ul>
-            <li>Qué es el Habeas Data en Colombia</li>
-            <li>Qué obligaciones tienen las empresas</li>
-            <li>Cómo proteger datos personales</li>
-            <li>Riesgos legales por incumplimiento</li>
-            <li>Importancia del cumplimiento empresarial</li>
+            <li>Qué es el Habeas Data y cómo funciona en Colombia.</li>
+            <li>Qué empresas están obligadas a cumplir la normativa.</li>
+            <li>
+              Obligaciones legales para el tratamiento de datos personales.
+            </li>
+            <li>Documentos que toda empresa debería implementar.</li>
+            <li>Derechos de los titulares de la información.</li>
+            <li>Errores que pueden generar investigaciones y sanciones.</li>
+            <li>Buenas prácticas para proteger la información.</li>
+            <li>Cómo fortalecer el cumplimiento empresarial.</li>
           </ul>
         </section>
 
@@ -116,6 +125,57 @@ export default function HabeasDataEmpresas() {
             <p>
               Las personas pueden solicitar acceso, actualización o eliminación
               de sus datos personales.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            ¿Qué empresas deben cumplir con la Ley de Habeas Data en Colombia?
+          </h2>
+
+          <p>
+            Una de las dudas más frecuentes es si únicamente las grandes
+            compañías están obligadas a cumplir la normativa sobre protección de
+            datos personales. La respuesta es no. Toda organización que
+            recolecte, almacene, utilice, consulte, actualice o elimine datos
+            personales debe aplicar las reglas previstas por la legislación
+            colombiana.
+          </p>
+
+          <p>
+            Esto incluye empresas privadas, entidades sin ánimo de lucro,
+            comercios, consultorios, clínicas, instituciones educativas,
+            plataformas digitales, emprendimientos y cualquier negocio que
+            administre información de personas naturales.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Empresas con clientes</h3>
+
+            <p>
+              Si una empresa almacena nombres, teléfonos, correos electrónicos,
+              direcciones o información financiera de clientes, debe cumplir las
+              obligaciones relacionadas con el tratamiento de datos personales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Empresas con empleados</h3>
+
+            <p>
+              Las hojas de vida, contratos laborales, evaluaciones de desempeño
+              y demás información del personal también están protegidas por el
+              Habeas Data.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Empresas con proveedores</h3>
+
+            <p>
+              La información personal de representantes legales, contratistas y
+              proveedores igualmente debe tratarse conforme a la ley.
             </p>
           </div>
         </section>
@@ -158,6 +218,84 @@ export default function HabeasDataEmpresas() {
             <p>
               Las empresas deben contar con mecanismos para responder
               solicitudes relacionadas con datos personales.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            10 obligaciones que toda empresa debe cumplir en materia de Habeas
+            Data
+          </h2>
+
+          <p>
+            Cumplir la normativa no consiste únicamente en publicar una política
+            de privacidad. Las empresas deben implementar procesos permanentes
+            que garanticen un tratamiento responsable de la información
+            personal.
+          </p>
+
+          <ul>
+            <li>Solicitar autorización cuando sea requerida.</li>
+            <li>Informar claramente la finalidad del tratamiento.</li>
+            <li>Contar con una política de tratamiento de datos.</li>
+            <li>Permitir el ejercicio de los derechos del titular.</li>
+            <li>Implementar controles de seguridad sobre la información.</li>
+            <li>Conservar evidencia de las autorizaciones otorgadas.</li>
+            <li>Capacitar periódicamente a los colaboradores.</li>
+            <li>Actualizar los datos cuando sea necesario.</li>
+            <li>Evitar el acceso no autorizado a la información.</li>
+            <li>Responder oportunamente consultas y reclamos.</li>
+          </ul>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Derechos que tienen los titulares de los datos personales en
+            Colombia
+          </h2>
+
+          <p>
+            La legislación colombiana reconoce varios derechos a las personas
+            respecto del tratamiento de su información personal. Las empresas
+            deben garantizar mecanismos para que estos derechos puedan ejercerse
+            de manera sencilla y dentro de los plazos establecidos.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Conocer la información almacenada</h3>
+
+            <p>
+              El titular puede solicitar conocer qué datos posee la empresa y
+              con qué finalidad los utiliza.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Actualizar la información</h3>
+
+            <p>
+              Si los datos presentan errores o han cambiado, el titular puede
+              solicitar su modificación.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Solicitar la eliminación de datos</h3>
+
+            <p>
+              En determinados casos, la persona puede pedir la supresión de su
+              información cuando no exista una obligación legal que justifique
+              su conservación.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Revocar la autorización</h3>
+
+            <p>
+              El titular puede retirar el consentimiento otorgado para el
+              tratamiento de sus datos cuando la legislación lo permita.
             </p>
           </div>
         </section>
@@ -277,6 +415,98 @@ export default function HabeasDataEmpresas() {
               tecnológica de la empresa.
             </p>
           </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Errores más comunes que cometen las empresas al cumplir con el
+            Habeas Data
+          </h2>
+
+          <p>
+            Muchas organizaciones consideran que cumplir la normativa consiste
+            únicamente en publicar una política de privacidad en su sitio web.
+            Sin embargo, el cumplimiento exige procedimientos internos,
+            controles y una adecuada gestión documental.
+          </p>
+
+          <div className={styles.card}>
+            <h3>No solicitar autorización correctamente</h3>
+
+            <p>
+              Recolectar información sin explicar claramente su finalidad puede
+              generar reclamaciones y sanciones.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No actualizar las políticas internas</h3>
+
+            <p>
+              Las políticas deben revisarse periódicamente para adaptarse a
+              cambios tecnológicos, organizacionales y normativos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No responder consultas de los titulares</h3>
+
+            <p>
+              Ignorar solicitudes relacionadas con datos personales incrementa
+              el riesgo de investigaciones por parte de las autoridades
+              competentes.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No capacitar al personal</h3>
+
+            <p>
+              Gran parte de los incidentes relacionados con protección de datos
+              se originan por errores humanos y desconocimiento de los
+              procedimientos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No implementar medidas de seguridad</h3>
+
+            <p>
+              Los controles tecnológicos y administrativos ayudan a prevenir
+              accesos no autorizados, pérdida de información y filtraciones de
+              datos personales.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Beneficios de implementar un programa de protección de datos
+            personales
+          </h2>
+
+          <p>
+            Además de cumplir la legislación colombiana, implementar un programa
+            de protección de datos genera ventajas competitivas para cualquier
+            empresa.
+          </p>
+
+          <ul>
+            <li>Mayor confianza de clientes y usuarios.</li>
+            <li>Reducción del riesgo de sanciones administrativas.</li>
+            <li>Mejor reputación empresarial.</li>
+            <li>Mayor seguridad sobre la información.</li>
+            <li>Procesos internos más organizados.</li>
+            <li>Facilidad para atender auditorías y requerimientos.</li>
+            <li>Mejor gestión documental.</li>
+            <li>Cumplimiento de estándares nacionales e internacionales.</li>
+          </ul>
+
+          <p>
+            Las organizaciones que gestionan adecuadamente los datos personales
+            no solo reducen riesgos legales, sino que fortalecen la confianza de
+            clientes, empleados, proveedores y aliados comerciales.
+          </p>
         </section>
 
         {/* CONCLUSIÓN */}

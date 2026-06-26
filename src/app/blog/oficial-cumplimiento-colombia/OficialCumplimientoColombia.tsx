@@ -51,13 +51,15 @@ export default function OficialCumplimientoColombia() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title}>
-            Oficial de cumplimiento en Colombia: funciones y responsabilidades
+            Oficial de Cumplimiento en Colombia: Funciones, Requisitos y
+            Obligaciones para Empresas
           </motion.h1>
 
           <motion.p className={styles.description}>
-            Descubre qué hace un oficial de cumplimiento, cuáles son sus
-            obligaciones dentro de una organización y por qué su rol es clave
-            para la gestión de riesgos y el cumplimiento normativo.
+            Descubre qué hace un oficial de cumplimiento en Colombia, cuándo una
+            empresa debe designarlo, cuáles son sus funciones,
+            responsabilidades, requisitos legales y cómo ayuda a prevenir
+            riesgos, sanciones y problemas regulatorios.
           </motion.p>
         </motion.section>
 
@@ -81,10 +83,13 @@ export default function OficialCumplimientoColombia() {
 
           <ul>
             <li>Qué es un oficial de cumplimiento</li>
-            <li>Cuáles son sus funciones principales</li>
-            <li>Responsabilidades dentro de la empresa</li>
-            <li>Relación con SARLAFT y compliance</li>
-            <li>Beneficios para las organizaciones</li>
+            <li>Cuándo una empresa debe designarlo</li>
+            <li>Funciones y responsabilidades principales</li>
+            <li>Requisitos para ejercer el cargo</li>
+            <li>Relación con SAGRILAFT, SARLAFT y programas de compliance</li>
+            <li>12 beneficios para las empresas</li>
+            <li>Errores que debe evitar un oficial de cumplimiento</li>
+            <li>Preguntas frecuentes</li>
           </ul>
         </section>
 
@@ -95,6 +100,22 @@ export default function OficialCumplimientoColombia() {
             Es la persona encargada de coordinar, supervisar y promover el
             cumplimiento de políticas internas, regulaciones y controles
             destinados a prevenir riesgos legales, financieros y reputacionales.
+          </p>
+
+          <p>
+            Más que verificar el cumplimiento de normas, este profesional
+            promueve una cultura organizacional basada en la transparencia, la
+            ética empresarial y la prevención de riesgos. Su labor consiste en
+            identificar posibles incumplimientos antes de que generen
+            investigaciones, sanciones económicas, conflictos reputacionales o
+            responsabilidades para la empresa y sus administradores.
+          </p>
+
+          <p>
+            Dependiendo del sector económico y de la regulación aplicable, el
+            oficial de cumplimiento puede liderar sistemas como SAGRILAFT, PTEE,
+            programas anticorrupción, protección de datos personales y otros
+            modelos de gestión del riesgo.
           </p>
 
           <div className={styles.card}>
@@ -115,7 +136,56 @@ export default function OficialCumplimientoColombia() {
         </section>
 
         <section className={styles.section}>
+          <h2>
+            ¿Cuándo es obligatorio contar con un oficial de cumplimiento en
+            Colombia?
+          </h2>
+
+          <p>
+            No todas las empresas colombianas están obligadas a designar un
+            oficial de cumplimiento. La obligación depende de la actividad
+            económica, el sector en el que opera la organización y de la
+            normativa expedida por autoridades como la Superintendencia de
+            Sociedades o la Superintendencia Financiera.
+          </p>
+
+          <p>
+            Empresas sujetas a sistemas como SAGRILAFT, SARLAFT, PTEE u otros
+            programas de cumplimiento normalmente deben evaluar si les
+            corresponde nombrar este cargo para garantizar una adecuada gestión
+            de riesgos.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Empresas obligadas por regulación</h3>
+
+            <p>
+              Algunas organizaciones deben designar un oficial de cumplimiento
+              por disposición legal, dependiendo de su tamaño, ingresos,
+              activos, operaciones o nivel de exposición al riesgo.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Empresas que buscan fortalecer su gobierno corporativo</h3>
+
+            <p>
+              Incluso cuando no existe una obligación legal expresa, muchas
+              compañías implementan este cargo como una buena práctica de
+              gestión empresarial.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
           <h2>Funciones principales del oficial de cumplimiento</h2>
+
+          <p>
+            Las funciones pueden variar según el tamaño de la empresa y el
+            sector donde opera. Sin embargo, existen responsabilidades comunes
+            que permiten mantener un sistema de cumplimiento efectivo y alineado
+            con la legislación colombiana.
+          </p>
 
           <div className={styles.card}>
             <h3>Identificar riesgos</h3>
@@ -148,6 +218,42 @@ export default function OficialCumplimientoColombia() {
               correctamente dentro de la organización.
             </p>
           </div>
+
+          <div className={styles.card}>
+            <h3>Realizar auditorías internas</h3>
+
+            <p>
+              Evalúa periódicamente la efectividad de los controles
+              implementados e identifica oportunidades de mejora.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Presentar informes a la alta dirección</h3>
+
+            <p>
+              Comunica los resultados del programa de cumplimiento, los riesgos
+              identificados y las acciones correctivas recomendadas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Gestionar investigaciones internas</h3>
+
+            <p>
+              Coordina la atención de denuncias, reportes y posibles
+              incumplimientos, garantizando procesos objetivos y documentados.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Actualizar políticas de cumplimiento</h3>
+
+            <p>
+              Mantiene los procedimientos alineados con cambios regulatorios y
+              nuevos riesgos empresariales.
+            </p>
+          </div>
         </section>
 
         <section className={styles.section}>
@@ -167,7 +273,51 @@ export default function OficialCumplimientoColombia() {
         </section>
 
         <section className={styles.section}>
-          <h2>Beneficios para las empresas</h2>
+          <h2>
+            Perfil, habilidades y requisitos que debe tener un oficial de
+            cumplimiento
+          </h2>
+
+          <p>
+            Un oficial de cumplimiento debe combinar conocimientos jurídicos,
+            administrativos y de gestión del riesgo con habilidades analíticas y
+            de liderazgo.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Conocimiento normativo</h3>
+            <p>
+              Debe comprender la regulación aplicable al sector donde opera la
+              empresa.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Capacidad de análisis</h3>
+            <p>
+              Identifica riesgos, evalúa controles y propone mejoras continuas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Comunicación efectiva</h3>
+            <p>Debe transmitir políticas y capacitar a toda la organización.</p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Independencia</h3>
+            <p>
+              Debe actuar con autonomía para reportar riesgos sin conflictos de
+              interés.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            12 beneficios de contar con un oficial de cumplimiento en una
+            empresa en Colombia
+          </h2>
 
           <div className={styles.card}>
             <h3>Reducción de sanciones</h3>
@@ -201,19 +351,72 @@ export default function OficialCumplimientoColombia() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>
+            Errores más comunes al implementar un programa de cumplimiento
+            empresarial
+          </h2>
+
+          <div className={styles.card}>
+            <h3>Nombrar un oficial sin autonomía</h3>
+
+            <p>
+              El responsable debe contar con independencia suficiente para
+              ejercer sus funciones de supervisión.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No capacitar al personal</h3>
+
+            <p>
+              Un sistema de cumplimiento solo funciona cuando todos los
+              colaboradores conocen las políticas internas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No actualizar los controles</h3>
+
+            <p>
+              Los riesgos empresariales evolucionan constantemente y requieren
+              revisión periódica.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Implementar el programa solo para cumplir un requisito</h3>
+
+            <p>
+              El cumplimiento debe convertirse en parte de la cultura
+              organizacional y no limitarse a un documento formal.
+            </p>
+          </div>
+        </section>
+
         <section className={styles.conclusion}>
-          <h2>Conclusión</h2>
+          <h2>
+            ¿Vale la pena contar con un oficial de cumplimiento en Colombia?
+          </h2>
 
           <p>
-            El oficial de cumplimiento cumple una función esencial dentro de las
-            empresas modernas, ayudando a prevenir riesgos y garantizar el
-            cumplimiento de obligaciones legales.
+            Para muchas organizaciones, el oficial de cumplimiento representa
+            una pieza clave para prevenir riesgos legales, fortalecer el
+            gobierno corporativo y garantizar el cumplimiento de las
+            obligaciones regulatorias.
           </p>
 
           <p>
-            Contar con procesos de compliance bien estructurados fortalece la
-            sostenibilidad, reputación y crecimiento de las organizaciones en
-            Colombia.
+            Además de ayudar a evitar sanciones, este profesional impulsa una
+            cultura de transparencia, mejora la gestión del riesgo y genera
+            mayor confianza frente a clientes, inversionistas, entidades de
+            control y aliados estratégicos.
+          </p>
+
+          <p>
+            Incluso cuando la normativa no obliga a designarlo, muchas empresas
+            deciden incorporar esta figura como parte de una estrategia
+            preventiva que favorece su crecimiento sostenible y competitividad.
           </p>
         </section>
 

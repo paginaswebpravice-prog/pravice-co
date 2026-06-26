@@ -5,19 +5,20 @@ const canonicalUrl = "https://pravice.co/blog/gobierno-corporativo-colombia";
 
 export const metadata: Metadata = {
   title:
-    "Gobierno corporativo en Colombia: buenas prácticas empresariales | Pravice",
+    "Gobierno corporativo en Colombia: qué es, beneficios y buenas prácticas para empresas (Guía 2026) | Pravice",
 
   description:
-    "Cómo implementar estructuras de gobierno corporativo en empresas colombianas.",
+    "Aprende qué es el gobierno corporativo en Colombia, cuáles son sus principios, beneficios, estructuras y buenas prácticas para reducir riesgos y fortalecer la gestión empresarial.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Gobierno corporativo en Colombia: buenas prácticas empresariales",
+    title:
+      "¿Qué es el gobierno corporativo en Colombia? Beneficios y buenas prácticas para empresas",
     description:
-      "Guía sobre estructuras y buenas prácticas de gobierno corporativo.",
+      "Conoce cómo implementar un modelo de gobierno corporativo que fortalezca la transparencia, reduzca riesgos y mejore la toma de decisiones empresariales.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -34,8 +35,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Gobierno corporativo en Colombia",
-    description: "Buenas prácticas empresariales y estructuras corporativas.",
+    title:
+      "¿Qué es el gobierno corporativo y por qué es importante para las empresas?",
+    description:
+      "Descubre cómo un buen gobierno corporativo ayuda a reducir riesgos y mejorar la sostenibilidad empresarial.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -51,10 +54,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Gobierno corporativo en Colombia: buenas prácticas empresariales",
+  headline:
+    "Gobierno corporativo en Colombia: qué es, beneficios y buenas prácticas para empresas",
 
   description:
-    "Cómo implementar estructuras de gobierno corporativo en empresas colombianas.",
+    "Guía completa sobre gobierno corporativo en Colombia, principios, beneficios, órganos de administración y mejores prácticas para fortalecer la gestión empresarial.",
 
   image: "https://pravice.co/logo_pravice.png",
 

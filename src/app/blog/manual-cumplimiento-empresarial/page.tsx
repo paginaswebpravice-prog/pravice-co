@@ -5,19 +5,19 @@ const canonicalUrl = "https://pravice.co/blog/manual-cumplimiento-empresarial";
 
 export const metadata: Metadata = {
   title:
-    "Manual de cumplimiento empresarial: cómo elaborarlo correctamente | Pravice",
+    "Manual de cumplimiento empresarial en Colombia: qué debe incluir, cómo elaborarlo y ejemplos | Pravice",
 
   description:
-    "Aspectos esenciales para crear políticas internas de cumplimiento normativo.",
+    "Guía completa sobre el manual de cumplimiento empresarial en Colombia. Descubre qué es, qué debe incluir, cómo elaborarlo paso a paso, ejemplos, beneficios y errores que debes evitar.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Manual de cumplimiento empresarial",
+    title: "Manual de cumplimiento empresarial en Colombia: guía completa 2026",
     description:
-      "Guía práctica para implementar políticas internas y compliance empresarial.",
+      "Aprende cómo elaborar un manual de cumplimiento empresarial, qué políticas debe contener y cómo reducir riesgos legales mediante un programa de compliance.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Manual de cumplimiento empresarial",
+    title: "¿Cómo elaborar un manual de cumplimiento empresarial en Colombia?",
     description:
-      "Cómo estructurar políticas internas y programas de compliance.",
+      "Guía práctica con estructura, ejemplos, beneficios y errores frecuentes al implementar un programa de compliance.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -52,7 +52,8 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Manual de cumplimiento empresarial: cómo elaborarlo correctamente",
+  headline:
+    "Manual de cumplimiento empresarial en Colombia: guía completa para elaborarlo correctamente",
 
   description:
     "Aspectos esenciales para crear políticas internas de cumplimiento normativo.",
@@ -83,13 +84,20 @@ const schemaData = {
 
   keywords: [
     "manual de cumplimiento empresarial",
+    "manual de compliance",
     "compliance empresarial Colombia",
-    "políticas internas empresa",
-    "cumplimiento normativo",
-    "riesgo legal empresarial",
+    "cumplimiento normativo empresas",
+    "programa de cumplimiento",
+    "manual de cumplimiento normativo",
+    "políticas de cumplimiento empresarial",
     "compliance corporativo",
-    "manual compliance",
-    "programa de cumplimiento empresarial",
+    "manual de ética empresarial",
+    "riesgos legales empresas",
+    "gobierno corporativo",
+    "SAGRILAFT",
+    "PTEE",
+    "programa de transparencia",
+    "compliance officer",
   ],
 };
 
