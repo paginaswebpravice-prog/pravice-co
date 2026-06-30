@@ -64,8 +64,8 @@ export default function RecuperacionCarteraEmpresas() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Recuperación de cartera empresarial en Colombia: estrategias
-            efectivas para mejorar flujo de caja
+            ¿Cómo recuperar cartera empresarial en Colombia? 12 estrategias para
+            reducir la morosidad
           </motion.h1>
 
           <motion.p
@@ -201,6 +201,248 @@ export default function RecuperacionCarteraEmpresas() {
             </motion.div>
           ))}
         </motion.section>
+
+        <section className={styles.section}>
+          <h2>
+            12 causas más comunes por las que una empresa acumula cartera
+            vencida en Colombia
+          </h2>
+
+          <p>
+            La mayoría de los problemas de recaudo no aparecen de un día para
+            otro. Generalmente son consecuencia de políticas comerciales
+            débiles, procesos de cobranza poco estructurados o clientes con
+            dificultades financieras. Identificar estas causas permite
+            implementar acciones preventivas antes de que la cartera afecte la
+            liquidez del negocio.
+          </p>
+
+          {[
+            {
+              title: "1. Falta de políticas claras de crédito",
+              text: "Otorgar crédito sin evaluar la capacidad de pago incrementa significativamente el riesgo de mora.",
+            },
+            {
+              title: "2. Ausencia de contratos bien redactados",
+              text: "Contratos ambiguos dificultan exigir el cumplimiento de las obligaciones.",
+            },
+            {
+              title: "3. Facturación con errores",
+              text: "Facturas incorrectas generan retrasos y discusiones innecesarias.",
+            },
+            {
+              title: "4. Seguimiento tardío",
+              text: "Esperar demasiado tiempo para contactar al cliente reduce la probabilidad de recuperación.",
+            },
+            {
+              title: "5. Clientes con problemas financieros",
+              text: "Las dificultades económicas del deudor afectan directamente la capacidad de pago.",
+            },
+            {
+              title: "6. Procesos manuales",
+              text: "La falta de automatización provoca olvidos y retrasos en las gestiones de cobro.",
+            },
+            {
+              title: "7. Mala comunicación",
+              text: "No mantener contacto permanente con el cliente dificulta negociar soluciones.",
+            },
+            {
+              title: "8. Falta de recordatorios",
+              text: "Muchos pagos se retrasan simplemente porque el cliente no recibe avisos oportunos.",
+            },
+            {
+              title: "9. Exceso de confianza comercial",
+              text: "Permitir ampliaciones constantes de plazo aumenta el riesgo financiero.",
+            },
+            {
+              title: "10. No realizar cobro prejurídico",
+              text: "Esperar demasiado antes de iniciar la cobranza formal reduce las posibilidades de éxito.",
+            },
+            {
+              title: "11. Documentación incompleta",
+              text: "La ausencia de soportes dificulta demostrar la existencia de la obligación.",
+            },
+            {
+              title: "12. No acudir oportunamente a mecanismos jurídicos",
+              text: "Retrasar las acciones legales puede afectar la recuperación efectiva de la deuda.",
+            },
+          ].map((item, i) => (
+            <div key={i} className={styles.card}>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </div>
+          ))}
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            10 beneficios de implementar una estrategia efectiva de recuperación
+            de cartera empresarial
+          </h2>
+
+          <p>
+            Una gestión profesional del recaudo no solo permite recuperar
+            dinero. También mejora la estabilidad financiera, fortalece la
+            operación y reduce riesgos para la empresa.
+          </p>
+
+          {[
+            {
+              title: "1. Mayor liquidez",
+              text: "Recibir pagos oportunamente mejora el flujo de caja.",
+            },
+            {
+              title: "2. Reducción de la morosidad",
+              text: "Disminuye el volumen de cuentas vencidas.",
+            },
+            {
+              title: "3. Menor necesidad de financiamiento",
+              text: "La empresa depende menos de créditos externos.",
+            },
+            {
+              title: "4. Mejor planificación financiera",
+              text: "Permite proyectar ingresos con mayor precisión.",
+            },
+            {
+              title: "5. Disminución de pérdidas",
+              text: "Reduce el riesgo de que las obligaciones nunca sean pagadas.",
+            },
+            {
+              title: "6. Mayor capacidad de inversión",
+              text: "La liquidez recuperada puede destinarse al crecimiento del negocio.",
+            },
+            {
+              title: "7. Relaciones comerciales más claras",
+              text: "Clientes y proveedores conocen las reglas de pago desde el inicio.",
+            },
+            {
+              title: "8. Menos conflictos jurídicos",
+              text: "Una cobranza preventiva evita que muchos casos lleguen a juicio.",
+            },
+            {
+              title: "9. Mejor reputación financiera",
+              text: "Una empresa con cartera controlada transmite mayor confianza.",
+            },
+            {
+              title: "10. Mayor rentabilidad",
+              text: "Recuperar cartera mejora directamente los resultados financieros.",
+            },
+          ].map((item, i) => (
+            <div key={i} className={styles.card}>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </div>
+          ))}
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            ¿Cuándo conviene pasar de la recuperación de cartera al cobro
+            jurídico?
+          </h2>
+
+          <p>
+            No todas las cuentas vencidas requieren iniciar inmediatamente un
+            proceso judicial. Sin embargo, existen situaciones en las que
+            continuar únicamente con llamadas o recordatorios deja de ser
+            eficiente y puede poner en riesgo la recuperación de la deuda.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Incumplimiento reiterado de acuerdos de pago</h3>
+            <p>
+              Si el cliente incumple varios compromisos consecutivos, puede ser
+              momento de evaluar acciones jurídicas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Silencio del deudor</h3>
+            <p>
+              La falta de respuesta durante un periodo prolongado suele indicar
+              que la recuperación amistosa será difícil.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Montos elevados</h3>
+            <p>
+              Cuando la deuda representa un impacto importante para la empresa,
+              actuar oportunamente ayuda a proteger el patrimonio.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Existencia de títulos ejecutivos</h3>
+            <p>
+              Contar con pagarés, facturas electrónicas u otros documentos
+              ejecutivos puede facilitar la recuperación mediante las vías
+              previstas por la ley.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            8 errores que dificultan la recuperación de cartera empresarial
+          </h2>
+
+          <p>
+            Muchas empresas pierden oportunidades de recaudo por errores
+            internos que pueden evitarse mediante una adecuada política de
+            crédito y cobranza.
+          </p>
+
+          <div className={styles.card}>
+            <h3>No verificar la solvencia del cliente</h3>
+            <p>
+              Otorgar crédito sin análisis previo incrementa la probabilidad de
+              mora.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Permitir vencimientos prolongados</h3>
+            <p>
+              Mientras más tiempo pasa, más difícil suele ser recuperar el
+              dinero.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No documentar acuerdos</h3>
+            <p>Los compromisos verbales generan dificultades probatorias.</p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No automatizar recordatorios</h3>
+            <p>Los avisos automáticos ayudan a disminuir la mora.</p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No clasificar la cartera por antigüedad</h3>
+            <p>
+              Segmentar la cartera permite priorizar los casos más críticos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No medir indicadores de recaudo</h3>
+            <p>Sin métricas es difícil mejorar la gestión de cobranza.</p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Esperar demasiado antes de negociar</h3>
+            <p>Las negociaciones tempranas suelen tener mejores resultados.</p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No buscar asesoría jurídica cuando es necesaria</h3>
+            <p>
+              En algunos casos, actuar oportunamente evita mayores pérdidas.
+            </p>
+          </div>
+        </section>
 
         {/* CONCLUSIÓN */}
         <motion.section

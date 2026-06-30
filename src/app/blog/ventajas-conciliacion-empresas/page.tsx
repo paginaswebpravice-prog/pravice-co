@@ -4,17 +4,19 @@ import VentajasConciliacionEmpresas from "./VentajasConciliacionEmpresas";
 const canonicalUrl = "https://pravice.co/blog/ventajas-conciliacion-empresas";
 
 export const metadata: Metadata = {
-  title: "Ventajas de la conciliación para empresas en Colombia | Pravice",
+  title:
+    "7 Ventajas de la Conciliación para Empresas en Colombia: Cómo Evitar Demandas y Reducir Costos",
 
   description:
-    "Conoce cómo la conciliación ayuda a reducir costos y evitar litigios empresariales en Colombia.",
+    "Descubre las principales ventajas de la conciliación para empresas en Colombia, cómo reducir costos legales, evitar demandas y resolver conflictos comerciales más rápido.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Ventajas de la conciliación para empresas en Colombia",
+    title:
+      "Cómo la Conciliación Puede Ahorrarle Miles de Pesos a una Empresa en Colombia",
     description:
       "Cómo la conciliación ayuda a las empresas a resolver conflictos y evitar procesos judiciales.",
     url: canonicalUrl,
@@ -33,7 +35,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Ventajas de la conciliación para empresas",
+    title:
+      "7 ventajas de la conciliación para empresas que pocas organizaciones aprovechan",
     description:
       "Cómo reducir costos y evitar litigios empresariales mediante conciliación.",
     images: ["https://pravice.co/logo_pravice.png"],
@@ -51,7 +54,8 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Ventajas de la conciliación para empresas en Colombia",
+  headline:
+    "7 ventajas de la conciliación para empresas en Colombia para reducir costos y evitar litigios",
 
   description:
     "Conoce cómo la conciliación ayuda a reducir costos y evitar litigios empresariales en Colombia.",
@@ -81,14 +85,14 @@ const schemaData = {
   articleSection: "Conciliación Empresarial",
 
   keywords: [
-    "conciliación empresarial",
-    "ventajas de la conciliación",
-    "conciliación empresas Colombia",
-    "evitar litigios empresariales",
-    "resolución de conflictos empresariales",
-    "acuerdos comerciales",
-    "mecanismos alternativos de resolución",
+    "beneficios conciliación empresas",
     "conciliación comercial",
+    "conciliación entre empresas",
+    "resolver conflictos empresariales",
+    "evitar demandas empresariales",
+    "conciliación mercantil Colombia",
+    "negociación empresarial",
+    "conciliación para empresas",
   ],
 };
 

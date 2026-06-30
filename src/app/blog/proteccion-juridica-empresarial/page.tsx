@@ -6,18 +6,20 @@ const canonicalUrl =
 
 export const metadata: Metadata = {
   title:
-    "Protección jurídica empresarial en Colombia 2026: guía legal para empresas | Pravice",
+    "Protección jurídica empresarial en Colombia: 15 estrategias para evitar riesgos legales | Pravice",
   description:
-    "Aprende cómo proteger tu empresa en Colombia y Bogotá con estrategias jurídicas efectivas. Evita riesgos legales, sanciones y conflictos empresariales.",
+    "Aprende cómo proteger jurídicamente una empresa en Colombia. Descubre 15 estrategias legales, riesgos frecuentes, contratos indispensables, cumplimiento normativo y medidas preventivas para evitar sanciones.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Protección jurídica empresarial en Colombia 2026: guía completa",
+    title:
+      "¿Cómo proteger jurídicamente una empresa en Colombia? Guía completa 2026",
+
     description:
-      "Estrategias legales para proteger empresas en Colombia y evitar riesgos jurídicos.",
+      "Descubre las mejores estrategias para prevenir demandas, proteger el patrimonio empresarial y reducir riesgos legales en Colombia.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",

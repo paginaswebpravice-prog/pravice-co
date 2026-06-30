@@ -4,19 +4,22 @@ import ProteccionDatosEmpresas from "./ProteccionDatosEmpresas";
 const canonicalUrl = "https://pravice.co/blog/proteccion-datos-empresas";
 
 export const metadata: Metadata = {
-  title: "Protección de datos personales en Colombia para empresas | Pravice",
+  title:
+    "Protección de datos personales para empresas en Colombia: guía completa 2026 | Pravice",
 
   description:
-    "Obligaciones legales de las empresas frente al tratamiento de datos personales en Colombia.",
+    "Aprende cómo cumplir la Ley 1581 de 2012 sobre protección de datos personales en Colombia. Conoce las obligaciones de las empresas, políticas de tratamiento, Habeas Data, sanciones y buenas prácticas.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Protección de datos personales en Colombia para empresas",
+    title:
+      "Protección de datos personales para empresas en Colombia: guía completa",
+
     description:
-      "Guía sobre obligaciones legales y protección de datos personales para empresas.",
+      "Descubre cómo cumplir la normativa colombiana sobre tratamiento de datos personales y evitar sanciones de la SIC.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -33,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Protección de datos personales en Colombia",
+    title: "Protección de datos personales para empresas | Guía completa",
     description:
-      "Obligaciones legales empresariales sobre tratamiento de datos.",
+      "Obligaciones legales, Habeas Data, políticas de privacidad y buenas prácticas para empresas en Colombia.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -51,7 +54,8 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Protección de datos personales en Colombia para empresas",
+  headline:
+    "Protección de datos personales para empresas en Colombia: guía completa",
 
   description:
     "Obligaciones legales de las empresas frente al tratamiento de datos personales.",
@@ -82,13 +86,20 @@ const schemaData = {
 
   keywords: [
     "protección de datos personales",
-    "Habeas Data Colombia",
+    "Ley 1581 de 2012",
+    "Habeas Data",
     "tratamiento de datos personales",
-    "cumplimiento empresarial",
-    "datos personales empresas",
-    "política de privacidad",
-    "protección de información",
-    "normativa datos personales",
+    "protección de datos empresas",
+    "política de tratamiento de datos",
+    "autorización tratamiento de datos",
+    "SIC protección de datos",
+    "cumplimiento Habeas Data",
+    "datos personales Colombia",
+    "empresa tratamiento datos",
+    "oficial de protección de datos",
+    "cumplimiento normativo",
+    "seguridad de la información",
+    "protección información clientes",
   ],
 };
 

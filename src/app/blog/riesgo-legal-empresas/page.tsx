@@ -4,17 +4,18 @@ import RiesgoLegalEmpresas from "./RiesgoLegalEmpresas";
 const canonicalUrl = "https://pravice.co/blog/riesgo-legal-empresas";
 
 export const metadata: Metadata = {
-  title: "Gestión del riesgo legal en empresas colombianas | Pravice",
+  title:
+    "Riesgo legal en empresas: cómo identificarlo, prevenirlo y reducirlo en Colombia | Pravice",
 
   description:
-    "Cómo identificar y reducir riesgos jurídicos dentro de las organizaciones.",
+    "Aprende qué es el riesgo legal empresarial, cuáles son los principales riesgos jurídicos en Colombia y cómo prevenir demandas, sanciones y contingencias mediante una adecuada gestión legal.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Gestión del riesgo legal en empresas colombianas",
+    title: "Riesgo legal en empresas: guía para prevenir demandas y sanciones",
     description:
       "Guía sobre prevención de riesgos jurídicos y cumplimiento empresarial.",
     url: canonicalUrl,
@@ -80,14 +81,21 @@ const schemaData = {
   articleSection: "Cumplimiento Normativo",
 
   keywords: [
+    "riesgo legal empresas",
     "riesgo legal empresarial",
     "gestión del riesgo legal",
+    "cómo prevenir riesgos legales",
+    "cómo reducir riesgos legales",
+    "tipos de riesgo legal",
     "riesgos jurídicos empresas",
     "compliance empresarial",
-    "cumplimiento normativo",
-    "prevención legal empresas",
-    "asesoría jurídica empresarial",
-    "control interno empresas",
+    "cumplimiento normativo empresas",
+    "prevención de demandas empresariales",
+    "gestión jurídica empresarial",
+    "contingencias legales empresas",
+    "control interno empresarial",
+    "gobierno corporativo",
+    "asesoría jurídica preventiva",
   ],
 };
 

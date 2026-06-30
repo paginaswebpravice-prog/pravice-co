@@ -6,26 +6,60 @@ const canonicalUrl =
 
 export const metadata: Metadata = {
   title:
-    "Cómo resolver conflictos empresariales en Colombia: guía legal completa 2026 | Pravice",
+    "Cómo resolver conflictos empresariales en Colombia: 10 soluciones legales efectivas (Guía 2026) | Pravice",
+
   description:
-    "Aprende cómo resolver conflictos empresariales en Colombia con métodos como conciliación, arbitraje y negociación. Protege tu empresa y evita pérdidas legales.",
+    "Descubre cómo resolver conflictos empresariales en Colombia sin llegar a juicio. Conoce las principales causas, soluciones legales, conciliación, negociación, arbitraje y cómo proteger tu empresa.",
 
   keywords: [
+    "cómo resolver conflictos empresariales",
+    "conflictos empresariales Colombia",
     "resolución de conflictos empresariales",
-    "conflictos empresariales en Colombia",
-    "conciliación empresarial Colombia",
-    "arbitraje Colombia empresas",
-    "problemas legales empresas Colombia",
+    "conciliación empresarial",
+    "arbitraje empresarial",
+    "negociación empresarial",
+    "conflictos entre socios",
+    "conflictos con proveedores",
+    "derecho comercial Colombia",
+    "solución de conflictos empresariales",
   ],
 
+  alternates: {
+    canonical: canonicalUrl,
+  },
+
   openGraph: {
-    title: "Cómo resolver conflictos empresariales en Colombia (guía completa)",
+    title:
+      "Cómo resolver conflictos empresariales en Colombia: 10 soluciones legales que funcionan",
+
     description:
-      "Descubre cómo resolver conflictos empresariales en Colombia de forma efectiva con conciliación, negociación y arbitraje.",
+      "Aprende cómo resolver conflictos empresariales con negociación, conciliación, arbitraje y otras estrategias para evitar demandas y proteger tu empresa.",
+
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
     type: "article",
+
+    images: [
+      {
+        url: "https://pravice.co/logo_pravice.png",
+        width: 1200,
+        height: 630,
+        alt: "Cómo resolver conflictos empresariales en Colombia",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title:
+      "Cómo resolver conflictos empresariales en Colombia (Guía Completa 2026)",
+
+    description:
+      "Conoce las mejores soluciones para resolver conflictos entre empresas antes de llegar a juicio.",
+
+    images: ["https://pravice.co/logo_pravice.png"],
   },
 };
 
@@ -38,9 +72,24 @@ const schemaData = {
     "@id": canonicalUrl,
   },
   headline:
-    "Cómo resolver conflictos empresariales en Colombia: guía legal completa 2026",
+    "Cómo resolver conflictos empresariales en Colombia: 10 soluciones legales efectivas (Guía 2026)",
+
   description:
-    "Aprende cómo resolver conflictos empresariales en Colombia con métodos como conciliación, arbitraje y negociación. Protege tu empresa y evita pérdidas legales.",
+    "Aprende cómo resolver conflictos empresariales en Colombia mediante negociación, conciliación, arbitraje y otras estrategias legales para proteger tu empresa y evitar procesos judiciales.",
+
+  keywords: [
+    "cómo resolver conflictos empresariales",
+    "conflictos empresariales Colombia",
+    "conciliación empresarial",
+    "arbitraje empresarial",
+    "negociación empresarial",
+    "conflictos entre socios",
+    "conflictos comerciales",
+    "derecho empresarial Colombia",
+    "mediación empresarial",
+    "solución de conflictos empresariales",
+  ],
+
   image: "https://pravice.co/logo_pravice.png",
   author: {
     "@type": "Organization",
@@ -59,15 +108,6 @@ const schemaData = {
   dateModified: "2026-04-28",
   inLanguage: "es-CO",
   articleSection: "Resolución de Conflictos Empresariales",
-  keywords: [
-    "resolución de conflictos empresariales",
-    "conflictos empresariales en Colombia",
-    "conciliación empresarial Colombia",
-    "arbitraje Colombia empresas",
-    "negociación empresarial Colombia",
-    "derecho comercial Colombia",
-    "solución de conflictos empresariales",
-  ],
 };
 
 export default function Page() {

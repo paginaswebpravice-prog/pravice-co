@@ -4,19 +4,32 @@ import ResponsabilidadCivilEmpresas from "./ResponsabilidadCivilEmpresas";
 const canonicalUrl = "https://pravice.co/blog/responsabilidad-civil-empresas";
 
 export const metadata: Metadata = {
-  title: "Responsabilidad civil de las empresas en Colombia | Pravice",
+  title:
+    "Responsabilidad civil de las empresas en Colombia: cuándo aplica y cómo prevenir demandas (Guía 2026) | Pravice",
 
   description:
-    "Conoce cuándo una empresa puede enfrentar responsabilidad legal en Colombia.",
+    "Descubre cuándo una empresa puede ser responsable por daños a clientes, trabajadores o terceros. Conoce ejemplos, riesgos legales y cómo prevenir demandas en Colombia.",
+
+  keywords: [
+    "responsabilidad civil empresas Colombia",
+    "responsabilidad civil empresarial",
+    "cuándo responde una empresa por daños",
+    "demanda contra una empresa",
+    "daños y perjuicios empresas",
+    "responsabilidad contractual empresas",
+    "responsabilidad extracontractual empresas",
+    "prevención de riesgos legales empresariales",
+  ],
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Responsabilidad civil de las empresas en Colombia",
+    title:
+      "Responsabilidad civil de las empresas en Colombia: guía completa 2026",
     description:
-      "Guía sobre riesgos legales y responsabilidad civil empresarial en Colombia.",
+      "Aprende cuándo una empresa debe responder por daños, cuáles son los principales riesgos legales y cómo prevenir demandas civiles.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -26,15 +39,16 @@ export const metadata: Metadata = {
         url: "https://pravice.co/logo_pravice.png",
         width: 1200,
         height: 630,
-        alt: "Responsabilidad civil empresarial",
+        alt: "Responsabilidad civil de las empresas en Colombia",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Responsabilidad civil de las empresas en Colombia",
-    description: "Cuándo una empresa puede enfrentar responsabilidad legal.",
+    title: "Responsabilidad civil de las empresas en Colombia: guía práctica",
+    description:
+      "Conoce cuándo una empresa responde por daños y cómo reducir riesgos legales.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -50,10 +64,24 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Responsabilidad civil de las empresas en Colombia",
+  headline:
+    "Responsabilidad civil de las empresas en Colombia: cuándo aplica y cómo prevenir demandas",
 
   description:
-    "Conoce cuándo una empresa puede enfrentar responsabilidad legal en Colombia.",
+    "Guía completa sobre responsabilidad civil empresarial en Colombia, tipos de responsabilidad, ejemplos, riesgos legales y medidas preventivas.",
+
+  keywords: [
+    "responsabilidad civil empresas Colombia",
+    "responsabilidad civil empresarial",
+    "responsabilidad contractual",
+    "responsabilidad extracontractual",
+    "demanda contra empresa",
+    "daños y perjuicios empresas",
+    "indemnización empresas",
+    "riesgos jurídicos empresariales",
+    "cumplimiento legal empresas",
+    "asesoría jurídica empresarial",
+  ],
 
   image: "https://pravice.co/logo_pravice.png",
 
@@ -78,17 +106,6 @@ const schemaData = {
   inLanguage: "es-CO",
 
   articleSection: "Derecho Empresarial",
-
-  keywords: [
-    "responsabilidad civil empresas",
-    "responsabilidad empresarial Colombia",
-    "demandas contra empresas",
-    "riesgos legales empresariales",
-    "daños y perjuicios empresas",
-    "derecho empresarial Colombia",
-    "asesoría jurídica empresarial",
-    "cumplimiento normativo",
-  ],
 };
 
 export default function Page() {

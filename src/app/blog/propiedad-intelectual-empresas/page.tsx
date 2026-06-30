@@ -4,19 +4,20 @@ import PropiedadIntelectualEmpresas from "./PropiedadIntelectualEmpresas";
 const canonicalUrl = "https://pravice.co/blog/propiedad-intelectual-empresas";
 
 export const metadata: Metadata = {
-  title: "Propiedad intelectual para empresas en Colombia | Pravice",
+  title:
+    "Propiedad intelectual para empresas en Colombia: cómo proteger marcas, software y activos intangibles | Pravice",
 
   description:
-    "Conoce cómo proteger marcas, software y activos intangibles en Colombia.",
+    "Aprende cómo proteger la propiedad intelectual de tu empresa en Colombia. Descubre cómo registrar marcas, proteger software, derechos de autor, secretos empresariales y otros activos intangibles.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Propiedad intelectual para empresas en Colombia",
+    title: "Cómo proteger la propiedad intelectual de una empresa en Colombia",
     description:
-      "Guía sobre protección de marcas, software y activos intangibles empresariales.",
+      "Guía completa para proteger marcas, software, derechos de autor y activos intangibles empresariales.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -33,8 +34,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Propiedad intelectual para empresas",
-    description: "Cómo proteger marcas, software y activos intangibles.",
+    title: "Cómo proteger la propiedad intelectual de tu empresa en Colombia",
+    description:
+      "Registro de marcas, software, derechos de autor y protección de activos intangibles.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -50,10 +52,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Propiedad intelectual para empresas en Colombia",
+  headline:
+    "Propiedad intelectual para empresas en Colombia: cómo proteger marcas, software y activos intangibles",
 
   description:
-    "Conoce cómo proteger marcas, software y activos intangibles en Colombia.",
+    "Aprende cómo proteger la propiedad intelectual de una empresa en Colombia mediante el registro de marcas, protección de software, derechos de autor y estrategias legales para activos intangibles.",
 
   image: "https://pravice.co/logo_pravice.png",
 
@@ -80,14 +83,21 @@ const schemaData = {
   articleSection: "Propiedad Intelectual",
 
   keywords: [
-    "propiedad intelectual empresas",
-    "registro de marca Colombia",
-    "protección de software",
-    "activos intangibles",
-    "derechos de autor empresas",
+    "propiedad intelectual empresas Colombia",
     "propiedad intelectual Colombia",
-    "protección legal empresarial",
-    "marcas comerciales",
+    "registro de marca Colombia",
+    "cómo registrar una marca",
+    "protección de software Colombia",
+    "derechos de autor software",
+    "activos intangibles empresas",
+    "secretos empresariales",
+    "propiedad industrial Colombia",
+    "protección de marcas comerciales",
+    "protección legal de software",
+    "protección de innovación",
+    "derechos de autor empresas",
+    "registro de propiedad intelectual",
+    "propiedad intelectual para startups",
   ],
 };
 

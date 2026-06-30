@@ -4,19 +4,21 @@ import SarlaftColombia from "./SarlaftColombia";
 const canonicalUrl = "https://pravice.co/blog/sarlaft-colombia";
 
 export const metadata: Metadata = {
-  title: "SARLAFT en Colombia: qué es y cómo afecta a las empresas | Pravice",
+  title:
+    "¿Qué es el SARLAFT en Colombia? Empresas obligadas, requisitos y sanciones | Pravice",
 
   description:
-    "Guía sobre SARLAFT, prevención de lavado de activos y obligaciones empresariales en Colombia.",
+    "Descubre qué es el SARLAFT en Colombia, qué empresas deben implementarlo, cuáles son sus requisitos, etapas, obligaciones y las sanciones por incumplimiento.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "SARLAFT en Colombia: qué es y cómo afecta a las empresas",
+    title: "¿Qué es el SARLAFT en Colombia? Guía Completa para Empresas",
+
     description:
-      "Conoce cómo funciona el SARLAFT y las obligaciones empresariales en Colombia.",
+      "Aprende quiénes deben implementar el SARLAFT, cómo funciona y qué obligaciones establece la normativa colombiana.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -33,9 +35,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "SARLAFT en Colombia",
+    title: "¿Qué es el SARLAFT en Colombia?",
+
     description:
-      "Prevención de lavado de activos y obligaciones empresariales.",
+      "Guía completa sobre requisitos, empresas obligadas, implementación y sanciones.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -51,7 +54,8 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "SARLAFT en Colombia: qué es y cómo afecta a las empresas",
+  headline:
+    "¿Qué es el SARLAFT en Colombia? Empresas obligadas, requisitos y sanciones",
 
   description:
     "Guía completa sobre SARLAFT, prevención de lavado de activos y obligaciones empresariales.",
@@ -81,13 +85,15 @@ const schemaData = {
   articleSection: "Cumplimiento Normativo",
 
   keywords: [
+    "qué es SARLAFT",
     "SARLAFT Colombia",
-    "lavado de activos",
-    "cumplimiento empresarial",
+    "empresas obligadas SARLAFT",
+    "implementación SARLAFT",
+    "oficial de cumplimiento",
     "prevención lavado de activos",
-    "financiación del terrorismo",
-    "obligaciones empresariales",
-    "riesgo LAFT",
+    "SAGRILAFT",
+    "LAFT",
+    "cumplimiento normativo",
     "compliance Colombia",
   ],
 };

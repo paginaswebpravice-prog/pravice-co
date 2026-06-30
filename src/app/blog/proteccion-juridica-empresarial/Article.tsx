@@ -51,8 +51,8 @@ export default function ProteccionJuridicaEmpresarial() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Protección jurídica empresarial en Colombia 2026: guía completa para
-            empresas
+            ¿Cómo proteger jurídicamente una empresa en Colombia? Guía completa
+            para prevenir riesgos legales
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
@@ -74,13 +74,17 @@ export default function ProteccionJuridicaEmpresarial() {
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Guía completa de protección jurídica empresarial en Colombia</h3>
+          <h3>¿Qué encontrarás en esta guía?</h3>
           <ul>
-            <li>Qué es la protección jurídica empresarial en Colombia</li>
-            <li>Importancia para empresas en Bogotá y Colombia</li>
-            <li>Principales riesgos legales empresariales</li>
-            <li>Estrategias jurídicas para proteger tu empresa</li>
-            <li>Conclusión y recomendaciones legales</li>
+            <li>Qué es la protección jurídica empresarial</li>
+            <li>Por qué toda empresa debería implementarla</li>
+            <li>15 riesgos legales que pueden afectar un negocio</li>
+            <li>12 estrategias para proteger una empresa</li>
+            <li>Contratos indispensables</li>
+            <li>Cómo reducir demandas y sanciones</li>
+            <li>Beneficios de una asesoría jurídica permanente</li>
+            <li>Errores que cometen muchas empresas</li>
+            <li>Preguntas frecuentes</li>
           </ul>
         </section>
 
@@ -121,6 +125,375 @@ export default function ProteccionJuridicaEmpresarial() {
             Además, fortalece la confianza de clientes, socios e inversionistas,
             especialmente en mercados competitivos como Bogotá.
           </p>
+        </section>
+
+        <section className={styles.section}>
+          <h2>15 riesgos legales que pueden afectar una empresa en Colombia</h2>
+
+          <p>
+            Toda empresa, sin importar su tamaño o sector económico, está
+            expuesta a riesgos jurídicos que pueden generar pérdidas económicas,
+            sanciones, conflictos con clientes, proveedores, trabajadores o
+            incluso con las autoridades. Identificar estos riesgos de manera
+            preventiva permite implementar controles que reduzcan la posibilidad
+            de litigios y fortalezcan la seguridad jurídica del negocio.
+          </p>
+
+          <p>
+            Estos son algunos de los riesgos legales más frecuentes que
+            enfrentan las organizaciones en Colombia.
+          </p>
+
+          <div className={styles.card}>
+            <h3>1. Incumplimientos contractuales</h3>
+            <p>
+              Contratos mal redactados o incumplidos pueden generar demandas,
+              indemnizaciones y pérdidas económicas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>2. Demandas laborales</h3>
+            <p>
+              La incorrecta gestión de contratos de trabajo, liquidaciones o
+              despidos puede ocasionar procesos judiciales laborales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>3. Sanciones administrativas</h3>
+            <p>
+              Incumplir obligaciones legales frente a entidades de control puede
+              dar lugar a investigaciones y multas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>4. Incumplimiento tributario</h3>
+            <p>
+              Errores en declaraciones, pagos o reportes fiscales pueden afectar
+              la estabilidad financiera de la empresa.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Protección insuficiente de datos personales</h3>
+            <p>
+              El tratamiento inadecuado de información personal puede generar
+              sanciones y afectar la reputación empresarial.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Conflictos societarios</h3>
+            <p>
+              Diferencias entre socios pueden comprometer la continuidad del
+              negocio si no existen acuerdos claros.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Problemas de propiedad intelectual</h3>
+            <p>
+              No registrar marcas, software o desarrollos facilita que terceros
+              los utilicen sin autorización.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>8. Incumplimiento regulatorio</h3>
+            <p>
+              Algunos sectores deben cumplir requisitos específicos cuya omisión
+              genera importantes consecuencias jurídicas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>9. Fraudes internos</h3>
+            <p>
+              La ausencia de controles internos incrementa el riesgo de
+              actuaciones fraudulentas por parte de colaboradores.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>10. Incumplimiento de proveedores</h3>
+            <p>
+              La falta de contratos adecuados puede dificultar reclamar
+              incumplimientos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>11. Reclamaciones de consumidores</h3>
+            <p>
+              La atención inadecuada de clientes puede derivar en procesos ante
+              las autoridades competentes.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>12. Riesgos por lavado de activos</h3>
+            <p>
+              No implementar controles puede comprometer la responsabilidad de
+              la organización.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>13. Incumplimiento ambiental</h3>
+            <p>
+              Dependiendo de la actividad económica, existen obligaciones
+              ambientales cuyo incumplimiento genera sanciones.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>14. Responsabilidad civil empresarial</h3>
+            <p>
+              Las empresas pueden responder por daños ocasionados durante el
+              desarrollo de su actividad.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>15. Litigios comerciales</h3>
+            <p>
+              Los conflictos con clientes, distribuidores o aliados pueden
+              afectar la continuidad del negocio.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            12 estrategias para fortalecer la protección jurídica de una empresa
+          </h2>
+
+          <p>
+            La mejor forma de reducir riesgos legales consiste en adoptar una
+            estrategia preventiva que permita identificar posibles problemas
+            antes de que se conviertan en conflictos judiciales o sanciones
+            administrativas.
+          </p>
+
+          <div className={styles.card}>
+            <h3>1. Elaborar contratos sólidos</h3>
+            <p>
+              Definir claramente derechos, obligaciones y responsabilidades.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>2. Actualizar documentos legales</h3>
+            <p>
+              Revisar periódicamente contratos, políticas y reglamentos
+              internos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>3. Implementar programas de cumplimiento</h3>
+            <p>Fortalecer el cumplimiento normativo reduce sanciones.</p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>4. Capacitar al personal</h3>
+            <p>La formación disminuye errores y riesgos operativos.</p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Proteger la información empresarial</h3>
+            <p>Implementar políticas de confidencialidad y seguridad.</p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Registrar la propiedad intelectual</h3>
+            <p>Marcas, software y desarrollos deben protegerse legalmente.</p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Realizar auditorías jurídicas</h3>
+            <p>
+              Permiten detectar incumplimientos antes de que generen problemas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>8. Gestionar riesgos empresariales</h3>
+            <p>
+              Identificar amenazas facilita la toma de decisiones preventivas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>9. Fortalecer el gobierno corporativo</h3>
+            <p>
+              Una estructura organizacional clara reduce conflictos internos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>10. Implementar controles documentales</h3>
+            <p>Mantener soportes organizados facilita la defensa jurídica.</p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>11. Revisar cambios normativos</h3>
+            <p>
+              Actualizar procesos conforme evoluciona la legislación colombiana.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>12. Contar con asesoría jurídica permanente</h3>
+            <p>El acompañamiento legal continuo ayuda a prevenir conflictos.</p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Contratos indispensables para reducir riesgos legales en una empresa
+          </h2>
+
+          <p>
+            Una parte importante de la protección jurídica empresarial consiste
+            en contar con contratos claros y adaptados a cada relación
+            comercial. Documentar correctamente los acuerdos permite prevenir
+            conflictos, establecer responsabilidades y facilitar la defensa de
+            los derechos de la empresa en caso de incumplimiento.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Contratos laborales</h3>
+            <p>
+              Regulan la relación entre empleador y trabajador, definiendo
+              funciones, salario, obligaciones y condiciones laborales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Contratos de prestación de servicios</h3>
+            <p>
+              Permiten formalizar relaciones con contratistas independientes,
+              estableciendo el alcance del servicio y las responsabilidades de
+              las partes.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Contratos con proveedores</h3>
+            <p>
+              Definen condiciones de suministro, tiempos de entrega, garantías,
+              penalidades e incumplimientos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Acuerdos de confidencialidad (NDA)</h3>
+            <p>
+              Protegen información estratégica, secretos empresariales y datos
+              confidenciales frente a terceros.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Contratos de distribución o comercialización</h3>
+            <p>
+              Regulan la venta y distribución de productos o servicios para
+              evitar conflictos comerciales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Licencias de software y propiedad intelectual</h3>
+            <p>
+              Permiten establecer las condiciones de uso, explotación y
+              protección de desarrollos tecnológicos y activos intangibles.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            10 señales de que una empresa necesita asesoría jurídica preventiva
+          </h2>
+
+          <p>
+            Muchas organizaciones buscan apoyo legal únicamente cuando ya
+            enfrentan un proceso judicial. Sin embargo, la asesoría preventiva
+            permite identificar riesgos con anticipación y evitar conflictos que
+            pueden afectar la estabilidad del negocio.
+          </p>
+
+          <div className={styles.card}>
+            <h3>1. Crecimiento acelerado de la empresa</h3>
+            <p>
+              El aumento de operaciones exige revisar contratos y procesos
+              internos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>2. Incremento en la contratación de personal</h3>
+            <p>
+              Es importante asegurar el cumplimiento de la normativa laboral.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>3. Celebración frecuente de contratos</h3>
+            <p>
+              Los documentos deben revisarse para reducir riesgos jurídicos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>4. Conflictos con clientes o proveedores</h3>
+            <p>
+              Las disputas comerciales requieren un adecuado respaldo legal.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Apertura de nuevos mercados</h3>
+            <p>Expandirse implica cumplir nuevas obligaciones legales.</p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Protección de activos intangibles</h3>
+            <p>
+              Las marcas, desarrollos y secretos empresariales deben protegerse.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Cambios normativos frecuentes</h3>
+            <p>
+              La legislación evoluciona y la empresa debe mantenerse
+              actualizada.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>8. Requerimientos de autoridades</h3>
+            <p>
+              Las inspecciones o investigaciones deben atenderse oportunamente.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>9. Riesgos de cumplimiento</h3>
+            <p>Programas de compliance ayudan a prevenir sanciones.</p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>10. Necesidad de tomar decisiones estratégicas</h3>
+            <p>
+              La asesoría jurídica brinda seguridad para el crecimiento
+              empresarial.
+            </p>
+          </div>
         </section>
 
         {/* SECCIÓN 3 */}

@@ -51,46 +51,71 @@ export default function PrevencionLavadoActivos() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Prevención de lavado de activos en empresas colombianas
+            Cómo prevenir el lavado de activos en Colombia: guía completa para
+            empresas
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cómo implementar medidas y controles para prevenir riesgos
-            de lavado de activos y financiación del terrorismo en Colombia.
+            Aprende qué es el lavado de activos, cómo prevenirlo dentro de una
+            empresa, qué controles exige la normativa colombiana y cuáles son
+            las mejores prácticas para reducir riesgos legales, financieros y
+            reputacionales.
           </motion.p>
         </motion.section>
 
         {/* INTRO */}
         <section className={styles.section}>
           <p>
-            La prevención de lavado de activos es una obligación fundamental
-            para muchas empresas en Colombia, especialmente aquellas expuestas a
-            riesgos financieros y comerciales.
+            Hoy no solamente las entidades financieras deben preocuparse por el
+            lavado de activos. Empresas de diferentes sectores económicos pueden
+            verse involucradas en operaciones relacionadas con clientes,
+            proveedores, inversionistas o socios que intentan dar apariencia de
+            legalidad a recursos provenientes de actividades ilícitas.
           </p>
 
           <p>
-            Implementar controles adecuados ayuda a proteger la reputación
-            corporativa, evitar sanciones y fortalecer el cumplimiento
-            normativo.
+            Por esta razón, en Colombia cada vez existen más obligaciones
+            relacionadas con programas de cumplimiento como SARLAFT y SAGRILAFT,
+            los cuales buscan prevenir el lavado de activos y la financiación
+            del terrorismo mediante políticas internas, controles y monitoreo
+            permanente.
+          </p>
+
+          <p>
+            En esta guía aprenderás cómo funciona la prevención del lavado de
+            activos, cuáles son los principales riesgos para las empresas, qué
+            controles deben implementarse y cómo fortalecer una cultura de
+            cumplimiento que proteja la organización frente a sanciones y daños
+            reputacionales.
           </p>
         </section>
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Qué aprenderás en esta guía</h3>
+          <h3>
+            Qué encontrarás en esta guía sobre prevención de lavado de activos
+          </h3>
 
           <ul>
             <li>Qué es el lavado de activos</li>
-            <li>Por qué las empresas deben prevenirlo</li>
-            <li>Principales controles empresariales</li>
-            <li>Riesgos legales y financieros</li>
-            <li>Buenas prácticas de cumplimiento</li>
+            <li>Cómo funciona el proceso de lavado</li>
+            <li>Cuáles empresas deben implementar controles</li>
+            <li>Diferencias entre SARLAFT y SAGRILAFT</li>
+            <li>Cómo identificar operaciones sospechosas</li>
+            <li>Principales señales de alerta</li>
+            <li>Obligaciones del oficial de cumplimiento</li>
+            <li>Controles internos más efectivos</li>
+            <li>Errores frecuentes de las empresas</li>
+            <li>Buenas prácticas de compliance</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué es el lavado de activos</h2>
+          <h2>
+            ¿Qué es el lavado de activos y por qué representa un riesgo para las
+            empresas en Colombia?
+          </h2>
 
           <p>
             El lavado de activos consiste en ocultar o dar apariencia de
@@ -122,7 +147,10 @@ export default function PrevencionLavadoActivos() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Importancia de la prevención empresarial</h2>
+          <h2>
+            ¿Por qué es importante prevenir el lavado de activos dentro de una
+            empresa?
+          </h2>
 
           <p>
             Implementar controles de prevención protege la estabilidad
@@ -164,7 +192,10 @@ export default function PrevencionLavadoActivos() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Controles para prevenir lavado de activos</h2>
+          <h2>
+            10 controles indispensables para prevenir el lavado de activos en
+            una empresa
+          </h2>
 
           <p>
             Las empresas deben implementar procesos internos de identificación,
@@ -206,7 +237,10 @@ export default function PrevencionLavadoActivos() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Riesgos por incumplimiento</h2>
+          <h2>
+            Consecuencias y sanciones por no prevenir el lavado de activos en
+            Colombia
+          </h2>
 
           <p>
             No implementar controles adecuados puede afectar seriamente a las
@@ -247,7 +281,10 @@ export default function PrevencionLavadoActivos() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Buenas prácticas empresariales</h2>
+          <h2>
+            12 buenas prácticas para fortalecer la prevención del lavado de
+            activos
+          </h2>
 
           <p>
             Las organizaciones deben fortalecer continuamente sus programas de
@@ -287,9 +324,284 @@ export default function PrevencionLavadoActivos() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>¿Cómo funciona el lavado de activos? Las 3 etapas del proceso</h2>
+
+          <p>
+            El lavado de activos consiste en un conjunto de operaciones
+            diseñadas para ocultar el origen ilícito de recursos obtenidos
+            mediante actividades ilegales. Aunque los métodos utilizados pueden
+            variar, la mayoría de los esquemas siguen un proceso compuesto por
+            tres etapas principales.
+          </p>
+
+          <p>
+            Comprender estas fases permite a las empresas identificar riesgos,
+            fortalecer sus controles internos y prevenir que sus operaciones
+            sean utilizadas para dar apariencia de legalidad a dineros
+            provenientes de actividades ilícitas.
+          </p>
+
+          <div className={styles.card}>
+            <h3>1. Colocación</h3>
+
+            <p>
+              Es la primera fase del lavado de activos. Consiste en introducir
+              dinero de origen ilícito dentro del sistema financiero o comercial
+              mediante depósitos, compras, inversiones, creación de empresas o
+              adquisición de bienes.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>2. Estratificación</h3>
+
+            <p>
+              Durante esta etapa se realizan múltiples transacciones nacionales
+              e internacionales para dificultar el rastreo del dinero,
+              utilizando diferentes cuentas, sociedades, contratos o movimientos
+              financieros.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>3. Integración</h3>
+
+            <p>
+              Finalmente los recursos regresan a la economía formal con
+              apariencia de legalidad mediante inversiones, compra de activos,
+              operaciones comerciales o actividades empresariales aparentemente
+              legítimas.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            10 señales de alerta que pueden indicar operaciones sospechosas de
+            lavado de activos
+          </h2>
+
+          <p>
+            No todas las operaciones inusuales constituyen lavado de activos;
+            sin embargo, identificar oportunamente ciertas señales permite a las
+            empresas realizar verificaciones adicionales y fortalecer sus
+            mecanismos de prevención.
+          </p>
+
+          <div className={styles.card}>
+            <h3>1. Clientes que se niegan a entregar información</h3>
+
+            <p>
+              La resistencia a suministrar documentos de identificación o
+              información sobre el origen de los recursos puede representar un
+              factor de riesgo.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>2. Pagos en efectivo por montos elevados</h3>
+
+            <p>
+              Operaciones de gran valor realizadas únicamente en efectivo deben
+              ser evaluadas cuidadosamente según el perfil del cliente.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>3. Transferencias financieras inusuales</h3>
+
+            <p>
+              Movimientos frecuentes entre diferentes cuentas o países sin una
+              justificación comercial clara pueden requerir un análisis
+              adicional.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>4. Empresas recién constituidas sin actividad evidente</h3>
+
+            <p>
+              Sociedades que realizan operaciones de alto valor sin antecedentes
+              comerciales pueden representar un riesgo para la organización.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Operaciones que no coinciden con el perfil económico</h3>
+
+            <p>
+              Cuando el volumen de negocios supera ampliamente la capacidad
+              económica conocida del cliente, es recomendable realizar
+              verificaciones adicionales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Uso frecuente de intermediarios</h3>
+
+            <p>
+              La participación de terceros sin una función claramente definida
+              puede dificultar la identificación del beneficiario real.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Cambios constantes de información</h3>
+
+            <p>
+              Modificaciones repetidas de dirección, representantes legales o
+              datos financieros pueden ser indicadores de riesgo.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>8. Operaciones comerciales sin lógica económica</h3>
+
+            <p>
+              Negocios que no generan utilidad aparente o que presentan
+              condiciones atípicas deben ser analizados cuidadosamente.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>9. Clientes que presionan para acelerar procesos</h3>
+
+            <p>
+              La insistencia en evitar controles internos o procesos de
+              verificación puede constituir una señal de alerta.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>10. Documentación inconsistente</h3>
+
+            <p>
+              Inconsistencias entre la información suministrada y los documentos
+              aportados justifican una revisión más profunda antes de continuar
+              la operación.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            12 beneficios de implementar un programa de prevención de lavado de
+            activos en las empresas
+          </h2>
+
+          <p>
+            Un sistema sólido de prevención del lavado de activos no solo
+            permite cumplir la normativa colombiana, sino que también fortalece
+            la estabilidad, competitividad y reputación de cualquier
+            organización.
+          </p>
+
+          <div className={styles.card}>
+            <h3>1. Reduce el riesgo de sanciones</h3>
+            <p>
+              Disminuye la posibilidad de multas, investigaciones
+              administrativas y otras consecuencias derivadas del incumplimiento
+              normativo.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>2. Protege la reputación empresarial</h3>
+            <p>
+              Evita que la empresa sea vinculada con operaciones ilícitas que
+              afecten la confianza de clientes, inversionistas y aliados
+              comerciales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>3. Fortalece el cumplimiento normativo</h3>
+            <p>
+              Facilita el cumplimiento de obligaciones relacionadas con SARLAFT,
+              SAGRILAFT y otros programas de compliance.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>4. Mejora la gestión de riesgos</h3>
+            <p>
+              Permite identificar, evaluar y controlar riesgos antes de que
+              generen impactos financieros o legales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Incrementa la confianza de inversionistas</h3>
+            <p>
+              Una empresa con controles sólidos transmite mayor transparencia y
+              genera seguridad en el mercado.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Facilita relaciones con entidades financieras</h3>
+            <p>
+              Los bancos suelen valorar positivamente organizaciones con
+              programas de cumplimiento bien estructurados.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Detecta operaciones sospechosas oportunamente</h3>
+            <p>
+              El monitoreo permanente permite actuar antes de que una operación
+              genere consecuencias para la empresa.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>8. Promueve una cultura de ética empresarial</h3>
+            <p>
+              La capacitación continua fortalece el compromiso de colaboradores
+              y directivos con el cumplimiento normativo.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>9. Mejora los procesos internos</h3>
+            <p>
+              La documentación y estandarización de procedimientos incrementan
+              la eficiencia organizacional.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>10. Reduce pérdidas económicas</h3>
+            <p>
+              Minimiza riesgos asociados a fraudes, sanciones, demandas y daños
+              reputacionales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>11. Genera mayor competitividad</h3>
+            <p>
+              Muchas empresas exigen programas de cumplimiento como requisito
+              para establecer relaciones comerciales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>12. Favorece el crecimiento sostenible</h3>
+            <p>
+              Un programa de prevención fortalece la gobernanza corporativa y
+              permite un crecimiento más seguro y responsable a largo plazo.
+            </p>
+          </div>
+        </section>
+
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre prevención de lavado de activos</h2>
+          <h2>
+            Conclusión: prevenir el lavado de activos fortalece la
+            sostenibilidad de cualquier empresa
+          </h2>
 
           <p>
             Implementar medidas de prevención de lavado de activos permite a las
@@ -305,8 +617,8 @@ export default function PrevencionLavadoActivos() {
 
         <ArticleCTA
           badge="Cumplimiento normativo y prevención de riesgos"
-          title="¿Tu empresa necesita fortalecer controles de prevención?"
-          description="Recibe asesoría jurídica sobre prevención de lavado de activos, cumplimiento normativo y gestión de riesgos empresariales en Colombia."
+          title="¿Necesitas implementar un programa de prevención de lavado de activos en tu empresa?"
+          description="Nuestros abogados asesoran empresas en Colombia en la implementación de programas de cumplimiento, SAGRILAFT, SARLAFT, gestión de riesgos, oficial de cumplimiento y prevención del lavado de activos."
           href="https://abogadosespecialistas.com.co/"
           buttonText="Solicitar asesoría empresarial"
         />

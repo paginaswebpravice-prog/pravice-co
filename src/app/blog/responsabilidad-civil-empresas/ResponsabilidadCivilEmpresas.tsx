@@ -51,12 +51,15 @@ export default function ResponsabilidadCivilEmpresas() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Responsabilidad civil de las empresas en Colombia
+            Responsabilidad civil de las empresas en Colombia: cuándo aplica y
+            cómo evitar demandas
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cuándo una empresa puede enfrentar responsabilidad legal y
-            cuáles son los principales riesgos jurídicos en Colombia.
+            Descubre en qué casos una empresa puede responder por daños causados
+            a clientes, trabajadores, proveedores o terceros, cuáles son las
+            indemnizaciones más comunes y cómo prevenir riesgos legales mediante
+            una adecuada gestión jurídica.
           </motion.p>
         </motion.section>
 
@@ -77,20 +80,26 @@ export default function ResponsabilidadCivilEmpresas() {
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Qué aprenderás en este artículo</h3>
+          <h3>¿Qué encontrarás en esta guía?</h3>
 
           <ul>
-            <li>Qué es la responsabilidad civil empresarial</li>
-            <li>Cuándo puede surgir responsabilidad legal</li>
-            <li>Tipos de daños que pueden generar demandas</li>
-            <li>Cómo prevenir riesgos jurídicos</li>
-            <li>Importancia de la asesoría legal preventiva</li>
+            <li>Qué es la responsabilidad civil empresarial.</li>
+            <li>
+              Diferencia entre responsabilidad contractual y extracontractual.
+            </li>
+            <li>10 situaciones donde una empresa puede ser demandada.</li>
+            <li>Tipos de perjuicios e indemnizaciones.</li>
+            <li>Cómo reducir el riesgo de demandas civiles.</li>
+            <li>Importancia del compliance empresarial.</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué es la responsabilidad civil empresarial</h2>
+          <h2>
+            ¿Qué es la responsabilidad civil de una empresa y cuándo puede
+            surgir?
+          </h2>
 
           <p>
             La responsabilidad civil es la obligación de reparar daños causados
@@ -122,7 +131,10 @@ export default function ResponsabilidadCivilEmpresas() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Situaciones que pueden generar responsabilidad civil</h2>
+          <h2>
+            10 situaciones en las que una empresa puede responder por daños en
+            Colombia
+          </h2>
 
           <p>
             Existen diferentes escenarios en los cuales una empresa puede
@@ -164,121 +176,463 @@ export default function ResponsabilidadCivilEmpresas() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Tipos de perjuicios reclamables</h2>
+          <h2>
+            10 tipos de perjuicios que pueden reclamarse contra una empresa
+          </h2>
 
           <p>
-            Las demandas de responsabilidad civil pueden incluir diferentes
-            tipos de daños o perjuicios.
+            Dependiendo del caso concreto, una reclamación por responsabilidad
+            civil puede incluir distintos tipos de perjuicios cuya finalidad es
+            reparar el daño ocasionado a la víctima.
           </p>
 
           <div className={styles.card}>
-            <h3>Perjuicios económicos</h3>
-            <p>Incluyen pérdidas financieras derivadas del daño causado.</p>
-          </div>
-
-          <div className={styles.card}>
-            <h3>Daño emergente</h3>
+            <h3>1. Daño emergente</h3>
             <p>
-              Corresponde a gastos o pérdidas directas ocasionadas por el hecho
-              dañino.
+              Comprende los gastos o pérdidas económicas directas ocasionadas
+              por el hecho que originó el daño.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Lucro cesante</h3>
+            <h3>2. Lucro cesante</h3>
             <p>
-              Hace referencia a ingresos o ganancias que dejaron de percibirse.
+              Corresponde a los ingresos o utilidades que la persona afectada
+              dejó de percibir como consecuencia del perjuicio.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Perjuicios morales</h3>
+            <h3>3. Perjuicios morales</h3>
             <p>
-              Algunas situaciones pueden generar afectaciones personales o
-              emocionales reclamables legalmente.
+              Se relacionan con el sufrimiento, la afectación emocional o el
+              impacto psicológico ocasionado por el daño.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>4. Daños materiales</h3>
+            <p>
+              Incluyen la afectación o destrucción de bienes muebles, inmuebles,
+              maquinaria, equipos u otros activos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Gastos médicos o de recuperación</h3>
+            <p>
+              Cuando el daño genera lesiones personales pueden reclamarse los
+              costos de tratamientos médicos, rehabilitación y medicamentos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Pérdidas comerciales</h3>
+            <p>
+              Empresas afectadas pueden reclamar perjuicios relacionados con
+              contratos, ventas o negocios frustrados.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Costos de reparación</h3>
+            <p>
+              Comprenden los valores necesarios para reparar bienes dañados por
+              la actuación de la empresa responsable.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>8. Afectación a la reputación comercial</h3>
+            <p>
+              Algunas actuaciones pueden generar daños reputacionales que
+              ocasionen pérdidas económicas demostrables.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>9. Pérdidas derivadas del incumplimiento contractual</h3>
+            <p>
+              Incluyen perjuicios sufridos por clientes o proveedores cuando la
+              empresa incumple obligaciones previamente pactadas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>10. Otros perjuicios demostrables</h3>
+            <p>
+              Dependiendo del caso, pueden reclamarse otros daños siempre que
+              exista prueba de la afectación sufrida y del nexo con la conducta
+              de la empresa.
             </p>
           </div>
         </section>
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Cómo prevenir responsabilidad civil en empresas</h2>
+          <h2>
+            10 situaciones que pueden generar responsabilidad civil para una
+            empresa en Colombia
+          </h2>
 
           <p>
-            Implementar medidas preventivas ayuda a disminuir riesgos legales y
-            proteger la estabilidad empresarial.
+            La responsabilidad civil empresarial puede surgir en múltiples
+            escenarios cuando una organización causa daños a clientes,
+            trabajadores, proveedores, contratistas o terceros. Identificar
+            estos riesgos permite implementar controles preventivos y disminuir
+            la posibilidad de enfrentar demandas o reclamaciones económicas.
           </p>
 
           <div className={styles.card}>
-            <h3>Contratos claros</h3>
+            <h3>1. Incumplimiento de contratos comerciales</h3>
             <p>
-              La adecuada redacción contractual reduce posibilidades de
-              conflictos legales.
+              Cuando la empresa incumple las obligaciones pactadas con clientes,
+              proveedores o aliados comerciales puede verse obligada a
+              indemnizar los perjuicios ocasionados.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Cumplimiento normativo</h3>
+            <h3>2. Productos defectuosos</h3>
             <p>
-              Seguir regulaciones legales aplicables minimiza riesgos de
-              sanciones y demandas.
+              Fabricar o comercializar productos con fallas que ocasionen daños
+              a los consumidores puede generar responsabilidad civil y
+              reclamaciones por perjuicios.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Capacitación interna</h3>
+            <h3>3. Prestación deficiente de servicios</h3>
             <p>
-              Capacitar empleados sobre protocolos y buenas prácticas reduce
-              errores operativos.
+              Errores en la prestación de servicios profesionales o
+              empresariales pueden ocasionar pérdidas económicas para los
+              clientes y dar lugar a demandas.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Asesoría jurídica preventiva</h3>
+            <h3>4. Accidentes laborales por incumplimientos</h3>
             <p>
-              Contar con acompañamiento legal permite identificar riesgos antes
-              de que generen consecuencias graves.
+              La ausencia de protocolos de seguridad o el incumplimiento de
+              normas de prevención puede incrementar la responsabilidad de la
+              empresa frente a los trabajadores afectados.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Daños ocasionados a terceros</h3>
+            <p>
+              Las actividades empresariales pueden generar afectaciones a
+              personas o bienes ajenos, obligando a reparar los daños
+              ocasionados.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Incumplimiento de obligaciones legales</h3>
+            <p>
+              No cumplir normas sectoriales, ambientales, sanitarias o de
+              protección al consumidor puede originar reclamaciones adicionales
+              por los perjuicios causados.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Errores de empleados o representantes</h3>
+            <p>
+              En determinados casos la empresa puede responder por actuaciones u
+              omisiones de sus trabajadores durante el ejercicio de sus
+              funciones.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>8. Incumplimiento de deberes de confidencialidad</h3>
+            <p>
+              Divulgar información reservada o incumplir acuerdos de
+              confidencialidad puede generar importantes perjuicios económicos
+              para terceros.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>9. Daños ambientales derivados de la actividad empresarial</h3>
+            <p>
+              Algunas actividades pueden generar responsabilidad por
+              afectaciones al medio ambiente o a comunidades cercanas cuando
+              existe incumplimiento de la normativa aplicable.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>10. Incumplimiento de obligaciones frente a consumidores</h3>
+            <p>
+              Garantías, publicidad engañosa, incumplimientos en la entrega de
+              bienes o servicios y otras conductas pueden dar lugar a
+              reclamaciones civiles.
             </p>
           </div>
         </section>
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Importancia del apoyo jurídico empresarial</h2>
+          <h2>
+            10 estrategias para prevenir la responsabilidad civil en una empresa
+          </h2>
 
           <p>
-            La prevención legal es una herramienta clave para proteger el
-            patrimonio y reputación de las empresas.
+            La prevención es una de las mejores herramientas para disminuir
+            demandas y proteger el patrimonio empresarial. Implementar controles
+            internos reduce significativamente los riesgos legales.
           </p>
 
           <div className={styles.card}>
-            <h3>Protección financiera</h3>
+            <h3>1. Elaborar contratos claros</h3>
             <p>
-              Evitar demandas y sanciones ayuda a preservar la estabilidad
-              económica empresarial.
+              Contratos bien redactados reducen ambigüedades y disminuyen el
+              riesgo de conflictos posteriores.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Mejor gestión de riesgos</h3>
+            <h3>2. Cumplir la normativa vigente</h3>
             <p>
-              La asesoría jurídica facilita decisiones empresariales más
-              seguras.
+              Mantener actualizada la empresa frente a las obligaciones legales
+              evita sanciones y reclamaciones.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Mayor tranquilidad empresarial</h3>
+            <h3>3. Capacitar permanentemente al personal</h3>
             <p>
-              Tener respaldo legal adecuado brinda confianza para desarrollar
-              operaciones comerciales.
+              La formación reduce errores operativos y fortalece el cumplimiento
+              de los procedimientos internos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>4. Implementar protocolos de calidad</h3>
+            <p>
+              Los controles de calidad disminuyen riesgos relacionados con
+              productos o servicios defectuosos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Realizar auditorías jurídicas</h3>
+            <p>
+              Las revisiones periódicas permiten detectar riesgos antes de que
+              generen demandas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Fortalecer el sistema de gestión de riesgos</h3>
+            <p>
+              Identificar riesgos operativos y legales facilita adoptar medidas
+              preventivas oportunamente.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Documentar adecuadamente las operaciones</h3>
+            <p>
+              Contar con evidencia documental facilita la defensa jurídica de la
+              empresa ante eventuales reclamaciones.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>8. Supervisar proveedores y contratistas</h3>
+            <p>
+              Verificar el cumplimiento de terceros reduce riesgos derivados de
+              su actuación durante la ejecución de contratos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>9. Contratar seguros empresariales cuando corresponda</h3>
+            <p>
+              Algunas pólizas ayudan a mitigar el impacto económico de
+              determinadas reclamaciones civiles.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>10. Contar con asesoría jurídica preventiva</h3>
+            <p>
+              El acompañamiento permanente de abogados especializados permite
+              identificar contingencias antes de que se conviertan en litigios o
+              indemnizaciones de alto valor.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Responsabilidad civil contractual y extracontractual: principales
+            diferencias
+          </h2>
+
+          <p>
+            La responsabilidad civil empresarial puede originarse por el
+            incumplimiento de un contrato o por la causación de un daño a una
+            persona con la que no existe una relación contractual. Conocer esta
+            diferencia permite comprender mejor cuándo una empresa puede ser
+            demandada y cuáles son las obligaciones que pueden surgir en cada
+            caso.
+          </p>
+
+          <p>
+            En ambos escenarios la finalidad principal es reparar el perjuicio
+            causado, aunque las reglas aplicables, las pruebas y el origen de la
+            obligación pueden variar según las circunstancias del caso.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Responsabilidad civil contractual</h3>
+            <p>
+              Surge cuando una empresa incumple las obligaciones establecidas en
+              un contrato, generando perjuicios económicos para la otra parte.
+              Es frecuente en relaciones con clientes, proveedores,
+              distribuidores y aliados comerciales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Responsabilidad civil extracontractual</h3>
+            <p>
+              Se presenta cuando una empresa causa un daño a un tercero sin que
+              exista un contrato previo entre las partes. Puede ocurrir por
+              accidentes, productos defectuosos, daños ambientales o actuaciones
+              negligentes.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Importancia de identificar el tipo de responsabilidad</h3>
+            <p>
+              Determinar correctamente el origen de la responsabilidad facilita
+              la estrategia jurídica, la valoración de los perjuicios y la
+              aplicación de las normas correspondientes.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            ¿Qué debe demostrar una persona para reclamar responsabilidad civil
+            contra una empresa?
+          </h2>
+
+          <p>
+            No toda inconformidad genera automáticamente una indemnización. En
+            la mayoría de los casos es necesario demostrar determinados
+            elementos para que exista responsabilidad civil y pueda prosperar
+            una reclamación judicial o extrajudicial.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Existencia de un daño</h3>
+            <p>
+              Debe acreditarse que la persona o empresa sufrió una afectación
+              económica, material o moral susceptible de reparación.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Conducta atribuible a la empresa</h3>
+            <p>
+              Es necesario demostrar que la actuación, omisión o incumplimiento
+              provino de la empresa, de sus representantes o de quienes actuaban
+              en su nombre.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Relación entre el daño y la conducta</h3>
+            <p>
+              Debe existir un vínculo claro entre la actuación de la empresa y
+              el daño sufrido por la persona afectada para que pueda surgir la
+              obligación de indemnizar.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Pruebas suficientes</h3>
+            <p>
+              Contratos, correos electrónicos, fotografías, informes técnicos,
+              testimonios, facturas y demás documentos pueden ser determinantes
+              para respaldar una reclamación por responsabilidad civil.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Preguntas frecuentes sobre la responsabilidad civil de las empresas
+          </h2>
+
+          <div className={styles.card}>
+            <h3>
+              ¿Todas las empresas pueden ser demandadas por responsabilidad
+              civil?
+            </h3>
+            <p>
+              Sí. Cualquier empresa, sin importar su tamaño o actividad
+              económica, puede enfrentar reclamaciones cuando ocasiona daños a
+              clientes, trabajadores, proveedores o terceros y se cumplen los
+              requisitos legales para ello.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Una empresa siempre debe pagar una indemnización?</h3>
+            <p>
+              No. La obligación de indemnizar depende de las pruebas, de la
+              existencia del daño y de que se demuestre la responsabilidad
+              conforme a la ley colombiana.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>
+              ¿La responsabilidad civil también aplica por actuaciones de los
+              empleados?
+            </h3>
+            <p>
+              En determinadas circunstancias la empresa puede responder por los
+              daños ocasionados por sus trabajadores cuando estos actúan en
+              desarrollo de sus funciones o bajo su dirección.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Cómo puede una empresa reducir el riesgo de demandas?</h3>
+            <p>
+              Implementando programas de cumplimiento, fortaleciendo la gestión
+              de riesgos, utilizando contratos bien elaborados, documentando sus
+              procesos y recibiendo asesoría jurídica preventiva de manera
+              permanente.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Es posible resolver estos conflictos sin acudir a un juez?</h3>
+            <p>
+              Sí. Dependiendo del caso, mecanismos como la conciliación, la
+              negociación o el arbitraje pueden permitir acuerdos más rápidos y
+              menos costosos que un proceso judicial.
             </p>
           </div>
         </section>
 
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre la responsabilidad civil empresarial</h2>
+          <h2>
+            Responsabilidad civil empresarial: prevenir siempre cuesta menos que
+            enfrentar una demanda
+          </h2>
 
           <p>
             La responsabilidad civil de las empresas en Colombia puede surgir en
@@ -294,11 +648,11 @@ export default function ResponsabilidadCivilEmpresas() {
         </section>
 
         <ArticleCTA
-          badge="Derecho empresarial y prevención legal"
-          title="¿Tu empresa necesita respaldo jurídico?"
-          description="Recibe asesoría legal empresarial para prevención de riesgos, contratos y responsabilidad civil en Colombia."
+          badge="Responsabilidad civil y prevención de riesgos empresariales"
+          title="¿Tu empresa quiere reducir el riesgo de demandas e indemnizaciones?"
+          description="Recibe acompañamiento jurídico para fortalecer contratos, prevenir incumplimientos, gestionar riesgos legales y proteger el patrimonio de tu empresa frente a posibles reclamaciones por responsabilidad civil."
           href="https://abogadosespecialistas.com.co/"
-          buttonText="Solicitar asesoría jurídica"
+          buttonText="Solicitar asesoría empresarial"
         />
       </main>
     </>

@@ -6,19 +6,20 @@ const canonicalUrl =
 
 export const metadata: Metadata = {
   title:
-    "Regulación empresarial en Colombia 2026: cambios y obligaciones | Pravice",
+    "Regulación empresarial en Colombia 2026: 15 cambios, obligaciones y cómo cumplir la normativa | Pravice",
 
   description:
-    "Principales normas y obligaciones que impactan a las empresas colombianas en 2026.",
+    "Conoce los principales cambios en la regulación empresarial en Colombia durante 2026, las obligaciones legales para las empresas, los riesgos de incumplimiento y las mejores prácticas para cumplir la normativa.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Regulación empresarial en Colombia 2026",
+    title:
+      "Regulación empresarial en Colombia 2026: cambios, obligaciones y guía práctica",
     description:
-      "Conoce los cambios regulatorios y obligaciones empresariales para 2026.",
+      "Guía completa sobre regulación empresarial en Colombia. Descubre los cambios normativos de 2026, obligaciones legales, riesgos y recomendaciones para empresas.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -35,8 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Regulación empresarial en Colombia 2026",
-    description: "Cambios normativos y obligaciones empresariales en Colombia.",
+    title: "Regulación empresarial en Colombia 2026: guía completa",
+    description:
+      "Todo sobre cambios regulatorios, compliance, obligaciones legales y riesgos para empresas colombianas.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -82,14 +84,21 @@ const schemaData = {
   articleSection: "Cumplimiento Normativo",
 
   keywords: [
+    "regulación empresarial Colombia",
     "regulación empresarial Colombia 2026",
-    "cumplimiento normativo empresas",
-    "compliance empresarial Colombia",
-    "riesgo legal empresarial",
-    "obligaciones empresariales 2026",
     "normativa empresarial Colombia",
+    "cambios regulatorios empresas",
+    "obligaciones legales empresas",
+    "cumplimiento normativo Colombia",
+    "compliance empresarial",
+    "riesgos legales empresas",
+    "actualización normativa empresas",
     "gobierno corporativo",
     "protección de datos empresas",
+    "SAGRILAFT",
+    "PTEE",
+    "empresa cumplimiento legal",
+    "cómo cumplir regulación empresarial",
   ],
 };
 

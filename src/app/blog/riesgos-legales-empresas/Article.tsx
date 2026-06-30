@@ -52,17 +52,16 @@ export default function RiesgosLegalesEmpresas() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            10 riesgos legales que pueden poner en peligro una empresa en
-            Colombia
+            15 riesgos legales que toda empresa debe conocer para evitar
+            demandas y multas en Colombia
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Muchas empresas no fracasan por falta de ventas, sino por problemas
-            jurídicos que pudieron prevenirse. Demandas laborales, contratos
-            deficientes, sanciones regulatorias y errores tributarios pueden
-            generar pérdidas económicas importantes. En esta guía descubrirás
-            los riesgos legales más frecuentes en Colombia y cómo reducirlos
-            antes de que afecten tu negocio.
+            Los riesgos legales pueden generar pérdidas económicas, sanciones
+            administrativas e incluso comprometer la continuidad de una empresa.
+            Descubre cuáles son los 15 riesgos jurídicos más frecuentes en
+            Colombia y las estrategias para prevenirlos antes de que se
+            conviertan en un problema.
           </motion.p>
         </motion.section>
 
@@ -77,15 +76,21 @@ export default function RiesgosLegalesEmpresas() {
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Lo que aprenderás en esta guía</h3>
+          <h3>
+            ¿Qué encontrarás en esta guía sobre riesgos legales empresariales?
+          </h3>
 
           <ul>
-            <li>Qué son los riesgos legales empresariales</li>
-            <li>Los 10 riesgos jurídicos más comunes en Colombia</li>
-            <li>Qué riesgos generan más demandas</li>
-            <li>Cómo reducir sanciones y conflictos legales</li>
-            <li>Estrategias de prevención jurídica empresarial</li>
-            <li>Buenas prácticas para proteger tu empresa</li>
+            <li>Qué son los riesgos legales empresariales.</li>
+            <li>Los 15 riesgos jurídicos más frecuentes en Colombia.</li>
+            <li>Cómo prevenir demandas laborales y comerciales.</li>
+            <li>Errores contractuales que generan pérdidas.</li>
+            <li>Riesgos tributarios y regulatorios.</li>
+            <li>Protección de datos personales.</li>
+            <li>Responsabilidad civil empresarial.</li>
+            <li>Conflictos entre socios.</li>
+            <li>Cómo construir una estrategia preventiva.</li>
+            <li>Buenas prácticas para reducir contingencias legales.</li>
           </ul>
         </section>
 
@@ -242,8 +247,8 @@ export default function RiesgosLegalesEmpresas() {
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
           <h2>
-            Cómo reducir demandas, sanciones y riesgos legales antes de que
-            ocurran
+            Cómo prevenir riesgos legales empresariales antes de que generen
+            demandas o multas
           </h2>
 
           <p>
@@ -286,12 +291,74 @@ export default function RiesgosLegalesEmpresas() {
               la empresa.
             </p>
           </div>
+
+          <div className={styles.card}>
+            <h3>Realizar auditorías jurídicas periódicas</h3>
+
+            <p>
+              Revisar periódicamente los contratos, procedimientos internos y
+              obligaciones legales permite identificar incumplimientos antes de
+              que se conviertan en procesos sancionatorios o demandas
+              judiciales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Mantener actualizada la documentación empresarial</h3>
+
+            <p>
+              Libros societarios, actas, registros, políticas internas y
+              documentos corporativos deben mantenerse actualizados para evitar
+              contingencias frente a autoridades o terceros.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Capacitar constantemente al personal</h3>
+
+            <p>
+              Muchos riesgos legales provienen de errores operativos. La
+              capacitación continua reduce incumplimientos relacionados con
+              contratación, protección de datos, seguridad laboral y atención al
+              consumidor.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Monitorear cambios en la legislación</h3>
+
+            <p>
+              La normativa colombiana cambia constantemente. Mantenerse
+              actualizado permite adaptar procesos internos antes de que entren
+              en vigor nuevas obligaciones legales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Diseñar protocolos para responder ante conflictos</h3>
+
+            <p>
+              Contar con procedimientos previamente definidos facilita actuar de
+              manera rápida cuando aparece una reclamación, inspección o
+              demanda.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Evaluar riesgos antes de firmar contratos importantes</h3>
+
+            <p>
+              Analizar previamente obligaciones, penalidades, garantías y
+              responsabilidades disminuye la posibilidad de litigios futuros.
+            </p>
+          </div>
         </section>
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
           <h2>
-            Por qué la protección jurídica empresarial es importante en Colombia
+            ¿Por qué la prevención jurídica es una inversión y no un gasto para
+            las empresas?
           </h2>
 
           <p>
@@ -309,7 +376,8 @@ export default function RiesgosLegalesEmpresas() {
 
         <section className={styles.section}>
           <h2>
-            ¿Cómo construir una estrategia de prevención legal empresarial?
+            7 pasos para construir una estrategia efectiva de prevención legal
+            empresarial
           </h2>
 
           <p>
@@ -332,11 +400,235 @@ export default function RiesgosLegalesEmpresas() {
           </p>
         </section>
 
+        <section className={styles.section}>
+          <h2>
+            8 errores que aumentan el riesgo legal de una empresa en Colombia
+          </h2>
+
+          <p>
+            Muchas contingencias jurídicas no aparecen por mala fe, sino por
+            errores de gestión que pueden evitarse mediante controles internos y
+            asesoría preventiva.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Firmar contratos descargados de Internet</h3>
+
+            <p>
+              Los modelos genéricos normalmente no contemplan las necesidades
+              específicas de cada empresa ni cumplen todos los requisitos
+              legales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No documentar acuerdos comerciales</h3>
+
+            <p>
+              Los acuerdos verbales dificultan demostrar obligaciones cuando
+              surge un conflicto entre las partes.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No revisar obligaciones regulatorias</h3>
+
+            <p>
+              Cada sector tiene normas específicas cuyo incumplimiento puede
+              generar investigaciones administrativas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Descuidar la protección de datos</h3>
+
+            <p>
+              El tratamiento inadecuado de información personal puede derivar en
+              sanciones y reclamaciones.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No realizar auditorías jurídicas</h3>
+
+            <p>
+              Detectar errores cuando ya existe una demanda suele ser mucho más
+              costoso que identificarlos de forma preventiva.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No capacitar al equipo</h3>
+
+            <p>
+              Las malas prácticas internas incrementan significativamente la
+              probabilidad de incumplimientos legales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No actualizar contratos antiguos</h3>
+
+            <p>
+              Las relaciones comerciales cambian con el tiempo y los contratos
+              deben adaptarse a nuevas obligaciones y riesgos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Esperar a tener una demanda para buscar asesoría</h3>
+
+            <p>
+              La prevención jurídica suele ser mucho menos costosa que afrontar
+              un litigio empresarial.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            7 señales de que tu empresa podría tener un riesgo legal elevado
+          </h2>
+
+          <p>
+            Existen situaciones que pueden indicar la necesidad de revisar de
+            inmediato la gestión jurídica de una organización.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Existen contratos sin actualizar</h3>
+
+            <p>
+              Los documentos antiguos pueden contener cláusulas desactualizadas
+              o no reflejar la realidad del negocio.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>La empresa ha recibido requerimientos de autoridades</h3>
+
+            <p>
+              Las solicitudes frecuentes de información pueden indicar
+              debilidades en el cumplimiento normativo.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Hay conflictos frecuentes con empleados</h3>
+
+            <p>
+              Las reclamaciones laborales repetitivas suelen revelar problemas
+              estructurales en la gestión del talento humano.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Existen reclamaciones constantes de clientes</h3>
+
+            <p>
+              Las quejas reiteradas pueden convertirse en procesos judiciales o
+              administrativos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No existen políticas internas documentadas</h3>
+
+            <p>
+              La ausencia de procedimientos aumenta la posibilidad de errores
+              operativos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>La empresa nunca realiza auditorías legales</h3>
+
+            <p>
+              Sin revisiones periódicas es difícil detectar incumplimientos
+              antes de que generen consecuencias.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No existe acompañamiento jurídico permanente</h3>
+
+            <p>
+              Contar únicamente con asesoría cuando surge un problema limita la
+              capacidad de prevención.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>Checklist para reducir los riesgos legales en una empresa</h2>
+
+          <p>
+            Antes de finalizar esta guía, verifica si tu empresa cumple con las
+            siguientes buenas prácticas:
+          </p>
+
+          <ul className={styles.list}>
+            <li>✔ Revisar contratos al menos una vez al año.</li>
+            <li>✔ Mantener actualizados los registros societarios.</li>
+            <li>✔ Cumplir las obligaciones tributarias.</li>
+            <li>✔ Implementar políticas de protección de datos.</li>
+            <li>✔ Capacitar periódicamente a los colaboradores.</li>
+            <li>✔ Realizar auditorías legales preventivas.</li>
+            <li>✔ Documentar todos los acuerdos importantes.</li>
+            <li>✔ Actualizar reglamentos internos.</li>
+            <li>✔ Gestionar adecuadamente las reclamaciones.</li>
+            <li>✔ Contar con asesoría jurídica preventiva.</li>
+          </ul>
+        </section>
+
+        <section className={styles.section}>
+          <h2>Preguntas frecuentes sobre los riesgos legales empresariales</h2>
+
+          <div className={styles.card}>
+            <h3>¿Cuál es el riesgo legal más frecuente para una empresa?</h3>
+
+            <p>
+              Los conflictos contractuales y las demandas laborales suelen ser
+              dos de las contingencias más comunes para las empresas en
+              Colombia.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Cómo identificar un riesgo legal?</h3>
+
+            <p>
+              Mediante auditorías jurídicas, revisión documental, evaluación de
+              procesos y seguimiento permanente de la normativa aplicable.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Qué empresas tienen más riesgos legales?</h3>
+
+            <p>
+              Todas las empresas enfrentan riesgos jurídicos, aunque aquellos
+              sectores con mayor regulación suelen requerir controles más
+              estrictos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Cada cuánto debe revisarse el riesgo legal?</h3>
+
+            <p>
+              Es recomendable realizar revisiones periódicas y actualizar los
+              controles cuando existan cambios normativos o nuevas operaciones
+              comerciales.
+            </p>
+          </div>
+        </section>
+
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
           <h2>
-            Cómo evitar que un riesgo legal se convierta en una crisis para tu
-            empresa
+            Cómo proteger tu empresa de los riesgos legales antes de que sea
+            demasiado tarde
           </h2>
 
           <p>

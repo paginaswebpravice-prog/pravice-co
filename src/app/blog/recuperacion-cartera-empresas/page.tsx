@@ -6,17 +6,16 @@ const canonicalUrl =
 
 export const metadata: Metadata = {
   title:
-    "Recuperación de cartera empresarial en Colombia: métodos efectivos para mejorar flujo de caja | Pravice",
+    "¿Cómo recuperar cartera empresarial en Colombia? 12 estrategias efectivas | Pravice",
   description:
-    "Descubre los métodos más efectivos de recuperación de cartera empresarial en Colombia y Bogotá. Mejora tu flujo de caja, reduce la morosidad y optimiza la gestión financiera.",
-
+    "Aprende cómo recuperar cartera empresarial en Colombia con estrategias de cobranza preventiva, acuerdos de pago, cobro jurídico y acciones para mejorar el flujo de caja.",
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
     title:
-      "Recuperación de cartera empresarial en Colombia: estrategias que sí funcionan",
+      "¿Cómo recuperar cartera empresarial en Colombia? Guía completa para empresas",
     description:
       "Estrategias efectivas para recuperar cartera, reducir morosidad y mejorar liquidez empresarial en Colombia.",
     url: canonicalUrl,
@@ -35,7 +34,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Recuperación de cartera empresarial en Colombia: métodos efectivos",
+    title: "Recuperación de cartera empresarial en Colombia: guía práctica",
     description:
       "Métodos prácticos para mejorar el recaudo y reducir la morosidad empresarial.",
     images: ["https://pravice.co/logo_pravice.png"],

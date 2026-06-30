@@ -51,12 +51,16 @@ export default function RiesgoLegalEmpresas() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Gestión del riesgo legal en empresas colombianas
+            Cómo identificar y reducir el riesgo legal en una empresa en
+            Colombia
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cómo identificar, prevenir y reducir riesgos jurídicos
-            dentro de las organizaciones en Colombia.
+            Aprende qué es el riesgo legal empresarial, cuáles son las
+            contingencias jurídicas más frecuentes en Colombia y qué estrategias
+            permiten prevenir demandas, sanciones administrativas,
+            incumplimientos contractuales y conflictos que pueden afectar la
+            estabilidad de una organización.
           </motion.p>
         </motion.section>
 
@@ -90,7 +94,10 @@ export default function RiesgoLegalEmpresas() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué es el riesgo legal empresarial</h2>
+          <h2>
+            ¿Qué es el riesgo legal empresarial y por qué puede afectar la
+            estabilidad de una empresa?
+          </h2>
 
           <p>
             El riesgo legal corresponde a la posibilidad de enfrentar pérdidas o
@@ -122,7 +129,10 @@ export default function RiesgoLegalEmpresas() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Principales riesgos legales en empresas</h2>
+          <h2>
+            10 riesgos legales más comunes que enfrentan las empresas en
+            Colombia
+          </h2>
 
           <p>
             Las organizaciones enfrentan diferentes tipos de riesgos jurídicos
@@ -164,7 +174,7 @@ export default function RiesgoLegalEmpresas() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Cómo prevenir riesgos jurídicos</h2>
+          <h2>10 estrategias para prevenir el riesgo legal en una empresa</h2>
 
           <p>
             Implementar medidas preventivas permite reducir significativamente
@@ -206,7 +216,9 @@ export default function RiesgoLegalEmpresas() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Importancia del cumplimiento normativo</h2>
+          <h2>
+            10 beneficios de implementar un programa de cumplimiento normativo
+          </h2>
 
           <p>
             Cumplir las normas aplicables fortalece la sostenibilidad y
@@ -246,7 +258,9 @@ export default function RiesgoLegalEmpresas() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Buenas prácticas empresariales</h2>
+          <h2>
+            10 buenas prácticas para reducir el riesgo jurídico empresarial
+          </h2>
 
           <p>
             Las empresas deben fortalecer continuamente sus mecanismos de
@@ -286,9 +300,236 @@ export default function RiesgoLegalEmpresas() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>
+            10 ejemplos de riesgos legales que pueden afectar una empresa en
+            Colombia
+          </h2>
+
+          <p>
+            Los riesgos legales pueden presentarse en cualquier tipo de
+            organización, independientemente de su tamaño o actividad económica.
+            Identificarlos con anticipación permite implementar medidas
+            preventivas y reducir la probabilidad de enfrentar sanciones,
+            demandas o pérdidas económicas.
+          </p>
+
+          <div className={styles.card}>
+            <h3>1. Incumplimiento de contratos</h3>
+            <p>
+              No cumplir las obligaciones pactadas con clientes, proveedores o
+              aliados comerciales puede generar demandas, indemnizaciones y
+              pérdida de credibilidad empresarial.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>2. Demandas laborales</h3>
+            <p>
+              Despidos sin el procedimiento adecuado, incumplimientos salariales
+              o vulneración de derechos laborales pueden ocasionar importantes
+              contingencias jurídicas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>3. Incumplimiento tributario</h3>
+            <p>
+              Errores en las declaraciones fiscales, pagos tardíos o
+              incumplimiento de obligaciones tributarias pueden generar multas e
+              investigaciones.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>4. Sanciones por protección de datos personales</h3>
+            <p>
+              El manejo inadecuado de información personal puede generar
+              investigaciones administrativas y afectar la reputación de la
+              empresa.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Conflictos societarios</h3>
+            <p>
+              Diferencias entre socios, accionistas o administradores pueden
+              afectar la continuidad del negocio y derivar en procesos
+              judiciales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Incumplimiento de normas regulatorias</h3>
+            <p>
+              Cada sector económico tiene obligaciones específicas cuyo
+              incumplimiento puede ocasionar sanciones por parte de las
+              autoridades competentes.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Responsabilidad frente a consumidores</h3>
+            <p>
+              Productos defectuosos, publicidad engañosa o incumplimiento de
+              garantías pueden generar reclamaciones y procesos legales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>8. Riesgos ambientales</h3>
+            <p>
+              Algunas actividades empresariales pueden ocasionar daños
+              ambientales que generen investigaciones y obligaciones de
+              reparación.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>
+              9. Incumplimiento de obligaciones contractuales con el Estado
+            </h3>
+            <p>
+              Las empresas que contratan con entidades públicas deben cumplir
+              requisitos especiales para evitar sanciones o inhabilidades.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>10. Litigios por incumplimientos comerciales</h3>
+            <p>
+              Diferencias con clientes, proveedores o distribuidores pueden
+              convertirse en procesos judiciales costosos si no se gestionan
+              oportunamente.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>Cómo elaborar una matriz de riesgo legal para una empresa</h2>
+
+          <p>
+            La matriz de riesgo legal es una herramienta utilizada para
+            identificar, evaluar y priorizar las contingencias jurídicas que
+            pueden afectar a una organización. Su implementación facilita la
+            toma de decisiones y fortalece el cumplimiento normativo.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Identificar las obligaciones legales</h3>
+            <p>
+              El primer paso consiste en identificar todas las normas,
+              regulaciones, contratos y obligaciones que aplican a la empresa
+              según su actividad económica.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Detectar posibles riesgos</h3>
+            <p>
+              Se deben analizar los procesos internos para identificar
+              situaciones que puedan generar demandas, sanciones o
+              incumplimientos regulatorios.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Evaluar la probabilidad e impacto</h3>
+            <p>
+              Cada riesgo debe calificarse considerando la posibilidad de que
+              ocurra y las consecuencias económicas, operativas y reputacionales
+              que podría generar.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Implementar controles preventivos</h3>
+            <p>
+              Una vez identificados los riesgos más importantes, la empresa debe
+              definir políticas, procedimientos y controles para reducir su
+              impacto.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Actualizar la matriz periódicamente</h3>
+            <p>
+              La legislación cambia constantemente, por lo que la matriz debe
+              revisarse de forma periódica para incorporar nuevas obligaciones
+              legales y riesgos emergentes.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>Preguntas frecuentes sobre el riesgo legal empresarial</h2>
+
+          <div className={styles.card}>
+            <h3>¿Qué es un riesgo legal empresarial?</h3>
+            <p>
+              Es la posibilidad de que una empresa enfrente pérdidas económicas,
+              sanciones, demandas o afectaciones reputacionales como
+              consecuencia del incumplimiento de obligaciones legales o
+              contractuales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Todas las empresas tienen riesgos legales?</h3>
+            <p>
+              Sí. Desde pequeñas empresas hasta grandes organizaciones están
+              expuestas a riesgos jurídicos relacionados con contratos, aspectos
+              laborales, tributarios, regulatorios y comerciales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Cómo puede reducirse el riesgo legal?</h3>
+            <p>
+              Implementando programas de cumplimiento, auditorías internas,
+              contratos bien elaborados, capacitación del personal y asesoría
+              jurídica preventiva.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>
+              ¿Cuál es la diferencia entre riesgo legal y riesgo de
+              cumplimiento?
+            </h3>
+            <p>
+              El riesgo legal comprende todas las contingencias jurídicas que
+              pueden afectar a la empresa, mientras que el riesgo de
+              cumplimiento se enfoca en el incumplimiento de normas,
+              regulaciones y políticas internas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Por qué es importante gestionar el riesgo legal?</h3>
+            <p>
+              Una adecuada gestión permite reducir demandas, proteger la
+              reputación, mejorar la toma de decisiones y garantizar la
+              continuidad de las operaciones empresariales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Cada cuánto debe revisarse la gestión del riesgo legal?</h3>
+            <p>
+              Lo recomendable es realizar revisiones periódicas y actualizar los
+              controles cuando existan cambios normativos, nuevos proyectos o
+              modificaciones en la estructura de la empresa.
+            </p>
+          </div>
+        </section>
+
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre gestión del riesgo legal</h2>
+          <h2>
+            Cómo fortalecer la gestión del riesgo legal en cualquier empresa
+            colombiana
+          </h2>
 
           <p>
             La gestión del riesgo legal permite identificar amenazas jurídicas y

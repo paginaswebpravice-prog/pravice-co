@@ -51,8 +51,8 @@ export default function ProveedorIncumpleContrato() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Proveedor incumple contrato en Colombia: qué hacer paso a paso para
-            reclamar legalmente en 2026
+            Proveedor incumple contrato en Colombia: qué hacer, cómo reclamar y
+            qué derechos tienes
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
@@ -110,6 +110,67 @@ export default function ProveedorIncumpleContrato() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>
+            ¿Qué pruebas sirven para demostrar que un proveedor incumplió un
+            contrato?
+          </h2>
+
+          <p>
+            La evidencia es uno de los factores más importantes para respaldar
+            una reclamación. Mientras mejor documentado esté el incumplimiento,
+            mayores serán las posibilidades de defender los intereses de la
+            empresa.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Contrato firmado</h3>
+
+            <p>
+              Es el principal documento para establecer las obligaciones de cada
+              parte, los plazos, el objeto del contrato y las consecuencias del
+              incumplimiento.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Órdenes de compra y facturas</h3>
+
+            <p>
+              Permiten demostrar qué productos o servicios fueron contratados y
+              cuáles eran las condiciones comerciales acordadas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Correos electrónicos y mensajes</h3>
+
+            <p>
+              Las comunicaciones pueden evidenciar solicitudes, retrasos,
+              reconocimientos del incumplimiento o compromisos asumidos por el
+              proveedor.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Actas de entrega</h3>
+
+            <p>
+              Sirven para demostrar entregas incompletas, productos defectuosos
+              o diferencias frente a lo contratado.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Informes técnicos</h3>
+
+            <p>
+              Cuando existen fallas de calidad, un concepto técnico puede
+              respaldar la reclamación realizada por la empresa.
+            </p>
+          </div>
+        </section>
+
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
           <h2>Opciones legales frente a incumplimientos de proveedores</h2>
@@ -151,6 +212,217 @@ export default function ProveedorIncumpleContrato() {
           <div className={styles.card}>
             <h3>Seguimiento constante</h3>
             <p>Supervisar el cumplimiento evita sorpresas contractuales.</p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>12 recomendaciones para evitar incumplimientos de proveedores</h2>
+
+          <p>
+            La mejor forma de reducir conflictos contractuales consiste en
+            implementar medidas preventivas desde la negociación y durante toda
+            la ejecución del contrato.
+          </p>
+
+          <div className={styles.grid}>
+            {[
+              "Verificar antecedentes del proveedor.",
+              "Solicitar referencias comerciales.",
+              "Definir claramente el objeto del contrato.",
+              "Establecer fechas exactas de entrega.",
+              "Incluir penalidades por incumplimiento.",
+              "Regular garantías y calidad.",
+              "Documentar todas las modificaciones.",
+              "Conservar toda la comunicación.",
+              "Realizar seguimiento periódico.",
+              "Verificar entregas antes de aprobar pagos.",
+              "Definir mecanismos de solución de conflictos.",
+              "Contar con revisión jurídica antes de firmar.",
+            ].map((tip, index) => (
+              <div key={index} className={styles.card}>
+                <h3>Recomendación {index + 1}</h3>
+
+                <p>{tip}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* SECCIÓN NUEVA */}
+        <section className={styles.section}>
+          <h2>
+            10 señales de que un proveedor está incumpliendo un contrato en
+            Colombia
+          </h2>
+
+          <p>
+            No todos los incumplimientos ocurren de manera evidente. En muchos
+            casos existen señales previas que permiten actuar antes de que las
+            pérdidas económicas aumenten.
+          </p>
+
+          <div className={styles.grid}>
+            {[
+              {
+                title: "1. Entregas fuera del plazo acordado",
+                text: "Los retrasos repetitivos pueden constituir un incumplimiento contractual dependiendo de las obligaciones pactadas.",
+              },
+              {
+                title: "2. Productos con especificaciones diferentes",
+                text: "La entrega de bienes distintos a los contratados puede generar reclamaciones e indemnizaciones.",
+              },
+              {
+                title: "3. Servicios de menor calidad",
+                text: "Cuando el servicio no cumple los estándares establecidos en el contrato.",
+              },
+              {
+                title: "4. Incumplimiento parcial",
+                text: "Solo se ejecuta una parte de las obligaciones asumidas.",
+              },
+              {
+                title: "5. Falta de respuesta",
+                text: "El proveedor deja de responder llamadas, correos o requerimientos.",
+              },
+              {
+                title: "6. Cambios unilaterales",
+                text: "Modifica precios, tiempos o condiciones sin autorización.",
+              },
+              {
+                title: "7. Suspensión injustificada",
+                text: "Detiene la prestación del servicio sin una causa válida.",
+              },
+              {
+                title: "8. Entregas incompletas",
+                text: "Los productos o servicios llegan de forma parcial o diferente a lo pactado.",
+              },
+              {
+                title: "9. Incumplimiento de garantías",
+                text: "No responde frente a fallas o garantías establecidas.",
+              },
+              {
+                title: "10. Reincidencia",
+                text: "El proveedor incumple constantemente a pesar de los requerimientos realizados.",
+              },
+            ].map((item) => (
+              <div key={item.title} className={styles.card}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Errores que cometen muchas empresas cuando un proveedor incumple un
+            contrato
+          </h2>
+
+          <p>
+            Algunas decisiones tomadas en los primeros días pueden dificultar
+            una futura reclamación o afectar la posibilidad de demostrar el
+            incumplimiento.
+          </p>
+
+          <div className={styles.card}>
+            <h3>No conservar las pruebas</h3>
+
+            <p>
+              Eliminar correos, chats o documentos puede dificultar la
+              demostración del incumplimiento.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Modificar el contrato verbalmente</h3>
+
+            <p>
+              Los cambios no documentados generan incertidumbre sobre las
+              obligaciones de cada parte.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Seguir pagando sin reclamar</h3>
+
+            <p>
+              Continuar realizando pagos sin dejar constancia del incumplimiento
+              puede complicar una reclamación posterior.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Esperar demasiado tiempo</h3>
+
+            <p>
+              Retrasar la gestión del conflicto puede afectar la recuperación de
+              perjuicios y la disponibilidad de las pruebas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No buscar asesoría jurídica</h3>
+
+            <p>
+              Una revisión temprana del contrato ayuda a identificar la mejor
+              estrategia para resolver el conflicto.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Preguntas frecuentes sobre proveedores que incumplen contratos en
+            Colombia
+          </h2>
+
+          <div className={styles.card}>
+            <h3>¿Puedo reclamar si no existe un contrato escrito?</h3>
+
+            <p>
+              Dependiendo del caso, otros documentos como órdenes de compra,
+              facturas, correos electrónicos o mensajes pueden servir para
+              demostrar la relación comercial y las obligaciones asumidas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Siempre debo demandar al proveedor?</h3>
+
+            <p>
+              No necesariamente. Muchas controversias pueden resolverse mediante
+              negociación directa o mecanismos alternativos antes de acudir a un
+              proceso judicial.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Puedo exigir una indemnización?</h3>
+
+            <p>
+              Dependiendo de las condiciones del contrato y de los perjuicios
+              causados, la legislación colombiana contempla mecanismos para
+              reclamar los daños ocasionados por un incumplimiento contractual.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Qué pasa si el proveedor reconoce el incumplimiento?</h3>
+
+            <p>
+              Ese reconocimiento puede convertirse en una prueba importante
+              dentro de una eventual negociación o proceso judicial.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Cuándo es recomendable consultar con un abogado?</h3>
+
+            <p>
+              Cuando el incumplimiento genera pérdidas económicas importantes,
+              afecta la operación de la empresa o existe controversia sobre las
+              obligaciones contractuales.
+            </p>
           </div>
         </section>
 

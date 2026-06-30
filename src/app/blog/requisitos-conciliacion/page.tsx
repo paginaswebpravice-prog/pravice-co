@@ -4,10 +4,11 @@ import RequisitosConciliacion from "./RequisitosConciliacion";
 const canonicalUrl = "https://pravice.co/blog/requisitos-conciliacion";
 
 export const metadata: Metadata = {
-  title: "Requisitos para iniciar una conciliación en Colombia | Pravice",
+  title:
+    "Requisitos para iniciar una conciliación en Colombia (2026): documentos, pasos y costos | Pravice",
 
   description:
-    "Conoce los documentos y pasos necesarios para solicitar una conciliación en Colombia.",
+    "Conoce los requisitos para iniciar una conciliación en Colombia, qué documentos debes presentar, cómo hacer la solicitud, cuánto tarda el proceso y qué hacer antes de la audiencia.",
 
   alternates: {
     canonical: canonicalUrl,
@@ -33,8 +34,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Requisitos para iniciar una conciliación en Colombia",
-    description: "Documentos y pasos necesarios para solicitar conciliación.",
+    title: "Cómo iniciar una conciliación en Colombia: requisitos y documentos",
+    description:
+      "Todo lo que necesitas saber para solicitar una conciliación en Colombia.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -81,13 +83,20 @@ const schemaData = {
 
   keywords: [
     "requisitos conciliación Colombia",
+    "cómo iniciar una conciliación",
     "documentos conciliación",
-    "cómo iniciar conciliación",
-    "audiencia de conciliación",
+    "solicitud conciliación",
     "conciliación extrajudicial",
-    "centros de conciliación",
-    "resolución de conflictos",
-    "solicitud de conciliación",
+    "qué necesito para una conciliación",
+    "audiencia de conciliación",
+    "centros de conciliación Colombia",
+    "proceso de conciliación",
+    "requisitos audiencia conciliación",
+    "documentos para conciliación",
+    "conciliación prejudicial",
+    "acta de conciliación",
+    "conciliación civil",
+    "conciliación laboral",
   ],
 };
 

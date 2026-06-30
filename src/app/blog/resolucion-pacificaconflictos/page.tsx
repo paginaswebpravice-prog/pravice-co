@@ -4,19 +4,22 @@ import ResolucionPacificaConflictos from "./ResolucionPacificaConflictos";
 const canonicalUrl = "https://pravice.co/blog/resolucion-pacificaconflictos";
 
 export const metadata: Metadata = {
-  title: "Resolución pacífica de conflictos en Colombia | Pravice",
+  title:
+    "Resolución pacífica de conflictos en Colombia: 10 métodos para solucionar disputas sin ir a juicio (Guía 2026) | Pravice",
 
   description:
-    "Conoce métodos legales para solucionar conflictos sin llegar a juicio en Colombia.",
+    "Descubre cómo resolver conflictos de manera pacífica en Colombia. Conoce los principales mecanismos legales, cuándo utilizar conciliación, mediación, arbitraje y negociación para evitar procesos judiciales.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Resolución pacífica de conflictos en Colombia",
+    title:
+      "Resolución pacífica de conflictos en Colombia: cómo solucionar disputas sin juicio",
+
     description:
-      "Métodos legales y estrategias para resolver conflictos sin acudir a juicio.",
+      "Aprende qué mecanismos alternativos existen en Colombia para resolver conflictos de forma rápida, legal y sin acudir a procesos judiciales.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -33,9 +36,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Resolución pacífica de conflictos en Colombia",
+    title: "Cómo resolver conflictos sin ir a juicio en Colombia (Guía 2026)",
+
     description:
-      "Cómo solucionar conflictos mediante conciliación, mediación y arbitraje.",
+      "Conoce cuándo utilizar conciliación, mediación, negociación y arbitraje.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -51,10 +55,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Resolución pacífica de conflictos en Colombia",
+  headline:
+    "Resolución pacífica de conflictos en Colombia: cómo solucionar disputas sin ir a juicio",
 
   description:
-    "Conoce métodos legales para solucionar conflictos sin llegar a juicio en Colombia.",
+    "Guía completa sobre resolución pacífica de conflictos en Colombia mediante conciliación, mediación, negociación y arbitraje.",
 
   image: "https://pravice.co/logo_pravice.png",
 

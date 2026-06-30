@@ -4,19 +4,20 @@ import PrevencionLavadoActivos from "./PrevencionLavadoActivos";
 const canonicalUrl = "https://pravice.co/blog/prevencion-lavado-activos";
 
 export const metadata: Metadata = {
-  title: "Prevención de lavado de activos en empresas colombianas | Pravice",
+  title:
+    "Prevención de lavado de activos en Colombia: guía para empresas (2026) | Pravice",
 
   description:
-    "Medidas y controles para prevenir riesgos de lavado de activos y financiación del terrorismo.",
+    "Aprende cómo prevenir el lavado de activos en empresas colombianas. Conoce controles, obligaciones, SARLAFT, señales de alerta, sanciones y buenas prácticas de cumplimiento.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Prevención de lavado de activos en empresas colombianas",
+    title: "Prevención de lavado de activos en Colombia: guía para empresas",
     description:
-      "Guía sobre controles empresariales y prevención de lavado de activos en Colombia.",
+      "Descubre cómo implementar controles para prevenir el lavado de activos y la financiación del terrorismo en Colombia.",
     url: canonicalUrl,
     siteName: "Pravice",
     locale: "es_CO",
@@ -33,8 +34,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Prevención de lavado de activos en Colombia",
-    description: "Controles empresariales y cumplimiento normativo.",
+    title: "Prevención de lavado de activos en Colombia: guía para empresas",
+    description:
+      "Conoce controles, riesgos, SARLAFT y buenas prácticas para proteger tu empresa.",
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -50,10 +52,11 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Prevención de lavado de activos en empresas colombianas",
+  headline:
+    "Prevención de lavado de activos en Colombia: guía completa para empresas",
 
   description:
-    "Medidas y controles para prevenir riesgos de lavado de activos y financiación del terrorismo.",
+    "Guía completa sobre prevención del lavado de activos en Colombia. Aprende qué es, cómo funciona, cuáles son los controles internos, las obligaciones empresariales y cómo evitar sanciones.",
 
   image: "https://pravice.co/logo_pravice.png",
 
@@ -80,14 +83,19 @@ const schemaData = {
   articleSection: "Cumplimiento Normativo",
 
   keywords: [
-    "lavado de activos",
-    "prevención lavado de activos",
-    "SARLAFT Colombia",
+    "prevención de lavado de activos",
+    "lavado de activos Colombia",
+    "prevención LAFT",
+    "SARLAFT",
+    "SAGRILAFT",
+    "compliance Colombia",
+    "oficial de cumplimiento",
+    "gestión de riesgos",
+    "empresas Colombia",
     "financiación del terrorismo",
-    "compliance empresarial",
-    "riesgos financieros empresas",
-    "cumplimiento normativo Colombia",
-    "control empresarial",
+    "control interno",
+    "cumplimiento empresarial",
+    "prevención LAFT empresas",
   ],
 };
 

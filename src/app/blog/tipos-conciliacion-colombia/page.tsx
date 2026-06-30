@@ -5,23 +5,30 @@ const canonicalUrl = "https://pravice.co/blog/tipos-conciliacion-colombia";
 
 export const metadata: Metadata = {
   title:
-    "Tipos de conciliación en Colombia y cuándo aplicar cada uno | Pravice",
+    "Tipos de Conciliación en Colombia: Judicial, Extrajudicial, en Derecho y en Equidad (Guía 2026)",
 
   description:
-    "Conoce los diferentes mecanismos de conciliación en Colombia y cómo funcionan para resolver conflictos.",
+    "Conoce los tipos de conciliación en Colombia, cuándo aplica cada uno, sus diferencias, ventajas y qué conflictos pueden resolverse mediante conciliación.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "Tipos de conciliación en Colombia y cuándo aplicar cada uno",
+    title:
+      "Tipos de Conciliación en Colombia: Guía Completa para Elegir la Correcta",
+
     description:
-      "Guía sobre conciliación extrajudicial, judicial y otros mecanismos legales en Colombia.",
+      "Aprende las diferencias entre conciliación judicial, extrajudicial, en derecho y en equidad, y descubre cuándo utilizar cada mecanismo.",
+
     url: canonicalUrl,
+
     siteName: "Pravice",
+
     locale: "es_CO",
+
     type: "article",
+
     images: [
       {
         url: "https://pravice.co/logo_pravice.png",
@@ -34,9 +41,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Tipos de conciliación en Colombia",
+
+    title: "Tipos de Conciliación en Colombia: ¿Cuál Necesitas Según tu Caso?",
+
     description:
-      "Conoce cuándo aplicar conciliación judicial, extrajudicial y otros mecanismos.",
+      "Guía práctica sobre conciliación judicial, extrajudicial, laboral, familiar, comercial y civil.",
+
     images: ["https://pravice.co/logo_pravice.png"],
   },
 };
@@ -52,10 +62,26 @@ const schemaData = {
     "@id": canonicalUrl,
   },
 
-  headline: "Tipos de conciliación en Colombia y cuándo aplicar cada uno",
+  headline:
+    "Tipos de Conciliación en Colombia: Judicial, Extrajudicial, en Derecho y en Equidad",
 
   description:
-    "Conoce los diferentes mecanismos de conciliación en Colombia y cómo funcionan para resolver conflictos.",
+    "Guía completa sobre los diferentes tipos de conciliación en Colombia, cuándo aplica cada uno, ventajas, requisitos y diferencias.",
+
+  keywords: [
+    "tipos de conciliación Colombia",
+    "clases de conciliación",
+    "conciliación judicial",
+    "conciliación extrajudicial",
+    "conciliación en derecho",
+    "conciliación en equidad",
+    "conciliación laboral",
+    "conciliación familiar",
+    "conciliación comercial",
+    "conciliación civil",
+    "mecanismos alternativos de solución de conflictos",
+    "centros de conciliación Colombia",
+  ],
 
   image: "https://pravice.co/logo_pravice.png",
 
@@ -80,17 +106,6 @@ const schemaData = {
   inLanguage: "es-CO",
 
   articleSection: "Conciliación",
-
-  keywords: [
-    "tipos de conciliación",
-    "conciliación en Colombia",
-    "conciliación extrajudicial",
-    "conciliación judicial",
-    "conciliación en derecho",
-    "conciliación en equidad",
-    "mecanismos alternativos de resolución",
-    "resolución de conflictos Colombia",
-  ],
 };
 
 export default function Page() {

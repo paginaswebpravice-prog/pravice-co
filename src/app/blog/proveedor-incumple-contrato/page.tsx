@@ -5,10 +5,10 @@ const canonicalUrl = "https://pravice.co/blog/proveedor-incumple-contrato";
 
 export const metadata: Metadata = {
   title:
-    "Proveedor incumple contrato en Colombia: qué hacer paso a paso (2026) | Guía legal",
+    "Proveedor incumple contrato en Colombia: 10 pasos para reclamar legalmente (Guía 2026) | Pravice",
 
   description:
-    "¿Tu proveedor incumplió un contrato en Colombia? Aprende qué hacer paso a paso, qué pruebas necesitas y cómo reclamar legalmente sin perder dinero.",
+    "¿Un proveedor incumplió el contrato? Conoce qué hacer paso a paso, qué pruebas reunir, cuándo reclamar una indemnización y qué opciones legales existen en Colombia.",
 
   alternates: {
     canonical: canonicalUrl,

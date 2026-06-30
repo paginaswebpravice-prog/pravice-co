@@ -51,12 +51,15 @@ export default function TiposConciliacionColombia() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Tipos de conciliación en Colombia y cuándo aplicar cada uno
+            Tipos de Conciliación en Colombia: Diferencias, Ventajas y Cuándo
+            Aplica Cada Una
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre los principales mecanismos de conciliación en Colombia y
-            cómo pueden ayudarte a resolver conflictos de forma rápida y legal.
+            Conoce los principales tipos de conciliación en Colombia, sus
+            diferencias, cuándo utilizar la conciliación judicial,
+            extrajudicial, en derecho o en equidad y qué conflictos pueden
+            resolverse mediante cada mecanismo.
           </motion.p>
         </motion.section>
 
@@ -77,20 +80,28 @@ export default function TiposConciliacionColombia() {
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Qué aprenderás en este artículo</h3>
+          <h3>Guía completa sobre los tipos de conciliación en Colombia</h3>
 
           <ul>
-            <li>Qué es la conciliación en Colombia</li>
-            <li>Cuáles son los principales tipos de conciliación</li>
-            <li>Cuándo aplicar cada mecanismo</li>
+            <li>Qué es la conciliación y para qué sirve</li>
+            <li>
+              Cuáles son los principales tipos de conciliación en Colombia
+            </li>
+            <li>Diferencias entre conciliación judicial y extrajudicial</li>
+            <li>Qué es la conciliación en derecho y en equidad</li>
+            <li>Cuándo aplica cada mecanismo conciliatorio</li>
+            <li>Qué conflictos pueden resolverse mediante conciliación</li>
             <li>Ventajas frente a un proceso judicial</li>
-            <li>Importancia de la asesoría legal</li>
+            <li>Preguntas frecuentes sobre conciliación</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué es la conciliación en Colombia</h2>
+          <h2>
+            ¿Qué es la conciliación en Colombia y por qué existen diferentes
+            tipos?
+          </h2>
 
           <p>
             La conciliación es un mecanismo legal mediante el cual dos o más
@@ -122,7 +133,9 @@ export default function TiposConciliacionColombia() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Tipos principales de conciliación en Colombia</h2>
+          <h2>
+            ¿Cuáles son los principales tipos de conciliación en Colombia?
+          </h2>
 
           <p>
             Existen diferentes modalidades según el tipo de conflicto y la
@@ -164,7 +177,10 @@ export default function TiposConciliacionColombia() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Cuándo aplicar cada tipo de conciliación</h2>
+          <h2>
+            ¿Cuándo conviene utilizar cada tipo de conciliación según el
+            conflicto?
+          </h2>
 
           <p>
             La elección del mecanismo adecuado depende del tipo de conflicto y
@@ -206,7 +222,10 @@ export default function TiposConciliacionColombia() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Ventajas de la conciliación frente a un juicio</h2>
+          <h2>
+            ¿Por qué la conciliación suele ser más rápida y económica que un
+            proceso judicial?
+          </h2>
 
           <p>
             Resolver conflictos mediante conciliación ofrece beneficios
@@ -246,7 +265,9 @@ export default function TiposConciliacionColombia() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Importancia de la asesoría legal en conciliaciones</h2>
+          <h2>
+            ¿Por qué contar con asesoría jurídica durante una conciliación?
+          </h2>
 
           <p>
             Aunque la conciliación busca acuerdos amistosos, contar con apoyo
@@ -278,9 +299,118 @@ export default function TiposConciliacionColombia() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>
+            Diferencias entre la conciliación judicial y la conciliación
+            extrajudicial
+          </h2>
+
+          <p>
+            Aunque ambas buscan solucionar conflictos mediante acuerdos, existen
+            diferencias importantes relacionadas con el momento en que se
+            realiza la conciliación, la autoridad competente y los efectos
+            dentro de un proceso judicial.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Conciliación extrajudicial</h3>
+
+            <p>
+              Se desarrolla antes de presentar una demanda y, en algunos
+              asuntos, constituye un requisito obligatorio para acudir
+              posteriormente a la vía judicial.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Conciliación judicial</h3>
+
+            <p>
+              Tiene lugar cuando ya existe un proceso ante un juez, quien puede
+              promover un acuerdo entre las partes para finalizar el litigio de
+              forma anticipada.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            ¿Qué conflictos pueden resolverse mediante conciliación en Colombia?
+          </h2>
+
+          <p>
+            No todos los conflictos pueden ser conciliados. Sin embargo, una
+            gran cantidad de controversias civiles, comerciales, laborales y
+            familiares admiten este mecanismo alternativo de solución.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Conflictos civiles</h3>
+
+            <p>
+              Incumplimientos contractuales, pago de deudas, indemnizaciones y
+              otros asuntos patrimoniales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Conflictos comerciales</h3>
+
+            <p>
+              Disputas entre empresas, proveedores, socios y clientes
+              relacionadas con obligaciones comerciales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Conflictos familiares</h3>
+
+            <p>
+              Alimentos, custodia, visitas, separación de bienes y otros asuntos
+              permitidos por la ley.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Conflictos laborales</h3>
+
+            <p>
+              Determinadas diferencias entre empleadores y trabajadores pueden
+              resolverse mediante conciliación conforme a la legislación
+              vigente.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>¿Cómo elegir el tipo de conciliación adecuado para tu caso?</h2>
+
+          <p>
+            La elección depende del tipo de conflicto, de la etapa en la que se
+            encuentre el proceso y de los requisitos establecidos por la
+            legislación colombiana.
+          </p>
+
+          <p>
+            Antes de iniciar una conciliación resulta recomendable identificar
+            si el asunto admite este mecanismo, verificar si constituye un
+            requisito previo para demandar y acudir a un centro de conciliación
+            o conciliador competente.
+          </p>
+
+          <p>
+            Contar con orientación jurídica también permite negociar acuerdos
+            que protejan adecuadamente los derechos e intereses de las partes y
+            reduzcan el riesgo de futuros conflictos.
+          </p>
+        </section>
+
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre los tipos de conciliación en Colombia</h2>
+          <h2>
+            ¿Qué tipo de conciliación es el más adecuado para resolver tu
+            conflicto?
+          </h2>
 
           <p>
             La conciliación es una herramienta legal efectiva para resolver

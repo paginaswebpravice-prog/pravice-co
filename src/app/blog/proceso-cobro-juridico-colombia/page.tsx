@@ -5,20 +5,21 @@ const canonicalUrl = "https://pravice.co/blog/proceso-cobro-juridico-colombia";
 
 export const metadata: Metadata = {
   title:
-    "¿Cómo funciona un cobro jurídico en Colombia? Etapas, tiempos y documentos | Pravice",
+    "Proceso de cobro jurídico en Colombia: etapas, tiempos y cómo recuperar una deuda | Pravice",
 
   description:
-    "Aprende cómo funciona un cobro jurídico en Colombia, cuáles son sus etapas, qué documentos se necesitan y cuándo iniciar una demanda para recuperar una deuda.",
+    "Conoce cómo funciona el proceso de cobro jurídico en Colombia, cuáles son sus etapas, cuánto puede tardar, qué documentos necesitas y cuándo iniciar una demanda para recuperar una deuda.",
 
   alternates: {
     canonical: canonicalUrl,
   },
 
   openGraph: {
-    title: "¿Cómo funciona un cobro jurídico en Colombia? Guía paso a paso",
+    title:
+      "Proceso de cobro jurídico en Colombia: guía completa para recuperar una deuda",
 
     description:
-      "Conoce las etapas del cobro jurídico, los documentos necesarios y cuándo acudir a un proceso judicial para recuperar cartera.",
+      "Aprende cómo funciona un proceso de cobro jurídico, cuándo demandar, qué documentos presentar y cuáles son las etapas para recuperar cartera en Colombia.",
 
     url: canonicalUrl,
     siteName: "Pravice",
@@ -38,10 +39,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "¿Cómo funciona un cobro jurídico en Colombia? Guía completa",
+    title: "Proceso de cobro jurídico en Colombia paso a paso",
 
     description:
-      "Etapas, documentos, tiempos y aspectos legales para recuperar una deuda mediante cobro jurídico.",
+      "Etapas, documentos, tiempos y recomendaciones para recuperar una deuda mediante cobro jurídico.",
 
     images: ["https://pravice.co/logo_pravice.png"],
   },

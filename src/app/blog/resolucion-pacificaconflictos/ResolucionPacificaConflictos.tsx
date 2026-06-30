@@ -51,12 +51,15 @@ export default function ResolucionPacificaConflictos() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Resolución pacífica de conflictos en Colombia
+            Resolución pacífica de conflictos en Colombia: cómo solucionar
+            disputas sin llegar a juicio
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre mecanismos legales y estrategias para solucionar conflictos
-            de manera pacífica sin necesidad de llegar a juicio.
+            Descubre cuáles son los mecanismos de resolución pacífica de
+            conflictos más utilizados en Colombia, cuándo conviene acudir a la
+            conciliación, la mediación, el arbitraje o la negociación y cuáles
+            son sus principales ventajas frente a un proceso judicial.
           </motion.p>
         </motion.section>
 
@@ -77,20 +80,28 @@ export default function ResolucionPacificaConflictos() {
 
         {/* CONTENIDO */}
         <section className={styles.contentBox}>
-          <h3>Qué aprenderás en este artículo</h3>
+          <h3>¿Qué encontrarás en esta guía?</h3>
 
           <ul>
-            <li>Qué es la resolución pacífica de conflictos</li>
-            <li>Principales métodos alternativos en Colombia</li>
-            <li>Ventajas frente a procesos judiciales</li>
-            <li>Cuándo utilizar conciliación o arbitraje</li>
-            <li>Cómo prevenir conflictos futuros</li>
+            <li>Qué significa la resolución pacífica de conflictos</li>
+            <li>
+              Cuáles son los principales mecanismos alternativos en Colombia
+            </li>
+            <li>10 beneficios de resolver conflictos sin acudir a juicio</li>
+            <li>
+              10 situaciones donde la conciliación puede ser la mejor opción
+            </li>
+            <li>10 errores que debes evitar durante una negociación</li>
+            <li>Preguntas frecuentes</li>
           </ul>
         </section>
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué es la resolución pacífica de conflictos</h2>
+          <h2>
+            ¿Qué es la resolución pacífica de conflictos y por qué es importante
+            en Colombia?
+          </h2>
 
           <p>
             Es un conjunto de mecanismos que buscan solucionar disputas mediante
@@ -121,7 +132,10 @@ export default function ResolucionPacificaConflictos() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Principales mecanismos de resolución pacífica en Colombia</h2>
+          <h2>
+            Los principales mecanismos de resolución pacífica de conflictos en
+            Colombia
+          </h2>
 
           <p>
             Existen diferentes herramientas legales para solucionar conflictos
@@ -163,7 +177,10 @@ export default function ResolucionPacificaConflictos() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Ventajas de resolver conflictos sin llegar a juicio</h2>
+          <h2>
+            10 beneficios de resolver un conflicto sin acudir a un proceso
+            judicial
+          </h2>
 
           <p>
             Los mecanismos alternativos ofrecen múltiples beneficios para
@@ -203,7 +220,10 @@ export default function ResolucionPacificaConflictos() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Cuándo utilizar mecanismos alternativos de resolución</h2>
+          <h2>
+            10 casos en los que conviene utilizar mecanismos alternativos de
+            solución de conflictos
+          </h2>
 
           <p>
             Estos métodos pueden ser útiles en diferentes tipos de conflictos en
@@ -245,7 +265,10 @@ export default function ResolucionPacificaConflictos() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Importancia del apoyo legal en la resolución de conflictos</h2>
+          <h2>
+            ¿Por qué es importante contar con asesoría jurídica durante una
+            conciliación o negociación?
+          </h2>
 
           <p>
             Contar con asesoría jurídica ayuda a proteger derechos e intereses
@@ -273,6 +296,276 @@ export default function ResolucionPacificaConflictos() {
             <p>
               La asesoría legal ayuda a reducir riesgos y evitar nuevas
               disputas.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            10 beneficios de resolver conflictos mediante mecanismos
+            alternativos en Colombia
+          </h2>
+
+          <p>
+            La resolución pacífica de conflictos ofrece numerosas ventajas
+            frente a un proceso judicial tradicional. Dependiendo del caso,
+            acudir a mecanismos como la conciliación, la mediación, la
+            negociación o el arbitraje puede ahorrar tiempo, dinero y proteger
+            las relaciones entre las partes.
+          </p>
+
+          <div className={styles.card}>
+            <h3>1. Reduce significativamente el tiempo de solución</h3>
+            <p>
+              Muchos conflictos pueden resolverse en semanas o pocos meses,
+              evitando procesos judiciales que podrían prolongarse durante
+              varios años.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>2. Disminuye los costos legales</h3>
+            <p>
+              Al evitar litigios extensos, las partes reducen gastos asociados
+              con honorarios, desplazamientos, peritajes y actuaciones
+              judiciales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>3. Favorece acuerdos voluntarios</h3>
+            <p>
+              Las soluciones son construidas por las propias partes, aumentando
+              el compromiso con el cumplimiento de los acuerdos alcanzados.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>4. Conserva las relaciones personales y comerciales</h3>
+            <p>
+              El diálogo facilita mantener vínculos familiares, laborales o
+              empresariales que podrían deteriorarse con un proceso judicial.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Mayor confidencialidad</h3>
+            <p>
+              Muchos mecanismos alternativos permiten tratar el conflicto de
+              forma reservada, protegiendo la reputación de las partes.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Flexibilidad en las soluciones</h3>
+            <p>
+              Los acuerdos pueden adaptarse mejor a las necesidades particulares
+              de las partes involucradas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Reduce la congestión judicial</h3>
+            <p>
+              Resolver disputas mediante conciliación o negociación contribuye a
+              que los juzgados puedan concentrarse en procesos que realmente
+              requieren una decisión judicial.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>8. Disminuye el nivel de confrontación</h3>
+            <p>
+              El enfoque colaborativo favorece el respeto mutuo y evita que el
+              conflicto escale innecesariamente.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>9. Brinda mayor seguridad jurídica</h3>
+            <p>
+              Cuando los acuerdos cumplen los requisitos legales, pueden tener
+              efectos vinculantes y ser exigibles jurídicamente.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>
+              10. Permite enfocarse nuevamente en las actividades principales
+            </h3>
+            <p>
+              Resolver un conflicto de manera rápida evita que personas y
+              empresas pierdan tiempo y recursos en disputas prolongadas.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            10 errores que debes evitar al intentar resolver un conflicto en
+            Colombia
+          </h2>
+
+          <p>
+            Muchas negociaciones fracasan porque las partes cometen errores que
+            dificultan alcanzar acuerdos. Evitar estas situaciones aumenta las
+            probabilidades de encontrar una solución efectiva.
+          </p>
+
+          <div className={styles.card}>
+            <h3>1. Actuar impulsivamente</h3>
+            <p>
+              Tomar decisiones guiadas por las emociones puede empeorar el
+              conflicto y cerrar oportunidades de negociación.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>2. No escuchar a la otra parte</h3>
+            <p>
+              Comprender las necesidades y argumentos del otro facilita
+              encontrar puntos de acuerdo.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>3. Negociar sin conocer los hechos</h3>
+            <p>
+              Es importante recopilar documentos, pruebas y antecedentes antes
+              de plantear una propuesta de solución.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>4. Rechazar cualquier alternativa</h3>
+            <p>
+              Mantener una posición inflexible suele dificultar la construcción
+              de acuerdos beneficiosos para ambas partes.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. No documentar los acuerdos</h3>
+            <p>
+              Todo compromiso alcanzado debe quedar por escrito para evitar
+              nuevas controversias en el futuro.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Ignorar los aspectos legales</h3>
+            <p>
+              Un acuerdo que incumpla la ley puede generar nuevos problemas o
+              resultar inválido.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Esperar demasiado tiempo para actuar</h3>
+            <p>
+              Entre más se prolongue el conflicto, mayores pueden ser las
+              pérdidas económicas y personales.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>8. Romper la comunicación</h3>
+            <p>
+              Interrumpir completamente el diálogo suele dificultar cualquier
+              intento de solución pacífica.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>9. No considerar mecanismos alternativos</h3>
+            <p>
+              Muchas personas acuden directamente a los tribunales sin explorar
+              opciones como la conciliación o la mediación.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>10. No buscar asesoría jurídica cuando es necesaria</h3>
+            <p>
+              Un abogado puede orientar la estrategia más adecuada para proteger
+              los derechos e intereses de las partes.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Preguntas frecuentes sobre la resolución pacífica de conflictos en
+            Colombia
+          </h2>
+
+          <div className={styles.card}>
+            <h3>¿Qué es la resolución pacífica de conflictos?</h3>
+            <p>
+              Es el conjunto de mecanismos que permiten solucionar controversias
+              mediante el diálogo y acuerdos entre las partes, evitando en
+              muchos casos un proceso judicial.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Qué mecanismos existen en Colombia?</h3>
+            <p>
+              Entre los más utilizados se encuentran la conciliación, la
+              negociación, la mediación y el arbitraje, dependiendo del tipo de
+              conflicto.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>
+              ¿Todos los conflictos pueden resolverse mediante conciliación?
+            </h3>
+            <p>
+              No. Existen asuntos que, por disposición legal, deben ser
+              resueltos por las autoridades judiciales y no admiten
+              conciliación.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Los acuerdos tienen validez legal?</h3>
+            <p>
+              Cuando cumplen los requisitos establecidos por la ley, los
+              acuerdos pueden producir efectos jurídicos y ser exigibles.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Es obligatorio contratar un abogado?</h3>
+            <p>
+              Depende del caso. Sin embargo, contar con asesoría jurídica ayuda
+              a proteger los derechos de las partes y facilita la negociación.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Cuál es la diferencia entre conciliación y arbitraje?</h3>
+            <p>
+              En la conciliación las partes construyen un acuerdo con ayuda de
+              un conciliador, mientras que en el arbitraje un árbitro emite una
+              decisión obligatoria.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Cuándo conviene acudir a un mecanismo alternativo?</h3>
+            <p>
+              Cuando existe disposición para dialogar y el conflicto puede
+              resolverse mediante acuerdos que beneficien a ambas partes.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>¿Qué ventajas tiene frente a un juicio?</h3>
+            <p>
+              Generalmente permite ahorrar tiempo, reducir costos, proteger las
+              relaciones entre las partes y obtener soluciones más rápidas.
             </p>
           </div>
         </section>

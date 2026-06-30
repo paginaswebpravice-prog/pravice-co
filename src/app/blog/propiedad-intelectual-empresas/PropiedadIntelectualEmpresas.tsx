@@ -51,12 +51,15 @@ export default function PropiedadIntelectualEmpresas() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Propiedad intelectual para empresas en Colombia
+            Cómo proteger la propiedad intelectual de una empresa en Colombia:
+            marcas, software y activos intangibles
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Descubre cómo proteger marcas, software y otros activos intangibles
-            de una empresa en Colombia.
+            Aprende cómo proteger la propiedad intelectual de tu empresa en
+            Colombia mediante el registro de marcas, la protección del software,
+            los derechos de autor y otras estrategias para defender tus activos
+            intangibles.
           </motion.p>
         </motion.section>
 
@@ -89,7 +92,10 @@ export default function PropiedadIntelectualEmpresas() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>Qué es la propiedad intelectual</h2>
+          <h2>
+            ¿Qué es la propiedad intelectual y por qué es fundamental para las
+            empresas en Colombia?
+          </h2>
 
           <p>
             La propiedad intelectual comprende los derechos legales sobre
@@ -121,7 +127,10 @@ export default function PropiedadIntelectualEmpresas() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Activos intangibles que una empresa puede proteger</h2>
+          <h2>
+            ¿Qué activos de una empresa pueden protegerse mediante propiedad
+            intelectual?
+          </h2>
 
           <p>
             Existen diferentes tipos de activos intangibles que pueden recibir
@@ -163,49 +172,87 @@ export default function PropiedadIntelectualEmpresas() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>Riesgos de no proteger la propiedad intelectual</h2>
+          <h2>
+            7 riesgos de no proteger la propiedad intelectual de una empresa
+          </h2>
 
           <p>
-            No contar con protección jurídica adecuada puede generar problemas
-            económicos y legales para las empresas.
+            Muchas empresas invierten durante años en desarrollar su marca,
+            software, procesos internos o contenido digital, pero no implementan
+            mecanismos de protección jurídica. Esto puede ocasionar pérdidas
+            económicas, conflictos legales y afectar seriamente su
+            competitividad.
           </p>
 
           <div className={styles.card}>
-            <h3>Uso no autorizado de marcas</h3>
+            <h3>1. Que otra empresa registre tu marca primero</h3>
             <p>
-              Terceros podrían utilizar nombres o elementos similares afectando
-              la reputación empresarial.
+              Si una marca no está registrada, un tercero podría solicitar su
+              registro y limitar el uso del nombre comercial que tu empresa ha
+              venido utilizando.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Copias de software o contenido</h3>
+            <h3>2. Copias de software o desarrollos tecnológicos</h3>
             <p>
-              La falta de protección facilita la reproducción indebida de
-              desarrollos tecnológicos.
+              Aplicaciones, plataformas, código fuente y desarrollos
+              tecnológicos pueden ser utilizados por terceros cuando no existen
+              mecanismos de protección y contratos adecuados.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Conflictos legales</h3>
+            <h3>3. Uso indebido de información confidencial</h3>
             <p>
-              Las disputas por derechos de propiedad intelectual pueden generar
-              procesos judiciales complejos.
+              Empleados, contratistas o proveedores podrían divulgar información
+              estratégica si no existen acuerdos de confidencialidad y controles
+              internos.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Pérdida de valor empresarial</h3>
+            <h3>4. Pérdida de ventaja competitiva</h3>
             <p>
-              Los activos intangibles mal protegidos pueden afectar la
-              competitividad del negocio.
+              La innovación representa una ventaja para cualquier empresa.
+              Cuando no se protege legalmente, los competidores pueden
+              replicarla fácilmente.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Conflictos legales costosos</h3>
+            <p>
+              Resolver disputas relacionadas con marcas, derechos de autor o uso
+              de activos intangibles puede implicar procesos judiciales largos y
+              altos costos para la empresa.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Pérdida del valor de los activos intangibles</h3>
+            <p>
+              Una marca, un software o un desarrollo tecnológico sin protección
+              jurídica pierde valor frente a inversionistas, aliados comerciales
+              y potenciales compradores.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Dificultades para expandirse a nuevos mercados</h3>
+            <p>
+              Al internacionalizar un negocio pueden surgir conflictos con
+              marcas previamente registradas o con derechos pertenecientes a
+              terceros.
             </p>
           </div>
         </section>
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>Cómo proteger activos intangibles en Colombia</h2>
+          <h2>
+            Cómo proteger la propiedad intelectual de una empresa paso a paso
+          </h2>
 
           <p>
             Implementar medidas preventivas es fundamental para proteger los
@@ -247,41 +294,265 @@ export default function PropiedadIntelectualEmpresas() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Importancia de la propiedad intelectual para empresas</h2>
+          <h2>
+            10 beneficios de proteger la propiedad intelectual en una empresa
+          </h2>
 
           <p>
-            Los activos intangibles representan gran parte del valor de muchas
-            empresas modernas.
+            Implementar una estrategia de propiedad intelectual no solo reduce
+            riesgos legales, sino que también incrementa el valor del negocio y
+            fortalece su crecimiento sostenible.
           </p>
 
           <div className={styles.card}>
-            <h3>Protección de innovación</h3>
+            <h3>1. Protege la identidad de la empresa</h3>
             <p>
-              La propiedad intelectual impulsa el desarrollo de nuevas ideas y
-              tecnologías.
+              El registro de marcas evita que terceros utilicen nombres o signos
+              distintivos similares.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Fortalecimiento de marca</h3>
+            <h3>2. Incrementa el valor del negocio</h3>
             <p>
-              La protección adecuada mejora la confianza y posicionamiento
-              empresarial.
+              Los activos intangibles protegidos aumentan el patrimonio
+              empresarial y generan mayor confianza para inversionistas.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Mayor seguridad jurídica</h3>
+            <h3>3. Reduce conflictos legales</h3>
             <p>
-              Una estrategia preventiva reduce riesgos de conflictos legales y
-              pérdidas económicas.
+              Contar con protección jurídica disminuye el riesgo de disputas por
+              el uso de marcas, software y contenido.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>4. Fortalece la ventaja competitiva</h3>
+            <p>
+              La empresa conserva la exclusividad sobre sus innovaciones y
+              desarrollos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Facilita alianzas comerciales</h3>
+            <p>
+              Los inversionistas y socios suelen valorar empresas con activos
+              intelectuales correctamente protegidos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>6. Permite licenciar activos</h3>
+            <p>
+              Una marca o un software protegido puede generar ingresos mediante
+              licencias o franquicias.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>7. Favorece la innovación</h3>
+            <p>
+              La protección jurídica incentiva el desarrollo de nuevos
+              productos, servicios y tecnologías.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>8. Mejora la reputación empresarial</h3>
+            <p>
+              Una empresa que protege sus activos transmite mayor confianza al
+              mercado.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>9. Facilita la expansión internacional</h3>
+            <p>
+              Contar con una estrategia de propiedad intelectual permite
+              ingresar a nuevos mercados con mayor seguridad jurídica.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>10. Contribuye al crecimiento sostenible</h3>
+            <p>
+              Los activos intangibles correctamente protegidos generan valor a
+              largo plazo y fortalecen la competitividad empresarial.
             </p>
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>
+            ¿Cuál es la diferencia entre propiedad intelectual y propiedad
+            industrial?
+          </h2>
+
+          <p>
+            Aunque suelen utilizarse como sinónimos, la propiedad intelectual es
+            un concepto amplio que incluye diferentes mecanismos de protección
+            jurídica para las creaciones del intelecto humano.
+          </p>
+
+          <p>
+            Dentro de este concepto se encuentra la propiedad industrial,
+            orientada a proteger elementos relacionados con la actividad
+            empresarial como marcas, patentes, diseños industriales, modelos de
+            utilidad y otros signos distintivos.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Propiedad intelectual</h3>
+            <p>
+              Comprende derechos de autor, software, obras literarias, contenido
+              digital, bases de datos y otras creaciones protegidas por la
+              legislación correspondiente.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Propiedad industrial</h3>
+            <p>
+              Incluye marcas, patentes, diseños industriales, nombres
+              comerciales, lemas comerciales y demás elementos que identifican o
+              diferencian una empresa dentro del mercado.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>¿Cómo registrar una marca en Colombia?</h2>
+
+          <p>
+            Registrar una marca permite obtener el derecho exclusivo sobre un
+            signo distintivo y evitar que terceros lo utilicen sin autorización.
+          </p>
+
+          <div className={styles.card}>
+            <h3>1. Realizar una búsqueda de antecedentes</h3>
+            <p>
+              Antes de presentar la solicitud es recomendable verificar que no
+              existan marcas iguales o similares previamente registradas.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>2. Presentar la solicitud de registro</h3>
+            <p>
+              La solicitud debe contener la información del solicitante, el
+              signo que se desea proteger y la clasificación correspondiente de
+              productos o servicios.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>3. Revisión de requisitos</h3>
+            <p>
+              La autoridad competente verifica el cumplimiento de los requisitos
+              legales antes de continuar con el trámite.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>4. Publicación y etapa de oposiciones</h3>
+            <p>
+              Durante este periodo terceros pueden presentar observaciones
+              cuando consideran que el registro afecta derechos previamente
+              adquiridos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>5. Decisión sobre el registro</h3>
+            <p>
+              Finalizado el trámite se emite la decisión correspondiente sobre
+              la concesión o negación del registro marcario.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>¿Cómo proteger el software desarrollado por una empresa?</h2>
+
+          <p>
+            El software constituye uno de los activos intangibles más
+            importantes para empresas tecnológicas y organizaciones que
+            desarrollan soluciones digitales.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Documentar el desarrollo</h3>
+            <p>
+              Conservar versiones del código fuente, documentación técnica y
+              registros del proceso facilita demostrar la autoría del software.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Firmar acuerdos de confidencialidad</h3>
+            <p>
+              Los contratos de confidencialidad ayudan a proteger información
+              sensible compartida con empleados, contratistas y proveedores.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Regular la titularidad mediante contratos</h3>
+            <p>
+              Es importante definir contractualmente quién es el titular de los
+              derechos patrimoniales sobre el software desarrollado.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Implementar controles internos</h3>
+            <p>
+              Limitar el acceso al código fuente y establecer políticas de
+              seguridad reduce el riesgo de copias o divulgaciones no
+              autorizadas.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Errores más comunes al proteger la propiedad intelectual empresarial
+          </h2>
+
+          <p>
+            Muchas empresas solo se preocupan por proteger sus activos cuando
+            surge un conflicto. Adoptar medidas preventivas reduce
+            significativamente los riesgos jurídicos.
+          </p>
+
+          <ul>
+            <li>No registrar la marca antes de lanzarla al mercado.</li>
+            <li>
+              No firmar acuerdos de confidencialidad con empleados y
+              proveedores.
+            </li>
+            <li>No documentar adecuadamente el desarrollo de software.</li>
+            <li>
+              No proteger diseños, contenido digital y material publicitario.
+            </li>
+            <li>
+              Utilizar recursos de terceros sin verificar sus derechos de uso.
+            </li>
+            <li>
+              No realizar auditorías periódicas sobre los activos intangibles.
+            </li>
+          </ul>
+        </section>
+
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
-          <h2>Conclusión sobre propiedad intelectual empresarial</h2>
+          <h2>
+            Conclusión: proteger la propiedad intelectual fortalece el
+            crecimiento y la competitividad empresarial
+          </h2>
 
           <p>
             La propiedad intelectual es una herramienta clave para proteger el
@@ -297,10 +568,10 @@ export default function PropiedadIntelectualEmpresas() {
 
         <ArticleCTA
           badge="Propiedad intelectual y derecho empresarial"
-          title="¿Necesitas proteger los activos de tu empresa?"
-          description="Recibe asesoría legal para registro de marcas, protección de software y defensa de propiedad intelectual en Colombia."
+          title="¿Quieres proteger la marca, el software o los activos intangibles de tu empresa?"
+          description="Implementar una estrategia de propiedad intelectual permite proteger el valor de tu empresa frente a copias, usos no autorizados y conflictos legales. Una adecuada gestión de marcas, derechos de autor, software y secretos empresariales fortalece la competitividad y reduce riesgos jurídicos."
           href="https://abogadosespecialistas.com.co/"
-          buttonText="Solicitar asesoría legal"
+          buttonText="Conocer estrategias de protección empresarial"
         />
       </main>
     </>

@@ -8,7 +8,8 @@ export default function ProcesoCobroJuridicoColombia() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Cobro jurídico en Colombia: cómo funciona el proceso legal",
+    headline:
+      "Proceso de cobro jurídico en Colombia: etapas, tiempos y cómo recuperar una deuda",
     description:
       "Conoce cómo funciona el proceso de cobro jurídico en Colombia, sus etapas y cuándo iniciar acciones legales para recuperar deudas.",
     image: "https://pravice.co/og-image.jpg",
@@ -51,13 +52,15 @@ export default function ProcesoCobroJuridicoColombia() {
           animate={{ opacity: 1, y: 0 }}
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            ¿Cómo funciona un cobro jurídico en Colombia? Guía paso a paso
+            Proceso de cobro jurídico en Colombia: cómo recuperar una deuda paso
+            a paso
           </motion.h1>
 
           <motion.p className={styles.description} itemProp="description">
-            Conoce las etapas del cobro jurídico en Colombia, los documentos
-            necesarios, los tiempos aproximados del proceso y cuándo iniciar
-            acciones judiciales para recuperar una deuda.
+            Conoce cómo funciona el proceso de cobro jurídico en Colombia,
+            cuáles son sus etapas, cuánto puede tardar, qué documentos necesitas
+            y cuándo es recomendable iniciar una demanda para recuperar una
+            deuda de manera legal.
           </motion.p>
         </motion.section>
 
@@ -91,7 +94,10 @@ export default function ProcesoCobroJuridicoColombia() {
 
         {/* SECCIÓN 1 */}
         <section className={styles.section}>
-          <h2>¿Qué es un cobro jurídico y cuándo se utiliza?</h2>
+          <h2>
+            ¿Qué es un proceso de cobro jurídico en Colombia y cuándo debe
+            iniciarse?
+          </h2>
 
           <p>
             El cobro jurídico es un proceso legal utilizado para exigir el pago
@@ -124,7 +130,7 @@ export default function ProcesoCobroJuridicoColombia() {
 
         {/* SECCIÓN 2 */}
         <section className={styles.section}>
-          <h2>Etapas de un cobro jurídico en Colombia paso a paso</h2>
+          <h2>Etapas del proceso de cobro jurídico en Colombia paso a paso</h2>
 
           <p>
             El procedimiento puede variar según el tipo de deuda y la evidencia
@@ -166,7 +172,10 @@ export default function ProcesoCobroJuridicoColombia() {
 
         {/* SECCIÓN 3 */}
         <section className={styles.section}>
-          <h2>¿Qué documentos se necesitan para iniciar un cobro jurídico?</h2>
+          <h2>
+            Documentos necesarios para iniciar un proceso de cobro jurídico en
+            Colombia
+          </h2>
 
           <p>
             Contar con soporte documental adecuado aumenta las probabilidades de
@@ -208,7 +217,10 @@ export default function ProcesoCobroJuridicoColombia() {
 
         {/* SECCIÓN 4 */}
         <section className={styles.section}>
-          <h2>¿Cuándo es recomendable iniciar un cobro jurídico?</h2>
+          <h2>
+            ¿Cuándo iniciar un proceso de cobro jurídico para recuperar una
+            deuda?
+          </h2>
 
           <p>
             No todas las deudas requieren inmediatamente una demanda judicial,
@@ -242,7 +254,7 @@ export default function ProcesoCobroJuridicoColombia() {
 
         {/* SECCIÓN 5 */}
         <section className={styles.section}>
-          <h2>Ventajas de iniciar un cobro jurídico a tiempo</h2>
+          <h2>10 ventajas de iniciar un proceso de cobro jurídico a tiempo</h2>
 
           <p>
             Tener procesos legales estructurados ayuda a mejorar la recuperación
@@ -274,11 +286,151 @@ export default function ProcesoCobroJuridicoColombia() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <h2>
+            ¿Qué tipos de deudas pueden cobrarse mediante un proceso de cobro
+            jurídico?
+          </h2>
+
+          <p>
+            El cobro jurídico puede utilizarse para recuperar diferentes tipos
+            de obligaciones económicas siempre que exista un soporte que permita
+            acreditar la deuda. Dependiendo del caso, el procedimiento aplicable
+            puede variar.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Facturas pendientes de pago</h3>
+            <p>
+              Las empresas pueden iniciar acciones para recuperar facturas
+              vencidas cuando el cliente incumple los plazos acordados.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Pagarés</h3>
+            <p>
+              Los pagarés constituyen títulos ejecutivos que facilitan el inicio
+              de procesos judiciales para exigir el pago de la obligación.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Contratos comerciales</h3>
+            <p>
+              Los incumplimientos derivados de contratos de prestación de
+              servicios, suministro o compraventa también pueden dar lugar a un
+              proceso de cobro.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Arrendamientos</h3>
+            <p>
+              Las obligaciones derivadas de contratos de arrendamiento pueden
+              reclamarse judicialmente cuando existen cánones vencidos.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>Errores que pueden retrasar un proceso de cobro jurídico</h2>
+
+          <p>
+            Muchos procesos de recuperación de cartera se retrasan por errores
+            que pudieron evitarse desde el inicio.
+          </p>
+
+          <div className={styles.card}>
+            <h3>No conservar los documentos originales</h3>
+
+            <p>
+              La ausencia de soportes dificulta demostrar la existencia de la
+              obligación y puede afectar el éxito del proceso.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Esperar demasiado tiempo para demandar</h3>
+
+            <p>
+              Retrasar el inicio del proceso puede generar dificultades para
+              localizar al deudor o recuperar los recursos.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>No documentar los acuerdos de pago</h3>
+
+            <p>
+              Los acuerdos verbales son difíciles de demostrar. Siempre es
+              recomendable dejar constancia escrita.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Realizar una gestión de cobranza desorganizada</h3>
+
+            <p>
+              Llevar un historial de comunicaciones y requerimientos facilita la
+              preparación del proceso judicial.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>
+            Diferencias entre cobro prejurídico y cobro jurídico en Colombia
+          </h2>
+
+          <p>
+            Aunque ambos buscan recuperar una deuda, existen diferencias
+            importantes entre la gestión prejurídica y el proceso judicial.
+          </p>
+
+          <div className={styles.card}>
+            <h3>Cobro prejurídico</h3>
+
+            <p>
+              Consiste en negociaciones, llamadas, correos electrónicos y
+              acuerdos de pago realizados antes de presentar una demanda.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Cobro jurídico</h3>
+
+            <p>
+              Implica acudir ante la autoridad competente para exigir
+              judicialmente el cumplimiento de la obligación cuando las
+              gestiones previas no dieron resultado.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2>¿Cómo aumentar las probabilidades de recuperar una deuda?</h2>
+
+          <p>
+            La recuperación de cartera no depende únicamente de presentar una
+            demanda. Una estrategia adecuada desde el inicio puede incrementar
+            significativamente las posibilidades de éxito.
+          </p>
+
+          <ol>
+            <li>Conservar todos los soportes de la obligación.</li>
+            <li>Documentar los acuerdos de pago.</li>
+            <li>Realizar seguimiento oportuno a la cartera vencida.</li>
+            <li>No dejar vencer los términos legales.</li>
+            <li>Solicitar asesoría jurídica antes de iniciar el proceso.</li>
+          </ol>
+        </section>
+
         {/* CONCLUSIÓN */}
         <section className={styles.conclusion}>
           <h2>
-            Conclusión: cómo recuperar una deuda mediante cobro jurídico en
-            Colombia
+            Proceso de cobro jurídico en Colombia: conclusiones y
+            recomendaciones finales
           </h2>
 
           <p>
