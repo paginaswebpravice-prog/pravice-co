@@ -1,29 +1,33 @@
 import Hero from "./components/Hero";
-import Services from "./components/Services";
-import About from "./components/About";
-import LegalApp from "./components/LegalApp";
-import Experience from "./components/Experience";
-import Process from "./components/Process";
-import AboutUs from "./components/AboutUs";
+import Features from "./components/Features";
+import HowItWorks from "./components/HowItWorks";
+import Benefits from "./components/Benefits";
+import Security from "./components/Security";
 import FAQ from "./components/FAQ";
-import BlogPreview from "./components/BlogPreview";
-import OfficeLocation from "./components/OfficeLocation";
-import VideosPreview from "./components/VideosPreview";
+import FinalCTA from "./components/FinalCTA";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <About />
+      <Features />
+      <HowItWorks />
+      <Benefits />
+      <Security />
+
+      {/**<About />
       <Services />
       <LegalApp />
       <Experience />
       <Process />
       <AboutUs />
       <VideosPreview />
-      <BlogPreview />
+      <BlogPreview />*/}
       <FAQ />
-      <OfficeLocation />
+
+      {/**<OfficeLocation />*/}
+
+      <FinalCTA />
     </>
   );
 }

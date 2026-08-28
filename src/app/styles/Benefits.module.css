@@ -1,0 +1,167 @@
+.benefits {
+  position: relative;
+  padding: 110px 80px;
+  background: #f7f9fb;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  max-width: 780px;
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #c4911a;
+}
+
+.header h2 {
+  margin: 0 0 20px;
+
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1.12;
+  font-weight: 700;
+  color: #004a80;
+}
+
+.header h2 span {
+  color: #5eb3e4;
+}
+
+.header p {
+  max-width: 700px;
+  margin: 0 auto;
+
+  font-size: 17px;
+  line-height: 1.7;
+  color: #666;
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* CARD */
+
+.card {
+  position: relative;
+
+  display: flex;
+  gap: 22px;
+
+  min-height: 210px;
+  padding: 32px 28px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 74, 128, 0.08);
+  border-radius: 12px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(94, 179, 228, 0.35);
+
+  box-shadow: 0 15px 40px rgba(0, 74, 128, 0.1);
+}
+
+/* NUMBER */
+
+.number {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 42px;
+
+  padding-top: 2px;
+
+  font-size: 15px;
+  font-weight: 700;
+  color: #c4911a;
+}
+
+/* CONTENT */
+
+.content h3 {
+  margin: 0 0 12px;
+
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #004a80;
+}
+
+.content p {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.7;
+  color: #707070;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .benefits {
+    padding: 90px 50px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .benefits {
+    padding: 75px 25px;
+  }
+
+  .header {
+    margin-bottom: 45px;
+  }
+
+  .header h2 {
+    font-size: 34px;
+  }
+
+  .header p {
+    font-size: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .card {
+    min-height: auto;
+    padding: 27px 23px;
+  }
+}

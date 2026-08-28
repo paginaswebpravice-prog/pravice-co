@@ -1,124 +1,78 @@
-"use client";
-
 import styles from "../styles/FAQ.module.css";
-import { motion } from "framer-motion";
 
 const faqs = [
   {
-    question:
-      "¿Cómo solicitar una consulta jurídica para empresas en Colombia?",
+    question: "¿Qué tipo de cartera pueden gestionar?",
     answer:
-      "Puedes contactar a Pravice para exponer tu situación jurídica. Nuestro equipo realiza una evaluación inicial, revisa la información disponible y orienta sobre las alternativas de acompañamiento legal para empresas y organizaciones en Colombia.",
+      "Podemos gestionar diferentes tipos de cartera vencida y obligaciones pendientes de pago, de acuerdo con las características y necesidades de cada empresa. Analizamos el caso para definir la estrategia de gestión más adecuada.",
   },
-
   {
-    question: "¿Cuánto tiempo puede durar un proceso legal en Colombia?",
+    question: "¿En qué momento debería iniciar una gestión de cobranza?",
     answer:
-      "Los tiempos varían según el tipo de proceso, la complejidad del caso y la entidad o autoridad competente. En Pravice realizamos seguimiento permanente y mantenemos informados a nuestros clientes sobre el avance de cada actuación jurídica.",
+      "Lo ideal es actuar de manera oportuna. Una gestión temprana permite realizar seguimiento a las obligaciones pendientes antes de que la mora aumente y se vuelva más compleja su recuperación.",
   },
-
   {
-    question:
-      "¿Puedo recibir asesoría jurídica si me encuentro fuera de Bogotá?",
+    question: "¿La cobranza se realiza directamente con los deudores?",
     answer:
-      "Sí. Atendemos clientes en Bogotá, Medellín, Cali, Barranquilla y otras ciudades de Colombia mediante herramientas digitales, reuniones virtuales y canales de comunicación remota.",
+      "Sí. La gestión contempla el contacto y seguimiento de las obligaciones pendientes mediante diferentes canales de comunicación, buscando generar acuerdos y facilitar la recuperación de la cartera.",
   },
-
-  {
-    question: "¿Qué documentos necesito para iniciar una consulta legal?",
-    answer:
-      "Los documentos dependen de cada situación. Generalmente se recomienda reunir contratos, comunicaciones, certificados, facturas o cualquier soporte relacionado con el caso para facilitar el análisis jurídico inicial.",
-  },
-
-  {
-    question: "¿Pravice realiza seguimiento de procesos legales?",
-    answer:
-      "Sí. Contamos con herramientas tecnológicas y procesos internos que permiten realizar seguimiento de actuaciones, gestión documental y acompañamiento jurídico continuo durante el desarrollo del caso.",
-  },
-
   {
     question:
-      "¿Las empresas pueden contratar acompañamiento jurídico permanente?",
+      "¿Pueden gestionar una cartera que ya lleva varios meses vencida?",
     answer:
-      "Sí. Muchas organizaciones requieren apoyo legal continuo para revisar contratos, gestionar riesgos jurídicos, fortalecer el cumplimiento normativo y acompañar decisiones empresariales estratégicas.",
+      "Sí. Podemos analizar obligaciones con diferentes niveles de mora y establecer una estrategia de gestión de acuerdo con las características de cada cartera.",
   },
-
   {
-    question: "¿Qué beneficios ofrece Legal App Pravice?",
+    question: "¿Cómo puedo conocer el estado de la gestión de mi cartera?",
     answer:
-      "Legal App Pravice permite consultar información relacionada con procesos, acceder a documentos autorizados, recibir notificaciones y mantener comunicación con el equipo jurídico desde cualquier lugar de Colombia.",
+      "La gestión se realiza de manera organizada, permitiendo hacer seguimiento a las actuaciones realizadas sobre las obligaciones entregadas para cobranza y conocer su evolución.",
   },
-
   {
-    question:
-      "¿Pravice presta servicios de acompañamiento jurídico corporativo?",
+    question: "¿La gestión de cobranza garantiza la recuperación del dinero?",
     answer:
-      "Sí. Trabajamos con empresas de distintos sectores económicos brindando apoyo en gestión legal, seguimiento de asuntos corporativos, organización documental y acompañamiento jurídico estratégico.",
+      "Ninguna estrategia de cobranza puede garantizar la recuperación total de una obligación. Sin embargo, una gestión organizada y oportuna puede aumentar las posibilidades de recuperación y contribuir a reducir los niveles de cartera vencida.",
+  },
+  {
+    question: "¿Puedo entregar una cartera completa para su gestión?",
+    answer:
+      "Sí. Podemos analizar la cartera de tu empresa y determinar la estrategia de gestión más conveniente según el volumen, características de las obligaciones, antigüedad y demás factores relevantes.",
+  },
+  {
+    question: "¿Cómo puedo solicitar información sobre el servicio?",
+    answer:
+      "Puedes comunicarte con nuestro equipo para contarnos sobre las necesidades de tu empresa y recibir orientación sobre el proceso de gestión de cartera.",
   },
 ];
 
 export default function FAQ() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
-
   return (
-    <section className={styles.section} aria-labelledby="faq-title">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
-
+    <section className={styles.faq} id="faq">
       <div className={styles.container}>
-        <header>
-          <motion.h2
-            id="faq-title"
-            className={styles.title}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            Preguntas frecuentes sobre{" "}
-            <span>acompañamiento jurídico en Colombia</span>
-          </motion.h2>
+        <div className={styles.header}>
+          <span className={styles.eyebrow}>PREGUNTAS FRECUENTES</span>
 
-          <motion.p
-            className={styles.subtitle}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            Resolvemos dudas frecuentes sobre procesos legales, gestión
-            jurídica, seguimiento de casos, consultoría empresarial, Legal App
-            Pravice y acompañamiento legal para empresas y personas en Colombia.
-          </motion.p>
-        </header>
+          <h2>
+            Resolvemos tus dudas sobre la <span>gestión de cartera</span>
+          </h2>
 
-        <div className={styles.grid}>
+          <p>
+            Estas son algunas de las preguntas más frecuentes sobre nuestro
+            servicio de cobranza y recuperación de cartera.
+          </p>
+        </div>
+
+        <div className={styles.list}>
           {faqs.map((faq, index) => (
-            <motion.article
-              key={index}
-              className={styles.card}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -6, scale: 1.02 }}
-            >
-              <h3>{faq.question}</h3>
-              <p>{faq.answer}</p>
-            </motion.article>
+            <details className={styles.item} key={index}>
+              <summary>
+                <span>{faq.question}</span>
+                <span className={styles.icon}>+</span>
+              </summary>
+
+              <div className={styles.answer}>
+                <p>{faq.answer}</p>
+              </div>
+            </details>
           ))}
         </div>
       </div>

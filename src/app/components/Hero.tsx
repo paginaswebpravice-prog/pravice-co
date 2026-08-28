@@ -1,151 +1,244 @@
 "use client";
 
-import styles from "../styles/Hero.module.css";
 import Link from "next/link";
-import Head from "next/head";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowRight,
+  faLaptop,
+  faShieldHalved,
+  faMagnifyingGlass,
+} from "@fortawesome/free-solid-svg-icons";
+
+import styles from "../styles/Hero.module.css";
 
 export default function Hero() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "LegalService",
-
-    name: "Pravice",
-
-    description:
-      "Firma jurídica y plataforma empresarial en Colombia especializada en derecho corporativo, cumplimiento normativo, contratos empresariales, recuperación de cartera y gestión legal preventiva.",
-
-    areaServed: {
-      "@type": "Country",
-      name: "Colombia",
-    },
-
-    url: "https://pravice.co",
-  };
-
   return (
-    <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-      </Head>
+    <section className={styles.hero}>
+      {/* Fondo decorativo */}
 
-      <section
-        className={styles.hero}
-        id="hero"
-        aria-label="Firma jurídica empresarial en Colombia"
-      >
-        <div className={styles.overlay}></div>
+      <div className={styles.backgroundShapeOne}></div>
+      <div className={styles.backgroundShapeTwo}></div>
+
+      <div className={styles.container}>
+        {/* CONTENIDO */}
 
         <motion.div
           className={styles.content}
-          initial={{ opacity: 0, scale: 0.97 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            duration: 0.8,
+            ease: "easeOut",
+          }}
         >
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.4 }}
+          <motion.div
             className={styles.badge}
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.15,
+              duration: 0.5,
+            }}
           >
-            Soluciones jurídicas para empresas en Colombia
-          </motion.span>
+            <FontAwesomeIcon icon={faLaptop} />
+            Plataforma de seguimiento de procesos
+          </motion.div>
 
           <motion.h1
             className={styles.title}
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
+            transition={{
+              delay: 0.25,
+              duration: 0.7,
+            }}
           >
-            Firma jurídica para empresas en Colombia: derecho corporativo,
-            cumplimiento normativo y gestión legal empresarial
+            Consulta y haz seguimiento de tus procesos en LegalApp
           </motion.h1>
 
           <motion.p
             className={styles.subtitle}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.35,
+              duration: 0.7,
+            }}
           >
-            En Pravice acompañamos empresas en Colombia mediante soluciones de
-            derecho corporativo, cumplimiento normativo, gestión contractual,
-            recuperación de cartera y fortalecimiento de procesos jurídicos
-            empresariales orientados a la prevención de riesgos legales.
-          </motion.p>
-
-          <motion.p
-            className={styles.subtitle}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 0.6 }}
-          >
-            Pravice hace parte de un ecosistema jurídico empresarial
-            complementado por nuestra{" "}
-            <a
-              href="https://abogadosespecialistas.com.co/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              firma jurídica aliada
-            </a>
-            , especializada en litigios, representación judicial y servicios
-            legales especializados en Colombia.
+            Accede a LegalApp para consultar la información disponible sobre tus
+            procesos de manera rápida, sencilla y desde cualquier lugar.
           </motion.p>
 
           <motion.div
             className={styles.buttons}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.6 }}
+            transition={{
+              delay: 0.45,
+              duration: 0.6,
+            }}
           >
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
-              <Link
-                href="https://legalapp.pravice.co/login.php"
-                className={styles.primaryBtn}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar mi caso
-              </Link>
-            </motion.div>
+            <motion.a
+              href="https://legalapp.pravice.co/login.php"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.primaryBtn}
+              whileHover={{
+                scale: 1.04,
+                y: -3,
+              }}
+              whileTap={{
+                scale: 0.97,
+              }}
+            >
+              Ingresar a LegalApp
+              <FontAwesomeIcon icon={faArrowRight} />
+            </motion.a>
 
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
-              <Link
-                href="https://drive.google.com/file/d/1IIEGEpqNm_FiPhvKKWBSnr_iLbDXcBWV/view"
-                className={styles.secondaryBtn}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Conoce Legal App
-              </Link>
-            </motion.div>
-
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
-              <Link
-                href="https://wa.me/573114659315"
-                className={styles.whatsappBtn}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consulta por WhatsApp
+            <motion.div
+              whileHover={{
+                scale: 1.03,
+                y: -2,
+              }}
+              whileTap={{
+                scale: 0.97,
+              }}
+            >
+              <Link href="/#como-funciona" className={styles.secondaryBtn}>
+                ¿Cómo funciona?
               </Link>
             </motion.div>
           </motion.div>
+
+          {/* BENEFICIOS RÁPIDOS */}
+
+          <motion.div
+            className={styles.quickBenefits}
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.65,
+              duration: 0.6,
+            }}
+          >
+            <div className={styles.quickBenefit}>
+              <span className={styles.quickIcon}>
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+              </span>
+
+              <span>Consulta tus procesos</span>
+            </div>
+
+            <div className={styles.quickBenefit}>
+              <span className={styles.quickIcon}>
+                <FontAwesomeIcon icon={faShieldHalved} />
+              </span>
+
+              <span>Acceso seguro</span>
+            </div>
+          </motion.div>
         </motion.div>
 
-        <p className={styles.seoText}>
-          Pravice es una firma jurídica empresarial en Colombia enfocada en
-          derecho corporativo, cumplimiento normativo, contratos empresariales,
-          recuperación de cartera, derecho societario, derecho comercial,
-          gestión legal preventiva y fortalecimiento de procesos jurídicos para
-          empresas. Nuestro objetivo es ayudar a las organizaciones a reducir
-          riesgos legales, mejorar el cumplimiento normativo y fortalecer su
-          estructura jurídica para crecer con mayor seguridad.
-        </p>
-      </section>
-    </>
+        {/* VISUAL DERECHO */}
+
+        <motion.div
+          className={styles.visual}
+          initial={{ opacity: 0, x: 40, scale: 0.95 }}
+          animate={{ opacity: 1, x: 0, scale: 1 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeOut",
+          }}
+        >
+          <div className={styles.dashboard}>
+            <div className={styles.dashboardHeader}>
+              <div className={styles.logoPlaceholder}>
+                Legal<span>App</span>
+              </div>
+
+              <div className={styles.status}>
+                <span></span>
+                Plataforma en línea
+              </div>
+            </div>
+
+            <div className={styles.dashboardBody}>
+              <div className={styles.dashboardWelcome}>
+                <span>LEGALAPP</span>
+
+                <h2>
+                  Consulta tus
+                  <br />
+                  procesos
+                </h2>
+
+                <p>
+                  Accede a la información disponible de tus procesos desde un
+                  solo lugar.
+                </p>
+              </div>
+
+              <div className={styles.processPreview}>
+                <div className={styles.processTop}>
+                  <span>Mis procesos</span>
+
+                  <span className={styles.processCount}>03</span>
+                </div>
+
+                <div className={styles.processLine}>
+                  <span className={styles.processDot}></span>
+
+                  <div>
+                    <strong>Proceso jurídico</strong>
+                    <small>Información disponible</small>
+                  </div>
+                </div>
+
+                <div className={styles.processLine}>
+                  <span className={styles.processDot}></span>
+
+                  <div>
+                    <strong>Proceso en seguimiento</strong>
+                    <small>Consulta las actualizaciones</small>
+                  </div>
+                </div>
+
+                <div className={styles.processLine}>
+                  <span className={styles.processDot}></span>
+
+                  <div>
+                    <strong>Información del proceso</strong>
+                    <small>Consulta en línea</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.dashboardFooter}>
+              <span>Acceso desde cualquier lugar</span>
+
+              <FontAwesomeIcon icon={faArrowRight} />
+            </div>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* INDICADOR */}
+
+      <motion.div
+        className={styles.scrollIndicator}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          delay: 1,
+          duration: 0.8,
+        }}
+      >
+        <span></span>
+        Descubre cómo funciona
+      </motion.div>
+    </section>
   );
 }

@@ -1,0 +1,189 @@
+.security {
+  position: relative;
+  padding: 115px 80px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CONTENT */
+
+.content {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  align-items: center;
+  gap: 100px;
+}
+
+/* TEXT */
+
+.text {
+  max-width: 560px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #c4911a;
+}
+
+.text h2 {
+  margin: 0 0 24px;
+
+  font-size: clamp(34px, 4vw, 50px);
+  line-height: 1.13;
+  font-weight: 700;
+  color: #004a80;
+}
+
+.text h2 span {
+  color: #5eb3e4;
+}
+
+.text p {
+  margin: 0 0 17px;
+
+  font-size: 16px;
+  line-height: 1.75;
+  color: #666;
+}
+
+.text p:last-child {
+  margin-bottom: 0;
+}
+
+/* ITEMS */
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+
+  padding: 28px 30px;
+
+  background: #f7f9fb;
+  border: 1px solid rgba(0, 74, 128, 0.07);
+  border-radius: 12px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.item:hover {
+  transform: translateX(6px);
+
+  border-color: rgba(94, 179, 228, 0.35);
+
+  box-shadow: 0 12px 35px rgba(0, 74, 128, 0.08);
+}
+
+/* ICON / NUMBER */
+
+.icon {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  border-radius: 50%;
+
+  background: #004a80;
+}
+
+.icon span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* ITEM TEXT */
+
+.item h3 {
+  margin: 0 0 8px;
+
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #004a80;
+}
+
+.item p {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.65;
+  color: #707070;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .security {
+    padding: 90px 50px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .text {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 700px) {
+  .security {
+    padding: 75px 25px;
+  }
+
+  .content {
+    gap: 40px;
+  }
+
+  .text h2 {
+    font-size: 34px;
+  }
+
+  .text p {
+    font-size: 15px;
+  }
+
+  .item {
+    gap: 17px;
+    padding: 23px 20px;
+  }
+
+  .icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .item h3 {
+    font-size: 18px;
+  }
+
+  .item p {
+    font-size: 14px;
+  }
+}
