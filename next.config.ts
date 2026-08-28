@@ -62,6 +62,12 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/blog/proceso-cobro-juridico-colombia",
+        destination:
+          "https://abogadosespecialistas.com.co/cobro-de-cartera.html",
+        permanent: true,
+      },
+      {
         source: "/abogados",
         destination: "https://abogadosespecialistas.com.co/abogados/index.html",
         permanent: true,
