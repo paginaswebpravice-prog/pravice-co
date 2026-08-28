@@ -68,12 +68,116 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/blog/cobranza-prejuridica-colombia",
+        destination:
+          "https://abogadosespecialistas.com.co/cobro-de-cartera.html",
+        permanent: true,
+      },
+      {
         source: "/abogados",
         destination: "https://abogadosespecialistas.com.co/abogados/index.html",
         permanent: true,
       },
-
-      // tus demás redirects...
+      {
+        source: "/blog/empresa-no-paga-factura",
+        destination:
+          "https://abogadosespecialistas.com.co/cobro-de-cartera.html",
+        permanent: true,
+      },
+      {
+        source: "/blog/indicadores-gestion-cartera",
+        destination:
+          "https://abogadosespecialistas.com.co/gestion-de-cartera.html",
+        permanent: true,
+      },
+      {
+        source: "/especialidades/derecho-administrativo",
+        destination:
+          "https://abogadosespecialistas.com.co/derecho-administrativo.html",
+        permanent: true,
+      },
+      {
+        source: "/colombianos-exterior/poderes-colombia",
+        destination:
+          "https://abogadosespecialistas.com.co/representacion-juridica.html",
+        permanent: true,
+      },
+      {
+        source: "/colombianos-exterior/divorcios-colombia",
+        destination: "https://abogadosespecialistas.com.co/divorcio.html",
+        permanent: true,
+      },
+      {
+        source: "/faq",
+        destination:
+          "https://abogadosespecialistas.com.co/preguntas-frecuentes.html",
+        permanent: true,
+      },
+      {
+        source: "/especialidades/recuperacion-de-cartera",
+        destination:
+          "https://abogadosespecialistas.com.co/recuperacion-de-cartera.html",
+        permanent: true,
+      },
+      {
+        source: "/especialidades",
+        destination:
+          "https://abogadosespecialistas.com.co/abogados-especialistas.html",
+        permanent: true,
+      },
+      {
+        source: "/blog/gestion-cartera-sector-salud",
+        destination:
+          "https://abogadosespecialistas.com.co/cartera-sector-salud.html",
+        permanent: true,
+      },
+      {
+        source: "/litigios",
+        destination:
+          "https://abogadosespecialistas.com.co/abogados-especialistas.html",
+        permanent: true,
+      },
+      {
+        source: "/blog/cliente-no-quiere-pagar",
+        destination:
+          "https://abogadosespecialistas.com.co/cobro-de-cartera.html",
+        permanent: true,
+      },
+      {
+        source: "/blog/software-gestion-cartera",
+        destination:
+          "https://abogadosespecialistas.com.co/gestion-de-cartera.html",
+        permanent: true,
+      },
+      {
+        source: "/colombianos-exterior/sucesiones-herencias",
+        destination:
+          "https://abogadosespecialistas.com.co/proceso-de-sucesion.html",
+        permanent: true,
+      },
+      {
+        source: "/abogados/abogado-Harrison",
+        destination: "https://abogadosespecialistas.com.co/abogados/index.html",
+        permanent: true,
+      },
+      {
+        source: "/blog/inteligencia-artificial-cobranzas",
+        destination:
+          "https://abogadosespecialistas.com.co/cobro-de-cartera.html",
+        permanent: true,
+      },
+      {
+        source: "/blog/proteccion-datos-empresas",
+        destination:
+          "https://abogadosespecialistas.com.co/proteccion-de-datos-personales.html",
+        permanent: true,
+      },
+      {
+        source: "/blog/recuperacion-cartera-empresas",
+        destination:
+          "https://abogadosespecialistas.com.co/recuperacion-de-cartera.html",
+        permanent: true,
+      },
     ];
   },
 };
