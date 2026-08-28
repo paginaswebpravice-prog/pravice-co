@@ -58,6 +58,18 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+
+  async redirects() {
+    return [
+      {
+        source: "/abogados",
+        destination: "https://abogadosespecialistas.com.co/abogados/index.html",
+        permanent: true,
+      },
+
+      // tus demás redirects...
+    ];
+  },
 };
 
 export default nextConfig;
