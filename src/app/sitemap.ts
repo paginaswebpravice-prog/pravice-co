@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { rutasRedirigidas } from "../../redirects.consolidacion";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://pravice.co";
@@ -167,7 +168,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: slug === "" ? 0.75 : 0.7,
   }));
 
-  return [
+  const todas: MetadataRoute.Sitemap = [
     // HOME
     {
       url: baseUrl,
@@ -220,4 +221,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ABOGADOS
     ...abogadosUrls,
   ];
+
+  // 2026-10-23: no listar URL que ya redirigen a abogadosespecialistas.com.co
+  return todas.filter((p) => !rutasRedirigidas.has(new URL(p.url).pathname));
 }
